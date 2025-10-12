@@ -31,6 +31,28 @@ class AppLocalizationsHi extends AppLocalizations {
   String get signIn => 'साइन इन करें';
 
   @override
+  String get accessYourMulaAccount => 'अपने MULA खाते तक पहुंचें';
+
+  @override
+  String get signInToYourAccount =>
+      'जारी रखने के लिए अपने खाते में साइन इन करें';
+
+  @override
+  String get emailOrPhone => 'ईमेल या फोन';
+
+  @override
+  String get enterEmailOrPhone => 'अपना ईमेल या फोन नंबर दर्ज करें';
+
+  @override
+  String get forgotPassword => 'पासवर्ड भूल गए?';
+
+  @override
+  String get dontHaveAccount => 'खाता नहीं है?';
+
+  @override
+  String get signUp => 'साइन अप करें';
+
+  @override
   String get letsGetYouStarted => 'आइए शुरू करें';
 
   @override
@@ -144,6 +166,9 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get continueButton => 'जारी रखें';
+
+  @override
+  String get enterYourPin => 'जारी रखने के लिए अपना पिन दर्ज करें';
 
   @override
   String get tellUsAboutYou => 'हमें अपने बारे में बताएं';
@@ -268,6 +293,9 @@ class AppLocalizationsHi extends AppLocalizations {
       'निवेश भयावह लग सकता है, लेकिन MULA के साथ, आपको शुरू करने के लिए विशेषज्ञ होने की आवश्यकता नहीं है। हम आपको हर कदम पर मार्गदर्शन करेंगे, आपके खातों को लिंक करने से लेकर आपके पोर्टफोलियो को समझने तक, ताकि आप आत्मविश्वास के साथ निवेश कर सकें।';
 
   @override
+  String get hereIsWhatYouCanExpect => 'यहां वह है जो आप उम्मीद कर सकते हैं:';
+
+  @override
   String get toolsToGrowKnowledge => 'अपने ज्ञान को बढ़ाने के लिए उपकरण';
 
   @override
@@ -299,9 +327,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get cisAccountDescription => 'Databank, EDC आदि जैसे फंड मैनेजरों से';
-
-  @override
-  String get dontHaveAccount => 'खाता नहीं है?';
 
   @override
   String get dontHaveAccountDescription =>

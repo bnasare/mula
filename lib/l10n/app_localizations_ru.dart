@@ -31,6 +31,28 @@ class AppLocalizationsRu extends AppLocalizations {
   String get signIn => 'Войти';
 
   @override
+  String get accessYourMulaAccount => 'Доступ к Вашему Аккаунту MULA';
+
+  @override
+  String get signInToYourAccount =>
+      'Войдите в свою учетную запись, чтобы продолжить';
+
+  @override
+  String get emailOrPhone => 'Email или телефон';
+
+  @override
+  String get enterEmailOrPhone => 'Введите ваш email или номер телефона';
+
+  @override
+  String get forgotPassword => 'Забыли пароль?';
+
+  @override
+  String get dontHaveAccount => 'Нет счета?';
+
+  @override
+  String get signUp => 'Зарегистрироваться';
+
+  @override
   String get letsGetYouStarted => 'Давайте начнём';
 
   @override
@@ -145,6 +167,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get continueButton => 'Продолжить';
+
+  @override
+  String get enterYourPin => 'Введите свой PIN-код, чтобы продолжить';
 
   @override
   String get tellUsAboutYou => 'Расскажите о себе';
@@ -268,6 +293,9 @@ class AppLocalizationsRu extends AppLocalizations {
       'Инвестирование может показаться пугающим, но с MULA вам не нужно быть экспертом, чтобы начать. Мы проведем вас через каждый шаг, от привязки ваших счетов до понимания вашего портфеля, чтобы вы могли инвестировать с уверенностью.';
 
   @override
+  String get hereIsWhatYouCanExpect => 'Вот что вы можете ожидать:';
+
+  @override
   String get toolsToGrowKnowledge => 'Инструменты для расширения ваших знаний';
 
   @override
@@ -301,9 +329,6 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get cisAccountDescription =>
       'От управляющих фондами, таких как Databank, EDC и т. д.';
-
-  @override
-  String get dontHaveAccount => 'Нет счета?';
 
   @override
   String get dontHaveAccountDescription =>

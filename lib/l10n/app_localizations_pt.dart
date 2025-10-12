@@ -32,6 +32,27 @@ class AppLocalizationsPt extends AppLocalizations {
   String get signIn => 'Entrar';
 
   @override
+  String get accessYourMulaAccount => 'Acesse Sua Conta MULA';
+
+  @override
+  String get signInToYourAccount => 'Entre na sua conta para continuar';
+
+  @override
+  String get emailOrPhone => 'E-mail ou Telefone';
+
+  @override
+  String get enterEmailOrPhone => 'Digite seu e-mail ou número de telefone';
+
+  @override
+  String get forgotPassword => 'Esqueceu a senha?';
+
+  @override
+  String get dontHaveAccount => 'Não tem uma conta?';
+
+  @override
+  String get signUp => 'Cadastrar-se';
+
+  @override
   String get letsGetYouStarted => 'Vamos Começar';
 
   @override
@@ -145,6 +166,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get continueButton => 'Continuar';
+
+  @override
+  String get enterYourPin => 'Digite seu PIN para continuar';
 
   @override
   String get tellUsAboutYou => 'Conte-nos Sobre Você';
@@ -269,6 +293,9 @@ class AppLocalizationsPt extends AppLocalizations {
       'Investir pode parecer intimidador, mas com MULA, você não precisa ser um especialista para começar. Vamos guiá-lo em cada etapa, desde vincular suas contas até entender seu portfólio, para que você possa investir com confiança.';
 
   @override
+  String get hereIsWhatYouCanExpect => 'Aqui está o que você pode esperar:';
+
+  @override
   String get toolsToGrowKnowledge =>
       'Ferramentas para aumentar seu conhecimento';
 
@@ -302,9 +329,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get cisAccountDescription =>
       'De gestores de fundos como Databank, EDC, etc.';
-
-  @override
-  String get dontHaveAccount => 'Não tem uma conta?';
 
   @override
   String get dontHaveAccountDescription =>

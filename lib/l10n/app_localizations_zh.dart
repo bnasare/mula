@@ -31,6 +31,27 @@ class AppLocalizationsZh extends AppLocalizations {
   String get signIn => '登录';
 
   @override
+  String get accessYourMulaAccount => '访问您的 MULA 账户';
+
+  @override
+  String get signInToYourAccount => '登录您的账户以继续';
+
+  @override
+  String get emailOrPhone => '邮箱或手机';
+
+  @override
+  String get enterEmailOrPhone => '输入您的邮箱或手机号码';
+
+  @override
+  String get forgotPassword => '忘记密码？';
+
+  @override
+  String get dontHaveAccount => '还没有账户？';
+
+  @override
+  String get signUp => '注册';
+
+  @override
   String get letsGetYouStarted => '让我们开始吧';
 
   @override
@@ -141,6 +162,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get continueButton => '继续';
+
+  @override
+  String get enterYourPin => '输入您的PIN码以继续';
 
   @override
   String get tellUsAboutYou => '告诉我们关于您';
@@ -258,6 +282,9 @@ class AppLocalizationsZh extends AppLocalizations {
       '投资可能听起来令人生畏，但使用 MULA，您无需成为专家即可开始。我们将引导您完成每一步，从关联您的账户到了解您的投资组合，让您充满信心地进行投资。';
 
   @override
+  String get hereIsWhatYouCanExpect => '您可以期待以下内容：';
+
+  @override
   String get toolsToGrowKnowledge => '增长知识的工具';
 
   @override
@@ -286,9 +313,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get cisAccountDescription => '来自 Databank、EDC 等基金管理公司';
-
-  @override
-  String get dontHaveAccount => '还没有账户？';
 
   @override
   String get dontHaveAccountDescription => '您可以创建账户并立即开始投资';

@@ -44,8 +44,10 @@ class SelectableOptionCard extends StatelessWidget {
               ? AppColors.appPrimary.withValues(alpha: 0.1)
               : Colors.transparent,
           border: Border.all(
-            color: isSelected ? AppColors.appPrimary : Colors.grey.shade300,
-            width: isSelected ? 1.5 : 1,
+            color: isSelected
+                ? AppColors.appPrimary
+                : AppColors.grey(context).withValues(alpha: 0.15),
+            width: isSelected ? 0.6 : 1,
           ),
           borderRadius: BorderRadius.circular(8),
         ),
@@ -61,14 +63,11 @@ class SelectableOptionCard extends StatelessWidget {
                           style: TextStyle(
                             color: isSelected
                                 ? AppColors.appPrimary
-                                : AppColors.black(context),
-                            fontWeight: isSelected
-                                ? FontWeight.w600
-                                : FontWeight.w500,
+                                : AppColors.defaultText(context),
                           ),
                         ),
                         const AppSpacer.vShorter(),
-                        AppText.smaller(
+                        AppText.smallest(
                           description!,
                           color: AppColors.secondaryText(context),
                         ),
@@ -79,16 +78,15 @@ class SelectableOptionCard extends StatelessWidget {
                       style: TextStyle(
                         color: isSelected
                             ? AppColors.appPrimary
-                            : AppColors.black(context),
-                        fontWeight: isSelected
-                            ? FontWeight.w600
-                            : FontWeight.w400,
+                            : AppColors.defaultText(context),
                       ),
                     ),
             ),
             Icon(
               isSelected ? Icons.check_circle : Icons.circle_outlined,
-              color: isSelected ? AppColors.appPrimary : Colors.grey.shade400,
+              color: isSelected
+                  ? AppColors.appPrimary
+                  : AppColors.grey(context).withValues(alpha: 0.25),
               size: 24,
             ),
           ],

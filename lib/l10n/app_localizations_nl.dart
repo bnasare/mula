@@ -31,6 +31,27 @@ class AppLocalizationsNl extends AppLocalizations {
   String get signIn => 'Inloggen';
 
   @override
+  String get accessYourMulaAccount => 'Toegang tot Je MULA-Account';
+
+  @override
+  String get signInToYourAccount => 'Log in op je account om door te gaan';
+
+  @override
+  String get emailOrPhone => 'E-mail of Telefoon';
+
+  @override
+  String get enterEmailOrPhone => 'Voer je e-mailadres of telefoonnummer in';
+
+  @override
+  String get forgotPassword => 'Wachtwoord vergeten?';
+
+  @override
+  String get dontHaveAccount => 'Heb je geen account?';
+
+  @override
+  String get signUp => 'Registreren';
+
+  @override
   String get letsGetYouStarted => 'Laten we beginnen';
 
   @override
@@ -146,6 +167,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get continueButton => 'Doorgaan';
+
+  @override
+  String get enterYourPin => 'Voer je pincode in om door te gaan';
 
   @override
   String get tellUsAboutYou => 'Vertel ons over jezelf';
@@ -270,6 +294,9 @@ class AppLocalizationsNl extends AppLocalizations {
       'Beleggen kan intimiderend klinken, maar met MULA hoef je geen expert te zijn om te beginnen. We begeleiden je bij elke stap, van het koppelen van je accounts tot het begrijpen van je portfolio, zodat je met vertrouwen kunt beleggen.';
 
   @override
+  String get hereIsWhatYouCanExpect => 'Dit is wat je kunt verwachten:';
+
+  @override
   String get toolsToGrowKnowledge => 'Tools om je kennis te vergroten';
 
   @override
@@ -302,9 +329,6 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get cisAccountDescription =>
       'Van fondsbeheerders zoals Databank, EDC, enz.';
-
-  @override
-  String get dontHaveAccount => 'Heb je geen account?';
 
   @override
   String get dontHaveAccountDescription =>

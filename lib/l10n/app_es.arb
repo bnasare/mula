@@ -8,6 +8,13 @@
   "getStarted": "Comenzar",
   "alreadyHaveAccount": "¿Ya tienes una cuenta?",
   "signIn": "Iniciar sesión",
+  "accessYourMulaAccount": "Accede a Tu Cuenta MULA",
+  "signInToYourAccount": "Inicia sesión en tu cuenta para continuar",
+  "emailOrPhone": "Correo o Teléfono",
+  "enterEmailOrPhone": "Ingresa tu correo electrónico o número de teléfono",
+  "forgotPassword": "¿Olvidaste tu contraseña?",
+  "dontHaveAccount": "¿No tienes una cuenta?",
+  "signUp": "Registrarse",
 
   "letsGetYouStarted": "Comencemos",
   "createFreeAccountDescription": "Crea tu cuenta MULA gratuita en menos de un minuto.",
@@ -48,6 +55,7 @@
   "pinCreatedSuccessfully": "PIN creado exitosamente",
   "pinCreatedDescription": "Completemos el registro de tu cuenta",
   "continueButton": "Continuar",
+  "enterYourPin": "Ingresa tu PIN para continuar",
 
   "tellUsAboutYou": "Cuéntanos Sobre Ti",
   "tellUsAboutYouDescription": "Esto nos ayuda a personalizar tu experiencia MULA",
@@ -91,6 +99,7 @@
 
   "goodHandsTitle": "Estás en buenas manos",
   "goodHandsDescription": "Invertir puede sonar intimidante, pero con MULA, no necesitas ser un experto para empezar. Te guiaremos en cada paso, desde vincular tus cuentas hasta entender tu portafolio, para que puedas invertir con confianza.",
+  "hereIsWhatYouCanExpect": "Esto es lo que puedes esperar:",
   "toolsToGrowKnowledge": "Herramientas para aumentar tu conocimiento",
   "supportWheneverNeeded": "Soporte cuando lo necesites",
   "guidanceToExplore": "Orientación para explorar oportunidades de inversión",

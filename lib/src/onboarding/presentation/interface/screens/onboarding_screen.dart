@@ -7,6 +7,7 @@ import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
+import '../../../../authentication/presentation/interface/screens/sign_in_screen.dart';
 import '../../../../authentication/presentation/interface/screens/sign_up_screen.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -23,7 +24,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   void _signIn() {
-    // TODO: Navigate to Sign In screen
+    NavigationHelper.navigateTo(context, const SignInScreen());
   }
 
   @override
@@ -108,25 +109,28 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
               // Sign In Link
               Center(
-                child: AppText.rich(
-                  align: TextAlign.center,
-                  children: [
-                    TextSpan(
-                      text: '${context.localize.alreadyHaveAccount} ',
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: AppColors.secondaryText(context),
+                child: GestureDetector(
+                  onTap: _signIn,
+                  child: AppText.rich(
+                    align: TextAlign.center,
+                    children: [
+                      TextSpan(
+                        text: '${context.localize.alreadyHaveAccount} ',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: AppColors.secondaryText(context),
+                        ),
                       ),
-                    ),
-                    TextSpan(
-                      text: context.localize.signIn,
-                      style: const TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.appPrimary,
+                      TextSpan(
+                        text: context.localize.signIn,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                          color: AppColors.appPrimary,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
 

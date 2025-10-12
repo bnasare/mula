@@ -8,6 +8,13 @@
   "getStarted": "Get Started",
   "alreadyHaveAccount": "Already have an account?",
   "signIn": "Sign in",
+  "accessYourMulaAccount": "Access Your MULA Account",
+  "signInToYourAccount": "Sign in to your account to continue",
+  "emailOrPhone": "Email or Phone",
+  "enterEmailOrPhone": "Enter your email or phone number",
+  "forgotPassword": "Forgot Password?",
+  "dontHaveAccount": "Don't have an account?",
+  "signUp": "Sign up",
 
   "letsGetYouStarted": "Let's Get You Started",
   "createFreeAccountDescription": "Create your free MULA account in under a minute.",
@@ -48,6 +55,7 @@
   "pinCreatedSuccessfully": "PIN created successfully",
   "pinCreatedDescription": "Let's complete your account registration",
   "continueButton": "Continue",
+  "enterYourPin": "Enter your pin to continue",
 
   "tellUsAboutYou": "Tell Us About You",
   "tellUsAboutYouDescription": "This helps us personalize your MULA experience",
@@ -90,7 +98,8 @@
   "advancedDescription": "I'm experienced and want full access to advanced tools.",
 
   "goodHandsTitle": "You're in good hands",
-  "goodHandsDescription": "Investing might sound intimidating, but with MULA, you don't need to be an expert to start. We'll walk you through every step, from linking your accounts to understanding your portfolio, so you can invest with confidence.",
+  "goodHandsDescription": "Investing might sound intimidating, but with MULA, you don't need to be an expert to start.\n\nWe'll walk you through every step, from linking your accounts to understanding your portfolio, so you can invest with confidence.",
+  "hereIsWhatYouCanExpect": "Here's what you can expect:",
   "toolsToGrowKnowledge": "Tools to grow your knowledge",
   "supportWheneverNeeded": "Support whenever you need it",
   "guidanceToExplore": "Guidance to explore investment opportunities",

@@ -8,6 +8,13 @@
   "getStarted": "Loslegen",
   "alreadyHaveAccount": "Haben Sie bereits ein Konto?",
   "signIn": "Anmelden",
+  "accessYourMulaAccount": "Greifen Sie auf Ihr MULA-Konto zu",
+  "signInToYourAccount": "Melden Sie sich bei Ihrem Konto an, um fortzufahren",
+  "emailOrPhone": "E-Mail oder Telefon",
+  "enterEmailOrPhone": "Geben Sie Ihre E-Mail-Adresse oder Telefonnummer ein",
+  "forgotPassword": "Passwort vergessen?",
+  "dontHaveAccount": "Sie haben kein Konto?",
+  "signUp": "Registrieren",
 
   "letsGetYouStarted": "Fangen wir an",
   "createFreeAccountDescription": "Erstellen Sie Ihr kostenloses MULA-Konto in unter einer Minute.",
@@ -48,6 +55,7 @@
   "pinCreatedSuccessfully": "PIN erfolgreich erstellt",
   "pinCreatedDescription": "Lassen Sie uns Ihre Kontoregistrierung abschließen",
   "continueButton": "Weiter",
+  "enterYourPin": "Geben Sie Ihre PIN ein, um fortzufahren",
 
   "tellUsAboutYou": "Erzählen Sie uns über sich",
   "tellUsAboutYouDescription": "Dies hilft uns, Ihre MULA-Erfahrung zu personalisieren",
@@ -91,6 +99,7 @@
 
   "goodHandsTitle": "Sie sind in guten Händen",
   "goodHandsDescription": "Investieren mag einschüchternd klingen, aber mit MULA müssen Sie kein Experte sein, um anzufangen. Wir führen Sie durch jeden Schritt, von der Verknüpfung Ihrer Konten bis zum Verständnis Ihres Portfolios, damit Sie mit Zuversicht investieren können.",
+  "hereIsWhatYouCanExpect": "Das können Sie erwarten:",
   "toolsToGrowKnowledge": "Tools zum Ausbau Ihres Wissens",
   "supportWheneverNeeded": "Unterstützung, wann immer Sie sie brauchen",
   "guidanceToExplore": "Anleitung zur Erkundung von Anlagemöglichkeiten",

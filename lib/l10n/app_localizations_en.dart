@@ -31,6 +31,27 @@ class AppLocalizationsEn extends AppLocalizations {
   String get signIn => 'Sign in';
 
   @override
+  String get accessYourMulaAccount => 'Access Your MULA Account';
+
+  @override
+  String get signInToYourAccount => 'Sign in to your account to continue';
+
+  @override
+  String get emailOrPhone => 'Email or Phone';
+
+  @override
+  String get enterEmailOrPhone => 'Enter your email or phone number';
+
+  @override
+  String get forgotPassword => 'Forgot Password?';
+
+  @override
+  String get dontHaveAccount => 'Don\'t have an account?';
+
+  @override
+  String get signUp => 'Sign up';
+
+  @override
   String get letsGetYouStarted => 'Let\'s Get You Started';
 
   @override
@@ -144,6 +165,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get continueButton => 'Continue';
+
+  @override
+  String get enterYourPin => 'Enter your pin to continue';
 
   @override
   String get tellUsAboutYou => 'Tell Us About You';
@@ -264,7 +288,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get goodHandsDescription =>
-      'Investing might sound intimidating, but with MULA, you don\'t need to be an expert to start. We\'ll walk you through every step, from linking your accounts to understanding your portfolio, so you can invest with confidence.';
+      'Investing might sound intimidating, but with MULA, you don\'t need to be an expert to start.\n\nWe\'ll walk you through every step, from linking your accounts to understanding your portfolio, so you can invest with confidence.';
+
+  @override
+  String get hereIsWhatYouCanExpect => 'Here\'s what you can expect:';
 
   @override
   String get toolsToGrowKnowledge => 'Tools to grow your knowledge';
@@ -299,9 +326,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get cisAccountDescription =>
       'From Fund Managers like Databank, EDC, etc.';
-
-  @override
-  String get dontHaveAccount => 'Don\'t have an account?';
 
   @override
   String get dontHaveAccountDescription =>

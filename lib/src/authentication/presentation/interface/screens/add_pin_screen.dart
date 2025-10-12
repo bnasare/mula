@@ -63,10 +63,7 @@ class _AddPinScreenState extends State<AddPinScreen> {
           primaryButtonText: context.localize.continueButton,
           onPrimaryButtonTap: () {
             // Navigate to Tell Us About You screen
-            NavigationHelper.navigateTo(
-              context,
-              const TellUsAboutYouScreen(),
-            );
+            NavigationHelper.navigateTo(context, const TellUsAboutYouScreen());
           },
         ),
       );

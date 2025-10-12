@@ -20,7 +20,7 @@ class GoodHandsInfoScreen extends StatelessWidget {
       backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.withProgress(
         backgroundColor: AppColors.white(context),
-        title: '',
+        title: 'Almost There',
         currentStep: 9,
         totalSteps: 11,
         progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
@@ -29,9 +29,10 @@ class GoodHandsInfoScreen extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: context.responsivePadding(
-            mobile: const EdgeInsets.all(24.0),
+            mobile: const EdgeInsets.all(16.0),
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Spacer(),
               // Image from onboarding
@@ -48,17 +49,21 @@ class GoodHandsInfoScreen extends StatelessWidget {
               // Title
               AppText.large(
                 context.localize.goodHandsTitle,
-                align: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.w500),
+                style: const TextStyle(fontWeight: FontWeight.w400),
               ),
               const AppSpacer.vShort(),
               // Description
               AppText.smaller(
                 context.localize.goodHandsDescription,
-                align: TextAlign.center,
                 color: AppColors.secondaryText(context),
               ),
               const AppSpacer.vLarge(),
+              // "Here's what you can expect:" header
+              AppText.smaller(
+                context.localize.hereIsWhatYouCanExpect,
+                color: AppColors.black(context),
+              ),
+              const AppSpacer.vShort(),
               // Features list
               _buildFeatureItem(
                 context,
@@ -122,12 +127,7 @@ class GoodHandsInfoScreen extends StatelessWidget {
           ),
         ),
         const AppSpacer.hShort(),
-        Expanded(
-          child: AppText.smaller(
-            text,
-            color: AppColors.black(context),
-          ),
-        ),
+        Expanded(child: AppText.smaller(text, color: AppColors.black(context))),
       ],
     );
   }

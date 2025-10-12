@@ -158,6 +158,48 @@ abstract class AppLocalizations {
   /// **'Sign in'**
   String get signIn;
 
+  /// No description provided for @accessYourMulaAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Access Your MULA Account'**
+  String get accessYourMulaAccount;
+
+  /// No description provided for @signInToYourAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to your account to continue'**
+  String get signInToYourAccount;
+
+  /// No description provided for @emailOrPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Email or Phone'**
+  String get emailOrPhone;
+
+  /// No description provided for @enterEmailOrPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email or phone number'**
+  String get enterEmailOrPhone;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot Password?'**
+  String get forgotPassword;
+
+  /// No description provided for @dontHaveAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account?'**
+  String get dontHaveAccount;
+
+  /// No description provided for @signUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign up'**
+  String get signUp;
+
   /// No description provided for @letsGetYouStarted.
   ///
   /// In en, this message translates to:
@@ -379,6 +421,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Continue'**
   String get continueButton;
+
+  /// No description provided for @enterYourPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your pin to continue'**
+  String get enterYourPin;
 
   /// No description provided for @tellUsAboutYou.
   ///
@@ -605,8 +653,14 @@ abstract class AppLocalizations {
   /// No description provided for @goodHandsDescription.
   ///
   /// In en, this message translates to:
-  /// **'Investing might sound intimidating, but with MULA, you don\'t need to be an expert to start. We\'ll walk you through every step, from linking your accounts to understanding your portfolio, so you can invest with confidence.'**
+  /// **'Investing might sound intimidating, but with MULA, you don\'t need to be an expert to start.\n\nWe\'ll walk you through every step, from linking your accounts to understanding your portfolio, so you can invest with confidence.'**
   String get goodHandsDescription;
+
+  /// No description provided for @hereIsWhatYouCanExpect.
+  ///
+  /// In en, this message translates to:
+  /// **'Here\'s what you can expect:'**
+  String get hereIsWhatYouCanExpect;
 
   /// No description provided for @toolsToGrowKnowledge.
   ///
@@ -667,12 +721,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'From Fund Managers like Databank, EDC, etc.'**
   String get cisAccountDescription;
-
-  /// No description provided for @dontHaveAccount.
-  ///
-  /// In en, this message translates to:
-  /// **'Don\'t have an account?'**
-  String get dontHaveAccount;
 
   /// No description provided for @dontHaveAccountDescription.
   ///

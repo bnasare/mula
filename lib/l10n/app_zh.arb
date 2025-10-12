@@ -8,6 +8,13 @@
   "getStarted": "开始使用",
   "alreadyHaveAccount": "已有账户？",
   "signIn": "登录",
+  "accessYourMulaAccount": "访问您的 MULA 账户",
+  "signInToYourAccount": "登录您的账户以继续",
+  "emailOrPhone": "邮箱或手机",
+  "enterEmailOrPhone": "输入您的邮箱或手机号码",
+  "forgotPassword": "忘记密码？",
+  "dontHaveAccount": "还没有账户？",
+  "signUp": "注册",
 
   "letsGetYouStarted": "让我们开始吧",
   "createFreeAccountDescription": "不到一分钟即可创建您的免费 MULA 账户。",
@@ -48,6 +55,7 @@
   "pinCreatedSuccessfully": "PIN 码创建成功",
   "pinCreatedDescription": "让我们完成您的账户注册",
   "continueButton": "继续",
+  "enterYourPin": "输入您的PIN码以继续",
 
   "tellUsAboutYou": "告诉我们关于您",
   "tellUsAboutYouDescription": "这有助于我们个性化您的 MULA 体验",
@@ -91,6 +99,7 @@
 
   "goodHandsTitle": "您在安全的手中",
   "goodHandsDescription": "投资可能听起来令人生畏，但使用 MULA，您无需成为专家即可开始。我们将引导您完成每一步，从关联您的账户到了解您的投资组合，让您充满信心地进行投资。",
+  "hereIsWhatYouCanExpect": "您可以期待以下内容：",
   "toolsToGrowKnowledge": "增长知识的工具",
   "supportWheneverNeeded": "随时为您提供支持",
   "guidanceToExplore": "探索投资机会的指导",

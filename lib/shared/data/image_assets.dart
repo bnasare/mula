@@ -3,4 +3,5 @@ class ImageAssets {
   static const String google = 'assets/images/google.png';
   static const String apple = 'assets/images/apple.png';
   static const String onboarding = 'assets/images/onboarding.png';
+  static const String faceId = 'assets/images/face_id.png';
 }

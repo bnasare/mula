@@ -138,66 +138,105 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                     style: TextStyle(
                       color: Colors.black54,
                       fontSize: context.responsiveFontSize(mobile: 14),
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
-                  SizedBox(height: context.responsiveSpacing(mobile: 8)),
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey.shade300),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: GestureDetector(
-                            onTap: () => setState(() => _selectedGender = 'male'),
+                  SizedBox(height: context.responsiveSpacing(mobile: 12)),
+                  Row(
+                    children: [
+                      // Male Option
+                      Expanded(
+                        child: GestureDetector(
+                          onTap: () => setState(() => _selectedGender = 'male'),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(vertical: 12),
+                            decoration: BoxDecoration(
+                              color: _selectedGender == 'male'
+                                  ? AppColors.appPrimary.withValues(alpha: 0.1)
+                                  : Colors.grey.shade50,
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(
+                                color: _selectedGender == 'male'
+                                    ? AppColors.appPrimary
+                                    : Colors.grey.shade300,
+                                width: _selectedGender == 'male' ? 0.6 : 1,
+                              ),
+                            ),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Radio<String>(
-                                  value: 'male',
-                                  groupValue: _selectedGender,
-                                  activeColor: AppColors.appPrimary,
-                                  onChanged: (value) =>
-                                      setState(() => _selectedGender = value),
+                                Icon(
+                                  Icons.male,
+                                  color: _selectedGender == 'male'
+                                      ? AppColors.appPrimary
+                                      : Colors.grey.shade600,
+                                  size: 24,
                                 ),
+                                const SizedBox(width: 8),
                                 Text(
                                   context.localize.male,
                                   style: TextStyle(
-                                    fontSize:
-                                        context.responsiveFontSize(mobile: 14),
+                                    fontSize: context.responsiveFontSize(
+                                      mobile: 15,
+                                    ),
+                                    color: _selectedGender == 'male'
+                                        ? AppColors.appPrimary
+                                        : AppColors.defaultText(context),
                                   ),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                        Expanded(
-                          child: GestureDetector(
-                            onTap: () =>
-                                setState(() => _selectedGender = 'female'),
+                      ),
+                      const SizedBox(width: 12),
+                      // Female Option
+                      Expanded(
+                        child: GestureDetector(
+                          onTap: () =>
+                              setState(() => _selectedGender = 'female'),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(vertical: 12),
+                            decoration: BoxDecoration(
+                              color: _selectedGender == 'female'
+                                  ? AppColors.appPrimary.withValues(alpha: 0.1)
+                                  : Colors.grey.shade50,
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(
+                                color: _selectedGender == 'female'
+                                    ? AppColors.appPrimary
+                                    : Colors.grey.shade300,
+                                width: _selectedGender == 'female' ? 0.6 : 1,
+                              ),
+                            ),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Radio<String>(
-                                  value: 'female',
-                                  groupValue: _selectedGender,
-                                  activeColor: AppColors.appPrimary,
-                                  onChanged: (value) =>
-                                      setState(() => _selectedGender = value),
+                                Icon(
+                                  Icons.female,
+                                  color: _selectedGender == 'female'
+                                      ? AppColors.appPrimary
+                                      : Colors.grey.shade600,
+                                  size: 24,
                                 ),
+                                const SizedBox(width: 8),
                                 Text(
                                   context.localize.female,
                                   style: TextStyle(
-                                    fontSize:
-                                        context.responsiveFontSize(mobile: 14),
+                                    fontSize: context.responsiveFontSize(
+                                      mobile: 15,
+                                    ),
+                                    color: _selectedGender == 'female'
+                                        ? AppColors.appPrimary
+                                        : AppColors.defaultText(context),
                                   ),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -220,7 +259,7 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                 labelText: context.localize.gpsAddress,
                 hintText: context.localize.enterGpsAddress,
                 suffixIcon: Icon(
-                  IconlyLight.location,
+                  IconlyLight.discovery,
                   color: Colors.grey.shade400,
                   size: 20,
                 ),

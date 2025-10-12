@@ -16,10 +16,7 @@ import 'investment_experience_screen.dart';
 class IdVerificationUploadScreen extends StatefulWidget {
   final String idType;
 
-  const IdVerificationUploadScreen({
-    super.key,
-    required this.idType,
-  });
+  const IdVerificationUploadScreen({super.key, required this.idType});
 
   @override
   State<IdVerificationUploadScreen> createState() =>
@@ -45,9 +42,7 @@ class _IdVerificationUploadScreenState
     super.dispose();
   }
 
-  void _showDatePicker({
-    required bool isIssueDate,
-  }) {
+  void _showDatePicker({required bool isIssueDate}) {
     showCupertinoModalPopup<void>(
       context: context,
       builder: (BuildContext context) => Container(
@@ -77,9 +72,9 @@ class _IdVerificationUploadScreenState
                   mode: CupertinoDatePickerMode.date,
                   initialDateTime: isIssueDate
                       ? (_selectedIssueDate ??
-                          DateTime.now().subtract(const Duration(days: 365)))
+                            DateTime.now().subtract(const Duration(days: 365)))
                       : (_selectedExpiryDate ??
-                          DateTime.now().add(const Duration(days: 365))),
+                            DateTime.now().add(const Duration(days: 365))),
                   maximumDate: isIssueDate ? DateTime.now() : null,
                   minimumDate: isIssueDate
                       ? DateTime(1900)
@@ -190,7 +185,7 @@ class _IdVerificationUploadScreenState
               // ID Number
               MulaTextField(
                 controller: _idNumberController,
-                labelText: '${_idTypeLabel} ${context.localize.number}',
+                labelText: '$_idTypeLabel ${context.localize.number}',
                 hintText: _idNumberHint,
                 suffixIcon: Icon(
                   IconlyLight.paper,
@@ -266,10 +261,8 @@ class _IdVerificationUploadScreenState
             height: 120,
             decoration: BoxDecoration(
               border: Border.all(
-                color: hasImage
-                    ? AppColors.appPrimary
-                    : Colors.grey.shade300,
-                width: hasImage ? 1.5 : 1,
+                color: hasImage ? AppColors.appPrimary : Colors.grey.shade300,
+                width: hasImage ? 0.6 : 1,
                 style: hasImage ? BorderStyle.solid : BorderStyle.solid,
               ),
               borderRadius: BorderRadius.circular(8),
@@ -297,7 +290,6 @@ class _IdVerificationUploadScreenState
                       color: hasImage
                           ? AppColors.appPrimary
                           : AppColors.appPrimary,
-                      fontWeight: hasImage ? FontWeight.w600 : FontWeight.w400,
                     ),
                   ),
                   if (!hasImage) ...[
