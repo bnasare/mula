@@ -24,5 +24,13 @@
   "byContinuingYouAgree": "Door verder te gaan, ga je akkoord met MULA's",
   "termsOfService": "Servicevoorwaarden",
   "and": "en",
-  "privacyPolicy": "Privacybeleid"
+  "privacyPolicy": "Privacybeleid",
+
+  "otpVerification": "OTP-verificatie",
+  "enterVerificationCode": "Voer de verificatiecode in die we zojuist naar je e-mailadres hebben gestuurd",
+  "phoneNumber": "Telefoonnummer",
+  "emailAddress2": "E-mailadres",
+  "verify": "Verifiëren",
+  "didntReceiveCode": "Code niet ontvangen?",
+  "resend": "Opnieuw verzenden"
 }

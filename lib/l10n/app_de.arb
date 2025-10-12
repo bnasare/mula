@@ -26,5 +26,13 @@
   "byContinuingYouAgree": "Indem Sie fortfahren, stimmen Sie den",
   "termsOfService": "Nutzungsbedingungen",
   "and": "und",
-  "privacyPolicy": "Datenschutzrichtlinie"
+  "privacyPolicy": "Datenschutzrichtlinie",
+
+  "otpVerification": "OTP-Verifizierung",
+  "enterVerificationCode": "Geben Sie den Bestätigungscode ein, den wir gerade an Ihre E-Mail-Adresse gesendet haben",
+  "phoneNumber": "Telefonnummer",
+  "emailAddress2": "E-Mail-Adresse",
+  "verify": "Verifizieren",
+  "didntReceiveCode": "Code nicht erhalten?",
+  "resend": "Erneut senden"
 }

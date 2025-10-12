@@ -8,10 +8,9 @@ import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../authentication/presentation/interface/screens/sign_up_screen.dart';
-import '../../bloc/onboarding_mixin.dart';
 
-class OnboardingScreen extends StatefulWidget with OnboardingMixin {
-  OnboardingScreen({super.key});
+class OnboardingScreen extends StatefulWidget {
+  const OnboardingScreen({super.key});
 
   @override
   State<OnboardingScreen> createState() => _OnboardingScreenState();
@@ -20,7 +19,7 @@ class OnboardingScreen extends StatefulWidget with OnboardingMixin {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   void _getStarted() {
     // widget.completeOnboardingChecks();
-    NavigationHelper.navigateToReplacement(context, const SignUpScreen());
+    NavigationHelper.navigateTo(context, const SignUpScreen());
   }
 
   void _signIn() {
@@ -35,7 +34,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Spacer(flex: 2),
 
@@ -50,7 +49,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
               ),
 
-              const AppSpacer.vLarger(),
+              const Spacer(flex: 1),
 
               // Welcome text
               AppText.rich(
@@ -60,7 +59,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     text: '${context.localize.welcomeTo} ',
                     style: const TextStyle(
                       fontSize: 28,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.w400,
                       color: Colors.black,
                     ),
                   ),
@@ -68,7 +67,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     text: context.localize.mula,
                     style: TextStyle(
                       fontSize: 28,
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w400,
                       color: AppColors.appPrimary,
                     ),
                   ),
@@ -81,10 +80,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               AppText.small(
                 context.localize.oneAppAllInvestments,
                 align: TextAlign.center,
-                style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  color: AppColors.black(context),
-                ),
+                style: TextStyle(color: AppColors.defaultText(context)),
               ),
 
               const AppSpacer.vShort(),
@@ -92,11 +88,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               // Description
               AppText.smaller(
                 context.localize.onboardingDescription,
-                align: TextAlign.center,
                 color: AppColors.secondaryText(context),
               ),
 
-              const Spacer(flex: 1),
+              const AppSpacer.vLarger(),
 
               // Get Started Button
               AppButton(
@@ -105,31 +100,34 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 textColor: Colors.white,
                 borderRadius: 12,
                 padding: EdgeInsets.zero,
+                height: 50,
                 onTap: _getStarted,
               ),
 
               const AppSpacer.vShort(),
 
               // Sign In Link
-              AppText.rich(
-                align: TextAlign.center,
-                children: [
-                  TextSpan(
-                    text: '${context.localize.alreadyHaveAccount} ',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: AppColors.secondaryText(context),
+              Center(
+                child: AppText.rich(
+                  align: TextAlign.center,
+                  children: [
+                    TextSpan(
+                      text: '${context.localize.alreadyHaveAccount} ',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: AppColors.secondaryText(context),
+                      ),
                     ),
-                  ),
-                  TextSpan(
-                    text: context.localize.signIn,
-                    style: const TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: AppColors.appPrimary,
+                    TextSpan(
+                      text: context.localize.signIn,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.appPrimary,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
 
               const AppSpacer.vLarge(),

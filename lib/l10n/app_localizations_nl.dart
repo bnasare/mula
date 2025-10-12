@@ -85,4 +85,26 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Privacybeleid';
+
+  @override
+  String get otpVerification => 'OTP-verificatie';
+
+  @override
+  String get enterVerificationCode =>
+      'Voer de verificatiecode in die we zojuist naar je e-mailadres hebben gestuurd';
+
+  @override
+  String get phoneNumber => 'Telefoonnummer';
+
+  @override
+  String get emailAddress2 => 'E-mailadres';
+
+  @override
+  String get verify => 'Verifiëren';
+
+  @override
+  String get didntReceiveCode => 'Code niet ontvangen?';
+
+  @override
+  String get resend => 'Opnieuw verzenden';
 }

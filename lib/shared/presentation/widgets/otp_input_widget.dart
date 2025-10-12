@@ -73,33 +73,45 @@ class _OTPInputWidgetState extends State<OTPInputWidget> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: List.generate(widget.length, (index) {
-        return Container(
-          width: context.responsiveValue(mobile: 55),
-          height: context.responsiveValue(mobile: 55),
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: AppColors.grey(context).withValues(alpha: 0.5),
-            ),
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: TextFormField(
-            controller: _controllers[index],
-            focusNode: _focusNodes[index],
-            keyboardType: TextInputType.number,
-            textAlign: TextAlign.center,
-            maxLength: 1,
-            style: TextStyle(
-              fontSize: context.responsiveFontSize(mobile: 18),
-              fontWeight: FontWeight.w600,
-              color: AppColors.black(context),
-            ),
-            decoration: const InputDecoration(
-              border: InputBorder.none,
-              counterText: '',
-              contentPadding: EdgeInsets.zero,
-            ),
-            onChanged: (value) => _onTextChanged(value, index),
-          ),
+        return ValueListenableBuilder<TextEditingValue>(
+          valueListenable: _controllers[index],
+          builder: (context, value, child) {
+            final hasValue = value.text.isNotEmpty;
+            return Container(
+              width: context.responsiveValue(mobile: 55),
+              height: context.responsiveValue(mobile: 55),
+              decoration: BoxDecoration(
+                color: hasValue
+                    ? AppColors.appPrimary.withValues(alpha: 0.1)
+                    : Colors.transparent,
+                border: Border.all(
+                  color: hasValue
+                      ? AppColors.appPrimary
+                      : AppColors.grey(context).withValues(alpha: 0.5),
+                  width: hasValue ? 1.5 : 1,
+                ),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: TextFormField(
+                controller: _controllers[index],
+                focusNode: _focusNodes[index],
+                keyboardType: TextInputType.number,
+                textAlign: TextAlign.center,
+                maxLength: 1,
+                style: TextStyle(
+                  fontSize: context.responsiveFontSize(mobile: 18),
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.black(context),
+                ),
+                decoration: const InputDecoration(
+                  border: InputBorder.none,
+                  counterText: '',
+                  contentPadding: EdgeInsets.zero,
+                ),
+                onChanged: (value) => _onTextChanged(value, index),
+              ),
+            );
+          },
         );
       }),
     );

@@ -84,4 +84,26 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Privacy Policy';
+
+  @override
+  String get otpVerification => 'OTP Verification';
+
+  @override
+  String get enterVerificationCode =>
+      'Enter the verification code we just sent to your email address';
+
+  @override
+  String get phoneNumber => 'Phone number';
+
+  @override
+  String get emailAddress2 => 'Email address';
+
+  @override
+  String get verify => 'Verify';
+
+  @override
+  String get didntReceiveCode => 'Didn\'t receive the code?';
+
+  @override
+  String get resend => 'Resend';
 }

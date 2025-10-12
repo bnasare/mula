@@ -84,4 +84,26 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'गोपनीयता नीति';
+
+  @override
+  String get otpVerification => 'OTP सत्यापन';
+
+  @override
+  String get enterVerificationCode =>
+      'वह सत्यापन कोड दर्ज करें जो हमने अभी आपके ईमेल पते पर भेजा है';
+
+  @override
+  String get phoneNumber => 'फोन नंबर';
+
+  @override
+  String get emailAddress2 => 'ईमेल पता';
+
+  @override
+  String get verify => 'सत्यापित करें';
+
+  @override
+  String get didntReceiveCode => 'कोड प्राप्त नहीं हुआ?';
+
+  @override
+  String get resend => 'पुनः भेजें';
 }

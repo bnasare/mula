@@ -84,4 +84,26 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Datenschutzrichtlinie';
+
+  @override
+  String get otpVerification => 'OTP-Verifizierung';
+
+  @override
+  String get enterVerificationCode =>
+      'Geben Sie den Bestätigungscode ein, den wir gerade an Ihre E-Mail-Adresse gesendet haben';
+
+  @override
+  String get phoneNumber => 'Telefonnummer';
+
+  @override
+  String get emailAddress2 => 'E-Mail-Adresse';
+
+  @override
+  String get verify => 'Verifizieren';
+
+  @override
+  String get didntReceiveCode => 'Code nicht erhalten?';
+
+  @override
+  String get resend => 'Erneut senden';
 }

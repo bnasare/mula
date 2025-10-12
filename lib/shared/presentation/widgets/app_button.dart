@@ -43,7 +43,7 @@ class AppButton extends StatelessWidget {
             right: context.responsiveValue(mobile: 16.0),
             top: context.responsiveValue(mobile: 16.0),
           ),
-      height: height,
+      height: height ?? 50, // Default height of 50
       width: width ?? double.infinity,
       child: ElevatedButton(
         onPressed: onTap,
@@ -53,10 +53,9 @@ class AppButton extends StatelessWidget {
           shape: WidgetStateProperty.all(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(borderRadius ?? 30),
-              side:
-                  borderColor != null
-                      ? BorderSide(color: borderColor!, width: borderWidth!)
-                      : BorderSide.none,
+              side: borderColor != null
+                  ? BorderSide(color: borderColor!, width: borderWidth!)
+                  : BorderSide.none,
             ),
           ),
           padding: WidgetStateProperty.all(
@@ -72,9 +71,9 @@ class AppButton extends StatelessWidget {
             FittedBox(
               fit: BoxFit.scaleDown,
               alignment: Alignment.center,
-              child: AppText.smaller(
+              child: AppText.small(
                 text ?? 'Continue',
-                style: TextStyle(fontWeight: FontWeight.w600, color: textColor),
+                style: TextStyle(fontWeight: FontWeight.w500, color: textColor),
               ),
             ),
       ),

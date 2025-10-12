@@ -83,4 +83,25 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'プライバシーポリシー';
+
+  @override
+  String get otpVerification => 'OTP認証';
+
+  @override
+  String get enterVerificationCode => 'メールアドレスに送信した認証コードを入力してください';
+
+  @override
+  String get phoneNumber => '電話番号';
+
+  @override
+  String get emailAddress2 => 'メールアドレス';
+
+  @override
+  String get verify => '認証する';
+
+  @override
+  String get didntReceiveCode => 'コードが届きませんでしたか？';
+
+  @override
+  String get resend => '再送信';
 }

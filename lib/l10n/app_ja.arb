@@ -24,5 +24,13 @@
   "byContinuingYouAgree": "続行することで、MULAの",
   "termsOfService": "利用規約",
   "and": "および",
-  "privacyPolicy": "プライバシーポリシー"
+  "privacyPolicy": "プライバシーポリシー",
+
+  "otpVerification": "OTP認証",
+  "enterVerificationCode": "メールアドレスに送信した認証コードを入力してください",
+  "phoneNumber": "電話番号",
+  "emailAddress2": "メールアドレス",
+  "verify": "認証する",
+  "didntReceiveCode": "コードが届きませんでしたか？",
+  "resend": "再送信"
 }

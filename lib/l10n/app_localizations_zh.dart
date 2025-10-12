@@ -83,4 +83,25 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get privacyPolicy => '隐私政策';
+
+  @override
+  String get otpVerification => 'OTP 验证';
+
+  @override
+  String get enterVerificationCode => '输入我们刚刚发送到您电子邮箱的验证码';
+
+  @override
+  String get phoneNumber => '电话号码';
+
+  @override
+  String get emailAddress2 => '电子邮箱';
+
+  @override
+  String get verify => '验证';
+
+  @override
+  String get didntReceiveCode => '没有收到验证码？';
+
+  @override
+  String get resend => '重新发送';
 }

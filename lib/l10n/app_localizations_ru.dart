@@ -84,4 +84,26 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Политикой конфиденциальности';
+
+  @override
+  String get otpVerification => 'OTP-верификация';
+
+  @override
+  String get enterVerificationCode =>
+      'Введите проверочный код, который мы только что отправили на ваш адрес электронной почты';
+
+  @override
+  String get phoneNumber => 'Номер телефона';
+
+  @override
+  String get emailAddress2 => 'Адрес электронной почты';
+
+  @override
+  String get verify => 'Подтвердить';
+
+  @override
+  String get didntReceiveCode => 'Не получили код?';
+
+  @override
+  String get resend => 'Отправить снова';
 }

@@ -26,5 +26,13 @@
   "byContinuingYouAgree": "By continuing, you agree to MULA's",
   "termsOfService": "Terms of Service",
   "and": "and",
-  "privacyPolicy": "Privacy Policy"
+  "privacyPolicy": "Privacy Policy",
+
+  "otpVerification": "OTP Verification",
+  "enterVerificationCode": "Enter the verification code we just sent to your email address",
+  "phoneNumber": "Phone number",
+  "emailAddress2": "Email address",
+  "verify": "Verify",
+  "didntReceiveCode": "Didn't receive the code?",
+  "resend": "Resend"
 }

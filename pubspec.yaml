@@ -79,6 +79,7 @@ dependencies:
   intl: ^0.20.2
   url_launcher: ^6.3.1
   crypto: ^3.0.6
+  intl_phone_field: ^3.2.0
 
   # Code generation
   json_annotation: ^4.9.0

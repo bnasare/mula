@@ -26,5 +26,13 @@
   "byContinuingYouAgree": "Ao continuar, você concorda com os",
   "termsOfService": "Termos de Serviço",
   "and": "e",
-  "privacyPolicy": "Política de Privacidade"
+  "privacyPolicy": "Política de Privacidade",
+
+  "otpVerification": "Verificação OTP",
+  "enterVerificationCode": "Digite o código de verificação que acabamos de enviar para seu endereço de e-mail",
+  "phoneNumber": "Número de telefone",
+  "emailAddress2": "Endereço de e-mail",
+  "verify": "Verificar",
+  "didntReceiveCode": "Não recebeu o código?",
+  "resend": "Reenviar"
 }

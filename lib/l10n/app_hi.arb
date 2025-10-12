@@ -24,5 +24,13 @@
   "byContinuingYouAgree": "जारी रखकर, आप MULA की सहमति देते हैं",
   "termsOfService": "सेवा की शर्तें",
   "and": "और",
-  "privacyPolicy": "गोपनीयता नीति"
+  "privacyPolicy": "गोपनीयता नीति",
+
+  "otpVerification": "OTP सत्यापन",
+  "enterVerificationCode": "वह सत्यापन कोड दर्ज करें जो हमने अभी आपके ईमेल पते पर भेजा है",
+  "phoneNumber": "फोन नंबर",
+  "emailAddress2": "ईमेल पता",
+  "verify": "सत्यापित करें",
+  "didntReceiveCode": "कोड प्राप्त नहीं हुआ?",
+  "resend": "पुनः भेजें"
 }
