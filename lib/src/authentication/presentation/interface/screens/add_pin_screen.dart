@@ -9,6 +9,7 @@ import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
+import 'tell_us_about_you_screen.dart';
 
 class AddPinScreen extends StatefulWidget {
   const AddPinScreen({super.key});
@@ -61,8 +62,11 @@ class _AddPinScreenState extends State<AddPinScreen> {
           description: context.localize.pinCreatedDescription,
           primaryButtonText: context.localize.continueButton,
           onPrimaryButtonTap: () {
-            // TODO: Navigate to home or next screen
-            Navigator.of(context).popUntil((route) => route.isFirst);
+            // Navigate to Tell Us About You screen
+            NavigationHelper.navigateTo(
+              context,
+              const TellUsAboutYouScreen(),
+            );
           },
         ),
       );
@@ -77,7 +81,7 @@ class _AddPinScreenState extends State<AddPinScreen> {
         backgroundColor: AppColors.white(context),
         title: context.localize.security,
         currentStep: 4,
-        totalSteps: 5,
+        totalSteps: 11,
         progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
         onBackPressed: () => Navigator.pop(context),
       ),

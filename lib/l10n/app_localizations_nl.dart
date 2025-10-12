@@ -146,4 +146,167 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get continueButton => 'Doorgaan';
+
+  @override
+  String get tellUsAboutYou => 'Vertel ons over jezelf';
+
+  @override
+  String get tellUsAboutYouDescription =>
+      'Dit helpt ons je MULA-ervaring te personaliseren';
+
+  @override
+  String get dateOfBirth => 'Geboortedatum';
+
+  @override
+  String get selectDate => 'Selecteer datum';
+
+  @override
+  String get gender => 'Geslacht';
+
+  @override
+  String get male => 'Man';
+
+  @override
+  String get female => 'Vrouw';
+
+  @override
+  String get residentialAddress => 'Woonadres';
+
+  @override
+  String get enterResidentialAddress => 'Voer je woonadres in';
+
+  @override
+  String get gpsAddress => 'GPS-adres';
+
+  @override
+  String get enterGpsAddress => 'Voer je GPS-adres in';
+
+  @override
+  String get occupation => 'Beroep';
+
+  @override
+  String get whatIsYourOccupation => 'Wat is je beroep?';
+
+  @override
+  String get idVerification => 'ID-verificatie';
+
+  @override
+  String get selectIdType =>
+      'Selecteer een ID-type om je identiteit te verifiëren';
+
+  @override
+  String get ghanaCard => 'Ghana-kaart';
+
+  @override
+  String get driversLicense => 'Rijbewijs';
+
+  @override
+  String get passport => 'Paspoort';
+
+  @override
+  String get uploadDocumentsDescription =>
+      'Upload je documenten veilig om je identiteit te verifiëren en je account in te stellen';
+
+  @override
+  String get pictureOfFront => 'Foto van de voorkant';
+
+  @override
+  String get pictureOfBack => 'Foto van de achterkant';
+
+  @override
+  String get tapToUpload => 'Tik om te uploaden';
+
+  @override
+  String get imageUploaded => 'Afbeelding geüpload';
+
+  @override
+  String get maxSize => 'Max grootte: 2MB';
+
+  @override
+  String get number => 'Nummer';
+
+  @override
+  String get issueDate => 'Uitgiftedatum';
+
+  @override
+  String get expiryDate => 'Vervaldatum';
+
+  @override
+  String get next => 'Volgende';
+
+  @override
+  String get investmentExperience => 'Je beleggingservaring';
+
+  @override
+  String get investmentExperienceDescription =>
+      'Dit helpt ons de beste tools, bronnen en lay-out voor je te aanbevelen';
+
+  @override
+  String get beginner => 'Beginner';
+
+  @override
+  String get beginnerDescription =>
+      'Ik ben net begonnen. Ik wil de basisprincipes leren.';
+
+  @override
+  String get intermediate => 'Gemiddeld';
+
+  @override
+  String get intermediateDescription =>
+      'Ik heb wat belegd en begrijp hoe dingen werken.';
+
+  @override
+  String get advanced => 'Gevorderd';
+
+  @override
+  String get advancedDescription =>
+      'Ik ben ervaren en wil volledige toegang tot geavanceerde tools.';
+
+  @override
+  String get goodHandsTitle => 'Je bent in goede handen';
+
+  @override
+  String get goodHandsDescription =>
+      'Beleggen kan intimiderend klinken, maar met MULA hoef je geen expert te zijn om te beginnen. We begeleiden je bij elke stap, van het koppelen van je accounts tot het begrijpen van je portfolio, zodat je met vertrouwen kunt beleggen.';
+
+  @override
+  String get toolsToGrowKnowledge => 'Tools om je kennis te vergroten';
+
+  @override
+  String get supportWheneverNeeded => 'Ondersteuning wanneer je het nodig hebt';
+
+  @override
+  String get guidanceToExplore =>
+      'Begeleiding om beleggingsmogelijkheden te verkennen';
+
+  @override
+  String get simpleExplanations => 'Eenvoudige uitleg bij elke stap';
+
+  @override
+  String get linkInvestmentAccounts => 'Koppel je beleggingsaccounts';
+
+  @override
+  String get linkAccountsDescription =>
+      'Dit helpt ons je alles wat je bezit op één plek te laten zien';
+
+  @override
+  String get csdAccount => 'Ik heb een CSD-account';
+
+  @override
+  String get csdAccountDescription =>
+      'Voor effecten zoals aandelen, obligaties en schatkistpapier';
+
+  @override
+  String get cisAccount => 'Ik heb een CIS-account';
+
+  @override
+  String get cisAccountDescription =>
+      'Van fondsbeheerders zoals Databank, EDC, enz.';
+
+  @override
+  String get dontHaveAccount => 'Heb je geen account?';
+
+  @override
+  String get dontHaveAccountDescription =>
+      'Je kunt een account aanmaken en vandaag nog beginnen met beleggen';
 }

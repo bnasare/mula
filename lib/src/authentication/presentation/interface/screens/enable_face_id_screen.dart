@@ -12,6 +12,7 @@ import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import 'add_pin_screen.dart';
+import 'tell_us_about_you_screen.dart';
 
 class EnableFaceIdScreen extends StatelessWidget {
   const EnableFaceIdScreen({super.key});
@@ -24,7 +25,7 @@ class EnableFaceIdScreen extends StatelessWidget {
         backgroundColor: AppColors.white(context),
         title: context.localize.security,
         currentStep: 3,
-        totalSteps: 5,
+        totalSteps: 11,
         progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
         onBackPressed: () => Navigator.pop(context),
       ),
@@ -71,11 +72,11 @@ class EnableFaceIdScreen extends StatelessWidget {
                       },
                       secondaryButtonText: context.localize.skip,
                       onSecondaryButtonTap: () {
-                        // TODO: Navigate to home or next screen
-                        // For now, just pop multiple screens
-                        Navigator.of(
+                        // Navigate to Tell Us About You screen
+                        NavigationHelper.navigateTo(
                           context,
-                        ).popUntil((route) => route.isFirst);
+                          const TellUsAboutYouScreen(),
+                        );
                       },
                     ),
                   );

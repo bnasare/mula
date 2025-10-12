@@ -146,4 +146,167 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get continueButton => 'Continuer';
+
+  @override
+  String get tellUsAboutYou => 'Parlez-nous de Vous';
+
+  @override
+  String get tellUsAboutYouDescription =>
+      'Cela nous aide à personnaliser votre expérience MULA';
+
+  @override
+  String get dateOfBirth => 'Date de Naissance';
+
+  @override
+  String get selectDate => 'Sélectionner la date';
+
+  @override
+  String get gender => 'Genre';
+
+  @override
+  String get male => 'Homme';
+
+  @override
+  String get female => 'Femme';
+
+  @override
+  String get residentialAddress => 'Adresse Résidentielle';
+
+  @override
+  String get enterResidentialAddress => 'Entrez votre adresse résidentielle';
+
+  @override
+  String get gpsAddress => 'Adresse GPS';
+
+  @override
+  String get enterGpsAddress => 'Entrez Votre Adresse GPS';
+
+  @override
+  String get occupation => 'Profession';
+
+  @override
+  String get whatIsYourOccupation => 'Quelle est votre profession?';
+
+  @override
+  String get idVerification => 'Vérification d\'Identité';
+
+  @override
+  String get selectIdType =>
+      'Sélectionnez un type d\'ID pour vérifier votre identité';
+
+  @override
+  String get ghanaCard => 'Carte du Ghana';
+
+  @override
+  String get driversLicense => 'Permis de Conduire';
+
+  @override
+  String get passport => 'Passeport';
+
+  @override
+  String get uploadDocumentsDescription =>
+      'Téléchargez vos documents en toute sécurité pour vérifier votre identité et terminer la configuration de votre compte';
+
+  @override
+  String get pictureOfFront => 'Photo du recto';
+
+  @override
+  String get pictureOfBack => 'Photo du verso';
+
+  @override
+  String get tapToUpload => 'Appuyez pour télécharger';
+
+  @override
+  String get imageUploaded => 'Image téléchargée';
+
+  @override
+  String get maxSize => 'Taille max: 2MB';
+
+  @override
+  String get number => 'Numéro';
+
+  @override
+  String get issueDate => 'Date d\'émission';
+
+  @override
+  String get expiryDate => 'Date d\'expiration';
+
+  @override
+  String get next => 'Suivant';
+
+  @override
+  String get investmentExperience => 'Votre Expérience d\'Investissement';
+
+  @override
+  String get investmentExperienceDescription =>
+      'Cela nous aide à recommander les meilleurs outils, ressources et mise en page pour vous';
+
+  @override
+  String get beginner => 'Débutant';
+
+  @override
+  String get beginnerDescription => 'Je débute. Je veux apprendre les bases.';
+
+  @override
+  String get intermediate => 'Intermédiaire';
+
+  @override
+  String get intermediateDescription =>
+      'J\'ai investi un peu et je comprends comment les choses fonctionnent.';
+
+  @override
+  String get advanced => 'Avancé';
+
+  @override
+  String get advancedDescription =>
+      'J\'ai de l\'expérience et je veux un accès complet aux outils avancés.';
+
+  @override
+  String get goodHandsTitle => 'Vous êtes entre de bonnes mains';
+
+  @override
+  String get goodHandsDescription =>
+      'L\'investissement peut sembler intimidant, mais avec MULA, vous n\'avez pas besoin d\'être un expert pour commencer. Nous vous guiderons à chaque étape, de la liaison de vos comptes à la compréhension de votre portefeuille, pour que vous puissiez investir en toute confiance.';
+
+  @override
+  String get toolsToGrowKnowledge =>
+      'Des outils pour développer vos connaissances';
+
+  @override
+  String get supportWheneverNeeded => 'Un support quand vous en avez besoin';
+
+  @override
+  String get guidanceToExplore =>
+      'Des conseils pour explorer les opportunités d\'investissement';
+
+  @override
+  String get simpleExplanations => 'Des explications simples à chaque étape';
+
+  @override
+  String get linkInvestmentAccounts => 'Liez Vos Comptes d\'Investissement';
+
+  @override
+  String get linkAccountsDescription =>
+      'Cela nous aide à vous montrer tout ce que vous possédez, en un seul endroit';
+
+  @override
+  String get csdAccount => 'J\'ai un compte CSD';
+
+  @override
+  String get csdAccountDescription =>
+      'Pour les titres comme les actions, les obligations et les bons du Trésor';
+
+  @override
+  String get cisAccount => 'J\'ai un compte CIS';
+
+  @override
+  String get cisAccountDescription =>
+      'De gestionnaires de fonds comme Databank, EDC, etc.';
+
+  @override
+  String get dontHaveAccount => 'Vous n\'avez pas de compte?';
+
+  @override
+  String get dontHaveAccountDescription =>
+      'Vous pouvez créer un compte et commencer à investir aujourd\'hui';
 }

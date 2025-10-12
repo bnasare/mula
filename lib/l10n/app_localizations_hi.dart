@@ -144,4 +144,166 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get continueButton => 'जारी रखें';
+
+  @override
+  String get tellUsAboutYou => 'हमें अपने बारे में बताएं';
+
+  @override
+  String get tellUsAboutYouDescription =>
+      'यह हमें आपके MULA अनुभव को वैयक्तिकृत करने में मदद करता है';
+
+  @override
+  String get dateOfBirth => 'जन्म तिथि';
+
+  @override
+  String get selectDate => 'तिथि चुनें';
+
+  @override
+  String get gender => 'लिंग';
+
+  @override
+  String get male => 'पुरुष';
+
+  @override
+  String get female => 'महिला';
+
+  @override
+  String get residentialAddress => 'आवासीय पता';
+
+  @override
+  String get enterResidentialAddress => 'अपना आवासीय पता दर्ज करें';
+
+  @override
+  String get gpsAddress => 'GPS पता';
+
+  @override
+  String get enterGpsAddress => 'अपना GPS पता दर्ज करें';
+
+  @override
+  String get occupation => 'पेशा';
+
+  @override
+  String get whatIsYourOccupation => 'आपका पेशा क्या है?';
+
+  @override
+  String get idVerification => 'पहचान सत्यापन';
+
+  @override
+  String get selectIdType =>
+      'अपनी पहचान सत्यापित करने के लिए एक आईडी प्रकार चुनें';
+
+  @override
+  String get ghanaCard => 'घाना कार्ड';
+
+  @override
+  String get driversLicense => 'ड्राइविंग लाइसेंस';
+
+  @override
+  String get passport => 'पासपोर्ट';
+
+  @override
+  String get uploadDocumentsDescription =>
+      'अपनी पहचान सत्यापित करने और अपने खाते की सेटअप पूरी करने के लिए अपने दस्तावेज़ सुरक्षित रूप से अपलोड करें';
+
+  @override
+  String get pictureOfFront => 'सामने की तस्वीर';
+
+  @override
+  String get pictureOfBack => 'पीछे की तस्वीर';
+
+  @override
+  String get tapToUpload => 'अपलोड करने के लिए टैप करें';
+
+  @override
+  String get imageUploaded => 'छवि अपलोड की गई';
+
+  @override
+  String get maxSize => 'अधिकतम आकार: 2MB';
+
+  @override
+  String get number => 'नंबर';
+
+  @override
+  String get issueDate => 'जारी करने की तिथि';
+
+  @override
+  String get expiryDate => 'समाप्ति तिथि';
+
+  @override
+  String get next => 'अगला';
+
+  @override
+  String get investmentExperience => 'आपका निवेश अनुभव';
+
+  @override
+  String get investmentExperienceDescription =>
+      'यह हमें आपके लिए सर्वोत्तम टूल, संसाधन और लेआउट की अनुशंसा करने में मदद करता है';
+
+  @override
+  String get beginner => 'शुरुआती';
+
+  @override
+  String get beginnerDescription =>
+      'मैं अभी शुरुआत कर रहा हूं। मैं मूल बातें सीखना चाहता हूं।';
+
+  @override
+  String get intermediate => 'मध्यवर्ती';
+
+  @override
+  String get intermediateDescription =>
+      'मैंने कुछ निवेश किया है और समझता हूं कि चीजें कैसे काम करती हैं।';
+
+  @override
+  String get advanced => 'उन्नत';
+
+  @override
+  String get advancedDescription =>
+      'मैं अनुभवी हूं और उन्नत टूल तक पूर्ण पहुंच चाहता हूं।';
+
+  @override
+  String get goodHandsTitle => 'आप अच्छे हाथों में हैं';
+
+  @override
+  String get goodHandsDescription =>
+      'निवेश भयावह लग सकता है, लेकिन MULA के साथ, आपको शुरू करने के लिए विशेषज्ञ होने की आवश्यकता नहीं है। हम आपको हर कदम पर मार्गदर्शन करेंगे, आपके खातों को लिंक करने से लेकर आपके पोर्टफोलियो को समझने तक, ताकि आप आत्मविश्वास के साथ निवेश कर सकें।';
+
+  @override
+  String get toolsToGrowKnowledge => 'अपने ज्ञान को बढ़ाने के लिए उपकरण';
+
+  @override
+  String get supportWheneverNeeded => 'जब भी आपको इसकी आवश्यकता हो सहायता';
+
+  @override
+  String get guidanceToExplore =>
+      'निवेश के अवसरों का पता लगाने के लिए मार्गदर्शन';
+
+  @override
+  String get simpleExplanations => 'हर कदम पर सरल स्पष्टीकरण';
+
+  @override
+  String get linkInvestmentAccounts => 'अपने निवेश खातों को लिंक करें';
+
+  @override
+  String get linkAccountsDescription =>
+      'यह हमें आपकी स्वामित्व वाली हर चीज़ को एक ही स्थान पर दिखाने में मदद करता है';
+
+  @override
+  String get csdAccount => 'मेरे पास CSD खाता है';
+
+  @override
+  String get csdAccountDescription =>
+      'स्टॉक, बॉन्ड और ट्रेजरी बिल जैसी प्रतिभूतियों के लिए';
+
+  @override
+  String get cisAccount => 'मेरे पास CIS खाता है';
+
+  @override
+  String get cisAccountDescription => 'Databank, EDC आदि जैसे फंड मैनेजरों से';
+
+  @override
+  String get dontHaveAccount => 'खाता नहीं है?';
+
+  @override
+  String get dontHaveAccountDescription =>
+      'आप एक खाता बना सकते हैं और आज ही निवेश करना शुरू कर सकते हैं';
 }

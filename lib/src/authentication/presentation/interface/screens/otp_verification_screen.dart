@@ -81,7 +81,7 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
           backgroundColor: AppColors.white(context),
           title: context.localize.otpVerification,
           currentStep: 2,
-          totalSteps: 5,
+          totalSteps: 11,
           progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
           onBackPressed: () => Navigator.pop(context),
         ),

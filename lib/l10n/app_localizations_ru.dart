@@ -145,4 +145,167 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get continueButton => 'Продолжить';
+
+  @override
+  String get tellUsAboutYou => 'Расскажите о себе';
+
+  @override
+  String get tellUsAboutYouDescription =>
+      'Это помогает нам персонализировать ваш опыт MULA';
+
+  @override
+  String get dateOfBirth => 'Дата рождения';
+
+  @override
+  String get selectDate => 'Выбрать дату';
+
+  @override
+  String get gender => 'Пол';
+
+  @override
+  String get male => 'Мужской';
+
+  @override
+  String get female => 'Женский';
+
+  @override
+  String get residentialAddress => 'Адрес проживания';
+
+  @override
+  String get enterResidentialAddress => 'Введите ваш адрес проживания';
+
+  @override
+  String get gpsAddress => 'GPS-адрес';
+
+  @override
+  String get enterGpsAddress => 'Введите ваш GPS-адрес';
+
+  @override
+  String get occupation => 'Род занятий';
+
+  @override
+  String get whatIsYourOccupation => 'Каким вы занимаетесь?';
+
+  @override
+  String get idVerification => 'Проверка личности';
+
+  @override
+  String get selectIdType =>
+      'Выберите тип удостоверения для подтверждения личности';
+
+  @override
+  String get ghanaCard => 'Карта Ганы';
+
+  @override
+  String get driversLicense => 'Водительские права';
+
+  @override
+  String get passport => 'Паспорт';
+
+  @override
+  String get uploadDocumentsDescription =>
+      'Безопасно загрузите свои документы для подтверждения личности и завершения настройки аккаунта';
+
+  @override
+  String get pictureOfFront => 'Фото лицевой стороны';
+
+  @override
+  String get pictureOfBack => 'Фото обратной стороны';
+
+  @override
+  String get tapToUpload => 'Нажмите, чтобы загрузить';
+
+  @override
+  String get imageUploaded => 'Изображение загружено';
+
+  @override
+  String get maxSize => 'Макс. размер: 2MB';
+
+  @override
+  String get number => 'Номер';
+
+  @override
+  String get issueDate => 'Дата выдачи';
+
+  @override
+  String get expiryDate => 'Дата истечения';
+
+  @override
+  String get next => 'Далее';
+
+  @override
+  String get investmentExperience => 'Ваш Опыт Инвестирования';
+
+  @override
+  String get investmentExperienceDescription =>
+      'Это помогает нам рекомендовать лучшие инструменты, ресурсы и макет для вас';
+
+  @override
+  String get beginner => 'Новичок';
+
+  @override
+  String get beginnerDescription => 'Я только начинаю. Хочу изучить основы.';
+
+  @override
+  String get intermediate => 'Средний уровень';
+
+  @override
+  String get intermediateDescription =>
+      'Я немного инвестировал и понимаю, как все работает.';
+
+  @override
+  String get advanced => 'Продвинутый';
+
+  @override
+  String get advancedDescription =>
+      'Я опытный и хочу полный доступ к продвинутым инструментам.';
+
+  @override
+  String get goodHandsTitle => 'Вы в надежных руках';
+
+  @override
+  String get goodHandsDescription =>
+      'Инвестирование может показаться пугающим, но с MULA вам не нужно быть экспертом, чтобы начать. Мы проведем вас через каждый шаг, от привязки ваших счетов до понимания вашего портфеля, чтобы вы могли инвестировать с уверенностью.';
+
+  @override
+  String get toolsToGrowKnowledge => 'Инструменты для расширения ваших знаний';
+
+  @override
+  String get supportWheneverNeeded =>
+      'Поддержка в любое время, когда вам нужна';
+
+  @override
+  String get guidanceToExplore =>
+      'Руководство для изучения инвестиционных возможностей';
+
+  @override
+  String get simpleExplanations => 'Простые объяснения на каждом шагу';
+
+  @override
+  String get linkInvestmentAccounts => 'Привяжите Ваши Инвестиционные Счета';
+
+  @override
+  String get linkAccountsDescription =>
+      'Это помогает нам показать все, что вы владеете, в одном месте';
+
+  @override
+  String get csdAccount => 'У меня есть счет CSD';
+
+  @override
+  String get csdAccountDescription =>
+      'Для ценных бумаг, таких как акции, облигации и казначейские векселя';
+
+  @override
+  String get cisAccount => 'У меня есть счет CIS';
+
+  @override
+  String get cisAccountDescription =>
+      'От управляющих фондами, таких как Databank, EDC и т. д.';
+
+  @override
+  String get dontHaveAccount => 'Нет счета?';
+
+  @override
+  String get dontHaveAccountDescription =>
+      'Вы можете создать счет и начать инвестировать сегодня';
 }

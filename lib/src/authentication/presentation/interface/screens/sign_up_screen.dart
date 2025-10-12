@@ -55,7 +55,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           backgroundColor: AppColors.white(context),
           title: context.localize.letsGetYouStarted,
           currentStep: 1,
-          totalSteps: 5,
+          totalSteps: 11,
           progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
           onBackPressed: () => Navigator.pop(context),
         ),

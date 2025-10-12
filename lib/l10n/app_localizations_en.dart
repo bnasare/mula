@@ -144,4 +144,166 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get continueButton => 'Continue';
+
+  @override
+  String get tellUsAboutYou => 'Tell Us About You';
+
+  @override
+  String get tellUsAboutYouDescription =>
+      'This helps us personalize your MULA experience';
+
+  @override
+  String get dateOfBirth => 'Date of Birth';
+
+  @override
+  String get selectDate => 'Select date';
+
+  @override
+  String get gender => 'Gender';
+
+  @override
+  String get male => 'Male';
+
+  @override
+  String get female => 'Female';
+
+  @override
+  String get residentialAddress => 'Residential Address';
+
+  @override
+  String get enterResidentialAddress => 'Enter your residential address';
+
+  @override
+  String get gpsAddress => 'GPS address';
+
+  @override
+  String get enterGpsAddress => 'Enter Your GPS address';
+
+  @override
+  String get occupation => 'Occupation';
+
+  @override
+  String get whatIsYourOccupation => 'What is your occupation?';
+
+  @override
+  String get idVerification => 'ID Verification';
+
+  @override
+  String get selectIdType => 'Select an ID type to verify your identity';
+
+  @override
+  String get ghanaCard => 'Ghana Card';
+
+  @override
+  String get driversLicense => 'Driver\'s License';
+
+  @override
+  String get passport => 'Passport';
+
+  @override
+  String get uploadDocumentsDescription =>
+      'Upload your documents securely to verify your identity and finish setting up your account';
+
+  @override
+  String get pictureOfFront => 'Picture of the front';
+
+  @override
+  String get pictureOfBack => 'Picture of the back';
+
+  @override
+  String get tapToUpload => 'Tap to upload';
+
+  @override
+  String get imageUploaded => 'Image uploaded';
+
+  @override
+  String get maxSize => 'Max size: 2MB';
+
+  @override
+  String get number => 'Number';
+
+  @override
+  String get issueDate => 'Issue date';
+
+  @override
+  String get expiryDate => 'Expiry date';
+
+  @override
+  String get next => 'Next';
+
+  @override
+  String get investmentExperience => 'Your Investment Experience';
+
+  @override
+  String get investmentExperienceDescription =>
+      'This helps us recommend the best tools, resources and layout for you';
+
+  @override
+  String get beginner => 'Beginner';
+
+  @override
+  String get beginnerDescription =>
+      'I\'m just starting out. I want to learn the basics.';
+
+  @override
+  String get intermediate => 'Intermediate';
+
+  @override
+  String get intermediateDescription =>
+      'I\'ve done some investing and understand how things work.';
+
+  @override
+  String get advanced => 'Advanced';
+
+  @override
+  String get advancedDescription =>
+      'I\'m experienced and want full access to advanced tools.';
+
+  @override
+  String get goodHandsTitle => 'You\'re in good hands';
+
+  @override
+  String get goodHandsDescription =>
+      'Investing might sound intimidating, but with MULA, you don\'t need to be an expert to start. We\'ll walk you through every step, from linking your accounts to understanding your portfolio, so you can invest with confidence.';
+
+  @override
+  String get toolsToGrowKnowledge => 'Tools to grow your knowledge';
+
+  @override
+  String get supportWheneverNeeded => 'Support whenever you need it';
+
+  @override
+  String get guidanceToExplore =>
+      'Guidance to explore investment opportunities';
+
+  @override
+  String get simpleExplanations => 'Simple explanations at every step';
+
+  @override
+  String get linkInvestmentAccounts => 'Link Your Investment Accounts';
+
+  @override
+  String get linkAccountsDescription =>
+      'This helps us show everything you own, in one place';
+
+  @override
+  String get csdAccount => 'I have a CSD account';
+
+  @override
+  String get csdAccountDescription =>
+      'For securities like stocks, bonds and T-bills';
+
+  @override
+  String get cisAccount => 'I have a CIS account';
+
+  @override
+  String get cisAccountDescription =>
+      'From Fund Managers like Databank, EDC, etc.';
+
+  @override
+  String get dontHaveAccount => 'Don\'t have an account?';
+
+  @override
+  String get dontHaveAccountDescription =>
+      'You can create an account and start investing today';
 }

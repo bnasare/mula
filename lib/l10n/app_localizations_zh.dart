@@ -141,4 +141,155 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get continueButton => '继续';
+
+  @override
+  String get tellUsAboutYou => '告诉我们关于您';
+
+  @override
+  String get tellUsAboutYouDescription => '这有助于我们个性化您的 MULA 体验';
+
+  @override
+  String get dateOfBirth => '出生日期';
+
+  @override
+  String get selectDate => '选择日期';
+
+  @override
+  String get gender => '性别';
+
+  @override
+  String get male => '男';
+
+  @override
+  String get female => '女';
+
+  @override
+  String get residentialAddress => '居住地址';
+
+  @override
+  String get enterResidentialAddress => '输入您的居住地址';
+
+  @override
+  String get gpsAddress => 'GPS 地址';
+
+  @override
+  String get enterGpsAddress => '输入您的 GPS 地址';
+
+  @override
+  String get occupation => '职业';
+
+  @override
+  String get whatIsYourOccupation => '您的职业是什么？';
+
+  @override
+  String get idVerification => '身份验证';
+
+  @override
+  String get selectIdType => '选择身份证件类型以验证您的身份';
+
+  @override
+  String get ghanaCard => '加纳卡';
+
+  @override
+  String get driversLicense => '驾驶执照';
+
+  @override
+  String get passport => '护照';
+
+  @override
+  String get uploadDocumentsDescription => '安全上传您的文件以验证您的身份并完成账户设置';
+
+  @override
+  String get pictureOfFront => '正面照片';
+
+  @override
+  String get pictureOfBack => '背面照片';
+
+  @override
+  String get tapToUpload => '点击上传';
+
+  @override
+  String get imageUploaded => '图片已上传';
+
+  @override
+  String get maxSize => '最大尺寸：2MB';
+
+  @override
+  String get number => '号码';
+
+  @override
+  String get issueDate => '发行日期';
+
+  @override
+  String get expiryDate => '到期日期';
+
+  @override
+  String get next => '下一步';
+
+  @override
+  String get investmentExperience => '您的投资经验';
+
+  @override
+  String get investmentExperienceDescription => '这有助于我们为您推荐最佳的工具、资源和布局';
+
+  @override
+  String get beginner => '初学者';
+
+  @override
+  String get beginnerDescription => '我刚开始。我想学习基础知识。';
+
+  @override
+  String get intermediate => '中级';
+
+  @override
+  String get intermediateDescription => '我已经做过一些投资，了解事情的运作方式。';
+
+  @override
+  String get advanced => '高级';
+
+  @override
+  String get advancedDescription => '我有经验，想要完全访问高级工具。';
+
+  @override
+  String get goodHandsTitle => '您在安全的手中';
+
+  @override
+  String get goodHandsDescription =>
+      '投资可能听起来令人生畏，但使用 MULA，您无需成为专家即可开始。我们将引导您完成每一步，从关联您的账户到了解您的投资组合，让您充满信心地进行投资。';
+
+  @override
+  String get toolsToGrowKnowledge => '增长知识的工具';
+
+  @override
+  String get supportWheneverNeeded => '随时为您提供支持';
+
+  @override
+  String get guidanceToExplore => '探索投资机会的指导';
+
+  @override
+  String get simpleExplanations => '每一步都有简单的解释';
+
+  @override
+  String get linkInvestmentAccounts => '关联您的投资账户';
+
+  @override
+  String get linkAccountsDescription => '这有助于我们在一个地方向您展示您拥有的一切';
+
+  @override
+  String get csdAccount => '我有 CSD 账户';
+
+  @override
+  String get csdAccountDescription => '用于股票、债券和国债等证券';
+
+  @override
+  String get cisAccount => '我有 CIS 账户';
+
+  @override
+  String get cisAccountDescription => '来自 Databank、EDC 等基金管理公司';
+
+  @override
+  String get dontHaveAccount => '还没有账户？';
+
+  @override
+  String get dontHaveAccountDescription => '您可以创建账户并立即开始投资';
 }

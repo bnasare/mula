@@ -379,6 +379,306 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Continue'**
   String get continueButton;
+
+  /// No description provided for @tellUsAboutYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell Us About You'**
+  String get tellUsAboutYou;
+
+  /// No description provided for @tellUsAboutYouDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'This helps us personalize your MULA experience'**
+  String get tellUsAboutYouDescription;
+
+  /// No description provided for @dateOfBirth.
+  ///
+  /// In en, this message translates to:
+  /// **'Date of Birth'**
+  String get dateOfBirth;
+
+  /// No description provided for @selectDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Select date'**
+  String get selectDate;
+
+  /// No description provided for @gender.
+  ///
+  /// In en, this message translates to:
+  /// **'Gender'**
+  String get gender;
+
+  /// No description provided for @male.
+  ///
+  /// In en, this message translates to:
+  /// **'Male'**
+  String get male;
+
+  /// No description provided for @female.
+  ///
+  /// In en, this message translates to:
+  /// **'Female'**
+  String get female;
+
+  /// No description provided for @residentialAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Residential Address'**
+  String get residentialAddress;
+
+  /// No description provided for @enterResidentialAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your residential address'**
+  String get enterResidentialAddress;
+
+  /// No description provided for @gpsAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'GPS address'**
+  String get gpsAddress;
+
+  /// No description provided for @enterGpsAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Your GPS address'**
+  String get enterGpsAddress;
+
+  /// No description provided for @occupation.
+  ///
+  /// In en, this message translates to:
+  /// **'Occupation'**
+  String get occupation;
+
+  /// No description provided for @whatIsYourOccupation.
+  ///
+  /// In en, this message translates to:
+  /// **'What is your occupation?'**
+  String get whatIsYourOccupation;
+
+  /// No description provided for @idVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'ID Verification'**
+  String get idVerification;
+
+  /// No description provided for @selectIdType.
+  ///
+  /// In en, this message translates to:
+  /// **'Select an ID type to verify your identity'**
+  String get selectIdType;
+
+  /// No description provided for @ghanaCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Ghana Card'**
+  String get ghanaCard;
+
+  /// No description provided for @driversLicense.
+  ///
+  /// In en, this message translates to:
+  /// **'Driver\'s License'**
+  String get driversLicense;
+
+  /// No description provided for @passport.
+  ///
+  /// In en, this message translates to:
+  /// **'Passport'**
+  String get passport;
+
+  /// No description provided for @uploadDocumentsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload your documents securely to verify your identity and finish setting up your account'**
+  String get uploadDocumentsDescription;
+
+  /// No description provided for @pictureOfFront.
+  ///
+  /// In en, this message translates to:
+  /// **'Picture of the front'**
+  String get pictureOfFront;
+
+  /// No description provided for @pictureOfBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Picture of the back'**
+  String get pictureOfBack;
+
+  /// No description provided for @tapToUpload.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to upload'**
+  String get tapToUpload;
+
+  /// No description provided for @imageUploaded.
+  ///
+  /// In en, this message translates to:
+  /// **'Image uploaded'**
+  String get imageUploaded;
+
+  /// No description provided for @maxSize.
+  ///
+  /// In en, this message translates to:
+  /// **'Max size: 2MB'**
+  String get maxSize;
+
+  /// No description provided for @number.
+  ///
+  /// In en, this message translates to:
+  /// **'Number'**
+  String get number;
+
+  /// No description provided for @issueDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Issue date'**
+  String get issueDate;
+
+  /// No description provided for @expiryDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Expiry date'**
+  String get expiryDate;
+
+  /// No description provided for @next.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next;
+
+  /// No description provided for @investmentExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Investment Experience'**
+  String get investmentExperience;
+
+  /// No description provided for @investmentExperienceDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'This helps us recommend the best tools, resources and layout for you'**
+  String get investmentExperienceDescription;
+
+  /// No description provided for @beginner.
+  ///
+  /// In en, this message translates to:
+  /// **'Beginner'**
+  String get beginner;
+
+  /// No description provided for @beginnerDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m just starting out. I want to learn the basics.'**
+  String get beginnerDescription;
+
+  /// No description provided for @intermediate.
+  ///
+  /// In en, this message translates to:
+  /// **'Intermediate'**
+  String get intermediate;
+
+  /// No description provided for @intermediateDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ve done some investing and understand how things work.'**
+  String get intermediateDescription;
+
+  /// No description provided for @advanced.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced'**
+  String get advanced;
+
+  /// No description provided for @advancedDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m experienced and want full access to advanced tools.'**
+  String get advancedDescription;
+
+  /// No description provided for @goodHandsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re in good hands'**
+  String get goodHandsTitle;
+
+  /// No description provided for @goodHandsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Investing might sound intimidating, but with MULA, you don\'t need to be an expert to start. We\'ll walk you through every step, from linking your accounts to understanding your portfolio, so you can invest with confidence.'**
+  String get goodHandsDescription;
+
+  /// No description provided for @toolsToGrowKnowledge.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools to grow your knowledge'**
+  String get toolsToGrowKnowledge;
+
+  /// No description provided for @supportWheneverNeeded.
+  ///
+  /// In en, this message translates to:
+  /// **'Support whenever you need it'**
+  String get supportWheneverNeeded;
+
+  /// No description provided for @guidanceToExplore.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidance to explore investment opportunities'**
+  String get guidanceToExplore;
+
+  /// No description provided for @simpleExplanations.
+  ///
+  /// In en, this message translates to:
+  /// **'Simple explanations at every step'**
+  String get simpleExplanations;
+
+  /// No description provided for @linkInvestmentAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Link Your Investment Accounts'**
+  String get linkInvestmentAccounts;
+
+  /// No description provided for @linkAccountsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'This helps us show everything you own, in one place'**
+  String get linkAccountsDescription;
+
+  /// No description provided for @csdAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'I have a CSD account'**
+  String get csdAccount;
+
+  /// No description provided for @csdAccountDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'For securities like stocks, bonds and T-bills'**
+  String get csdAccountDescription;
+
+  /// No description provided for @cisAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'I have a CIS account'**
+  String get cisAccount;
+
+  /// No description provided for @cisAccountDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'From Fund Managers like Databank, EDC, etc.'**
+  String get cisAccountDescription;
+
+  /// No description provided for @dontHaveAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account?'**
+  String get dontHaveAccount;
+
+  /// No description provided for @dontHaveAccountDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'You can create an account and start investing today'**
+  String get dontHaveAccountDescription;
 }
 
 class _AppLocalizationsDelegate
