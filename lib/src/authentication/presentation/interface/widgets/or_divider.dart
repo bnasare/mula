@@ -1,5 +1,5 @@
-import 'package:mula/shared/utils/extension.dart';
 import 'package:flutter/material.dart';
+import 'package:mula/shared/utils/extension.dart';
 
 class OrDivider extends StatelessWidget {
   final String text;

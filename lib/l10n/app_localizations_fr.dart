@@ -7,4 +7,82 @@ import 'app_localizations.dart';
 /// The translations for French (`fr`).
 class AppLocalizationsFr extends AppLocalizations {
   AppLocalizationsFr([String locale = 'fr']) : super(locale);
+
+  @override
+  String get welcomeTo => 'Bienvenue sur';
+
+  @override
+  String get mula => 'MULA';
+
+  @override
+  String get oneAppAllInvestments =>
+      'Une application. Tous vos investissements';
+
+  @override
+  String get onboardingDescription =>
+      'Liez vos comptes, suivez votre portefeuille, négociez des titres,\net apprenez au fur et à mesure, le tout dans une application sécurisée.';
+
+  @override
+  String get getStarted => 'Commencer';
+
+  @override
+  String get alreadyHaveAccount => 'Vous avez déjà un compte?';
+
+  @override
+  String get signIn => 'Se connecter';
+
+  @override
+  String get letsGetYouStarted => 'Commençons';
+
+  @override
+  String get createFreeAccountDescription =>
+      'Créez votre compte MULA gratuit en moins d\'une minute.';
+
+  @override
+  String get fullName => 'Nom Complet';
+
+  @override
+  String get enterYourFullName => 'Entrez Votre Nom Complet';
+
+  @override
+  String get emailAddress => 'Adresse E-mail';
+
+  @override
+  String get enterYourEmailAddress => 'Entrez Votre Adresse E-mail';
+
+  @override
+  String get enterYourPhoneNumber => 'Entrez votre numéro de téléphone';
+
+  @override
+  String get password => 'Mot de passe';
+
+  @override
+  String get enterYourPassword => 'Entrez Votre Mot de Passe';
+
+  @override
+  String get confirmPassword => 'Confirmer le Mot de Passe';
+
+  @override
+  String get createAccount => 'Créer un Compte';
+
+  @override
+  String get or => 'OU';
+
+  @override
+  String get google => 'Google';
+
+  @override
+  String get apple => 'Apple';
+
+  @override
+  String get byContinuingYouAgree => 'En continuant, vous acceptez les';
+
+  @override
+  String get termsOfService => 'Conditions d\'Utilisation';
+
+  @override
+  String get and => 'et';
+
+  @override
+  String get privacyPolicy => 'Politique de Confidentialité';
 }

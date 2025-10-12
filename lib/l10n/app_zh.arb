@@ -1,3 +1,30 @@
 {
-  "@@locale": "zh"
+  "@@locale": "zh",
+
+  "welcomeTo": "欢迎来到",
+  "mula": "MULA",
+  "oneAppAllInvestments": "一个应用。所有投资",
+  "onboardingDescription": "关联您的账户，跟踪您的投资组合，交易证券，\n边学边做，全部在一个安全的应用中。",
+  "getStarted": "开始使用",
+  "alreadyHaveAccount": "已有账户？",
+  "signIn": "登录",
+
+  "letsGetYouStarted": "让我们开始吧",
+  "createFreeAccountDescription": "不到一分钟即可创建您的免费 MULA 账户。",
+  "fullName": "全名",
+  "enterYourFullName": "输入您的全名",
+  "emailAddress": "电子邮箱",
+  "enterYourEmailAddress": "输入您的电子邮箱",
+  "enterYourPhoneNumber": "输入您的电话号码",
+  "password": "密码",
+  "enterYourPassword": "输入您的密码",
+  "confirmPassword": "确认密码",
+  "createAccount": "创建账户",
+  "or": "或",
+  "google": "Google",
+  "apple": "Apple",
+  "byContinuingYouAgree": "继续即表示您同意 MULA 的",
+  "termsOfService": "服务条款",
+  "and": "和",
+  "privacyPolicy": "隐私政策"
 }

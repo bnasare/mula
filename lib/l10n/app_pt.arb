@@ -1,3 +1,30 @@
 {
-  "@@locale": "pt"
+  "@@locale": "pt",
+
+  "welcomeTo": "Bem-vindo ao",
+  "mula": "MULA",
+  "oneAppAllInvestments": "Um aplicativo. Todos os seus investimentos",
+  "onboardingDescription": "Vincule suas contas, acompanhe seu portfólio, negocie títulos,\ne aprenda conforme avança, tudo em um aplicativo seguro.",
+  "getStarted": "Começar",
+  "alreadyHaveAccount": "Já tem uma conta?",
+  "signIn": "Entrar",
+
+  "letsGetYouStarted": "Vamos Começar",
+  "createFreeAccountDescription": "Crie sua conta MULA gratuita em menos de um minuto.",
+  "fullName": "Nome Completo",
+  "enterYourFullName": "Digite Seu Nome Completo",
+  "emailAddress": "Endereço de E-mail",
+  "enterYourEmailAddress": "Digite Seu Endereço de E-mail",
+  "enterYourPhoneNumber": "Digite seu número de telefone",
+  "password": "Senha",
+  "enterYourPassword": "Digite Sua Senha",
+  "confirmPassword": "Confirmar Senha",
+  "createAccount": "Criar Conta",
+  "or": "OU",
+  "google": "Google",
+  "apple": "Apple",
+  "byContinuingYouAgree": "Ao continuar, você concorda com os",
+  "termsOfService": "Termos de Serviço",
+  "and": "e",
+  "privacyPolicy": "Política de Privacidade"
 }
