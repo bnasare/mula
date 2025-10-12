@@ -106,4 +106,43 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get resend => 'Отправить снова';
+
+  @override
+  String get security => 'Безопасность';
+
+  @override
+  String get enableFaceId => 'Включить Face ID';
+
+  @override
+  String get enable => 'Включить';
+
+  @override
+  String get faceIdSuccessfullyAdded => 'Face ID успешно добавлен';
+
+  @override
+  String get faceIdSuccessDescription =>
+      'Отлично! Face ID активен. Добавьте PIN-код, чтобы обеспечить вашей учетной записи дополнительный уровень безопасности';
+
+  @override
+  String get createPin => 'Создать PIN-код';
+
+  @override
+  String get skip => 'Пропустить';
+
+  @override
+  String get addAPin => 'Добавить PIN-код';
+
+  @override
+  String get addPinDescription =>
+      'Добавьте 4-значный PIN-код для дополнительной безопасности';
+
+  @override
+  String get pinCreatedSuccessfully => 'PIN-код успешно создан';
+
+  @override
+  String get pinCreatedDescription =>
+      'Давайте завершим регистрацию вашей учетной записи';
+
+  @override
+  String get continueButton => 'Продолжить';
 }

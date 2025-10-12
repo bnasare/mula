@@ -32,5 +32,18 @@
   "emailAddress2": "Indirizzo email",
   "verify": "Verifica",
   "didntReceiveCode": "Non hai ricevuto il codice?",
-  "resend": "Invia di nuovo"
+  "resend": "Invia di nuovo",
+
+  "security": "Sicurezza",
+  "enableFaceId": "Abilita Face ID",
+  "enable": "Abilita",
+  "faceIdSuccessfullyAdded": "Face ID aggiunto con successo",
+  "faceIdSuccessDescription": "Ottimo! Face ID è attivo. Aggiungi un PIN per dare al tuo account un ulteriore livello di sicurezza",
+  "createPin": "Crea PIN",
+  "skip": "Salta",
+  "addAPin": "Aggiungi un PIN",
+  "addPinDescription": "Aggiungi un PIN a 4 cifre per maggiore sicurezza",
+  "pinCreatedSuccessfully": "PIN creato con successo",
+  "pinCreatedDescription": "Completiamo la registrazione del tuo account",
+  "continueButton": "Continua"
 }

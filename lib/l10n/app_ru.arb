@@ -32,5 +32,18 @@
   "emailAddress2": "Адрес электронной почты",
   "verify": "Подтвердить",
   "didntReceiveCode": "Не получили код?",
-  "resend": "Отправить снова"
+  "resend": "Отправить снова",
+
+  "security": "Безопасность",
+  "enableFaceId": "Включить Face ID",
+  "enable": "Включить",
+  "faceIdSuccessfullyAdded": "Face ID успешно добавлен",
+  "faceIdSuccessDescription": "Отлично! Face ID активен. Добавьте PIN-код, чтобы обеспечить вашей учетной записи дополнительный уровень безопасности",
+  "createPin": "Создать PIN-код",
+  "skip": "Пропустить",
+  "addAPin": "Добавить PIN-код",
+  "addPinDescription": "Добавьте 4-значный PIN-код для дополнительной безопасности",
+  "pinCreatedSuccessfully": "PIN-код успешно создан",
+  "pinCreatedDescription": "Давайте завершим регистрацию вашей учетной записи",
+  "continueButton": "Продолжить"
 }

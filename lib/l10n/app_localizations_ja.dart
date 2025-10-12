@@ -104,4 +104,41 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get resend => '再送信';
+
+  @override
+  String get security => 'セキュリティ';
+
+  @override
+  String get enableFaceId => 'Face ID を有効にする';
+
+  @override
+  String get enable => '有効にする';
+
+  @override
+  String get faceIdSuccessfullyAdded => 'Face ID が正常に追加されました';
+
+  @override
+  String get faceIdSuccessDescription =>
+      '素晴らしい！Face ID が有効になりました。アカウントにさらなるセキュリティ層を追加するために PIN を追加してください';
+
+  @override
+  String get createPin => 'PIN を作成';
+
+  @override
+  String get skip => 'スキップ';
+
+  @override
+  String get addAPin => 'PIN を追加';
+
+  @override
+  String get addPinDescription => '追加のセキュリティのために 4 桁の PIN を追加してください';
+
+  @override
+  String get pinCreatedSuccessfully => 'PIN が正常に作成されました';
+
+  @override
+  String get pinCreatedDescription => 'アカウント登録を完了しましょう';
+
+  @override
+  String get continueButton => '続ける';
 }

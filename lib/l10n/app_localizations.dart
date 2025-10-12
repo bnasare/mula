@@ -307,6 +307,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Resend'**
   String get resend;
+
+  /// No description provided for @security.
+  ///
+  /// In en, this message translates to:
+  /// **'Security'**
+  String get security;
+
+  /// No description provided for @enableFaceId.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable Face ID'**
+  String get enableFaceId;
+
+  /// No description provided for @enable.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable'**
+  String get enable;
+
+  /// No description provided for @faceIdSuccessfullyAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Face ID successfully added'**
+  String get faceIdSuccessfullyAdded;
+
+  /// No description provided for @faceIdSuccessDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Great! Face ID is active. Add a PIN to give your account an extra layer of security'**
+  String get faceIdSuccessDescription;
+
+  /// No description provided for @createPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Create PIN'**
+  String get createPin;
+
+  /// No description provided for @skip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get skip;
+
+  /// No description provided for @addAPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a PIN'**
+  String get addAPin;
+
+  /// No description provided for @addPinDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a 4-digit PIN for extra security'**
+  String get addPinDescription;
+
+  /// No description provided for @pinCreatedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'PIN created successfully'**
+  String get pinCreatedSuccessfully;
+
+  /// No description provided for @pinCreatedDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s complete your account registration'**
+  String get pinCreatedDescription;
+
+  /// No description provided for @continueButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continueButton;
 }
 
 class _AppLocalizationsDelegate

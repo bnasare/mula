@@ -104,4 +104,41 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get resend => '重新发送';
+
+  @override
+  String get security => '安全';
+
+  @override
+  String get enableFaceId => '启用 Face ID';
+
+  @override
+  String get enable => '启用';
+
+  @override
+  String get faceIdSuccessfullyAdded => 'Face ID 添加成功';
+
+  @override
+  String get faceIdSuccessDescription =>
+      '太好了！Face ID 已激活。添加 PIN 码为您的账户提供额外的安全保护';
+
+  @override
+  String get createPin => '创建 PIN 码';
+
+  @override
+  String get skip => '跳过';
+
+  @override
+  String get addAPin => '添加 PIN 码';
+
+  @override
+  String get addPinDescription => '添加 4 位 PIN 码以提供额外的安全保护';
+
+  @override
+  String get pinCreatedSuccessfully => 'PIN 码创建成功';
+
+  @override
+  String get pinCreatedDescription => '让我们完成您的账户注册';
+
+  @override
+  String get continueButton => '继续';
 }

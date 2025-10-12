@@ -34,5 +34,18 @@
   "emailAddress2": "电子邮箱",
   "verify": "验证",
   "didntReceiveCode": "没有收到验证码？",
-  "resend": "重新发送"
+  "resend": "重新发送",
+
+  "security": "安全",
+  "enableFaceId": "启用 Face ID",
+  "enable": "启用",
+  "faceIdSuccessfullyAdded": "Face ID 添加成功",
+  "faceIdSuccessDescription": "太好了！Face ID 已激活。添加 PIN 码为您的账户提供额外的安全保护",
+  "createPin": "创建 PIN 码",
+  "skip": "跳过",
+  "addAPin": "添加 PIN 码",
+  "addPinDescription": "添加 4 位 PIN 码以提供额外的安全保护",
+  "pinCreatedSuccessfully": "PIN 码创建成功",
+  "pinCreatedDescription": "让我们完成您的账户注册",
+  "continueButton": "继续"
 }

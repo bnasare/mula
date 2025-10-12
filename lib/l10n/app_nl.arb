@@ -32,5 +32,18 @@
   "emailAddress2": "E-mailadres",
   "verify": "Verifiëren",
   "didntReceiveCode": "Code niet ontvangen?",
-  "resend": "Opnieuw verzenden"
+  "resend": "Opnieuw verzenden",
+
+  "security": "Beveiliging",
+  "enableFaceId": "Face ID inschakelen",
+  "enable": "Inschakelen",
+  "faceIdSuccessfullyAdded": "Face ID succesvol toegevoegd",
+  "faceIdSuccessDescription": "Geweldig! Face ID is actief. Voeg een pincode toe om je account een extra beveiligingslaag te geven",
+  "createPin": "Pincode aanmaken",
+  "skip": "Overslaan",
+  "addAPin": "Pincode toevoegen",
+  "addPinDescription": "Voeg een 4-cijferige pincode toe voor extra beveiliging",
+  "pinCreatedSuccessfully": "Pincode succesvol aangemaakt",
+  "pinCreatedDescription": "Laten we je accountregistratie voltooien",
+  "continueButton": "Doorgaan"
 }

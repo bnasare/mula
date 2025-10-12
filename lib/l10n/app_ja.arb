@@ -32,5 +32,18 @@
   "emailAddress2": "メールアドレス",
   "verify": "認証する",
   "didntReceiveCode": "コードが届きませんでしたか？",
-  "resend": "再送信"
+  "resend": "再送信",
+
+  "security": "セキュリティ",
+  "enableFaceId": "Face ID を有効にする",
+  "enable": "有効にする",
+  "faceIdSuccessfullyAdded": "Face ID が正常に追加されました",
+  "faceIdSuccessDescription": "素晴らしい！Face ID が有効になりました。アカウントにさらなるセキュリティ層を追加するために PIN を追加してください",
+  "createPin": "PIN を作成",
+  "skip": "スキップ",
+  "addAPin": "PIN を追加",
+  "addPinDescription": "追加のセキュリティのために 4 桁の PIN を追加してください",
+  "pinCreatedSuccessfully": "PIN が正常に作成されました",
+  "pinCreatedDescription": "アカウント登録を完了しましょう",
+  "continueButton": "続ける"
 }

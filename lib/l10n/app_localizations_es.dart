@@ -106,4 +106,42 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get resend => 'Reenviar';
+
+  @override
+  String get security => 'Seguridad';
+
+  @override
+  String get enableFaceId => 'Habilitar Face ID';
+
+  @override
+  String get enable => 'Habilitar';
+
+  @override
+  String get faceIdSuccessfullyAdded => 'Face ID añadido exitosamente';
+
+  @override
+  String get faceIdSuccessDescription =>
+      '¡Genial! Face ID está activo. Añade un PIN para dar a tu cuenta una capa extra de seguridad';
+
+  @override
+  String get createPin => 'Crear PIN';
+
+  @override
+  String get skip => 'Omitir';
+
+  @override
+  String get addAPin => 'Añadir un PIN';
+
+  @override
+  String get addPinDescription =>
+      'Añade un PIN de 4 dígitos para mayor seguridad';
+
+  @override
+  String get pinCreatedSuccessfully => 'PIN creado exitosamente';
+
+  @override
+  String get pinCreatedDescription => 'Completemos el registro de tu cuenta';
+
+  @override
+  String get continueButton => 'Continuar';
 }

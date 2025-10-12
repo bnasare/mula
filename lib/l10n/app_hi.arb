@@ -32,5 +32,18 @@
   "emailAddress2": "ईमेल पता",
   "verify": "सत्यापित करें",
   "didntReceiveCode": "कोड प्राप्त नहीं हुआ?",
-  "resend": "पुनः भेजें"
+  "resend": "पुनः भेजें",
+
+  "security": "सुरक्षा",
+  "enableFaceId": "Face ID सक्षम करें",
+  "enable": "सक्षम करें",
+  "faceIdSuccessfullyAdded": "Face ID सफलतापूर्वक जोड़ा गया",
+  "faceIdSuccessDescription": "बढ़िया! Face ID सक्रिय है। अपने खाते को सुरक्षा की एक अतिरिक्त परत देने के लिए एक पिन जोड़ें",
+  "createPin": "पिन बनाएं",
+  "skip": "छोड़ें",
+  "addAPin": "पिन जोड़ें",
+  "addPinDescription": "अतिरिक्त सुरक्षा के लिए 4 अंकों का पिन जोड़ें",
+  "pinCreatedSuccessfully": "पिन सफलतापूर्वक बनाया गया",
+  "pinCreatedDescription": "आइए अपने खाते का पंजीकरण पूरा करें",
+  "continueButton": "जारी रखें"
 }

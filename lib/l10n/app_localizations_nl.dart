@@ -107,4 +107,43 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get resend => 'Opnieuw verzenden';
+
+  @override
+  String get security => 'Beveiliging';
+
+  @override
+  String get enableFaceId => 'Face ID inschakelen';
+
+  @override
+  String get enable => 'Inschakelen';
+
+  @override
+  String get faceIdSuccessfullyAdded => 'Face ID succesvol toegevoegd';
+
+  @override
+  String get faceIdSuccessDescription =>
+      'Geweldig! Face ID is actief. Voeg een pincode toe om je account een extra beveiligingslaag te geven';
+
+  @override
+  String get createPin => 'Pincode aanmaken';
+
+  @override
+  String get skip => 'Overslaan';
+
+  @override
+  String get addAPin => 'Pincode toevoegen';
+
+  @override
+  String get addPinDescription =>
+      'Voeg een 4-cijferige pincode toe voor extra beveiliging';
+
+  @override
+  String get pinCreatedSuccessfully => 'Pincode succesvol aangemaakt';
+
+  @override
+  String get pinCreatedDescription =>
+      'Laten we je accountregistratie voltooien';
+
+  @override
+  String get continueButton => 'Doorgaan';
 }

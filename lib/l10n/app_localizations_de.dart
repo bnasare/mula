@@ -106,4 +106,43 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get resend => 'Erneut senden';
+
+  @override
+  String get security => 'Sicherheit';
+
+  @override
+  String get enableFaceId => 'Face ID aktivieren';
+
+  @override
+  String get enable => 'Aktivieren';
+
+  @override
+  String get faceIdSuccessfullyAdded => 'Face ID erfolgreich hinzugefügt';
+
+  @override
+  String get faceIdSuccessDescription =>
+      'Großartig! Face ID ist aktiv. Fügen Sie eine PIN hinzu, um Ihrem Konto eine zusätzliche Sicherheitsebene zu geben';
+
+  @override
+  String get createPin => 'PIN erstellen';
+
+  @override
+  String get skip => 'Überspringen';
+
+  @override
+  String get addAPin => 'PIN hinzufügen';
+
+  @override
+  String get addPinDescription =>
+      'Fügen Sie eine 4-stellige PIN für zusätzliche Sicherheit hinzu';
+
+  @override
+  String get pinCreatedSuccessfully => 'PIN erfolgreich erstellt';
+
+  @override
+  String get pinCreatedDescription =>
+      'Lassen Sie uns Ihre Kontoregistrierung abschließen';
+
+  @override
+  String get continueButton => 'Weiter';
 }

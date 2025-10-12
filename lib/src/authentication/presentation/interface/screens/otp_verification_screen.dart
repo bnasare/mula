@@ -11,6 +11,8 @@ import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/presentation/widgets/otp_input_widget.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
+import '../../../../../shared/utils/navigation.dart';
+import 'enable_face_id_screen.dart';
 
 class OtpVerificationScreen extends StatefulWidget {
   const OtpVerificationScreen({super.key});
@@ -58,6 +60,8 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
     if (_otpCode.length == 6) {
       // TODO: Implement verification logic
       print('Verifying OTP: $_otpCode');
+      // Navigate to Enable Face ID screen
+      NavigationHelper.navigateTo(context, const EnableFaceIdScreen());
     }
   }
 
@@ -78,7 +82,7 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
           title: context.localize.otpVerification,
           currentStep: 2,
           totalSteps: 5,
-          progressColor: AppColors.appPrimary,
+          progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
           onBackPressed: () => Navigator.pop(context),
         ),
         body: SafeArea(
@@ -150,8 +154,12 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
                 // Verify Button
                 AppButton(
                   text: context.localize.verify,
-                  backgroundColor: AppColors.appPrimary,
-                  textColor: Colors.white,
+                  backgroundColor: _otpCode.length == 6
+                      ? AppColors.appPrimary
+                      : AppColors.lightGrey(context),
+                  textColor: _otpCode.length == 6
+                      ? Colors.white
+                      : AppColors.secondaryText(context),
                   borderRadius: 12,
                   padding: EdgeInsets.zero,
                   onTap: _verifyOtp,
