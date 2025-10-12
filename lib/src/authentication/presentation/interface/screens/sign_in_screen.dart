@@ -14,6 +14,7 @@ import '../widgets/mula_text_field.dart';
 import '../widgets/or_divider.dart';
 import '../widgets/social_login_button.dart';
 import 'enter_pin_screen.dart';
+import 'forgot_password_screen.dart';
 import 'sign_up_screen.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -45,7 +46,11 @@ class _SignInScreenState extends State<SignInScreen> {
         appBar: MulaAppBarHelpers.simple(
           backgroundColor: AppColors.white(context),
           title: context.localize.accessYourMulaAccount,
-          onBackPressed: () => Navigator.pop(context),
+          onBackPressed: () {
+            if (Navigator.canPop(context)) {
+              Navigator.pop(context);
+            }
+          },
         ),
         body: SafeArea(
           child: Form(
@@ -92,7 +97,10 @@ class _SignInScreenState extends State<SignInScreen> {
                   alignment: Alignment.centerRight,
                   child: TextButton(
                     onPressed: () {
-                      // TODO: Navigate to forgot password screen
+                      NavigationHelper.navigateTo(
+                        context,
+                        const ForgotPasswordScreen(),
+                      );
                     },
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,

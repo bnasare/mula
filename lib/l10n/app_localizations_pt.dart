@@ -53,6 +53,42 @@ class AppLocalizationsPt extends AppLocalizations {
   String get signUp => 'Cadastrar-se';
 
   @override
+  String get resetYourPassword => 'Reset Your Password';
+
+  @override
+  String get resetPasswordDescription =>
+      'Enter your email or phone number to receive a verification code';
+
+  @override
+  String get sendVerificationCode => 'Send Verification Code';
+
+  @override
+  String get createNewPassword => 'Create New Password';
+
+  @override
+  String get createNewPasswordDescription =>
+      'Your new password must be different from previously used passwords';
+
+  @override
+  String get newPassword => 'New Password';
+
+  @override
+  String get enterNewPassword => 'Enter your new password';
+
+  @override
+  String get confirmNewPassword => 'Confirm New Password';
+
+  @override
+  String get resetPassword => 'Reset Password';
+
+  @override
+  String get passwordResetSuccessful => 'Password Reset Successful';
+
+  @override
+  String get passwordResetSuccessDescription =>
+      'Your password has been successfully reset. You can now sign in with your new password';
+
+  @override
   String get letsGetYouStarted => 'Vamos Começar';
 
   @override

@@ -200,6 +200,72 @@ abstract class AppLocalizations {
   /// **'Sign up'**
   String get signUp;
 
+  /// No description provided for @resetYourPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Your Password'**
+  String get resetYourPassword;
+
+  /// No description provided for @resetPasswordDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email or phone number to receive a verification code'**
+  String get resetPasswordDescription;
+
+  /// No description provided for @sendVerificationCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Verification Code'**
+  String get sendVerificationCode;
+
+  /// No description provided for @createNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Create New Password'**
+  String get createNewPassword;
+
+  /// No description provided for @createNewPasswordDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your new password must be different from previously used passwords'**
+  String get createNewPasswordDescription;
+
+  /// No description provided for @newPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'New Password'**
+  String get newPassword;
+
+  /// No description provided for @enterNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your new password'**
+  String get enterNewPassword;
+
+  /// No description provided for @confirmNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm New Password'**
+  String get confirmNewPassword;
+
+  /// No description provided for @resetPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Password'**
+  String get resetPassword;
+
+  /// No description provided for @passwordResetSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Password Reset Successful'**
+  String get passwordResetSuccessful;
+
+  /// No description provided for @passwordResetSuccessDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your password has been successfully reset. You can now sign in with your new password'**
+  String get passwordResetSuccessDescription;
+
   /// No description provided for @letsGetYouStarted.
   ///
   /// In en, this message translates to:
