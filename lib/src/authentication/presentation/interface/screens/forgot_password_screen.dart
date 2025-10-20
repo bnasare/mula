@@ -36,7 +36,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       // TODO: Implement send verification code logic
       NavigationHelper.navigateTo(
         context,
-        const OtpVerificationScreen(isFromForgotPassword: true),
+        const OtpVerificationScreen.forgotPassword(),
       );
     }
   }

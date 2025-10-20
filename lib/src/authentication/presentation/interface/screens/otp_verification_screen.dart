@@ -13,15 +13,30 @@ import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import 'enable_face_id_screen.dart';
+import 'good_hands_info_screen.dart';
 import 'reset_password_screen.dart';
 
+enum OtpFlowType {
+  signup,
+  forgotPassword,
+  cisAccount,
+}
+
 class OtpVerificationScreen extends StatefulWidget {
-  final bool isFromForgotPassword;
+  final OtpFlowType flowType;
 
   const OtpVerificationScreen({
     super.key,
-    this.isFromForgotPassword = false,
+    this.flowType = OtpFlowType.signup,
   });
+
+  /// Convenience constructor for backwards compatibility
+  const OtpVerificationScreen.forgotPassword({super.key})
+      : flowType = OtpFlowType.forgotPassword;
+
+  /// Constructor for CIS account flow
+  const OtpVerificationScreen.cisAccount({super.key})
+      : flowType = OtpFlowType.cisAccount;
 
   @override
   State<OtpVerificationScreen> createState() => _OtpVerificationScreenState();
@@ -67,13 +82,23 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
       // TODO: Implement verification logic
       print('Verifying OTP: $_otpCode');
 
-      // Navigate based on the flow
-      if (widget.isFromForgotPassword) {
-        // Navigate to Reset Password screen
-        NavigationHelper.navigateTo(context, const ResetPasswordScreen());
-      } else {
-        // Navigate to Enable Face ID screen (normal signup flow)
-        NavigationHelper.navigateTo(context, const EnableFaceIdScreen());
+      // Navigate based on the flow type
+      switch (widget.flowType) {
+        case OtpFlowType.forgotPassword:
+          // Navigate to Reset Password screen
+          NavigationHelper.navigateTo(context, const ResetPasswordScreen());
+          break;
+        case OtpFlowType.cisAccount:
+          // Navigate to Good Hands screen with CIS flow variant
+          NavigationHelper.navigateTo(
+            context,
+            const GoodHandsInfoScreen.cisFlow(),
+          );
+          break;
+        case OtpFlowType.signup:
+          // Navigate to Enable Face ID screen (normal signup flow)
+          NavigationHelper.navigateTo(context, const EnableFaceIdScreen());
+          break;
       }
     }
   }
@@ -90,18 +115,18 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
         backgroundColor: AppColors.white(context),
-        appBar: widget.isFromForgotPassword
-            ? MulaAppBarHelpers.simple(
-                backgroundColor: AppColors.white(context),
-                title: context.localize.otpVerification,
-                onBackPressed: () => Navigator.pop(context),
-              )
-            : MulaAppBarHelpers.withProgress(
+        appBar: widget.flowType == OtpFlowType.signup
+            ? MulaAppBarHelpers.withProgress(
                 backgroundColor: AppColors.white(context),
                 title: context.localize.otpVerification,
                 currentStep: 2,
                 totalSteps: 11,
                 progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
+                onBackPressed: () => Navigator.pop(context),
+              )
+            : MulaAppBarHelpers.simple(
+                backgroundColor: AppColors.white(context),
+                title: context.localize.otpVerification,
                 onBackPressed: () => Navigator.pop(context),
               ),
         body: SafeArea(

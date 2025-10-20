@@ -8,6 +8,8 @@ import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/presentation/widgets/selectable_option_card.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
+import '../../../../../shared/utils/navigation.dart';
+import 'select_fund_manager_screen.dart';
 
 class LinkInvestmentAccountsScreen extends StatefulWidget {
   const LinkInvestmentAccountsScreen({super.key});
@@ -23,8 +25,16 @@ class _LinkInvestmentAccountsScreenState
 
   void _onContinue() {
     if (_selectedAccountType != null) {
-      // TODO: Navigate to home or next screen
-      Navigator.of(context).popUntil((route) => route.isFirst);
+      if (_selectedAccountType == 'cis') {
+        // Navigate to Select Fund Manager screen for CIS account
+        NavigationHelper.navigateTo(
+          context,
+          const SelectFundManagerScreen(),
+        );
+      } else {
+        // TODO: Navigate to appropriate screen for CSD or none
+        Navigator.of(context).popUntil((route) => route.isFirst);
+      }
     }
   }
 

@@ -352,4 +352,16 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get dontHaveAccountDescription => '您可以创建账户并立即开始投资';
+
+  @override
+  String get selectFundManager => 'Select Fund Manager';
+
+  @override
+  String get searchByAssetNameOrType => 'Search by asset name or type';
+
+  @override
+  String get addAnother => 'Add Another';
+
+  @override
+  String get done => 'Done';
 }

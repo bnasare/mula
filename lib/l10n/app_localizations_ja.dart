@@ -354,4 +354,16 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get dontHaveAccountDescription => 'アカウントを作成して今日から投資を始めることができます';
+
+  @override
+  String get selectFundManager => 'Select Fund Manager';
+
+  @override
+  String get searchByAssetNameOrType => 'Search by asset name or type';
+
+  @override
+  String get addAnother => 'Add Another';
+
+  @override
+  String get done => 'Done';
 }

@@ -123,5 +123,10 @@
   "cisAccount": "I have a CIS account",
   "cisAccountDescription": "From Fund Managers like Databank, EDC, etc.",
   "dontHaveAccount": "Don't have an account?",
-  "dontHaveAccountDescription": "You can create an account and start investing today"
+  "dontHaveAccountDescription": "You can create an account and start investing today",
+
+  "selectFundManager": "Select Fund Manager",
+  "searchByAssetNameOrType": "Search by asset name or type",
+  "addAnother": "Add Another",
+  "done": "Done"
 }

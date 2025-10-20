@@ -793,6 +793,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You can create an account and start investing today'**
   String get dontHaveAccountDescription;
+
+  /// No description provided for @selectFundManager.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Fund Manager'**
+  String get selectFundManager;
+
+  /// No description provided for @searchByAssetNameOrType.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by asset name or type'**
+  String get searchByAssetNameOrType;
+
+  /// No description provided for @addAnother.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Another'**
+  String get addAnother;
+
+  /// No description provided for @done.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
 }
 
 class _AppLocalizationsDelegate

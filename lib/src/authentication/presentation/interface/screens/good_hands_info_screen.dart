@@ -10,22 +10,37 @@ import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import 'link_investment_accounts_screen.dart';
+import 'select_fund_manager_screen.dart';
 
 class GoodHandsInfoScreen extends StatelessWidget {
-  const GoodHandsInfoScreen({super.key});
+  final bool isCisFlow;
+
+  const GoodHandsInfoScreen({
+    super.key,
+    this.isCisFlow = false,
+  });
+
+  /// Constructor for CIS account flow
+  const GoodHandsInfoScreen.cisFlow({super.key}) : isCisFlow = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.white(context),
-      appBar: MulaAppBarHelpers.withProgress(
-        backgroundColor: AppColors.white(context),
-        title: 'Almost There',
-        currentStep: 9,
-        totalSteps: 11,
-        progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
-        onBackPressed: () => Navigator.pop(context),
-      ),
+      appBar: isCisFlow
+          ? MulaAppBarHelpers.simple(
+              backgroundColor: AppColors.white(context),
+              title: 'Almost There',
+              onBackPressed: () => Navigator.pop(context),
+            )
+          : MulaAppBarHelpers.withProgress(
+              backgroundColor: AppColors.white(context),
+              title: 'Almost There',
+              currentStep: 9,
+              totalSteps: 11,
+              progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
+              onBackPressed: () => Navigator.pop(context),
+            ),
       body: SafeArea(
         child: Padding(
           padding: context.responsivePadding(
@@ -89,20 +104,59 @@ class GoodHandsInfoScreen extends StatelessWidget {
                 text: context.localize.simpleExplanations,
               ),
               const Spacer(),
-              // Continue Button
-              AppButton(
-                text: context.localize.continueButton,
-                backgroundColor: AppColors.appPrimary,
-                textColor: Colors.white,
-                borderRadius: 12,
-                padding: EdgeInsets.zero,
-                onTap: () {
-                  NavigationHelper.navigateTo(
-                    context,
-                    const LinkInvestmentAccountsScreen(),
-                  );
-                },
-              ),
+              // Buttons - different for CIS flow
+              if (isCisFlow)
+                Row(
+                  children: [
+                    Expanded(
+                      child: AppButton(
+                        text: context.localize.addAnother,
+                        backgroundColor: AppColors.white(context),
+                        textColor: AppColors.black(context),
+                        borderRadius: 12,
+                        padding: EdgeInsets.zero,
+                        borderColor: AppColors.lightGrey(context),
+                        onTap: () {
+                          // Navigate back to Select Fund Manager screen
+                          Navigator.of(context).pushAndRemoveUntil(
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  const SelectFundManagerScreen(),
+                            ),
+                            (route) => route.isFirst,
+                          );
+                        },
+                      ),
+                    ),
+                    const AppSpacer.hShort(),
+                    Expanded(
+                      child: AppButton(
+                        text: context.localize.done,
+                        backgroundColor: AppColors.appPrimary,
+                        textColor: Colors.white,
+                        borderRadius: 12,
+                        padding: EdgeInsets.zero,
+                        onTap: () {
+                          // Do nothing as requested
+                        },
+                      ),
+                    ),
+                  ],
+                )
+              else
+                AppButton(
+                  text: context.localize.continueButton,
+                  backgroundColor: AppColors.appPrimary,
+                  textColor: Colors.white,
+                  borderRadius: 12,
+                  padding: EdgeInsets.zero,
+                  onTap: () {
+                    NavigationHelper.navigateTo(
+                      context,
+                      const LinkInvestmentAccountsScreen(),
+                    );
+                  },
+                ),
               const AppSpacer.vLarge(),
             ],
           ),

@@ -366,4 +366,16 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get dontHaveAccountDescription =>
       'You can create an account and start investing today';
+
+  @override
+  String get selectFundManager => 'Select Fund Manager';
+
+  @override
+  String get searchByAssetNameOrType => 'Search by asset name or type';
+
+  @override
+  String get addAnother => 'Add Another';
+
+  @override
+  String get done => 'Done';
 }
