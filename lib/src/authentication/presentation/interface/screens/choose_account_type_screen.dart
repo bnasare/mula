@@ -9,33 +9,32 @@ import '../../../../../shared/presentation/widgets/selectable_option_card.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
-import 'csd_account_number_screen.dart';
-import 'personal_details_screen.dart';
+import 'select_broker_screen.dart';
 import 'select_fund_manager_screen.dart';
+import 'tell_us_about_you_screen.dart';
 
-class LinkInvestmentAccountsScreen extends StatefulWidget {
-  const LinkInvestmentAccountsScreen({super.key});
+class ChooseAccountTypeScreen extends StatefulWidget {
+  const ChooseAccountTypeScreen({super.key});
 
   @override
-  State<LinkInvestmentAccountsScreen> createState() =>
-      _LinkInvestmentAccountsScreenState();
+  State<ChooseAccountTypeScreen> createState() =>
+      _ChooseAccountTypeScreenState();
 }
 
-class _LinkInvestmentAccountsScreenState
-    extends State<LinkInvestmentAccountsScreen> {
+class _ChooseAccountTypeScreenState extends State<ChooseAccountTypeScreen> {
   String? _selectedAccountType;
 
   void _onContinue() {
     if (_selectedAccountType != null) {
-      if (_selectedAccountType == 'cis') {
-        // Navigate to Select Fund Manager screen for CIS account
-        NavigationHelper.navigateTo(context, const SelectFundManagerScreen());
-      } else if (_selectedAccountType == 'csd') {
-        // Navigate to CSD Account Number screen for CSD account
-        NavigationHelper.navigateTo(context, const CsdAccountNumberScreen());
-      } else {
-        // User doesn't have an account - navigate to Personal Details screen
-        NavigationHelper.navigateTo(context, const PersonalDetailsScreen());
+      if (_selectedAccountType == 'csd') {
+        // Navigate to Select Broker screen for CSD account
+        NavigationHelper.navigateTo(context, const SelectBrokerScreen());
+      } else if (_selectedAccountType == 'cis') {
+        // Navigate to Select Fund Manager screen for CIS account (create account flow)
+        NavigationHelper.navigateTo(
+          context,
+          const SelectFundManagerScreen(isCreateAccountFlow: true),
+        );
       }
     }
   }
@@ -46,8 +45,8 @@ class _LinkInvestmentAccountsScreenState
       backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.withProgress(
         backgroundColor: AppColors.white(context),
-        title: context.localize.linkInvestmentAccounts,
-        currentStep: 10,
+        title: context.localize.chooseAccountType,
+        currentStep: 5,
         totalSteps: 11,
         progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
         onBackPressed: () => Navigator.pop(context),
@@ -61,7 +60,7 @@ class _LinkInvestmentAccountsScreenState
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AppText.smaller(
-                context.localize.linkAccountsDescription,
+                context.localize.chooseAccountTypeDescription,
                 color: AppColors.secondaryText(context),
               ),
               const AppSpacer.vLarge(),
@@ -82,31 +81,25 @@ class _LinkInvestmentAccountsScreenState
                 description: context.localize.cisAccountDescription,
                 onTap: () => setState(() => _selectedAccountType = 'cis'),
               ),
-              const AppSpacer.vShort(),
-              // Don't have an account option
-              SelectableOptionCard(
-                value: 'none',
-                selectedValue: _selectedAccountType,
-                title: context.localize.dontHaveAccount,
-                description: context.localize.dontHaveAccountDescription,
-                onTap: () => setState(() => _selectedAccountType = 'none'),
-              ),
               const Spacer(),
-              // Continue Button
-              AppButton(
-                text: context.localize.continueButton,
-                backgroundColor: _selectedAccountType != null
-                    ? AppColors.appPrimary
-                    : AppColors.lightGrey(context),
-                textColor: _selectedAccountType != null
-                    ? Colors.white
-                    : AppColors.secondaryText(context),
-                borderRadius: 12,
-                padding: EdgeInsets.zero,
-                onTap: _onContinue,
-              ),
-              const AppSpacer.vLarge(),
             ],
+          ),
+        ),
+      ),
+      bottomNavigationBar: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: AppButton(
+            text: context.localize.continueButton,
+            backgroundColor: _selectedAccountType != null
+                ? AppColors.appPrimary
+                : AppColors.lightGrey(context),
+            textColor: _selectedAccountType != null
+                ? Colors.white
+                : AppColors.secondaryText(context),
+            borderRadius: 12,
+            padding: const EdgeInsets.all(0),
+            onTap: _onContinue,
           ),
         ),
       ),

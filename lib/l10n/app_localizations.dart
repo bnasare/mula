@@ -572,6 +572,126 @@ abstract class AppLocalizations {
   /// **'What is your occupation?'**
   String get whatIsYourOccupation;
 
+  /// No description provided for @personalDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal Details'**
+  String get personalDetails;
+
+  /// No description provided for @personalDetailsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We need a few details to set up your account'**
+  String get personalDetailsDescription;
+
+  /// No description provided for @nationality.
+  ///
+  /// In en, this message translates to:
+  /// **'Nationality'**
+  String get nationality;
+
+  /// No description provided for @selectNationality.
+  ///
+  /// In en, this message translates to:
+  /// **'Select your nationality'**
+  String get selectNationality;
+
+  /// No description provided for @emergencyNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency Number'**
+  String get emergencyNumber;
+
+  /// No description provided for @enterEmergencyNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter emergency contact number'**
+  String get enterEmergencyNumber;
+
+  /// No description provided for @identificationDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Identification Details'**
+  String get identificationDetails;
+
+  /// No description provided for @submit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit'**
+  String get submit;
+
+  /// No description provided for @bankDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Bank Details'**
+  String get bankDetails;
+
+  /// No description provided for @selectBank.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Bank'**
+  String get selectBank;
+
+  /// No description provided for @selectYourBank.
+  ///
+  /// In en, this message translates to:
+  /// **'Select your bank'**
+  String get selectYourBank;
+
+  /// No description provided for @bankAccountNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Bank account number'**
+  String get bankAccountNumber;
+
+  /// No description provided for @enterYourAccountNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your account number'**
+  String get enterYourAccountNumber;
+
+  /// No description provided for @chooseAccountType.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose Account Type'**
+  String get chooseAccountType;
+
+  /// No description provided for @chooseAccountTypeDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Choosing the right account type helps us connect you to the right providers.'**
+  String get chooseAccountTypeDescription;
+
+  /// No description provided for @brokers.
+  ///
+  /// In en, this message translates to:
+  /// **'Brokers'**
+  String get brokers;
+
+  /// No description provided for @brokersDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Select your broker to start your investment journey.'**
+  String get brokersDescription;
+
+  /// No description provided for @noBrokersFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No brokers found'**
+  String get noBrokersFound;
+
+  /// No description provided for @accountDetailsSuccessfullySubmitted.
+  ///
+  /// In en, this message translates to:
+  /// **'Account details successfully submitted'**
+  String get accountDetailsSuccessfullySubmitted;
+
+  /// No description provided for @accountDetailsSuccessDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has been created. Check your email to validate your account. Check your email for updates on the status of verification.'**
+  String get accountDetailsSuccessDescription;
+
   /// No description provided for @idVerification.
   ///
   /// In en, this message translates to:
@@ -800,6 +920,12 @@ abstract class AppLocalizations {
   /// **'Select Fund Manager'**
   String get selectFundManager;
 
+  /// No description provided for @selectFundManagerDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Select your fund manager to start your investment journey.'**
+  String get selectFundManagerDescription;
+
   /// No description provided for @searchByAssetNameOrType.
   ///
   /// In en, this message translates to:
@@ -817,6 +943,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Done'**
   String get done;
+
+  /// No description provided for @fundManager.
+  ///
+  /// In en, this message translates to:
+  /// **'Fund Manager'**
+  String get fundManager;
+
+  /// No description provided for @fundsManaged.
+  ///
+  /// In en, this message translates to:
+  /// **'Funds managed by'**
+  String get fundsManaged;
+
+  /// No description provided for @select.
+  ///
+  /// In en, this message translates to:
+  /// **'Select'**
+  String get select;
+
+  /// No description provided for @fundManagerLinkedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Fund manager linked successfully'**
+  String get fundManagerLinkedSuccessfully;
+
+  /// No description provided for @fundManagerLinkedSuccessDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your fund manager has been linked to your account. You can now view and manage your investments.'**
+  String get fundManagerLinkedSuccessDescription;
 
   /// No description provided for @enterCsdAccountNumber.
   ///

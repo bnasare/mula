@@ -73,7 +73,7 @@ class SelectableOptionCard extends StatelessWidget {
                         ),
                       ],
                     )
-                  : AppText.small(
+                  : AppText.smaller(
                       title,
                       style: TextStyle(
                         color: isSelected

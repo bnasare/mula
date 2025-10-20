@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/presentation/widgets/confetti_success_screen.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
@@ -9,62 +10,49 @@ import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../widgets/tasty_pad_text_field.dart';
-import 'fund_manager_details_screen.dart';
-import 'fund_manager_login_screen.dart';
 
-class FundManager {
+class Broker {
   final String id;
   final String name;
   final String? logoAsset;
 
-  const FundManager({required this.id, required this.name, this.logoAsset});
+  const Broker({required this.id, required this.name, this.logoAsset});
 }
 
-class SelectFundManagerScreen extends StatefulWidget {
-  final bool isCreateAccountFlow;
-
-  const SelectFundManagerScreen({
-    super.key,
-    this.isCreateAccountFlow = false,
-  });
+class SelectBrokerScreen extends StatefulWidget {
+  const SelectBrokerScreen({super.key});
 
   @override
-  State<SelectFundManagerScreen> createState() =>
-      _SelectFundManagerScreenState();
+  State<SelectBrokerScreen> createState() => _SelectBrokerScreenState();
 }
 
-class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
+class _SelectBrokerScreenState extends State<SelectBrokerScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
 
-  // List of fund managers
-  static const List<FundManager> _allFundManagers = [
-    FundManager(id: 'ashfield', name: 'Ashfield Investment Managers LTD'),
-    FundManager(id: 'brassica', name: 'Brassica Capital Limited'),
-    FundManager(id: 'cidan', name: 'Cidan Investments Limited'),
-    FundManager(id: 'crystal', name: 'Crystal Capital & Investment'),
-    FundManager(id: 'databank', name: 'Databank Asset Management Services LTD'),
-    FundManager(
-      id: 'ecocapital',
-      name: 'EcoCapital Investment Management Limited',
-    ),
-    FundManager(id: 'edc', name: 'EDC Investments Limited'),
-    FundManager(id: 'first_finance', name: 'First Finance Company Ltd'),
-    FundManager(id: 'glico', name: 'GLICO Capital Limited'),
-    FundManager(id: 'igs', name: 'IGS Financial Services Limited'),
-    FundManager(id: 'investcorp', name: 'InvestCorp Asset Management'),
-    FundManager(id: 'investiture', name: 'Investiture Fund Managers Ltd'),
-    FundManager(id: 'nimed', name: 'Nimed Capital LTD'),
+  // List of brokers
+  static const List<Broker> _allBrokers = [
+    Broker(id: 'ic_securities', name: 'IC Securities'),
+    Broker(id: 'databank', name: 'Databank Investments'),
+    Broker(id: 'cidan', name: 'Cidan Investments Limited'),
+    Broker(id: 'crystal', name: 'Crystal Capital & Investment'),
+    Broker(id: 'ecocapital', name: 'EcoCapital Investment Management Limited'),
+    Broker(id: 'edc', name: 'EDC Investments Limited'),
+    Broker(id: 'first_finance', name: 'First Finance Company Ltd'),
+    Broker(id: 'glico', name: 'GLICO Capital Limited'),
+    Broker(id: 'igs', name: 'IGS Financial Services Limited'),
+    Broker(id: 'investcorp', name: 'InvestCorp Fund Managers Ltd'),
+    Broker(id: 'nimed', name: 'Nimed Capital LTD'),
   ];
 
-  List<FundManager> get _filteredFundManagers {
+  List<Broker> get _filteredBrokers {
     if (_searchQuery.isEmpty) {
-      return _allFundManagers;
+      return _allBrokers;
     }
-    return _allFundManagers
+    return _allBrokers
         .where(
-          (manager) =>
-              manager.name.toLowerCase().contains(_searchQuery.toLowerCase()),
+          (broker) =>
+              broker.name.toLowerCase().contains(_searchQuery.toLowerCase()),
         )
         .toList();
   }
@@ -75,23 +63,22 @@ class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
     super.dispose();
   }
 
-  void _onFundManagerSelected(FundManager manager) {
-    if (widget.isCreateAccountFlow) {
-      // Create account flow - go to details screen
-      NavigationHelper.navigateTo(
-        context,
-        FundManagerDetailsScreen(
-          fundManager: manager,
-          isCreateAccountFlow: true,
-        ),
-      );
-    } else {
-      // Link account flow - go to login screen
-      NavigationHelper.navigateTo(
-        context,
-        FundManagerLoginScreen.cisFundManager(fundManager: manager),
-      );
-    }
+  void _onBrokerSelected(Broker broker) {
+    NavigationHelper.navigateTo(
+      context,
+      ConfettiSuccessScreen(
+        title: context.localize.accountDetailsSuccessfullySubmitted,
+        description: context.localize.accountDetailsSuccessDescription,
+        primaryButtonText: context.localize.done,
+        onPrimaryButtonTap: () {
+          // Do nothing - just stays on success screen
+        },
+        secondaryButtonText: context.localize.addAnother,
+        onSecondaryButtonTap: () {
+          Navigator.pop(context); // Go back to broker selection
+        },
+      ),
+    );
   }
 
   @override
@@ -102,7 +89,7 @@ class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
         backgroundColor: AppColors.white(context),
         appBar: MulaAppBarHelpers.withProgress(
           backgroundColor: AppColors.white(context),
-          title: context.localize.selectFundManager,
+          title: context.localize.brokers,
           currentStep: 6,
           totalSteps: 11,
           progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
@@ -118,7 +105,7 @@ class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
                   mobile: const EdgeInsets.all(16.0),
                 ),
                 child: AppText.smaller(
-                  context.localize.selectFundManagerDescription,
+                  context.localize.brokersDescription,
                   color: AppColors.secondaryText(context),
                 ),
               ),
@@ -141,23 +128,23 @@ class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
                 ),
               ),
               const AppSpacer.vShort(),
-              // Fund managers list
+              // Brokers list
               Expanded(
-                child: _filteredFundManagers.isEmpty
+                child: _filteredBrokers.isEmpty
                     ? Center(
                         child: AppText.small(
-                          'No fund managers found',
+                          context.localize.noBrokersFound,
                           color: AppColors.secondaryText(context),
                         ),
                       )
                     : ListView.builder(
                         padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                        itemCount: _filteredFundManagers.length,
+                        itemCount: _filteredBrokers.length,
                         itemBuilder: (context, index) {
-                          final manager = _filteredFundManagers[index];
-                          return _FundManagerCard(
-                            manager: manager,
-                            onTap: () => _onFundManagerSelected(manager),
+                          final broker = _filteredBrokers[index];
+                          return _BrokerCard(
+                            broker: broker,
+                            onTap: () => _onBrokerSelected(broker),
                           );
                         },
                       ),
@@ -170,11 +157,11 @@ class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
   }
 }
 
-class _FundManagerCard extends StatelessWidget {
-  final FundManager manager;
+class _BrokerCard extends StatelessWidget {
+  final Broker broker;
   final VoidCallback onTap;
 
-  const _FundManagerCard({required this.manager, required this.onTap});
+  const _BrokerCard({required this.broker, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -198,23 +185,23 @@ class _FundManagerCard extends StatelessWidget {
                 color: AppColors.lightGrey(context),
                 borderRadius: BorderRadius.circular(8),
               ),
-              child: manager.logoAsset != null
+              child: broker.logoAsset != null
                   ? ClipRRect(
                       borderRadius: BorderRadius.circular(8),
-                      child: Image.asset(manager.logoAsset!, fit: BoxFit.cover),
+                      child: Image.asset(broker.logoAsset!, fit: BoxFit.cover),
                     )
                   : Center(
                       child: AppText.smaller(
-                        manager.name.substring(0, 1).toUpperCase(),
+                        broker.name.substring(0, 1).toUpperCase(),
                       ),
                     ),
             ),
             const AppSpacer.hShort(),
-            // Fund manager name
+            // Broker name
             Expanded(
               child: AppText.smaller(
-                manager.name,
-                style: TextStyle(overflow: TextOverflow.ellipsis),
+                broker.name,
+                style: const TextStyle(overflow: TextOverflow.ellipsis),
                 maxLines: 2,
               ),
             ),

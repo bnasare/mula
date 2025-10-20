@@ -246,6 +246,71 @@ class AppLocalizationsEn extends AppLocalizations {
   String get whatIsYourOccupation => 'What is your occupation?';
 
   @override
+  String get personalDetails => 'Personal Details';
+
+  @override
+  String get personalDetailsDescription =>
+      'We need a few details to set up your account';
+
+  @override
+  String get nationality => 'Nationality';
+
+  @override
+  String get selectNationality => 'Select your nationality';
+
+  @override
+  String get emergencyNumber => 'Emergency Number';
+
+  @override
+  String get enterEmergencyNumber => 'Enter emergency contact number';
+
+  @override
+  String get identificationDetails => 'Identification Details';
+
+  @override
+  String get submit => 'Submit';
+
+  @override
+  String get bankDetails => 'Bank Details';
+
+  @override
+  String get selectBank => 'Select Bank';
+
+  @override
+  String get selectYourBank => 'Select your bank';
+
+  @override
+  String get bankAccountNumber => 'Bank account number';
+
+  @override
+  String get enterYourAccountNumber => 'Enter your account number';
+
+  @override
+  String get chooseAccountType => 'Choose Account Type';
+
+  @override
+  String get chooseAccountTypeDescription =>
+      'Choosing the right account type helps us connect you to the right providers.';
+
+  @override
+  String get brokers => 'Brokers';
+
+  @override
+  String get brokersDescription =>
+      'Select your broker to start your investment journey.';
+
+  @override
+  String get noBrokersFound => 'No brokers found';
+
+  @override
+  String get accountDetailsSuccessfullySubmitted =>
+      'Account details successfully submitted';
+
+  @override
+  String get accountDetailsSuccessDescription =>
+      'Your account has been created. Check your email to validate your account. Check your email for updates on the status of verification.';
+
+  @override
   String get idVerification => 'ID Verification';
 
   @override
@@ -371,6 +436,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get selectFundManager => 'Select Fund Manager';
 
   @override
+  String get selectFundManagerDescription =>
+      'Select your fund manager to start your investment journey.';
+
+  @override
   String get searchByAssetNameOrType => 'Search by asset name or type';
 
   @override
@@ -378,6 +447,23 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get done => 'Done';
+
+  @override
+  String get fundManager => 'Fund Manager';
+
+  @override
+  String get fundsManaged => 'Funds managed by';
+
+  @override
+  String get select => 'Select';
+
+  @override
+  String get fundManagerLinkedSuccessfully =>
+      'Fund manager linked successfully';
+
+  @override
+  String get fundManagerLinkedSuccessDescription =>
+      'Your fund manager has been linked to your account. You can now view and manage your investments.';
 
   @override
   String get enterCsdAccountNumber => 'What\'s your CSD account number?';

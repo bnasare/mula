@@ -82,6 +82,32 @@
   "occupation": "Occupation",
   "whatIsYourOccupation": "What is your occupation?",
 
+  "personalDetails": "Personal Details",
+  "personalDetailsDescription": "We need a few details to set up your account",
+  "nationality": "Nationality",
+  "selectNationality": "Select your nationality",
+  "emergencyNumber": "Emergency Number",
+  "enterEmergencyNumber": "Enter emergency contact number",
+
+  "identificationDetails": "Identification Details",
+  "submit": "Submit",
+
+  "bankDetails": "Bank Details",
+  "selectBank": "Select Bank",
+  "selectYourBank": "Select your bank",
+  "bankAccountNumber": "Bank account number",
+  "enterYourAccountNumber": "Enter your account number",
+
+  "chooseAccountType": "Choose Account Type",
+  "chooseAccountTypeDescription": "Choosing the right account type helps us connect you to the right providers.",
+
+  "brokers": "Brokers",
+  "brokersDescription": "Select your broker to start your investment journey.",
+  "noBrokersFound": "No brokers found",
+
+  "accountDetailsSuccessfullySubmitted": "Account details successfully submitted",
+  "accountDetailsSuccessDescription": "Your account has been created. Check your email to validate your account. Check your email for updates on the status of verification.",
+
   "idVerification": "ID Verification",
   "selectIdType": "Select an ID type to verify your identity",
   "ghanaCard": "Ghana Card",
@@ -126,9 +152,16 @@
   "dontHaveAccountDescription": "You can create an account and start investing today",
 
   "selectFundManager": "Select Fund Manager",
+  "selectFundManagerDescription": "Select your fund manager to start your investment journey.",
   "searchByAssetNameOrType": "Search by asset name or type",
   "addAnother": "Add Another",
   "done": "Done",
+
+  "fundManager": "Fund Manager",
+  "fundsManaged": "Funds managed by",
+  "select": "Select",
+  "fundManagerLinkedSuccessfully": "Fund manager linked successfully",
+  "fundManagerLinkedSuccessDescription": "Your fund manager has been linked to your account. You can now view and manage your investments.",
 
   "enterCsdAccountNumber": "What's your CSD account number?",
   "csdAccountNumberDescription": "You can find this number on your T-bill certificate. If you don't have it, contact your broker for help",
