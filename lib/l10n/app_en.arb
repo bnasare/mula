@@ -128,5 +128,15 @@
   "selectFundManager": "Select Fund Manager",
   "searchByAssetNameOrType": "Search by asset name or type",
   "addAnother": "Add Another",
-  "done": "Done"
+  "done": "Done",
+
+  "enterCsdAccountNumber": "What's your CSD account number?",
+  "csdAccountNumberDescription": "You can find this number on your T-bill certificate. If you don't have it, contact your broker for help",
+  "accountNumber": "Account Number",
+  "csdAccountNumberHint": "Eg: 123-456-789",
+  "searchLinkedBrokers": "Search Linked Brokers",
+  "createOne": "Create one",
+  "weFoundYourBrokers": "We found your brokers",
+  "signInToBrokersDescription": "Sign into your broker accounts so we can securely fetch your investments",
+  "add": "Add"
 }

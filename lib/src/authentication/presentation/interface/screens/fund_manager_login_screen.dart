@@ -12,14 +12,55 @@ import '../../../../../shared/utils/navigation.dart';
 import '../widgets/mula_text_field.dart';
 import 'otp_verification_screen.dart';
 import 'select_fund_manager_screen.dart';
+import 'linked_brokers_screen.dart';
+
+enum LoginFlowType { cis, csd }
 
 class FundManagerLoginScreen extends StatefulWidget {
-  final FundManager fundManager;
+  final String entityId;
+  final String entityName;
+  final String? entityLogoAsset;
+  final LoginFlowType flowType;
+  final VoidCallback? onAuthSuccess;
 
   const FundManagerLoginScreen({
     super.key,
-    required this.fundManager,
+    required this.entityId,
+    required this.entityName,
+    this.entityLogoAsset,
+    this.flowType = LoginFlowType.cis,
+    this.onAuthSuccess,
   });
+
+  /// Constructor for CIS fund manager flow
+  factory FundManagerLoginScreen.cisFundManager({
+    Key? key,
+    required FundManager fundManager,
+  }) {
+    return FundManagerLoginScreen(
+      key: key,
+      entityId: fundManager.id,
+      entityName: fundManager.name,
+      entityLogoAsset: fundManager.logoAsset,
+      flowType: LoginFlowType.cis,
+    );
+  }
+
+  /// Constructor for CSD broker flow
+  factory FundManagerLoginScreen.csdBroker({
+    Key? key,
+    required Broker broker,
+    VoidCallback? onAuthSuccess,
+  }) {
+    return FundManagerLoginScreen(
+      key: key,
+      entityId: broker.id,
+      entityName: broker.name,
+      entityLogoAsset: broker.logoAsset,
+      flowType: LoginFlowType.csd,
+      onAuthSuccess: onAuthSuccess,
+    );
+  }
 
   @override
   State<FundManagerLoginScreen> createState() => _FundManagerLoginScreenState();
@@ -41,15 +82,29 @@ class _FundManagerLoginScreenState extends State<FundManagerLoginScreen> {
 
   void _onSignIn() {
     if (_formKey.currentState?.validate() ?? false) {
-      // TODO: Implement fund manager authentication logic
-      print('Signing in to ${widget.fundManager.name}');
+      // TODO: Implement authentication logic
+      print('Signing in to ${widget.entityName}');
       print('Email/Phone: ${_emailOrPhoneController.text}');
+      print('Flow type: ${widget.flowType}');
 
-      // Navigate to OTP screen with CIS flow
-      NavigationHelper.navigateTo(
-        context,
-        const OtpVerificationScreen.cisAccount(),
-      );
+      // Navigate to OTP screen based on flow type
+      if (widget.flowType == LoginFlowType.cis) {
+        NavigationHelper.navigateTo(
+          context,
+          const OtpVerificationScreen.cisAccount(),
+        );
+      } else {
+        // CSD flow
+        NavigationHelper.navigateTo(
+          context,
+          OtpVerificationScreen.csdAccount(
+            onVerificationSuccess: () {
+              // Call the success callback when OTP is verified
+              widget.onAuthSuccess?.call();
+            },
+          ),
+        );
+      }
     }
   }
 
@@ -72,7 +127,7 @@ class _FundManagerLoginScreenState extends State<FundManagerLoginScreen> {
                 mobile: const EdgeInsets.all(16.0),
               ),
               children: [
-                // Fund Manager Logo/Name
+                // Entity (Fund Manager or Broker) Logo/Name
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
@@ -89,17 +144,17 @@ class _FundManagerLoginScreenState extends State<FundManagerLoginScreen> {
                           color: AppColors.white(context),
                           borderRadius: BorderRadius.circular(8),
                         ),
-                        child: widget.fundManager.logoAsset != null
+                        child: widget.entityLogoAsset != null
                             ? ClipRRect(
                                 borderRadius: BorderRadius.circular(8),
                                 child: Image.asset(
-                                  widget.fundManager.logoAsset!,
+                                  widget.entityLogoAsset!,
                                   fit: BoxFit.cover,
                                 ),
                               )
                             : Center(
                                 child: AppText.small(
-                                  widget.fundManager.name
+                                  widget.entityName
                                       .substring(0, 1)
                                       .toUpperCase(),
                                   style: const TextStyle(
@@ -109,10 +164,10 @@ class _FundManagerLoginScreenState extends State<FundManagerLoginScreen> {
                               ),
                       ),
                       const AppSpacer.hShort(),
-                      // Fund manager name
+                      // Entity name
                       Expanded(
                         child: AppText.small(
-                          widget.fundManager.name,
+                          widget.entityName,
                           style: const TextStyle(
                             fontWeight: FontWeight.w600,
                           ),

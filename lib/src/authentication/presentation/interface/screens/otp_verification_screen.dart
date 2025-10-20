@@ -20,23 +20,34 @@ enum OtpFlowType {
   signup,
   forgotPassword,
   cisAccount,
+  csdAccount,
 }
 
 class OtpVerificationScreen extends StatefulWidget {
   final OtpFlowType flowType;
+  final VoidCallback? onVerificationSuccess;
 
   const OtpVerificationScreen({
     super.key,
     this.flowType = OtpFlowType.signup,
+    this.onVerificationSuccess,
   });
 
   /// Convenience constructor for backwards compatibility
   const OtpVerificationScreen.forgotPassword({super.key})
-      : flowType = OtpFlowType.forgotPassword;
+      : flowType = OtpFlowType.forgotPassword,
+        onVerificationSuccess = null;
 
   /// Constructor for CIS account flow
   const OtpVerificationScreen.cisAccount({super.key})
-      : flowType = OtpFlowType.cisAccount;
+      : flowType = OtpFlowType.cisAccount,
+        onVerificationSuccess = null;
+
+  /// Constructor for CSD account flow
+  const OtpVerificationScreen.csdAccount({
+    super.key,
+    this.onVerificationSuccess,
+  }) : flowType = OtpFlowType.csdAccount;
 
   @override
   State<OtpVerificationScreen> createState() => _OtpVerificationScreenState();
@@ -94,6 +105,14 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
             context,
             const GoodHandsInfoScreen.cisFlow(),
           );
+          break;
+        case OtpFlowType.csdAccount:
+          // Call the success callback
+          widget.onVerificationSuccess?.call();
+          // Pop OTP screen
+          Navigator.of(context).pop();
+          // Pop Login screen to get back to Brokers screen
+          Navigator.of(context).pop();
           break;
         case OtpFlowType.signup:
           // Navigate to Enable Face ID screen (normal signup flow)

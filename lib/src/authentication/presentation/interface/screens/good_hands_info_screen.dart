@@ -14,24 +14,33 @@ import 'select_fund_manager_screen.dart';
 
 class GoodHandsInfoScreen extends StatelessWidget {
   final bool isCisFlow;
+  final bool useNormalAppBar;
 
   const GoodHandsInfoScreen({
     super.key,
     this.isCisFlow = false,
+    this.useNormalAppBar = false,
   });
 
   /// Constructor for CIS account flow
-  const GoodHandsInfoScreen.cisFlow({super.key}) : isCisFlow = true;
+  const GoodHandsInfoScreen.cisFlow({super.key})
+    : isCisFlow = true,
+      useNormalAppBar = false;
+
+  /// Constructor for CSD account flow (from brokers)
+  const GoodHandsInfoScreen.fromCsd({super.key})
+    : isCisFlow = false,
+      useNormalAppBar = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.white(context),
-      appBar: isCisFlow
+      appBar: useNormalAppBar || isCisFlow
           ? MulaAppBarHelpers.simple(
               backgroundColor: AppColors.white(context),
-              title: 'Almost There',
               onBackPressed: () => Navigator.pop(context),
+              title: '',
             )
           : MulaAppBarHelpers.withProgress(
               backgroundColor: AppColors.white(context),
@@ -151,10 +160,14 @@ class GoodHandsInfoScreen extends StatelessWidget {
                   borderRadius: 12,
                   padding: EdgeInsets.zero,
                   onTap: () {
-                    NavigationHelper.navigateTo(
-                      context,
-                      const LinkInvestmentAccountsScreen(),
-                    );
+                    // Only navigate if not from CSD flow
+                    if (!useNormalAppBar) {
+                      NavigationHelper.navigateTo(
+                        context,
+                        const LinkInvestmentAccountsScreen(),
+                      );
+                    }
+                    // Do nothing for CSD flow
                   },
                 ),
               const AppSpacer.vLarge(),

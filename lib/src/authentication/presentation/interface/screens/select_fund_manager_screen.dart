@@ -78,7 +78,7 @@ class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
   void _onFundManagerSelected(FundManager manager) {
     NavigationHelper.navigateTo(
       context,
-      FundManagerLoginScreen(fundManager: manager),
+      FundManagerLoginScreen.cisFundManager(fundManager: manager),
     );
   }
 

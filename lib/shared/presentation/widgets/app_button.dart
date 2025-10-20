@@ -71,7 +71,7 @@ class AppButton extends StatelessWidget {
             FittedBox(
               fit: BoxFit.scaleDown,
               alignment: Alignment.center,
-              child: AppText.small(
+              child: AppText.smaller(
                 text ?? 'Continue',
                 style: TextStyle(fontWeight: FontWeight.w500, color: textColor),
               ),

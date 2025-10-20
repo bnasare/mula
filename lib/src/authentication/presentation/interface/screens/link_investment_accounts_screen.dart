@@ -10,6 +10,7 @@ import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import 'select_fund_manager_screen.dart';
+import 'csd_account_number_screen.dart';
 
 class LinkInvestmentAccountsScreen extends StatefulWidget {
   const LinkInvestmentAccountsScreen({super.key});
@@ -31,8 +32,14 @@ class _LinkInvestmentAccountsScreenState
           context,
           const SelectFundManagerScreen(),
         );
+      } else if (_selectedAccountType == 'csd') {
+        // Navigate to CSD Account Number screen for CSD account
+        NavigationHelper.navigateTo(
+          context,
+          const CsdAccountNumberScreen(),
+        );
       } else {
-        // TODO: Navigate to appropriate screen for CSD or none
+        // User doesn't have an account - navigate to home
         Navigator.of(context).popUntil((route) => route.isFirst);
       }
     }

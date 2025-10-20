@@ -382,4 +382,33 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get done => 'Done';
+
+  @override
+  String get enterCsdAccountNumber => 'What\'s your CSD account number?';
+
+  @override
+  String get csdAccountNumberDescription =>
+      'You can find this number on your T-bill certificate. If you don\'t have it, contact your broker for help';
+
+  @override
+  String get accountNumber => 'Account Number';
+
+  @override
+  String get csdAccountNumberHint => 'Eg: 123-456-789';
+
+  @override
+  String get searchLinkedBrokers => 'Search Linked Brokers';
+
+  @override
+  String get createOne => 'Create one';
+
+  @override
+  String get weFoundYourBrokers => 'We found your brokers';
+
+  @override
+  String get signInToBrokersDescription =>
+      'Sign into your broker accounts so we can securely fetch your investments';
+
+  @override
+  String get add => 'Add';
 }

@@ -817,6 +817,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Done'**
   String get done;
+
+  /// No description provided for @enterCsdAccountNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s your CSD account number?'**
+  String get enterCsdAccountNumber;
+
+  /// No description provided for @csdAccountNumberDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'You can find this number on your T-bill certificate. If you don\'t have it, contact your broker for help'**
+  String get csdAccountNumberDescription;
+
+  /// No description provided for @accountNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Number'**
+  String get accountNumber;
+
+  /// No description provided for @csdAccountNumberHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Eg: 123-456-789'**
+  String get csdAccountNumberHint;
+
+  /// No description provided for @searchLinkedBrokers.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Linked Brokers'**
+  String get searchLinkedBrokers;
+
+  /// No description provided for @createOne.
+  ///
+  /// In en, this message translates to:
+  /// **'Create one'**
+  String get createOne;
+
+  /// No description provided for @weFoundYourBrokers.
+  ///
+  /// In en, this message translates to:
+  /// **'We found your brokers'**
+  String get weFoundYourBrokers;
+
+  /// No description provided for @signInToBrokersDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign into your broker accounts so we can securely fetch your investments'**
+  String get signInToBrokersDescription;
+
+  /// No description provided for @add.
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get add;
 }
 
 class _AppLocalizationsDelegate
