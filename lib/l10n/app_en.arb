@@ -205,5 +205,10 @@
   "confirmWithdrawal": "Confirm",
   "withdrawalSuccessful": "Withdrawal Successful",
   "moneySuccessfullyWithdrawn": "Money has successfully been withdrawn",
-  "enterPinToConfirm": "Enter your pin to confirm"
+  "enterPinToConfirm": "Enter your pin to confirm",
+  "notifications": "Notifications",
+  "clearAll": "Clear All",
+  "noNotifications": "No Notifications",
+  "noNotificationsDescription": "You're all caught up!",
+  "markAllAsRead": "Mark all as read"
 }

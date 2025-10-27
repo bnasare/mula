@@ -1225,6 +1225,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enter your pin to confirm'**
   String get enterPinToConfirm;
+
+  /// No description provided for @notifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get notifications;
+
+  /// No description provided for @clearAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear All'**
+  String get clearAll;
+
+  /// No description provided for @noNotifications.
+  ///
+  /// In en, this message translates to:
+  /// **'No Notifications'**
+  String get noNotifications;
+
+  /// No description provided for @noNotificationsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re all caught up!'**
+  String get noNotificationsDescription;
+
+  /// No description provided for @markAllAsRead.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark all as read'**
+  String get markAllAsRead;
 }
 
 class _AppLocalizationsDelegate

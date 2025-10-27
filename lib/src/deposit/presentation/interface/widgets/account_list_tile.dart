@@ -37,10 +37,7 @@ class AccountListTile extends StatelessWidget {
           vertical: context.responsiveValue(mobile: 16.0),
         ),
         decoration: BoxDecoration(
-          border: Border.all(
-            color: AppColors.border(context),
-            width: 1,
-          ),
+          border: Border.all(color: AppColors.border(context), width: 1),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Row(
@@ -64,7 +61,7 @@ class AccountListTile extends StatelessWidget {
                   Text(
                     title,
                     style: TextStyle(
-                      fontSize: context.responsiveFontSize(mobile: 16.0),
+                      fontSize: context.responsiveFontSize(mobile: 14.0),
                       fontWeight: FontWeight.w500,
                       color: AppColors.primaryText(context),
                     ),
@@ -73,7 +70,7 @@ class AccountListTile extends StatelessWidget {
                   Text(
                     subtitle,
                     style: TextStyle(
-                      fontSize: context.responsiveFontSize(mobile: 14.0),
+                      fontSize: context.responsiveFontSize(mobile: 12.0),
                       color: AppColors.secondaryText(context),
                     ),
                   ),

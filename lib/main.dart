@@ -14,6 +14,7 @@ import 'shared/utils/connectivity.dart';
 import 'shared/utils/modal_visiblity.dart';
 import 'src/deposit/presentation/interface/screens/screens.dart';
 import 'src/onboarding/presentation/bloc/onboarding_mixin.dart';
+import 'src/onboarding/presentation/interface/screens/onboarding_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

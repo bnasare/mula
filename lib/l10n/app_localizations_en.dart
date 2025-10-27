@@ -596,4 +596,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get enterPinToConfirm => 'Enter your pin to confirm';
+
+  @override
+  String get notifications => 'Notifications';
+
+  @override
+  String get clearAll => 'Clear All';
+
+  @override
+  String get noNotifications => 'No Notifications';
+
+  @override
+  String get noNotificationsDescription => 'You\'re all caught up!';
+
+  @override
+  String get markAllAsRead => 'Mark all as read';
 }

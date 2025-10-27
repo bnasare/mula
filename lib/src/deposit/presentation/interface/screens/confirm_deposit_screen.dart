@@ -45,8 +45,7 @@ class ConfirmDepositScreen extends StatelessWidget {
                     Text(
                       context.localize.reviewAndConfirm,
                       style: TextStyle(
-                        fontSize: context.responsiveFontSize(mobile: 20.0),
-                        fontWeight: FontWeight.w600,
+                        fontSize: context.responsiveFontSize(mobile: 16.0),
                         color: AppColors.primaryText(context),
                       ),
                     ),
@@ -130,10 +129,9 @@ class ConfirmDepositScreen extends StatelessWidget {
         AppText.medium(
           value,
           style: TextStyle(
-            fontWeight: isAmount ? FontWeight.w600 : FontWeight.w500,
             fontSize: isAmount
-                ? context.responsiveFontSize(mobile: 18.0)
-                : context.responsiveFontSize(mobile: 16.0),
+                ? context.responsiveFontSize(mobile: 14.0)
+                : context.responsiveFontSize(mobile: 14.0),
           ),
         ),
       ],
@@ -170,10 +168,9 @@ class ConfirmDepositScreen extends StatelessWidget {
                 ),
                 const AppSpacer.vShort(),
                 // Message
-                AppText.medium(
+                AppText.smaller(
                   context.localize.mobileMoneyPrompt,
                   align: TextAlign.center,
-                  style: const TextStyle(fontWeight: FontWeight.w500),
                 ),
                 const AppSpacer.vLarge(),
                 // Okay Button
