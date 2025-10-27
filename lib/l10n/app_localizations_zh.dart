@@ -554,4 +554,32 @@ class AppLocalizationsZh extends AppLocalizations {
   @override
   String get forYourSecurityEnterPin =>
       'For your security, please enter your 4-digit PIN to continue';
+
+  @override
+  String get withdraw => 'Withdraw';
+
+  @override
+  String get chooseWithdrawalDestination => 'Choose a destination account';
+
+  @override
+  String get withdrawTo => 'Withdraw To';
+
+  @override
+  String get selectWithdrawAccount => 'Select Account';
+
+  @override
+  String get enterWithdrawAmount => 'Enter Amount';
+
+  @override
+  String get confirmWithdrawal => 'Confirm';
+
+  @override
+  String get withdrawalSuccessful => 'Withdrawal Successful';
+
+  @override
+  String get moneySuccessfullyWithdrawn =>
+      'Money has successfully been withdrawn';
+
+  @override
+  String get enterPinToConfirm => 'Enter your pin to confirm';
 }

@@ -1171,6 +1171,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'For your security, please enter your 4-digit PIN to continue'**
   String get forYourSecurityEnterPin;
+
+  /// No description provided for @withdraw.
+  ///
+  /// In en, this message translates to:
+  /// **'Withdraw'**
+  String get withdraw;
+
+  /// No description provided for @chooseWithdrawalDestination.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a destination account'**
+  String get chooseWithdrawalDestination;
+
+  /// No description provided for @withdrawTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Withdraw To'**
+  String get withdrawTo;
+
+  /// No description provided for @selectWithdrawAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Account'**
+  String get selectWithdrawAccount;
+
+  /// No description provided for @enterWithdrawAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Amount'**
+  String get enterWithdrawAmount;
+
+  /// No description provided for @confirmWithdrawal.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirmWithdrawal;
+
+  /// No description provided for @withdrawalSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Withdrawal Successful'**
+  String get withdrawalSuccessful;
+
+  /// No description provided for @moneySuccessfullyWithdrawn.
+  ///
+  /// In en, this message translates to:
+  /// **'Money has successfully been withdrawn'**
+  String get moneySuccessfullyWithdrawn;
+
+  /// No description provided for @enterPinToConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your pin to confirm'**
+  String get enterPinToConfirm;
 }
 
 class _AppLocalizationsDelegate

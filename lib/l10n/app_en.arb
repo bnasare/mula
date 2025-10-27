@@ -196,5 +196,14 @@
   "enterAccountName": "Enter account name",
   "enterBankAccountInfo": "Enter Account Information",
   "confirmBankDeposit": "Confirm Deposit",
-  "forYourSecurityEnterPin": "For your security, please enter your 4-digit PIN to continue"
+  "forYourSecurityEnterPin": "For your security, please enter your 4-digit PIN to continue",
+  "withdraw": "Withdraw",
+  "chooseWithdrawalDestination": "Choose a destination account",
+  "withdrawTo": "Withdraw To",
+  "selectWithdrawAccount": "Select Account",
+  "enterWithdrawAmount": "Enter Amount",
+  "confirmWithdrawal": "Confirm",
+  "withdrawalSuccessful": "Withdrawal Successful",
+  "moneySuccessfullyWithdrawn": "Money has successfully been withdrawn",
+  "enterPinToConfirm": "Enter your pin to confirm"
 }
