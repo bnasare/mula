@@ -171,5 +171,23 @@
   "createOne": "Create one",
   "weFoundYourBrokers": "We found your brokers",
   "signInToBrokersDescription": "Sign into your broker accounts so we can securely fetch your investments",
-  "add": "Add"
+  "add": "Add",
+
+  "deposit": "Deposit",
+  "chooseAccountToTopUp": "Choose an account to top up from",
+  "mobileMoneyDeposit": "Mobile Money",
+  "bankAccount": "Bank Account",
+  "selectAccount": "Select Account",
+  "addAnotherAccount": "Add another account",
+  "enterPhoneNumber": "Enter your Phone Number",
+  "network": "Network",
+  "selectNetwork": "Select Network",
+  "enterAmount": "Enter Amount",
+  "amount": "Amount",
+  "reviewAndConfirm": "Review and confirm your details",
+  "confirmDeposit": "Confirm",
+  "mobileMoneyPrompt": "You will receive a mobile money prompt. Enter your pin to confirm this transaction",
+  "okay": "Okay",
+  "depositSuccessful": "Deposit Successful",
+  "fundsSuccessfullyDeposited": "Funds successfully deposited into your account"
 }

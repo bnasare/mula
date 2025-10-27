@@ -1027,6 +1027,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add'**
   String get add;
+
+  /// No description provided for @deposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Deposit'**
+  String get deposit;
+
+  /// No description provided for @chooseAccountToTopUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose an account to top up from'**
+  String get chooseAccountToTopUp;
+
+  /// No description provided for @mobileMoneyDeposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Mobile Money'**
+  String get mobileMoneyDeposit;
+
+  /// No description provided for @bankAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Bank Account'**
+  String get bankAccount;
+
+  /// No description provided for @selectAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Account'**
+  String get selectAccount;
+
+  /// No description provided for @addAnotherAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Add another account'**
+  String get addAnotherAccount;
+
+  /// No description provided for @enterPhoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your Phone Number'**
+  String get enterPhoneNumber;
+
+  /// No description provided for @network.
+  ///
+  /// In en, this message translates to:
+  /// **'Network'**
+  String get network;
+
+  /// No description provided for @selectNetwork.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Network'**
+  String get selectNetwork;
+
+  /// No description provided for @enterAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Amount'**
+  String get enterAmount;
+
+  /// No description provided for @amount.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get amount;
+
+  /// No description provided for @reviewAndConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Review and confirm your details'**
+  String get reviewAndConfirm;
+
+  /// No description provided for @confirmDeposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirmDeposit;
+
+  /// No description provided for @mobileMoneyPrompt.
+  ///
+  /// In en, this message translates to:
+  /// **'You will receive a mobile money prompt. Enter your pin to confirm this transaction'**
+  String get mobileMoneyPrompt;
+
+  /// No description provided for @okay.
+  ///
+  /// In en, this message translates to:
+  /// **'Okay'**
+  String get okay;
+
+  /// No description provided for @depositSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Deposit Successful'**
+  String get depositSuccessful;
+
+  /// No description provided for @fundsSuccessfullyDeposited.
+  ///
+  /// In en, this message translates to:
+  /// **'Funds successfully deposited into your account'**
+  String get fundsSuccessfullyDeposited;
 }
 
 class _AppLocalizationsDelegate

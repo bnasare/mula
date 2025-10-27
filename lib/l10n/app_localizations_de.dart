@@ -498,4 +498,57 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get add => 'Add';
+
+  @override
+  String get deposit => 'Deposit';
+
+  @override
+  String get chooseAccountToTopUp => 'Choose an account to top up from';
+
+  @override
+  String get mobileMoneyDeposit => 'Mobile Money';
+
+  @override
+  String get bankAccount => 'Bank Account';
+
+  @override
+  String get selectAccount => 'Select Account';
+
+  @override
+  String get addAnotherAccount => 'Add another account';
+
+  @override
+  String get enterPhoneNumber => 'Enter your Phone Number';
+
+  @override
+  String get network => 'Network';
+
+  @override
+  String get selectNetwork => 'Select Network';
+
+  @override
+  String get enterAmount => 'Enter Amount';
+
+  @override
+  String get amount => 'Amount';
+
+  @override
+  String get reviewAndConfirm => 'Review and confirm your details';
+
+  @override
+  String get confirmDeposit => 'Confirm';
+
+  @override
+  String get mobileMoneyPrompt =>
+      'You will receive a mobile money prompt. Enter your pin to confirm this transaction';
+
+  @override
+  String get okay => 'Okay';
+
+  @override
+  String get depositSuccessful => 'Deposit Successful';
+
+  @override
+  String get fundsSuccessfullyDeposited =>
+      'Funds successfully deposited into your account';
 }
