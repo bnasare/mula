@@ -137,7 +137,7 @@ abstract class AppLocalizations {
   /// No description provided for @onboardingDescription.
   ///
   /// In en, this message translates to:
-  /// **'Link your accounts, track your portfolio, trade securities,\nand learn as you go — all in one secure app.'**
+  /// **'Link your accounts, track your portfolio, trade securities, and learn as you go — all in one secure app.'**
   String get onboardingDescription;
 
   /// No description provided for @getStarted.

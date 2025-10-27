@@ -19,7 +19,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onboardingDescription =>
-      'Link your accounts, track your portfolio, trade securities,\nand learn as you go — all in one secure app.';
+      'Link your accounts, track your portfolio, trade securities, and learn as you go — all in one secure app.';
 
   @override
   String get getStarted => 'Get Started';
