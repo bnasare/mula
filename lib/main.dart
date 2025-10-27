@@ -129,7 +129,7 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
                 );
               } else {
                 // Show onboarding
-                return WithdrawAccountSelectionScreen();
+                return OnboardingScreen();
               }
             },
           ),
