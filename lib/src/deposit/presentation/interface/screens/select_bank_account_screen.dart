@@ -38,8 +38,7 @@ class SelectBankAccountScreen extends StatelessWidget {
               Text(
                 context.localize.selectBankAccount,
                 style: TextStyle(
-                  fontSize: context.responsiveFontSize(mobile: 20.0),
-                  fontWeight: FontWeight.w600,
+                  fontSize: context.responsiveFontSize(mobile: 16.0),
                   color: AppColors.primaryText(context),
                 ),
               ),
@@ -102,12 +101,9 @@ class SelectBankAccountScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(width: context.responsiveSpacing(mobile: 12.0)),
-                      AppText.medium(
+                      AppText.smaller(
                         context.localize.addAnotherAccount,
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          color: AppColors.appPrimary,
-                        ),
+                        style: TextStyle(color: AppColors.appPrimary),
                       ),
                     ],
                   ),

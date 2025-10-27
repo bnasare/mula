@@ -45,8 +45,7 @@ class ConfirmMobileMoneyWithdrawScreen extends StatelessWidget {
                     Text(
                       context.localize.reviewAndConfirm,
                       style: TextStyle(
-                        fontSize: context.responsiveFontSize(mobile: 20.0),
-                        fontWeight: FontWeight.w600,
+                        fontSize: context.responsiveFontSize(mobile: 16.0),
                         color: AppColors.primaryText(context),
                       ),
                     ),
@@ -55,7 +54,7 @@ class ConfirmMobileMoneyWithdrawScreen extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       padding: EdgeInsets.all(
-                        context.responsiveValue(mobile: 20.0),
+                        context.responsiveValue(mobile: 12.0),
                       ),
                       decoration: BoxDecoration(
                         color: AppColors.offWhite(context),
@@ -75,6 +74,7 @@ class ConfirmMobileMoneyWithdrawScreen extends StatelessWidget {
                             network,
                           ),
                           const AppSpacer.vShort(),
+                          const AppSpacer.vShort(),
                           // Phone Number
                           _buildDetailRow(
                             context,
@@ -82,7 +82,7 @@ class ConfirmMobileMoneyWithdrawScreen extends StatelessWidget {
                             phoneNumber,
                           ),
                           const AppSpacer.vShort(),
-                          // Amount
+                          const AppSpacer.vShort(), // Amount
                           _buildDetailRow(
                             context,
                             context.localize.amount,
@@ -135,15 +135,14 @@ class ConfirmMobileMoneyWithdrawScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AppText.smaller(label, color: AppColors.secondaryText(context)),
+        AppText.smallest(label, color: AppColors.secondaryText(context)),
         const SizedBox(height: 6),
         AppText.medium(
           value,
           style: TextStyle(
-            fontWeight: isAmount ? FontWeight.w600 : FontWeight.w500,
             fontSize: isAmount
-                ? context.responsiveFontSize(mobile: 18.0)
-                : context.responsiveFontSize(mobile: 16.0),
+                ? context.responsiveFontSize(mobile: 14.0)
+                : context.responsiveFontSize(mobile: 14.0),
           ),
         ),
       ],

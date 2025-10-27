@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mula/shared/presentation/theme/app_colors.dart';
+import 'package:mula/src/withdraw/presentation/interface/screens/screens.dart';
 import 'package:provider/provider.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
@@ -128,7 +129,7 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
                 );
               } else {
                 // Show onboarding
-                return DepositAccountSelectionScreen();
+                return WithdrawAccountSelectionScreen();
               }
             },
           ),

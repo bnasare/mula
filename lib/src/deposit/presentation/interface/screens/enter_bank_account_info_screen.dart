@@ -3,9 +3,9 @@ import 'package:iconly/iconly.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
+import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/presentation/widgets/single_category_selector.dart';
-import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
@@ -95,8 +95,7 @@ class _EnterBankAccountInfoScreenState
                     Text(
                       context.localize.enterBankAccountInfo,
                       style: TextStyle(
-                        fontSize: context.responsiveFontSize(mobile: 20.0),
-                        fontWeight: FontWeight.w600,
+                        fontSize: context.responsiveFontSize(mobile: 16.0),
                         color: AppColors.primaryText(context),
                       ),
                     ),

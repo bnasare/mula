@@ -54,7 +54,7 @@ class ConfirmDepositScreen extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       padding: EdgeInsets.all(
-                        context.responsiveValue(mobile: 20.0),
+                        context.responsiveValue(mobile: 12.0),
                       ),
                       decoration: BoxDecoration(
                         color: AppColors.offWhite(context),
@@ -126,7 +126,7 @@ class ConfirmDepositScreen extends StatelessWidget {
       children: [
         AppText.smaller(label, color: AppColors.secondaryText(context)),
         const SizedBox(height: 6),
-        AppText.medium(
+        AppText.smaller(
           value,
           style: TextStyle(
             fontSize: isAmount

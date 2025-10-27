@@ -47,8 +47,7 @@ class ConfirmBankWithdrawScreen extends StatelessWidget {
                     Text(
                       context.localize.reviewAndConfirm,
                       style: TextStyle(
-                        fontSize: context.responsiveFontSize(mobile: 20.0),
-                        fontWeight: FontWeight.w600,
+                        fontSize: context.responsiveFontSize(mobile: 16.0),
                         color: AppColors.primaryText(context),
                       ),
                     ),
@@ -57,7 +56,7 @@ class ConfirmBankWithdrawScreen extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       padding: EdgeInsets.all(
-                        context.responsiveValue(mobile: 20.0),
+                        context.responsiveValue(mobile: 13.0),
                       ),
                       decoration: BoxDecoration(
                         color: AppColors.offWhite(context),
@@ -71,27 +70,23 @@ class ConfirmBankWithdrawScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           // Bank
-                          _buildDetailRow(
-                            context,
-                            context.localize.bank,
-                            bank,
-                          ),
+                          _buildDetailRow(context, context.localize.bank, bank),
                           const AppSpacer.vShort(),
-                          // Account Number
+                          const AppSpacer.vShort(), // Account Number
                           _buildDetailRow(
                             context,
                             context.localize.bankAccountNumber,
                             accountNumber,
                           ),
                           const AppSpacer.vShort(),
-                          // Account Name
+                          const AppSpacer.vShort(), // Account Name
                           _buildDetailRow(
                             context,
                             context.localize.accountName,
                             accountName,
                           ),
                           const AppSpacer.vShort(),
-                          // Amount
+                          const AppSpacer.vShort(), // Amount
                           _buildDetailRow(
                             context,
                             context.localize.amount,
@@ -147,13 +142,12 @@ class ConfirmBankWithdrawScreen extends StatelessWidget {
       children: [
         AppText.smaller(label, color: AppColors.secondaryText(context)),
         const SizedBox(height: 6),
-        AppText.medium(
+        AppText.smaller(
           value,
           style: TextStyle(
-            fontWeight: isAmount ? FontWeight.w600 : FontWeight.w500,
             fontSize: isAmount
-                ? context.responsiveFontSize(mobile: 18.0)
-                : context.responsiveFontSize(mobile: 16.0),
+                ? context.responsiveFontSize(mobile: 14.0)
+                : context.responsiveFontSize(mobile: 14.0),
           ),
         ),
       ],

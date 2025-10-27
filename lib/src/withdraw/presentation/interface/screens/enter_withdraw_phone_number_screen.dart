@@ -100,8 +100,7 @@ class _EnterWithdrawPhoneNumberScreenState
                     Text(
                       context.localize.enterPhoneNumber,
                       style: TextStyle(
-                        fontSize: context.responsiveFontSize(mobile: 20.0),
-                        fontWeight: FontWeight.w600,
+                        fontSize: context.responsiveFontSize(mobile: 16.0),
                         color: AppColors.primaryText(context),
                       ),
                     ),
