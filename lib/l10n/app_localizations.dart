@@ -1129,6 +1129,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Funds successfully deposited into your account'**
   String get fundsSuccessfullyDeposited;
+
+  /// No description provided for @selectBankAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Bank Account'**
+  String get selectBankAccount;
+
+  /// No description provided for @bank.
+  ///
+  /// In en, this message translates to:
+  /// **'Bank'**
+  String get bank;
+
+  /// No description provided for @accountName.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Name'**
+  String get accountName;
+
+  /// No description provided for @enterAccountName.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter account name'**
+  String get enterAccountName;
+
+  /// No description provided for @enterBankAccountInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Account Information'**
+  String get enterBankAccountInfo;
+
+  /// No description provided for @confirmBankDeposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Deposit'**
+  String get confirmBankDeposit;
+
+  /// No description provided for @forYourSecurityEnterPin.
+  ///
+  /// In en, this message translates to:
+  /// **'For your security, please enter your 4-digit PIN to continue'**
+  String get forYourSecurityEnterPin;
 }
 
 class _AppLocalizationsDelegate

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
-import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/extension.dart';
 
 /// A reusable list tile widget for displaying account information

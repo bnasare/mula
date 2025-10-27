@@ -9,6 +9,7 @@ import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import 'select_account_screen.dart';
+import 'select_bank_account_screen.dart';
 
 /// Screen for selecting the account type to deposit from
 /// (Mobile Money or Bank Account)
@@ -102,11 +103,9 @@ class _DepositAccountSelectionScreenState
                             const SelectAccountScreen(),
                           );
                         } else {
-                          // TODO: Navigate to bank account flow when implemented
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Bank account deposit coming soon'),
-                            ),
+                          NavigationHelper.navigateTo(
+                            context,
+                            const SelectBankAccountScreen(),
                           );
                         }
                       }

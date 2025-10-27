@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
@@ -73,6 +74,11 @@ class _EnterAmountScreenState extends State<EnterAmountScreen> {
                       labelText: context.localize.amount,
                       hintText: '0.00',
                       keyboardType: TextInputType.number,
+                      suffixIcon: Icon(
+                        IconlyLight.wallet,
+                        color: Colors.grey.shade400,
+                        size: 20,
+                      ),
                       onChanged: (_) => setState(() {}),
                     ),
                   ],

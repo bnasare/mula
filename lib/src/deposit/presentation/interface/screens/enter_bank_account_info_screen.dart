@@ -3,78 +3,74 @@ import 'package:iconly/iconly.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
-import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/presentation/widgets/single_category_selector.dart';
+import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../authentication/presentation/interface/widgets/mula_text_field.dart';
-import 'enter_amount_screen.dart';
+import 'enter_bank_amount_screen.dart';
 
-/// Screen for entering phone number for mobile money deposit
-class EnterPhoneNumberScreen extends StatefulWidget {
-  final String? selectedNetwork;
+/// Screen for entering bank account information for deposit
+class EnterBankAccountInfoScreen extends StatefulWidget {
+  final String? selectedBank;
   final String? selectedAccountNumber;
 
-  const EnterPhoneNumberScreen({
+  const EnterBankAccountInfoScreen({
     super.key,
-    this.selectedNetwork,
+    this.selectedBank,
     this.selectedAccountNumber,
   });
 
   @override
-  State<EnterPhoneNumberScreen> createState() => _EnterPhoneNumberScreenState();
+  State<EnterBankAccountInfoScreen> createState() =>
+      _EnterBankAccountInfoScreenState();
 }
 
-class _EnterPhoneNumberScreenState extends State<EnterPhoneNumberScreen> {
-  final _phoneController = TextEditingController();
-  String? _selectedNetwork;
+class _EnterBankAccountInfoScreenState
+    extends State<EnterBankAccountInfoScreen> {
+  final _accountNameController = TextEditingController();
+  final _accountNumberController = TextEditingController();
+  String? _selectedBank;
 
-  final List<String> _networks = [
-    'MTN Mobile Money',
-    'Telecel Cash',
-    'AirtelTigo Money',
-    'Vodafone Cash',
+  final List<String> _banks = [
+    'Ecobank',
+    'Access Bank',
+    'Fidelity Bank',
+    'GCB Bank',
+    'Absa Bank',
+    'Stanbic Bank',
+    'Standard Chartered',
+    'Zenith Bank',
+    'CalBank',
+    'ADB Bank',
   ];
 
   @override
   void initState() {
     super.initState();
     // Pre-fill if coming from account selection
-    if (widget.selectedNetwork != null) {
-      _selectedNetwork = _getFullNetworkName(widget.selectedNetwork!);
+    if (widget.selectedBank != null) {
+      _selectedBank = widget.selectedBank;
     }
     if (widget.selectedAccountNumber != null) {
-      _phoneController.text = widget.selectedAccountNumber!;
+      _accountNumberController.text = widget.selectedAccountNumber!;
     }
   }
 
   @override
   void dispose() {
-    _phoneController.dispose();
+    _accountNameController.dispose();
+    _accountNumberController.dispose();
     super.dispose();
   }
 
-  String _getFullNetworkName(String shortName) {
-    switch (shortName) {
-      case 'MTN':
-        return 'MTN Mobile Money';
-      case 'Telecel':
-        return 'Telecel Cash';
-      case 'AirtelTigo':
-        return 'AirtelTigo Money';
-      case 'Vodafone':
-        return 'Vodafone Cash';
-      default:
-        return shortName;
-    }
-  }
-
   bool get _isFormValid {
-    return _selectedNetwork != null &&
-        _phoneController.text.isNotEmpty &&
-        _phoneController.text.length >= 10;
+    return _selectedBank != null &&
+        _accountNameController.text.isNotEmpty &&
+        _accountNumberController.text.isNotEmpty &&
+        _accountNumberController.text.length >= 10;
   }
 
   @override
@@ -97,7 +93,7 @@ class _EnterPhoneNumberScreenState extends State<EnterPhoneNumberScreen> {
                   children: [
                     // Title
                     Text(
-                      context.localize.enterPhoneNumber,
+                      context.localize.enterBankAccountInfo,
                       style: TextStyle(
                         fontSize: context.responsiveFontSize(mobile: 20.0),
                         fontWeight: FontWeight.w600,
@@ -105,27 +101,42 @@ class _EnterPhoneNumberScreenState extends State<EnterPhoneNumberScreen> {
                       ),
                     ),
                     const AppSpacer.vLarge(),
-                    // Network Selector
+                    // Bank Selector
                     SingleCategorySelector(
-                      title: context.localize.network,
-                      hintText: context.localize.selectNetwork,
-                      options: _networks,
-                      selectedOption: _selectedNetwork,
+                      title: context.localize.bank,
+                      hintText: context.localize.selectBank,
+                      options: _banks,
+                      selectedOption: _selectedBank,
                       onSelectionChanged: (value) {
                         setState(() {
-                          _selectedNetwork = value;
+                          _selectedBank = value;
                         });
                       },
                     ),
                     const AppSpacer.vShort(),
-                    // Phone Number Input
+                    // Account Name Input
                     MulaTextField(
-                      controller: _phoneController,
-                      labelText: context.localize.phoneNumber,
-                      hintText: context.localize.enterYourPhoneNumber,
-                      keyboardType: TextInputType.phone,
+                      controller: _accountNameController,
+                      labelText: context.localize.accountName,
+                      hintText: context.localize.enterAccountName,
+                      keyboardType: TextInputType.name,
+                      textCapitalization: TextCapitalization.words,
                       suffixIcon: Icon(
-                        IconlyLight.call,
+                        IconlyLight.profile,
+                        color: Colors.grey.shade400,
+                        size: 20,
+                      ),
+                      onChanged: (_) => setState(() {}),
+                    ),
+                    const AppSpacer.vShort(),
+                    // Account Number Input
+                    MulaTextField(
+                      controller: _accountNumberController,
+                      labelText: context.localize.bankAccountNumber,
+                      hintText: context.localize.enterYourAccountNumber,
+                      keyboardType: TextInputType.number,
+                      suffixIcon: Icon(
+                        IconlyLight.document,
                         color: Colors.grey.shade400,
                         size: 20,
                       ),
@@ -152,9 +163,10 @@ class _EnterPhoneNumberScreenState extends State<EnterPhoneNumberScreen> {
                     ? () {
                         NavigationHelper.navigateTo(
                           context,
-                          EnterAmountScreen(
-                            network: _selectedNetwork!,
-                            phoneNumber: _phoneController.text,
+                          EnterBankAmountScreen(
+                            bank: _selectedBank!,
+                            accountName: _accountNameController.text,
+                            accountNumber: _accountNumberController.text,
                           ),
                         );
                       }

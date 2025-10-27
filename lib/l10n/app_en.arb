@@ -189,5 +189,12 @@
   "mobileMoneyPrompt": "You will receive a mobile money prompt. Enter your pin to confirm this transaction",
   "okay": "Okay",
   "depositSuccessful": "Deposit Successful",
-  "fundsSuccessfullyDeposited": "Funds successfully deposited into your account"
+  "fundsSuccessfullyDeposited": "Funds successfully deposited into your account",
+  "selectBankAccount": "Select Bank Account",
+  "bank": "Bank",
+  "accountName": "Account Name",
+  "enterAccountName": "Enter account name",
+  "enterBankAccountInfo": "Enter Account Information",
+  "confirmBankDeposit": "Confirm Deposit",
+  "forYourSecurityEnterPin": "For your security, please enter your 4-digit PIN to continue"
 }

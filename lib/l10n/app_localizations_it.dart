@@ -550,4 +550,26 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get fundsSuccessfullyDeposited =>
       'Funds successfully deposited into your account';
+
+  @override
+  String get selectBankAccount => 'Select Bank Account';
+
+  @override
+  String get bank => 'Bank';
+
+  @override
+  String get accountName => 'Account Name';
+
+  @override
+  String get enterAccountName => 'Enter account name';
+
+  @override
+  String get enterBankAccountInfo => 'Enter Account Information';
+
+  @override
+  String get confirmBankDeposit => 'Confirm Deposit';
+
+  @override
+  String get forYourSecurityEnterPin =>
+      'For your security, please enter your 4-digit PIN to continue';
 }
