@@ -8,6 +8,7 @@ import 'src/dashboard/dashboard_injection.dart';
 import 'src/explore/explore_injection.dart';
 import 'src/home/home_injection.dart';
 import 'src/learn/learn_injection.dart';
+import 'src/mula_bot/mula_bot_injection.dart';
 import 'src/onboarding/onboarding_injection.dart';
 import 'src/portfolio/portfolio_injection.dart';
 import 'src/transactions/transactions_injection.dart';
@@ -24,6 +25,7 @@ Future<void> init() async {
   initLearn();
   initAccount();
   initTransactions();
+  initMulaBot();
 
   // Register core dependencies
   sl

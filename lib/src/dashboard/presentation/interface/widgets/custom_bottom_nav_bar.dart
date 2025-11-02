@@ -37,31 +37,36 @@ class CustomBottomNavBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               _NavBarItem(
-                icon: IconlyBold.home,
+                iconLight: IconlyLight.home,
+                iconBold: IconlyBold.home,
                 label: context.localize.home,
                 isActive: currentIndex == 0,
                 onTap: () => provider.changeTab(0),
               ),
               _NavBarItem(
-                icon: IconlyBold.discovery,
+                iconLight: IconlyLight.discovery,
+                iconBold: IconlyBold.discovery,
                 label: context.localize.explore,
                 isActive: currentIndex == 1,
                 onTap: () => provider.changeTab(1),
               ),
               _NavBarItem(
-                icon: IconlyBold.chart,
+                iconLight: IconlyLight.chart,
+                iconBold: IconlyBold.chart,
                 label: context.localize.portfolio,
                 isActive: currentIndex == 2,
                 onTap: () => provider.changeTab(2),
               ),
               _NavBarItem(
-                icon: IconlyBold.document,
+                iconLight: IconlyLight.document,
+                iconBold: IconlyBold.document,
                 label: context.localize.learn,
                 isActive: currentIndex == 3,
                 onTap: () => provider.changeTab(3),
               ),
               _NavBarItem(
-                icon: IconlyBold.profile,
+                iconLight: IconlyLight.profile,
+                iconBold: IconlyBold.profile,
                 label: context.localize.account,
                 isActive: currentIndex == 4,
                 onTap: () => provider.changeTab(4),
@@ -76,13 +81,15 @@ class CustomBottomNavBar extends StatelessWidget {
 
 /// Individual navigation bar item
 class _NavBarItem extends StatelessWidget {
-  final IconData icon;
+  final IconData iconLight;
+  final IconData iconBold;
   final String label;
   final bool isActive;
   final VoidCallback onTap;
 
   const _NavBarItem({
-    required this.icon,
+    required this.iconLight,
+    required this.iconBold,
     required this.label,
     required this.isActive,
     required this.onTap,
@@ -103,7 +110,7 @@ class _NavBarItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              icon,
+              isActive ? iconBold : iconLight,
               color: color,
               size: 20,
             ),

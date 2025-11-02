@@ -4,7 +4,9 @@ import 'package:provider/provider.dart';
 import '../../../../../shared/data/image_assets.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/utils/extension.dart';
+import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
+import '../../../../mula_bot/presentation/interface/screens/mula_bot_welcome_screen.dart';
 import '../widgets/action_buttons_section.dart';
 import '../widgets/asset_overview_section.dart';
 import '../widgets/home_app_bar.dart';
@@ -80,16 +82,9 @@ class _HomeTabState extends State<HomeTab> {
       ),
       floatingActionButton: GestureDetector(
         onTap: () {
-          // TODO: Navigate to AI assistant
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('AI Assistant coming soon')),
-          );
+          NavigationHelper.navigateTo(context, const MulaBotWelcomeScreen());
         },
-        child: Image.asset(
-          ImageAssets.ai,
-          width: 64,
-          height: 64,
-        ),
+        child: Image.asset(ImageAssets.ai, width: 64, height: 64),
       ),
     );
   }
