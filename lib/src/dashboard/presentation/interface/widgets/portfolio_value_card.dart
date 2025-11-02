@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:intl/intl.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
@@ -10,45 +11,41 @@ import '../../../domain/entities/portfolio_summary.dart';
 class PortfolioValueCard extends StatelessWidget {
   final PortfolioSummary portfolioSummary;
 
-  const PortfolioValueCard({
-    super.key,
-    required this.portfolioSummary,
-  });
+  const PortfolioValueCard({super.key, required this.portfolioSummary});
 
   @override
   Widget build(BuildContext context) {
-    final currencyFormat = NumberFormat.currency(symbol: 'GHS ', decimalDigits: 2);
+    final currencyFormat = NumberFormat.currency(
+      symbol: 'GHS ',
+      decimalDigits: 2,
+    );
     final isPositive = portfolioSummary.isPositiveChange;
 
     return Center(
       child: Column(
         children: [
-          // Label with eye icon
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              AppText.small(
-                context.localize.totalPortfolioValue,
-                color: AppColors.secondaryText(context),
-              ),
-              const SizedBox(width: 8),
-              Icon(
-                IconlyLight.show,
-                size: 16,
-                color: AppColors.secondaryText(context),
-              ),
-            ],
+          // Label
+          AppText.small(
+            context.localize.totalPortfolioValue,
+            color: AppColors.secondaryText(context),
           ),
           const SizedBox(height: 8),
 
-          // Total value
-          AppText(
-            currencyFormat.format(portfolioSummary.totalValue),
-            style: TextStyle(
-              fontSize: 38.0,
-              fontWeight: FontWeight.bold,
-              color: AppColors.primaryText(context),
-            ),
+          // Total value with eye icon
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              AppText(
+                currencyFormat.format(portfolioSummary.totalValue),
+                style: TextStyle(
+                  fontSize: 36.0,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.primaryText(context),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Icon(IconlyLight.show, size: 30, color: AppColors.black(context)),
+            ],
           ),
           const SizedBox(height: 8),
 

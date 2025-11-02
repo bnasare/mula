@@ -14,11 +14,11 @@ class HomeAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      backgroundColor: AppColors.offWhite(context),
       elevation: 0,
       pinned: false,
       floating: true,
       expandedHeight: 80,
+      scrolledUnderElevation: 0,
       flexibleSpace: FlexibleSpaceBar(
         background: SafeArea(
           child: Padding(
@@ -28,31 +28,63 @@ class HomeAppBar extends StatelessWidget {
             child: Consumer<DashboardProvider>(
               builder: (context, provider, _) {
                 final userName = provider.userProfile?['name'] ?? 'User';
+                final userAvatar = provider.userProfile?['avatar'] as String?;
 
                 return Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // User greeting
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    // User greeting with avatar
+                    Row(
                       children: [
-                        AppText.small(
-                          'Welcome back👋',
-                          color: AppColors.secondaryText(context),
+                        CircleAvatar(
+                          radius: 24,
+                          backgroundColor: AppColors.grey(
+                            context,
+                          ).withValues(alpha: 0.2),
+                          backgroundImage: userAvatar != null
+                              ? NetworkImage(userAvatar)
+                              : null,
+                          child: userAvatar == null
+                              ? Text(
+                                  userName.isNotEmpty
+                                      ? userName[0].toUpperCase()
+                                      : 'U',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600,
+                                    color: AppColors.primaryText(context),
+                                  ),
+                                )
+                              : null,
                         ),
-                        const SizedBox(height: 4),
-                        AppText.medium(
-                          userName,
-                          color: AppColors.primaryText(context),
+                        const SizedBox(width: 12),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            AppText.small(
+                              'Welcome back👋',
+                              color: AppColors.secondaryText(context),
+                            ),
+                            const SizedBox(height: 2),
+                            AppText.medium(
+                              userName,
+                              color: AppColors.primaryText(context),
+                            ),
+                          ],
                         ),
                       ],
                     ),
 
                     // Notification icon
-                    IconButton(
+                    IconButton.outlined(
+                      style: IconButton.styleFrom(
+                        side: BorderSide(
+                          color: AppColors.grey(context).withValues(alpha: 0.2),
+                        ),
+                      ),
                       icon: Icon(
-                        IconlyBold.notification,
+                        IconlyLight.notification,
                         color: AppColors.primaryText(context),
                       ),
                       onPressed: () {

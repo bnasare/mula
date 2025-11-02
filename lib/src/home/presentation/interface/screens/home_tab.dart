@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../../shared/data/image_assets.dart';
-import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
@@ -35,7 +34,6 @@ class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
       body: RefreshIndicator(
         onRefresh: () => context.read<DashboardProvider>().refresh(),
         child: CustomScrollView(
