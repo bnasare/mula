@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/utils/localization_extension.dart';
@@ -56,16 +57,17 @@ class _ChatInputFieldState extends State<ChatInputField> {
         child: Row(
           children: [
             // Attachment button (optional, can be added later)
-            IconButton(
-              icon: Icon(
-                Icons.add_circle_outline,
-                color: AppColors.secondaryText(context),
-              ),
-              onPressed: widget.enabled
+            GestureDetector(
+              onTap: widget.enabled
                   ? () {
                       // TODO: Add attachment functionality
                     }
                   : null,
+              child: const Icon(
+                Icons.add_circle,
+                color: Color(0xFF4CAF50),
+                size: 40,
+              ),
             ),
             const SizedBox(width: 8),
 
@@ -83,19 +85,19 @@ class _ChatInputFieldState extends State<ChatInputField> {
                     fontSize: 14,
                   ),
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(24),
+                    borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
                       color: AppColors.border(context),
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(24),
+                    borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
                       color: AppColors.border(context),
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(24),
+                    borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
                       color: AppColors.appPrimary,
                       width: 1.5,
@@ -120,8 +122,8 @@ class _ChatInputFieldState extends State<ChatInputField> {
 
             // Send button
             Container(
-              width: 40,
-              height: 40,
+              width: 48,
+              height: 48,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
@@ -136,10 +138,10 @@ class _ChatInputFieldState extends State<ChatInputField> {
                           AppColors.lightGrey(context),
                         ],
                 ),
-                shape: BoxShape.circle,
+                borderRadius: BorderRadius.circular(8),
               ),
               child: IconButton(
-                icon: const Icon(Icons.send, size: 20),
+                icon: const Icon(IconlyLight.send, size: 20),
                 color: Colors.white,
                 onPressed: _hasText && widget.enabled ? _handleSend : null,
                 padding: EdgeInsets.zero,

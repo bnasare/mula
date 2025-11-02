@@ -72,13 +72,12 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
-      appBar: MulaAppBarHelpers.simple(title: 'Cash Wallet'),
+      appBar: MulaAppBar(title: 'Cash Wallet', showBottomDivider: true),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
 
             // Balance Card
             const Padding(
@@ -96,7 +95,7 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
                   Expanded(
                     child: _buildActionButton(
                       context,
-                      icon: IconlyBold.download,
+                      icon: IconlyLight.arrow_down_circle,
                       label: 'Withdraw',
                       onTap: () {
                         NavigationHelper.navigateTo(
@@ -110,7 +109,7 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
                   Expanded(
                     child: _buildActionButton(
                       context,
-                      icon: Icons.send,
+                      icon: IconlyLight.wallet,
                       label: 'Deposit',
                       onTap: () {
                         NavigationHelper.navigateTo(
@@ -137,8 +136,8 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
                     color: AppColors.primaryText(context),
                   ),
                   if (_hasTransactions)
-                    TextButton(
-                      onPressed: () {
+                    GestureDetector(
+                      onTap: () {
                         NavigationHelper.navigateTo(
                           context,
                           TransactionsScreen(
@@ -146,7 +145,7 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
                           ),
                         );
                       },
-                      child: AppText.small(
+                      child: AppText.smaller(
                         'View all',
                         color: AppColors.appPrimary,
                       ),
@@ -155,7 +154,7 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
               ),
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: 12),
 
             // Transactions List or Empty State
             _hasTransactions
@@ -178,9 +177,9 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 16),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: AppColors.grey(context).withValues(alpha: 0.05),
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: AppColors.border(context)),
+          border: Border.all(color: AppColors.border(context), width: 0.6),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

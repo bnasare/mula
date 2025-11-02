@@ -10,10 +10,7 @@ import '../../../../dashboard/domain/entities/activity.dart';
 class TransactionReceiptModal extends StatefulWidget {
   final Activity activity;
 
-  const TransactionReceiptModal({
-    super.key,
-    required this.activity,
-  });
+  const TransactionReceiptModal({super.key, required this.activity});
 
   @override
   State<TransactionReceiptModal> createState() =>
@@ -64,9 +61,24 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
                 children: [
                   AppText.large(
                     'Transaction Receipt',
-                    color: AppColors.primaryText(context),
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.primaryText(context),
+                      fontSize: 22,
+                    ),
                   ),
-                  IconButton(
+                  IconButton.filled(
+                    style: IconButton.styleFrom(
+                      backgroundColor: AppColors.grey(
+                        context,
+                      ).withValues(alpha: 0.1),
+                      foregroundColor: AppColors.primaryText(context),
+                      padding: EdgeInsets.zero,
+                      minimumSize: const Size(38, 38),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
                     icon: const Icon(Icons.close),
                     onPressed: () => Navigator.pop(context),
                   ),
@@ -75,21 +87,45 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
               const SizedBox(height: 24),
 
               // Transaction details
-              _buildDetailRow('Type', _getTypeLabel(widget.activity.type)),
-              _buildDetailRow('Asset Class', _getAssetClass()),
-              if (widget.activity.shares != null)
-                _buildDetailRow('Quantity', widget.activity.shares!),
-              _buildDetailRow('Purchase Price',
-                  'GHS ${_getPurchasePrice().toStringAsFixed(2)}'),
               _buildDetailRow(
-                  'Total Cost', 'GHS ${widget.activity.amount.toStringAsFixed(2)}'),
-              _buildDetailRow('Charges', 'GHS ${_getCharges().toStringAsFixed(2)}'),
-              _buildDetailRow('Date', _formatDate(widget.activity.timestamp)),
-              _buildStatusRow(),
-              _buildDetailRow('Executed by', widget.activity.subtitle),
-              _buildDetailRow('ID', _getTransactionId()),
-
-              const SizedBox(height: 24),
+                'Type',
+                _getTypeLabel(widget.activity.type),
+                true,
+              ),
+              _buildDetailRow('Asset Class', _getAssetClass(), false),
+              if (widget.activity.shares != null)
+                _buildDetailRow('Quantity', widget.activity.shares!, true),
+              _buildDetailRow(
+                'Purchase Price',
+                'GHS ${_getPurchasePrice().toStringAsFixed(2)}',
+                widget.activity.shares != null ? false : true,
+              ),
+              _buildDetailRow(
+                'Total Cost',
+                'GHS ${widget.activity.amount.toStringAsFixed(2)}',
+                widget.activity.shares != null ? true : false,
+              ),
+              _buildDetailRow(
+                'Charges',
+                'GHS ${_getCharges().toStringAsFixed(2)}',
+                widget.activity.shares != null ? false : true,
+              ),
+              _buildDetailRow(
+                'Date',
+                _formatDate(widget.activity.timestamp),
+                widget.activity.shares != null ? true : false,
+              ),
+              _buildStatusRow(widget.activity.shares != null ? false : true),
+              _buildDetailRow(
+                'Executed by',
+                widget.activity.subtitle,
+                widget.activity.shares != null ? true : false,
+              ),
+              _buildDetailRow(
+                'ID',
+                _getTransactionId(),
+                widget.activity.shares != null ? false : true,
+              ),
 
               // Add notes field
               TextField(
@@ -107,7 +143,7 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
                     borderSide: BorderSide.none,
                   ),
                 ),
-                maxLines: 3,
+                maxLines: 1,
               ),
               const SizedBox(height: 24),
 
@@ -145,7 +181,7 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
-                      icon: const Icon(Icons.share),
+                      icon: const Icon(Icons.share_outlined),
                       onPressed: () {
                         // TODO: Implement share functionality
                         SnackBarHelper.showInfoSnackBar(
@@ -165,34 +201,57 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
     );
   }
 
-  Widget _buildDetailRow(String label, String value) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 16),
+  Widget _buildDetailRow(
+    String label,
+    String value, [
+    bool hasBackground = false,
+  ]) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      margin: const EdgeInsets.only(bottom: 4),
+      decoration: BoxDecoration(
+        color: hasBackground ? AppColors.offWhite(context) : Colors.transparent,
+        borderRadius: BorderRadius.circular(8),
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           AppText.small(
             label,
-            color: AppColors.secondaryText(context),
+            style: TextStyle(
+              color: AppColors.secondaryText(context),
+              fontSize: 12,
+            ),
           ),
           AppText.small(
             value,
-            color: AppColors.primaryText(context),
+            style: TextStyle(
+              color: AppColors.primaryText(context),
+              fontSize: 12,
+            ),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildStatusRow() {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 16),
+  Widget _buildStatusRow([bool hasBackground = false]) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      margin: const EdgeInsets.only(bottom: 4),
+      decoration: BoxDecoration(
+        color: hasBackground ? AppColors.offWhite(context) : Colors.transparent,
+        borderRadius: BorderRadius.circular(8),
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           AppText.small(
             'Status',
-            color: AppColors.secondaryText(context),
+            style: TextStyle(
+              color: AppColors.secondaryText(context),
+              fontSize: 12,
+            ),
           ),
           _buildStatusBadge(),
         ],
@@ -228,11 +287,9 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: textColor, width: 0.3),
       ),
-      child: AppText.smallest(
-        label,
-        color: textColor,
-      ),
+      child: AppText.smallest(label, color: textColor),
     );
   }
 
@@ -256,8 +313,10 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
 
   double _getPurchasePrice() {
     if (widget.activity.shares != null) {
-      final shares = double.tryParse(
-              widget.activity.shares!.split(' ')[0].replaceAll(',', '')) ??
+      final shares =
+          double.tryParse(
+            widget.activity.shares!.split(' ')[0].replaceAll(',', ''),
+          ) ??
           1;
       return widget.activity.amount / shares;
     }

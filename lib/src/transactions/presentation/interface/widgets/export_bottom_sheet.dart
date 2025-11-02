@@ -34,9 +34,24 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
             children: [
               AppText.large(
                 'Choose file format',
-                color: AppColors.primaryText(context),
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: AppColors.primaryText(context),
+                  fontSize: 22,
+                ),
               ),
-              IconButton(
+              IconButton.filled(
+                style: IconButton.styleFrom(
+                  backgroundColor: AppColors.grey(
+                    context,
+                  ).withValues(alpha: 0.1),
+                  foregroundColor: AppColors.primaryText(context),
+                  padding: EdgeInsets.zero,
+                  minimumSize: const Size(38, 38),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
                 icon: const Icon(Icons.close),
                 onPressed: () => Navigator.pop(context),
               ),
@@ -90,8 +105,10 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
           color: AppColors.offWhite(context),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isSelected ? AppColors.appPrimary : Colors.transparent,
-            width: 2,
+            color: isSelected
+                ? AppColors.appPrimary
+                : AppColors.border(context),
+            width: 0.6,
           ),
         ),
         child: Row(
@@ -103,11 +120,7 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
               ),
             ),
             if (isSelected)
-              Icon(
-                Icons.check_circle,
-                color: AppColors.appPrimary,
-                size: 24,
-              )
+              Icon(Icons.check_circle, color: AppColors.appPrimary, size: 24)
             else
               Container(
                 width: 24,
@@ -116,7 +129,7 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: AppColors.border(context),
-                    width: 2,
+                    width: 1,
                   ),
                 ),
               ),

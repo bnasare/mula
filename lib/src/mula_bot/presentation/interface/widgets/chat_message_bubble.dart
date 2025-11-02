@@ -10,27 +10,21 @@ import '../../../domain/entities/chat_message.dart';
 class ChatMessageBubble extends StatelessWidget {
   final ChatMessage message;
 
-  const ChatMessageBubble({
-    super.key,
-    required this.message,
-  });
+  const ChatMessageBubble({super.key, required this.message});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Row(
-        mainAxisAlignment:
-            message.isUser ? MainAxisAlignment.end : MainAxisAlignment.start,
+        mainAxisAlignment: message.isUser
+            ? MainAxisAlignment.end
+            : MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Bot icon (only for bot messages)
           if (message.isBot) ...[
-            Image.asset(
-              ImageAssets.ai,
-              width: 32,
-              height: 32,
-            ),
+            Image.asset(ImageAssets.ai, width: 32, height: 32),
             const SizedBox(width: 8),
           ],
 
@@ -50,10 +44,8 @@ class ChatMessageBubble extends StatelessWidget {
                     borderRadius: BorderRadius.only(
                       topLeft: const Radius.circular(12),
                       topRight: const Radius.circular(12),
-                      bottomLeft:
-                          Radius.circular(message.isUser ? 12 : 4),
-                      bottomRight:
-                          Radius.circular(message.isUser ? 4 : 12),
+                      bottomLeft: Radius.circular(message.isUser ? 12 : 4),
+                      bottomRight: Radius.circular(message.isUser ? 4 : 12),
                     ),
                     boxShadow: [
                       BoxShadow(
@@ -67,6 +59,7 @@ class ChatMessageBubble extends StatelessWidget {
                     message.text,
                     style: TextStyle(
                       color: AppColors.primaryText(context),
+                      fontSize: 14,
                       height: 1.4,
                     ),
                   ),

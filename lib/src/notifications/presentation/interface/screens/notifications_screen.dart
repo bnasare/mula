@@ -75,11 +75,14 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
         title: context.localize.notifications,
         actions: [
           if (_notifications.isNotEmpty)
-            AppBarActions.textButton(
-              text: context.localize.clearAll,
-              onPressed: _clearAllNotifications,
-              context: context,
-              textColor: AppColors.appPrimary,
+            Padding(
+              padding: const EdgeInsets.only(right: 8.0),
+              child: AppBarActions.textButton(
+                text: context.localize.clearAll,
+                onPressed: _clearAllNotifications,
+                context: context,
+                textColor: AppColors.appPrimary,
+              ),
             ),
         ],
         showDivider: true,

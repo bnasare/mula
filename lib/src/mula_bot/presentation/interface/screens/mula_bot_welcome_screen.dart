@@ -16,8 +16,7 @@ class MulaBotWelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
-      appBar: MulaAppBarHelpers.simple(title: 'Mula'),
+      appBar: MulaAppBar(title: 'Mula', showBottomDivider: true),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -25,11 +24,7 @@ class MulaBotWelcomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // AI Bot Icon
-              Image.asset(
-                ImageAssets.ai,
-                width: 120,
-                height: 120,
-              ),
+              Image.asset(ImageAssets.ai, width: 120, height: 120),
               const SizedBox(height: 40),
 
               // Title
@@ -37,7 +32,7 @@ class MulaBotWelcomeScreen extends StatelessWidget {
                 context.localize.hiImMulaBot,
                 style: TextStyle(
                   fontSize: 24,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w500,
                   color: AppColors.primaryText(context),
                 ),
               ),

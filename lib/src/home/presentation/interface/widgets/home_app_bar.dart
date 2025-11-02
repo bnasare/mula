@@ -5,7 +5,9 @@ import 'package:provider/provider.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/extension.dart';
+import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
+import '../../../../notifications/presentation/interface/screens/notifications_screen.dart';
 
 /// App bar widget for the home tab
 class HomeAppBar extends StatelessWidget {
@@ -88,8 +90,10 @@ class HomeAppBar extends StatelessWidget {
                         color: AppColors.primaryText(context),
                       ),
                       onPressed: () {
-                        // TODO: Navigate to notifications screen
-                        // NavigationHelper.navigateTo(context, NotificationsScreen());
+                        NavigationHelper.navigateTo(
+                          context,
+                          const NotificationsScreen(),
+                        );
                       },
                     ),
                   ],

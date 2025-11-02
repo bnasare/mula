@@ -41,8 +41,26 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              AppText.large('Filter', color: AppColors.primaryText(context)),
-              IconButton(
+              AppText.large(
+                'Filter',
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: AppColors.primaryText(context),
+                  fontSize: 22,
+                ),
+              ),
+              IconButton.filled(
+                style: IconButton.styleFrom(
+                  backgroundColor: AppColors.grey(
+                    context,
+                  ).withValues(alpha: 0.1),
+                  foregroundColor: AppColors.primaryText(context),
+                  padding: EdgeInsets.zero,
+                  minimumSize: const Size(38, 38),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
                 icon: const Icon(Icons.close),
                 onPressed: () => Navigator.pop(context),
               ),
@@ -51,7 +69,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
           const SizedBox(height: 24),
 
           // Date Range
-          AppText.small('Date Range', color: AppColors.secondaryText(context)),
+          AppText.small('Date Range', color: AppColors.primaryText(context)),
           const SizedBox(height: 12),
           Wrap(
             spacing: 8,
@@ -189,8 +207,9 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
           color: isSelected
               ? AppColors.appPrimary.withOpacity(0.1)
               : AppColors.offWhite(context),
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(8),
           border: Border.all(
+            width: 0.6,
             color: isSelected ? AppColors.appPrimary : Colors.transparent,
           ),
         ),
@@ -221,10 +240,16 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
             color: isSelected ? textColor : Colors.transparent,
-            width: isSelected ? 2 : 0,
+            width: isSelected ? 0.6 : 0,
           ),
         ),
-        child: AppText.smallest(label, color: textColor),
+        child: AppText.smallest(
+          label,
+          style: TextStyle(
+            fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
+            color: textColor,
+          ),
+        ),
       ),
     );
   }

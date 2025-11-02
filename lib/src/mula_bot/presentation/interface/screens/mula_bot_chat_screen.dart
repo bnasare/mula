@@ -67,8 +67,7 @@ class _MulaBotChatViewState extends State<_MulaBotChatView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
-      appBar: MulaAppBarHelpers.simple(title: 'Mula'),
+      appBar: MulaAppBar(title: 'Mula', showBottomDivider: true),
       body: Consumer<MulaBotProvider>(
         builder: (context, provider, _) {
           return Column(
@@ -109,7 +108,7 @@ class _MulaBotChatViewState extends State<_MulaBotChatView> {
               context.localize.hiWhatsOnYourMind('Phil'),
               style: TextStyle(
                 fontSize: 24,
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w400,
                 color: AppColors.primaryText(context),
               ),
               align: TextAlign.center,
@@ -160,25 +159,24 @@ class _MulaBotChatViewState extends State<_MulaBotChatView> {
       context.localize.explainTreasuryBills,
     ];
 
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: prompts
-                .map(
-                  (prompt) => SuggestedPromptChip(
+    return SizedBox(
+      height: 60,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        child: Row(
+          children: prompts
+              .map(
+                (prompt) => Padding(
+                  padding: const EdgeInsets.only(right: 8),
+                  child: SuggestedPromptChip(
                     text: prompt,
                     onTap: () => _handlePromptTap(prompt, provider),
                   ),
-                )
-                .toList(),
-          ),
-        ],
+                ),
+              )
+              .toList(),
+        ),
       ),
     );
   }
