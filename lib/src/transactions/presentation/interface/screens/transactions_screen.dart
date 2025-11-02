@@ -17,10 +17,7 @@ import 'report_issue_screen.dart';
 class TransactionsScreen extends StatelessWidget {
   final DashboardProvider dashboardProvider;
 
-  const TransactionsScreen({
-    super.key,
-    required this.dashboardProvider,
-  });
+  const TransactionsScreen({super.key, required this.dashboardProvider});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +27,8 @@ class TransactionsScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon(
-              IconlyBold.filter,
+              size: 20,
+              IconlyLight.filter,
               color: AppColors.primaryText(context),
             ),
             onPressed: () {
@@ -43,7 +41,12 @@ class TransactionsScreen extends StatelessWidget {
             },
           ),
           PopupMenuButton<String>(
-            child: Icon(Icons.more_vert, color: AppColors.primaryText(context)),
+            position: PopupMenuPosition.under,
+            child: Icon(
+              Icons.more_vert,
+              color: AppColors.primaryText(context),
+              size: 22,
+            ),
             onSelected: (value) {
               if (value == 'export') {
                 showModalBottomSheet(
@@ -72,52 +75,56 @@ class TransactionsScreen extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(width: 16),
         ],
       ),
       body: dashboardProvider.isLoadingActivities
           ? const Center(child: CircularProgressIndicator())
           : dashboardProvider.recentActivities.isEmpty
-              ? Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        IconlyBold.document,
-                        size: 64,
-                        color: AppColors.secondaryText(context).withOpacity(0.3),
-                      ),
-                      const SizedBox(height: 16),
-                      AppText.small(
-                        context.localize.noTransactionsYet,
-                        color: AppColors.secondaryText(context),
-                      ),
-                    ],
+          ? Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    IconlyBold.document,
+                    size: 64,
+                    color: AppColors.secondaryText(context).withOpacity(0.3),
                   ),
-                )
-              : RefreshIndicator(
-                  onRefresh: () => dashboardProvider.refresh(),
-                  child: ListView.separated(
-                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-                    itemCount: dashboardProvider.recentActivities.length,
-                    separatorBuilder: (context, index) =>
-                        Divider(color: AppColors.border(context), height: 1),
-                    itemBuilder: (context, index) {
-                      final activity = dashboardProvider.recentActivities[index];
-                      return ActivityListItem(
-                        activity: activity,
-                        onTap: () {
-                          showModalBottomSheet(
-                            context: context,
-                            isScrollControlled: true,
-                            backgroundColor: Colors.transparent,
-                            builder: (context) =>
-                                TransactionReceiptModal(activity: activity),
-                          );
-                        },
+                  const SizedBox(height: 16),
+                  AppText.small(
+                    context.localize.noTransactionsYet,
+                    color: AppColors.secondaryText(context),
+                  ),
+                ],
+              ),
+            )
+          : RefreshIndicator(
+              onRefresh: () => dashboardProvider.refresh(),
+              child: ListView.separated(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 16,
+                ),
+                itemCount: dashboardProvider.recentActivities.length,
+                separatorBuilder: (context, index) =>
+                    Divider(color: AppColors.border(context), height: 1),
+                itemBuilder: (context, index) {
+                  final activity = dashboardProvider.recentActivities[index];
+                  return ActivityListItem(
+                    activity: activity,
+                    onTap: () {
+                      showModalBottomSheet(
+                        context: context,
+                        isScrollControlled: true,
+                        backgroundColor: Colors.transparent,
+                        builder: (context) =>
+                            TransactionReceiptModal(activity: activity),
                       );
                     },
-                  ),
-                ),
+                  );
+                },
+              ),
+            ),
     );
   }
 }
