@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mula/shared/presentation/theme/app_colors.dart';
-import 'package:mula/src/withdraw/presentation/interface/screens/screens.dart';
 import 'package:provider/provider.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
@@ -14,9 +13,7 @@ import 'shared/presentation/widgets/restart_widget.dart';
 import 'shared/utils/connectivity.dart';
 import 'shared/utils/modal_visiblity.dart';
 import 'src/dashboard/presentation/interface/screens/dashboard_screen.dart';
-import 'src/deposit/presentation/interface/screens/screens.dart';
 import 'src/onboarding/presentation/bloc/onboarding_mixin.dart';
-import 'src/onboarding/presentation/interface/screens/onboarding_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../../shared/data/image_assets.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
@@ -75,6 +76,19 @@ class _HomeTabState extends State<HomeTab> {
               ),
             ),
           ],
+        ),
+      ),
+      floatingActionButton: GestureDetector(
+        onTap: () {
+          // TODO: Navigate to AI assistant
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('AI Assistant coming soon')),
+          );
+        },
+        child: Image.asset(
+          ImageAssets.ai,
+          width: 64,
+          height: 64,
         ),
       ),
     );
