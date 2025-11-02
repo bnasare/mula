@@ -1741,6 +1741,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Explain Treasury Bills'**
   String get explainTreasuryBills;
+
+  /// No description provided for @takePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Take Photo'**
+  String get takePhoto;
+
+  /// No description provided for @uploadFromGallery.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload from Gallery'**
+  String get uploadFromGallery;
+
+  /// No description provided for @changeProfileImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Change Profile Image'**
+  String get changeProfileImage;
+
+  /// No description provided for @changeCoverImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Change Cover Image'**
+  String get changeCoverImage;
+
+  /// No description provided for @removeImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove Image'**
+  String get removeImage;
+
+  /// No description provided for @failedToCropImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to crop image'**
+  String get failedToCropImage;
+
+  /// No description provided for @errorCapturingImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Error capturing image'**
+  String get errorCapturingImage;
+
+  /// No description provided for @errorSelectingImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Error selecting image'**
+  String get errorSelectingImage;
+
+  /// No description provided for @withdrawal.
+  ///
+  /// In en, this message translates to:
+  /// **'Withdrawal'**
+  String get withdrawal;
 }
 
 class _AppLocalizationsDelegate

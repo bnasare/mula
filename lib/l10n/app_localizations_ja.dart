@@ -834,4 +834,31 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get explainTreasuryBills => '国債について説明してください';
+
+  @override
+  String get takePhoto => '写真を撮る';
+
+  @override
+  String get uploadFromGallery => 'ギャラリーからアップロード';
+
+  @override
+  String get changeProfileImage => 'プロフィール画像を変更';
+
+  @override
+  String get changeCoverImage => 'カバー画像を変更';
+
+  @override
+  String get removeImage => '画像を削除';
+
+  @override
+  String get failedToCropImage => '画像のトリミングに失敗しました';
+
+  @override
+  String get errorCapturingImage => '画像のキャプチャ中にエラーが発生しました';
+
+  @override
+  String get errorSelectingImage => '画像の選択中にエラーが発生しました';
+
+  @override
+  String get withdrawal => '出金';
 }

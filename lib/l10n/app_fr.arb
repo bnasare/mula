@@ -300,5 +300,14 @@
   "whichInvestmentsLowRisk": "Quels investissements sont à faible risque?",
   "suggestBeginnerPlan": "Suggérer un plan d'investissement pour débutant",
   "howDoIStartInvesting": "Comment commencer à investir?",
-  "explainTreasuryBills": "Expliquer les bons du Trésor"
+  "explainTreasuryBills": "Expliquer les bons du Trésor",
+  "takePhoto": "Prendre une photo",
+  "uploadFromGallery": "Télécharger depuis la galerie",
+  "changeProfileImage": "Changer l'image de profil",
+  "changeCoverImage": "Changer l'image de couverture",
+  "removeImage": "Supprimer l'image",
+  "failedToCropImage": "Échec du recadrage de l'image",
+  "errorCapturingImage": "Erreur lors de la capture de l'image",
+  "errorSelectingImage": "Erreur lors de la sélection de l'image",
+  "withdrawal": "Retrait"
 }

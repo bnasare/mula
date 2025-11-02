@@ -299,5 +299,14 @@
   "whichInvestmentsLowRisk": "Quali investimenti sono a basso rischio?",
   "suggestBeginnerPlan": "Suggerisci un piano di investimento per principianti",
   "howDoIStartInvesting": "Come inizio a investire?",
-  "explainTreasuryBills": "Spiega i Buoni del Tesoro"
+  "explainTreasuryBills": "Spiega i Buoni del Tesoro",
+  "takePhoto": "Scatta foto",
+  "uploadFromGallery": "Carica dalla galleria",
+  "changeProfileImage": "Cambia immagine del profilo",
+  "changeCoverImage": "Cambia immagine di copertina",
+  "removeImage": "Rimuovi immagine",
+  "failedToCropImage": "Impossibile ritagliare l'immagine",
+  "errorCapturingImage": "Errore durante l'acquisizione dell'immagine",
+  "errorSelectingImage": "Errore durante la selezione dell'immagine",
+  "withdrawal": "Prelievo"
 }

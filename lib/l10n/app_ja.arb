@@ -299,5 +299,14 @@
   "whichInvestmentsLowRisk": "どの投資がリスクが低いですか？",
   "suggestBeginnerPlan": "初心者向けの投資プランを提案してください",
   "howDoIStartInvesting": "投資を始めるにはどうすればいいですか？",
-  "explainTreasuryBills": "国債について説明してください"
+  "explainTreasuryBills": "国債について説明してください",
+  "takePhoto": "写真を撮る",
+  "uploadFromGallery": "ギャラリーからアップロード",
+  "changeProfileImage": "プロフィール画像を変更",
+  "changeCoverImage": "カバー画像を変更",
+  "removeImage": "画像を削除",
+  "failedToCropImage": "画像のトリミングに失敗しました",
+  "errorCapturingImage": "画像のキャプチャ中にエラーが発生しました",
+  "errorSelectingImage": "画像の選択中にエラーが発生しました",
+  "withdrawal": "出金"
 }

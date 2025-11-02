@@ -4,6 +4,7 @@ import 'package:iconly/iconly.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/domain/entities/activity.dart';
 import '../../../../dashboard/presentation/interface/widgets/activity_list_item.dart';
@@ -72,7 +73,7 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MulaAppBar(title: 'Cash Wallet', showBottomDivider: true),
+      appBar: MulaAppBar(title: context.localize.cashWallet, showBottomDivider: true),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,9 +81,9 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
             const SizedBox(height: 24),
 
             // Balance Card
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24),
-              child: BalanceCard(balance: 1098.00, label: 'Emergency Funds'),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: BalanceCard(balance: 1098.00, label: context.localize.emergencyFunds),
             ),
 
             const SizedBox(height: 24),
@@ -95,8 +96,8 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
                   Expanded(
                     child: _buildActionButton(
                       context,
-                      icon: IconlyLight.arrow_down_circle,
-                      label: 'Withdraw',
+                      icon: IconlyLight.wallet,
+                      label: context.localize.withdraw,
                       onTap: () {
                         NavigationHelper.navigateTo(
                           context,
@@ -109,8 +110,8 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
                   Expanded(
                     child: _buildActionButton(
                       context,
-                      icon: IconlyLight.wallet,
-                      label: 'Deposit',
+                      icon: IconlyLight.send,
+                      label: context.localize.deposit,
                       onTap: () {
                         NavigationHelper.navigateTo(
                           context,
@@ -132,7 +133,7 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   AppText.medium(
-                    'Transactions',
+                    context.localize.transactions,
                     color: AppColors.primaryText(context),
                   ),
                   if (_hasTransactions)
@@ -146,7 +147,7 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
                         );
                       },
                       child: AppText.smaller(
-                        'View all',
+                        context.localize.viewAll,
                         color: AppColors.appPrimary,
                       ),
                     ),
@@ -232,7 +233,7 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
             ),
             const SizedBox(height: 24),
             AppText.medium(
-              'You have no transactions',
+              context.localize.youHaveNoTransactions,
               color: AppColors.secondaryText(context),
               align: TextAlign.center,
             ),

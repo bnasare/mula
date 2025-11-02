@@ -827,4 +827,31 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get explainTreasuryBills => '解释国债';
+
+  @override
+  String get takePhoto => '拍照';
+
+  @override
+  String get uploadFromGallery => '从图库上传';
+
+  @override
+  String get changeProfileImage => '更改头像';
+
+  @override
+  String get changeCoverImage => '更改封面图片';
+
+  @override
+  String get removeImage => '删除图片';
+
+  @override
+  String get failedToCropImage => '裁剪图片失败';
+
+  @override
+  String get errorCapturingImage => '捕获图片时出错';
+
+  @override
+  String get errorSelectingImage => '选择图片时出错';
+
+  @override
+  String get withdrawal => '提款';
 }

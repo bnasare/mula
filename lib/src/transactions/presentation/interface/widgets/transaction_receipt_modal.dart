@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/snackbar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../dashboard/domain/entities/activity.dart';
 
 /// Modal showing transaction receipt details
@@ -60,7 +61,7 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   AppText.large(
-                    'Transaction Receipt',
+                    context.localize.transactionReceipt,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       color: AppColors.primaryText(context),
@@ -88,41 +89,41 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
 
               // Transaction details
               _buildDetailRow(
-                'Type',
+                context.localize.type,
                 _getTypeLabel(widget.activity.type),
                 true,
               ),
-              _buildDetailRow('Asset Class', _getAssetClass(), false),
+              _buildDetailRow(context.localize.assetClass, _getAssetClass(), false),
               if (widget.activity.shares != null)
-                _buildDetailRow('Quantity', widget.activity.shares!, true),
+                _buildDetailRow(context.localize.quantity, widget.activity.shares!, true),
               _buildDetailRow(
-                'Purchase Price',
+                context.localize.purchasePrice,
                 'GHS ${_getPurchasePrice().toStringAsFixed(2)}',
                 widget.activity.shares != null ? false : true,
               ),
               _buildDetailRow(
-                'Total Cost',
+                context.localize.totalCost,
                 'GHS ${widget.activity.amount.toStringAsFixed(2)}',
                 widget.activity.shares != null ? true : false,
               ),
               _buildDetailRow(
-                'Charges',
+                context.localize.charges,
                 'GHS ${_getCharges().toStringAsFixed(2)}',
                 widget.activity.shares != null ? false : true,
               ),
               _buildDetailRow(
-                'Date',
+                context.localize.date,
                 _formatDate(widget.activity.timestamp),
                 widget.activity.shares != null ? true : false,
               ),
               _buildStatusRow(widget.activity.shares != null ? false : true),
               _buildDetailRow(
-                'Executed by',
+                context.localize.executedBy,
                 widget.activity.subtitle,
                 widget.activity.shares != null ? true : false,
               ),
               _buildDetailRow(
-                'ID',
+                context.localize.id,
                 _getTransactionId(),
                 widget.activity.shares != null ? false : true,
               ),
@@ -131,7 +132,7 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
               TextField(
                 controller: _notesController,
                 decoration: InputDecoration(
-                  hintText: 'Add notes',
+                  hintText: context.localize.addNotes,
                   hintStyle: TextStyle(
                     color: AppColors.secondaryText(context),
                     fontSize: 14,
@@ -161,9 +162,9 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                        child: const AppText(
-                          'Done',
-                          style: TextStyle(
+                        child: AppText(
+                          context.localize.done,
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
@@ -186,7 +187,7 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
                         // TODO: Implement share functionality
                         SnackBarHelper.showInfoSnackBar(
                           context,
-                          'Share coming soon',
+                          context.localize.shareComingSoon,
                         );
                       },
                     ),
@@ -247,7 +248,7 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           AppText.small(
-            'Status',
+            context.localize.status,
             style: TextStyle(
               color: AppColors.secondaryText(context),
               fontSize: 12,
@@ -266,17 +267,17 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
 
     switch (widget.activity.status) {
       case ActivityStatus.completed:
-        label = 'Completed';
+        label = context.localize.completed;
         backgroundColor = const Color(0xFFE8F5E9);
         textColor = const Color(0xFF4CAF50);
         break;
       case ActivityStatus.pending:
-        label = 'Pending';
+        label = context.localize.pending;
         backgroundColor = const Color(0xFFF3E5F5);
         textColor = const Color(0xFF9C27B0);
         break;
       case ActivityStatus.failed:
-        label = 'Failed';
+        label = context.localize.failed;
         backgroundColor = const Color(0xFFFFEBEE);
         textColor = const Color(0xFFEF5350);
         break;
@@ -296,13 +297,13 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
   String _getTypeLabel(ActivityType type) {
     switch (type) {
       case ActivityType.buy:
-        return 'Buy';
+        return context.localize.buy;
       case ActivityType.sell:
-        return 'Sell';
+        return context.localize.sell;
       case ActivityType.deposit:
-        return 'Deposit';
+        return context.localize.deposit;
       case ActivityType.withdrawal:
-        return 'Withdrawal';
+        return context.localize.withdrawal;
     }
   }
 

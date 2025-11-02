@@ -300,5 +300,14 @@
   "whichInvestmentsLowRisk": "Quais investimentos são de baixo risco?",
   "suggestBeginnerPlan": "Sugira um plano de investimento para iniciantes",
   "howDoIStartInvesting": "Como começo a investir?",
-  "explainTreasuryBills": "Explique as Letras do Tesouro"
+  "explainTreasuryBills": "Explique as Letras do Tesouro",
+  "takePhoto": "Tirar foto",
+  "uploadFromGallery": "Enviar da galeria",
+  "changeProfileImage": "Alterar imagem de perfil",
+  "changeCoverImage": "Alterar imagem de capa",
+  "removeImage": "Remover imagem",
+  "failedToCropImage": "Falha ao cortar imagem",
+  "errorCapturingImage": "Erro ao capturar imagem",
+  "errorSelectingImage": "Erro ao selecionar imagem",
+  "withdrawal": "Retirada"
 }

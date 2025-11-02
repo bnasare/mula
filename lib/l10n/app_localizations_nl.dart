@@ -861,4 +861,31 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get explainTreasuryBills => 'Leg schatkistpapier uit';
+
+  @override
+  String get takePhoto => 'Foto maken';
+
+  @override
+  String get uploadFromGallery => 'Uploaden vanuit galerij';
+
+  @override
+  String get changeProfileImage => 'Profielfoto wijzigen';
+
+  @override
+  String get changeCoverImage => 'Omslagfoto wijzigen';
+
+  @override
+  String get removeImage => 'Afbeelding verwijderen';
+
+  @override
+  String get failedToCropImage => 'Kan afbeelding niet bijsnijden';
+
+  @override
+  String get errorCapturingImage => 'Fout bij het vastleggen van afbeelding';
+
+  @override
+  String get errorSelectingImage => 'Fout bij het selecteren van afbeelding';
+
+  @override
+  String get withdrawal => 'Opname';
 }

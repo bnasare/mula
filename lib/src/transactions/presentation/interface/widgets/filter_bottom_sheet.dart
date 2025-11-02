@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../authentication/presentation/interface/widgets/mula_text_field.dart';
 
 /// Bottom sheet for filtering transactions
@@ -42,7 +43,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               AppText.large(
-                'Filter',
+                context.localize.filter,
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   color: AppColors.primaryText(context),
@@ -69,22 +70,22 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
           const SizedBox(height: 24),
 
           // Date Range
-          AppText.small('Date Range', color: AppColors.primaryText(context)),
+          AppText.small(context.localize.dateRange, color: AppColors.primaryText(context)),
           const SizedBox(height: 12),
           Wrap(
             spacing: 8,
             runSpacing: 8,
             children: [
-              _buildFilterChip('Last 30 days', _selectedDateRange, (value) {
+              _buildFilterChip(context.localize.last30Days, _selectedDateRange, (value) {
                 setState(() => _selectedDateRange = value);
               }),
-              _buildFilterChip('Last 60 days', _selectedDateRange, (value) {
+              _buildFilterChip(context.localize.last60Days, _selectedDateRange, (value) {
                 setState(() => _selectedDateRange = value);
               }),
-              _buildFilterChip('This Year', _selectedDateRange, (value) {
+              _buildFilterChip(context.localize.thisYear, _selectedDateRange, (value) {
                 setState(() => _selectedDateRange = value);
               }),
-              _buildFilterChip('Custom Date', _selectedDateRange, (value) {
+              _buildFilterChip(context.localize.customDate, _selectedDateRange, (value) {
                 setState(() => _selectedDateRange = value);
               }),
             ],
@@ -92,28 +93,28 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
           const SizedBox(height: 24),
 
           // Sort by
-          AppText.small('Sort by', color: AppColors.secondaryText(context)),
+          AppText.small(context.localize.sortBy, color: AppColors.secondaryText(context)),
           const SizedBox(height: 12),
           Wrap(
             spacing: 8,
             runSpacing: 8,
             children: [
-              _buildFilterChip('All', _selectedSortBy, (value) {
+              _buildFilterChip(context.localize.all, _selectedSortBy, (value) {
                 setState(() => _selectedSortBy = value);
               }),
-              _buildFilterChip('Buy', _selectedSortBy, (value) {
+              _buildFilterChip(context.localize.buy, _selectedSortBy, (value) {
                 setState(() => _selectedSortBy = value);
               }),
-              _buildFilterChip('Sell', _selectedSortBy, (value) {
+              _buildFilterChip(context.localize.sell, _selectedSortBy, (value) {
                 setState(() => _selectedSortBy = value);
               }),
-              _buildFilterChip('Deposit', _selectedSortBy, (value) {
+              _buildFilterChip(context.localize.deposit, _selectedSortBy, (value) {
                 setState(() => _selectedSortBy = value);
               }),
-              _buildFilterChip('Withdraw', _selectedSortBy, (value) {
+              _buildFilterChip(context.localize.withdraw, _selectedSortBy, (value) {
                 setState(() => _selectedSortBy = value);
               }),
-              _buildFilterChip('Transfer', _selectedSortBy, (value) {
+              _buildFilterChip(context.localize.transfer, _selectedSortBy, (value) {
                 setState(() => _selectedSortBy = value);
               }),
             ],
@@ -122,7 +123,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
 
           // Sort by Status
           AppText.small(
-            'Sort by Status',
+            context.localize.sortByStatus,
             color: AppColors.secondaryText(context),
           ),
           const SizedBox(height: 12),
@@ -131,7 +132,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
             runSpacing: 8,
             children: [
               _buildStatusChip(
-                'Completed',
+                context.localize.completed,
                 const Color(0xFF4CAF50),
                 const Color(0xFFE8F5E9),
                 _selectedStatus,
@@ -140,7 +141,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
                 },
               ),
               _buildStatusChip(
-                'Pending',
+                context.localize.pending,
                 const Color(0xFF9C27B0),
                 const Color(0xFFF3E5F5),
                 _selectedStatus,
@@ -149,7 +150,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
                 },
               ),
               _buildStatusChip(
-                'Cancelled',
+                context.localize.cancelled,
                 const Color(0xFFEF5350),
                 const Color(0xFFFFEBEE),
                 _selectedStatus,
@@ -163,13 +164,13 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
 
           // Keyword Search
           AppText.small(
-            'Keyword Search',
+            context.localize.keywordSearch,
             color: AppColors.secondaryText(context),
           ),
           const SizedBox(height: 12),
           MulaTextField(
             controller: _searchController,
-            hintText: 'Enter a keyword',
+            hintText: context.localize.enterAKeyword,
             filled: true,
             fillColor: AppColors.offWhite(context),
           ),
@@ -177,7 +178,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
 
           // Apply Button
           AppButton(
-            text: 'Apply',
+            text: context.localize.apply,
             backgroundColor: AppColors.appPrimary,
             textColor: Colors.white,
             borderRadius: 8,

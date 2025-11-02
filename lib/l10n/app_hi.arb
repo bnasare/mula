@@ -299,5 +299,14 @@
   "whichInvestmentsLowRisk": "कौन से निवेश कम जोखिम वाले हैं?",
   "suggestBeginnerPlan": "शुरुआती निवेश योजना सुझाएं",
   "howDoIStartInvesting": "मैं निवेश कैसे शुरू करूं?",
-  "explainTreasuryBills": "ट्रेजरी बिल समझाएं"
+  "explainTreasuryBills": "ट्रेजरी बिल समझाएं",
+  "takePhoto": "फोटो लें",
+  "uploadFromGallery": "गैलरी से अपलोड करें",
+  "changeProfileImage": "प्रोफाइल छवि बदलें",
+  "changeCoverImage": "कवर छवि बदलें",
+  "removeImage": "छवि हटाएं",
+  "failedToCropImage": "छवि क्रॉप करने में विफल",
+  "errorCapturingImage": "छवि कैप्चर करने में त्रुटि",
+  "errorSelectingImage": "छवि चुनने में त्रुटि",
+  "withdrawal": "निकासी"
 }

@@ -300,5 +300,14 @@
   "whichInvestmentsLowRisk": "哪些投资风险低？",
   "suggestBeginnerPlan": "建议初学者投资计划",
   "howDoIStartInvesting": "我如何开始投资？",
-  "explainTreasuryBills": "解释国债"
+  "explainTreasuryBills": "解释国债",
+  "takePhoto": "拍照",
+  "uploadFromGallery": "从图库上传",
+  "changeProfileImage": "更改头像",
+  "changeCoverImage": "更改封面图片",
+  "removeImage": "删除图片",
+  "failedToCropImage": "裁剪图片失败",
+  "errorCapturingImage": "捕获图片时出错",
+  "errorSelectingImage": "选择图片时出错",
+  "withdrawal": "提款"
 }

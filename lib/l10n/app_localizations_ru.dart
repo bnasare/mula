@@ -861,4 +861,31 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get explainTreasuryBills => 'Объясните казначейские векселя';
+
+  @override
+  String get takePhoto => 'Сделать фото';
+
+  @override
+  String get uploadFromGallery => 'Загрузить из галереи';
+
+  @override
+  String get changeProfileImage => 'Изменить изображение профиля';
+
+  @override
+  String get changeCoverImage => 'Изменить обложку';
+
+  @override
+  String get removeImage => 'Удалить изображение';
+
+  @override
+  String get failedToCropImage => 'Не удалось обрезать изображение';
+
+  @override
+  String get errorCapturingImage => 'Ошибка при захвате изображения';
+
+  @override
+  String get errorSelectingImage => 'Ошибка при выборе изображения';
+
+  @override
+  String get withdrawal => 'Вывод средств';
 }

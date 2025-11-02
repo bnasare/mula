@@ -300,5 +300,14 @@
   "whichInvestmentsLowRisk": "Welche Investitionen sind risikoarm?",
   "suggestBeginnerPlan": "Schlagen Sie einen Investitionsplan für Anfänger vor",
   "howDoIStartInvesting": "Wie fange ich mit dem Investieren an?",
-  "explainTreasuryBills": "Erklären Sie Schatzwechsel"
+  "explainTreasuryBills": "Erklären Sie Schatzwechsel",
+  "takePhoto": "Foto aufnehmen",
+  "uploadFromGallery": "Aus Galerie hochladen",
+  "changeProfileImage": "Profilbild ändern",
+  "changeCoverImage": "Titelbild ändern",
+  "removeImage": "Bild entfernen",
+  "failedToCropImage": "Bild konnte nicht zugeschnitten werden",
+  "errorCapturingImage": "Fehler beim Aufnehmen des Bildes",
+  "errorSelectingImage": "Fehler beim Auswählen des Bildes",
+  "withdrawal": "Abhebung"
 }

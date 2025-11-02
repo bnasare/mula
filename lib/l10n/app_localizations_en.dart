@@ -857,4 +857,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get explainTreasuryBills => 'Explain Treasury Bills';
+
+  @override
+  String get takePhoto => 'Take Photo';
+
+  @override
+  String get uploadFromGallery => 'Upload from Gallery';
+
+  @override
+  String get changeProfileImage => 'Change Profile Image';
+
+  @override
+  String get changeCoverImage => 'Change Cover Image';
+
+  @override
+  String get removeImage => 'Remove Image';
+
+  @override
+  String get failedToCropImage => 'Failed to crop image';
+
+  @override
+  String get errorCapturingImage => 'Error capturing image';
+
+  @override
+  String get errorSelectingImage => 'Error selecting image';
+
+  @override
+  String get withdrawal => 'Withdrawal';
 }

@@ -857,4 +857,31 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get explainTreasuryBills => 'ट्रेजरी बिल समझाएं';
+
+  @override
+  String get takePhoto => 'फोटो लें';
+
+  @override
+  String get uploadFromGallery => 'गैलरी से अपलोड करें';
+
+  @override
+  String get changeProfileImage => 'प्रोफाइल छवि बदलें';
+
+  @override
+  String get changeCoverImage => 'कवर छवि बदलें';
+
+  @override
+  String get removeImage => 'छवि हटाएं';
+
+  @override
+  String get failedToCropImage => 'छवि क्रॉप करने में विफल';
+
+  @override
+  String get errorCapturingImage => 'छवि कैप्चर करने में त्रुटि';
+
+  @override
+  String get errorSelectingImage => 'छवि चुनने में त्रुटि';
+
+  @override
+  String get withdrawal => 'निकासी';
 }

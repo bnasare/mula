@@ -300,5 +300,14 @@
   "whichInvestmentsLowRisk": "Which investments are low risk?",
   "suggestBeginnerPlan": "Suggest a beginner investment plan",
   "howDoIStartInvesting": "How do I start investing?",
-  "explainTreasuryBills": "Explain Treasury Bills"
+  "explainTreasuryBills": "Explain Treasury Bills",
+  "takePhoto": "Take Photo",
+  "uploadFromGallery": "Upload from Gallery",
+  "changeProfileImage": "Change Profile Image",
+  "changeCoverImage": "Change Cover Image",
+  "removeImage": "Remove Image",
+  "failedToCropImage": "Failed to crop image",
+  "errorCapturingImage": "Error capturing image",
+  "errorSelectingImage": "Error selecting image",
+  "withdrawal": "Withdrawal"
 }

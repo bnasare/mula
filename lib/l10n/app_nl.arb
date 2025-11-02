@@ -299,5 +299,14 @@
   "whichInvestmentsLowRisk": "Welke investeringen hebben een laag risico?",
   "suggestBeginnerPlan": "Stel een beginners investeringsplan voor",
   "howDoIStartInvesting": "Hoe begin ik met investeren?",
-  "explainTreasuryBills": "Leg schatkistpapier uit"
+  "explainTreasuryBills": "Leg schatkistpapier uit",
+  "takePhoto": "Foto maken",
+  "uploadFromGallery": "Uploaden vanuit galerij",
+  "changeProfileImage": "Profielfoto wijzigen",
+  "changeCoverImage": "Omslagfoto wijzigen",
+  "removeImage": "Afbeelding verwijderen",
+  "failedToCropImage": "Kan afbeelding niet bijsnijden",
+  "errorCapturingImage": "Fout bij het vastleggen van afbeelding",
+  "errorSelectingImage": "Fout bij het selecteren van afbeelding",
+  "withdrawal": "Opname"
 }

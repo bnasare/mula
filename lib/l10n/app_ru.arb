@@ -299,5 +299,14 @@
   "whichInvestmentsLowRisk": "Какие инвестиции имеют низкий риск?",
   "suggestBeginnerPlan": "Предложите инвестиционный план для начинающих",
   "howDoIStartInvesting": "Как начать инвестировать?",
-  "explainTreasuryBills": "Объясните казначейские векселя"
+  "explainTreasuryBills": "Объясните казначейские векселя",
+  "takePhoto": "Сделать фото",
+  "uploadFromGallery": "Загрузить из галереи",
+  "changeProfileImage": "Изменить изображение профиля",
+  "changeCoverImage": "Изменить обложку",
+  "removeImage": "Удалить изображение",
+  "failedToCropImage": "Не удалось обрезать изображение",
+  "errorCapturingImage": "Ошибка при захвате изображения",
+  "errorSelectingImage": "Ошибка при выборе изображения",
+  "withdrawal": "Вывод средств"
 }

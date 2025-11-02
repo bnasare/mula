@@ -7,6 +7,7 @@ import 'package:image_picker/image_picker.dart';
 import '../presentation/widgets/snackbar.dart';
 import 'extension.dart';
 import 'image_cropper.dart';
+import 'localization_extension.dart';
 
 class ImageSelectionUtils {
   static final ImagePicker _picker = ImagePicker();
@@ -43,7 +44,7 @@ class ImageSelectionUtils {
                   color: Colors.black54,
                 ),
                 title: Text(
-                  cameraText ?? "Take Photo",
+                  cameraText ?? context.localize.takePhoto,
                   style: TextStyle(
                     color: Colors.black87,
                     fontSize: context.responsiveFontSize(mobile: 14),
@@ -65,7 +66,7 @@ class ImageSelectionUtils {
                   color: Colors.black54,
                 ),
                 title: Text(
-                  galleryText ?? "Upload from Gallery",
+                  galleryText ?? context.localize.uploadFromGallery,
                   style: TextStyle(
                     color: Colors.black87,
                     fontSize: context.responsiveFontSize(mobile: 14),
@@ -121,8 +122,8 @@ class ImageSelectionUtils {
                 title: Text(
                   changeText ??
                       (isProfileImage
-                          ? "Change Profile Image"
-                          : "Change Cover Image"),
+                          ? context.localize.changeProfileImage
+                          : context.localize.changeCoverImage),
                   style: TextStyle(
                     color: Colors.black87,
                     fontSize: context.responsiveFontSize(mobile: 14),
@@ -144,7 +145,7 @@ class ImageSelectionUtils {
                   color: Colors.black54,
                 ),
                 title: Text(
-                  removeText ?? "Remove Image",
+                  removeText ?? context.localize.removeImage,
                   style: TextStyle(
                     color: Colors.black87,
                     fontSize: context.responsiveFontSize(mobile: 14),
@@ -180,13 +181,13 @@ class ImageSelectionUtils {
           onImageSelected(File(croppedFile.path));
         } else {
           if (context.mounted) {
-            SnackBarHelper.showErrorSnackBar(context, 'Failed to crop image');
+            SnackBarHelper.showErrorSnackBar(context, context.localize.failedToCropImage);
           }
         }
       }
     } catch (e) {
       if (context.mounted) {
-        SnackBarHelper.showErrorSnackBar(context, 'Error capturing image: $e');
+        SnackBarHelper.showErrorSnackBar(context, '${context.localize.errorCapturingImage}: $e');
       }
     }
   }
@@ -209,13 +210,13 @@ class ImageSelectionUtils {
           onImageSelected(File(croppedFile.path));
         } else {
           if (context.mounted) {
-            SnackBarHelper.showErrorSnackBar(context, 'Failed to crop image');
+            SnackBarHelper.showErrorSnackBar(context, context.localize.failedToCropImage);
           }
         }
       }
     } catch (e) {
       if (context.mounted) {
-        SnackBarHelper.showErrorSnackBar(context, 'Error selecting image: $e');
+        SnackBarHelper.showErrorSnackBar(context, '${context.localize.errorSelectingImage}: $e');
       }
     }
   }

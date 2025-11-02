@@ -4,6 +4,7 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/snackbar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 
 /// Bottom sheet for choosing export format
 class ExportBottomSheet extends StatefulWidget {
@@ -33,7 +34,7 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               AppText.large(
-                'Choose file format',
+                context.localize.chooseFileFormat,
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   color: AppColors.primaryText(context),
@@ -60,16 +61,16 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
           const SizedBox(height: 24),
 
           // PDF Format Option
-          _buildFormatOption('PDF Format'),
+          _buildFormatOption(context.localize.pdfFormat),
           const SizedBox(height: 12),
 
           // CSV Option
-          _buildFormatOption('CSV'),
+          _buildFormatOption(context.localize.csv),
           const SizedBox(height: 32),
 
           // Apply Button
           AppButton(
-            text: 'Apply',
+            text: context.localize.apply,
             backgroundColor: _selectedFormat != null
                 ? AppColors.appPrimary
                 : AppColors.appPrimary.withOpacity(0.5),
@@ -82,7 +83,7 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
                     Navigator.pop(context);
                     SnackBarHelper.showInfoSnackBar(
                       context,
-                      'Exporting as $_selectedFormat',
+                      '${context.localize.exportingAs} $_selectedFormat',
                     );
                   }
                 : null,

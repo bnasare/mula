@@ -863,4 +863,31 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get explainTreasuryBills => 'Explica las Letras del Tesoro';
+
+  @override
+  String get takePhoto => 'Tomar foto';
+
+  @override
+  String get uploadFromGallery => 'Subir desde galería';
+
+  @override
+  String get changeProfileImage => 'Cambiar imagen de perfil';
+
+  @override
+  String get changeCoverImage => 'Cambiar imagen de portada';
+
+  @override
+  String get removeImage => 'Eliminar imagen';
+
+  @override
+  String get failedToCropImage => 'No se pudo recortar la imagen';
+
+  @override
+  String get errorCapturingImage => 'Error al capturar la imagen';
+
+  @override
+  String get errorSelectingImage => 'Error al seleccionar la imagen';
+
+  @override
+  String get withdrawal => 'Retiro';
 }
