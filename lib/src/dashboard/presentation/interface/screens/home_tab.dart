@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/extension.dart';
@@ -9,11 +10,13 @@ import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../deposit/presentation/interface/screens/deposit_account_selection_screen.dart';
 import '../../../../withdraw/presentation/interface/screens/withdraw_account_selection_screen.dart';
+import '../../../domain/entities/asset.dart';
 import '../../provider/dashboard_provider.dart';
 import '../widgets/action_button.dart';
 import '../widgets/activity_list_item.dart';
 import '../widgets/asset_donut_chart.dart';
 import '../widgets/learning_corner_card.dart';
+import '../widgets/performance_chart.dart';
 import '../widgets/portfolio_value_card.dart';
 
 /// Home tab showing portfolio overview and recent activities
@@ -25,6 +28,8 @@ class HomeTab extends StatefulWidget {
 }
 
 class _HomeTabState extends State<HomeTab> {
+  int _selectedAssetTab = 0; // 0: Class, 1: Broker, 2: Performance
+
   @override
   void initState() {
     super.initState();
@@ -37,7 +42,6 @@ class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
       body: RefreshIndicator(
         onRefresh: () => context.read<DashboardProvider>().refresh(),
         child: CustomScrollView(
@@ -154,9 +158,7 @@ class _HomeTabState extends State<HomeTab> {
           return const SizedBox.shrink();
         }
 
-        return PortfolioValueCard(
-          portfolioSummary: provider.portfolioSummary!,
-        );
+        return PortfolioValueCard(portfolioSummary: provider.portfolioSummary!);
       },
     );
   }
@@ -280,19 +282,47 @@ class _HomeTabState extends State<HomeTab> {
             const SizedBox(height: 16),
 
             // Tab buttons (Class, Broker, Performance)
-            Row(
-              children: [
-                _TabButton(label: context.localize.classLabel, isActive: true),
-                const SizedBox(width: 8),
-                _TabButton(label: context.localize.broker, isActive: false),
-                const SizedBox(width: 8),
-                _TabButton(label: context.localize.performance, isActive: false),
-              ],
+            Container(
+              padding: const EdgeInsets.all(4),
+              decoration: BoxDecoration(
+                color: AppColors.offWhite(context),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: _TabButton(
+                      label: context.localize.classLabel,
+                      isActive: _selectedAssetTab == 0,
+                      onTap: () => setState(() => _selectedAssetTab = 0),
+                    ),
+                  ),
+                  Expanded(
+                    child: _TabButton(
+                      label: context.localize.broker,
+                      isActive: _selectedAssetTab == 1,
+                      onTap: () => setState(() => _selectedAssetTab = 1),
+                    ),
+                  ),
+                  Expanded(
+                    child: _TabButton(
+                      label: context.localize.performance,
+                      isActive: _selectedAssetTab == 2,
+                      onTap: () => setState(() => _selectedAssetTab = 2),
+                    ),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(height: 16),
 
-            // Donut chart
-            AssetDonutChart(assets: provider.portfolioSummary!.assets),
+            // Chart based on selected tab
+            if (_selectedAssetTab == 0)
+              AssetDonutChart(assets: provider.portfolioSummary!.assets)
+            else if (_selectedAssetTab == 1)
+              _buildBrokerChart()
+            else
+              _buildPerformanceChart(),
           ],
         );
       },
@@ -361,13 +391,20 @@ class _HomeTabState extends State<HomeTab> {
             const SizedBox(height: 12),
 
             // Activities list
-            ...provider.recentActivities.map(
-              (activity) => ActivityListItem(
-                activity: activity,
-                onTap: () {
-                  // TODO: Navigate to activity details
-                },
-              ),
+            ListView.separated(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: provider.recentActivities.length,
+              separatorBuilder: (context, index) =>
+                  Divider(color: AppColors.border(context), height: 1),
+              itemBuilder: (context, index) {
+                return ActivityListItem(
+                  activity: provider.recentActivities[index],
+                  onTap: () {
+                    // TODO: Navigate to activity details
+                  },
+                );
+              },
             ),
           ],
         );
@@ -394,34 +431,68 @@ class _HomeTabState extends State<HomeTab> {
       ),
     );
   }
+
+  Widget _buildBrokerChart() {
+    // Dummy broker data
+    final brokerAssets = [
+      const Asset(
+        name: 'Petra Investments',
+        value: 3868.36,
+        percentage: 30.0,
+        type: AssetType.stocks,
+      ),
+      const Asset(
+        name: 'Databank',
+        value: 5157.81,
+        percentage: 40.0,
+        type: AssetType.tBills,
+      ),
+      const Asset(
+        name: 'Apakan',
+        value: 3868.36,
+        percentage: 30.0,
+        type: AssetType.cashWallet,
+      ),
+    ];
+
+    return AssetDonutChart(assets: brokerAssets);
+  }
+
+  Widget _buildPerformanceChart() {
+    return const PerformanceChart();
+  }
 }
 
 /// Tab button for asset overview section
 class _TabButton extends StatelessWidget {
   final String label;
   final bool isActive;
+  final VoidCallback onTap;
 
   const _TabButton({
     required this.label,
     required this.isActive,
+    required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      decoration: BoxDecoration(
-        color: isActive
-            ? AppColors.appPrimary.withOpacity(0.1)
-            : Colors.transparent,
-        border: Border.all(
-          color: isActive ? AppColors.appPrimary : AppColors.border(context),
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        decoration: BoxDecoration(
+          color: isActive ? Colors.white : Colors.transparent,
+          borderRadius: BorderRadius.circular(6),
         ),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: AppText.smallest(
-        label,
-        color: isActive ? AppColors.appPrimary : AppColors.secondaryText(context),
+        child: Center(
+          child: AppText.small(
+            label,
+            color: isActive
+                ? AppColors.primaryText(context)
+                : AppColors.secondaryText(context),
+          ),
+        ),
       ),
     );
   }
