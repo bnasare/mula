@@ -101,6 +101,9 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
               primaryForeground: Colors.white,
             ),
             brightness: Brightness.light,
+            textTheme: ShadTextTheme(
+              family: 'Raleway',
+            ),
           ),
           darkTheme: ShadThemeData(
             colorScheme: const ShadZincColorScheme.dark(
@@ -108,6 +111,9 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
               primaryForeground: Colors.white,
             ),
             brightness: Brightness.dark,
+            textTheme: ShadTextTheme(
+              family: 'Raleway',
+            ),
           ),
           home: FutureBuilder<bool>(
             future: _onboardingCompleteFuture,
