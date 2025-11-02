@@ -282,5 +282,23 @@
   "shareComingSoon": "Compartilhar em breve",
   "withdrawComingSoon": "Sacar em breve",
   "depositComingSoon": "Depositar em breve",
-  "noTransactionsYet": "Nenhuma transação ainda"
+  "noTransactionsYet": "Nenhuma transação ainda",
+
+  "hiImMulaBot": "Olá, sou Mula Bot",
+  "yourPersonalGuide": "Seu guia pessoal para investir com inteligência",
+  "startChat": "Iniciar Chat",
+  "mulaBotIsTyping": "Mula Bot está digitando...",
+  "typeYourMessageHere": "Digite sua mensagem aqui",
+  "hiWhatsOnYourMind": "Olá {name}👋 O que você tem em mente?",
+  "@hiWhatsOnYourMind": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "whichInvestmentsLowRisk": "Quais investimentos são de baixo risco?",
+  "suggestBeginnerPlan": "Sugira um plano de investimento para iniciantes",
+  "howDoIStartInvesting": "Como começo a investir?",
+  "explainTreasuryBills": "Explique as Letras do Tesouro"
 }

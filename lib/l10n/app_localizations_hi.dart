@@ -824,4 +824,37 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get noTransactionsYet => 'अभी तक कोई लेनदेन नहीं';
+
+  @override
+  String get hiImMulaBot => 'नमस्ते, मैं Mula Bot हूं';
+
+  @override
+  String get yourPersonalGuide =>
+      'स्मार्ट निवेश के लिए आपका व्यक्तिगत मार्गदर्शक';
+
+  @override
+  String get startChat => 'चैट शुरू करें';
+
+  @override
+  String get mulaBotIsTyping => 'Mula Bot टाइप कर रहा है...';
+
+  @override
+  String get typeYourMessageHere => 'अपना संदेश यहां टाइप करें';
+
+  @override
+  String hiWhatsOnYourMind(String name) {
+    return 'नमस्ते $name👋 आपके मन में क्या है?';
+  }
+
+  @override
+  String get whichInvestmentsLowRisk => 'कौन से निवेश कम जोखिम वाले हैं?';
+
+  @override
+  String get suggestBeginnerPlan => 'शुरुआती निवेश योजना सुझाएं';
+
+  @override
+  String get howDoIStartInvesting => 'मैं निवेश कैसे शुरू करूं?';
+
+  @override
+  String get explainTreasuryBills => 'ट्रेजरी बिल समझाएं';
 }

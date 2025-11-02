@@ -59,7 +59,7 @@ class _CreateAccountIdentificationDetailsScreenState
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   CupertinoButton(
-                    onPressed: () => Navigator.of(context).pop(),
+                    onPressed: () => NavigationHelper.navigateBack(context),
                     child: const Text('Done'),
                   ),
                 ],

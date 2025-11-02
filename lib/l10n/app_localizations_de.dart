@@ -829,4 +829,38 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get noTransactionsYet => 'Noch keine Transaktionen';
+
+  @override
+  String get hiImMulaBot => 'Hallo, ich bin Mula Bot';
+
+  @override
+  String get yourPersonalGuide =>
+      'Ihr persönlicher Leitfaden für intelligentes Investieren';
+
+  @override
+  String get startChat => 'Chat starten';
+
+  @override
+  String get mulaBotIsTyping => 'Mula Bot tippt...';
+
+  @override
+  String get typeYourMessageHere => 'Geben Sie hier Ihre Nachricht ein';
+
+  @override
+  String hiWhatsOnYourMind(String name) {
+    return 'Hallo $name👋 Was haben Sie auf dem Herzen?';
+  }
+
+  @override
+  String get whichInvestmentsLowRisk => 'Welche Investitionen sind risikoarm?';
+
+  @override
+  String get suggestBeginnerPlan =>
+      'Schlagen Sie einen Investitionsplan für Anfänger vor';
+
+  @override
+  String get howDoIStartInvesting => 'Wie fange ich mit dem Investieren an?';
+
+  @override
+  String get explainTreasuryBills => 'Erklären Sie Schatzwechsel';
 }

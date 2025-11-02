@@ -63,7 +63,7 @@ class _LinkedBrokersScreenState extends State<LinkedBrokersScreen> {
 
   void _onSkip() {
     // Navigate back to Link Investment Accounts screen
-    Navigator.of(context).pop();
+    NavigationHelper.navigateBack(context);
   }
 
   void _onAdd() {

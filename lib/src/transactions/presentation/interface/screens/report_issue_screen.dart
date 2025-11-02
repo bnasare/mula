@@ -4,6 +4,7 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/presentation/widgets/snackbar.dart';
 
 /// Screen for reporting issues
 class ReportIssueScreen extends StatefulWidget {
@@ -71,10 +72,9 @@ class _ReportIssueScreenState extends State<ReportIssueScreen> {
                 if (_issueController.text.isNotEmpty) {
                   // TODO: Submit issue report
                   Navigator.pop(context);
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Issue reported successfully'),
-                    ),
+                  SnackBarHelper.showSuccessSnackBar(
+                    context,
+                    'Issue reported successfully',
                   );
                 }
               },

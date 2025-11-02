@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../utils/extension.dart';
+import '../../utils/navigation.dart';
 import '../theme/app_colors.dart';
 import 'mula_back_button.dart';
 import 'rounded_linear_progress_indicator.dart';
@@ -110,8 +111,8 @@ class MulaAppBar extends StatelessWidget implements PreferredSizeWidget {
                     scale: context.responsiveValue(mobile: 0.6),
                     child: MulaBackButton(
                       iconSize: context.responsiveValue(mobile: 24.0),
-                      onPressed:
-                          onBackPressed ?? () => Navigator.of(context).pop(),
+                      onPressed: onBackPressed ??
+                          () => NavigationHelper.navigateBack(context),
                     ),
                   )
                 : null),

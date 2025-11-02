@@ -828,4 +828,37 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get noTransactionsYet => 'Пока нет транзакций';
+
+  @override
+  String get hiImMulaBot => 'Привет, я Mula Bot';
+
+  @override
+  String get yourPersonalGuide => 'Ваш личный гид по умным инвестициям';
+
+  @override
+  String get startChat => 'Начать чат';
+
+  @override
+  String get mulaBotIsTyping => 'Mula Bot печатает...';
+
+  @override
+  String get typeYourMessageHere => 'Введите ваше сообщение здесь';
+
+  @override
+  String hiWhatsOnYourMind(String name) {
+    return 'Привет $name👋 Что у вас на уме?';
+  }
+
+  @override
+  String get whichInvestmentsLowRisk => 'Какие инвестиции имеют низкий риск?';
+
+  @override
+  String get suggestBeginnerPlan =>
+      'Предложите инвестиционный план для начинающих';
+
+  @override
+  String get howDoIStartInvesting => 'Как начать инвестировать?';
+
+  @override
+  String get explainTreasuryBills => 'Объясните казначейские векселя';
 }

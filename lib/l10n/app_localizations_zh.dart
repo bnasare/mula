@@ -795,4 +795,36 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get noTransactionsYet => '还没有交易记录';
+
+  @override
+  String get hiImMulaBot => '你好，我是 Mula Bot';
+
+  @override
+  String get yourPersonalGuide => '您的智能投资个人指南';
+
+  @override
+  String get startChat => '开始聊天';
+
+  @override
+  String get mulaBotIsTyping => 'Mula Bot 正在输入...';
+
+  @override
+  String get typeYourMessageHere => '在此输入您的消息';
+
+  @override
+  String hiWhatsOnYourMind(String name) {
+    return '你好 $name👋 您在想什么？';
+  }
+
+  @override
+  String get whichInvestmentsLowRisk => '哪些投资风险低？';
+
+  @override
+  String get suggestBeginnerPlan => '建议初学者投资计划';
+
+  @override
+  String get howDoIStartInvesting => '我如何开始投资？';
+
+  @override
+  String get explainTreasuryBills => '解释国债';
 }

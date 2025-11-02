@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../../../shared/presentation/widgets/snackbar.dart';
 import '../../../../dashboard/domain/entities/activity.dart';
 
 /// Modal showing transaction receipt details
@@ -147,8 +148,9 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
                       icon: const Icon(Icons.share),
                       onPressed: () {
                         // TODO: Implement share functionality
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text('Share coming soon')),
+                        SnackBarHelper.showInfoSnackBar(
+                          context,
+                          'Share coming soon',
                         );
                       },
                     ),

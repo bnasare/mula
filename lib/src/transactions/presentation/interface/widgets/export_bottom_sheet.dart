@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../../../shared/presentation/widgets/snackbar.dart';
 
 /// Bottom sheet for choosing export format
 class ExportBottomSheet extends StatefulWidget {
@@ -64,10 +65,9 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
                 ? () {
                     // TODO: Export with selected format
                     Navigator.pop(context);
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Exporting as $_selectedFormat'),
-                      ),
+                    SnackBarHelper.showInfoSnackBar(
+                      context,
+                      'Exporting as $_selectedFormat',
                     );
                   }
                 : null,

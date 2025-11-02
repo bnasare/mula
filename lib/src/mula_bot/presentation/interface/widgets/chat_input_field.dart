@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 
 /// Chat input field with send button
 class ChatInputField extends StatefulWidget {
@@ -76,7 +77,7 @@ class _ChatInputFieldState extends State<ChatInputField> {
                 maxLines: null,
                 textCapitalization: TextCapitalization.sentences,
                 decoration: InputDecoration(
-                  hintText: 'Type your message here',
+                  hintText: context.localize.typeYourMessageHere,
                   hintStyle: TextStyle(
                     color: AppColors.secondaryText(context),
                     fontSize: 14,

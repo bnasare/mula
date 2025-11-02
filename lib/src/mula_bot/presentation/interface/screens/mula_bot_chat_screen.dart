@@ -6,6 +6,7 @@ import '../../../../../shared/data/image_assets.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../provider/mula_bot_provider.dart';
 import '../widgets/chat_input_field.dart';
 import '../widgets/chat_message_bubble.dart';
@@ -105,7 +106,7 @@ class _MulaBotChatViewState extends State<_MulaBotChatView> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             AppText.large(
-              provider.getGreeting('Phil'),
+              context.localize.hiWhatsOnYourMind('Phil'),
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w600,
@@ -140,7 +141,7 @@ class _MulaBotChatViewState extends State<_MulaBotChatView> {
           Image.asset(ImageAssets.ai, width: 32, height: 32),
           const SizedBox(width: 12),
           AppText.small(
-            'Mula Bot is typing...',
+            context.localize.mulaBotIsTyping,
             style: TextStyle(
               color: AppColors.secondaryText(context),
               fontStyle: FontStyle.italic,
@@ -152,7 +153,12 @@ class _MulaBotChatViewState extends State<_MulaBotChatView> {
   }
 
   Widget _buildSuggestedPrompts(MulaBotProvider provider) {
-    final prompts = provider.getSuggestedPrompts();
+    final prompts = [
+      context.localize.whichInvestmentsLowRisk,
+      context.localize.suggestBeginnerPlan,
+      context.localize.howDoIStartInvesting,
+      context.localize.explainTreasuryBills,
+    ];
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),

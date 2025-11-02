@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../../../shared/presentation/widgets/snackbar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../dashboard/presentation/interface/widgets/learning_corner_card.dart';
 
@@ -24,8 +25,9 @@ class LearningCornerSection extends StatelessWidget {
           description: context.localize.learnHowBondsWork,
           onLearnMore: () {
             // TODO: Navigate to learning content
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text(context.localize.comingSoon)),
+            SnackBarHelper.showInfoSnackBar(
+              context,
+              context.localize.comingSoon,
             );
           },
         ),

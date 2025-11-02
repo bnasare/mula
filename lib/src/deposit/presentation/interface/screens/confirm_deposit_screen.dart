@@ -182,7 +182,7 @@ class ConfirmDepositScreen extends StatelessWidget {
                   padding: EdgeInsets.zero,
                   onTap: () {
                     // Close dialog
-                    Navigator.of(dialogContext).pop();
+                    NavigationHelper.navigateBack(dialogContext);
                     // Navigate to success screen
                     NavigationHelper.navigateTo(
                       context,

@@ -281,5 +281,23 @@
   "shareComingSoon": "Delen binnenkort beschikbaar",
   "withdrawComingSoon": "Opnemen binnenkort beschikbaar",
   "depositComingSoon": "Storten binnenkort beschikbaar",
-  "noTransactionsYet": "Nog geen transacties"
+  "noTransactionsYet": "Nog geen transacties",
+
+  "hiImMulaBot": "Hoi, ik ben Mula Bot",
+  "yourPersonalGuide": "Je persoonlijke gids voor slim investeren",
+  "startChat": "Chat starten",
+  "mulaBotIsTyping": "Mula Bot is aan het typen...",
+  "typeYourMessageHere": "Typ hier je bericht",
+  "hiWhatsOnYourMind": "Hoi {name}👋 Wat houdt je bezig?",
+  "@hiWhatsOnYourMind": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "whichInvestmentsLowRisk": "Welke investeringen hebben een laag risico?",
+  "suggestBeginnerPlan": "Stel een beginners investeringsplan voor",
+  "howDoIStartInvesting": "Hoe begin ik met investeren?",
+  "explainTreasuryBills": "Leg schatkistpapier uit"
 }

@@ -802,4 +802,36 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get noTransactionsYet => 'まだ取引がありません';
+
+  @override
+  String get hiImMulaBot => 'こんにちは、Mula Botです';
+
+  @override
+  String get yourPersonalGuide => 'スマートな投資のための個人ガイド';
+
+  @override
+  String get startChat => 'チャットを開始';
+
+  @override
+  String get mulaBotIsTyping => 'Mula Botが入力中...';
+
+  @override
+  String get typeYourMessageHere => 'ここにメッセージを入力してください';
+
+  @override
+  String hiWhatsOnYourMind(String name) {
+    return 'こんにちは $name👋 何か気になることはありますか？';
+  }
+
+  @override
+  String get whichInvestmentsLowRisk => 'どの投資がリスクが低いですか？';
+
+  @override
+  String get suggestBeginnerPlan => '初心者向けの投資プランを提案してください';
+
+  @override
+  String get howDoIStartInvesting => '投資を始めるにはどうすればいいですか？';
+
+  @override
+  String get explainTreasuryBills => '国債について説明してください';
 }

@@ -827,4 +827,39 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get noTransactionsYet => 'Nenhuma transação ainda';
+
+  @override
+  String get hiImMulaBot => 'Olá, sou Mula Bot';
+
+  @override
+  String get yourPersonalGuide =>
+      'Seu guia pessoal para investir com inteligência';
+
+  @override
+  String get startChat => 'Iniciar Chat';
+
+  @override
+  String get mulaBotIsTyping => 'Mula Bot está digitando...';
+
+  @override
+  String get typeYourMessageHere => 'Digite sua mensagem aqui';
+
+  @override
+  String hiWhatsOnYourMind(String name) {
+    return 'Olá $name👋 O que você tem em mente?';
+  }
+
+  @override
+  String get whichInvestmentsLowRisk =>
+      'Quais investimentos são de baixo risco?';
+
+  @override
+  String get suggestBeginnerPlan =>
+      'Sugira um plano de investimento para iniciantes';
+
+  @override
+  String get howDoIStartInvesting => 'Como começo a investir?';
+
+  @override
+  String get explainTreasuryBills => 'Explique as Letras do Tesouro';
 }

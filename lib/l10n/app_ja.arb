@@ -281,5 +281,23 @@
   "shareComingSoon": "共有は近日公開",
   "withdrawComingSoon": "出金は近日公開",
   "depositComingSoon": "入金は近日公開",
-  "noTransactionsYet": "まだ取引がありません"
+  "noTransactionsYet": "まだ取引がありません",
+
+  "hiImMulaBot": "こんにちは、Mula Botです",
+  "yourPersonalGuide": "スマートな投資のための個人ガイド",
+  "startChat": "チャットを開始",
+  "mulaBotIsTyping": "Mula Botが入力中...",
+  "typeYourMessageHere": "ここにメッセージを入力してください",
+  "hiWhatsOnYourMind": "こんにちは {name}👋 何か気になることはありますか？",
+  "@hiWhatsOnYourMind": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "whichInvestmentsLowRisk": "どの投資がリスクが低いですか？",
+  "suggestBeginnerPlan": "初心者向けの投資プランを提案してください",
+  "howDoIStartInvesting": "投資を始めるにはどうすればいいですか？",
+  "explainTreasuryBills": "国債について説明してください"
 }

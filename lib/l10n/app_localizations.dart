@@ -1681,6 +1681,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No transactions yet'**
   String get noTransactionsYet;
+
+  /// No description provided for @hiImMulaBot.
+  ///
+  /// In en, this message translates to:
+  /// **'Hi, I\'m Mula Bot'**
+  String get hiImMulaBot;
+
+  /// No description provided for @yourPersonalGuide.
+  ///
+  /// In en, this message translates to:
+  /// **'Your personal guide to smart investing'**
+  String get yourPersonalGuide;
+
+  /// No description provided for @startChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Chat'**
+  String get startChat;
+
+  /// No description provided for @mulaBotIsTyping.
+  ///
+  /// In en, this message translates to:
+  /// **'Mula Bot is typing...'**
+  String get mulaBotIsTyping;
+
+  /// No description provided for @typeYourMessageHere.
+  ///
+  /// In en, this message translates to:
+  /// **'Type your message here'**
+  String get typeYourMessageHere;
+
+  /// No description provided for @hiWhatsOnYourMind.
+  ///
+  /// In en, this message translates to:
+  /// **'Hi {name}👋 What\'s on your mind?'**
+  String hiWhatsOnYourMind(String name);
+
+  /// No description provided for @whichInvestmentsLowRisk.
+  ///
+  /// In en, this message translates to:
+  /// **'Which investments are low risk?'**
+  String get whichInvestmentsLowRisk;
+
+  /// No description provided for @suggestBeginnerPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggest a beginner investment plan'**
+  String get suggestBeginnerPlan;
+
+  /// No description provided for @howDoIStartInvesting.
+  ///
+  /// In en, this message translates to:
+  /// **'How do I start investing?'**
+  String get howDoIStartInvesting;
+
+  /// No description provided for @explainTreasuryBills.
+  ///
+  /// In en, this message translates to:
+  /// **'Explain Treasury Bills'**
+  String get explainTreasuryBills;
 }
 
 class _AppLocalizationsDelegate

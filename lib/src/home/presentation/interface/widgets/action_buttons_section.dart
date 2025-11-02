@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../../shared/presentation/widgets/snackbar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../cash_wallet/presentation/interface/screens/cash_wallet_screen.dart';
@@ -48,8 +49,9 @@ class ActionButtonsSection extends StatelessWidget {
             label: context.localize.trade,
             onTap: () {
               // TODO: Navigate to trade screen
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(context.localize.comingSoon)),
+              SnackBarHelper.showInfoSnackBar(
+                context,
+                context.localize.comingSoon,
               );
             },
           ),
@@ -68,8 +70,9 @@ class ActionButtonsSection extends StatelessWidget {
             label: context.localize.linkAccount,
             onTap: () {
               // TODO: Navigate to link account screen
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(context.localize.comingSoon)),
+              SnackBarHelper.showInfoSnackBar(
+                context,
+                context.localize.comingSoon,
               );
             },
           ),

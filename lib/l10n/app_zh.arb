@@ -282,5 +282,23 @@
   "shareComingSoon": "分享即将推出",
   "withdrawComingSoon": "取款即将推出",
   "depositComingSoon": "存款即将推出",
-  "noTransactionsYet": "还没有交易记录"
+  "noTransactionsYet": "还没有交易记录",
+
+  "hiImMulaBot": "你好，我是 Mula Bot",
+  "yourPersonalGuide": "您的智能投资个人指南",
+  "startChat": "开始聊天",
+  "mulaBotIsTyping": "Mula Bot 正在输入...",
+  "typeYourMessageHere": "在此输入您的消息",
+  "hiWhatsOnYourMind": "你好 {name}👋 您在想什么？",
+  "@hiWhatsOnYourMind": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "whichInvestmentsLowRisk": "哪些投资风险低？",
+  "suggestBeginnerPlan": "建议初学者投资计划",
+  "howDoIStartInvesting": "我如何开始投资？",
+  "explainTreasuryBills": "解释国债"
 }

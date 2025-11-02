@@ -5,6 +5,7 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import 'mula_bot_chat_screen.dart';
 
@@ -33,7 +34,7 @@ class MulaBotWelcomeScreen extends StatelessWidget {
 
               // Title
               AppText.large(
-                'Hi, I/\'m Mula Bot',
+                context.localize.hiImMulaBot,
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -44,7 +45,7 @@ class MulaBotWelcomeScreen extends StatelessWidget {
 
               // Subtitle
               AppText.medium(
-                'Your personal guide to smart investing',
+                context.localize.yourPersonalGuide,
                 style: TextStyle(
                   fontSize: 16,
                   color: AppColors.secondaryText(context),
@@ -55,7 +56,7 @@ class MulaBotWelcomeScreen extends StatelessWidget {
 
               // Start Chat Button
               AppButton(
-                text: 'Start Chat',
+                text: context.localize.startChat,
                 backgroundColor: AppColors.appPrimary,
                 textColor: Colors.white,
                 borderRadius: 12,

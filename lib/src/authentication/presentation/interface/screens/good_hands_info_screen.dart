@@ -127,7 +127,8 @@ class GoodHandsInfoScreen extends StatelessWidget {
                         borderColor: AppColors.lightGrey(context),
                         onTap: () {
                           // Navigate back to Select Fund Manager screen
-                          Navigator.of(context).pushAndRemoveUntil(
+                          Navigator.pushAndRemoveUntil(
+                            context,
                             MaterialPageRoute(
                               builder: (context) =>
                                   const SelectFundManagerScreen(),

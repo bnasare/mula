@@ -110,9 +110,9 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
           // Call the success callback
           widget.onVerificationSuccess?.call();
           // Pop OTP screen
-          Navigator.of(context).pop();
+          NavigationHelper.navigateBack(context);
           // Pop Login screen to get back to Brokers screen
-          Navigator.of(context).pop();
+          NavigationHelper.navigateBack(context);
           break;
         case OtpFlowType.signup:
           // Navigate to Enable Face ID screen (normal signup flow)
