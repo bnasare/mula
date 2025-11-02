@@ -52,40 +52,37 @@ class AppLocalizationsZh extends AppLocalizations {
   String get signUp => '注册';
 
   @override
-  String get resetYourPassword => 'Reset Your Password';
+  String get resetYourPassword => '重置密码';
 
   @override
-  String get resetPasswordDescription =>
-      'Enter your email or phone number to receive a verification code';
+  String get resetPasswordDescription => '输入您的邮箱或电话号码以接收验证码';
 
   @override
-  String get sendVerificationCode => 'Send Verification Code';
+  String get sendVerificationCode => '发送验证码';
 
   @override
-  String get createNewPassword => 'Create New Password';
+  String get createNewPassword => '创建新密码';
 
   @override
-  String get createNewPasswordDescription =>
-      'Your new password must be different from previously used passwords';
+  String get createNewPasswordDescription => '您的新密码必须与之前使用的密码不同';
 
   @override
-  String get newPassword => 'New Password';
+  String get newPassword => '新密码';
 
   @override
-  String get enterNewPassword => 'Enter your new password';
+  String get enterNewPassword => '输入您的新密码';
 
   @override
-  String get confirmNewPassword => 'Confirm New Password';
+  String get confirmNewPassword => '确认新密码';
 
   @override
-  String get resetPassword => 'Reset Password';
+  String get resetPassword => '重置密码';
 
   @override
-  String get passwordResetSuccessful => 'Password Reset Successful';
+  String get passwordResetSuccessful => '密码重置成功';
 
   @override
-  String get passwordResetSuccessDescription =>
-      'Your password has been successfully reset. You can now sign in with your new password';
+  String get passwordResetSuccessDescription => '您的密码已成功重置。现在您可以使用新密码登录';
 
   @override
   String get letsGetYouStarted => '让我们开始吧';
@@ -242,69 +239,65 @@ class AppLocalizationsZh extends AppLocalizations {
   String get whatIsYourOccupation => '您的职业是什么？';
 
   @override
-  String get personalDetails => 'Personal Details';
+  String get personalDetails => '个人信息';
 
   @override
-  String get personalDetailsDescription =>
-      'We need a few details to set up your account';
+  String get personalDetailsDescription => '我们需要一些详细信息来设置您的账户';
 
   @override
-  String get nationality => 'Nationality';
+  String get nationality => '国籍';
 
   @override
-  String get selectNationality => 'Select your nationality';
+  String get selectNationality => '选择您的国籍';
 
   @override
-  String get emergencyNumber => 'Emergency Number';
+  String get emergencyNumber => '紧急联系电话';
 
   @override
-  String get enterEmergencyNumber => 'Enter emergency contact number';
+  String get enterEmergencyNumber => '输入紧急联系电话';
 
   @override
-  String get identificationDetails => 'Identification Details';
+  String get identificationDetails => '身份信息';
 
   @override
-  String get submit => 'Submit';
+  String get submit => '提交';
 
   @override
-  String get bankDetails => 'Bank Details';
+  String get bankDetails => '银行详情';
 
   @override
-  String get selectBank => 'Select Bank';
+  String get selectBank => '选择银行';
 
   @override
-  String get selectYourBank => 'Select your bank';
+  String get selectYourBank => '选择您的银行';
 
   @override
-  String get bankAccountNumber => 'Bank account number';
+  String get bankAccountNumber => '银行账户号码';
 
   @override
-  String get enterYourAccountNumber => 'Enter your account number';
+  String get enterYourAccountNumber => '输入您的账户号码';
 
   @override
-  String get chooseAccountType => 'Choose Account Type';
+  String get chooseAccountType => '选择账户类型';
 
   @override
-  String get chooseAccountTypeDescription =>
-      'Choosing the right account type helps us connect you to the right providers.';
+  String get chooseAccountTypeDescription => '选择正确的账户类型可帮助我们将您与合适的提供商联系起来。';
 
   @override
-  String get brokers => 'Brokers';
+  String get brokers => '经纪人';
 
   @override
-  String get brokersDescription =>
-      'Select your broker to start your investment journey.';
+  String get brokersDescription => '选择您的经纪人开始您的投资之旅。';
 
   @override
-  String get noBrokersFound => 'No brokers found';
+  String get noBrokersFound => '未找到经纪人';
 
   @override
-  String get accountDetailsSuccessfullySubmitted =>
-      'Account details successfully submitted';
+  String get accountDetailsSuccessfullySubmitted => '账户详情提交成功';
 
   @override
   String get accountDetailsSuccessDescription =>
-      'Your account has been created. Check your email to validate your account. Check your email for updates on the status of verification.';
+      '您的账户已创建。请检查您的邮箱以验证您的账户。请查看您的邮箱了解验证状态的更新。';
 
   @override
   String get idVerification => '身份验证';
@@ -419,182 +412,225 @@ class AppLocalizationsZh extends AppLocalizations {
   String get dontHaveAccountDescription => '您可以创建账户并立即开始投资';
 
   @override
-  String get selectFundManager => 'Select Fund Manager';
+  String get selectFundManager => '选择基金管理公司';
 
   @override
-  String get selectFundManagerDescription =>
-      'Select your fund manager to start your investment journey.';
+  String get selectFundManagerDescription => '选择您的基金管理公司开始您的投资之旅。';
 
   @override
-  String get searchByAssetNameOrType => 'Search by asset name or type';
+  String get searchByAssetNameOrType => '按资产名称或类型搜索';
 
   @override
-  String get addAnother => 'Add Another';
+  String get addAnother => '添加另一个';
 
   @override
-  String get done => 'Done';
+  String get done => '完成';
 
   @override
-  String get fundManager => 'Fund Manager';
+  String get fundManager => '基金管理公司';
 
   @override
-  String get fundsManaged => 'Funds managed by';
+  String get fundsManaged => '管理的基金';
 
   @override
-  String get select => 'Select';
+  String get select => '选择';
 
   @override
-  String get fundManagerLinkedSuccessfully =>
-      'Fund manager linked successfully';
+  String get fundManagerLinkedSuccessfully => '基金管理公司关联成功';
 
   @override
   String get fundManagerLinkedSuccessDescription =>
-      'Your fund manager has been linked to your account. You can now view and manage your investments.';
+      '您的基金管理公司已关联到您的账户。您现在可以查看和管理您的投资。';
 
   @override
-  String get enterCsdAccountNumber => 'What\'s your CSD account number?';
+  String get enterCsdAccountNumber => '您的 CSD 账户号码是什么？';
 
   @override
-  String get csdAccountNumberDescription =>
-      'You can find this number on your T-bill certificate. If you don\'t have it, contact your broker for help';
+  String get csdAccountNumberDescription => '您可以在国债证书上找到此号码。如果您没有，请联系您的经纪人寻求帮助';
 
   @override
-  String get accountNumber => 'Account Number';
+  String get accountNumber => '账户号码';
 
   @override
-  String get csdAccountNumberHint => 'Eg: 123-456-789';
+  String get csdAccountNumberHint => '例如：123-456-789';
 
   @override
-  String get searchLinkedBrokers => 'Search Linked Brokers';
+  String get searchLinkedBrokers => '搜索已关联的经纪人';
 
   @override
-  String get createOne => 'Create one';
+  String get createOne => '创建一个';
 
   @override
-  String get weFoundYourBrokers => 'We found your brokers';
+  String get weFoundYourBrokers => '我们找到了您的经纪人';
 
   @override
-  String get signInToBrokersDescription =>
-      'Sign into your broker accounts so we can securely fetch your investments';
+  String get signInToBrokersDescription => '登录您的经纪人账户，以便我们安全地获取您的投资';
 
   @override
-  String get add => 'Add';
+  String get add => '添加';
 
   @override
-  String get deposit => 'Deposit';
+  String get deposit => '存款';
 
   @override
-  String get chooseAccountToTopUp => 'Choose an account to top up from';
+  String get chooseAccountToTopUp => '选择要充值的账户';
 
   @override
-  String get mobileMoneyDeposit => 'Mobile Money';
+  String get mobileMoneyDeposit => '移动支付';
 
   @override
-  String get bankAccount => 'Bank Account';
+  String get bankAccount => '银行账户';
 
   @override
-  String get selectAccount => 'Select Account';
+  String get selectAccount => '选择账户';
 
   @override
-  String get addAnotherAccount => 'Add another account';
+  String get addAnotherAccount => '添加另一个账户';
 
   @override
-  String get enterPhoneNumber => 'Enter your Phone Number';
+  String get enterPhoneNumber => '输入您的电话号码';
 
   @override
-  String get network => 'Network';
+  String get network => '网络';
 
   @override
-  String get selectNetwork => 'Select Network';
+  String get selectNetwork => '选择网络';
 
   @override
-  String get enterAmount => 'Enter Amount';
+  String get enterAmount => '输入金额';
 
   @override
-  String get amount => 'Amount';
+  String get amount => '金额';
 
   @override
-  String get reviewAndConfirm => 'Review and confirm your details';
+  String get reviewAndConfirm => '检查并确认您的详细信息';
 
   @override
-  String get confirmDeposit => 'Confirm';
+  String get confirmDeposit => '确认';
 
   @override
-  String get mobileMoneyPrompt =>
-      'You will receive a mobile money prompt. Enter your pin to confirm this transaction';
+  String get mobileMoneyPrompt => '您将收到移动支付提示。输入您的 PIN 码以确认此交易';
 
   @override
-  String get okay => 'Okay';
+  String get okay => '好的';
 
   @override
-  String get depositSuccessful => 'Deposit Successful';
+  String get depositSuccessful => '存款成功';
 
   @override
-  String get fundsSuccessfullyDeposited =>
-      'Funds successfully deposited into your account';
+  String get fundsSuccessfullyDeposited => '资金已成功存入您的账户';
 
   @override
-  String get selectBankAccount => 'Select Bank Account';
+  String get selectBankAccount => '选择银行账户';
 
   @override
-  String get bank => 'Bank';
+  String get bank => '银行';
 
   @override
-  String get accountName => 'Account Name';
+  String get accountName => '账户名称';
 
   @override
-  String get enterAccountName => 'Enter account name';
+  String get enterAccountName => '输入账户名称';
 
   @override
-  String get enterBankAccountInfo => 'Enter Account Information';
+  String get enterBankAccountInfo => '输入账户信息';
 
   @override
-  String get confirmBankDeposit => 'Confirm Deposit';
+  String get confirmBankDeposit => '确认存款';
 
   @override
-  String get forYourSecurityEnterPin =>
-      'For your security, please enter your 4-digit PIN to continue';
+  String get forYourSecurityEnterPin => '为了您的安全，请输入您的 4 位 PIN 码以继续';
 
   @override
-  String get withdraw => 'Withdraw';
+  String get withdraw => '取款';
 
   @override
-  String get chooseWithdrawalDestination => 'Choose a destination account';
+  String get chooseWithdrawalDestination => '选择目标账户';
 
   @override
-  String get withdrawTo => 'Withdraw To';
+  String get withdrawTo => '取款到';
 
   @override
-  String get selectWithdrawAccount => 'Select Account';
+  String get selectWithdrawAccount => '选择账户';
 
   @override
-  String get enterWithdrawAmount => 'Enter Amount';
+  String get enterWithdrawAmount => '输入金额';
 
   @override
-  String get confirmWithdrawal => 'Confirm';
+  String get confirmWithdrawal => '确认';
 
   @override
-  String get withdrawalSuccessful => 'Withdrawal Successful';
+  String get withdrawalSuccessful => '取款成功';
 
   @override
-  String get moneySuccessfullyWithdrawn =>
-      'Money has successfully been withdrawn';
+  String get moneySuccessfullyWithdrawn => '资金已成功取出';
 
   @override
-  String get enterPinToConfirm => 'Enter your pin to confirm';
+  String get enterPinToConfirm => '输入您的 PIN 码以确认';
 
   @override
-  String get notifications => 'Notifications';
+  String get notifications => '通知';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => '全部清除';
 
   @override
-  String get noNotifications => 'No Notifications';
+  String get noNotifications => '无通知';
 
   @override
-  String get noNotificationsDescription => 'You\'re all caught up!';
+  String get noNotificationsDescription => '您已经查看完所有内容！';
 
   @override
-  String get markAllAsRead => 'Mark all as read';
+  String get markAllAsRead => '全部标记为已读';
+
+  @override
+  String get home => '主页';
+
+  @override
+  String get explore => '探索';
+
+  @override
+  String get portfolio => '投资组合';
+
+  @override
+  String get learn => '学习';
+
+  @override
+  String get account => '账户';
+
+  @override
+  String get totalPortfolioValue => '投资组合总价值';
+
+  @override
+  String get learningCorner => '学习角';
+
+  @override
+  String get learnMore => '了解更多';
+
+  @override
+  String get learnHowBondsWork => '了解债券的运作方式';
+
+  @override
+  String get assetOverview => '资产概览';
+
+  @override
+  String get classLabel => '类别';
+
+  @override
+  String get broker => '经纪人';
+
+  @override
+  String get performance => '表现';
+
+  @override
+  String get recentActivities => '最近活动';
+
+  @override
+  String get viewAll => '查看全部';
+
+  @override
+  String get trade => '交易';
+
+  @override
+  String get comingSoon => '即将推出';
 }

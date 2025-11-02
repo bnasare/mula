@@ -1255,6 +1255,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Mark all as read'**
   String get markAllAsRead;
+
+  /// No description provided for @home.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get home;
+
+  /// No description provided for @explore.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore'**
+  String get explore;
+
+  /// No description provided for @portfolio.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio'**
+  String get portfolio;
+
+  /// No description provided for @learn.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn'**
+  String get learn;
+
+  /// No description provided for @account.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get account;
+
+  /// No description provided for @totalPortfolioValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Portfolio Value'**
+  String get totalPortfolioValue;
+
+  /// No description provided for @learningCorner.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning Corner'**
+  String get learningCorner;
+
+  /// No description provided for @learnMore.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn more'**
+  String get learnMore;
+
+  /// No description provided for @learnHowBondsWork.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn how bonds work'**
+  String get learnHowBondsWork;
+
+  /// No description provided for @assetOverview.
+  ///
+  /// In en, this message translates to:
+  /// **'Asset Overview'**
+  String get assetOverview;
+
+  /// No description provided for @classLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Class'**
+  String get classLabel;
+
+  /// No description provided for @broker.
+  ///
+  /// In en, this message translates to:
+  /// **'Broker'**
+  String get broker;
+
+  /// No description provided for @performance.
+  ///
+  /// In en, this message translates to:
+  /// **'Performance'**
+  String get performance;
+
+  /// No description provided for @recentActivities.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Activities'**
+  String get recentActivities;
+
+  /// No description provided for @viewAll.
+  ///
+  /// In en, this message translates to:
+  /// **'View all'**
+  String get viewAll;
+
+  /// No description provided for @trade.
+  ///
+  /// In en, this message translates to:
+  /// **'Trade'**
+  String get trade;
+
+  /// No description provided for @comingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming Soon'**
+  String get comingSoon;
 }
 
 class _AppLocalizationsDelegate

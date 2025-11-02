@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'core/api/api_service.dart';
 import 'shared/platform/network_info.dart';
+import 'src/dashboard/dashboard_injection.dart';
 import 'src/onboarding/onboarding_injection.dart';
 
 final sl = GetIt.instance;
@@ -10,6 +11,7 @@ final sl = GetIt.instance;
 Future<void> init() async {
   // Initialize sub-modules
   initOnboarding();
+  initDashboard();
 
   // Register core dependencies
   sl

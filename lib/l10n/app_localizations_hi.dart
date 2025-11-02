@@ -53,40 +53,40 @@ class AppLocalizationsHi extends AppLocalizations {
   String get signUp => 'साइन अप करें';
 
   @override
-  String get resetYourPassword => 'Reset Your Password';
+  String get resetYourPassword => 'अपना पासवर्ड रीसेट करें';
 
   @override
   String get resetPasswordDescription =>
-      'Enter your email or phone number to receive a verification code';
+      'सत्यापन कोड प्राप्त करने के लिए अपना ईमेल या फोन नंबर दर्ज करें';
 
   @override
-  String get sendVerificationCode => 'Send Verification Code';
+  String get sendVerificationCode => 'सत्यापन कोड भेजें';
 
   @override
-  String get createNewPassword => 'Create New Password';
+  String get createNewPassword => 'नया पासवर्ड बनाएं';
 
   @override
   String get createNewPasswordDescription =>
-      'Your new password must be different from previously used passwords';
+      'आपका नया पासवर्ड पहले उपयोग किए गए पासवर्ड से अलग होना चाहिए';
 
   @override
-  String get newPassword => 'New Password';
+  String get newPassword => 'नया पासवर्ड';
 
   @override
-  String get enterNewPassword => 'Enter your new password';
+  String get enterNewPassword => 'अपना नया पासवर्ड दर्ज करें';
 
   @override
-  String get confirmNewPassword => 'Confirm New Password';
+  String get confirmNewPassword => 'नया पासवर्ड पुष्टि करें';
 
   @override
-  String get resetPassword => 'Reset Password';
+  String get resetPassword => 'पासवर्ड रीसेट करें';
 
   @override
-  String get passwordResetSuccessful => 'Password Reset Successful';
+  String get passwordResetSuccessful => 'पासवर्ड सफलतापूर्वक रीसेट हो गया';
 
   @override
   String get passwordResetSuccessDescription =>
-      'Your password has been successfully reset. You can now sign in with your new password';
+      'आपका पासवर्ड सफलतापूर्वक रीसेट हो गया है। अब आप अपने नए पासवर्ड से साइन इन कर सकते हैं';
 
   @override
   String get letsGetYouStarted => 'आइए शुरू करें';
@@ -247,69 +247,69 @@ class AppLocalizationsHi extends AppLocalizations {
   String get whatIsYourOccupation => 'आपका पेशा क्या है?';
 
   @override
-  String get personalDetails => 'Personal Details';
+  String get personalDetails => 'व्यक्तिगत विवरण';
 
   @override
   String get personalDetailsDescription =>
-      'We need a few details to set up your account';
+      'आपके खाते को सेटअप करने के लिए हमें कुछ विवरण चाहिए';
 
   @override
-  String get nationality => 'Nationality';
+  String get nationality => 'राष्ट्रीयता';
 
   @override
-  String get selectNationality => 'Select your nationality';
+  String get selectNationality => 'अपनी राष्ट्रीयता चुनें';
 
   @override
-  String get emergencyNumber => 'Emergency Number';
+  String get emergencyNumber => 'आपातकालीन नंबर';
 
   @override
-  String get enterEmergencyNumber => 'Enter emergency contact number';
+  String get enterEmergencyNumber => 'आपातकालीन संपर्क नंबर दर्ज करें';
 
   @override
-  String get identificationDetails => 'Identification Details';
+  String get identificationDetails => 'पहचान विवरण';
 
   @override
-  String get submit => 'Submit';
+  String get submit => 'जमा करें';
 
   @override
-  String get bankDetails => 'Bank Details';
+  String get bankDetails => 'बैंक विवरण';
 
   @override
-  String get selectBank => 'Select Bank';
+  String get selectBank => 'बैंक चुनें';
 
   @override
-  String get selectYourBank => 'Select your bank';
+  String get selectYourBank => 'अपना बैंक चुनें';
 
   @override
-  String get bankAccountNumber => 'Bank account number';
+  String get bankAccountNumber => 'बैंक खाता संख्या';
 
   @override
-  String get enterYourAccountNumber => 'Enter your account number';
+  String get enterYourAccountNumber => 'अपना खाता संख्या दर्ज करें';
 
   @override
-  String get chooseAccountType => 'Choose Account Type';
+  String get chooseAccountType => 'खाता प्रकार चुनें';
 
   @override
   String get chooseAccountTypeDescription =>
-      'Choosing the right account type helps us connect you to the right providers.';
+      'सही खाता प्रकार चुनने से हमें आपको सही प्रदाताओं से जोड़ने में मदद मिलती है।';
 
   @override
-  String get brokers => 'Brokers';
+  String get brokers => 'ब्रोकर्स';
 
   @override
   String get brokersDescription =>
-      'Select your broker to start your investment journey.';
+      'अपनी निवेश यात्रा शुरू करने के लिए अपना ब्रोकर चुनें।';
 
   @override
-  String get noBrokersFound => 'No brokers found';
+  String get noBrokersFound => 'कोई ब्रोकर नहीं मिला';
 
   @override
   String get accountDetailsSuccessfullySubmitted =>
-      'Account details successfully submitted';
+      'खाता विवरण सफलतापूर्वक जमा किया गया';
 
   @override
   String get accountDetailsSuccessDescription =>
-      'Your account has been created. Check your email to validate your account. Check your email for updates on the status of verification.';
+      'आपका खाता बन गया है। अपने खाते को मान्य करने के लिए अपना ईमेल जांचें। सत्यापन की स्थिति पर अपडेट के लिए अपना ईमेल जांचें।';
 
   @override
   String get idVerification => 'पहचान सत्यापन';
@@ -434,182 +434,231 @@ class AppLocalizationsHi extends AppLocalizations {
       'आप एक खाता बना सकते हैं और आज ही निवेश करना शुरू कर सकते हैं';
 
   @override
-  String get selectFundManager => 'Select Fund Manager';
+  String get selectFundManager => 'फंड मैनेजर चुनें';
 
   @override
   String get selectFundManagerDescription =>
-      'Select your fund manager to start your investment journey.';
+      'अपनी निवेश यात्रा शुरू करने के लिए अपना फंड मैनेजर चुनें।';
 
   @override
-  String get searchByAssetNameOrType => 'Search by asset name or type';
+  String get searchByAssetNameOrType => 'संपत्ति नाम या प्रकार से खोजें';
 
   @override
-  String get addAnother => 'Add Another';
+  String get addAnother => 'एक और जोड़ें';
 
   @override
-  String get done => 'Done';
+  String get done => 'हो गया';
 
   @override
-  String get fundManager => 'Fund Manager';
+  String get fundManager => 'फंड मैनेजर';
 
   @override
-  String get fundsManaged => 'Funds managed by';
+  String get fundsManaged => 'द्वारा प्रबंधित फंड';
 
   @override
-  String get select => 'Select';
+  String get select => 'चुनें';
 
   @override
-  String get fundManagerLinkedSuccessfully =>
-      'Fund manager linked successfully';
+  String get fundManagerLinkedSuccessfully => 'फंड मैनेजर सफलतापूर्वक जुड़ा';
 
   @override
   String get fundManagerLinkedSuccessDescription =>
-      'Your fund manager has been linked to your account. You can now view and manage your investments.';
+      'आपका फंड मैनेजर आपके खाते से जुड़ गया है। अब आप अपने निवेश देख और प्रबंधित कर सकते हैं।';
 
   @override
-  String get enterCsdAccountNumber => 'What\'s your CSD account number?';
+  String get enterCsdAccountNumber => 'आपका CSD खाता संख्या क्या है?';
 
   @override
   String get csdAccountNumberDescription =>
-      'You can find this number on your T-bill certificate. If you don\'t have it, contact your broker for help';
+      'आप यह संख्या अपने ट्रेजरी बिल प्रमाणपत्र पर पा सकते हैं। यदि आपके पास नहीं है, तो सहायता के लिए अपने ब्रोकर से संपर्क करें';
 
   @override
-  String get accountNumber => 'Account Number';
+  String get accountNumber => 'खाता संख्या';
 
   @override
-  String get csdAccountNumberHint => 'Eg: 123-456-789';
+  String get csdAccountNumberHint => 'उदाहरण: 123-456-789';
 
   @override
-  String get searchLinkedBrokers => 'Search Linked Brokers';
+  String get searchLinkedBrokers => 'जुड़े ब्रोकर खोजें';
 
   @override
-  String get createOne => 'Create one';
+  String get createOne => 'एक बनाएं';
 
   @override
-  String get weFoundYourBrokers => 'We found your brokers';
+  String get weFoundYourBrokers => 'हमें आपके ब्रोकर मिल गए';
 
   @override
   String get signInToBrokersDescription =>
-      'Sign into your broker accounts so we can securely fetch your investments';
+      'अपने ब्रोकर खातों में साइन इन करें ताकि हम आपके निवेश सुरक्षित रूप से प्राप्त कर सकें';
 
   @override
-  String get add => 'Add';
+  String get add => 'जोड़ें';
 
   @override
-  String get deposit => 'Deposit';
+  String get deposit => 'जमा करें';
 
   @override
-  String get chooseAccountToTopUp => 'Choose an account to top up from';
+  String get chooseAccountToTopUp => 'टॉप अप करने के लिए एक खाता चुनें';
 
   @override
-  String get mobileMoneyDeposit => 'Mobile Money';
+  String get mobileMoneyDeposit => 'मोबाइल मनी';
 
   @override
-  String get bankAccount => 'Bank Account';
+  String get bankAccount => 'बैंक खाता';
 
   @override
-  String get selectAccount => 'Select Account';
+  String get selectAccount => 'खाता चुनें';
 
   @override
-  String get addAnotherAccount => 'Add another account';
+  String get addAnotherAccount => 'एक और खाता जोड़ें';
 
   @override
-  String get enterPhoneNumber => 'Enter your Phone Number';
+  String get enterPhoneNumber => 'अपना फोन नंबर दर्ज करें';
 
   @override
-  String get network => 'Network';
+  String get network => 'नेटवर्क';
 
   @override
-  String get selectNetwork => 'Select Network';
+  String get selectNetwork => 'नेटवर्क चुनें';
 
   @override
-  String get enterAmount => 'Enter Amount';
+  String get enterAmount => 'राशि दर्ज करें';
 
   @override
-  String get amount => 'Amount';
+  String get amount => 'राशि';
 
   @override
-  String get reviewAndConfirm => 'Review and confirm your details';
+  String get reviewAndConfirm => 'अपने विवरण की समीक्षा करें और पुष्टि करें';
 
   @override
-  String get confirmDeposit => 'Confirm';
+  String get confirmDeposit => 'पुष्टि करें';
 
   @override
   String get mobileMoneyPrompt =>
-      'You will receive a mobile money prompt. Enter your pin to confirm this transaction';
+      'आपको एक मोबाइल मनी प्रॉम्प्ट प्राप्त होगा। इस लेनदेन की पुष्टि करने के लिए अपना पिन दर्ज करें';
 
   @override
-  String get okay => 'Okay';
+  String get okay => 'ठीक है';
 
   @override
-  String get depositSuccessful => 'Deposit Successful';
+  String get depositSuccessful => 'जमा सफल';
 
   @override
   String get fundsSuccessfullyDeposited =>
-      'Funds successfully deposited into your account';
+      'आपके खाते में धनराशि सफलतापूर्वक जमा हो गई';
 
   @override
-  String get selectBankAccount => 'Select Bank Account';
+  String get selectBankAccount => 'बैंक खाता चुनें';
 
   @override
-  String get bank => 'Bank';
+  String get bank => 'बैंक';
 
   @override
-  String get accountName => 'Account Name';
+  String get accountName => 'खाता नाम';
 
   @override
-  String get enterAccountName => 'Enter account name';
+  String get enterAccountName => 'खाता नाम दर्ज करें';
 
   @override
-  String get enterBankAccountInfo => 'Enter Account Information';
+  String get enterBankAccountInfo => 'खाता जानकारी दर्ज करें';
 
   @override
-  String get confirmBankDeposit => 'Confirm Deposit';
+  String get confirmBankDeposit => 'जमा की पुष्टि करें';
 
   @override
   String get forYourSecurityEnterPin =>
-      'For your security, please enter your 4-digit PIN to continue';
+      'आपकी सुरक्षा के लिए, कृपया जारी रखने के लिए अपना 4-अंकीय पिन दर्ज करें';
 
   @override
-  String get withdraw => 'Withdraw';
+  String get withdraw => 'निकालें';
 
   @override
-  String get chooseWithdrawalDestination => 'Choose a destination account';
+  String get chooseWithdrawalDestination => 'एक गंतव्य खाता चुनें';
 
   @override
-  String get withdrawTo => 'Withdraw To';
+  String get withdrawTo => 'में निकालें';
 
   @override
-  String get selectWithdrawAccount => 'Select Account';
+  String get selectWithdrawAccount => 'खाता चुनें';
 
   @override
-  String get enterWithdrawAmount => 'Enter Amount';
+  String get enterWithdrawAmount => 'राशि दर्ज करें';
 
   @override
-  String get confirmWithdrawal => 'Confirm';
+  String get confirmWithdrawal => 'पुष्टि करें';
 
   @override
-  String get withdrawalSuccessful => 'Withdrawal Successful';
+  String get withdrawalSuccessful => 'निकासी सफल';
 
   @override
-  String get moneySuccessfullyWithdrawn =>
-      'Money has successfully been withdrawn';
+  String get moneySuccessfullyWithdrawn => 'पैसा सफलतापूर्वक निकाल लिया गया है';
 
   @override
-  String get enterPinToConfirm => 'Enter your pin to confirm';
+  String get enterPinToConfirm => 'पुष्टि करने के लिए अपना पिन दर्ज करें';
 
   @override
-  String get notifications => 'Notifications';
+  String get notifications => 'सूचनाएं';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => 'सभी साफ़ करें';
 
   @override
-  String get noNotifications => 'No Notifications';
+  String get noNotifications => 'कोई सूचना नहीं';
 
   @override
-  String get noNotificationsDescription => 'You\'re all caught up!';
+  String get noNotificationsDescription => 'आप अद्यतित हैं!';
 
   @override
-  String get markAllAsRead => 'Mark all as read';
+  String get markAllAsRead => 'सभी को पढ़ा हुआ चिह्नित करें';
+
+  @override
+  String get home => 'होम';
+
+  @override
+  String get explore => 'एक्सप्लोर करें';
+
+  @override
+  String get portfolio => 'पोर्टफोलियो';
+
+  @override
+  String get learn => 'सीखें';
+
+  @override
+  String get account => 'खाता';
+
+  @override
+  String get totalPortfolioValue => 'कुल पोर्टफोलियो मूल्य';
+
+  @override
+  String get learningCorner => 'लर्निंग कॉर्नर';
+
+  @override
+  String get learnMore => 'और जानें';
+
+  @override
+  String get learnHowBondsWork => 'जानें कि बॉन्ड कैसे काम करते हैं';
+
+  @override
+  String get assetOverview => 'संपत्ति का अवलोकन';
+
+  @override
+  String get classLabel => 'क्लास';
+
+  @override
+  String get broker => 'ब्रोकर';
+
+  @override
+  String get performance => 'प्रदर्शन';
+
+  @override
+  String get recentActivities => 'हाल की गतिविधियां';
+
+  @override
+  String get viewAll => 'सभी देखें';
+
+  @override
+  String get trade => 'व्यापार';
+
+  @override
+  String get comingSoon => 'जल्द आ रहा है';
 }

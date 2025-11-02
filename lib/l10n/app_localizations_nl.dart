@@ -52,40 +52,41 @@ class AppLocalizationsNl extends AppLocalizations {
   String get signUp => 'Registreren';
 
   @override
-  String get resetYourPassword => 'Reset Your Password';
+  String get resetYourPassword => 'Stel uw wachtwoord opnieuw in';
 
   @override
   String get resetPasswordDescription =>
-      'Enter your email or phone number to receive a verification code';
+      'Voer uw e-mailadres of telefoonnummer in om een verificatiecode te ontvangen';
 
   @override
-  String get sendVerificationCode => 'Send Verification Code';
+  String get sendVerificationCode => 'Verificatiecode verzenden';
 
   @override
-  String get createNewPassword => 'Create New Password';
+  String get createNewPassword => 'Nieuw wachtwoord aanmaken';
 
   @override
   String get createNewPasswordDescription =>
-      'Your new password must be different from previously used passwords';
+      'Uw nieuwe wachtwoord moet verschillen van eerder gebruikte wachtwoorden';
 
   @override
-  String get newPassword => 'New Password';
+  String get newPassword => 'Nieuw wachtwoord';
 
   @override
-  String get enterNewPassword => 'Enter your new password';
+  String get enterNewPassword => 'Voer uw nieuwe wachtwoord in';
 
   @override
-  String get confirmNewPassword => 'Confirm New Password';
+  String get confirmNewPassword => 'Bevestig nieuw wachtwoord';
 
   @override
-  String get resetPassword => 'Reset Password';
+  String get resetPassword => 'Wachtwoord opnieuw instellen';
 
   @override
-  String get passwordResetSuccessful => 'Password Reset Successful';
+  String get passwordResetSuccessful =>
+      'Wachtwoord succesvol opnieuw ingesteld';
 
   @override
   String get passwordResetSuccessDescription =>
-      'Your password has been successfully reset. You can now sign in with your new password';
+      'Uw wachtwoord is succesvol opnieuw ingesteld. U kunt nu inloggen met uw nieuwe wachtwoord';
 
   @override
   String get letsGetYouStarted => 'Laten we beginnen';
@@ -248,69 +249,69 @@ class AppLocalizationsNl extends AppLocalizations {
   String get whatIsYourOccupation => 'Wat is je beroep?';
 
   @override
-  String get personalDetails => 'Personal Details';
+  String get personalDetails => 'Persoonlijke gegevens';
 
   @override
   String get personalDetailsDescription =>
-      'We need a few details to set up your account';
+      'We hebben wat gegevens nodig om uw account in te stellen';
 
   @override
-  String get nationality => 'Nationality';
+  String get nationality => 'Nationaliteit';
 
   @override
-  String get selectNationality => 'Select your nationality';
+  String get selectNationality => 'Selecteer uw nationaliteit';
 
   @override
-  String get emergencyNumber => 'Emergency Number';
+  String get emergencyNumber => 'Noodcontactnummer';
 
   @override
-  String get enterEmergencyNumber => 'Enter emergency contact number';
+  String get enterEmergencyNumber => 'Voer noodcontactnummer in';
 
   @override
-  String get identificationDetails => 'Identification Details';
+  String get identificationDetails => 'Identificatiegegevens';
 
   @override
-  String get submit => 'Submit';
+  String get submit => 'Indienen';
 
   @override
-  String get bankDetails => 'Bank Details';
+  String get bankDetails => 'Bankgegevens';
 
   @override
-  String get selectBank => 'Select Bank';
+  String get selectBank => 'Bank selecteren';
 
   @override
-  String get selectYourBank => 'Select your bank';
+  String get selectYourBank => 'Selecteer uw bank';
 
   @override
-  String get bankAccountNumber => 'Bank account number';
+  String get bankAccountNumber => 'Bankrekeningnummer';
 
   @override
-  String get enterYourAccountNumber => 'Enter your account number';
+  String get enterYourAccountNumber => 'Voer uw rekeningnummer in';
 
   @override
-  String get chooseAccountType => 'Choose Account Type';
+  String get chooseAccountType => 'Kies accounttype';
 
   @override
   String get chooseAccountTypeDescription =>
-      'Choosing the right account type helps us connect you to the right providers.';
+      'Het kiezen van het juiste accounttype helpt ons u te verbinden met de juiste providers.';
 
   @override
-  String get brokers => 'Brokers';
+  String get brokers => 'Makelaars';
 
   @override
   String get brokersDescription =>
-      'Select your broker to start your investment journey.';
+      'Selecteer uw makelaar om uw investeringsreis te starten.';
 
   @override
-  String get noBrokersFound => 'No brokers found';
+  String get noBrokersFound => 'Geen makelaars gevonden';
 
   @override
   String get accountDetailsSuccessfullySubmitted =>
-      'Account details successfully submitted';
+      'Accountgegevens succesvol ingediend';
 
   @override
   String get accountDetailsSuccessDescription =>
-      'Your account has been created. Check your email to validate your account. Check your email for updates on the status of verification.';
+      'Uw account is aangemaakt. Controleer uw e-mail om uw account te valideren. Controleer uw e-mail voor updates over de status van verificatie.';
 
   @override
   String get idVerification => 'ID-verificatie';
@@ -436,182 +437,232 @@ class AppLocalizationsNl extends AppLocalizations {
       'Je kunt een account aanmaken en vandaag nog beginnen met beleggen';
 
   @override
-  String get selectFundManager => 'Select Fund Manager';
+  String get selectFundManager => 'Fondsbeheerder selecteren';
 
   @override
   String get selectFundManagerDescription =>
-      'Select your fund manager to start your investment journey.';
+      'Selecteer uw fondsbeheerder om uw investeringsreis te starten.';
 
   @override
-  String get searchByAssetNameOrType => 'Search by asset name or type';
+  String get searchByAssetNameOrType => 'Zoeken op activanaam of -type';
 
   @override
-  String get addAnother => 'Add Another';
+  String get addAnother => 'Nog een toevoegen';
 
   @override
-  String get done => 'Done';
+  String get done => 'Klaar';
 
   @override
-  String get fundManager => 'Fund Manager';
+  String get fundManager => 'Fondsbeheerder';
 
   @override
-  String get fundsManaged => 'Funds managed by';
+  String get fundsManaged => 'Fondsen beheerd door';
 
   @override
-  String get select => 'Select';
+  String get select => 'Selecteren';
 
   @override
   String get fundManagerLinkedSuccessfully =>
-      'Fund manager linked successfully';
+      'Fondsbeheerder succesvol gekoppeld';
 
   @override
   String get fundManagerLinkedSuccessDescription =>
-      'Your fund manager has been linked to your account. You can now view and manage your investments.';
+      'Uw fondsbeheerder is gekoppeld aan uw account. U kunt nu uw investeringen bekijken en beheren.';
 
   @override
-  String get enterCsdAccountNumber => 'What\'s your CSD account number?';
+  String get enterCsdAccountNumber => 'Wat is uw CSD-accountnummer?';
 
   @override
   String get csdAccountNumberDescription =>
-      'You can find this number on your T-bill certificate. If you don\'t have it, contact your broker for help';
+      'U kunt dit nummer vinden op uw schatkistpapier certificaat. Als u het niet heeft, neem dan contact op met uw makelaar';
 
   @override
-  String get accountNumber => 'Account Number';
+  String get accountNumber => 'Accountnummer';
 
   @override
-  String get csdAccountNumberHint => 'Eg: 123-456-789';
+  String get csdAccountNumberHint => 'Bijv.: 123-456-789';
 
   @override
-  String get searchLinkedBrokers => 'Search Linked Brokers';
+  String get searchLinkedBrokers => 'Gekoppelde makelaars zoeken';
 
   @override
-  String get createOne => 'Create one';
+  String get createOne => 'Maak er een';
 
   @override
-  String get weFoundYourBrokers => 'We found your brokers';
+  String get weFoundYourBrokers => 'We hebben uw makelaars gevonden';
 
   @override
   String get signInToBrokersDescription =>
-      'Sign into your broker accounts so we can securely fetch your investments';
+      'Log in op uw makelaarsaccounts zodat we uw investeringen veilig kunnen ophalen';
 
   @override
-  String get add => 'Add';
+  String get add => 'Toevoegen';
 
   @override
-  String get deposit => 'Deposit';
+  String get deposit => 'Storten';
 
   @override
-  String get chooseAccountToTopUp => 'Choose an account to top up from';
+  String get chooseAccountToTopUp => 'Kies een account om op te laden';
 
   @override
   String get mobileMoneyDeposit => 'Mobile Money';
 
   @override
-  String get bankAccount => 'Bank Account';
+  String get bankAccount => 'Bankrekening';
 
   @override
-  String get selectAccount => 'Select Account';
+  String get selectAccount => 'Account selecteren';
 
   @override
-  String get addAnotherAccount => 'Add another account';
+  String get addAnotherAccount => 'Nog een account toevoegen';
 
   @override
-  String get enterPhoneNumber => 'Enter your Phone Number';
+  String get enterPhoneNumber => 'Voer uw telefoonnummer in';
 
   @override
-  String get network => 'Network';
+  String get network => 'Netwerk';
 
   @override
-  String get selectNetwork => 'Select Network';
+  String get selectNetwork => 'Netwerk selecteren';
 
   @override
-  String get enterAmount => 'Enter Amount';
+  String get enterAmount => 'Bedrag invoeren';
 
   @override
-  String get amount => 'Amount';
+  String get amount => 'Bedrag';
 
   @override
-  String get reviewAndConfirm => 'Review and confirm your details';
+  String get reviewAndConfirm => 'Controleer en bevestig uw gegevens';
 
   @override
-  String get confirmDeposit => 'Confirm';
+  String get confirmDeposit => 'Bevestigen';
 
   @override
   String get mobileMoneyPrompt =>
-      'You will receive a mobile money prompt. Enter your pin to confirm this transaction';
+      'U ontvangt een mobile money prompt. Voer uw pincode in om deze transactie te bevestigen';
 
   @override
-  String get okay => 'Okay';
+  String get okay => 'Oké';
 
   @override
-  String get depositSuccessful => 'Deposit Successful';
+  String get depositSuccessful => 'Storting succesvol';
 
   @override
   String get fundsSuccessfullyDeposited =>
-      'Funds successfully deposited into your account';
+      'Geld succesvol gestort op uw account';
 
   @override
-  String get selectBankAccount => 'Select Bank Account';
+  String get selectBankAccount => 'Bankrekening selecteren';
 
   @override
   String get bank => 'Bank';
 
   @override
-  String get accountName => 'Account Name';
+  String get accountName => 'Accountnaam';
 
   @override
-  String get enterAccountName => 'Enter account name';
+  String get enterAccountName => 'Voer accountnaam in';
 
   @override
-  String get enterBankAccountInfo => 'Enter Account Information';
+  String get enterBankAccountInfo => 'Voer accountinformatie in';
 
   @override
-  String get confirmBankDeposit => 'Confirm Deposit';
+  String get confirmBankDeposit => 'Storting bevestigen';
 
   @override
   String get forYourSecurityEnterPin =>
-      'For your security, please enter your 4-digit PIN to continue';
+      'Voor uw veiligheid, voer uw 4-cijferige pincode in om door te gaan';
 
   @override
-  String get withdraw => 'Withdraw';
+  String get withdraw => 'Opnemen';
 
   @override
-  String get chooseWithdrawalDestination => 'Choose a destination account';
+  String get chooseWithdrawalDestination => 'Kies een bestemmingsaccount';
 
   @override
-  String get withdrawTo => 'Withdraw To';
+  String get withdrawTo => 'Opnemen naar';
 
   @override
-  String get selectWithdrawAccount => 'Select Account';
+  String get selectWithdrawAccount => 'Account selecteren';
 
   @override
-  String get enterWithdrawAmount => 'Enter Amount';
+  String get enterWithdrawAmount => 'Bedrag invoeren';
 
   @override
-  String get confirmWithdrawal => 'Confirm';
+  String get confirmWithdrawal => 'Bevestigen';
 
   @override
-  String get withdrawalSuccessful => 'Withdrawal Successful';
+  String get withdrawalSuccessful => 'Opname succesvol';
 
   @override
-  String get moneySuccessfullyWithdrawn =>
-      'Money has successfully been withdrawn';
+  String get moneySuccessfullyWithdrawn => 'Geld is succesvol opgenomen';
 
   @override
-  String get enterPinToConfirm => 'Enter your pin to confirm';
+  String get enterPinToConfirm => 'Voer uw pincode in om te bevestigen';
 
   @override
-  String get notifications => 'Notifications';
+  String get notifications => 'Meldingen';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => 'Alles wissen';
 
   @override
-  String get noNotifications => 'No Notifications';
+  String get noNotifications => 'Geen meldingen';
 
   @override
-  String get noNotificationsDescription => 'You\'re all caught up!';
+  String get noNotificationsDescription => 'U bent helemaal bij!';
 
   @override
-  String get markAllAsRead => 'Mark all as read';
+  String get markAllAsRead => 'Alles markeren als gelezen';
+
+  @override
+  String get home => 'Home';
+
+  @override
+  String get explore => 'Verkennen';
+
+  @override
+  String get portfolio => 'Portfolio';
+
+  @override
+  String get learn => 'Leren';
+
+  @override
+  String get account => 'Account';
+
+  @override
+  String get totalPortfolioValue => 'Totale Portfoliowaarde';
+
+  @override
+  String get learningCorner => 'Leerhoek';
+
+  @override
+  String get learnMore => 'Meer informatie';
+
+  @override
+  String get learnHowBondsWork => 'Leer hoe obligaties werken';
+
+  @override
+  String get assetOverview => 'Activaoverzicht';
+
+  @override
+  String get classLabel => 'Klasse';
+
+  @override
+  String get broker => 'Makelaar';
+
+  @override
+  String get performance => 'Prestatie';
+
+  @override
+  String get recentActivities => 'Recente Activiteiten';
+
+  @override
+  String get viewAll => 'Alles bekijken';
+
+  @override
+  String get trade => 'Handelen';
+
+  @override
+  String get comingSoon => 'Binnenkort beschikbaar';
 }

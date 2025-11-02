@@ -210,5 +210,23 @@
   "clearAll": "Clear All",
   "noNotifications": "No Notifications",
   "noNotificationsDescription": "You're all caught up!",
-  "markAllAsRead": "Mark all as read"
+  "markAllAsRead": "Mark all as read",
+
+  "home": "Home",
+  "explore": "Explore",
+  "portfolio": "Portfolio",
+  "learn": "Learn",
+  "account": "Account",
+  "totalPortfolioValue": "Total Portfolio Value",
+  "learningCorner": "Learning Corner",
+  "learnMore": "Learn more",
+  "learnHowBondsWork": "Learn how bonds work",
+  "assetOverview": "Asset Overview",
+  "classLabel": "Class",
+  "broker": "Broker",
+  "performance": "Performance",
+  "recentActivities": "Recent Activities",
+  "viewAll": "View all",
+  "trade": "Trade",
+  "comingSoon": "Coming Soon"
 }

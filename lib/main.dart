@@ -13,6 +13,7 @@ import 'l10n/app_localizations.dart';
 import 'shared/presentation/widgets/restart_widget.dart';
 import 'shared/utils/connectivity.dart';
 import 'shared/utils/modal_visiblity.dart';
+import 'src/dashboard/presentation/interface/screens/dashboard_screen.dart';
 import 'src/deposit/presentation/interface/screens/screens.dart';
 import 'src/onboarding/presentation/bloc/onboarding_mixin.dart';
 import 'src/onboarding/presentation/interface/screens/onboarding_screen.dart';
@@ -123,13 +124,11 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
                   body: Center(child: Text('Error: ${snapshot.error}')),
                 );
               } else if (snapshot.data == true) {
-                // Onboarding complete - show main app
-                return const Scaffold(
-                  body: Center(child: Text('Main App - To be implemented')),
-                );
+                // Onboarding complete - show dashboard
+                return const DashboardScreen();
               } else {
                 // Show onboarding
-                return OnboardingScreen();
+                return DashboardScreen();
               }
             },
           ),

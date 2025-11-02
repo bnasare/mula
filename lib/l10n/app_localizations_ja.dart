@@ -52,40 +52,39 @@ class AppLocalizationsJa extends AppLocalizations {
   String get signUp => 'サインアップ';
 
   @override
-  String get resetYourPassword => 'Reset Your Password';
+  String get resetYourPassword => 'パスワードをリセット';
 
   @override
-  String get resetPasswordDescription =>
-      'Enter your email or phone number to receive a verification code';
+  String get resetPasswordDescription => '確認コードを受け取るには、メールアドレスまたは電話番号を入力してください';
 
   @override
-  String get sendVerificationCode => 'Send Verification Code';
+  String get sendVerificationCode => '確認コードを送信';
 
   @override
-  String get createNewPassword => 'Create New Password';
+  String get createNewPassword => '新しいパスワードを作成';
 
   @override
   String get createNewPasswordDescription =>
-      'Your new password must be different from previously used passwords';
+      '新しいパスワードは以前に使用したパスワードとは異なる必要があります';
 
   @override
-  String get newPassword => 'New Password';
+  String get newPassword => '新しいパスワード';
 
   @override
-  String get enterNewPassword => 'Enter your new password';
+  String get enterNewPassword => '新しいパスワードを入力してください';
 
   @override
-  String get confirmNewPassword => 'Confirm New Password';
+  String get confirmNewPassword => '新しいパスワードを確認';
 
   @override
-  String get resetPassword => 'Reset Password';
+  String get resetPassword => 'パスワードをリセット';
 
   @override
-  String get passwordResetSuccessful => 'Password Reset Successful';
+  String get passwordResetSuccessful => 'パスワードのリセットに成功しました';
 
   @override
   String get passwordResetSuccessDescription =>
-      'Your password has been successfully reset. You can now sign in with your new password';
+      'パスワードが正常にリセットされました。新しいパスワードでサインインできるようになりました';
 
   @override
   String get letsGetYouStarted => '始めましょう';
@@ -242,69 +241,66 @@ class AppLocalizationsJa extends AppLocalizations {
   String get whatIsYourOccupation => 'ご職業は何ですか？';
 
   @override
-  String get personalDetails => 'Personal Details';
+  String get personalDetails => '個人情報';
 
   @override
-  String get personalDetailsDescription =>
-      'We need a few details to set up your account';
+  String get personalDetailsDescription => 'アカウントを設定するためにいくつかの詳細が必要です';
 
   @override
-  String get nationality => 'Nationality';
+  String get nationality => '国籍';
 
   @override
-  String get selectNationality => 'Select your nationality';
+  String get selectNationality => '国籍を選択してください';
 
   @override
-  String get emergencyNumber => 'Emergency Number';
+  String get emergencyNumber => '緊急連絡先番号';
 
   @override
-  String get enterEmergencyNumber => 'Enter emergency contact number';
+  String get enterEmergencyNumber => '緊急連絡先番号を入力してください';
 
   @override
-  String get identificationDetails => 'Identification Details';
+  String get identificationDetails => '身分証明書の詳細';
 
   @override
-  String get submit => 'Submit';
+  String get submit => '送信';
 
   @override
-  String get bankDetails => 'Bank Details';
+  String get bankDetails => '銀行詳細';
 
   @override
-  String get selectBank => 'Select Bank';
+  String get selectBank => '銀行を選択';
 
   @override
-  String get selectYourBank => 'Select your bank';
+  String get selectYourBank => '銀行を選択してください';
 
   @override
-  String get bankAccountNumber => 'Bank account number';
+  String get bankAccountNumber => '銀行口座番号';
 
   @override
-  String get enterYourAccountNumber => 'Enter your account number';
+  String get enterYourAccountNumber => '口座番号を入力してください';
 
   @override
-  String get chooseAccountType => 'Choose Account Type';
+  String get chooseAccountType => 'アカウントタイプを選択';
 
   @override
   String get chooseAccountTypeDescription =>
-      'Choosing the right account type helps us connect you to the right providers.';
+      '適切なアカウントタイプを選択することで、適切なプロバイダーに接続できます。';
 
   @override
-  String get brokers => 'Brokers';
+  String get brokers => 'ブローカー';
 
   @override
-  String get brokersDescription =>
-      'Select your broker to start your investment journey.';
+  String get brokersDescription => '投資の旅を始めるために、ブローカーを選択してください。';
 
   @override
-  String get noBrokersFound => 'No brokers found';
+  String get noBrokersFound => 'ブローカーが見つかりません';
 
   @override
-  String get accountDetailsSuccessfullySubmitted =>
-      'Account details successfully submitted';
+  String get accountDetailsSuccessfullySubmitted => 'アカウント詳細が正常に送信されました';
 
   @override
   String get accountDetailsSuccessDescription =>
-      'Your account has been created. Check your email to validate your account. Check your email for updates on the status of verification.';
+      'アカウントが作成されました。アカウントを検証するためにメールを確認してください。確認ステータスの更新についてメールを確認してください。';
 
   @override
   String get idVerification => '本人確認';
@@ -421,182 +417,227 @@ class AppLocalizationsJa extends AppLocalizations {
   String get dontHaveAccountDescription => 'アカウントを作成して今日から投資を始めることができます';
 
   @override
-  String get selectFundManager => 'Select Fund Manager';
+  String get selectFundManager => 'ファンドマネージャーを選択';
 
   @override
-  String get selectFundManagerDescription =>
-      'Select your fund manager to start your investment journey.';
+  String get selectFundManagerDescription => '投資の旅を始めるために、ファンドマネージャーを選択してください。';
 
   @override
-  String get searchByAssetNameOrType => 'Search by asset name or type';
+  String get searchByAssetNameOrType => '資産名またはタイプで検索';
 
   @override
-  String get addAnother => 'Add Another';
+  String get addAnother => '別のものを追加';
 
   @override
-  String get done => 'Done';
+  String get done => '完了';
 
   @override
-  String get fundManager => 'Fund Manager';
+  String get fundManager => 'ファンドマネージャー';
 
   @override
-  String get fundsManaged => 'Funds managed by';
+  String get fundsManaged => '管理されているファンド';
 
   @override
-  String get select => 'Select';
+  String get select => '選択';
 
   @override
-  String get fundManagerLinkedSuccessfully =>
-      'Fund manager linked successfully';
+  String get fundManagerLinkedSuccessfully => 'ファンドマネージャーが正常にリンクされました';
 
   @override
   String get fundManagerLinkedSuccessDescription =>
-      'Your fund manager has been linked to your account. You can now view and manage your investments.';
+      'ファンドマネージャーがアカウントにリンクされました。投資を表示および管理できるようになりました。';
 
   @override
-  String get enterCsdAccountNumber => 'What\'s your CSD account number?';
+  String get enterCsdAccountNumber => 'CSDアカウント番号は何ですか？';
 
   @override
   String get csdAccountNumberDescription =>
-      'You can find this number on your T-bill certificate. If you don\'t have it, contact your broker for help';
+      'この番号は国債証書で見つけることができます。お持ちでない場合は、ブローカーに連絡してサポートを受けてください';
 
   @override
-  String get accountNumber => 'Account Number';
+  String get accountNumber => 'アカウント番号';
 
   @override
-  String get csdAccountNumberHint => 'Eg: 123-456-789';
+  String get csdAccountNumberHint => '例：123-456-789';
 
   @override
-  String get searchLinkedBrokers => 'Search Linked Brokers';
+  String get searchLinkedBrokers => 'リンクされたブローカーを検索';
 
   @override
-  String get createOne => 'Create one';
+  String get createOne => '作成する';
 
   @override
-  String get weFoundYourBrokers => 'We found your brokers';
+  String get weFoundYourBrokers => 'ブローカーが見つかりました';
 
   @override
   String get signInToBrokersDescription =>
-      'Sign into your broker accounts so we can securely fetch your investments';
+      '投資を安全に取得できるように、ブローカーアカウントにサインインしてください';
 
   @override
-  String get add => 'Add';
+  String get add => '追加';
 
   @override
-  String get deposit => 'Deposit';
+  String get deposit => '入金';
 
   @override
-  String get chooseAccountToTopUp => 'Choose an account to top up from';
+  String get chooseAccountToTopUp => 'チャージするアカウントを選択';
 
   @override
-  String get mobileMoneyDeposit => 'Mobile Money';
+  String get mobileMoneyDeposit => 'モバイルマネー';
 
   @override
-  String get bankAccount => 'Bank Account';
+  String get bankAccount => '銀行口座';
 
   @override
-  String get selectAccount => 'Select Account';
+  String get selectAccount => 'アカウントを選択';
 
   @override
-  String get addAnotherAccount => 'Add another account';
+  String get addAnotherAccount => '別のアカウントを追加';
 
   @override
-  String get enterPhoneNumber => 'Enter your Phone Number';
+  String get enterPhoneNumber => '電話番号を入力してください';
 
   @override
-  String get network => 'Network';
+  String get network => 'ネットワーク';
 
   @override
-  String get selectNetwork => 'Select Network';
+  String get selectNetwork => 'ネットワークを選択';
 
   @override
-  String get enterAmount => 'Enter Amount';
+  String get enterAmount => '金額を入力';
 
   @override
-  String get amount => 'Amount';
+  String get amount => '金額';
 
   @override
-  String get reviewAndConfirm => 'Review and confirm your details';
+  String get reviewAndConfirm => '詳細を確認して確認してください';
 
   @override
-  String get confirmDeposit => 'Confirm';
+  String get confirmDeposit => '確認';
 
   @override
-  String get mobileMoneyPrompt =>
-      'You will receive a mobile money prompt. Enter your pin to confirm this transaction';
+  String get mobileMoneyPrompt => 'モバイルマネープロンプトが表示されます。この取引を確認するにはPINを入力してください';
 
   @override
-  String get okay => 'Okay';
+  String get okay => 'OK';
 
   @override
-  String get depositSuccessful => 'Deposit Successful';
+  String get depositSuccessful => '入金成功';
 
   @override
-  String get fundsSuccessfullyDeposited =>
-      'Funds successfully deposited into your account';
+  String get fundsSuccessfullyDeposited => 'アカウントに正常に資金が入金されました';
 
   @override
-  String get selectBankAccount => 'Select Bank Account';
+  String get selectBankAccount => '銀行口座を選択';
 
   @override
-  String get bank => 'Bank';
+  String get bank => '銀行';
 
   @override
-  String get accountName => 'Account Name';
+  String get accountName => 'アカウント名';
 
   @override
-  String get enterAccountName => 'Enter account name';
+  String get enterAccountName => 'アカウント名を入力してください';
 
   @override
-  String get enterBankAccountInfo => 'Enter Account Information';
+  String get enterBankAccountInfo => 'アカウント情報を入力';
 
   @override
-  String get confirmBankDeposit => 'Confirm Deposit';
+  String get confirmBankDeposit => '入金を確認';
 
   @override
-  String get forYourSecurityEnterPin =>
-      'For your security, please enter your 4-digit PIN to continue';
+  String get forYourSecurityEnterPin => 'セキュリティのため、続行するには4桁のPINを入力してください';
 
   @override
-  String get withdraw => 'Withdraw';
+  String get withdraw => '出金';
 
   @override
-  String get chooseWithdrawalDestination => 'Choose a destination account';
+  String get chooseWithdrawalDestination => '出金先アカウントを選択';
 
   @override
-  String get withdrawTo => 'Withdraw To';
+  String get withdrawTo => '出金先';
 
   @override
-  String get selectWithdrawAccount => 'Select Account';
+  String get selectWithdrawAccount => 'アカウントを選択';
 
   @override
-  String get enterWithdrawAmount => 'Enter Amount';
+  String get enterWithdrawAmount => '金額を入力';
 
   @override
-  String get confirmWithdrawal => 'Confirm';
+  String get confirmWithdrawal => '確認';
 
   @override
-  String get withdrawalSuccessful => 'Withdrawal Successful';
+  String get withdrawalSuccessful => '出金成功';
 
   @override
-  String get moneySuccessfullyWithdrawn =>
-      'Money has successfully been withdrawn';
+  String get moneySuccessfullyWithdrawn => 'お金が正常に出金されました';
 
   @override
-  String get enterPinToConfirm => 'Enter your pin to confirm';
+  String get enterPinToConfirm => '確認するにはPINを入力してください';
 
   @override
-  String get notifications => 'Notifications';
+  String get notifications => '通知';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => 'すべてクリア';
 
   @override
-  String get noNotifications => 'No Notifications';
+  String get noNotifications => '通知なし';
 
   @override
-  String get noNotificationsDescription => 'You\'re all caught up!';
+  String get noNotificationsDescription => 'すべて最新です！';
 
   @override
-  String get markAllAsRead => 'Mark all as read';
+  String get markAllAsRead => 'すべて既読にする';
+
+  @override
+  String get home => 'ホーム';
+
+  @override
+  String get explore => '探索';
+
+  @override
+  String get portfolio => 'ポートフォリオ';
+
+  @override
+  String get learn => '学ぶ';
+
+  @override
+  String get account => 'アカウント';
+
+  @override
+  String get totalPortfolioValue => 'ポートフォリオ総額';
+
+  @override
+  String get learningCorner => '学習コーナー';
+
+  @override
+  String get learnMore => '詳しく見る';
+
+  @override
+  String get learnHowBondsWork => '債券の仕組みを学ぶ';
+
+  @override
+  String get assetOverview => '資産概要';
+
+  @override
+  String get classLabel => 'クラス';
+
+  @override
+  String get broker => 'ブローカー';
+
+  @override
+  String get performance => 'パフォーマンス';
+
+  @override
+  String get recentActivities => '最近のアクティビティ';
+
+  @override
+  String get viewAll => 'すべて表示';
+
+  @override
+  String get trade => '取引';
+
+  @override
+  String get comingSoon => '近日公開';
 }

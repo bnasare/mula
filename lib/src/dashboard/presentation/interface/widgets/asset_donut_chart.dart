@@ -1,0 +1,168 @@
+import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../domain/entities/asset.dart';
+
+/// Donut chart displaying asset distribution
+class AssetDonutChart extends StatefulWidget {
+  final List<Asset> assets;
+
+  const AssetDonutChart({
+    super.key,
+    required this.assets,
+  });
+
+  @override
+  State<AssetDonutChart> createState() => _AssetDonutChartState();
+}
+
+class _AssetDonutChartState extends State<AssetDonutChart> {
+  int touchedIndex = -1;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        // Chart
+        SizedBox(
+          height: 220,
+          child: PieChart(
+            PieChartData(
+              pieTouchData: PieTouchData(
+                touchCallback: (FlTouchEvent event, pieTouchResponse) {
+                  setState(() {
+                    if (!event.isInterestedForInteractions ||
+                        pieTouchResponse == null ||
+                        pieTouchResponse.touchedSection == null) {
+                      touchedIndex = -1;
+                      return;
+                    }
+                    touchedIndex =
+                        pieTouchResponse.touchedSection!.touchedSectionIndex;
+                  });
+                },
+              ),
+              borderData: FlBorderData(show: false),
+              sectionsSpace: 2,
+              centerSpaceRadius: 60,
+              sections: _getSections(),
+            ),
+          ),
+        ),
+        const SizedBox(height: 24),
+
+        // Legend
+        _buildLegend(),
+      ],
+    );
+  }
+
+  List<PieChartSectionData> _getSections() {
+    return widget.assets.asMap().entries.map((entry) {
+      final index = entry.key;
+      final asset = entry.value;
+      final isTouched = index == touchedIndex;
+      final radius = isTouched ? 55.0 : 50.0;
+      final fontSize = isTouched ? 16.0 : 14.0;
+
+      return PieChartSectionData(
+        color: _getAssetColor(asset.type),
+        value: asset.percentage,
+        title: '${asset.percentage.toInt()}%',
+        radius: radius,
+        titleStyle: TextStyle(
+          fontSize: fontSize,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+        ),
+      );
+    }).toList();
+  }
+
+  Widget _buildLegend() {
+    return Wrap(
+      spacing: 16,
+      runSpacing: 12,
+      alignment: WrapAlignment.center,
+      children: widget.assets.map((asset) {
+        return _LegendItem(
+          color: _getAssetColor(asset.type),
+          name: asset.name,
+          percentage: asset.percentage,
+          value: asset.value,
+        );
+      }).toList(),
+    );
+  }
+
+  Color _getAssetColor(AssetType type) {
+    switch (type) {
+      case AssetType.stocks:
+        return const Color(0xFF4A90E2); // Blue
+      case AssetType.tBills:
+        return const Color(0xFFFFA726); // Orange
+      case AssetType.cashWallet:
+        return const Color(0xFF66BB6A); // Green
+      case AssetType.reits:
+        return const Color(0xFFAB47BC); // Purple
+      case AssetType.mutualFunds:
+        return const Color(0xFFEF5350); // Red
+      case AssetType.bonds:
+        return const Color(0xFF26A69A); // Teal
+    }
+  }
+}
+
+/// Legend item for the chart
+class _LegendItem extends StatelessWidget {
+  final Color color;
+  final String name;
+  final double percentage;
+  final double value;
+
+  const _LegendItem({
+    required this.color,
+    required this.name,
+    required this.percentage,
+    required this.value,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final currencyFormat = NumberFormat.currency(symbol: 'GHS ', decimalDigits: 0);
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        // Color indicator
+        Container(
+          width: 12,
+          height: 12,
+          decoration: BoxDecoration(
+            color: color,
+            shape: BoxShape.circle,
+          ),
+        ),
+        const SizedBox(width: 8),
+
+        // Name and percentage
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            AppText.smallest(
+              name,
+              color: AppColors.primaryText(context),
+            ),
+            AppText.smallest(
+              '${percentage.toInt()}% (${currencyFormat.format(value)})',
+              color: AppColors.secondaryText(context),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}

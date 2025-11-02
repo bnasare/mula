@@ -611,4 +611,55 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get markAllAsRead => 'Mark all as read';
+
+  @override
+  String get home => 'Home';
+
+  @override
+  String get explore => 'Explore';
+
+  @override
+  String get portfolio => 'Portfolio';
+
+  @override
+  String get learn => 'Learn';
+
+  @override
+  String get account => 'Account';
+
+  @override
+  String get totalPortfolioValue => 'Total Portfolio Value';
+
+  @override
+  String get learningCorner => 'Learning Corner';
+
+  @override
+  String get learnMore => 'Learn more';
+
+  @override
+  String get learnHowBondsWork => 'Learn how bonds work';
+
+  @override
+  String get assetOverview => 'Asset Overview';
+
+  @override
+  String get classLabel => 'Class';
+
+  @override
+  String get broker => 'Broker';
+
+  @override
+  String get performance => 'Performance';
+
+  @override
+  String get recentActivities => 'Recent Activities';
+
+  @override
+  String get viewAll => 'View all';
+
+  @override
+  String get trade => 'Trade';
+
+  @override
+  String get comingSoon => 'Coming Soon';
 }
