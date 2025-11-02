@@ -10,6 +10,7 @@ import 'src/home/home_injection.dart';
 import 'src/learn/learn_injection.dart';
 import 'src/onboarding/onboarding_injection.dart';
 import 'src/portfolio/portfolio_injection.dart';
+import 'src/transactions/transactions_injection.dart';
 
 final sl = GetIt.instance;
 
@@ -22,6 +23,7 @@ Future<void> init() async {
   initPortfolio();
   initLearn();
   initAccount();
+  initTransactions();
 
   // Register core dependencies
   sl

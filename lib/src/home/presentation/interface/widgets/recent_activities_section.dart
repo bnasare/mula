@@ -5,8 +5,10 @@ import 'package:shimmer/shimmer.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
+import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/interface/widgets/activity_list_item.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
+import '../../../../transactions/presentation/interface/screens/transactions_screen.dart';
 
 /// Recent activities section with transaction history
 class RecentActivitiesSection extends StatelessWidget {
@@ -36,7 +38,10 @@ class RecentActivitiesSection extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    // TODO: View all activities
+                    NavigationHelper.navigateTo(
+                      context,
+                      TransactionsScreen(dashboardProvider: provider),
+                    );
                   },
                   child: AppText.small(
                     context.localize.viewAll,
@@ -57,9 +62,7 @@ class RecentActivitiesSection extends StatelessWidget {
               itemBuilder: (context, index) {
                 return ActivityListItem(
                   activity: provider.recentActivities[index],
-                  onTap: () {
-                    // TODO: Navigate to activity details
-                  },
+                  // No onTap - clicking on home transactions does nothing
                 );
               },
             ),

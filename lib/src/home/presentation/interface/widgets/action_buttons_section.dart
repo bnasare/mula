@@ -15,48 +15,76 @@ class ActionButtonsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
-        ActionButton(
-          icon: IconlyBold.wallet,
-          label: context.localize.deposit,
-          onTap: () {
-            NavigationHelper.navigateTo(
-              context,
-              const DepositAccountSelectionScreen(),
-            );
-          },
-        ),
-        ActionButton(
-          icon: IconlyBold.download,
-          label: context.localize.withdraw,
-          onTap: () {
-            NavigationHelper.navigateTo(
-              context,
-              const WithdrawAccountSelectionScreen(),
-            );
-          },
-        ),
-        ActionButton(
-          icon: IconlyBold.swap,
-          label: context.localize.trade,
-          onTap: () {
-            // TODO: Navigate to trade screen
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text(context.localize.comingSoon)),
-            );
-          },
-        ),
-        ActionButton(
-          icon: IconlyBold.chart,
-          label: 'View Portfolio',
-          onTap: () {
-            // Switch to portfolio tab
-            context.read<DashboardProvider>().changeTab(2);
-          },
-        ),
-      ],
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Row(
+        children: [
+          ActionButton(
+            icon: IconlyBold.wallet,
+            label: context.localize.deposit,
+            onTap: () {
+              NavigationHelper.navigateTo(
+                context,
+                const DepositAccountSelectionScreen(),
+              );
+            },
+          ),
+          const SizedBox(width: 12),
+          ActionButton(
+            icon: IconlyBold.download,
+            label: context.localize.withdraw,
+            onTap: () {
+              NavigationHelper.navigateTo(
+                context,
+                const WithdrawAccountSelectionScreen(),
+              );
+            },
+          ),
+          const SizedBox(width: 12),
+          ActionButton(
+            icon: IconlyBold.swap,
+            label: context.localize.trade,
+            onTap: () {
+              // TODO: Navigate to trade screen
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text(context.localize.comingSoon)),
+              );
+            },
+          ),
+          const SizedBox(width: 12),
+          ActionButton(
+            icon: IconlyBold.chart,
+            label: 'View Portfolio',
+            onTap: () {
+              // Switch to portfolio tab
+              context.read<DashboardProvider>().changeTab(2);
+            },
+          ),
+          const SizedBox(width: 12),
+          ActionButton(
+            icon: Icons.link,
+            label: 'Link Account',
+            onTap: () {
+              // TODO: Navigate to link account screen
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text(context.localize.comingSoon)),
+              );
+            },
+          ),
+          const SizedBox(width: 12),
+          ActionButton(
+            icon: IconlyBold.wallet,
+            label: 'Cash Wallet',
+            onTap: () {
+              // TODO: Navigate to cash wallet screen
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text(context.localize.comingSoon)),
+              );
+            },
+          ),
+        ],
+      ),
     );
   }
 }
