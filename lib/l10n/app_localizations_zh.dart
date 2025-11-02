@@ -633,4 +633,166 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get comingSoon => '即将推出';
+
+  @override
+  String get viewPortfolio => '查看投资组合';
+
+  @override
+  String get linkAccount => '关联账户';
+
+  @override
+  String get cashWallet => '现金钱包';
+
+  @override
+  String get transactions => '交易记录';
+
+  @override
+  String get reportAnIssue => '报告问题';
+
+  @override
+  String get export => '导出';
+
+  @override
+  String get filter => '筛选';
+
+  @override
+  String get apply => '应用';
+
+  @override
+  String get balance => '余额';
+
+  @override
+  String get emergencyFunds => '应急基金';
+
+  @override
+  String get youHaveNoTransactions => '您没有交易记录';
+
+  @override
+  String get transactionReceipt => '交易收据';
+
+  @override
+  String get type => '类型';
+
+  @override
+  String get assetClass => '资产类别';
+
+  @override
+  String get quantity => '数量';
+
+  @override
+  String get purchasePrice => '购买价格';
+
+  @override
+  String get totalCost => '总成本';
+
+  @override
+  String get charges => '费用';
+
+  @override
+  String get date => '日期';
+
+  @override
+  String get status => '状态';
+
+  @override
+  String get executedBy => '执行者';
+
+  @override
+  String get id => 'ID';
+
+  @override
+  String get addNotes => '添加备注';
+
+  @override
+  String get print => '打印';
+
+  @override
+  String get share => '分享';
+
+  @override
+  String get completed => '已完成';
+
+  @override
+  String get pending => '待处理';
+
+  @override
+  String get failed => '失败';
+
+  @override
+  String get cancelled => '已取消';
+
+  @override
+  String get buy => '购买';
+
+  @override
+  String get sell => '出售';
+
+  @override
+  String get dateRange => '日期范围';
+
+  @override
+  String get sortBy => '排序方式';
+
+  @override
+  String get sortByStatus => '按状态排序';
+
+  @override
+  String get keywordSearch => '关键词搜索';
+
+  @override
+  String get enterAKeyword => '输入关键词';
+
+  @override
+  String get last30Days => '最近30天';
+
+  @override
+  String get last60Days => '最近60天';
+
+  @override
+  String get thisYear => '今年';
+
+  @override
+  String get customDate => '自定义日期';
+
+  @override
+  String get all => '全部';
+
+  @override
+  String get transfer => '转账';
+
+  @override
+  String get chooseFileFormat => '选择文件格式';
+
+  @override
+  String get pdfFormat => 'PDF格式';
+
+  @override
+  String get csv => 'CSV';
+
+  @override
+  String get tellUsWhatsGoingOn => '告诉我们发生了什么，我们会尽快回复您';
+
+  @override
+  String get describeYourIssue => '描述您的问题...';
+
+  @override
+  String get issueReportedSuccessfully => '问题报告成功';
+
+  @override
+  String get exportingAs => '导出为';
+
+  @override
+  String get printComingSoon => '打印即将推出';
+
+  @override
+  String get shareComingSoon => '分享即将推出';
+
+  @override
+  String get withdrawComingSoon => '取款即将推出';
+
+  @override
+  String get depositComingSoon => '存款即将推出';
+
+  @override
+  String get noTransactionsYet => '还没有交易记录';
 }

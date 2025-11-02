@@ -661,4 +661,167 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get comingSoon => 'जल्द आ रहा है';
+
+  @override
+  String get viewPortfolio => 'पोर्टफोलियो देखें';
+
+  @override
+  String get linkAccount => 'खाता लिंक करें';
+
+  @override
+  String get cashWallet => 'नकद वॉलेट';
+
+  @override
+  String get transactions => 'लेनदेन';
+
+  @override
+  String get reportAnIssue => 'समस्या रिपोर्ट करें';
+
+  @override
+  String get export => 'निर्यात करें';
+
+  @override
+  String get filter => 'फ़िल्टर';
+
+  @override
+  String get apply => 'लागू करें';
+
+  @override
+  String get balance => 'शेष राशि';
+
+  @override
+  String get emergencyFunds => 'आपातकालीन फंड';
+
+  @override
+  String get youHaveNoTransactions => 'आपके पास कोई लेनदेन नहीं है';
+
+  @override
+  String get transactionReceipt => 'लेनदेन रसीद';
+
+  @override
+  String get type => 'प्रकार';
+
+  @override
+  String get assetClass => 'संपत्ति वर्ग';
+
+  @override
+  String get quantity => 'मात्रा';
+
+  @override
+  String get purchasePrice => 'खरीद मूल्य';
+
+  @override
+  String get totalCost => 'कुल लागत';
+
+  @override
+  String get charges => 'शुल्क';
+
+  @override
+  String get date => 'तारीख';
+
+  @override
+  String get status => 'स्थिति';
+
+  @override
+  String get executedBy => 'द्वारा निष्पादित';
+
+  @override
+  String get id => 'आईडी';
+
+  @override
+  String get addNotes => 'नोट्स जोड़ें';
+
+  @override
+  String get print => 'प्रिंट करें';
+
+  @override
+  String get share => 'साझा करें';
+
+  @override
+  String get completed => 'पूर्ण';
+
+  @override
+  String get pending => 'लंबित';
+
+  @override
+  String get failed => 'विफल';
+
+  @override
+  String get cancelled => 'रद्द';
+
+  @override
+  String get buy => 'खरीदें';
+
+  @override
+  String get sell => 'बेचें';
+
+  @override
+  String get dateRange => 'तिथि सीमा';
+
+  @override
+  String get sortBy => 'इसके अनुसार क्रमबद्ध करें';
+
+  @override
+  String get sortByStatus => 'स्थिति के अनुसार क्रमबद्ध करें';
+
+  @override
+  String get keywordSearch => 'कीवर्ड खोज';
+
+  @override
+  String get enterAKeyword => 'एक कीवर्ड दर्ज करें';
+
+  @override
+  String get last30Days => 'पिछले 30 दिन';
+
+  @override
+  String get last60Days => 'पिछले 60 दिन';
+
+  @override
+  String get thisYear => 'इस वर्ष';
+
+  @override
+  String get customDate => 'कस्टम तिथि';
+
+  @override
+  String get all => 'सभी';
+
+  @override
+  String get transfer => 'स्थानांतरण';
+
+  @override
+  String get chooseFileFormat => 'फ़ाइल प्रारूप चुनें';
+
+  @override
+  String get pdfFormat => 'PDF प्रारूप';
+
+  @override
+  String get csv => 'CSV';
+
+  @override
+  String get tellUsWhatsGoingOn =>
+      'हमें बताएं कि क्या हो रहा है और हम जल्द ही आपसे संपर्क करेंगे';
+
+  @override
+  String get describeYourIssue => 'अपनी समस्या का वर्णन करें...';
+
+  @override
+  String get issueReportedSuccessfully => 'समस्या सफलतापूर्वक रिपोर्ट की गई';
+
+  @override
+  String get exportingAs => 'के रूप में निर्यात किया जा रहा है';
+
+  @override
+  String get printComingSoon => 'प्रिंट जल्द आ रहा है';
+
+  @override
+  String get shareComingSoon => 'साझा करना जल्द आ रहा है';
+
+  @override
+  String get withdrawComingSoon => 'निकासी जल्द आ रही है';
+
+  @override
+  String get depositComingSoon => 'जमा जल्द आ रहा है';
+
+  @override
+  String get noTransactionsYet => 'अभी तक कोई लेनदेन नहीं';
 }

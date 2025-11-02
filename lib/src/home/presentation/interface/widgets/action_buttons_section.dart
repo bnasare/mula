@@ -56,7 +56,7 @@ class ActionButtonsSection extends StatelessWidget {
           const SizedBox(width: 12),
           ActionButton(
             icon: IconlyBold.chart,
-            label: 'View Portfolio',
+            label: context.localize.viewPortfolio,
             onTap: () {
               // Switch to portfolio tab
               context.read<DashboardProvider>().changeTab(2);
@@ -65,7 +65,7 @@ class ActionButtonsSection extends StatelessWidget {
           const SizedBox(width: 12),
           ActionButton(
             icon: Icons.link,
-            label: 'Link Account',
+            label: context.localize.linkAccount,
             onTap: () {
               // TODO: Navigate to link account screen
               ScaffoldMessenger.of(context).showSnackBar(
@@ -76,7 +76,7 @@ class ActionButtonsSection extends StatelessWidget {
           const SizedBox(width: 12),
           ActionButton(
             icon: IconlyBold.wallet,
-            label: 'Cash Wallet',
+            label: context.localize.cashWallet,
             onTap: () {
               NavigationHelper.navigateTo(
                 context,

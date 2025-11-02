@@ -669,4 +669,167 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get comingSoon => 'Bientôt disponible';
+
+  @override
+  String get viewPortfolio => 'Voir le Portefeuille';
+
+  @override
+  String get linkAccount => 'Lier le Compte';
+
+  @override
+  String get cashWallet => 'Portefeuille Espèces';
+
+  @override
+  String get transactions => 'Transactions';
+
+  @override
+  String get reportAnIssue => 'Signaler un problème';
+
+  @override
+  String get export => 'Exporter';
+
+  @override
+  String get filter => 'Filtrer';
+
+  @override
+  String get apply => 'Appliquer';
+
+  @override
+  String get balance => 'Solde';
+
+  @override
+  String get emergencyFunds => 'Fonds d\'Urgence';
+
+  @override
+  String get youHaveNoTransactions => 'Vous n\'avez aucune transaction';
+
+  @override
+  String get transactionReceipt => 'Reçu de Transaction';
+
+  @override
+  String get type => 'Type';
+
+  @override
+  String get assetClass => 'Classe d\'Actif';
+
+  @override
+  String get quantity => 'Quantité';
+
+  @override
+  String get purchasePrice => 'Prix d\'Achat';
+
+  @override
+  String get totalCost => 'Coût Total';
+
+  @override
+  String get charges => 'Frais';
+
+  @override
+  String get date => 'Date';
+
+  @override
+  String get status => 'Statut';
+
+  @override
+  String get executedBy => 'Exécuté par';
+
+  @override
+  String get id => 'ID';
+
+  @override
+  String get addNotes => 'Ajouter des notes';
+
+  @override
+  String get print => 'Imprimer';
+
+  @override
+  String get share => 'Partager';
+
+  @override
+  String get completed => 'Terminé';
+
+  @override
+  String get pending => 'En attente';
+
+  @override
+  String get failed => 'Échoué';
+
+  @override
+  String get cancelled => 'Annulé';
+
+  @override
+  String get buy => 'Acheter';
+
+  @override
+  String get sell => 'Vendre';
+
+  @override
+  String get dateRange => 'Plage de Dates';
+
+  @override
+  String get sortBy => 'Trier par';
+
+  @override
+  String get sortByStatus => 'Trier par Statut';
+
+  @override
+  String get keywordSearch => 'Recherche par Mot-clé';
+
+  @override
+  String get enterAKeyword => 'Entrez un mot-clé';
+
+  @override
+  String get last30Days => '30 derniers jours';
+
+  @override
+  String get last60Days => '60 derniers jours';
+
+  @override
+  String get thisYear => 'Cette Année';
+
+  @override
+  String get customDate => 'Date Personnalisée';
+
+  @override
+  String get all => 'Tout';
+
+  @override
+  String get transfer => 'Transfert';
+
+  @override
+  String get chooseFileFormat => 'Choisir le format de fichier';
+
+  @override
+  String get pdfFormat => 'Format PDF';
+
+  @override
+  String get csv => 'CSV';
+
+  @override
+  String get tellUsWhatsGoingOn =>
+      'Dites-nous ce qui se passe et nous vous répondrons sous peu';
+
+  @override
+  String get describeYourIssue => 'Décrivez votre problème...';
+
+  @override
+  String get issueReportedSuccessfully => 'Problème signalé avec succès';
+
+  @override
+  String get exportingAs => 'Exportation en tant que';
+
+  @override
+  String get printComingSoon => 'Impression bientôt disponible';
+
+  @override
+  String get shareComingSoon => 'Partage bientôt disponible';
+
+  @override
+  String get withdrawComingSoon => 'Retrait bientôt disponible';
+
+  @override
+  String get depositComingSoon => 'Dépôt bientôt disponible';
+
+  @override
+  String get noTransactionsYet => 'Aucune transaction pour le moment';
 }

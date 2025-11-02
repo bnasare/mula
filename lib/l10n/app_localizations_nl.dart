@@ -665,4 +665,167 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get comingSoon => 'Binnenkort beschikbaar';
+
+  @override
+  String get viewPortfolio => 'Portfolio Bekijken';
+
+  @override
+  String get linkAccount => 'Account Koppelen';
+
+  @override
+  String get cashWallet => 'Contant Portemonnee';
+
+  @override
+  String get transactions => 'Transacties';
+
+  @override
+  String get reportAnIssue => 'Probleem melden';
+
+  @override
+  String get export => 'Exporteren';
+
+  @override
+  String get filter => 'Filteren';
+
+  @override
+  String get apply => 'Toepassen';
+
+  @override
+  String get balance => 'Saldo';
+
+  @override
+  String get emergencyFunds => 'Noodfondsen';
+
+  @override
+  String get youHaveNoTransactions => 'U heeft geen transacties';
+
+  @override
+  String get transactionReceipt => 'Transactiebewijs';
+
+  @override
+  String get type => 'Type';
+
+  @override
+  String get assetClass => 'Activaklasse';
+
+  @override
+  String get quantity => 'Hoeveelheid';
+
+  @override
+  String get purchasePrice => 'Aankoopprijs';
+
+  @override
+  String get totalCost => 'Totale Kosten';
+
+  @override
+  String get charges => 'Kosten';
+
+  @override
+  String get date => 'Datum';
+
+  @override
+  String get status => 'Status';
+
+  @override
+  String get executedBy => 'Uitgevoerd door';
+
+  @override
+  String get id => 'ID';
+
+  @override
+  String get addNotes => 'Notities toevoegen';
+
+  @override
+  String get print => 'Afdrukken';
+
+  @override
+  String get share => 'Delen';
+
+  @override
+  String get completed => 'Voltooid';
+
+  @override
+  String get pending => 'In Behandeling';
+
+  @override
+  String get failed => 'Mislukt';
+
+  @override
+  String get cancelled => 'Geannuleerd';
+
+  @override
+  String get buy => 'Kopen';
+
+  @override
+  String get sell => 'Verkopen';
+
+  @override
+  String get dateRange => 'Datumbereik';
+
+  @override
+  String get sortBy => 'Sorteren op';
+
+  @override
+  String get sortByStatus => 'Sorteren op Status';
+
+  @override
+  String get keywordSearch => 'Zoeken op Trefwoord';
+
+  @override
+  String get enterAKeyword => 'Voer een trefwoord in';
+
+  @override
+  String get last30Days => 'Laatste 30 dagen';
+
+  @override
+  String get last60Days => 'Laatste 60 dagen';
+
+  @override
+  String get thisYear => 'Dit Jaar';
+
+  @override
+  String get customDate => 'Aangepaste Datum';
+
+  @override
+  String get all => 'Alle';
+
+  @override
+  String get transfer => 'Overmaken';
+
+  @override
+  String get chooseFileFormat => 'Kies bestandsformaat';
+
+  @override
+  String get pdfFormat => 'PDF-formaat';
+
+  @override
+  String get csv => 'CSV';
+
+  @override
+  String get tellUsWhatsGoingOn =>
+      'Vertel ons wat er aan de hand is en we nemen snel contact met u op';
+
+  @override
+  String get describeYourIssue => 'Beschrijf uw probleem...';
+
+  @override
+  String get issueReportedSuccessfully => 'Probleem succesvol gemeld';
+
+  @override
+  String get exportingAs => 'Exporteren als';
+
+  @override
+  String get printComingSoon => 'Afdrukken binnenkort beschikbaar';
+
+  @override
+  String get shareComingSoon => 'Delen binnenkort beschikbaar';
+
+  @override
+  String get withdrawComingSoon => 'Opnemen binnenkort beschikbaar';
+
+  @override
+  String get depositComingSoon => 'Storten binnenkort beschikbaar';
+
+  @override
+  String get noTransactionsYet => 'Nog geen transacties';
 }

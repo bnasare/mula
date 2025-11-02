@@ -1357,6 +1357,330 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Coming Soon'**
   String get comingSoon;
+
+  /// No description provided for @viewPortfolio.
+  ///
+  /// In en, this message translates to:
+  /// **'View Portfolio'**
+  String get viewPortfolio;
+
+  /// No description provided for @linkAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Link Account'**
+  String get linkAccount;
+
+  /// No description provided for @cashWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash Wallet'**
+  String get cashWallet;
+
+  /// No description provided for @transactions.
+  ///
+  /// In en, this message translates to:
+  /// **'Transactions'**
+  String get transactions;
+
+  /// No description provided for @reportAnIssue.
+  ///
+  /// In en, this message translates to:
+  /// **'Report an issue'**
+  String get reportAnIssue;
+
+  /// No description provided for @export.
+  ///
+  /// In en, this message translates to:
+  /// **'Export'**
+  String get export;
+
+  /// No description provided for @filter.
+  ///
+  /// In en, this message translates to:
+  /// **'Filter'**
+  String get filter;
+
+  /// No description provided for @apply.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply'**
+  String get apply;
+
+  /// No description provided for @balance.
+  ///
+  /// In en, this message translates to:
+  /// **'Balance'**
+  String get balance;
+
+  /// No description provided for @emergencyFunds.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency Funds'**
+  String get emergencyFunds;
+
+  /// No description provided for @youHaveNoTransactions.
+  ///
+  /// In en, this message translates to:
+  /// **'You have no transactions'**
+  String get youHaveNoTransactions;
+
+  /// No description provided for @transactionReceipt.
+  ///
+  /// In en, this message translates to:
+  /// **'Transaction Receipt'**
+  String get transactionReceipt;
+
+  /// No description provided for @type.
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get type;
+
+  /// No description provided for @assetClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Asset Class'**
+  String get assetClass;
+
+  /// No description provided for @quantity.
+  ///
+  /// In en, this message translates to:
+  /// **'Quantity'**
+  String get quantity;
+
+  /// No description provided for @purchasePrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase Price'**
+  String get purchasePrice;
+
+  /// No description provided for @totalCost.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Cost'**
+  String get totalCost;
+
+  /// No description provided for @charges.
+  ///
+  /// In en, this message translates to:
+  /// **'Charges'**
+  String get charges;
+
+  /// No description provided for @date.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get date;
+
+  /// No description provided for @status.
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get status;
+
+  /// No description provided for @executedBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Executed by'**
+  String get executedBy;
+
+  /// No description provided for @id.
+  ///
+  /// In en, this message translates to:
+  /// **'ID'**
+  String get id;
+
+  /// No description provided for @addNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'Add notes'**
+  String get addNotes;
+
+  /// No description provided for @print.
+  ///
+  /// In en, this message translates to:
+  /// **'Print'**
+  String get print;
+
+  /// No description provided for @share.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get share;
+
+  /// No description provided for @completed.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get completed;
+
+  /// No description provided for @pending.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending'**
+  String get pending;
+
+  /// No description provided for @failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed'**
+  String get failed;
+
+  /// No description provided for @cancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled'**
+  String get cancelled;
+
+  /// No description provided for @buy.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy'**
+  String get buy;
+
+  /// No description provided for @sell.
+  ///
+  /// In en, this message translates to:
+  /// **'Sell'**
+  String get sell;
+
+  /// No description provided for @dateRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Date Range'**
+  String get dateRange;
+
+  /// No description provided for @sortBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort by'**
+  String get sortBy;
+
+  /// No description provided for @sortByStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort by Status'**
+  String get sortByStatus;
+
+  /// No description provided for @keywordSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Keyword Search'**
+  String get keywordSearch;
+
+  /// No description provided for @enterAKeyword.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a keyword'**
+  String get enterAKeyword;
+
+  /// No description provided for @last30Days.
+  ///
+  /// In en, this message translates to:
+  /// **'Last 30 days'**
+  String get last30Days;
+
+  /// No description provided for @last60Days.
+  ///
+  /// In en, this message translates to:
+  /// **'Last 60 days'**
+  String get last60Days;
+
+  /// No description provided for @thisYear.
+  ///
+  /// In en, this message translates to:
+  /// **'This Year'**
+  String get thisYear;
+
+  /// No description provided for @customDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom Date'**
+  String get customDate;
+
+  /// No description provided for @all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get all;
+
+  /// No description provided for @transfer.
+  ///
+  /// In en, this message translates to:
+  /// **'Transfer'**
+  String get transfer;
+
+  /// No description provided for @chooseFileFormat.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose file format'**
+  String get chooseFileFormat;
+
+  /// No description provided for @pdfFormat.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF Format'**
+  String get pdfFormat;
+
+  /// No description provided for @csv.
+  ///
+  /// In en, this message translates to:
+  /// **'CSV'**
+  String get csv;
+
+  /// No description provided for @tellUsWhatsGoingOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell us what\'s going on and we\'ll get back to you shortly'**
+  String get tellUsWhatsGoingOn;
+
+  /// No description provided for @describeYourIssue.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe your issue...'**
+  String get describeYourIssue;
+
+  /// No description provided for @issueReportedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Issue reported successfully'**
+  String get issueReportedSuccessfully;
+
+  /// No description provided for @exportingAs.
+  ///
+  /// In en, this message translates to:
+  /// **'Exporting as'**
+  String get exportingAs;
+
+  /// No description provided for @printComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Print coming soon'**
+  String get printComingSoon;
+
+  /// No description provided for @shareComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Share coming soon'**
+  String get shareComingSoon;
+
+  /// No description provided for @withdrawComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Withdraw coming soon'**
+  String get withdrawComingSoon;
+
+  /// No description provided for @depositComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Deposit coming soon'**
+  String get depositComingSoon;
+
+  /// No description provided for @noTransactionsYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No transactions yet'**
+  String get noTransactionsYet;
 }
 
 class _AppLocalizationsDelegate

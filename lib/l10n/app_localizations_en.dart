@@ -662,4 +662,167 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get comingSoon => 'Coming Soon';
+
+  @override
+  String get viewPortfolio => 'View Portfolio';
+
+  @override
+  String get linkAccount => 'Link Account';
+
+  @override
+  String get cashWallet => 'Cash Wallet';
+
+  @override
+  String get transactions => 'Transactions';
+
+  @override
+  String get reportAnIssue => 'Report an issue';
+
+  @override
+  String get export => 'Export';
+
+  @override
+  String get filter => 'Filter';
+
+  @override
+  String get apply => 'Apply';
+
+  @override
+  String get balance => 'Balance';
+
+  @override
+  String get emergencyFunds => 'Emergency Funds';
+
+  @override
+  String get youHaveNoTransactions => 'You have no transactions';
+
+  @override
+  String get transactionReceipt => 'Transaction Receipt';
+
+  @override
+  String get type => 'Type';
+
+  @override
+  String get assetClass => 'Asset Class';
+
+  @override
+  String get quantity => 'Quantity';
+
+  @override
+  String get purchasePrice => 'Purchase Price';
+
+  @override
+  String get totalCost => 'Total Cost';
+
+  @override
+  String get charges => 'Charges';
+
+  @override
+  String get date => 'Date';
+
+  @override
+  String get status => 'Status';
+
+  @override
+  String get executedBy => 'Executed by';
+
+  @override
+  String get id => 'ID';
+
+  @override
+  String get addNotes => 'Add notes';
+
+  @override
+  String get print => 'Print';
+
+  @override
+  String get share => 'Share';
+
+  @override
+  String get completed => 'Completed';
+
+  @override
+  String get pending => 'Pending';
+
+  @override
+  String get failed => 'Failed';
+
+  @override
+  String get cancelled => 'Cancelled';
+
+  @override
+  String get buy => 'Buy';
+
+  @override
+  String get sell => 'Sell';
+
+  @override
+  String get dateRange => 'Date Range';
+
+  @override
+  String get sortBy => 'Sort by';
+
+  @override
+  String get sortByStatus => 'Sort by Status';
+
+  @override
+  String get keywordSearch => 'Keyword Search';
+
+  @override
+  String get enterAKeyword => 'Enter a keyword';
+
+  @override
+  String get last30Days => 'Last 30 days';
+
+  @override
+  String get last60Days => 'Last 60 days';
+
+  @override
+  String get thisYear => 'This Year';
+
+  @override
+  String get customDate => 'Custom Date';
+
+  @override
+  String get all => 'All';
+
+  @override
+  String get transfer => 'Transfer';
+
+  @override
+  String get chooseFileFormat => 'Choose file format';
+
+  @override
+  String get pdfFormat => 'PDF Format';
+
+  @override
+  String get csv => 'CSV';
+
+  @override
+  String get tellUsWhatsGoingOn =>
+      'Tell us what\'s going on and we\'ll get back to you shortly';
+
+  @override
+  String get describeYourIssue => 'Describe your issue...';
+
+  @override
+  String get issueReportedSuccessfully => 'Issue reported successfully';
+
+  @override
+  String get exportingAs => 'Exporting as';
+
+  @override
+  String get printComingSoon => 'Print coming soon';
+
+  @override
+  String get shareComingSoon => 'Share coming soon';
+
+  @override
+  String get withdrawComingSoon => 'Withdraw coming soon';
+
+  @override
+  String get depositComingSoon => 'Deposit coming soon';
+
+  @override
+  String get noTransactionsYet => 'No transactions yet';
 }

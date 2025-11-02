@@ -665,4 +665,167 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get comingSoon => 'Скоро';
+
+  @override
+  String get viewPortfolio => 'Просмотреть Портфель';
+
+  @override
+  String get linkAccount => 'Связать Аккаунт';
+
+  @override
+  String get cashWallet => 'Денежный Кошелек';
+
+  @override
+  String get transactions => 'Транзакции';
+
+  @override
+  String get reportAnIssue => 'Сообщить о проблеме';
+
+  @override
+  String get export => 'Экспортировать';
+
+  @override
+  String get filter => 'Фильтр';
+
+  @override
+  String get apply => 'Применить';
+
+  @override
+  String get balance => 'Баланс';
+
+  @override
+  String get emergencyFunds => 'Чрезвычайные Фонды';
+
+  @override
+  String get youHaveNoTransactions => 'У вас нет транзакций';
+
+  @override
+  String get transactionReceipt => 'Квитанция о Транзакции';
+
+  @override
+  String get type => 'Тип';
+
+  @override
+  String get assetClass => 'Класс Активов';
+
+  @override
+  String get quantity => 'Количество';
+
+  @override
+  String get purchasePrice => 'Цена Покупки';
+
+  @override
+  String get totalCost => 'Общая Стоимость';
+
+  @override
+  String get charges => 'Сборы';
+
+  @override
+  String get date => 'Дата';
+
+  @override
+  String get status => 'Статус';
+
+  @override
+  String get executedBy => 'Выполнено';
+
+  @override
+  String get id => 'ID';
+
+  @override
+  String get addNotes => 'Добавить заметки';
+
+  @override
+  String get print => 'Печать';
+
+  @override
+  String get share => 'Поделиться';
+
+  @override
+  String get completed => 'Завершено';
+
+  @override
+  String get pending => 'В ожидании';
+
+  @override
+  String get failed => 'Неудачно';
+
+  @override
+  String get cancelled => 'Отменено';
+
+  @override
+  String get buy => 'Купить';
+
+  @override
+  String get sell => 'Продать';
+
+  @override
+  String get dateRange => 'Диапазон Дат';
+
+  @override
+  String get sortBy => 'Сортировать по';
+
+  @override
+  String get sortByStatus => 'Сортировать по Статусу';
+
+  @override
+  String get keywordSearch => 'Поиск по Ключевому Слову';
+
+  @override
+  String get enterAKeyword => 'Введите ключевое слово';
+
+  @override
+  String get last30Days => 'Последние 30 дней';
+
+  @override
+  String get last60Days => 'Последние 60 дней';
+
+  @override
+  String get thisYear => 'Этот Год';
+
+  @override
+  String get customDate => 'Пользовательская Дата';
+
+  @override
+  String get all => 'Все';
+
+  @override
+  String get transfer => 'Перевод';
+
+  @override
+  String get chooseFileFormat => 'Выберите формат файла';
+
+  @override
+  String get pdfFormat => 'Формат PDF';
+
+  @override
+  String get csv => 'CSV';
+
+  @override
+  String get tellUsWhatsGoingOn =>
+      'Расскажите нам, что происходит, и мы скоро свяжемся с вами';
+
+  @override
+  String get describeYourIssue => 'Опишите вашу проблему...';
+
+  @override
+  String get issueReportedSuccessfully => 'Проблема успешно сообщена';
+
+  @override
+  String get exportingAs => 'Экспорт как';
+
+  @override
+  String get printComingSoon => 'Печать скоро';
+
+  @override
+  String get shareComingSoon => 'Поделиться скоро';
+
+  @override
+  String get withdrawComingSoon => 'Снятие скоро';
+
+  @override
+  String get depositComingSoon => 'Внесение скоро';
+
+  @override
+  String get noTransactionsYet => 'Пока нет транзакций';
 }

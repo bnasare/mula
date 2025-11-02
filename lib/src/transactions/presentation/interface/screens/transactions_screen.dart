@@ -4,6 +4,7 @@ import 'package:iconly/iconly.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/interface/widgets/activity_list_item.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
@@ -25,7 +26,7 @@ class TransactionsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MulaAppBarHelpers.withActions(
-        title: 'Transactions',
+        title: context.localize.transactions,
         actions: [
           IconButton(
             icon: Icon(
@@ -58,14 +59,14 @@ class TransactionsScreen extends StatelessWidget {
               PopupMenuItem(
                 value: 'export',
                 child: AppText.small(
-                  'Export',
+                  context.localize.export,
                   color: AppColors.primaryText(context),
                 ),
               ),
               PopupMenuItem(
                 value: 'report',
                 child: AppText.small(
-                  'Report an issue',
+                  context.localize.reportAnIssue,
                   color: AppColors.primaryText(context),
                 ),
               ),
@@ -87,7 +88,7 @@ class TransactionsScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 16),
                       AppText.small(
-                        'No transactions yet',
+                        context.localize.noTransactionsYet,
                         color: AppColors.secondaryText(context),
                       ),
                     ],

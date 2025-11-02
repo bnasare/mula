@@ -640,4 +640,166 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get comingSoon => '近日公開';
+
+  @override
+  String get viewPortfolio => 'ポートフォリオを表示';
+
+  @override
+  String get linkAccount => 'アカウントをリンク';
+
+  @override
+  String get cashWallet => '現金ウォレット';
+
+  @override
+  String get transactions => '取引';
+
+  @override
+  String get reportAnIssue => '問題を報告';
+
+  @override
+  String get export => 'エクスポート';
+
+  @override
+  String get filter => 'フィルター';
+
+  @override
+  String get apply => '適用';
+
+  @override
+  String get balance => '残高';
+
+  @override
+  String get emergencyFunds => '緊急資金';
+
+  @override
+  String get youHaveNoTransactions => '取引がありません';
+
+  @override
+  String get transactionReceipt => '取引レシート';
+
+  @override
+  String get type => 'タイプ';
+
+  @override
+  String get assetClass => '資産クラス';
+
+  @override
+  String get quantity => '数量';
+
+  @override
+  String get purchasePrice => '購入価格';
+
+  @override
+  String get totalCost => '総コスト';
+
+  @override
+  String get charges => '手数料';
+
+  @override
+  String get date => '日付';
+
+  @override
+  String get status => 'ステータス';
+
+  @override
+  String get executedBy => '実行者';
+
+  @override
+  String get id => 'ID';
+
+  @override
+  String get addNotes => 'メモを追加';
+
+  @override
+  String get print => '印刷';
+
+  @override
+  String get share => '共有';
+
+  @override
+  String get completed => '完了';
+
+  @override
+  String get pending => '保留中';
+
+  @override
+  String get failed => '失敗';
+
+  @override
+  String get cancelled => 'キャンセル';
+
+  @override
+  String get buy => '購入';
+
+  @override
+  String get sell => '売却';
+
+  @override
+  String get dateRange => '日付範囲';
+
+  @override
+  String get sortBy => '並べ替え';
+
+  @override
+  String get sortByStatus => 'ステータスで並べ替え';
+
+  @override
+  String get keywordSearch => 'キーワード検索';
+
+  @override
+  String get enterAKeyword => 'キーワードを入力';
+
+  @override
+  String get last30Days => '過去30日間';
+
+  @override
+  String get last60Days => '過去60日間';
+
+  @override
+  String get thisYear => '今年';
+
+  @override
+  String get customDate => 'カスタム日付';
+
+  @override
+  String get all => 'すべて';
+
+  @override
+  String get transfer => '送金';
+
+  @override
+  String get chooseFileFormat => 'ファイル形式を選択';
+
+  @override
+  String get pdfFormat => 'PDF形式';
+
+  @override
+  String get csv => 'CSV';
+
+  @override
+  String get tellUsWhatsGoingOn => '何が起こっているか教えてください。すぐにご連絡します';
+
+  @override
+  String get describeYourIssue => '問題を説明してください...';
+
+  @override
+  String get issueReportedSuccessfully => '問題が正常に報告されました';
+
+  @override
+  String get exportingAs => 'エクスポート中';
+
+  @override
+  String get printComingSoon => '印刷は近日公開';
+
+  @override
+  String get shareComingSoon => '共有は近日公開';
+
+  @override
+  String get withdrawComingSoon => '出金は近日公開';
+
+  @override
+  String get depositComingSoon => '入金は近日公開';
+
+  @override
+  String get noTransactionsYet => 'まだ取引がありません';
 }
