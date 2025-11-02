@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../../../../account/presentation/interface/screens/account_tab.dart';
+import '../../../../explore/presentation/interface/screens/explore_tab.dart';
+import '../../../../home/presentation/interface/screens/home_tab.dart';
+import '../../../../learn/presentation/interface/screens/learn_tab.dart';
+import '../../../../portfolio/presentation/interface/screens/portfolio_tab.dart';
 import '../../provider/dashboard_provider.dart';
 import '../widgets/custom_bottom_nav_bar.dart';
-import 'account_tab.dart';
-import 'explore_tab.dart';
-import 'home_tab.dart';
-import 'learn_tab.dart';
-import 'portfolio_tab.dart';
 
 /// Main dashboard screen with bottom navigation
 class DashboardScreen extends StatelessWidget {
