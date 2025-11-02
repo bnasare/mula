@@ -71,7 +71,7 @@ class ActivityListItem extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           AppText.smallest(
-                            '@GHS ${(activity.amount / double.parse(activity.shares!.split(' ')[0])).toStringAsFixed(2)}',
+                            '@GHS ${(activity.amount / double.parse(activity.shares!.split(' ')[0].replaceAll(',', ''))).toStringAsFixed(2)}',
                             color: AppColors.appPrimary,
                           ),
                           const SizedBox(width: 4),

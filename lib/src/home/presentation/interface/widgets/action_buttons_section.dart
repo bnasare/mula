@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
+import '../../../../cash_wallet/presentation/interface/screens/cash_wallet_screen.dart';
 import '../../../../dashboard/presentation/interface/widgets/action_button.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
 import '../../../../deposit/presentation/interface/screens/deposit_account_selection_screen.dart';
@@ -77,9 +78,10 @@ class ActionButtonsSection extends StatelessWidget {
             icon: IconlyBold.wallet,
             label: 'Cash Wallet',
             onTap: () {
-              // TODO: Navigate to cash wallet screen
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(context.localize.comingSoon)),
+              NavigationHelper.navigateTo(
+                context,
+                CashWalletScreen(
+                    dashboardProvider: context.read<DashboardProvider>()),
               );
             },
           ),
