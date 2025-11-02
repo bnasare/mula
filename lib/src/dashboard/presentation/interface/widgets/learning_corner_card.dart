@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
+import 'package:mula/shared/presentation/theme/app_colors.dart';
+
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 
@@ -40,18 +42,18 @@ class LearningCornerCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Title
-          AppText.medium(
+          AppText.small(
             title,
-            color: Colors.white,
+            style: TextStyle(
+              fontWeight: FontWeight.w500,
+              color: AppColors.white(context),
+            ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 2),
 
           // Description
-          AppText.small(
-            description,
-            color: Colors.white.withOpacity(0.95),
-          ),
-          const SizedBox(height: 16),
+          AppText.smaller(description, color: Colors.white.withOpacity(0.95)),
+          const SizedBox(height: 24),
 
           // Learn more button and share/save icons
           Row(
@@ -71,7 +73,7 @@ class LearningCornerCard extends StatelessWidget {
                   ),
                   child: AppText.smallest(
                     context.localize.learnMore,
-                    color: const Color(0xFFFF9F43),
+                    color: AppColors.primaryText(context),
                   ),
                 ),
               ),
@@ -80,7 +82,7 @@ class LearningCornerCard extends StatelessWidget {
               Row(
                 children: [
                   _IconButton(
-                    icon: IconlyLight.send,
+                    icon: Icons.share_outlined,
                     onTap: () {
                       // TODO: Implement share
                     },
@@ -107,10 +109,7 @@ class _IconButton extends StatelessWidget {
   final IconData icon;
   final VoidCallback onTap;
 
-  const _IconButton({
-    required this.icon,
-    required this.onTap,
-  });
+  const _IconButton({required this.icon, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -122,11 +121,7 @@ class _IconButton extends StatelessWidget {
           color: Colors.white.withOpacity(0.2),
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Icon(
-          icon,
-          size: 18,
-          color: Colors.white,
-        ),
+        child: Icon(icon, size: 18, color: Colors.white),
       ),
     );
   }

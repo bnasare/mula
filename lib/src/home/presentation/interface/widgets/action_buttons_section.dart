@@ -19,11 +19,11 @@ class ActionButtonsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 0),
       child: Row(
         children: [
           ActionButton(
-            icon: IconlyBold.wallet,
+            icon: IconlyLight.wallet,
             label: context.localize.deposit,
             onTap: () {
               NavigationHelper.navigateTo(
@@ -34,7 +34,7 @@ class ActionButtonsSection extends StatelessWidget {
           ),
           const SizedBox(width: 12),
           ActionButton(
-            icon: IconlyBold.download,
+            icon: IconlyLight.download,
             label: context.localize.withdraw,
             onTap: () {
               NavigationHelper.navigateTo(
@@ -45,7 +45,7 @@ class ActionButtonsSection extends StatelessWidget {
           ),
           const SizedBox(width: 12),
           ActionButton(
-            icon: IconlyBold.swap,
+            icon: IconlyLight.swap,
             label: context.localize.trade,
             onTap: () {
               // TODO: Navigate to trade screen
@@ -57,7 +57,7 @@ class ActionButtonsSection extends StatelessWidget {
           ),
           const SizedBox(width: 12),
           ActionButton(
-            icon: IconlyBold.chart,
+            icon: IconlyLight.chart,
             label: context.localize.viewPortfolio,
             onTap: () {
               // Switch to portfolio tab
@@ -78,13 +78,14 @@ class ActionButtonsSection extends StatelessWidget {
           ),
           const SizedBox(width: 12),
           ActionButton(
-            icon: IconlyBold.wallet,
+            icon: IconlyLight.wallet,
             label: context.localize.cashWallet,
             onTap: () {
               NavigationHelper.navigateTo(
                 context,
                 CashWalletScreen(
-                    dashboardProvider: context.read<DashboardProvider>()),
+                  dashboardProvider: context.read<DashboardProvider>(),
+                ),
               );
             },
           ),

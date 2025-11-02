@@ -34,7 +34,10 @@ class RecentActivitiesSection extends StatelessWidget {
               children: [
                 AppText.medium(
                   context.localize.recentActivities,
-                  color: AppColors.primaryText(context),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.primaryText(context),
+                  ),
                 ),
                 TextButton(
                   onPressed: () {
@@ -43,22 +46,25 @@ class RecentActivitiesSection extends StatelessWidget {
                       TransactionsScreen(dashboardProvider: provider),
                     );
                   },
-                  child: AppText.small(
+                  child: AppText.smaller(
                     context.localize.viewAll,
                     color: AppColors.appPrimary,
                   ),
                 ),
               ],
             ),
-            const SizedBox(height: 12),
 
             // Activities list
             ListView.separated(
               shrinkWrap: true,
+              padding: const EdgeInsets.all(0),
               physics: const NeverScrollableScrollPhysics(),
               itemCount: provider.recentActivities.length,
-              separatorBuilder: (context, index) =>
-                  Divider(color: AppColors.border(context), height: 1),
+              separatorBuilder: (context, index) => Divider(
+                color: AppColors.border(context),
+                height: 6,
+                thickness: 0.4,
+              ),
               itemBuilder: (context, index) {
                 return ActivityListItem(
                   activity: provider.recentActivities[index],

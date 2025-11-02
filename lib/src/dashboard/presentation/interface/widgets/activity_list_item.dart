@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
 import 'package:intl/intl.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../domain/entities/activity.dart';
@@ -10,11 +10,7 @@ class ActivityListItem extends StatelessWidget {
   final Activity activity;
   final VoidCallback? onTap;
 
-  const ActivityListItem({
-    super.key,
-    required this.activity,
-    this.onTap,
-  });
+  const ActivityListItem({super.key, required this.activity, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -216,11 +212,7 @@ class _ActivityIcon extends StatelessWidget {
         color: backgroundColor,
         borderRadius: BorderRadius.circular(10),
       ),
-      child: Icon(
-        iconData,
-        size: 20,
-        color: _getIconColor(type),
-      ),
+      child: Icon(iconData, size: 20, color: _getIconColor(type)),
     );
   }
 
@@ -269,14 +261,15 @@ class _StatusBadge extends StatelessWidget {
     }
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: textColor, width: 0.2),
       ),
       child: AppText.smallest(
         label,
-        color: textColor,
+        style: TextStyle(fontSize: 10, color: textColor),
       ),
     );
   }

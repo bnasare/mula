@@ -40,7 +40,10 @@ class _AssetOverviewSectionState extends State<AssetOverviewSection> {
           children: [
             AppText.medium(
               context.localize.assetOverview,
-              color: AppColors.primaryText(context),
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                color: AppColors.primaryText(context),
+              ),
             ),
             const SizedBox(height: 16),
 
@@ -48,7 +51,7 @@ class _AssetOverviewSectionState extends State<AssetOverviewSection> {
             Container(
               padding: const EdgeInsets.all(4),
               decoration: BoxDecoration(
-                color: AppColors.offWhite(context),
+                color: AppColors.grey(context).withValues(alpha: 0.05),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Row(

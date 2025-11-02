@@ -27,11 +27,14 @@ class AssetTabButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(6),
         ),
         child: Center(
-          child: AppText.small(
+          child: AppText.smaller(
             label,
-            color: isActive
-                ? AppColors.primaryText(context)
-                : AppColors.secondaryText(context),
+            style: TextStyle(
+              fontWeight: isActive ? FontWeight.w600 : FontWeight.w500,
+              color: isActive
+                  ? AppColors.primaryText(context)
+                  : AppColors.secondaryText(context),
+            ),
           ),
         ),
       ),
