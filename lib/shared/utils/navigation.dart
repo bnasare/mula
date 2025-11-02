@@ -20,6 +20,18 @@ class NavigationHelper {
     );
   }
 
+  static void navigateToAndRemoveUntilPredicate(
+    BuildContext context,
+    Widget page,
+    RoutePredicate predicate,
+  ) {
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (context) => page),
+      predicate,
+    );
+  }
+
   static void navigatePushReplacementNamed(BuildContext context, String page) {
     Navigator.pushReplacementNamed(context, page);
   }
