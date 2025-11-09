@@ -23,17 +23,11 @@ class SuggestedPromptChip extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-            color: AppColors.border(context),
-            width: 1,
-          ),
+          border: Border.all(color: AppColors.border(context), width: 1),
         ),
         child: AppText.small(
           text,
-          style: TextStyle(
-            color: AppColors.primaryText(context),
-            fontSize: 13,
-          ),
+          style: TextStyle(color: AppColors.primaryText(context), fontSize: 13),
         ),
       ),
     );

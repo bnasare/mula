@@ -24,15 +24,15 @@ class Activity extends Equatable {
 
   @override
   List<Object?> get props => [
-        id,
-        title,
-        subtitle,
-        amount,
-        type,
-        status,
-        timestamp,
-        shares,
-      ];
+    id,
+    title,
+    subtitle,
+    amount,
+    type,
+    status,
+    timestamp,
+    shares,
+  ];
 
   Activity copyWith({
     String? id,
@@ -58,19 +58,10 @@ class Activity extends Equatable {
 }
 
 /// Types of activities that can occur
-enum ActivityType {
-  buy,
-  sell,
-  deposit,
-  withdrawal,
-}
+enum ActivityType { buy, sell, deposit, withdrawal }
 
 /// Status of the activity
-enum ActivityStatus {
-  completed,
-  pending,
-  failed,
-}
+enum ActivityStatus { completed, pending, failed }
 
 extension ActivityTypeExtension on ActivityType {
   String get displayName {

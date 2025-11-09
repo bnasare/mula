@@ -37,7 +37,9 @@ class _LinkInvestmentAccountsScreenState
         // Navigate to Select Fund Manager screen for CIS account
         NavigationHelper.navigateTo(
           context,
-          SelectFundManagerScreen(fromLinkedAccounts: widget.fromLinkedAccounts),
+          SelectFundManagerScreen(
+            fromLinkedAccounts: widget.fromLinkedAccounts,
+          ),
         );
       } else if (_selectedAccountType == 'csd') {
         // Navigate to CSD Account Number screen for CSD account

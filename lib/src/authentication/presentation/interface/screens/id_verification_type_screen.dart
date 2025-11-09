@@ -69,7 +69,8 @@ class _IdVerificationTypeScreenState extends State<IdVerificationTypeScreen> {
                 value: 'drivers_license',
                 selectedValue: _selectedIdType,
                 title: context.localize.driversLicense,
-                onTap: () => setState(() => _selectedIdType = 'drivers_license'),
+                onTap: () =>
+                    setState(() => _selectedIdType = 'drivers_license'),
               ),
               const AppSpacer.vShort(),
               // Passport option

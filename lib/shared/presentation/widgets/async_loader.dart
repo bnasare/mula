@@ -35,12 +35,10 @@ class AsyncLoader {
       if (!ignoreTimeout) {
         task = task.timeout(
           timeout,
-          onTimeout:
-              () =>
-                  throw TimeoutException(
-                    'Operation timed out after ${timeout.inSeconds} seconds',
-                    timeout,
-                  ),
+          onTimeout: () => throw TimeoutException(
+            'Operation timed out after ${timeout.inSeconds} seconds',
+            timeout,
+          ),
         );
       }
 
@@ -61,8 +59,7 @@ class AsyncLoader {
     } catch (e) {
       _safelyRemoveOverlay(overlayEntry, context);
 
-      final errorMessage =
-          errorHandler?.call(e) ?? e.toString();
+      final errorMessage = errorHandler?.call(e) ?? e.toString();
       return left(errorMessage);
     }
   }
@@ -70,14 +67,13 @@ class AsyncLoader {
   /// Creates an overlay entry with the loading indicator
   static OverlayEntry _createOverlayEntry(Widget widget) {
     return OverlayEntry(
-      builder:
-          (_) => Material(
-            color: Colors.transparent,
-            child: ColoredBox(
-              color: Colors.black54,
-              child: Center(child: widget),
-            ),
-          ),
+      builder: (_) => Material(
+        color: Colors.transparent,
+        child: ColoredBox(
+          color: Colors.black54,
+          child: Center(child: widget),
+        ),
+      ),
     );
   }
 
@@ -124,12 +120,10 @@ class AsyncLoader {
       if (!ignoreTimeout) {
         task = task.timeout(
           timeout,
-          onTimeout:
-              () =>
-                  throw TimeoutException(
-                    'Operation timed out after ${timeout.inSeconds} seconds',
-                    timeout,
-                  ),
+          onTimeout: () => throw TimeoutException(
+            'Operation timed out after ${timeout.inSeconds} seconds',
+            timeout,
+          ),
         );
       }
 
@@ -141,8 +135,7 @@ class AsyncLoader {
           'Request timed out after ${timeout.inSeconds} seconds';
       return left(errorMessage);
     } catch (e) {
-      final errorMessage =
-          errorHandler?.call(e) ?? e.toString();
+      final errorMessage = errorHandler?.call(e) ?? e.toString();
       return left(errorMessage);
     }
   }

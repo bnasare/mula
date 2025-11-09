@@ -13,7 +13,6 @@ import '../../../../../shared/presentation/widgets/otp_input_widget.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
-import '../../../../linked_accounts/presentation/interface/screens/linked_accounts_screen.dart';
 import 'enable_face_id_screen.dart';
 import 'good_hands_info_screen.dart';
 import 'reset_password_screen.dart';
@@ -40,16 +39,16 @@ class OtpVerificationScreen extends StatefulWidget {
 
   /// Convenience constructor for backwards compatibility
   const OtpVerificationScreen.forgotPassword({super.key})
-      : flowType = OtpFlowType.forgotPassword,
-        onVerificationSuccess = null,
-        fromLinkedAccounts = false;
+    : flowType = OtpFlowType.forgotPassword,
+      onVerificationSuccess = null,
+      fromLinkedAccounts = false;
 
   /// Constructor for CIS account flow
   const OtpVerificationScreen.cisAccount({
     super.key,
     this.fromLinkedAccounts = false,
-  })  : flowType = OtpFlowType.cisAccount,
-        onVerificationSuccess = null;
+  }) : flowType = OtpFlowType.cisAccount,
+       onVerificationSuccess = null;
 
   /// Constructor for CSD account flow
   const OtpVerificationScreen.csdAccount({
@@ -60,9 +59,9 @@ class OtpVerificationScreen extends StatefulWidget {
 
   /// Constructor for account linking flow (bank/mobile money)
   const OtpVerificationScreen.accountLinking({super.key})
-      : flowType = OtpFlowType.accountLinking,
-        onVerificationSuccess = null,
-        fromLinkedAccounts = false;
+    : flowType = OtpFlowType.accountLinking,
+      onVerificationSuccess = null,
+      fromLinkedAccounts = false;
 
   @override
   State<OtpVerificationScreen> createState() => _OtpVerificationScreenState();

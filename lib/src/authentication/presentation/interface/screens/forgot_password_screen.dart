@@ -113,7 +113,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     _isPhoneNumber ? IconlyLight.call : IconlyLight.message,
                     color: Colors.grey.shade400,
                     size: 20,
-                ),
+                  ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return _isPhoneNumber

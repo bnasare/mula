@@ -56,8 +56,9 @@ class _OTPInputWidgetState extends State<OTPInputWidget> {
     }
 
     // Get current OTP value
-    String currentOtp =
-        _controllers.map((controller) => controller.text).join();
+    String currentOtp = _controllers
+        .map((controller) => controller.text)
+        .join();
 
     // Call onChanged callback
     widget.onChanged?.call(currentOtp);

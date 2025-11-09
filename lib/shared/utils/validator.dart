@@ -10,8 +10,11 @@ class Validator {
     }
 
     // Check for at least two words (full name)
-    final words =
-        value.trim().split(' ').where((word) => word.isNotEmpty).toList();
+    final words = value
+        .trim()
+        .split(' ')
+        .where((word) => word.isNotEmpty)
+        .toList();
     if (words.length < 2) {
       return 'Please enter your full name (first and last name)';
     }

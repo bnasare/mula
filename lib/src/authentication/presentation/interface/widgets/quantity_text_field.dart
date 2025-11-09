@@ -385,8 +385,8 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
                       itemBuilder: (context, index) {
                         final unitEntry = filteredUnits[index];
                         return InkWell(
-                          onTap:
-                              () => _selectUnit(unitEntry.key, unitEntry.value),
+                          onTap: () =>
+                              _selectUnit(unitEntry.key, unitEntry.value),
                           child: Container(
                             width: double.infinity,
                             padding: const EdgeInsets.symmetric(
@@ -394,19 +394,17 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
                               vertical: 10,
                             ),
                             decoration: BoxDecoration(
-                              color:
-                                  unitEntry.key == _selectedUnit
-                                      ? AppColors.orange.withOpacity(0.1)
-                                      : Colors.transparent,
+                              color: unitEntry.key == _selectedUnit
+                                  ? AppColors.orange.withOpacity(0.1)
+                                  : Colors.transparent,
                             ),
                             child: Text(
                               unitEntry.key,
                               style: TextStyle(
                                 fontSize: 13,
-                                color:
-                                    unitEntry.key == _selectedUnit
-                                        ? Colors.black87
-                                        : Colors.black87,
+                                color: unitEntry.key == _selectedUnit
+                                    ? Colors.black87
+                                    : Colors.black87,
                               ),
                             ),
                           ),

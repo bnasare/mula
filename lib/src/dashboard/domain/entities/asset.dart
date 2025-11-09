@@ -33,14 +33,7 @@ class Asset extends Equatable {
 }
 
 /// Types of assets that can be held in the portfolio
-enum AssetType {
-  stocks,
-  tBills,
-  cashWallet,
-  reits,
-  mutualFunds,
-  bonds,
-}
+enum AssetType { stocks, tBills, cashWallet, reits, mutualFunds, bonds }
 
 extension AssetTypeExtension on AssetType {
   String get displayName {

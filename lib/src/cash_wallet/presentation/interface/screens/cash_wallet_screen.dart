@@ -73,7 +73,10 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MulaAppBar(title: context.localize.cashWallet, showBottomDivider: true),
+      appBar: MulaAppBar(
+        title: context.localize.cashWallet,
+        showBottomDivider: true,
+      ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -83,7 +86,10 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
             // Balance Card
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: BalanceCard(balance: 1098.00, label: context.localize.emergencyFunds),
+              child: BalanceCard(
+                balance: 1098.00,
+                label: context.localize.emergencyFunds,
+              ),
             ),
 
             const SizedBox(height: 24),

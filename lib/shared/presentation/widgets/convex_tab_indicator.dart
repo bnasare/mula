@@ -43,10 +43,9 @@ class _ConvexTopPainter extends BoxPainter {
 
   @override
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
-    final Paint paint =
-        Paint()
-          ..color = color
-          ..style = PaintingStyle.fill;
+    final Paint paint = Paint()
+      ..color = color
+      ..style = PaintingStyle.fill;
 
     final double width = configuration.size!.width;
     final double bottom = offset.dy + configuration.size!.height;

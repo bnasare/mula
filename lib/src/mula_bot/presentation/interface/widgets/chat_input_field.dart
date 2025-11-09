@@ -9,11 +9,7 @@ class ChatInputField extends StatefulWidget {
   final Function(String) onSend;
   final bool enabled;
 
-  const ChatInputField({
-    super.key,
-    required this.onSend,
-    this.enabled = true,
-  });
+  const ChatInputField({super.key, required this.onSend, this.enabled = true});
 
   @override
   State<ChatInputField> createState() => _ChatInputFieldState();
@@ -86,15 +82,11 @@ class _ChatInputFieldState extends State<ChatInputField> {
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: AppColors.border(context),
-                    ),
+                    borderSide: BorderSide(color: AppColors.border(context)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: AppColors.border(context),
-                    ),
+                    borderSide: BorderSide(color: AppColors.border(context)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
@@ -129,10 +121,7 @@ class _ChatInputFieldState extends State<ChatInputField> {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: _hasText && widget.enabled
-                      ? [
-                          const Color(0xFF4CAF50),
-                          const Color(0xFF2E7D32),
-                        ]
+                      ? [const Color(0xFF4CAF50), const Color(0xFF2E7D32)]
                       : [
                           AppColors.lightGrey(context),
                           AppColors.lightGrey(context),

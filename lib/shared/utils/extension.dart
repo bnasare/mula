@@ -12,13 +12,12 @@ extension CustomElevatedButtonExtension on ElevatedButton {
   }) {
     return ElevatedButton(
       onPressed: (loading || onPressed == null) ? null : onPressed,
-      child:
-          loading
-              ? LoadingIndicator(
-                indicatorType: Indicator.ballPulse,
-                colors: [Theme.of(context).colorScheme.primary],
-              )
-              : Text(text),
+      child: loading
+          ? LoadingIndicator(
+              indicatorType: Indicator.ballPulse,
+              colors: [Theme.of(context).colorScheme.primary],
+            )
+          : Text(text),
     );
   }
 }

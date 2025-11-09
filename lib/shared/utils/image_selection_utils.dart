@@ -172,22 +172,27 @@ class ImageSelectionUtils {
     try {
       final XFile? image = await _picker.pickImage(source: ImageSource.camera);
       if (image != null) {
-        final croppedFile =
-            isProfileImage
-                ? await cropProfileImage(image.path, context)
-                : await cropCoverImage(image.path, context);
+        final croppedFile = isProfileImage
+            ? await cropProfileImage(image.path, context)
+            : await cropCoverImage(image.path, context);
 
         if (croppedFile != null) {
           onImageSelected(File(croppedFile.path));
         } else {
           if (context.mounted) {
-            SnackBarHelper.showErrorSnackBar(context, context.localize.failedToCropImage);
+            SnackBarHelper.showErrorSnackBar(
+              context,
+              context.localize.failedToCropImage,
+            );
           }
         }
       }
     } catch (e) {
       if (context.mounted) {
-        SnackBarHelper.showErrorSnackBar(context, '${context.localize.errorCapturingImage}: $e');
+        SnackBarHelper.showErrorSnackBar(
+          context,
+          '${context.localize.errorCapturingImage}: $e',
+        );
       }
     }
   }
@@ -201,22 +206,27 @@ class ImageSelectionUtils {
     try {
       final XFile? image = await _picker.pickImage(source: ImageSource.gallery);
       if (image != null) {
-        final croppedFile =
-            isProfileImage
-                ? await cropProfileImage(image.path, context)
-                : await cropCoverImage(image.path, context);
+        final croppedFile = isProfileImage
+            ? await cropProfileImage(image.path, context)
+            : await cropCoverImage(image.path, context);
 
         if (croppedFile != null) {
           onImageSelected(File(croppedFile.path));
         } else {
           if (context.mounted) {
-            SnackBarHelper.showErrorSnackBar(context, context.localize.failedToCropImage);
+            SnackBarHelper.showErrorSnackBar(
+              context,
+              context.localize.failedToCropImage,
+            );
           }
         }
       }
     } catch (e) {
       if (context.mounted) {
-        SnackBarHelper.showErrorSnackBar(context, '${context.localize.errorSelectingImage}: $e');
+        SnackBarHelper.showErrorSnackBar(
+          context,
+          '${context.localize.errorSelectingImage}: $e',
+        );
       }
     }
   }

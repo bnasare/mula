@@ -19,12 +19,12 @@ class PortfolioSummary extends Equatable {
 
   @override
   List<Object?> get props => [
-        totalValue,
-        dailyChange,
-        dailyChangePercentage,
-        assets,
-        lastUpdated,
-      ];
+    totalValue,
+    dailyChange,
+    dailyChangePercentage,
+    assets,
+    lastUpdated,
+  ];
 
   PortfolioSummary copyWith({
     double? totalValue,
@@ -36,7 +36,8 @@ class PortfolioSummary extends Equatable {
     return PortfolioSummary(
       totalValue: totalValue ?? this.totalValue,
       dailyChange: dailyChange ?? this.dailyChange,
-      dailyChangePercentage: dailyChangePercentage ?? this.dailyChangePercentage,
+      dailyChangePercentage:
+          dailyChangePercentage ?? this.dailyChangePercentage,
       assets: assets ?? this.assets,
       lastUpdated: lastUpdated ?? this.lastUpdated,
     );

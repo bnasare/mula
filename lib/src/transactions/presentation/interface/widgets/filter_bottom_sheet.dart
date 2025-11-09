@@ -70,30 +70,50 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
           const SizedBox(height: 24),
 
           // Date Range
-          AppText.small(context.localize.dateRange, color: AppColors.primaryText(context)),
+          AppText.small(
+            context.localize.dateRange,
+            color: AppColors.primaryText(context),
+          ),
           const SizedBox(height: 12),
           Wrap(
             spacing: 8,
             runSpacing: 8,
             children: [
-              _buildFilterChip(context.localize.last30Days, _selectedDateRange, (value) {
+              _buildFilterChip(
+                context.localize.last30Days,
+                _selectedDateRange,
+                (value) {
+                  setState(() => _selectedDateRange = value);
+                },
+              ),
+              _buildFilterChip(
+                context.localize.last60Days,
+                _selectedDateRange,
+                (value) {
+                  setState(() => _selectedDateRange = value);
+                },
+              ),
+              _buildFilterChip(context.localize.thisYear, _selectedDateRange, (
+                value,
+              ) {
                 setState(() => _selectedDateRange = value);
               }),
-              _buildFilterChip(context.localize.last60Days, _selectedDateRange, (value) {
-                setState(() => _selectedDateRange = value);
-              }),
-              _buildFilterChip(context.localize.thisYear, _selectedDateRange, (value) {
-                setState(() => _selectedDateRange = value);
-              }),
-              _buildFilterChip(context.localize.customDate, _selectedDateRange, (value) {
-                setState(() => _selectedDateRange = value);
-              }),
+              _buildFilterChip(
+                context.localize.customDate,
+                _selectedDateRange,
+                (value) {
+                  setState(() => _selectedDateRange = value);
+                },
+              ),
             ],
           ),
           const SizedBox(height: 24),
 
           // Sort by
-          AppText.small(context.localize.sortBy, color: AppColors.secondaryText(context)),
+          AppText.small(
+            context.localize.sortBy,
+            color: AppColors.secondaryText(context),
+          ),
           const SizedBox(height: 12),
           Wrap(
             spacing: 8,
@@ -108,13 +128,19 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
               _buildFilterChip(context.localize.sell, _selectedSortBy, (value) {
                 setState(() => _selectedSortBy = value);
               }),
-              _buildFilterChip(context.localize.deposit, _selectedSortBy, (value) {
+              _buildFilterChip(context.localize.deposit, _selectedSortBy, (
+                value,
+              ) {
                 setState(() => _selectedSortBy = value);
               }),
-              _buildFilterChip(context.localize.withdraw, _selectedSortBy, (value) {
+              _buildFilterChip(context.localize.withdraw, _selectedSortBy, (
+                value,
+              ) {
                 setState(() => _selectedSortBy = value);
               }),
-              _buildFilterChip(context.localize.transfer, _selectedSortBy, (value) {
+              _buildFilterChip(context.localize.transfer, _selectedSortBy, (
+                value,
+              ) {
                 setState(() => _selectedSortBy = value);
               }),
             ],

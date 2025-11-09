@@ -231,10 +231,7 @@ class AppText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final defaultColor = color ?? AppColors.primaryText(context);
-    TextStyle textStyle = TextStyle(
-      color: defaultColor,
-      fontFamily: 'Raleway',
-    );
+    TextStyle textStyle = TextStyle(color: defaultColor, fontFamily: 'Raleway');
 
     switch (_type) {
       case _TextType.smallest:

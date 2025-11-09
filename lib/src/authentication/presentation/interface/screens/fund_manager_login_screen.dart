@@ -177,9 +177,7 @@ class _FundManagerLoginScreenState extends State<FundManagerLoginScreen> {
                       Expanded(
                         child: AppText.small(
                           widget.entityName,
-                          style: const TextStyle(
-                            fontWeight: FontWeight.w600,
-                          ),
+                          style: const TextStyle(fontWeight: FontWeight.w600),
                         ),
                       ),
                     ],

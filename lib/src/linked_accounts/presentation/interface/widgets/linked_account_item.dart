@@ -57,11 +57,7 @@ class LinkedAccountItem extends StatelessWidget {
         color: AppColors.offWhite(context),
         borderRadius: BorderRadius.circular(8),
       ),
-      child: Icon(
-        iconData,
-        color: iconColor,
-        size: 20,
-      ),
+      child: Icon(iconData, color: iconColor, size: 20),
     );
   }
 

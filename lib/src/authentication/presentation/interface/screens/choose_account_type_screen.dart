@@ -11,7 +11,6 @@ import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import 'select_broker_screen.dart';
 import 'select_fund_manager_screen.dart';
-import 'tell_us_about_you_screen.dart';
 
 class ChooseAccountTypeScreen extends StatefulWidget {
   const ChooseAccountTypeScreen({super.key});

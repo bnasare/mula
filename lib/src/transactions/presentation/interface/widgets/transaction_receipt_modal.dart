@@ -93,9 +93,17 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
                 _getTypeLabel(widget.activity.type),
                 true,
               ),
-              _buildDetailRow(context.localize.assetClass, _getAssetClass(), false),
+              _buildDetailRow(
+                context.localize.assetClass,
+                _getAssetClass(),
+                false,
+              ),
               if (widget.activity.shares != null)
-                _buildDetailRow(context.localize.quantity, widget.activity.shares!, true),
+                _buildDetailRow(
+                  context.localize.quantity,
+                  widget.activity.shares!,
+                  true,
+                ),
               _buildDetailRow(
                 context.localize.purchasePrice,
                 'GHS ${_getPurchasePrice().toStringAsFixed(2)}',

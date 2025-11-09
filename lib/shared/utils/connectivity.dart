@@ -21,8 +21,9 @@ class ConnectivityProvider extends ChangeNotifier {
   }
 
   void _updateConnectionStatus(List<ConnectivityResult> results) {
-    _connectionStatus =
-        results.isNotEmpty ? results.first : ConnectivityResult.none;
+    _connectionStatus = results.isNotEmpty
+        ? results.first
+        : ConnectivityResult.none;
     notifyListeners();
   }
 }

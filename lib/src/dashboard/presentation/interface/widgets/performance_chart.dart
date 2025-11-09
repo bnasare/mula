@@ -19,103 +19,103 @@ class _PerformanceChartState extends State<PerformanceChart> {
     final data = _getDataForPeriod(_selectedPeriod);
 
     return Column(
-        children: [
-          // Line chart
-          SizedBox(
-            height: 250,
-            child: LineChart(
-              LineChartData(
-                gridData: FlGridData(
-                  show: true,
-                  drawVerticalLine: false,
-                  horizontalInterval: data.maxY / 4,
-                  getDrawingHorizontalLine: (value) {
-                    return FlLine(
-                      color: AppColors.border(context),
-                      strokeWidth: 1,
-                    );
-                  },
+      children: [
+        // Line chart
+        SizedBox(
+          height: 250,
+          child: LineChart(
+            LineChartData(
+              gridData: FlGridData(
+                show: true,
+                drawVerticalLine: false,
+                horizontalInterval: data.maxY / 4,
+                getDrawingHorizontalLine: (value) {
+                  return FlLine(
+                    color: AppColors.border(context),
+                    strokeWidth: 1,
+                  );
+                },
+              ),
+              titlesData: FlTitlesData(
+                show: true,
+                rightTitles: const AxisTitles(
+                  sideTitles: SideTitles(showTitles: false),
                 ),
-                titlesData: FlTitlesData(
-                  show: true,
-                  rightTitles: const AxisTitles(
-                    sideTitles: SideTitles(showTitles: false),
+                topTitles: const AxisTitles(
+                  sideTitles: SideTitles(showTitles: false),
+                ),
+                leftTitles: AxisTitles(
+                  sideTitles: SideTitles(
+                    showTitles: true,
+                    reservedSize: 40,
+                    interval: data.maxY / 4,
+                    getTitlesWidget: (value, meta) {
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 8.0),
+                        child: AppText.smallest(
+                          '\$${(value / 1000).toStringAsFixed(0)}k',
+                          color: AppColors.secondaryText(context),
+                        ),
+                      );
+                    },
                   ),
-                  topTitles: const AxisTitles(
-                    sideTitles: SideTitles(showTitles: false),
-                  ),
-                  leftTitles: AxisTitles(
-                    sideTitles: SideTitles(
-                      showTitles: true,
-                      reservedSize: 40,
-                      interval: data.maxY / 4,
-                      getTitlesWidget: (value, meta) {
+                ),
+                bottomTitles: AxisTitles(
+                  sideTitles: SideTitles(
+                    showTitles: true,
+                    reservedSize: 30,
+                    interval: (data.spots.length / 3).floorToDouble(),
+                    getTitlesWidget: (value, meta) {
+                      final index = value.toInt();
+                      if (index >= 0 && index < data.labels.length) {
                         return Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
+                          padding: const EdgeInsets.only(top: 8.0),
                           child: AppText.smallest(
-                            '\$${(value / 1000).toStringAsFixed(0)}k',
+                            data.labels[index],
                             color: AppColors.secondaryText(context),
                           ),
                         );
-                      },
-                    ),
+                      }
+                      return const SizedBox.shrink();
+                    },
                   ),
-                  bottomTitles: AxisTitles(
-                    sideTitles: SideTitles(
-                      showTitles: true,
-                      reservedSize: 30,
-                      interval: (data.spots.length / 3).floorToDouble(),
-                      getTitlesWidget: (value, meta) {
-                        final index = value.toInt();
-                        if (index >= 0 && index < data.labels.length) {
-                          return Padding(
-                            padding: const EdgeInsets.only(top: 8.0),
-                            child: AppText.smallest(
-                              data.labels[index],
-                              color: AppColors.secondaryText(context),
-                            ),
-                          );
-                        }
-                        return const SizedBox.shrink();
-                      },
+                ),
+              ),
+              borderData: FlBorderData(show: false),
+              minX: 0,
+              maxX: (data.spots.length - 1).toDouble(),
+              minY: data.minY,
+              maxY: data.maxY,
+              lineBarsData: [
+                LineChartBarData(
+                  spots: data.spots,
+                  isCurved: true,
+                  color: const Color(0xFF4CAF50),
+                  barWidth: 3,
+                  isStrokeCapRound: true,
+                  dotData: const FlDotData(show: false),
+                  belowBarData: BarAreaData(
+                    show: true,
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        const Color(0xFF4CAF50).withOpacity(0.3),
+                        const Color(0xFF4CAF50).withOpacity(0.1),
+                        const Color(0xFF4CAF50).withOpacity(0.0),
+                      ],
                     ),
                   ),
                 ),
-                borderData: FlBorderData(show: false),
-                minX: 0,
-                maxX: (data.spots.length - 1).toDouble(),
-                minY: data.minY,
-                maxY: data.maxY,
-                lineBarsData: [
-                  LineChartBarData(
-                    spots: data.spots,
-                    isCurved: true,
-                    color: const Color(0xFF4CAF50),
-                    barWidth: 3,
-                    isStrokeCapRound: true,
-                    dotData: const FlDotData(show: false),
-                    belowBarData: BarAreaData(
-                      show: true,
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [
-                          const Color(0xFF4CAF50).withOpacity(0.3),
-                          const Color(0xFF4CAF50).withOpacity(0.1),
-                          const Color(0xFF4CAF50).withOpacity(0.0),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              ],
             ),
           ),
-          const SizedBox(height: 24),
+        ),
+        const SizedBox(height: 24),
 
-          // Time period selector
-          _buildTimePeriodSelector(),
-        ],
+        // Time period selector
+        _buildTimePeriodSelector(),
+      ],
     );
   }
 
@@ -216,7 +216,11 @@ class _PerformanceChartState extends State<PerformanceChart> {
     }
   }
 
-  List<FlSpot> _generateDummyData(int points, double startValue, double endValue) {
+  List<FlSpot> _generateDummyData(
+    int points,
+    double startValue,
+    double endValue,
+  ) {
     // TODO: Replace with real API data
     final spots = <FlSpot>[];
     final increment = (endValue - startValue) / points;

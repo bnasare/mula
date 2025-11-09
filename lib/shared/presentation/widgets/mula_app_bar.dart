@@ -111,7 +111,8 @@ class MulaAppBar extends StatelessWidget implements PreferredSizeWidget {
                     scale: context.responsiveValue(mobile: 0.6),
                     child: MulaBackButton(
                       iconSize: context.responsiveValue(mobile: 24.0),
-                      onPressed: onBackPressed ??
+                      onPressed:
+                          onBackPressed ??
                           () => NavigationHelper.navigateBack(context),
                     ),
                   )

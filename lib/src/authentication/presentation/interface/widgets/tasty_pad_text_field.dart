@@ -181,15 +181,14 @@ class TastyPadTextField extends StatelessWidget {
                         LengthLimitingTextInputFormatter(maxLength),
                     ],
                 // Hide the built-in counter when we show our custom one
-                buildCounter:
-                    showTitleWithCounter
-                        ? (
-                          BuildContext context, {
-                          required int currentLength,
-                          required bool isFocused,
-                          required int? maxLength,
-                        }) => null
-                        : null,
+                buildCounter: showTitleWithCounter
+                    ? (
+                        BuildContext context, {
+                        required int currentLength,
+                        required bool isFocused,
+                        required int? maxLength,
+                      }) => null
+                    : null,
                 onFieldSubmitted: (_) => onSubmitted?.call(),
                 decoration: InputDecoration(
                   hintText: hintText,
@@ -219,8 +218,9 @@ class TastyPadTextField extends StatelessWidget {
                         2, // Adjust vertical padding to maintain height
                   ),
                   // When using the custom suffix icon placement, we don't want the built-in one
-                  suffixIcon:
-                      suffixIcon != null ? const SizedBox(width: 40) : null,
+                  suffixIcon: suffixIcon != null
+                      ? const SizedBox(width: 40)
+                      : null,
                 ),
               ),
             ),

@@ -14,10 +14,7 @@ import 'linked_brokers_screen.dart';
 class CsdAccountNumberScreen extends StatefulWidget {
   final bool fromLinkedAccounts;
 
-  const CsdAccountNumberScreen({
-    super.key,
-    this.fromLinkedAccounts = false,
-  });
+  const CsdAccountNumberScreen({super.key, this.fromLinkedAccounts = false});
 
   @override
   State<CsdAccountNumberScreen> createState() => _CsdAccountNumberScreenState();

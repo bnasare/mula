@@ -21,11 +21,7 @@ class LinkedAccountsScreen extends StatelessWidget {
       'name': 'Ashfield Investment Managers Ltd',
       'type': 'CIS',
     },
-    {
-      'id': 'crystal',
-      'name': 'Crystal Capital & Investment',
-      'type': 'CIS',
-    },
+    {'id': 'crystal', 'name': 'Crystal Capital & Investment', 'type': 'CIS'},
     {
       'id': 'ecocapital',
       'name': 'EcoCapital Investment Management Limited',
@@ -35,16 +31,8 @@ class LinkedAccountsScreen extends StatelessWidget {
 
   // Dummy data for CSD accounts (Securities/Capital)
   static const List<Map<String, String>> _csdAccounts = [
-    {
-      'id': 'brassica',
-      'name': 'Brassica Capital Limited',
-      'type': 'CSD',
-    },
-    {
-      'id': 'cidan',
-      'name': 'Cidan Investments Limited',
-      'type': 'CSD',
-    },
+    {'id': 'brassica', 'name': 'Brassica Capital Limited', 'type': 'CSD'},
+    {'id': 'cidan', 'name': 'Cidan Investments Limited', 'type': 'CSD'},
     {
       'id': 'databank',
       'name': 'Databank Asset Management Services Ltd',
@@ -54,16 +42,8 @@ class LinkedAccountsScreen extends StatelessWidget {
 
   // Dummy data for Mobile Money accounts
   static const List<Map<String, String>> _mobileMoneyAccounts = [
-    {
-      'id': 'mtn_1',
-      'network': 'MTN',
-      'number': '+233 556 715 5578',
-    },
-    {
-      'id': 'telecel_1',
-      'network': 'Telecel',
-      'number': '+233 50 223 5001',
-    },
+    {'id': 'mtn_1', 'network': 'MTN', 'number': '+233 556 715 5578'},
+    {'id': 'telecel_1', 'network': 'Telecel', 'number': '+233 50 223 5001'},
   ];
 
   // Dummy data for Bank accounts

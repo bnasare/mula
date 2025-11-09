@@ -26,14 +26,13 @@ class PasswordRuleWidget extends StatelessWidget {
             color: isActive ? Colors.green : Colors.transparent,
             border: isActive ? null : Border.all(color: Colors.grey),
           ),
-          child:
-              isActive
-                  ? Icon(
-                    CupertinoIcons.check_mark,
-                    color: Colors.white,
-                    size: context.responsiveValue(mobile: 10),
-                  )
-                  : null,
+          child: isActive
+              ? Icon(
+                  CupertinoIcons.check_mark,
+                  color: Colors.white,
+                  size: context.responsiveValue(mobile: 10),
+                )
+              : null,
         ),
         SizedBox(width: context.responsiveSpacing(mobile: 8)),
         Expanded(

@@ -40,9 +40,8 @@ class LoadingListView extends StatelessWidget {
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
         scrollDirection: Axis.vertical,
-        separatorBuilder:
-            (context, index) =>
-                SizedBox(height: context.responsiveSpacing(mobile: 16)),
+        separatorBuilder: (context, index) =>
+            SizedBox(height: context.responsiveSpacing(mobile: 16)),
         itemCount: 15,
         itemBuilder: (context, index) {
           return Shimmer(

@@ -153,7 +153,8 @@ class _CreateAccountIdentificationDetailsScreenState
               // Ghana Card Number
               MulaTextField(
                 controller: _idNumberController,
-                labelText: '${context.localize.ghanaCard} ${context.localize.number}',
+                labelText:
+                    '${context.localize.ghanaCard} ${context.localize.number}',
                 hintText: 'Eg: GHA-2346-250234',
                 suffixIcon: Icon(
                   IconlyLight.paper,

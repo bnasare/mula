@@ -9,10 +9,7 @@ import '../../../domain/entities/asset.dart';
 class AssetDonutChart extends StatefulWidget {
   final List<Asset> assets;
 
-  const AssetDonutChart({
-    super.key,
-    required this.assets,
-  });
+  const AssetDonutChart({super.key, required this.assets});
 
   @override
   State<AssetDonutChart> createState() => _AssetDonutChartState();
@@ -131,7 +128,10 @@ class _LegendItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final currencyFormat = NumberFormat.currency(symbol: 'GHS ', decimalDigits: 0);
+    final currencyFormat = NumberFormat.currency(
+      symbol: 'GHS ',
+      decimalDigits: 0,
+    );
 
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -140,10 +140,7 @@ class _LegendItem extends StatelessWidget {
         Container(
           width: 12,
           height: 12,
-          decoration: BoxDecoration(
-            color: color,
-            shape: BoxShape.circle,
-          ),
+          decoration: BoxDecoration(color: color, shape: BoxShape.circle),
         ),
         const SizedBox(width: 8),
 
@@ -152,10 +149,7 @@ class _LegendItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            AppText.smallest(
-              name,
-              color: AppColors.primaryText(context),
-            ),
+            AppText.smallest(name, color: AppColors.primaryText(context)),
             AppText.smallest(
               '${percentage.toInt()}% (${currencyFormat.format(value)})',
               color: AppColors.secondaryText(context),

@@ -109,16 +109,9 @@ class _NavBarItem extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              isActive ? iconBold : iconLight,
-              color: color,
-              size: 20,
-            ),
+            Icon(isActive ? iconBold : iconLight, color: color, size: 20),
             const SizedBox(height: 4),
-            AppText.smallest(
-              label,
-              color: color,
-            ),
+            AppText.smallest(label, color: color),
           ],
         ),
       ),
