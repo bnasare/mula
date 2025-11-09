@@ -73,9 +73,7 @@ class _AddPinScreenState extends State<AddPinScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.withProgress(
-        backgroundColor: AppColors.white(context),
         title: context.localize.security,
         currentStep: 4,
         totalSteps: 11,

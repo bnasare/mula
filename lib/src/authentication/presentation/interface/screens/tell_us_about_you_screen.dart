@@ -95,9 +95,7 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.white(context),
         appBar: MulaAppBarHelpers.withProgress(
-          backgroundColor: AppColors.white(context),
           title: context.localize.tellUsAboutYou,
           currentStep: 5,
           totalSteps: 11,

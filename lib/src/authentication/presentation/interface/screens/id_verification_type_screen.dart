@@ -34,9 +34,7 @@ class _IdVerificationTypeScreenState extends State<IdVerificationTypeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.withProgress(
-        backgroundColor: AppColors.white(context),
         title: context.localize.idVerification,
         currentStep: 6,
         totalSteps: 11,

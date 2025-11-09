@@ -226,10 +226,8 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.white(context),
         appBar: widget.flowType == OtpFlowType.signup
             ? MulaAppBarHelpers.withProgress(
-                backgroundColor: AppColors.white(context),
                 title: context.localize.otpVerification,
                 currentStep: 2,
                 totalSteps: 11,
@@ -237,7 +235,6 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
                 onBackPressed: () => Navigator.pop(context),
               )
             : MulaAppBarHelpers.simple(
-                backgroundColor: AppColors.white(context),
                 title: context.localize.otpVerification,
                 onBackPressed: () => Navigator.pop(context),
               ),

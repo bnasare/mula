@@ -44,7 +44,6 @@ class _SignInScreenState extends State<SignInScreen> {
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
         appBar: MulaAppBarHelpers.simple(
-          backgroundColor: AppColors.white(context),
           title: context.localize.accessYourMulaAccount,
           onBackPressed: () {
             if (Navigator.canPop(context)) {

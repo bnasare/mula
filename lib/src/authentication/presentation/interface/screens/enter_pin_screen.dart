@@ -42,9 +42,7 @@ class _EnterPinScreenState extends State<EnterPinScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.simple(
-        backgroundColor: AppColors.white(context),
         title: '',
         onBackPressed: () => Navigator.pop(context),
       ),

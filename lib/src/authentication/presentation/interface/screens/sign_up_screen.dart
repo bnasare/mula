@@ -52,7 +52,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
         appBar: MulaAppBarHelpers.withProgress(
-          backgroundColor: AppColors.white(context),
           title: context.localize.letsGetYouStarted,
           currentStep: 1,
           totalSteps: 11,

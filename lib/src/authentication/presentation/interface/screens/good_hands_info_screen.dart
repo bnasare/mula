@@ -35,15 +35,12 @@ class GoodHandsInfoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
       appBar: useNormalAppBar || isCisFlow
           ? MulaAppBarHelpers.simple(
-              backgroundColor: AppColors.white(context),
               onBackPressed: () => Navigator.pop(context),
               title: '',
             )
           : MulaAppBarHelpers.withProgress(
-              backgroundColor: AppColors.white(context),
               title: 'Almost There',
               currentStep: 9,
               totalSteps: 11,

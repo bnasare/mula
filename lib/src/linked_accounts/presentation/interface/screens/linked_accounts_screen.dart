@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/presentation/widgets/confirmation_dialog.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/presentation/widgets/snackbar.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
@@ -66,56 +68,21 @@ class LinkedAccountsScreen extends StatelessWidget {
   ) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: AppColors.white(context),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: Text(
-          context.localize.unlinkAccount,
-          style: TextStyle(
-            fontSize: context.responsiveFontSize(mobile: 18.0),
-            fontWeight: FontWeight.w600,
-            color: AppColors.primaryText(context),
-          ),
-        ),
-        content: Text(
-          context.localize.areYouSureYouWantToUnlink,
-          style: TextStyle(
-            fontSize: context.responsiveFontSize(mobile: 14.0),
-            color: AppColors.secondaryText(context),
-          ),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: Text(
-              context.localize.cancel,
-              style: TextStyle(
-                color: AppColors.secondaryText(context),
-                fontSize: context.responsiveFontSize(mobile: 14.0),
-              ),
-            ),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              // TODO: Implement actual unlinking logic
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(context.localize.accountUnlinkedSuccessfully),
-                  backgroundColor: AppColors.appPrimary,
-                ),
-              );
-            },
-            child: Text(
-              context.localize.unlinkAccount,
-              style: TextStyle(
-                color: Colors.red,
-                fontSize: context.responsiveFontSize(mobile: 14.0),
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
-        ],
+      builder: (context) => ConfirmationDialog(
+        title: context.localize.unlinkAccount,
+        description: context.localize.areYouSureYouWantToUnlink,
+        primaryButtonLabel: context.localize.unlinkAccount,
+        secondaryButtonLabel: context.localize.cancel,
+        isDangerousAction: true,
+        onPrimaryAction: () {
+          Navigator.pop(context);
+          // TODO: Implement actual unlinking logic
+          SnackBarHelper.showSuccessSnackBar(
+            context,
+            context.localize.accountUnlinkedSuccessfully,
+          );
+        },
+        onSecondaryAction: () => Navigator.pop(context),
       ),
     );
   }
@@ -131,16 +98,15 @@ class LinkedAccountsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.withActions(
         title: context.localize.linkedAccounts,
         onBackPressed: () => NavigationHelper.navigateBack(context),
-        showDivider: false,
+        showDivider: true,
         actions: [
           // Add Account button
           Padding(
             padding: EdgeInsets.only(
-              right: context.responsiveValue(mobile: 16.0),
+              right: context.responsiveValue(mobile: 8.0),
             ),
             child: TextButton(
               onPressed: () => _onAddAccount(context),

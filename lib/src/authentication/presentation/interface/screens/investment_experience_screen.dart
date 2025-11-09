@@ -32,9 +32,7 @@ class _InvestmentExperienceScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.withProgress(
-        backgroundColor: AppColors.white(context),
         title: context.localize.investmentExperience,
         currentStep: 8,
         totalSteps: 11,

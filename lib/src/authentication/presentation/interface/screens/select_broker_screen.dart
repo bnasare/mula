@@ -86,9 +86,7 @@ class _SelectBrokerScreenState extends State<SelectBrokerScreen> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.white(context),
         appBar: MulaAppBarHelpers.withProgress(
-          backgroundColor: AppColors.white(context),
           title: context.localize.brokers,
           currentStep: 6,
           totalSteps: 11,

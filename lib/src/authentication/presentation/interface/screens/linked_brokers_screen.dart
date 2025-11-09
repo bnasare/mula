@@ -82,9 +82,7 @@ class _LinkedBrokersScreenState extends State<LinkedBrokersScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.simple(
-        backgroundColor: AppColors.white(context),
         title: context.localize.weFoundYourBrokers,
         onBackPressed: () => Navigator.pop(context),
       ),

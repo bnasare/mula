@@ -41,9 +41,7 @@ class _ChooseAccountTypeScreenState extends State<ChooseAccountTypeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.withProgress(
-        backgroundColor: AppColors.white(context),
         title: context.localize.chooseAccountType,
         currentStep: 5,
         totalSteps: 11,

@@ -52,7 +52,7 @@ class MulaAppBar extends StatelessWidget implements PreferredSizeWidget {
   /// Custom height for the AppBar (defaults to kToolbarHeight)
   final double? height;
 
-  /// Whether to show a bottom divider (default: false)
+  /// Whether to show a bottom divider (default: true)
   final bool showBottomDivider;
 
   const MulaAppBar({
@@ -69,7 +69,7 @@ class MulaAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.elevation = 0,
     this.scrolledUnderElevation = 0,
     this.height,
-    this.showBottomDivider = false,
+    this.showBottomDivider = true,
   });
 
   @override
@@ -224,12 +224,14 @@ extension MulaAppBarHelpers on MulaAppBar {
     bool centerTitle = false,
     VoidCallback? onBackPressed,
     Color? backgroundColor,
+    bool showDivider = true,
   }) {
     return MulaAppBar(
       title: title,
       centerTitle: centerTitle,
       onBackPressed: onBackPressed,
       backgroundColor: backgroundColor,
+      showBottomDivider: showDivider,
     );
   }
 }

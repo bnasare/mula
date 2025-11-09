@@ -117,9 +117,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.white(context),
         appBar: MulaAppBarHelpers.withProgress(
-          backgroundColor: AppColors.white(context),
           title: context.localize.personalDetails,
           currentStep: 2,
           totalSteps: 11,

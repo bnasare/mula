@@ -53,9 +53,7 @@ class _CsdAccountNumberScreenState extends State<CsdAccountNumberScreen> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.white(context),
         appBar: MulaAppBarHelpers.simple(
-          backgroundColor: AppColors.white(context),
           title: widget.fromLinkedAccounts
               ? context.localize.csdAccountSimple
               : context.localize.csdAccount,

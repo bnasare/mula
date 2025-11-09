@@ -120,9 +120,7 @@ class _CreateAccountIdentificationDetailsScreenState
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.white(context),
         appBar: MulaAppBarHelpers.withProgress(
-          backgroundColor: AppColors.white(context),
           title: context.localize.identificationDetails,
           currentStep: 3,
           totalSteps: 11,

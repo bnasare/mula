@@ -122,9 +122,7 @@ class _FundManagerLoginScreenState extends State<FundManagerLoginScreen> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.white(context),
         appBar: MulaAppBarHelpers.simple(
-          backgroundColor: AppColors.white(context),
           title: context.localize.signIn,
           onBackPressed: () => Navigator.pop(context),
         ),

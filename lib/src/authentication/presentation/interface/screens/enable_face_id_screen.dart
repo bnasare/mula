@@ -20,9 +20,7 @@ class EnableFaceIdScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
       appBar: MulaAppBarHelpers.withProgress(
-        backgroundColor: AppColors.white(context),
         title: context.localize.security,
         currentStep: 3,
         totalSteps: 11,

@@ -27,8 +27,6 @@ class WarningModal extends StatelessWidget {
 
     return Dialog(
       shape: ContinuousRectangleBorder(borderRadius: BorderRadius.circular(50)),
-      backgroundColor: AppColors.white(context),
-      surfaceTintColor: AppColors.white(context),
       child: Padding(
         padding: EdgeInsets.only(
           top: context.responsiveValue(mobile: 10.0),

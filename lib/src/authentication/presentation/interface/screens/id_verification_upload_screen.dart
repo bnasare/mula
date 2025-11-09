@@ -148,9 +148,7 @@ class _IdVerificationUploadScreenState
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.white(context),
         appBar: MulaAppBarHelpers.withProgress(
-          backgroundColor: AppColors.white(context),
           title: context.localize.idVerification,
           currentStep: 7,
           totalSteps: 11,
