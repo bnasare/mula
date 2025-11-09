@@ -397,8 +397,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get linkAccountsDescription => '这有助于我们在一个地方向您展示您拥有的一切';
 
   @override
-  String get linkMoreAccountsDescription =>
-      'Link more accounts to get the full picture of your portfolio';
+  String get linkMoreAccountsDescription => '关联更多账户以全面了解您的投资组合';
 
   @override
   String get csdAccount => '我有 CSD 账户';
@@ -413,18 +412,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get cisAccountDescription => '来自 Databank、EDC 等基金管理公司';
 
   @override
-  String get csdAccountSimple => 'CSD Account';
+  String get csdAccountSimple => 'CSD账户';
 
   @override
-  String get csdAccountDescriptionSimple =>
-      'Securities like stocks, bonds and T-bills';
+  String get csdAccountDescriptionSimple => '股票、债券和国债等证券';
 
   @override
-  String get cisAccountSimple => 'CIS Account';
+  String get cisAccountSimple => 'CIS账户';
 
   @override
-  String get cisAccountDescriptionSimple =>
-      'Fund Managers like Databank, EDC, etc.';
+  String get cisAccountDescriptionSimple => 'Databank、EDC等基金管理公司';
 
   @override
   String get dontHaveAccountDescription => '您可以创建账户并立即开始投资';
@@ -874,58 +871,56 @@ class AppLocalizationsZh extends AppLocalizations {
   String get withdrawal => '提款';
 
   @override
-  String get linkedAccounts => 'Linked Accounts';
+  String get linkedAccounts => '已关联账户';
 
   @override
-  String get cisAccounts => 'CIS Accounts';
+  String get cisAccounts => 'CIS账户';
 
   @override
-  String get csdAccounts => 'CSD Accounts';
+  String get csdAccounts => 'CSD账户';
 
   @override
-  String get mobileMoneyAccounts => 'Mobile Money Accounts';
+  String get mobileMoneyAccounts => '移动支付账户';
 
   @override
-  String get bankAccounts => 'Bank Accounts';
+  String get bankAccounts => '银行账户';
 
   @override
-  String get addAccount => 'Add Account';
+  String get addAccount => '添加账户';
 
   @override
-  String get accountManagement => 'Account Management';
+  String get accountManagement => '账户管理';
 
   @override
-  String get unlinkAccount => 'Unlink Account';
+  String get unlinkAccount => '取消关联账户';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => '查看详情';
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => '取消';
 
   @override
-  String get areYouSureYouWantToUnlink =>
-      'Are you sure you want to unlink this account?';
+  String get areYouSureYouWantToUnlink => '您确定要取消关联此账户吗？';
 
   @override
-  String get accountUnlinkedSuccessfully => 'Account unlinked successfully';
+  String get accountUnlinkedSuccessfully => '账户取消关联成功';
 
   @override
-  String get manageAccount => 'Manage Account';
+  String get manageAccount => '管理账户';
 
   @override
-  String get enterAccountInformation => 'Enter Account Information';
+  String get enterAccountInformation => '输入账户信息';
 
   @override
-  String get enterAccountNumber => 'Enter Account Number';
+  String get enterAccountNumber => '输入账户号码';
 
   @override
-  String get accountLinkedSuccessfully => 'Account Linked Successfully';
+  String get accountLinkedSuccessfully => '账户关联成功';
 
   @override
-  String get accountLinkedSuccessDescription =>
-      'Your account has been successfully linked to MULA';
+  String get accountLinkedSuccessDescription => '您的账户已成功关联到MULA';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => '返回';
 }

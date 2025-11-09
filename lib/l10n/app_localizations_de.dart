@@ -421,7 +421,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get linkMoreAccountsDescription =>
-      'Link more accounts to get the full picture of your portfolio';
+      'Verknüpfen Sie weitere Konten, um ein vollständiges Bild Ihres Portfolios zu erhalten';
 
   @override
   String get csdAccount => 'Ich habe ein CSD-Konto';
@@ -438,18 +438,18 @@ class AppLocalizationsDe extends AppLocalizations {
       'Von Fondsmanagern wie Databank, EDC usw.';
 
   @override
-  String get csdAccountSimple => 'CSD Account';
+  String get csdAccountSimple => 'CSD-Konto';
 
   @override
   String get csdAccountDescriptionSimple =>
-      'Securities like stocks, bonds and T-bills';
+      'Wertpapiere wie Aktien, Anleihen und Schatzwechsel';
 
   @override
-  String get cisAccountSimple => 'CIS Account';
+  String get cisAccountSimple => 'CIS-Konto';
 
   @override
   String get cisAccountDescriptionSimple =>
-      'Fund Managers like Databank, EDC, etc.';
+      'Fondsmanager wie Databank, EDC usw.';
 
   @override
   String get dontHaveAccountDescription =>
@@ -910,58 +910,58 @@ class AppLocalizationsDe extends AppLocalizations {
   String get withdrawal => 'Abhebung';
 
   @override
-  String get linkedAccounts => 'Linked Accounts';
+  String get linkedAccounts => 'Verknüpfte Konten';
 
   @override
-  String get cisAccounts => 'CIS Accounts';
+  String get cisAccounts => 'CIS-Konten';
 
   @override
-  String get csdAccounts => 'CSD Accounts';
+  String get csdAccounts => 'CSD-Konten';
 
   @override
-  String get mobileMoneyAccounts => 'Mobile Money Accounts';
+  String get mobileMoneyAccounts => 'Mobile-Money-Konten';
 
   @override
-  String get bankAccounts => 'Bank Accounts';
+  String get bankAccounts => 'Bankkonten';
 
   @override
-  String get addAccount => 'Add Account';
+  String get addAccount => 'Konto hinzufügen';
 
   @override
-  String get accountManagement => 'Account Management';
+  String get accountManagement => 'Kontoverwaltung';
 
   @override
-  String get unlinkAccount => 'Unlink Account';
+  String get unlinkAccount => 'Konto entfernen';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => 'Details anzeigen';
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'Abbrechen';
 
   @override
   String get areYouSureYouWantToUnlink =>
-      'Are you sure you want to unlink this account?';
+      'Möchten Sie dieses Konto wirklich entfernen?';
 
   @override
-  String get accountUnlinkedSuccessfully => 'Account unlinked successfully';
+  String get accountUnlinkedSuccessfully => 'Konto erfolgreich entfernt';
 
   @override
-  String get manageAccount => 'Manage Account';
+  String get manageAccount => 'Konto verwalten';
 
   @override
-  String get enterAccountInformation => 'Enter Account Information';
+  String get enterAccountInformation => 'Kontoinformationen eingeben';
 
   @override
-  String get enterAccountNumber => 'Enter Account Number';
+  String get enterAccountNumber => 'Kontonummer eingeben';
 
   @override
-  String get accountLinkedSuccessfully => 'Account Linked Successfully';
+  String get accountLinkedSuccessfully => 'Konto erfolgreich verknüpft';
 
   @override
   String get accountLinkedSuccessDescription =>
-      'Your account has been successfully linked to MULA';
+      'Ihr Konto wurde erfolgreich mit MULA verknüpft';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => 'Zurück';
 }

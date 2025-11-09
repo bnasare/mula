@@ -403,7 +403,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get linkMoreAccountsDescription =>
-      'Link more accounts to get the full picture of your portfolio';
+      'より多くのアカウントをリンクして、ポートフォリオの全体像を把握しましょう';
 
   @override
   String get csdAccount => 'CSDアカウントを持っています';
@@ -418,18 +418,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String get cisAccountDescription => 'Databank、EDCなどのファンドマネージャーから';
 
   @override
-  String get csdAccountSimple => 'CSD Account';
+  String get csdAccountSimple => 'CSDアカウント';
 
   @override
-  String get csdAccountDescriptionSimple =>
-      'Securities like stocks, bonds and T-bills';
+  String get csdAccountDescriptionSimple => '株式、債券、国債などの証券';
 
   @override
-  String get cisAccountSimple => 'CIS Account';
+  String get cisAccountSimple => 'CISアカウント';
 
   @override
-  String get cisAccountDescriptionSimple =>
-      'Fund Managers like Databank, EDC, etc.';
+  String get cisAccountDescriptionSimple => 'Databank、EDCなどのファンドマネージャー';
 
   @override
   String get dontHaveAccountDescription => 'アカウントを作成して今日から投資を始めることができます';
@@ -881,58 +879,56 @@ class AppLocalizationsJa extends AppLocalizations {
   String get withdrawal => '出金';
 
   @override
-  String get linkedAccounts => 'Linked Accounts';
+  String get linkedAccounts => 'リンクされたアカウント';
 
   @override
-  String get cisAccounts => 'CIS Accounts';
+  String get cisAccounts => 'CISアカウント';
 
   @override
-  String get csdAccounts => 'CSD Accounts';
+  String get csdAccounts => 'CSDアカウント';
 
   @override
-  String get mobileMoneyAccounts => 'Mobile Money Accounts';
+  String get mobileMoneyAccounts => 'モバイルマネーアカウント';
 
   @override
-  String get bankAccounts => 'Bank Accounts';
+  String get bankAccounts => '銀行口座';
 
   @override
-  String get addAccount => 'Add Account';
+  String get addAccount => 'アカウントを追加';
 
   @override
-  String get accountManagement => 'Account Management';
+  String get accountManagement => 'アカウント管理';
 
   @override
-  String get unlinkAccount => 'Unlink Account';
+  String get unlinkAccount => 'アカウントのリンク解除';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => '詳細を表示';
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'キャンセル';
 
   @override
-  String get areYouSureYouWantToUnlink =>
-      'Are you sure you want to unlink this account?';
+  String get areYouSureYouWantToUnlink => 'このアカウントのリンクを解除してもよろしいですか？';
 
   @override
-  String get accountUnlinkedSuccessfully => 'Account unlinked successfully';
+  String get accountUnlinkedSuccessfully => 'アカウントのリンク解除が完了しました';
 
   @override
-  String get manageAccount => 'Manage Account';
+  String get manageAccount => 'アカウントを管理';
 
   @override
-  String get enterAccountInformation => 'Enter Account Information';
+  String get enterAccountInformation => 'アカウント情報を入力';
 
   @override
-  String get enterAccountNumber => 'Enter Account Number';
+  String get enterAccountNumber => 'アカウント番号を入力';
 
   @override
-  String get accountLinkedSuccessfully => 'Account Linked Successfully';
+  String get accountLinkedSuccessfully => 'アカウントのリンクが完了しました';
 
   @override
-  String get accountLinkedSuccessDescription =>
-      'Your account has been successfully linked to MULA';
+  String get accountLinkedSuccessDescription => 'あなたのアカウントはMULAに正常にリンクされました';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => '戻る';
 }

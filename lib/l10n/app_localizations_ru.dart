@@ -420,7 +420,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get linkMoreAccountsDescription =>
-      'Link more accounts to get the full picture of your portfolio';
+      'Привяжите больше счетов, чтобы получить полную картину вашего портфеля';
 
   @override
   String get csdAccount => 'У меня есть счет CSD';
@@ -437,18 +437,18 @@ class AppLocalizationsRu extends AppLocalizations {
       'От управляющих фондами, таких как Databank, EDC и т. д.';
 
   @override
-  String get csdAccountSimple => 'CSD Account';
+  String get csdAccountSimple => 'Счет CSD';
 
   @override
   String get csdAccountDescriptionSimple =>
-      'Securities like stocks, bonds and T-bills';
+      'Ценные бумаги, такие как акции, облигации и казначейские векселя';
 
   @override
-  String get cisAccountSimple => 'CIS Account';
+  String get cisAccountSimple => 'Счет CIS';
 
   @override
   String get cisAccountDescriptionSimple =>
-      'Fund Managers like Databank, EDC, etc.';
+      'Управляющие фондами, такие как Databank, EDC и т. д.';
 
   @override
   String get dontHaveAccountDescription =>
@@ -908,58 +908,58 @@ class AppLocalizationsRu extends AppLocalizations {
   String get withdrawal => 'Вывод средств';
 
   @override
-  String get linkedAccounts => 'Linked Accounts';
+  String get linkedAccounts => 'Привязанные Счета';
 
   @override
-  String get cisAccounts => 'CIS Accounts';
+  String get cisAccounts => 'Счета CIS';
 
   @override
-  String get csdAccounts => 'CSD Accounts';
+  String get csdAccounts => 'Счета CSD';
 
   @override
-  String get mobileMoneyAccounts => 'Mobile Money Accounts';
+  String get mobileMoneyAccounts => 'Счета Mobile Money';
 
   @override
-  String get bankAccounts => 'Bank Accounts';
+  String get bankAccounts => 'Банковские Счета';
 
   @override
-  String get addAccount => 'Add Account';
+  String get addAccount => 'Добавить Счет';
 
   @override
-  String get accountManagement => 'Account Management';
+  String get accountManagement => 'Управление Счетами';
 
   @override
-  String get unlinkAccount => 'Unlink Account';
+  String get unlinkAccount => 'Отвязать Счет';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => 'Посмотреть Детали';
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'Отмена';
 
   @override
   String get areYouSureYouWantToUnlink =>
-      'Are you sure you want to unlink this account?';
+      'Вы уверены, что хотите отвязать этот счет?';
 
   @override
-  String get accountUnlinkedSuccessfully => 'Account unlinked successfully';
+  String get accountUnlinkedSuccessfully => 'Счет успешно отвязан';
 
   @override
-  String get manageAccount => 'Manage Account';
+  String get manageAccount => 'Управление Счетом';
 
   @override
-  String get enterAccountInformation => 'Enter Account Information';
+  String get enterAccountInformation => 'Введите Информацию о Счете';
 
   @override
-  String get enterAccountNumber => 'Enter Account Number';
+  String get enterAccountNumber => 'Введите Номер Счета';
 
   @override
-  String get accountLinkedSuccessfully => 'Account Linked Successfully';
+  String get accountLinkedSuccessfully => 'Счет Успешно Привязан';
 
   @override
   String get accountLinkedSuccessDescription =>
-      'Your account has been successfully linked to MULA';
+      'Ваш счет был успешно привязан к MULA';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => 'Назад';
 }
