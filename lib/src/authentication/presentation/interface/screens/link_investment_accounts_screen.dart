@@ -9,12 +9,18 @@ import '../../../../../shared/presentation/widgets/selectable_option_card.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
+import '../../../../linked_accounts/presentation/interface/screens/add_account_details_screen.dart';
 import 'csd_account_number_screen.dart';
 import 'personal_details_screen.dart';
 import 'select_fund_manager_screen.dart';
 
 class LinkInvestmentAccountsScreen extends StatefulWidget {
-  const LinkInvestmentAccountsScreen({super.key});
+  final bool fromLinkedAccounts;
+
+  const LinkInvestmentAccountsScreen({
+    super.key,
+    this.fromLinkedAccounts = false,
+  });
 
   @override
   State<LinkInvestmentAccountsScreen> createState() =>
@@ -29,10 +35,28 @@ class _LinkInvestmentAccountsScreenState
     if (_selectedAccountType != null) {
       if (_selectedAccountType == 'cis') {
         // Navigate to Select Fund Manager screen for CIS account
-        NavigationHelper.navigateTo(context, const SelectFundManagerScreen());
+        NavigationHelper.navigateTo(
+          context,
+          SelectFundManagerScreen(fromLinkedAccounts: widget.fromLinkedAccounts),
+        );
       } else if (_selectedAccountType == 'csd') {
         // Navigate to CSD Account Number screen for CSD account
-        NavigationHelper.navigateTo(context, const CsdAccountNumberScreen());
+        NavigationHelper.navigateTo(
+          context,
+          CsdAccountNumberScreen(fromLinkedAccounts: widget.fromLinkedAccounts),
+        );
+      } else if (_selectedAccountType == 'bank') {
+        // Navigate to Add Account Details screen for Bank
+        NavigationHelper.navigateTo(
+          context,
+          const AddAccountDetailsScreen(accountType: 'bank'),
+        );
+      } else if (_selectedAccountType == 'mobile_money') {
+        // Navigate to Add Account Details screen for Mobile Money
+        NavigationHelper.navigateTo(
+          context,
+          const AddAccountDetailsScreen(accountType: 'mobile_money'),
+        );
       } else {
         // User doesn't have an account - navigate to Personal Details screen
         NavigationHelper.navigateTo(context, const PersonalDetailsScreen());
@@ -43,15 +67,18 @@ class _LinkInvestmentAccountsScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white(context),
-      appBar: MulaAppBarHelpers.withProgress(
-        backgroundColor: AppColors.white(context),
-        title: context.localize.linkInvestmentAccounts,
-        currentStep: 10,
-        totalSteps: 11,
-        progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
-        onBackPressed: () => Navigator.pop(context),
-      ),
+      appBar: widget.fromLinkedAccounts
+          ? MulaAppBarHelpers.simple(
+              title: context.localize.linkAccount,
+              onBackPressed: () => Navigator.pop(context),
+            )
+          : MulaAppBarHelpers.withProgress(
+              title: context.localize.linkInvestmentAccounts,
+              currentStep: 10,
+              totalSteps: 11,
+              progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
+              onBackPressed: () => Navigator.pop(context),
+            ),
       body: SafeArea(
         child: Padding(
           padding: context.responsivePadding(
@@ -61,7 +88,9 @@ class _LinkInvestmentAccountsScreenState
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AppText.smaller(
-                context.localize.linkAccountsDescription,
+                widget.fromLinkedAccounts
+                    ? context.localize.linkMoreAccountsDescription
+                    : context.localize.linkAccountsDescription,
                 color: AppColors.secondaryText(context),
               ),
               const AppSpacer.vLarge(),
@@ -69,8 +98,12 @@ class _LinkInvestmentAccountsScreenState
               SelectableOptionCard(
                 value: 'csd',
                 selectedValue: _selectedAccountType,
-                title: context.localize.csdAccount,
-                description: context.localize.csdAccountDescription,
+                title: widget.fromLinkedAccounts
+                    ? context.localize.csdAccountSimple
+                    : context.localize.csdAccount,
+                description: widget.fromLinkedAccounts
+                    ? context.localize.csdAccountDescriptionSimple
+                    : context.localize.csdAccountDescription,
                 onTap: () => setState(() => _selectedAccountType = 'csd'),
               ),
               const AppSpacer.vShort(),
@@ -78,11 +111,38 @@ class _LinkInvestmentAccountsScreenState
               SelectableOptionCard(
                 value: 'cis',
                 selectedValue: _selectedAccountType,
-                title: context.localize.cisAccount,
-                description: context.localize.cisAccountDescription,
+                title: widget.fromLinkedAccounts
+                    ? context.localize.cisAccountSimple
+                    : context.localize.cisAccount,
+                description: widget.fromLinkedAccounts
+                    ? context.localize.cisAccountDescriptionSimple
+                    : context.localize.cisAccountDescription,
                 onTap: () => setState(() => _selectedAccountType = 'cis'),
               ),
               const AppSpacer.vShort(),
+              // Mobile Money option (only show when from linked accounts)
+              if (widget.fromLinkedAccounts) ...[
+                SelectableOptionCard(
+                  value: 'mobile_money',
+                  selectedValue: _selectedAccountType,
+                  title: context.localize.mobileMoneyDeposit,
+                  description: 'Link your mobile money account',
+                  onTap: () =>
+                      setState(() => _selectedAccountType = 'mobile_money'),
+                ),
+                const AppSpacer.vShort(),
+              ],
+              // Bank Account option (only show when from linked accounts)
+              if (widget.fromLinkedAccounts) ...[
+                SelectableOptionCard(
+                  value: 'bank',
+                  selectedValue: _selectedAccountType,
+                  title: context.localize.bankAccount,
+                  description: 'Link your bank account',
+                  onTap: () => setState(() => _selectedAccountType = 'bank'),
+                ),
+                const AppSpacer.vShort(),
+              ],
               // Don't have an account option
               SelectableOptionCard(
                 value: 'none',

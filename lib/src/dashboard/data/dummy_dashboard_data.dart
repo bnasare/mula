@@ -119,7 +119,7 @@ class DummyDashboardData {
     await Future.delayed(const Duration(milliseconds: 300));
 
     return {
-      'name': 'Phil Kyei',
+      'name': 'Nana Asare',
       'email': 'phil.kyei@example.com',
       'profileImage': null, // No image for now
     };

@@ -415,6 +415,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'This helps us show everything you own, in one place';
 
   @override
+  String get linkMoreAccountsDescription =>
+      'Link more accounts to get the full picture of your portfolio';
+
+  @override
   String get csdAccount => 'I have a CSD account';
 
   @override
@@ -427,6 +431,20 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get cisAccountDescription =>
       'From Fund Managers like Databank, EDC, etc.';
+
+  @override
+  String get csdAccountSimple => 'CSD Account';
+
+  @override
+  String get csdAccountDescriptionSimple =>
+      'Securities like stocks, bonds and T-bills';
+
+  @override
+  String get cisAccountSimple => 'CIS Account';
+
+  @override
+  String get cisAccountDescriptionSimple =>
+      'Fund Managers like Databank, EDC, etc.';
 
   @override
   String get dontHaveAccountDescription =>
@@ -884,4 +902,60 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get withdrawal => 'Withdrawal';
+
+  @override
+  String get linkedAccounts => 'Linked Accounts';
+
+  @override
+  String get cisAccounts => 'CIS Accounts';
+
+  @override
+  String get csdAccounts => 'CSD Accounts';
+
+  @override
+  String get mobileMoneyAccounts => 'Mobile Money Accounts';
+
+  @override
+  String get bankAccounts => 'Bank Accounts';
+
+  @override
+  String get addAccount => 'Add Account';
+
+  @override
+  String get accountManagement => 'Account Management';
+
+  @override
+  String get unlinkAccount => 'Unlink Account';
+
+  @override
+  String get viewDetails => 'View Details';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get areYouSureYouWantToUnlink =>
+      'Are you sure you want to unlink this account?';
+
+  @override
+  String get accountUnlinkedSuccessfully => 'Account unlinked successfully';
+
+  @override
+  String get manageAccount => 'Manage Account';
+
+  @override
+  String get enterAccountInformation => 'Enter Account Information';
+
+  @override
+  String get enterAccountNumber => 'Enter Account Number';
+
+  @override
+  String get accountLinkedSuccessfully => 'Account Linked Successfully';
+
+  @override
+  String get accountLinkedSuccessDescription =>
+      'Your account has been successfully linked to MULA';
+
+  @override
+  String get goBack => 'Go Back';
 }

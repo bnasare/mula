@@ -9,6 +9,7 @@ import '../../../../cash_wallet/presentation/interface/screens/cash_wallet_scree
 import '../../../../dashboard/presentation/interface/widgets/action_button.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
 import '../../../../deposit/presentation/interface/screens/deposit_account_selection_screen.dart';
+import '../../../../linked_accounts/presentation/interface/screens/linked_accounts_screen.dart';
 import '../../../../withdraw/presentation/interface/screens/withdraw_account_selection_screen.dart';
 
 /// Action buttons section for deposit, withdraw, trade, view portfolio
@@ -69,10 +70,9 @@ class ActionButtonsSection extends StatelessWidget {
             icon: Icons.link,
             label: context.localize.linkAccount,
             onTap: () {
-              // TODO: Navigate to link account screen
-              SnackBarHelper.showInfoSnackBar(
+              NavigationHelper.navigateTo(
                 context,
-                context.localize.comingSoon,
+                const LinkedAccountsScreen(),
               );
             },
           ),

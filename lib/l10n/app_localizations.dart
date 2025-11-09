@@ -884,6 +884,12 @@ abstract class AppLocalizations {
   /// **'This helps us show everything you own, in one place'**
   String get linkAccountsDescription;
 
+  /// No description provided for @linkMoreAccountsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Link more accounts to get the full picture of your portfolio'**
+  String get linkMoreAccountsDescription;
+
   /// No description provided for @csdAccount.
   ///
   /// In en, this message translates to:
@@ -907,6 +913,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'From Fund Managers like Databank, EDC, etc.'**
   String get cisAccountDescription;
+
+  /// No description provided for @csdAccountSimple.
+  ///
+  /// In en, this message translates to:
+  /// **'CSD Account'**
+  String get csdAccountSimple;
+
+  /// No description provided for @csdAccountDescriptionSimple.
+  ///
+  /// In en, this message translates to:
+  /// **'Securities like stocks, bonds and T-bills'**
+  String get csdAccountDescriptionSimple;
+
+  /// No description provided for @cisAccountSimple.
+  ///
+  /// In en, this message translates to:
+  /// **'CIS Account'**
+  String get cisAccountSimple;
+
+  /// No description provided for @cisAccountDescriptionSimple.
+  ///
+  /// In en, this message translates to:
+  /// **'Fund Managers like Databank, EDC, etc.'**
+  String get cisAccountDescriptionSimple;
 
   /// No description provided for @dontHaveAccountDescription.
   ///
@@ -1795,6 +1825,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Withdrawal'**
   String get withdrawal;
+
+  /// No description provided for @linkedAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Linked Accounts'**
+  String get linkedAccounts;
+
+  /// No description provided for @cisAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'CIS Accounts'**
+  String get cisAccounts;
+
+  /// No description provided for @csdAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'CSD Accounts'**
+  String get csdAccounts;
+
+  /// No description provided for @mobileMoneyAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Mobile Money Accounts'**
+  String get mobileMoneyAccounts;
+
+  /// No description provided for @bankAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Bank Accounts'**
+  String get bankAccounts;
+
+  /// No description provided for @addAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Account'**
+  String get addAccount;
+
+  /// No description provided for @accountManagement.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Management'**
+  String get accountManagement;
+
+  /// No description provided for @unlinkAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlink Account'**
+  String get unlinkAccount;
+
+  /// No description provided for @viewDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'View Details'**
+  String get viewDetails;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @areYouSureYouWantToUnlink.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to unlink this account?'**
+  String get areYouSureYouWantToUnlink;
+
+  /// No description provided for @accountUnlinkedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Account unlinked successfully'**
+  String get accountUnlinkedSuccessfully;
+
+  /// No description provided for @manageAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage Account'**
+  String get manageAccount;
+
+  /// No description provided for @enterAccountInformation.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Account Information'**
+  String get enterAccountInformation;
+
+  /// No description provided for @enterAccountNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Account Number'**
+  String get enterAccountNumber;
+
+  /// No description provided for @accountLinkedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Linked Successfully'**
+  String get accountLinkedSuccessfully;
+
+  /// No description provided for @accountLinkedSuccessDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has been successfully linked to MULA'**
+  String get accountLinkedSuccessDescription;
+
+  /// No description provided for @goBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Go Back'**
+  String get goBack;
 }
 
 class _AppLocalizationsDelegate

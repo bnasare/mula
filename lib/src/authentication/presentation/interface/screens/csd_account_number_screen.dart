@@ -12,7 +12,12 @@ import '../widgets/mula_text_field.dart';
 import 'linked_brokers_screen.dart';
 
 class CsdAccountNumberScreen extends StatefulWidget {
-  const CsdAccountNumberScreen({super.key});
+  final bool fromLinkedAccounts;
+
+  const CsdAccountNumberScreen({
+    super.key,
+    this.fromLinkedAccounts = false,
+  });
 
   @override
   State<CsdAccountNumberScreen> createState() => _CsdAccountNumberScreenState();
@@ -38,7 +43,10 @@ class _CsdAccountNumberScreenState extends State<CsdAccountNumberScreen> {
       // Navigate to Linked Brokers screen (first time - hide bottom buttons)
       NavigationHelper.navigateTo(
         context,
-        const LinkedBrokersScreen(isFirstTime: true),
+        LinkedBrokersScreen(
+          isFirstTime: true,
+          fromLinkedAccounts: widget.fromLinkedAccounts,
+        ),
       );
     }
   }
@@ -51,7 +59,9 @@ class _CsdAccountNumberScreenState extends State<CsdAccountNumberScreen> {
         backgroundColor: AppColors.white(context),
         appBar: MulaAppBarHelpers.simple(
           backgroundColor: AppColors.white(context),
-          title: context.localize.csdAccount,
+          title: widget.fromLinkedAccounts
+              ? context.localize.csdAccountSimple
+              : context.localize.csdAccount,
           onBackPressed: () => Navigator.pop(context),
         ),
         body: SafeArea(
@@ -99,29 +109,30 @@ class _CsdAccountNumberScreenState extends State<CsdAccountNumberScreen> {
                       : null,
                 ),
                 const AppSpacer.vLarge(),
-                // Don't have an account link
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    AppText.smaller(
-                      '${context.localize.dontHaveAccount} ',
-                      color: AppColors.secondaryText(context),
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        // TODO: Navigate to account creation flow
-                        print('Navigate to create account');
-                      },
-                      child: AppText.smaller(
-                        context.localize.createOne,
-                        style: TextStyle(
-                          color: AppColors.appPrimary,
-                          fontWeight: FontWeight.w600,
+                // Don't have an account link (only show if not from linked accounts)
+                if (!widget.fromLinkedAccounts)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      AppText.smaller(
+                        '${context.localize.dontHaveAccount} ',
+                        color: AppColors.secondaryText(context),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          // TODO: Navigate to account creation flow
+                          print('Navigate to create account');
+                        },
+                        child: AppText.smaller(
+                          context.localize.createOne,
+                          style: TextStyle(
+                            color: AppColors.appPrimary,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
+                    ],
+                  ),
               ],
             ),
           ),

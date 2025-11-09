@@ -65,7 +65,7 @@ class HomeAppBar extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             AppText.small(
-                              'Welcome back👋',
+                              'Welcome back 👋',
                               color: AppColors.secondaryText(context),
                             ),
                             const SizedBox(height: 2),

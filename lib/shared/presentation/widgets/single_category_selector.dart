@@ -125,7 +125,7 @@ class _SingleCategorySelectorState extends State<SingleCategorySelector> {
                   contentPadding: context.responsivePadding(
                     mobile: const EdgeInsets.symmetric(
                       horizontal: 12,
-                      vertical: 16,
+                      vertical: 13,
                     ),
                   ),
                   border: InputBorder.none,
@@ -144,7 +144,7 @@ class _SingleCategorySelectorState extends State<SingleCategorySelector> {
                           color: Colors.grey.shade400,
                         ),
                   constraints: BoxConstraints(
-                    maxHeight: context.responsiveValue(mobile: 45.0),
+                    maxHeight: context.responsiveValue(mobile: 40.0),
                   ),
                 ),
                 style: TextStyle(

@@ -22,8 +22,13 @@ class Broker {
 
 class LinkedBrokersScreen extends StatefulWidget {
   final bool isFirstTime;
+  final bool fromLinkedAccounts;
 
-  const LinkedBrokersScreen({super.key, this.isFirstTime = true});
+  const LinkedBrokersScreen({
+    super.key,
+    this.isFirstTime = true,
+    this.fromLinkedAccounts = false,
+  });
 
   @override
   State<LinkedBrokersScreen> createState() => _LinkedBrokersScreenState();
@@ -51,6 +56,7 @@ class _LinkedBrokersScreenState extends State<LinkedBrokersScreen> {
       context,
       FundManagerLoginScreen.csdBroker(
         broker: broker,
+        fromLinkedAccounts: widget.fromLinkedAccounts,
         onAuthSuccess: () {
           // Mark broker as connected when returning from successful auth
           setState(() {

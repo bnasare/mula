@@ -22,6 +22,7 @@ class FundManagerLoginScreen extends StatefulWidget {
   final String? entityLogoAsset;
   final LoginFlowType flowType;
   final VoidCallback? onAuthSuccess;
+  final bool fromLinkedAccounts;
 
   const FundManagerLoginScreen({
     super.key,
@@ -30,12 +31,14 @@ class FundManagerLoginScreen extends StatefulWidget {
     this.entityLogoAsset,
     this.flowType = LoginFlowType.cis,
     this.onAuthSuccess,
+    this.fromLinkedAccounts = false,
   });
 
   /// Constructor for CIS fund manager flow
   factory FundManagerLoginScreen.cisFundManager({
     Key? key,
     required FundManager fundManager,
+    bool fromLinkedAccounts = false,
   }) {
     return FundManagerLoginScreen(
       key: key,
@@ -43,6 +46,7 @@ class FundManagerLoginScreen extends StatefulWidget {
       entityName: fundManager.name,
       entityLogoAsset: fundManager.logoAsset,
       flowType: LoginFlowType.cis,
+      fromLinkedAccounts: fromLinkedAccounts,
     );
   }
 
@@ -51,6 +55,7 @@ class FundManagerLoginScreen extends StatefulWidget {
     Key? key,
     required Broker broker,
     VoidCallback? onAuthSuccess,
+    bool fromLinkedAccounts = false,
   }) {
     return FundManagerLoginScreen(
       key: key,
@@ -59,6 +64,7 @@ class FundManagerLoginScreen extends StatefulWidget {
       entityLogoAsset: broker.logoAsset,
       flowType: LoginFlowType.csd,
       onAuthSuccess: onAuthSuccess,
+      fromLinkedAccounts: fromLinkedAccounts,
     );
   }
 
@@ -91,13 +97,16 @@ class _FundManagerLoginScreenState extends State<FundManagerLoginScreen> {
       if (widget.flowType == LoginFlowType.cis) {
         NavigationHelper.navigateTo(
           context,
-          const OtpVerificationScreen.cisAccount(),
+          OtpVerificationScreen.cisAccount(
+            fromLinkedAccounts: widget.fromLinkedAccounts,
+          ),
         );
       } else {
         // CSD flow
         NavigationHelper.navigateTo(
           context,
           OtpVerificationScreen.csdAccount(
+            fromLinkedAccounts: widget.fromLinkedAccounts,
             onVerificationSuccess: () {
               // Call the success callback when OTP is verified
               widget.onAuthSuccess?.call();

@@ -100,27 +100,27 @@ class NotificationListTile extends StatelessWidget {
     switch (type) {
       case NotificationType.success:
         return _NotificationConfig(
-          icon: IconlyBold.chart,
+          icon: IconlyLight.chart,
           color: const Color(0xFF10B981), // Green
         );
       case NotificationType.warning:
         return _NotificationConfig(
-          icon: IconlyBold.danger,
+          icon: IconlyLight.danger,
           color: const Color(0xFFEF4444), // Red
         );
       case NotificationType.deposit:
         return _NotificationConfig(
-          icon: IconlyBold.download,
+          icon: IconlyLight.download,
           color: const Color(0xFF3B82F6), // Blue
         );
       case NotificationType.withdrawal:
         return _NotificationConfig(
-          icon: IconlyBold.upload,
+          icon: IconlyLight.upload,
           color: const Color(0xFF8B5CF6), // Purple
         );
       case NotificationType.info:
         return _NotificationConfig(
-          icon: IconlyBold.notification,
+          icon: IconlyLight.notification,
           color: const Color(0xFF6B7280), // Grey
         );
     }

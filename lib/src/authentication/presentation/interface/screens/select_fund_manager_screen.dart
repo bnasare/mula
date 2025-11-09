@@ -22,10 +22,12 @@ class FundManager {
 
 class SelectFundManagerScreen extends StatefulWidget {
   final bool isCreateAccountFlow;
+  final bool fromLinkedAccounts;
 
   const SelectFundManagerScreen({
     super.key,
     this.isCreateAccountFlow = false,
+    this.fromLinkedAccounts = false,
   });
 
   @override
@@ -89,7 +91,10 @@ class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
       // Link account flow - go to login screen
       NavigationHelper.navigateTo(
         context,
-        FundManagerLoginScreen.cisFundManager(fundManager: manager),
+        FundManagerLoginScreen.cisFundManager(
+          fundManager: manager,
+          fromLinkedAccounts: widget.fromLinkedAccounts,
+        ),
       );
     }
   }
@@ -99,29 +104,33 @@ class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.white(context),
-        appBar: MulaAppBarHelpers.withProgress(
-          backgroundColor: AppColors.white(context),
-          title: context.localize.selectFundManager,
-          currentStep: 6,
-          totalSteps: 11,
-          progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
-          onBackPressed: () => Navigator.pop(context),
-        ),
+        appBar: widget.fromLinkedAccounts
+            ? MulaAppBarHelpers.simple(
+                title: context.localize.selectFundManager,
+                onBackPressed: () => Navigator.pop(context),
+              )
+            : MulaAppBarHelpers.withProgress(
+                title: context.localize.selectFundManager,
+                currentStep: 6,
+                totalSteps: 11,
+                progressColor: AppColors.appPrimary.withValues(alpha: 0.7),
+                onBackPressed: () => Navigator.pop(context),
+              ),
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Description
-              Padding(
-                padding: context.responsivePadding(
-                  mobile: const EdgeInsets.all(16.0),
+              if (!widget.fromLinkedAccounts)
+                Padding(
+                  padding: context.responsivePadding(
+                    mobile: const EdgeInsets.all(16.0),
+                  ),
+                  child: AppText.smaller(
+                    context.localize.selectFundManagerDescription,
+                    color: AppColors.secondaryText(context),
+                  ),
                 ),
-                child: AppText.smaller(
-                  context.localize.selectFundManagerDescription,
-                  color: AppColors.secondaryText(context),
-                ),
-              ),
               // Search bar
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),

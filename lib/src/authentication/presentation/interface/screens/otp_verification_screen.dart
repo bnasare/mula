@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
+import '../../../../../shared/presentation/widgets/confetti_success_screen.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
@@ -12,6 +13,7 @@ import '../../../../../shared/presentation/widgets/otp_input_widget.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
+import '../../../../linked_accounts/presentation/interface/screens/linked_accounts_screen.dart';
 import 'enable_face_id_screen.dart';
 import 'good_hands_info_screen.dart';
 import 'reset_password_screen.dart';
@@ -21,33 +23,46 @@ enum OtpFlowType {
   forgotPassword,
   cisAccount,
   csdAccount,
+  accountLinking,
 }
 
 class OtpVerificationScreen extends StatefulWidget {
   final OtpFlowType flowType;
   final VoidCallback? onVerificationSuccess;
+  final bool fromLinkedAccounts;
 
   const OtpVerificationScreen({
     super.key,
     this.flowType = OtpFlowType.signup,
     this.onVerificationSuccess,
+    this.fromLinkedAccounts = false,
   });
 
   /// Convenience constructor for backwards compatibility
   const OtpVerificationScreen.forgotPassword({super.key})
       : flowType = OtpFlowType.forgotPassword,
-        onVerificationSuccess = null;
+        onVerificationSuccess = null,
+        fromLinkedAccounts = false;
 
   /// Constructor for CIS account flow
-  const OtpVerificationScreen.cisAccount({super.key})
-      : flowType = OtpFlowType.cisAccount,
+  const OtpVerificationScreen.cisAccount({
+    super.key,
+    this.fromLinkedAccounts = false,
+  })  : flowType = OtpFlowType.cisAccount,
         onVerificationSuccess = null;
 
   /// Constructor for CSD account flow
   const OtpVerificationScreen.csdAccount({
     super.key,
     this.onVerificationSuccess,
+    this.fromLinkedAccounts = false,
   }) : flowType = OtpFlowType.csdAccount;
+
+  /// Constructor for account linking flow (bank/mobile money)
+  const OtpVerificationScreen.accountLinking({super.key})
+      : flowType = OtpFlowType.accountLinking,
+        onVerificationSuccess = null,
+        fromLinkedAccounts = false;
 
   @override
   State<OtpVerificationScreen> createState() => _OtpVerificationScreenState();
@@ -100,23 +115,102 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
           NavigationHelper.navigateTo(context, const ResetPasswordScreen());
           break;
         case OtpFlowType.cisAccount:
-          // Navigate to Good Hands screen with CIS flow variant
-          NavigationHelper.navigateTo(
-            context,
-            const GoodHandsInfoScreen.cisFlow(),
-          );
+          if (widget.fromLinkedAccounts) {
+            // Navigate to success screen for account linking
+            NavigationHelper.navigateTo(
+              context,
+              ConfettiSuccessScreen(
+                title: context.localize.accountLinkedSuccessfully,
+                description: context.localize.accountLinkedSuccessDescription,
+                primaryButtonText: context.localize.goBack,
+                onPrimaryButtonTap: () {
+                  // Pop 4 times to go back to Link Investment Accounts screen
+                  Navigator.pop(context); // Pop success screen
+                  Navigator.pop(context); // Pop OTP screen
+                  Navigator.pop(context); // Pop Login screen
+                  Navigator.pop(context); // Pop Select Fund Manager screen
+                },
+                secondaryButtonText: context.localize.addAnother,
+                onSecondaryButtonTap: () {
+                  // Pop 3 times to go back to Select Fund Manager screen
+                  Navigator.pop(context); // Pop success screen
+                  Navigator.pop(context); // Pop OTP screen
+                  Navigator.pop(context); // Pop Login screen
+                },
+              ),
+            );
+          } else {
+            // Original onboarding flow behavior
+            // Navigate to Good Hands screen with CIS flow variant
+            NavigationHelper.navigateTo(
+              context,
+              const GoodHandsInfoScreen.cisFlow(),
+            );
+          }
           break;
         case OtpFlowType.csdAccount:
-          // Call the success callback
-          widget.onVerificationSuccess?.call();
-          // Pop OTP screen
-          NavigationHelper.navigateBack(context);
-          // Pop Login screen to get back to Brokers screen
-          NavigationHelper.navigateBack(context);
+          if (widget.fromLinkedAccounts) {
+            // Navigate to success screen for account linking
+            NavigationHelper.navigateTo(
+              context,
+              ConfettiSuccessScreen(
+                title: context.localize.accountLinkedSuccessfully,
+                description: context.localize.accountLinkedSuccessDescription,
+                primaryButtonText: context.localize.goBack,
+                onPrimaryButtonTap: () {
+                  // Pop 5 times to go back to Linked Accounts screen
+                  Navigator.pop(context); // Pop success screen
+                  Navigator.pop(context); // Pop OTP screen
+                  Navigator.pop(context); // Pop Login screen
+                  Navigator.pop(context); // Pop Linked Brokers screen
+                  Navigator.pop(context); // Pop CSD Account Number screen
+                },
+                secondaryButtonText: context.localize.addAnother,
+                onSecondaryButtonTap: () {
+                  // Pop 4 times to go back to CSD Account Number screen
+                  Navigator.pop(context); // Pop success screen
+                  Navigator.pop(context); // Pop OTP screen
+                  Navigator.pop(context); // Pop Login screen
+                  Navigator.pop(context); // Pop Linked Brokers screen
+                },
+              ),
+            );
+          } else {
+            // Original onboarding flow behavior
+            // Call the success callback
+            widget.onVerificationSuccess?.call();
+            // Pop OTP screen
+            NavigationHelper.navigateBack(context);
+            // Pop Login screen to get back to Brokers screen
+            NavigationHelper.navigateBack(context);
+          }
           break;
         case OtpFlowType.signup:
           // Navigate to Enable Face ID screen (normal signup flow)
           NavigationHelper.navigateTo(context, const EnableFaceIdScreen());
+          break;
+        case OtpFlowType.accountLinking:
+          // Navigate to success screen for account linking
+          NavigationHelper.navigateTo(
+            context,
+            ConfettiSuccessScreen(
+              title: context.localize.accountLinkedSuccessfully,
+              description: context.localize.accountLinkedSuccessDescription,
+              primaryButtonText: context.localize.goBack,
+              onPrimaryButtonTap: () {
+                // Pop 3 times to go back to Link Investment Accounts screen
+                Navigator.pop(context); // Pop success screen
+                Navigator.pop(context); // Pop OTP screen
+                Navigator.pop(context); // Pop Add Account Details screen
+              },
+              secondaryButtonText: context.localize.addAnother,
+              onSecondaryButtonTap: () {
+                // Pop 2 times to go back to Add Account Details screen
+                Navigator.pop(context); // Pop success screen
+                Navigator.pop(context); // Pop OTP screen
+              },
+            ),
+          );
           break;
       }
     }
