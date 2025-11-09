@@ -21,10 +21,12 @@ class _PerformanceChartState extends State<PerformanceChart> {
     return Column(
       children: [
         // Line chart
-        SizedBox(
-          height: 250,
-          child: LineChart(
-            LineChartData(
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: SizedBox(
+            height: 250,
+            child: LineChart(
+              LineChartData(
               gridData: FlGridData(
                 show: true,
                 drawVerticalLine: false,
@@ -64,14 +66,21 @@ class _PerformanceChartState extends State<PerformanceChart> {
                   sideTitles: SideTitles(
                     showTitles: true,
                     reservedSize: 30,
-                    interval: (data.spots.length / 3).floorToDouble(),
+                    interval: data.labels.length > 1
+                        ? (data.spots.length - 1) / (data.labels.length - 1)
+                        : 1,
                     getTitlesWidget: (value, meta) {
-                      final index = value.toInt();
-                      if (index >= 0 && index < data.labels.length) {
+                      // Map the x-axis value to the correct label index
+                      final labelInterval = data.labels.length > 1
+                          ? (data.spots.length - 1) / (data.labels.length - 1)
+                          : 1;
+                      final labelIndex = (value / labelInterval).round();
+
+                      if (labelIndex >= 0 && labelIndex < data.labels.length) {
                         return Padding(
                           padding: const EdgeInsets.only(top: 8.0),
                           child: AppText.smallest(
-                            data.labels[index],
+                            data.labels[labelIndex],
                             color: AppColors.secondaryText(context),
                           ),
                         );
@@ -91,7 +100,7 @@ class _PerformanceChartState extends State<PerformanceChart> {
                   spots: data.spots,
                   isCurved: true,
                   color: const Color(0xFF4CAF50),
-                  barWidth: 3,
+                  barWidth: 1,
                   isStrokeCapRound: true,
                   dotData: const FlDotData(show: false),
                   belowBarData: BarAreaData(
@@ -111,10 +120,14 @@ class _PerformanceChartState extends State<PerformanceChart> {
             ),
           ),
         ),
+        ),
         const SizedBox(height: 24),
 
         // Time period selector
-        _buildTimePeriodSelector(),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: _buildTimePeriodSelector(),
+        ),
       ],
     );
   }
@@ -224,12 +237,18 @@ class _PerformanceChartState extends State<PerformanceChart> {
     // TODO: Replace with real API data
     final spots = <FlSpot>[];
     final increment = (endValue - startValue) / points;
+    final range = endValue - startValue;
 
     for (int i = 0; i < points; i++) {
-      // Add some randomness to make it look realistic
+      // Create more irregular, realistic looking data
       final baseValue = startValue + (increment * i);
-      final variation = (increment * 0.3) * (0.5 - (i % 3) / 6);
-      spots.add(FlSpot(i.toDouble(), baseValue + variation));
+
+      // Use sine and cosine waves for natural-looking fluctuations
+      final wave1 = (range * 0.08) * (i % 7 - 3.5) / 3.5;
+      final wave2 = (range * 0.05) * (i % 5 - 2.5) / 2.5;
+      final wave3 = (range * 0.03) * (i % 3 - 1.5) / 1.5;
+
+      spots.add(FlSpot(i.toDouble(), baseValue + wave1 + wave2 + wave3));
     }
 
     return spots;

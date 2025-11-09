@@ -159,8 +159,8 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
             children: [
               _buildStatusChip(
                 context.localize.completed,
-                const Color(0xFF4CAF50),
-                const Color(0xFFE8F5E9),
+                AppColors.activitySuccess,
+                AppColors.activitySuccessLight,
                 _selectedStatus,
                 (value) {
                   setState(() => _selectedStatus = value);
@@ -168,8 +168,8 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
               ),
               _buildStatusChip(
                 context.localize.pending,
-                const Color(0xFF9C27B0),
-                const Color(0xFFF3E5F5),
+                AppColors.activityPending,
+                AppColors.activityPendingLight,
                 _selectedStatus,
                 (value) {
                   setState(() => _selectedStatus = value);
@@ -177,8 +177,8 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
               ),
               _buildStatusChip(
                 context.localize.cancelled,
-                const Color(0xFFEF5350),
-                const Color(0xFFFFEBEE),
+                AppColors.activityError,
+                AppColors.activityErrorLight,
                 _selectedStatus,
                 (value) {
                   setState(() => _selectedStatus = value);

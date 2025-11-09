@@ -1,6 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../domain/entities/asset.dart';
@@ -23,28 +24,31 @@ class _AssetDonutChartState extends State<AssetDonutChart> {
     return Column(
       children: [
         // Chart
-        SizedBox(
-          height: 220,
-          child: PieChart(
-            PieChartData(
-              pieTouchData: PieTouchData(
-                touchCallback: (FlTouchEvent event, pieTouchResponse) {
-                  setState(() {
-                    if (!event.isInterestedForInteractions ||
-                        pieTouchResponse == null ||
-                        pieTouchResponse.touchedSection == null) {
-                      touchedIndex = -1;
-                      return;
-                    }
-                    touchedIndex =
-                        pieTouchResponse.touchedSection!.touchedSectionIndex;
-                  });
-                },
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: SizedBox(
+            height: 220,
+            child: PieChart(
+              PieChartData(
+                pieTouchData: PieTouchData(
+                  touchCallback: (FlTouchEvent event, pieTouchResponse) {
+                    setState(() {
+                      if (!event.isInterestedForInteractions ||
+                          pieTouchResponse == null ||
+                          pieTouchResponse.touchedSection == null) {
+                        touchedIndex = -1;
+                        return;
+                      }
+                      touchedIndex =
+                          pieTouchResponse.touchedSection!.touchedSectionIndex;
+                    });
+                  },
+                ),
+                borderData: FlBorderData(show: false),
+                sectionsSpace: 2,
+                centerSpaceRadius: 60,
+                sections: _getSections(),
               ),
-              borderData: FlBorderData(show: false),
-              sectionsSpace: 2,
-              centerSpaceRadius: 60,
-              sections: _getSections(),
             ),
           ),
         ),
@@ -79,18 +83,26 @@ class _AssetDonutChartState extends State<AssetDonutChart> {
   }
 
   Widget _buildLegend() {
-    return Wrap(
-      spacing: 16,
-      runSpacing: 12,
-      alignment: WrapAlignment.center,
-      children: widget.assets.map((asset) {
-        return _LegendItem(
-          color: _getAssetColor(asset.type),
-          name: asset.name,
-          percentage: asset.percentage,
-          value: asset.value,
-        );
-      }).toList(),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: Row(
+          children: widget.assets.asMap().entries.map((entry) {
+            final asset = entry.value;
+            final isLast = entry.key == widget.assets.length - 1;
+            return Padding(
+              padding: EdgeInsets.only(right: isLast ? 0 : 16),
+              child: _LegendItem(
+                color: _getAssetColor(asset.type),
+                name: asset.name,
+                percentage: asset.percentage,
+                value: asset.value,
+              ),
+            );
+          }).toList(),
+        ),
+      ),
     );
   }
 
@@ -133,30 +145,45 @@ class _LegendItem extends StatelessWidget {
       decimalDigits: 0,
     );
 
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        // Color indicator
-        Container(
-          width: 12,
-          height: 12,
-          decoration: BoxDecoration(color: color, shape: BoxShape.circle),
-        ),
-        const SizedBox(width: 8),
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+      decoration: BoxDecoration(
+        color: AppColors.green.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppColors.border(context), width: 0.5),
+        boxShadow: [
+          BoxShadow(
+            color: color.withValues(alpha: 0.1),
+            blurRadius: 6,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // Color indicator
+          Container(
+            width: 12,
+            height: 12,
+            decoration: BoxDecoration(color: color, shape: BoxShape.circle),
+          ),
+          const SizedBox(width: 8),
 
-        // Name and percentage
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            AppText.smallest(name, color: AppColors.primaryText(context)),
-            AppText.smallest(
-              '${percentage.toInt()}% (${currencyFormat.format(value)})',
-              color: AppColors.secondaryText(context),
-            ),
-          ],
-        ),
-      ],
+          // Name and percentage
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              AppText.smallest(name, color: AppColors.primaryText(context)),
+              AppText.smallest(
+                '${percentage.toInt()}% (${currencyFormat.format(value)})',
+                color: AppColors.secondaryText(context),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
@@ -29,6 +30,7 @@ class RecentActivitiesSection extends StatelessWidget {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const AppSpacer.vShort(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -39,8 +41,8 @@ class RecentActivitiesSection extends StatelessWidget {
                     color: AppColors.primaryText(context),
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
+                GestureDetector(
+                  onTap: () {
                     NavigationHelper.navigateTo(
                       context,
                       TransactionsScreen(dashboardProvider: provider),
@@ -53,6 +55,7 @@ class RecentActivitiesSection extends StatelessWidget {
                 ),
               ],
             ),
+            const AppSpacer.vShort(),
 
             // Activities list
             ListView.separated(

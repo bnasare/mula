@@ -151,6 +151,16 @@ class AppColors {
   static const Color warning = Color(0xFFFF9800);
   static const Color info = Color(0xFF2196F3);
 
+  // Activity/Transaction status colors
+  static const Color activitySuccess = Color(0xFF4CAF50); // Green for completed/buy
+  static const Color activitySuccessLight = Color(0xFFE8F5E9); // Light green background
+  static const Color activityError = Color(0xFFEF5350); // Red for failed/sell
+  static const Color activityErrorLight = Color(0xFFFFEBEE); // Light red background
+  static const Color activityPending = Color(0xFFFFA000); // Amber for pending
+  static const Color activityPendingLight = Color(0xFFFFF8E1); // Light amber background
+  static const Color activityDeposit = Color(0xFFFF9800); // Orange for deposit
+  static const Color activityDepositLight = Color(0xFFFFF3E0); // Light orange background
+
   // Blues
   static const Color blue = Color(0xFF0D47A1);
   static const Color link = Color(0xFF4994EC);

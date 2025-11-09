@@ -164,13 +164,13 @@ class ActivityListItem extends StatelessWidget {
   Color _getTypeColor(ActivityType type) {
     switch (type) {
       case ActivityType.buy:
-        return const Color(0xFF4CAF50); // Green
+        return AppColors.activitySuccess;
       case ActivityType.sell:
-        return const Color(0xFFEF5350); // Red
+        return AppColors.activityError;
       case ActivityType.deposit:
-        return const Color(0xFFFF9800); // Orange
+        return AppColors.activityDeposit;
       case ActivityType.withdrawal:
-        return const Color(0xFFEF5350); // Red
+        return AppColors.activityError;
     }
   }
 }
@@ -189,19 +189,19 @@ class _ActivityIcon extends StatelessWidget {
     switch (type) {
       case ActivityType.buy:
         iconData = Icons.arrow_upward_rounded;
-        backgroundColor = const Color(0xFFE8F5E9); // Light green
+        backgroundColor = AppColors.activitySuccessLight;
         break;
       case ActivityType.sell:
         iconData = Icons.arrow_downward_rounded;
-        backgroundColor = const Color(0xFFFFEBEE); // Light red
+        backgroundColor = AppColors.activityErrorLight;
         break;
       case ActivityType.deposit:
         iconData = Icons.arrow_upward_rounded;
-        backgroundColor = const Color(0xFFFFF3E0); // Light orange
+        backgroundColor = AppColors.activityDepositLight;
         break;
       case ActivityType.withdrawal:
         iconData = Icons.arrow_downward_rounded;
-        backgroundColor = const Color(0xFFFFEBEE); // Light red
+        backgroundColor = AppColors.activityErrorLight;
         break;
     }
 
@@ -219,13 +219,13 @@ class _ActivityIcon extends StatelessWidget {
   Color _getIconColor(ActivityType type) {
     switch (type) {
       case ActivityType.buy:
-        return const Color(0xFF4CAF50); // Green
+        return AppColors.activitySuccess;
       case ActivityType.sell:
-        return const Color(0xFFEF5350); // Red
+        return AppColors.activityError;
       case ActivityType.deposit:
-        return const Color(0xFFFF9800); // Orange
+        return AppColors.activityDeposit;
       case ActivityType.withdrawal:
-        return const Color(0xFFEF5350); // Red
+        return AppColors.activityError;
     }
   }
 }
@@ -245,18 +245,18 @@ class _StatusBadge extends StatelessWidget {
     switch (status) {
       case ActivityStatus.completed:
         label = 'Completed';
-        backgroundColor = const Color(0xFFE8F5E9); // Light green
-        textColor = const Color(0xFF4CAF50); // Green
+        backgroundColor = AppColors.activitySuccessLight;
+        textColor = AppColors.activitySuccess;
         break;
       case ActivityStatus.pending:
         label = 'Pending';
-        backgroundColor = const Color(0xFFF3E5F5); // Light purple
-        textColor = const Color(0xFF9C27B0); // Purple
+        backgroundColor = AppColors.activityPendingLight;
+        textColor = AppColors.activityPending;
         break;
       case ActivityStatus.failed:
         label = 'Failed';
-        backgroundColor = const Color(0xFFFFEBEE); // Light red
-        textColor = const Color(0xFFEF5350); // Red
+        backgroundColor = AppColors.activityErrorLight;
+        textColor = AppColors.activityError;
         break;
     }
 

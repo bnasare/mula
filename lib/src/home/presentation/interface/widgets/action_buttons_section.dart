@@ -20,9 +20,10 @@ class ActionButtonsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      padding: const EdgeInsets.symmetric(horizontal: 0),
-      child: Row(
-        children: [
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: Row(
+          children: [
           ActionButton(
             icon: IconlyLight.wallet,
             label: context.localize.deposit,
@@ -89,7 +90,8 @@ class ActionButtonsSection extends StatelessWidget {
               );
             },
           ),
-        ],
+          ],
+        ),
       ),
     );
   }

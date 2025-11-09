@@ -43,36 +43,46 @@ class _HomeTabState extends State<HomeTab> {
 
             // Main content
             SliverToBoxAdapter(
-              child: Padding(
-                padding: context.responsivePadding(
-                  mobile: const EdgeInsets.symmetric(horizontal: 24.0),
-                ),
-                child: const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(height: 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(height: 24),
 
-                    // Portfolio value card
-                    PortfolioSection(),
-                    SizedBox(height: 24),
+                  // Portfolio value card
+                  Padding(
+                    padding: context.responsivePadding(
+                      mobile: const EdgeInsets.symmetric(horizontal: 20.0),
+                    ),
+                    child: const PortfolioSection(),
+                  ),
+                  const SizedBox(height: 24),
 
-                    // Action buttons
-                    ActionButtonsSection(),
-                    SizedBox(height: 24),
+                  // Action buttons
+                  const ActionButtonsSection(),
+                  const SizedBox(height: 24),
 
-                    // Learning corner
-                    LearningCornerSection(),
-                    SizedBox(height: 32),
+                  // Learning corner
+                  Padding(
+                    padding: context.responsivePadding(
+                      mobile: const EdgeInsets.symmetric(horizontal: 20.0),
+                    ),
+                    child: const LearningCornerSection(),
+                  ),
+                  const SizedBox(height: 32),
 
-                    // Asset overview
-                    AssetOverviewSection(),
-                    SizedBox(height: 32),
+                  // Asset overview
+                  const AssetOverviewSection(),
+                  const SizedBox(height: 32),
 
-                    // Recent activities
-                    RecentActivitiesSection(),
-                    SizedBox(height: 100), // Space for bottom nav
-                  ],
-                ),
+                  // Recent activities
+                  Padding(
+                    padding: context.responsivePadding(
+                      mobile: const EdgeInsets.symmetric(horizontal: 20.0),
+                    ),
+                    child: const RecentActivitiesSection(),
+                  ),
+                  const SizedBox(height: 100), // Space for bottom nav
+                ],
               ),
             ),
           ],

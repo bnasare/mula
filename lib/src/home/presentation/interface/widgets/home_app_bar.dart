@@ -25,7 +25,7 @@ class HomeAppBar extends StatelessWidget {
         background: SafeArea(
           child: Padding(
             padding: context.responsivePadding(
-              mobile: const EdgeInsets.symmetric(horizontal: 24.0),
+              mobile: const EdgeInsets.symmetric(horizontal: 20.0),
             ),
             child: Consumer<DashboardProvider>(
               builder: (context, provider, _) {

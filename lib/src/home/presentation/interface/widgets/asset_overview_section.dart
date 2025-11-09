@@ -38,46 +38,52 @@ class _AssetOverviewSectionState extends State<AssetOverviewSection> {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            AppText.medium(
-              context.localize.assetOverview,
-              style: TextStyle(
-                fontWeight: FontWeight.w600,
-                color: AppColors.primaryText(context),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: AppText.medium(
+                context.localize.assetOverview,
+                style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.primaryText(context),
+                ),
               ),
             ),
             const SizedBox(height: 16),
 
             // Tab buttons (Class, Broker, Performance)
-            Container(
-              padding: const EdgeInsets.all(4),
-              decoration: BoxDecoration(
-                color: AppColors.grey(context).withValues(alpha: 0.05),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: AssetTabButton(
-                      label: context.localize.classLabel,
-                      isActive: _selectedAssetTab == 0,
-                      onTap: () => setState(() => _selectedAssetTab = 0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Container(
+                padding: const EdgeInsets.all(4),
+                decoration: BoxDecoration(
+                  color: AppColors.grey(context).withValues(alpha: 0.05),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: AssetTabButton(
+                        label: context.localize.classLabel,
+                        isActive: _selectedAssetTab == 0,
+                        onTap: () => setState(() => _selectedAssetTab = 0),
+                      ),
                     ),
-                  ),
-                  Expanded(
-                    child: AssetTabButton(
-                      label: context.localize.broker,
-                      isActive: _selectedAssetTab == 1,
-                      onTap: () => setState(() => _selectedAssetTab = 1),
+                    Expanded(
+                      child: AssetTabButton(
+                        label: context.localize.broker,
+                        isActive: _selectedAssetTab == 1,
+                        onTap: () => setState(() => _selectedAssetTab = 1),
+                      ),
                     ),
-                  ),
-                  Expanded(
-                    child: AssetTabButton(
-                      label: context.localize.performance,
-                      isActive: _selectedAssetTab == 2,
-                      onTap: () => setState(() => _selectedAssetTab = 2),
+                    Expanded(
+                      child: AssetTabButton(
+                        label: context.localize.performance,
+                        isActive: _selectedAssetTab == 2,
+                        onTap: () => setState(() => _selectedAssetTab = 2),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const SizedBox(height: 16),

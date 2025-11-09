@@ -31,7 +31,7 @@ class CustomBottomNavBar extends StatelessWidget {
         child: Container(
           height: 60,
           padding: context.responsivePadding(
-            mobile: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+            mobile: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
