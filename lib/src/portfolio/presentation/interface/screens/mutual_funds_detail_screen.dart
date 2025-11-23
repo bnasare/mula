@@ -10,7 +10,9 @@ import '../../../../dashboard/domain/entities/asset.dart';
 import '../../../../dashboard/presentation/interface/widgets/asset_donut_chart.dart';
 import '../../../../dashboard/presentation/interface/widgets/performance_chart.dart';
 import '../../../../home/presentation/interface/widgets/asset_tab_button.dart';
+import '../../../domain/entities/trade_type.dart';
 import 'advanced_chart_screen.dart';
+import 'mutual_fund_choose_order_type_screen.dart';
 
 /// Mutual Funds Detail screen showing comprehensive fund information
 class MutualFundsDetailScreen extends StatefulWidget {
@@ -344,7 +346,17 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                 child: AppButton(
                   text: 'Sell',
                   onTap: () {
-                    // TODO: Implement sell
+                    NavigationHelper.navigateTo(
+                      context,
+                      MutualFundChooseOrderTypeScreen(
+                        tradeType: TradeType.sell,
+                        fundCode: widget.ticker,
+                        fundName: widget.fundName,
+                        currentPrice: widget.currentPrice,
+                        availableCashBalance: 20.00, // TODO: Get from wallet
+                        currentHoldings: 100.0, // TODO: Get from user's holdings
+                      ),
+                    );
                   },
                   backgroundColor: Colors.transparent,
                   textColor: AppColors.primaryText(context),
@@ -359,7 +371,17 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                 child: AppButton(
                   text: 'Buy',
                   onTap: () {
-                    // TODO: Implement buy
+                    NavigationHelper.navigateTo(
+                      context,
+                      MutualFundChooseOrderTypeScreen(
+                        tradeType: TradeType.buy,
+                        fundCode: widget.ticker,
+                        fundName: widget.fundName,
+                        currentPrice: widget.currentPrice,
+                        availableCashBalance: 20.00, // TODO: Get from wallet
+                        currentHoldings: null, // Not needed for buy
+                      ),
+                    );
                   },
                   backgroundColor: AppColors.appPrimary,
                   textColor: Colors.white,

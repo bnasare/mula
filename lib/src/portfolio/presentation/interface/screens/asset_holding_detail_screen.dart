@@ -7,7 +7,9 @@ import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/interface/widgets/performance_chart.dart';
+import '../../../domain/entities/trade_type.dart';
 import 'advanced_chart_screen.dart';
+import 'asset_holding_choose_order_type_screen.dart';
 
 /// Asset Holding Detail screen showing comprehensive stock information
 class AssetHoldingDetailScreen extends StatelessWidget {
@@ -254,7 +256,18 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                       child: AppButton(
                         text: 'Sell',
                         onTap: () {
-                          // TODO: Implement sell
+                          NavigationHelper.navigateTo(
+                            context,
+                            AssetHoldingChooseOrderTypeScreen(
+                              tradeType: TradeType.sell,
+                              ticker: ticker,
+                              companyName: companyName,
+                              currentPrice: currentPrice,
+                              availableCashBalance: 20.00, // TODO: Get from wallet
+                              currentShares: 1000.0, // TODO: Get from holdings
+                              broker: 'Databank', // TODO: Get from asset data
+                            ),
+                          );
                         },
                         backgroundColor: Colors.transparent,
                         textColor: AppColors.primaryText(context),
@@ -269,7 +282,18 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                       child: AppButton(
                         text: 'Buy',
                         onTap: () {
-                          // TODO: Implement buy
+                          NavigationHelper.navigateTo(
+                            context,
+                            AssetHoldingChooseOrderTypeScreen(
+                              tradeType: TradeType.buy,
+                              ticker: ticker,
+                              companyName: companyName,
+                              currentPrice: currentPrice,
+                              availableCashBalance: 20.00, // TODO: Get from wallet
+                              currentShares: null, // Not needed for buy
+                              broker: 'Databank', // TODO: Get from asset data
+                            ),
+                          );
                         },
                         backgroundColor: AppColors.appPrimary,
                         textColor: Colors.white,

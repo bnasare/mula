@@ -122,14 +122,16 @@ class _TBillTradeScreenState extends State<TBillTradeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: MulaAppBar(title: widget.tradeType.displayName),
-      body: Column(
-        children: [
-          Expanded(
-            child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: Scaffold(
+        appBar: MulaAppBar(title: widget.tradeType.displayName),
+        body: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Market Status
                   const MarketStatusIndicator(),
@@ -253,6 +255,7 @@ class _TBillTradeScreenState extends State<TBillTradeScreen> {
             ),
           ),
         ],
+        ),
       ),
     );
   }
