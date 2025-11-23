@@ -25,7 +25,7 @@ class LessonActionButtons extends StatelessWidget {
             onPressed: onInvestPressed ?? () {},
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.appPrimary,
-              foregroundColor: Colors.white,
+              foregroundColor: AppColors.white(context),
               elevation: 0,
               padding: const EdgeInsets.symmetric(vertical: 16),
               shape: RoundedRectangleBorder(
@@ -34,8 +34,8 @@ class LessonActionButtons extends StatelessWidget {
             ),
             child: AppText.smaller(
               context.localize.investIn(assetName),
-              style: const TextStyle(
-                color: Colors.white,
+              style: TextStyle(
+                color: AppColors.white(context),
                 fontWeight: FontWeight.w600,
               ),
             ),

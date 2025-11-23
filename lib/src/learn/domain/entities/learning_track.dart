@@ -4,7 +4,7 @@ class LearningTrack {
   final String id;
   final String title;
   final String description;
-  final IconData icon;
+  final String icon;
   final int durationMinutes;
   final Gradient? gradient;
   final String category;

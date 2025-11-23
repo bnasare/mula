@@ -154,7 +154,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       : null,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.appPrimary,
-                    foregroundColor: Colors.white,
+                    foregroundColor: AppColors.white(context),
                     disabledBackgroundColor: AppColors.lightGrey(context),
                     disabledForegroundColor: AppColors.secondaryText(context),
                     elevation: 0,
@@ -167,7 +167,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     context.localize.done,
                     style: TextStyle(
                       color: selectedAnswers.length == quiz!.questions.length
-                          ? Colors.white
+                          ? AppColors.white(context)
                           : AppColors.secondaryText(context),
                       fontWeight: FontWeight.w600,
                     ),

@@ -42,7 +42,7 @@ class ArticleHeader extends StatelessWidget {
                     width: 64,
                     height: 64,
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.9),
+                      color: AppColors.white(context).withOpacity(0.9),
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(

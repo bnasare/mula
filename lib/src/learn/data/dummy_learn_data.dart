@@ -16,7 +16,7 @@ class DummyLearnData {
         title: 'New to Investing? Start Here',
         description:
             'If you are new to investing and want to explore the ecosystem, start with this article',
-        icon: Icons.eco_outlined,
+        icon: '🌱',
         durationMinutes: 3,
         gradient: LinearGradient(
           colors: [Color(0xFFFF9F43), Color(0xFFFF8A00)],
@@ -30,7 +30,7 @@ class DummyLearnData {
         title: 'Understanding the Market',
         description:
             'If you want to know how the market works and how to make the most of it',
-        icon: Icons.attach_money,
+        icon: '💰',
         durationMinutes: 5,
         gradient: LinearGradient(
           colors: [Color(0xFF667EEA), Color(0xFF764BA2)],

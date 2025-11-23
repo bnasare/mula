@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
-import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
+import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
@@ -29,7 +30,6 @@ class _LearnTabState extends State<LearnTab> {
     final lessons = DummyLearnData.getLessons(category: _selectedCategory);
 
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
       appBar: MulaAppBar(
         title: context.localize.learningTracks,
         centerTitle: false,
@@ -46,87 +46,84 @@ class _LearnTabState extends State<LearnTab> {
           ),
         ],
       ),
-      body: CustomScrollView(
-        slivers: [
-          // Filter tabs
-          SliverToBoxAdapter(
-            child: Column(
-              children: [
-                AppSpacer.vLarge(),
-                TrackFilterTabs(
-                  selectedCategory: _selectedCategory,
-                  onCategorySelected: (category) {
-                    setState(() {
-                      _selectedCategory = category;
-                    });
-                  },
-                ),
-                AppSpacer.vLarge(),
-              ],
-            ),
-          ),
-
-          // Featured Tracks Section
-          SliverToBoxAdapter(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: AppText.medium(
-                    context.localize.featuredTracks,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
-                AppSpacer.vLarge(),
-                SizedBox(
-                  height: 200,
-                  child: ListView.separated(
-                    scrollDirection: Axis.horizontal,
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    itemCount: featuredTracks.length,
-                    separatorBuilder: (context, index) =>
-                        const SizedBox(width: 16),
-                    itemBuilder: (context, index) {
-                      return FeaturedTrackCard(track: featuredTracks[index]);
+      body: ScrollConfiguration(
+        behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+        child: CustomScrollView(
+          slivers: [
+            // Filter tabs
+            SliverToBoxAdapter(
+              child: Column(
+                children: [
+                  AppSpacer.vLarge(),
+                  TrackFilterTabs(
+                    selectedCategory: _selectedCategory,
+                    onCategorySelected: (category) {
+                      setState(() {
+                        _selectedCategory = category;
+                      });
                     },
                   ),
-                ),
-                AppSpacer.vLarger(),
-              ],
-            ),
-          ),
-
-          // Popular Lessons Section
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: AppText.medium(
-                context.localize.popularLessons,
-                style: const TextStyle(fontWeight: FontWeight.bold),
+                  AppSpacer.vLarge(),
+                ],
               ),
             ),
-          ),
 
-          SliverToBoxAdapter(
-            child: AppSpacer.vLarge(),
-          ),
-
-          // Lessons List
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-              (context, index) {
-                return LessonCard(lesson: lessons[index]);
-              },
-              childCount: lessons.length,
+            // Featured Tracks Section
+            SliverToBoxAdapter(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: AppText.medium(
+                      context.localize.featuredTracks,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  AppSpacer.vShort(),
+                  SizedBox(
+                    height: 114,
+                    child: ListView.separated(
+                      scrollDirection: Axis.horizontal,
+                      primary: false,
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      itemCount: featuredTracks.length,
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(width: 16),
+                      itemBuilder: (context, index) {
+                        return FeaturedTrackCard(track: featuredTracks[index]);
+                      },
+                    ),
+                  ),
+                  AppSpacer.vLarger(),
+                ],
+              ),
             ),
-          ),
 
-          // Bottom spacing
-          SliverToBoxAdapter(
-            child: AppSpacer.vLarger(),
-          ),
-        ],
+            // Popular Lessons Section
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: AppText.medium(
+                  context.localize.popularLessons,
+                  style: const TextStyle(fontWeight: FontWeight.w600),
+                ),
+              ),
+            ),
+
+            SliverToBoxAdapter(child: AppSpacer.vShorter()),
+
+            // Lessons List
+            SliverList(
+              delegate: SliverChildBuilderDelegate((context, index) {
+                return LessonCard(lesson: lessons[index]);
+              }, childCount: lessons.length),
+            ),
+
+            // Bottom spacing
+            SliverToBoxAdapter(child: AppSpacer.vLarger()),
+          ],
+        ),
       ),
     );
   }

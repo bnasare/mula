@@ -183,7 +183,7 @@ class _LearnFilterBottomSheetState extends State<LearnFilterBottomSheet> {
                 onPressed: _applyFilters,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.appPrimary,
-                  foregroundColor: Colors.white,
+                  foregroundColor: AppColors.white(context),
                   elevation: 0,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(
@@ -192,8 +192,8 @@ class _LearnFilterBottomSheetState extends State<LearnFilterBottomSheet> {
                 ),
                 child: AppText.smaller(
                   context.localize.apply,
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style: TextStyle(
+                    color: AppColors.white(context),
                     fontWeight: FontWeight.w600,
                   ),
                 ),

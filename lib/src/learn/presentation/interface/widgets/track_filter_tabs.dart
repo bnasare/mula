@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
@@ -26,6 +27,7 @@ class TrackFilterTabs extends StatelessWidget {
       height: 40,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
+        primary: false,
         padding: const EdgeInsets.symmetric(horizontal: 20),
         itemCount: categories.length,
         separatorBuilder: (context, index) => const SizedBox(width: 8),
@@ -40,12 +42,12 @@ class TrackFilterTabs extends StatelessWidget {
               decoration: BoxDecoration(
                 color: isSelected
                     ? AppColors.appPrimary
-                    : AppColors.card(context),
+                    : AppColors.softBorder(context),
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
                   color: isSelected
                       ? AppColors.appPrimary
-                      : AppColors.card(context),
+                      : AppColors.hardBorder(context),
                   width: 1,
                 ),
               ),
@@ -54,9 +56,11 @@ class TrackFilterTabs extends StatelessWidget {
                   category['label'] as String,
                   style: TextStyle(
                     color: isSelected
-                        ? Colors.white
+                        ? AppColors.white(context)
                         : AppColors.primaryText(context),
-                    fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+                    fontWeight: isSelected
+                        ? FontWeight.w600
+                        : FontWeight.normal,
                   ),
                 ),
               ),

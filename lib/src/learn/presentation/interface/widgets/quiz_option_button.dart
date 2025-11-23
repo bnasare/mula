@@ -48,7 +48,7 @@ class QuizOptionButton extends StatelessWidget {
                 '${option.label} ${option.text}',
                 style: TextStyle(
                   color: shouldShowAsSelected
-                      ? Colors.white
+                      ? AppColors.white(context)
                       : AppColors.primaryText(context),
                 ),
               ),
