@@ -39,8 +39,8 @@ class ChatMessageBubble extends StatelessWidget {
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: message.isUser
-                        ? const Color(0xFFE8F5E9)
-                        : Colors.white,
+                        ? AppColors.activitySuccessLight
+                        : AppColors.card(context),
                     borderRadius: BorderRadius.only(
                       topLeft: const Radius.circular(12),
                       topRight: const Radius.circular(12),
@@ -49,7 +49,7 @@ class ChatMessageBubble extends StatelessWidget {
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.05),
+                        color: AppColors.grey(context).withOpacity(0.05),
                         blurRadius: 4,
                         offset: const Offset(0, 2),
                       ),

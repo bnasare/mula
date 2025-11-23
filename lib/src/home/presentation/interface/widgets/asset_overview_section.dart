@@ -110,8 +110,8 @@ class _AssetOverviewSectionState extends State<AssetOverviewSection> {
           Container(
             height: 200,
             width: 200,
-            decoration: const BoxDecoration(
-              color: Colors.white,
+            decoration:  BoxDecoration(
+              color: AppColors.white(context),
               shape: BoxShape.circle,
             ),
           ),
@@ -119,7 +119,7 @@ class _AssetOverviewSectionState extends State<AssetOverviewSection> {
           Container(
             height: 60,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: AppColors.white(context),
               borderRadius: BorderRadius.circular(8),
             ),
           ),

@@ -139,7 +139,7 @@ class _SelectFundManagerScreenState extends State<SelectFundManagerScreen> {
                   hintText: context.localize.searchByAssetNameOrType,
                   suffixIcon: Icon(
                     IconlyLight.search,
-                    color: Colors.grey.shade400,
+                    color: AppColors.hintText(context),
                     size: 20,
                   ),
                   onChanged: (value) {
@@ -229,7 +229,7 @@ class _FundManagerCard extends StatelessWidget {
             ),
             AppSpacer.hShorter(),
             // Chevron icon
-            Icon(Icons.chevron_right, color: Colors.grey.shade400),
+            Icon(Icons.chevron_right, color: AppColors.hintText(context)),
           ],
         ),
       ),

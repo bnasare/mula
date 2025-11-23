@@ -57,10 +57,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 children: [
                   TextSpan(
                     text: '${context.localize.welcomeTo} ',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.w400,
-                      color: Colors.black,
+                      color: AppColors.primaryText(context),
                     ),
                   ),
                   TextSpan(
@@ -97,7 +97,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               AppButton(
                 text: context.localize.getStarted,
                 backgroundColor: AppColors.appPrimary,
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,
                 height: 50,

@@ -88,7 +88,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                   suffixIcon: IconButton(
                     iconSize: 20,
                     icon: Icon(
-                      color: Colors.grey.shade400,
+                      color: AppColors.hintText(context),
                       _obscureNewPassword ? IconlyLight.hide : IconlyLight.show,
                     ),
                     onPressed: () => setState(
@@ -114,7 +114,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                   suffixIcon: IconButton(
                     iconSize: 20,
                     icon: Icon(
-                      color: Colors.grey.shade400,
+                      color: AppColors.hintText(context),
                       _obscureConfirmPassword
                           ? IconlyLight.hide
                           : IconlyLight.show,

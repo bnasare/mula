@@ -35,7 +35,7 @@ class LessonCard extends StatelessWidget {
               Container(
                 width: 110,
                 decoration: BoxDecoration(
-                  color: Colors.grey[300],
+                  color: AppColors.lightGrey(context),
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(12),
                     bottomLeft: Radius.circular(12),
@@ -70,13 +70,13 @@ class LessonCard extends StatelessWidget {
                               vertical: 6,
                             ),
                             decoration: BoxDecoration(
-                              color: const Color(0xFFF3E5F5),
+                              color: AppColors.purpleLight,
                               borderRadius: BorderRadius.circular(6),
                             ),
                             child: AppText.smallest(
                               context.localize.article,
-                              style: const TextStyle(
-                                color: Color(0xFF9C27B0),
+                              style: TextStyle(
+                                color: AppColors.purple,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),

@@ -42,7 +42,7 @@ class SelectableOptionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: isSelected
               ? AppColors.appPrimary.withValues(alpha: 0.1)
-              : Colors.transparent,
+              : AppColors.transparent,
           border: Border.all(
             color: isSelected
                 ? AppColors.appPrimary

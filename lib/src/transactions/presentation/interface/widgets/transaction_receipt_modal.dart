@@ -219,7 +219,9 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       margin: const EdgeInsets.only(bottom: 4),
       decoration: BoxDecoration(
-        color: hasBackground ? AppColors.offWhite(context) : Colors.transparent,
+        color: hasBackground
+            ? AppColors.offWhite(context)
+            : AppColors.transparent,
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -249,7 +251,9 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       margin: const EdgeInsets.only(bottom: 4),
       decoration: BoxDecoration(
-        color: hasBackground ? AppColors.offWhite(context) : Colors.transparent,
+        color: hasBackground
+            ? AppColors.offWhite(context)
+            : AppColors.transparent,
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -276,18 +280,18 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
     switch (widget.activity.status) {
       case ActivityStatus.completed:
         label = context.localize.completed;
-        backgroundColor = const Color(0xFFE8F5E9);
-        textColor = const Color(0xFF4CAF50);
+        backgroundColor = AppColors.activitySuccessLight;
+        textColor = AppColors.activitySuccess;
         break;
       case ActivityStatus.pending:
         label = context.localize.pending;
-        backgroundColor = const Color(0xFFF3E5F5);
-        textColor = const Color(0xFF9C27B0);
+        backgroundColor = AppColors.purpleLight;
+        textColor = AppColors.purple;
         break;
       case ActivityStatus.failed:
         label = context.localize.failed;
-        backgroundColor = const Color(0xFFFFEBEE);
-        textColor = const Color(0xFFEF5350);
+        backgroundColor = AppColors.activityErrorLight;
+        textColor = AppColors.activityError;
         break;
     }
 

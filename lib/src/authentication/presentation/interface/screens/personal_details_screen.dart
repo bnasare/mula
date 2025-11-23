@@ -144,7 +144,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                 textCapitalization: TextCapitalization.words,
                 suffixIcon: Icon(
                   IconlyLight.profile,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),
@@ -158,7 +158,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                 onTap: _showDatePicker,
                 suffixIcon: Icon(
                   IconlyLight.calendar,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),
@@ -183,7 +183,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                 hintText: context.localize.whatIsYourOccupation,
                 suffixIcon: Icon(
                   IconlyLight.work,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),
@@ -196,7 +196,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                 keyboardType: TextInputType.phone,
                 suffixIcon: Icon(
                   IconlyLight.call,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),

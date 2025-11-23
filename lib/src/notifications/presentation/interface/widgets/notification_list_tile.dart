@@ -21,7 +21,7 @@ class NotificationListTile extends StatelessWidget {
       padding: EdgeInsets.all(context.responsiveValue(mobile: 16.0)),
       decoration: BoxDecoration(
         color: notification.isRead
-            ? Colors.transparent
+            ? AppColors.transparent
             : AppColors.offWhite(context),
         border: Border(
           bottom: BorderSide(
@@ -101,27 +101,27 @@ class NotificationListTile extends StatelessWidget {
       case NotificationType.success:
         return _NotificationConfig(
           icon: IconlyLight.chart,
-          color: const Color(0xFF10B981), // Green
+          color: AppColors.notificationSuccess,
         );
       case NotificationType.warning:
         return _NotificationConfig(
           icon: IconlyLight.danger,
-          color: const Color(0xFFEF4444), // Red
+          color: AppColors.notificationError,
         );
       case NotificationType.deposit:
         return _NotificationConfig(
           icon: IconlyLight.download,
-          color: const Color(0xFF3B82F6), // Blue
+          color: AppColors.notificationInfo,
         );
       case NotificationType.withdrawal:
         return _NotificationConfig(
           icon: IconlyLight.upload,
-          color: const Color(0xFF8B5CF6), // Purple
+          color: AppColors.notificationSystem,
         );
       case NotificationType.info:
         return _NotificationConfig(
           icon: IconlyLight.notification,
-          color: const Color(0xFF6B7280), // Grey
+          color: AppColors.notificationDefault,
         );
     }
   }

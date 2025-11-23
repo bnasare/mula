@@ -39,10 +39,10 @@ class _ChatInputFieldState extends State<ChatInputField> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.white(context),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: AppColors.grey(context).withOpacity(0.05),
             blurRadius: 8,
             offset: const Offset(0, -2),
           ),
@@ -61,7 +61,7 @@ class _ChatInputFieldState extends State<ChatInputField> {
                   : null,
               child: const Icon(
                 Icons.add_circle,
-                color: Color(0xFF4CAF50),
+                color: AppColors.activitySuccess,
                 size: 40,
               ),
             ),
@@ -121,7 +121,7 @@ class _ChatInputFieldState extends State<ChatInputField> {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: _hasText && widget.enabled
-                      ? [const Color(0xFF4CAF50), const Color(0xFF2E7D32)]
+                      ? AppColors.greenGradient
                       : [
                           AppColors.lightGrey(context),
                           AppColors.lightGrey(context),
@@ -131,7 +131,7 @@ class _ChatInputFieldState extends State<ChatInputField> {
               ),
               child: IconButton(
                 icon: const Icon(IconlyLight.send, size: 20),
-                color: Colors.white,
+                color: AppColors.white(context),
                 onPressed: _hasText && widget.enabled ? _handleSend : null,
                 padding: EdgeInsets.zero,
               ),

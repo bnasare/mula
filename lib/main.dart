@@ -62,12 +62,12 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: isDark
-            ? const Color(0xFF1E1E1E)
-            : const Color(0xFFF2F2F2),
+            ? AppColors.systemBarDark(context)
+            : AppColors.systemBarLight(context),
         statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
         systemNavigationBarColor: isDark
-            ? const Color(0xFF1E1E1E)
-            : const Color(0xFFF2F2F2),
+            ? AppColors.systemBarDark(context)
+            : AppColors.systemBarLight(context),
         systemNavigationBarIconBrightness: isDark
             ? Brightness.light
             : Brightness.dark,
@@ -96,17 +96,17 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
           debugShowCheckedModeBanner: false,
           themeMode: themeProvider.themeMode,
           theme: ShadThemeData(
-            colorScheme: const ShadZincColorScheme.light(
+            colorScheme: ShadZincColorScheme.light(
               primary: AppColors.appPrimary,
-              primaryForeground: Colors.white,
+              primaryForeground: AppColors.white(context),
             ),
             brightness: Brightness.light,
             textTheme: ShadTextTheme(family: 'Raleway'),
           ),
           darkTheme: ShadThemeData(
-            colorScheme: const ShadZincColorScheme.dark(
+            colorScheme: ShadZincColorScheme.dark(
               primary: AppColors.appPrimary,
-              primaryForeground: Colors.white,
+              primaryForeground: AppColors.white(context),
             ),
             brightness: Brightness.dark,
             textTheme: ShadTextTheme(family: 'Raleway'),

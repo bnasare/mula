@@ -1,5 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 
@@ -27,99 +28,100 @@ class _PerformanceChartState extends State<PerformanceChart> {
             height: 250,
             child: LineChart(
               LineChartData(
-              gridData: FlGridData(
-                show: true,
-                drawVerticalLine: false,
-                horizontalInterval: data.maxY / 4,
-                getDrawingHorizontalLine: (value) {
-                  return FlLine(
-                    color: AppColors.border(context),
-                    strokeWidth: 1,
-                  );
-                },
-              ),
-              titlesData: FlTitlesData(
-                show: true,
-                rightTitles: const AxisTitles(
-                  sideTitles: SideTitles(showTitles: false),
+                gridData: FlGridData(
+                  show: true,
+                  drawVerticalLine: false,
+                  horizontalInterval: data.maxY / 4,
+                  getDrawingHorizontalLine: (value) {
+                    return FlLine(
+                      color: AppColors.border(context),
+                      strokeWidth: 1,
+                    );
+                  },
                 ),
-                topTitles: const AxisTitles(
-                  sideTitles: SideTitles(showTitles: false),
-                ),
-                leftTitles: AxisTitles(
-                  sideTitles: SideTitles(
-                    showTitles: true,
-                    reservedSize: 40,
-                    interval: data.maxY / 4,
-                    getTitlesWidget: (value, meta) {
-                      return Padding(
-                        padding: const EdgeInsets.only(right: 8.0),
-                        child: AppText.smallest(
-                          '\$${(value / 1000).toStringAsFixed(0)}k',
-                          color: AppColors.secondaryText(context),
-                        ),
-                      );
-                    },
+                titlesData: FlTitlesData(
+                  show: true,
+                  rightTitles: const AxisTitles(
+                    sideTitles: SideTitles(showTitles: false),
                   ),
-                ),
-                bottomTitles: AxisTitles(
-                  sideTitles: SideTitles(
-                    showTitles: true,
-                    reservedSize: 30,
-                    interval: data.labels.length > 1
-                        ? (data.spots.length - 1) / (data.labels.length - 1)
-                        : 1,
-                    getTitlesWidget: (value, meta) {
-                      // Map the x-axis value to the correct label index
-                      final labelInterval = data.labels.length > 1
-                          ? (data.spots.length - 1) / (data.labels.length - 1)
-                          : 1;
-                      final labelIndex = (value / labelInterval).round();
-
-                      if (labelIndex >= 0 && labelIndex < data.labels.length) {
+                  topTitles: const AxisTitles(
+                    sideTitles: SideTitles(showTitles: false),
+                  ),
+                  leftTitles: AxisTitles(
+                    sideTitles: SideTitles(
+                      showTitles: true,
+                      reservedSize: 40,
+                      interval: data.maxY / 4,
+                      getTitlesWidget: (value, meta) {
                         return Padding(
-                          padding: const EdgeInsets.only(top: 8.0),
+                          padding: const EdgeInsets.only(right: 8.0),
                           child: AppText.smallest(
-                            data.labels[labelIndex],
+                            '\$${(value / 1000).toStringAsFixed(0)}k',
                             color: AppColors.secondaryText(context),
                           ),
                         );
-                      }
-                      return const SizedBox.shrink();
-                    },
+                      },
+                    ),
                   ),
-                ),
-              ),
-              borderData: FlBorderData(show: false),
-              minX: 0,
-              maxX: (data.spots.length - 1).toDouble(),
-              minY: data.minY,
-              maxY: data.maxY,
-              lineBarsData: [
-                LineChartBarData(
-                  spots: data.spots,
-                  isCurved: true,
-                  color: const Color(0xFF4CAF50),
-                  barWidth: 1,
-                  isStrokeCapRound: true,
-                  dotData: const FlDotData(show: false),
-                  belowBarData: BarAreaData(
-                    show: true,
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        const Color(0xFF4CAF50).withOpacity(0.3),
-                        const Color(0xFF4CAF50).withOpacity(0.1),
-                        const Color(0xFF4CAF50).withOpacity(0.0),
-                      ],
+                  bottomTitles: AxisTitles(
+                    sideTitles: SideTitles(
+                      showTitles: true,
+                      reservedSize: 30,
+                      interval: data.labels.length > 1
+                          ? (data.spots.length - 1) / (data.labels.length - 1)
+                          : 1,
+                      getTitlesWidget: (value, meta) {
+                        // Map the x-axis value to the correct label index
+                        final labelInterval = data.labels.length > 1
+                            ? (data.spots.length - 1) / (data.labels.length - 1)
+                            : 1;
+                        final labelIndex = (value / labelInterval).round();
+
+                        if (labelIndex >= 0 &&
+                            labelIndex < data.labels.length) {
+                          return Padding(
+                            padding: const EdgeInsets.only(top: 8.0),
+                            child: AppText.smallest(
+                              data.labels[labelIndex],
+                              color: AppColors.secondaryText(context),
+                            ),
+                          );
+                        }
+                        return const SizedBox.shrink();
+                      },
                     ),
                   ),
                 ),
-              ],
+                borderData: FlBorderData(show: false),
+                minX: 0,
+                maxX: (data.spots.length - 1).toDouble(),
+                minY: data.minY,
+                maxY: data.maxY,
+                lineBarsData: [
+                  LineChartBarData(
+                    spots: data.spots,
+                    isCurved: true,
+                    color:  AppColors.activitySuccess,
+                    barWidth: 1,
+                    isStrokeCapRound: true,
+                    dotData: const FlDotData(show: false),
+                    belowBarData: BarAreaData(
+                      show: true,
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                           AppColors.activitySuccess.withOpacity(0.3),
+                           AppColors.activitySuccess.withOpacity(0.1),
+                           AppColors.activitySuccess.withOpacity(0.0),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
         ),
         const SizedBox(height: 24),
 
@@ -149,7 +151,7 @@ class _PerformanceChartState extends State<PerformanceChart> {
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(
-                  color: isSelected ? Colors.white : Colors.transparent,
+                  color: isSelected ? Colors.white : AppColors.transparent,
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Center(

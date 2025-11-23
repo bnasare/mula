@@ -192,6 +192,9 @@ class AppColors {
   static const Color burgundy = Color(0xFF800020);
 
   // Purples
+  static const Color purple = Color(0xFF9C27B0);
+  static const Color purpleLight = Color(0xFFF3E5F5);
+  static const Color purpleDark = Color(0xFF7B1FA2);
   static const Color lavender = Color(0xFFE6E6FA);
   static const Color plum = Color(0xFF8E4585);
 
@@ -203,6 +206,35 @@ class AppColors {
   static const Color teal = Color(0xFF008080);
   static const Color turquoise = Color(0xFF40E0D0);
   static const Color transparent = Colors.transparent;
+
+  // ==================== GRADIENTS ====================
+
+  static const List<Color> orangeGradient = [Color(0xFFFF9F43), Color(0xFFFF8A00)];
+  static const List<Color> purpleGradient = [Color(0xFF667EEA), Color(0xFF764BA2)];
+  static const List<Color> greenGradient = [Color(0xFF4CAF50), Color(0xFF2E7D32)];
+  static const List<Color> walletGradient = [Color(0xFF9C27B0), Color(0xFF7B1FA2), Color(0xFF6A1B9A)];
+
+  // ==================== CHART COLORS ====================
+
+  static const Color chartBlue = Color(0xFF4A90E2);
+  static const Color chartOrange = Color(0xFFFFA726);
+  static const Color chartGreen = Color(0xFF66BB6A);
+  static const Color chartPurple = Color(0xFFAB47BC);
+  static const Color chartRed = Color(0xFFEF5350);
+  static const Color chartTeal = Color(0xFF26A69A);
+
+  // ==================== SYSTEM UI COLORS ====================
+
+  static Color systemBarDark(BuildContext context) => const Color(0xFF1E1E1E);
+  static Color systemBarLight(BuildContext context) => const Color(0xFFF2F2F2);
+
+  // ==================== NOTIFICATION COLORS ====================
+
+  static const Color notificationSuccess = Color(0xFF10B981);
+  static const Color notificationError = Color(0xFFEF4444);
+  static const Color notificationInfo = Color(0xFF3B82F6);
+  static const Color notificationSystem = Color(0xFF8B5CF6);
+  static const Color notificationDefault = Color(0xFF6B7280);
 }
 
 /// Extension to make color access easier via context

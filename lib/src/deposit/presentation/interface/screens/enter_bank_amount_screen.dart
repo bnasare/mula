@@ -77,7 +77,7 @@ class _EnterBankAmountScreenState extends State<EnterBankAmountScreen> {
                       keyboardType: TextInputType.number,
                       suffixIcon: Icon(
                         IconlyLight.wallet,
-                        color: Colors.grey.shade400,
+                        color: AppColors.hintText(context),
                         size: 20,
                       ),
                       onChanged: (_) => setState(() {}),

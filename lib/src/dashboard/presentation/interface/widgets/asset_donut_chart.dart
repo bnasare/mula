@@ -109,17 +109,17 @@ class _AssetDonutChartState extends State<AssetDonutChart> {
   Color _getAssetColor(AssetType type) {
     switch (type) {
       case AssetType.stocks:
-        return const Color(0xFF4A90E2); // Blue
+        return  AppColors.chartBlue; // Blue
       case AssetType.tBills:
-        return const Color(0xFFFFA726); // Orange
+        return  AppColors.chartOrange; // Orange
       case AssetType.cashWallet:
-        return const Color(0xFF66BB6A); // Green
+        return  AppColors.chartGreen; // Green
       case AssetType.reits:
-        return const Color(0xFFAB47BC); // Purple
+        return  AppColors.chartPurple; // Purple
       case AssetType.mutualFunds:
-        return const Color(0xFFEF5350); // Red
+        return  AppColors.chartRed; // Red
       case AssetType.bonds:
-        return const Color(0xFF26A69A); // Teal
+        return  AppColors.chartTeal; // Teal
     }
   }
 }

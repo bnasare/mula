@@ -1,6 +1,6 @@
-import 'package:mula/shared/presentation/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mula/shared/presentation/theme/app_colors.dart';
 
 // Custom TextInputFormatter to allow full unit names
 class _FullUnitTextInputFormatter extends TextInputFormatter {
@@ -336,7 +336,7 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
         ],
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.grey.shade300),
+            border: Border.all(color: AppColors.border(context)),
             borderRadius: BorderRadius.circular(widget.borderRadius),
           ),
           child: Column(
@@ -346,7 +346,7 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
                 focusNode: _focusNode,
                 keyboardType: TextInputType.text, // Allow both numbers and text
                 textInputAction: TextInputAction.done,
-                style: const TextStyle(color: Colors.black87, fontSize: 13),
+                style: TextStyle(color: AppColors.primaryText(context), fontSize: 13),
                 inputFormatters: [
                   // Custom formatter to enforce our input rules
                   _FullUnitTextInputFormatter(),
@@ -356,7 +356,7 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
                       widget.hintText ??
                       "Enter amount (e.g. 2 cups, 1.5 kilograms)",
                   hintStyle: TextStyle(
-                    color: Colors.grey.shade400,
+                    color: AppColors.hintText(context),
                     fontSize: 13,
                   ),
                   isDense: true,
@@ -373,7 +373,7 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
                 Container(
                   decoration: BoxDecoration(
                     border: Border(
-                      top: BorderSide(color: Colors.grey.shade200),
+                      top: BorderSide(color: AppColors.lightGrey(context)),
                     ),
                   ),
                   child: ConstrainedBox(
@@ -396,7 +396,7 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
                             decoration: BoxDecoration(
                               color: unitEntry.key == _selectedUnit
                                   ? AppColors.orange.withOpacity(0.1)
-                                  : Colors.transparent,
+                                  : AppColors.transparent,
                             ),
                             child: Text(
                               unitEntry.key,

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/extension.dart';
+import '../theme/app_colors.dart';
 
 class SingleCategorySelector extends StatefulWidget {
   final String title;
@@ -97,7 +98,7 @@ class _SingleCategorySelectorState extends State<SingleCategorySelector> {
         Text(
           widget.title,
           style: TextStyle(
-            color: Colors.black54,
+            color: AppColors.secondaryText(context),
             fontSize: context.responsiveFontSize(mobile: 14),
             fontWeight: FontWeight.w500,
           ),
@@ -107,7 +108,7 @@ class _SingleCategorySelectorState extends State<SingleCategorySelector> {
         // Autocomplete text field
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.grey.shade300),
+            border: Border.all(color: AppColors.border(context)),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Column(
@@ -118,7 +119,7 @@ class _SingleCategorySelectorState extends State<SingleCategorySelector> {
                 decoration: InputDecoration(
                   hintText: widget.hintText,
                   hintStyle: TextStyle(
-                    color: Colors.grey.shade400,
+                    color: AppColors.hintText(context),
                     fontSize: context.responsiveFontSize(mobile: 13),
                   ),
                   isDense: true,
@@ -135,13 +136,13 @@ class _SingleCategorySelectorState extends State<SingleCategorySelector> {
                           child: Icon(
                             CupertinoIcons.clear_circled,
                             size: context.responsiveValue(mobile: 20.0),
-                            color: Colors.grey.shade500,
+                            color: AppColors.defaultText(context),
                           ),
                         )
                       : Icon(
                           Icons.keyboard_arrow_down,
                           size: context.responsiveValue(mobile: 20.0),
-                          color: Colors.grey.shade400,
+                          color: AppColors.hintText(context),
                         ),
                   constraints: BoxConstraints(
                     maxHeight: context.responsiveValue(mobile: 40.0),
@@ -149,7 +150,7 @@ class _SingleCategorySelectorState extends State<SingleCategorySelector> {
                 ),
                 style: TextStyle(
                   fontSize: context.responsiveFontSize(mobile: 14),
-                  color: Colors.black87,
+                  color: AppColors.primaryText(context),
                   height: 1.0,
                 ),
                 onChanged: (value) {
@@ -166,7 +167,7 @@ class _SingleCategorySelectorState extends State<SingleCategorySelector> {
                 Container(
                   decoration: BoxDecoration(
                     border: Border(
-                      top: BorderSide(color: Colors.grey.shade200),
+                      top: BorderSide(color: AppColors.lightGrey(context)),
                     ),
                   ),
                   child: ConstrainedBox(
@@ -195,7 +196,7 @@ class _SingleCategorySelectorState extends State<SingleCategorySelector> {
                                 fontSize: context.responsiveFontSize(
                                   mobile: 13,
                                 ),
-                                color: Colors.black54,
+                                color: AppColors.secondaryText(context),
                               ),
                             ),
                           ),

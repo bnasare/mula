@@ -156,7 +156,7 @@ class _CreateAccountIdentificationDetailsScreenState
                 hintText: 'Eg: GHA-2346-250234',
                 suffixIcon: Icon(
                   IconlyLight.paper,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),
@@ -170,7 +170,7 @@ class _CreateAccountIdentificationDetailsScreenState
                 onTap: () => _showDatePicker(isIssueDate: true),
                 suffixIcon: Icon(
                   IconlyLight.calendar,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),
@@ -184,7 +184,7 @@ class _CreateAccountIdentificationDetailsScreenState
                 onTap: () => _showDatePicker(isIssueDate: false),
                 suffixIcon: Icon(
                   IconlyLight.calendar,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),
@@ -238,7 +238,7 @@ class _CreateAccountIdentificationDetailsScreenState
               borderRadius: BorderRadius.circular(8),
               color: hasImage
                   ? AppColors.appPrimary.withValues(alpha: 0.05)
-                  : Colors.transparent,
+                  : AppColors.transparent,
             ),
             child: Center(
               child: Column(

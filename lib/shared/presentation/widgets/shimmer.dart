@@ -117,7 +117,7 @@ class ShimmerSkeleton extends StatelessWidget {
       width: width,
       padding: context.responsivePadding(mobile: const EdgeInsets.all(8)),
       decoration: BoxDecoration(
-        color: Colors.black87.withValues(alpha: 0.04),
+        color: AppColors.primaryText(context).withValues(alpha: 0.04),
         borderRadius: const BorderRadius.all(Radius.circular(16)),
       ),
     );

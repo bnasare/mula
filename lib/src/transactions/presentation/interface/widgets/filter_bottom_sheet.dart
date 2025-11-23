@@ -237,7 +237,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             width: 0.6,
-            color: isSelected ? AppColors.appPrimary : Colors.transparent,
+            color: isSelected ? AppColors.appPrimary : AppColors.transparent,
           ),
         ),
         child: AppText.smallest(
@@ -266,7 +266,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
           color: bgColor,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: isSelected ? textColor : Colors.transparent,
+            color: isSelected ? textColor : AppColors.transparent,
             width: isSelected ? 0.6 : 0,
           ),
         ),

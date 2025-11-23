@@ -6,20 +6,15 @@ import '../theme/app_colors.dart';
 
 class SnackBarHelper {
   static void showSuccessSnackBar(BuildContext context, String message) {
-    _showCustomSnackBar(
-      context,
-      message,
-      Icons.verified,
-      const Color(0xFF50C878),
-    );
+    _showCustomSnackBar(context, message, Icons.verified, AppColors.emerald);
   }
 
   static void showInfoSnackBar(BuildContext context, String message) {
-    _showCustomSnackBar(context, message, Icons.info, const Color(0xFF2196F3));
+    _showCustomSnackBar(context, message, Icons.info, AppColors.info);
   }
 
   static void showErrorSnackBar(BuildContext context, String message) {
-    _showCustomSnackBar(context, message, Icons.error, const Color(0xFFF44336));
+    _showCustomSnackBar(context, message, Icons.error, AppColors.error);
   }
 
   static void showWarningSnackBar(BuildContext context, String message) {
@@ -27,7 +22,7 @@ class SnackBarHelper {
       context,
       message,
       Icons.warning_amber,
-      const Color(0xFFFF9800),
+      AppColors.warning,
     );
   }
 
@@ -40,7 +35,7 @@ class SnackBarHelper {
     showTopSnackBar(
       Overlay.of(context),
       Material(
-        color: Colors.transparent,
+        color: AppColors.transparent,
         child: Container(
           height: context.responsiveValue(mobile: 50.0),
           width: MediaQuery.sizeOf(context).width,

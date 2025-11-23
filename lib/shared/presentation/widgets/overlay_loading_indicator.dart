@@ -1,7 +1,7 @@
-import 'package:mula/shared/presentation/theme/app_colors.dart';
 import 'package:figma_squircle/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
+import 'package:mula/shared/presentation/theme/app_colors.dart';
 import 'package:smooth_corner/smooth_corner.dart';
 
 class OverlayLoadingIndicator extends StatelessWidget {
@@ -14,9 +14,9 @@ class OverlayLoadingIndicator extends StatelessWidget {
       children: [
         Positioned.fill(
           child: Material(
-            color: Colors.transparent,
+            color: AppColors.transparent,
             child: ColoredBox(
-              color: Colors.transparent,
+              color: AppColors.transparent,
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
                 child: Column(
@@ -24,7 +24,7 @@ class OverlayLoadingIndicator extends StatelessWidget {
                   children: [
                     SmoothContainer(
                       smoothness: 1,
-                      color: Colors.white,
+                      color: AppColors.white(context),
                       borderRadius: const SmoothBorderRadius.all(
                         SmoothRadius(
                           cornerRadius: 15 * 1.5,

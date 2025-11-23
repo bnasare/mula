@@ -23,7 +23,7 @@ class AssetTabButton extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 10),
         decoration: BoxDecoration(
-          color: isActive ? Colors.white : Colors.transparent,
+          color: isActive ? AppColors.white(context) : AppColors.transparent,
           borderRadius: BorderRadius.circular(6),
         ),
         child: Center(

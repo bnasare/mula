@@ -1,7 +1,9 @@
-import 'package:mula/shared/presentation/widgets/constants/app_text.dart';
-import 'package:mula/shared/utils/extension.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mula/shared/presentation/widgets/constants/app_text.dart';
+import 'package:mula/shared/utils/extension.dart';
+
+import '../../../../../shared/presentation/theme/app_colors.dart';
 
 class PasswordRuleWidget extends StatelessWidget {
   final bool isActive;
@@ -23,7 +25,7 @@ class PasswordRuleWidget extends StatelessWidget {
           height: context.responsiveValue(mobile: 12),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: isActive ? Colors.green : Colors.transparent,
+            color: isActive ? Colors.green : AppColors.transparent,
             border: isActive ? null : Border.all(color: Colors.grey),
           ),
           child: isActive

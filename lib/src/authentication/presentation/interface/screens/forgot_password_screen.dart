@@ -109,7 +109,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                       : TextInputType.emailAddress,
                   suffixIcon: Icon(
                     _isPhoneNumber ? IconlyLight.call : IconlyLight.message,
-                    color: Colors.grey.shade400,
+                    color: AppColors.hintText(context),
                     size: 20,
                   ),
                   validator: (value) {

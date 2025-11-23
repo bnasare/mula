@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_colors.dart';
 import '../../utils/extension.dart';
+import '../theme/app_colors.dart';
 
 class OTPInputWidget extends StatefulWidget {
   final int length;
@@ -84,7 +84,7 @@ class _OTPInputWidgetState extends State<OTPInputWidget> {
               decoration: BoxDecoration(
                 color: hasValue
                     ? AppColors.appPrimary.withValues(alpha: 0.1)
-                    : Colors.transparent,
+                    : AppColors.transparent,
                 border: Border.all(
                   color: hasValue
                       ? AppColors.appPrimary

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../shared/presentation/theme/app_colors.dart';
 import '../domain/entities/learning_track.dart';
 import '../domain/entities/lesson.dart';
 import '../domain/entities/lesson_detail.dart';
@@ -11,7 +12,7 @@ import '../domain/entities/search_item.dart';
 class DummyLearnData {
   static List<LearningTrack> getFeaturedTracks() {
     return [
-      const LearningTrack(
+      LearningTrack(
         id: '1',
         title: 'New to Investing? Start Here',
         description:
@@ -19,13 +20,13 @@ class DummyLearnData {
         icon: '🌱',
         durationMinutes: 3,
         gradient: LinearGradient(
-          colors: [Color(0xFFFF9F43), Color(0xFFFF8A00)],
+          colors: AppColors.orangeGradient,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         category: 'all',
       ),
-      const LearningTrack(
+      LearningTrack(
         id: '2',
         title: 'Understanding the Market',
         description:
@@ -33,7 +34,7 @@ class DummyLearnData {
         icon: '💰',
         durationMinutes: 5,
         gradient: LinearGradient(
-          colors: [Color(0xFF667EEA), Color(0xFF764BA2)],
+          colors: AppColors.purpleGradient,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),

@@ -80,7 +80,7 @@ class ConfirmationDialog extends StatelessWidget {
         ? theme.colorScheme.error
         : (primaryButtonColor ?? AppColors.appPrimary);
 
-    final buttonTextColor = primaryButtonTextColor ?? Colors.white;
+    final buttonTextColor = primaryButtonTextColor ?? AppColors.white(context);
 
     return Dialog(
       shape: RoundedRectangleBorder(

@@ -53,7 +53,7 @@ class MulaBotWelcomeScreen extends StatelessWidget {
               AppButton(
                 text: context.localize.startChat,
                 backgroundColor: AppColors.appPrimary,
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 12,
                 height: 50,
                 padding: EdgeInsets.zero,

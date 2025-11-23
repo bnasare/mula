@@ -122,7 +122,7 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                 onTap: _showDatePicker,
                 suffixIcon: Icon(
                   IconlyLight.calendar,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),
@@ -151,12 +151,12 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                             decoration: BoxDecoration(
                               color: _selectedGender == 'male'
                                   ? AppColors.appPrimary.withValues(alpha: 0.1)
-                                  : Colors.grey.shade50,
+                                  : AppColors.offWhite(context),
                               borderRadius: BorderRadius.circular(12),
                               border: Border.all(
                                 color: _selectedGender == 'male'
                                     ? AppColors.appPrimary
-                                    : Colors.grey.shade300,
+                                    : AppColors.border(context),
                                 width: _selectedGender == 'male' ? 0.6 : 1,
                               ),
                             ),
@@ -167,7 +167,7 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                                   Icons.male,
                                   color: _selectedGender == 'male'
                                       ? AppColors.appPrimary
-                                      : Colors.grey.shade600,
+                                      : AppColors.darkGrey(context),
                                   size: 24,
                                 ),
                                 const SizedBox(width: 8),
@@ -198,12 +198,12 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                             decoration: BoxDecoration(
                               color: _selectedGender == 'female'
                                   ? AppColors.appPrimary.withValues(alpha: 0.1)
-                                  : Colors.grey.shade50,
+                                  : AppColors.offWhite(context),
                               borderRadius: BorderRadius.circular(12),
                               border: Border.all(
                                 color: _selectedGender == 'female'
                                     ? AppColors.appPrimary
-                                    : Colors.grey.shade300,
+                                    : AppColors.border(context),
                                 width: _selectedGender == 'female' ? 0.6 : 1,
                               ),
                             ),
@@ -214,7 +214,7 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                                   Icons.female,
                                   color: _selectedGender == 'female'
                                       ? AppColors.appPrimary
-                                      : Colors.grey.shade600,
+                                      : AppColors.darkGrey(context),
                                   size: 24,
                                 ),
                                 const SizedBox(width: 8),
@@ -246,7 +246,7 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                 hintText: context.localize.enterResidentialAddress,
                 suffixIcon: Icon(
                   IconlyLight.location,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),
@@ -258,7 +258,7 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                 hintText: context.localize.enterGpsAddress,
                 suffixIcon: Icon(
                   IconlyLight.discovery,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),
@@ -270,7 +270,7 @@ class _TellUsAboutYouScreenState extends State<TellUsAboutYouScreen> {
                 hintText: context.localize.whatIsYourOccupation,
                 suffixIcon: Icon(
                   IconlyLight.work,
-                  color: Colors.grey.shade400,
+                  color: AppColors.hintText(context),
                   size: 20,
                 ),
               ),

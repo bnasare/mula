@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 
+import '../theme/app_colors.dart';
 import 'overlay_loading_indicator.dart';
 
 typedef AsyncResponse<T> = Either<String, T>;
@@ -68,7 +69,7 @@ class AsyncLoader {
   static OverlayEntry _createOverlayEntry(Widget widget) {
     return OverlayEntry(
       builder: (_) => Material(
-        color: Colors.transparent,
+        color: AppColors.transparent,
         child: ColoredBox(
           color: Colors.black54,
           child: Center(child: widget),

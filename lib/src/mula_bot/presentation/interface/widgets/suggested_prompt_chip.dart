@@ -21,7 +21,7 @@ class SuggestedPromptChip extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: AppColors.card(context),
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: AppColors.border(context), width: 1),
         ),

@@ -122,7 +122,7 @@ class _EnterBankAccountInfoScreenState
                       textCapitalization: TextCapitalization.words,
                       suffixIcon: Icon(
                         IconlyLight.profile,
-                        color: Colors.grey.shade400,
+                        color: AppColors.hintText(context),
                         size: 20,
                       ),
                       onChanged: (_) => setState(() {}),
@@ -136,7 +136,7 @@ class _EnterBankAccountInfoScreenState
                       keyboardType: TextInputType.number,
                       suffixIcon: Icon(
                         IconlyLight.document,
-                        color: Colors.grey.shade400,
+                        color: AppColors.hintText(context),
                         size: 20,
                       ),
                       onChanged: (_) => setState(() {}),

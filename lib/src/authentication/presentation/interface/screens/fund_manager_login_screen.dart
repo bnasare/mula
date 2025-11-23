@@ -194,7 +194,7 @@ class _FundManagerLoginScreenState extends State<FundManagerLoginScreen> {
                   keyboardType: TextInputType.emailAddress,
                   suffixIcon: Icon(
                     IconlyLight.message,
-                    color: Colors.grey.shade400,
+                    color: AppColors.hintText(context),
                     size: 20,
                   ),
                 ),
@@ -207,7 +207,7 @@ class _FundManagerLoginScreenState extends State<FundManagerLoginScreen> {
                   suffixIcon: IconButton(
                     iconSize: 20,
                     icon: Icon(
-                      color: Colors.grey.shade400,
+                      color: AppColors.hintText(context),
                       _obscurePassword ? IconlyLight.hide : IconlyLight.show,
                     ),
                     onPressed: () =>

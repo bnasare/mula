@@ -188,7 +188,7 @@ extension MulaAppBarHelpers on MulaAppBar {
                 padding: const EdgeInsets.all(8.0).copyWith(bottom: 0),
                 child: RoundedLinearProgressIndicator(
                   value: currentStep / totalSteps,
-                  backgroundColor: Colors.grey.shade200,
+                  backgroundColor: AppColors.lightGrey(context),
                   color: progressColor,
                   minHeight: 4,
                   borderRadius: 10,
@@ -254,7 +254,7 @@ class AppBarActions {
         child: Text(
           '$currentStep/$totalSteps',
           style: TextStyle(
-            color: Colors.black54,
+            color: AppColors.secondaryText(context),
             fontSize: context.responsiveFontSize(mobile: 14.0),
           ),
         ),
@@ -284,12 +284,12 @@ class AppBarActions {
           decoration: BoxDecoration(
             color: AppColors.offWhite(context),
             shape: BoxShape.circle,
-            border: Border.all(color: Colors.grey.shade300),
+            border: Border.all(color: AppColors.border(context)),
           ),
           child: Icon(
             icon,
             size: context.responsiveValue(mobile: 18.0),
-            color: Colors.grey.shade700,
+            color: AppColors.darkGrey(context),
           ),
         ),
         itemBuilder: (context) => menuItems,
@@ -348,7 +348,7 @@ class AppBarActions {
         child: Text(
           text,
           style: TextStyle(
-            color: textColor ?? Colors.white,
+            color: textColor ?? AppColors.white(context),
             fontSize: context.responsiveFontSize(mobile: 13),
           ),
         ),

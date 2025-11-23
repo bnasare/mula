@@ -75,7 +75,7 @@ class _EnterAmountScreenState extends State<EnterAmountScreen> {
                       keyboardType: TextInputType.number,
                       suffixIcon: Icon(
                         IconlyLight.wallet,
-                        color: Colors.grey.shade400,
+                        color: AppColors.hintText(context),
                         size: 20,
                       ),
                       onChanged: (_) => setState(() {}),
@@ -94,7 +94,7 @@ class _EnterAmountScreenState extends State<EnterAmountScreen> {
                 backgroundColor: _isFormValid
                     ? AppColors.appPrimary
                     : AppColors.grey(context),
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,
                 onTap: _isFormValid

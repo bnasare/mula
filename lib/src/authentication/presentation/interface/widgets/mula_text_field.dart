@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mula/shared/presentation/theme/app_colors.dart';
 import 'package:mula/shared/utils/extension.dart';
 
 /// A reusable custom text field component for the Mula app that
@@ -193,20 +194,20 @@ class MulaTextField extends StatelessWidget {
                 decoration: InputDecoration(
                   hintText: hintText,
                   hintStyle: TextStyle(
-                    color: Colors.grey.shade400,
+                    color: AppColors.hintText(context),
                     fontSize: context.responsiveFontSize(mobile: 13),
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(borderRadius),
-                    borderSide: BorderSide(color: Colors.grey.shade300),
+                    borderSide: BorderSide(color: AppColors.border(context)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(borderRadius),
-                    borderSide: BorderSide(color: Colors.grey.shade300),
+                    borderSide: BorderSide(color: AppColors.border(context)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(borderRadius),
-                    borderSide: BorderSide(color: Colors.grey.shade400),
+                    borderSide: BorderSide(color: AppColors.hintText(context)),
                   ),
                   filled: filled,
                   fillColor: fillColor,

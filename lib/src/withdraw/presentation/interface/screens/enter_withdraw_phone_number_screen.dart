@@ -126,7 +126,7 @@ class _EnterWithdrawPhoneNumberScreenState
                       keyboardType: TextInputType.phone,
                       suffixIcon: Icon(
                         IconlyLight.call,
-                        color: Colors.grey.shade400,
+                        color: AppColors.hintText(context),
                         size: 20,
                       ),
                       onChanged: (_) => setState(() {}),

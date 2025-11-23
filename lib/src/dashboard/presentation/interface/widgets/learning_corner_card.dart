@@ -25,14 +25,14 @@ class LearningCornerCard extends StatelessWidget {
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [Color(0xFFFF9F43), Color(0xFFFF8A00)],
+          colors: AppColors.orangeGradient,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(18),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFFFF9F43).withOpacity(0.3),
+            color:  AppColors.orangeGradient.first.withOpacity(0.3),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),

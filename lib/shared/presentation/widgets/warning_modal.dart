@@ -76,7 +76,7 @@ class WarningModal extends StatelessWidget {
               child: Text(
                 content,
                 style: TextStyle(
-                  color: Colors.grey.shade800,
+                  color: AppColors.darkGrey(context),
                   fontSize: context.responsiveFontSize(mobile: 15),
                   height: 1,
                 ),
@@ -115,7 +115,7 @@ class WarningModal extends StatelessWidget {
                   shape: ContinuousRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
-                  backgroundColor: const Color(0xFF9E9E9E),
+                  backgroundColor: AppColors.grey(context),
                   padding: EdgeInsets.zero,
                   fixedSize: Size(
                     double.maxFinite,

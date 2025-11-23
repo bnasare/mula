@@ -79,7 +79,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   textCapitalization: TextCapitalization.words,
                   suffixIcon: Icon(
                     IconlyLight.profile,
-                    color: Colors.grey.shade400,
+                    color: AppColors.hintText(context),
                     size: 20,
                   ),
                 ),
@@ -91,7 +91,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   keyboardType: TextInputType.emailAddress,
                   suffixIcon: Icon(
                     IconlyLight.message,
-                    color: Colors.grey.shade400,
+                    color: AppColors.hintText(context),
                     size: 20,
                   ),
                 ),
@@ -112,20 +112,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       decoration: InputDecoration(
                         hintText: '',
                         hintStyle: TextStyle(
-                          color: Colors.grey.shade400,
+                          color: AppColors.hintText(context),
                           fontSize: context.responsiveFontSize(mobile: 13),
                         ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: Colors.grey.shade300),
+                          borderSide: BorderSide(color: AppColors.border(context)),
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: Colors.grey.shade300),
+                          borderSide: BorderSide(color: AppColors.border(context)),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: Colors.grey.shade400),
+                          borderSide: BorderSide(color: AppColors.hintText(context)),
                         ),
                         filled: true,
                         isDense: true,
@@ -163,7 +163,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   suffixIcon: IconButton(
                     iconSize: 20,
                     icon: Icon(
-                      color: Colors.grey.shade400,
+                      color: AppColors.hintText(context),
                       _obscurePassword ? IconlyLight.hide : IconlyLight.show,
                     ),
                     onPressed: () =>
@@ -179,7 +179,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   suffixIcon: IconButton(
                     iconSize: 20,
                     icon: Icon(
-                      color: Colors.grey.shade400,
+                      color: AppColors.hintText(context),
                       _obscureConfirmPassword
                           ? IconlyLight.hide
                           : IconlyLight.show,
