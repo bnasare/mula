@@ -36,8 +36,10 @@ class _HomeTabState extends State<HomeTab> {
     return Scaffold(
       body: RefreshIndicator(
         onRefresh: () => context.read<DashboardProvider>().refresh(),
-        child: CustomScrollView(
-          slivers: [
+        child: ScrollConfiguration(
+          behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+          child: CustomScrollView(
+            slivers: [
             // App bar with user greeting
             const HomeAppBar(),
 
@@ -86,6 +88,7 @@ class _HomeTabState extends State<HomeTab> {
               ),
             ),
           ],
+        ),
         ),
       ),
       floatingActionButton: GestureDetector(

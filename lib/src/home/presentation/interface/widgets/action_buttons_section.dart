@@ -77,19 +77,6 @@ class ActionButtonsSection extends StatelessWidget {
                 );
               },
             ),
-            const SizedBox(width: 12),
-            ActionButton(
-              icon: IconlyLight.wallet,
-              label: context.localize.cashWallet,
-              onTap: () {
-                NavigationHelper.navigateTo(
-                  context,
-                  CashWalletScreen(
-                    dashboardProvider: context.read<DashboardProvider>(),
-                  ),
-                );
-              },
-            ),
           ],
         ),
       ),

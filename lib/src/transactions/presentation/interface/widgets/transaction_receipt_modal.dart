@@ -285,8 +285,8 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
         break;
       case ActivityStatus.pending:
         label = context.localize.pending;
-        backgroundColor = AppColors.purpleLight;
-        textColor = AppColors.purple;
+        backgroundColor = AppColors.activityPendingLight;
+        textColor = AppColors.activityPending;
         break;
       case ActivityStatus.failed:
         label = context.localize.failed;
