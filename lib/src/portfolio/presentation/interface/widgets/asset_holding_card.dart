@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../../dashboard/domain/entities/asset.dart';
 
 /// Card displaying a single asset holding with details
 class AssetHoldingCard extends StatelessWidget {
@@ -12,6 +13,7 @@ class AssetHoldingCard extends StatelessWidget {
   final double value;
   final double changePercentage;
   final int shares;
+  final AssetType assetType;
   final VoidCallback? onTap;
   final String? logoUrl;
 
@@ -22,6 +24,7 @@ class AssetHoldingCard extends StatelessWidget {
     required this.value,
     required this.changePercentage,
     required this.shares,
+    required this.assetType,
     this.onTap,
     this.logoUrl,
   });

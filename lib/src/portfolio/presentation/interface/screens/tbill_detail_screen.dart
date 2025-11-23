@@ -7,21 +7,19 @@ import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../dashboard/presentation/interface/widgets/performance_chart.dart';
 
-/// Asset Holding Detail screen showing comprehensive stock information
-class AssetHoldingDetailScreen extends StatelessWidget {
-  final String ticker;
-  final String companyName;
-  final double currentPrice;
+/// T-Bill Detail screen showing comprehensive treasury bill information
+class TBillDetailScreen extends StatelessWidget {
+  final String tbillCode;
+  final String description;
+  final double currentRate;
   final double change;
-  final double changePercentage;
 
-  const AssetHoldingDetailScreen({
+  const TBillDetailScreen({
     super.key,
-    required this.ticker,
-    required this.companyName,
-    required this.currentPrice,
+    required this.tbillCode,
+    required this.description,
+    required this.currentRate,
     required this.change,
-    required this.changePercentage,
   });
 
   @override
@@ -35,7 +33,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.offWhite(context),
       appBar: const MulaAppBar(
-        title: 'Asset Holdings',
+        title: 'Treasury Bill',
       ),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
@@ -55,31 +53,31 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Left: Ticker and Company Name
+                        // Left: T-Bill Code and Description
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              AppText.small(
-                                ticker,
-                                color: AppColors.secondaryText(context),
-                              ),
-                              const SizedBox(height: 4),
                               AppText.large(
-                                companyName,
+                                tbillCode,
                                 style: const TextStyle(
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
+                              const SizedBox(height: 4),
+                              AppText.small(
+                                description,
+                                color: AppColors.secondaryText(context),
+                              ),
                             ],
                           ),
                         ),
-                        // Right: Price and Change
+                        // Right: Rate and Change
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             AppText.large(
-                              currencyFormat.format(currentPrice),
+                              '${currentRate.toStringAsFixed(2)}%',
                               style: const TextStyle(
                                 fontWeight: FontWeight.w600,
                               ),
@@ -88,12 +86,6 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                             Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                AppText.small(
-                                  '${currencyFormat.format(change.abs())} (',
-                                  color: isPositive
-                                      ? AppColors.appPrimary
-                                      : Colors.red,
-                                ),
                                 Icon(
                                   isPositive
                                       ? Icons.arrow_upward
@@ -103,8 +95,9 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                                       ? AppColors.appPrimary
                                       : Colors.red,
                                 ),
+                                const SizedBox(width: 2),
                                 AppText.small(
-                                  '${changePercentage.abs().toStringAsFixed(1)}%)',
+                                  '${change.abs().toStringAsFixed(1)}%',
                                   color: isPositive
                                       ? AppColors.appPrimary
                                       : Colors.red,
@@ -139,20 +132,20 @@ class AssetHoldingDetailScreen extends StatelessWidget {
 
               const SizedBox(height: 32),
 
-              // Stock Details Section
+              // T-Bill Details Section
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: ListView.separated(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
-                  itemCount: 10,
+                  itemCount: 5,
                   separatorBuilder: (context, index) => Divider(
                     color: AppColors.border(context),
                     height: 24,
                     thickness: 0.5,
                   ),
                   itemBuilder: (context, index) {
-                    return _buildStockDetailItem(context, index);
+                    return _buildTBillDetailItem(context, index);
                   },
                 ),
               ),
@@ -189,13 +182,13 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                               _buildInvestmentItem(
                                 context,
                                 label: 'Total Cost',
-                                value: currencyFormat.format(23000.00),
+                                value: currencyFormat.format(28000.00),
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Return',
-                                value: '30.4%',
+                                label: 'Purchase Interest Rate',
+                                value: '23.5%',
                               ),
                             ],
                           ),
@@ -208,20 +201,20 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                             children: [
                               _buildInvestmentItem(
                                 context,
-                                label: 'Shares',
+                                label: 'Quantity',
                                 value: '10,000',
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Cost Price',
-                                value: currencyFormat.format(2.50),
+                                label: 'Accrued Interest',
+                                value: currencyFormat.format(25.50),
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
                                 label: 'Capital Gains/(Losses)',
-                                value: currencyFormat.format(7000.00),
+                                value: currencyFormat.format(2475.00),
                               ),
                             ],
                           ),
@@ -287,7 +280,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 12),
                     AppText(
-                      'Scancom PLC, more commonly known as MTN Ghana, is a public limited liability company licensed by the NCA as a mobile telecommunications services operator. In November 1994, the company (then known as "Spacefon") launched its GSM mobile cellular services with initial coverage in Accra and Tema. Coverage was expanded to Kumasi and Obuasi in 1997, and to Takoradi, Bibiani, Tarkwa and Cape Coast in 1999.\n\nSince then, MTN has built a robust customer base in Ghana, increasing its subscribers from 2.5 million in 2006 to over 30 million as at June 2025. MTN Ghana revenue lines are airtime and subscription, interconnect and roaming, SMS, data, handset and accessories, mobile money, and value added services.\n\nData and mobile money are expected to be the dominant drivers of revenue due to increased internet use and reliance on mobile money for payments.',
+                      'Treasury Bills are safe, short-term investments offered by the Government of Ghana. You invest for 91, 182, or 364 days, and earn a return when they mature.',
                       style: TextStyle(
                         fontSize: 14,
                         height: 1.5,
@@ -300,42 +293,51 @@ class AssetHoldingDetailScreen extends StatelessWidget {
 
               const SizedBox(height: 32),
 
-              // Company Info Section
+              // Additional Info Grid (2x2)
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: ListView.separated(
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  itemCount: 3,
-                  separatorBuilder: (context, index) => Divider(
-                    color: AppColors.border(context),
-                    height: 24,
-                    thickness: 0.5,
-                  ),
-                  itemBuilder: (context, index) {
-                    switch (index) {
-                      case 0:
-                        return _buildInfoItem(
-                          context,
-                          label: 'Date of Incorporation',
-                          value: 'April 1994',
-                        );
-                      case 1:
-                        return _buildInfoItem(
-                          context,
-                          label: 'Date of IPO',
-                          value: '3rd September, 2018',
-                        );
-                      case 2:
-                        return _buildInfoItem(
-                          context,
-                          label: 'Sector',
-                          value: 'Telecommunications',
-                        );
-                      default:
-                        return const SizedBox.shrink();
-                    }
-                  },
+                child: Row(
+                  children: [
+                    // Left Column
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          _buildInfoItem(
+                            context,
+                            label: 'Type',
+                            value: 'Treasury\nBill',
+                          ),
+                          const SizedBox(height: 24),
+                          _buildInfoItem(
+                            context,
+                            label: 'Issuer',
+                            value: 'Government of\nGhana',
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 32),
+                    // Right Column
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          _buildInfoItem(
+                            context,
+                            label: 'Currency',
+                            value: 'GHS',
+                          ),
+                          const SizedBox(height: 24),
+                          _buildInfoItem(
+                            context,
+                            label: 'Maturity Date',
+                            value: '27-\nOCT-25',
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ),
 
@@ -347,50 +349,31 @@ class AssetHoldingDetailScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildStockDetailItem(BuildContext context, int index) {
+  Widget _buildTBillDetailItem(BuildContext context, int index) {
     final Map<String, String> details = {
-      'Previous Close(GHS)': '3.98',
-      'Open(GHS)': '3.97',
-      'Day\'s Range(GHS)': '3.78 - 4.06',
-      'Volume Traded': '125,348,479',
-      '52-Week Range(GHS)': '1.78 - 4.02',
-      'P/E Ratio': '7.45x',
-      'Earnings Per Share(GHS)': '0.55',
-      'Dividend Yield': '1.96%',
-      'Market Cap(GHS)': '5,410B',
-      'Shares Outstanding': '1,245,890,367,470',
+      'Current Rate': '10.83%',
+      'Maturity Rate': '15.49%',
+      'Issue Date': 'July 30, 2025',
+      'Maturity Date': 'October 27, 2025',
+      'Coupon Rate': 'N/A',
     };
 
     final keys = details.keys.toList();
     if (index >= keys.length) return const SizedBox.shrink();
 
-    return _buildInfoItem(
-      context,
-      label: keys[index],
-      value: details[keys[index]]!,
-    );
-  }
-
-  Widget _buildInfoItem(
-    BuildContext context, {
-    required String label,
-    required String value,
-  }) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Expanded(
-          child: AppText(
-            label,
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w400,
-              color: AppColors.primaryText(context),
-            ),
+        AppText(
+          keys[index],
+          style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+            color: AppColors.primaryText(context),
           ),
         ),
         AppText(
-          value,
+          details[keys[index]]!,
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w600,
@@ -422,6 +405,35 @@ class AssetHoldingDetailScreen extends StatelessWidget {
           value,
           style: TextStyle(
             fontSize: 16,
+            fontWeight: FontWeight.w600,
+            color: AppColors.primaryText(context),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildInfoItem(
+    BuildContext context, {
+    required String label,
+    required String value,
+  }) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        AppText(
+          label,
+          style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+            color: AppColors.primaryText(context),
+          ),
+        ),
+        const SizedBox(height: 4),
+        AppText(
+          value,
+          style: TextStyle(
+            fontSize: 14,
             fontWeight: FontWeight.w600,
             color: AppColors.primaryText(context),
           ),

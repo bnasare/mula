@@ -17,7 +17,9 @@ import '../widgets/asset_holding_card.dart';
 import '../widgets/cash_wallet_section.dart';
 import '../widgets/portfolio_asset_breakdown.dart';
 import 'asset_holding_detail_screen.dart';
+import 'mutual_funds_detail_screen.dart';
 import 'portfolio_summary_screen.dart';
+import 'tbill_detail_screen.dart';
 
 /// Portfolio tab - displays complete portfolio overview
 class PortfolioTab extends StatelessWidget {
@@ -193,35 +195,54 @@ class PortfolioTab extends StatelessWidget {
                             value: 2098,
                             changePercentage: 1.15,
                             shares: 150,
+                            assetType: AssetType.stocks,
                             onTap: () {
-                              NavigationHelper.navigateTo(
+                              _navigateToAssetDetail(
                                 context,
-                                const AssetHoldingDetailScreen(
-                                  ticker: 'GSE.MTNGH',
-                                  companyName: 'Scancom PLC',
-                                  currentPrice: 4.02,
-                                  change: 0.10,
-                                  changePercentage: 2.3,
-                                ),
+                                AssetType.stocks,
+                                ticker: 'GSE.MTNGH',
+                                name: 'Scancom PLC',
+                                currentPrice: 4.02,
+                                change: 0.10,
+                                changePercentage: 2.3,
                               );
                             },
                           ),
                           AssetHoldingCard(
-                            companyName: 'Scancom PLC',
-                            brokerName: 'Databank Brokerage',
-                            value: 2098,
-                            changePercentage: 1.15,
-                            shares: 150,
+                            companyName: 'IC Liquidity Fund',
+                            brokerName: 'IC Asset Managers',
+                            value: 2025,
+                            changePercentage: 0.89,
+                            shares: 1000,
+                            assetType: AssetType.mutualFunds,
                             onTap: () {
-                              NavigationHelper.navigateTo(
+                              _navigateToAssetDetail(
                                 context,
-                                const AssetHoldingDetailScreen(
-                                  ticker: 'GSE.MTNGH',
-                                  companyName: 'Scancom PLC',
-                                  currentPrice: 4.02,
-                                  change: 0.10,
-                                  changePercentage: 2.3,
-                                ),
+                                AssetType.mutualFunds,
+                                ticker: 'ICLF',
+                                name: 'IC Liquidity Fund',
+                                currentPrice: 2.0231,
+                                change: 0.0001,
+                                changePercentage: 0.89,
+                              );
+                            },
+                          ),
+                          AssetHoldingCard(
+                            companyName: 'TB 27-OCT-25',
+                            brokerName: 'Government of Ghana',
+                            value: 10000,
+                            changePercentage: -0.34,
+                            shares: 10000,
+                            assetType: AssetType.tBills,
+                            onTap: () {
+                              _navigateToAssetDetail(
+                                context,
+                                AssetType.tBills,
+                                ticker: 'TB 27-OCT-25',
+                                name: 'GOG 91-Day Treasury Bill',
+                                currentPrice: 10.83,
+                                change: -0.66,
+                                changePercentage: -0.34,
                               );
                             },
                           ),
@@ -342,5 +363,58 @@ class PortfolioTab extends StatelessWidget {
         },
       ),
     );
+  }
+
+  /// Navigate to the appropriate detail screen based on asset type
+  void _navigateToAssetDetail(
+    BuildContext context,
+    AssetType assetType, {
+    required String ticker,
+    required String name,
+    required double currentPrice,
+    required double change,
+    required double changePercentage,
+  }) {
+    Widget detailScreen;
+
+    switch (assetType) {
+      case AssetType.stocks:
+        detailScreen = AssetHoldingDetailScreen(
+          ticker: ticker,
+          companyName: name,
+          currentPrice: currentPrice,
+          change: change,
+          changePercentage: changePercentage,
+        );
+        break;
+      case AssetType.mutualFunds:
+        detailScreen = MutualFundsDetailScreen(
+          ticker: ticker,
+          fundName: name,
+          currentPrice: currentPrice,
+          change: change,
+          changePercentage: changePercentage,
+        );
+        break;
+      case AssetType.tBills:
+        detailScreen = TBillDetailScreen(
+          tbillCode: ticker,
+          description: name,
+          currentRate: currentPrice,
+          change: change,
+        );
+        break;
+      default:
+        // For other asset types, navigate to stock detail as fallback
+        detailScreen = AssetHoldingDetailScreen(
+          ticker: ticker,
+          companyName: name,
+          currentPrice: currentPrice,
+          change: change,
+          changePercentage: changePercentage,
+        );
+    }
+
+    NavigationHelper.navigateTo(context, detailScreen);
   }
 }
