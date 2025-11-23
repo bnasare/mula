@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
-import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
 import '../../../data/dummy_learn_data.dart';
 import '../../../domain/entities/quiz.dart';
 import '../../../domain/entities/quiz_result.dart';
@@ -14,8 +12,13 @@ import '../widgets/quiz_results_dialog.dart';
 
 class QuizScreen extends StatefulWidget {
   final String lessonId;
+  final VoidCallback? onReturnToLearn;
 
-  const QuizScreen({super.key, required this.lessonId});
+  const QuizScreen({
+    super.key,
+    required this.lessonId,
+    this.onReturnToLearn,
+  });
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -74,10 +77,10 @@ class _QuizScreenState extends State<QuizScreen> {
       userName: 'Phil', // TODO: Get actual user name
       onTryAgain: _resetQuiz,
       onExploreResources: () {
-        // Navigate back to dashboard and switch to Learn tab
-        Navigator.of(context).popUntil((route) => route.isFirst);
-        final provider = context.read<DashboardProvider>();
-        provider.changeTab(3);
+        // Use callback to navigate back to Learn tab
+        if (widget.onReturnToLearn != null) {
+          widget.onReturnToLearn!();
+        }
       },
     );
   }

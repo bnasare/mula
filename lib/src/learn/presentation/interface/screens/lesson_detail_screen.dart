@@ -123,7 +123,14 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
               onQuizPressed: () {
                 NavigationHelper.navigateTo(
                   context,
-                  QuizScreen(lessonId: widget.lessonId),
+                  QuizScreen(
+                    lessonId: widget.lessonId,
+                    onReturnToLearn: () {
+                      // Pop back to Learn tab (pops QuizScreen then LessonDetailScreen)
+                      Navigator.of(context).pop();
+                      Navigator.of(context).pop();
+                    },
+                  ),
                 );
               },
             ),
