@@ -5,7 +5,10 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/interface/widgets/performance_chart.dart';
+import '../../../domain/entities/trade_type.dart';
+import 'tbill_trade_screen.dart';
 
 /// T-Bill Detail screen showing comprehensive treasury bill information
 class TBillDetailScreen extends StatelessWidget {
@@ -236,7 +239,17 @@ class TBillDetailScreen extends StatelessWidget {
                       child: AppButton(
                         text: 'Sell',
                         onTap: () {
-                          // TODO: Implement sell
+                          NavigationHelper.navigateTo(
+                            context,
+                            TBillTradeScreen(
+                              tradeType: TradeType.sell,
+                              tbillCode: tbillCode,
+                              tbillDescription: description,
+                              interestRate: currentRate,
+                              availableCashBalance: 300.00, // TODO: Get from portfolio/wallet
+                              currentHoldings: 10000.00, // TODO: Get from user's holdings
+                            ),
+                          );
                         },
                         backgroundColor: Colors.transparent,
                         textColor: AppColors.primaryText(context),
@@ -251,7 +264,17 @@ class TBillDetailScreen extends StatelessWidget {
                       child: AppButton(
                         text: 'Buy',
                         onTap: () {
-                          // TODO: Implement buy
+                          NavigationHelper.navigateTo(
+                            context,
+                            TBillTradeScreen(
+                              tradeType: TradeType.buy,
+                              tbillCode: tbillCode,
+                              tbillDescription: description,
+                              interestRate: currentRate,
+                              availableCashBalance: 300.00, // TODO: Get from portfolio/wallet
+                              currentHoldings: null, // Not needed for buy
+                            ),
+                          );
                         },
                         backgroundColor: AppColors.appPrimary,
                         textColor: Colors.white,
