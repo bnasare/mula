@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 
@@ -27,18 +28,40 @@ class ArticleContent extends StatelessWidget {
         continue;
       }
 
-      // Bold headings (text between **)
-      if (line.startsWith('**') && line.endsWith('**')) {
-        final text = line.replaceAll('**', '');
+      // Main headings (text starting with #)
+      if (line.startsWith('#')) {
+        final text = line.replaceFirst('#', '').trim();
         widgets.add(
           Padding(
-            padding: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.only(bottom: 12, top: 8),
             child: AppText.small(
               text,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.w600),
             ),
           ),
         );
+      }
+      // Bold headings (text between **) - handles trailing content like emojis
+      else if (line.startsWith('**') && line.contains('**', 2)) {
+        final text = line.substring(2); // Remove starting **
+        final endIndex = text.indexOf('**');
+        if (endIndex != -1) {
+          final boldText = text.substring(0, endIndex);
+          final trailingText = text.substring(endIndex + 2).trim();
+          final fullText = trailingText.isNotEmpty
+              ? '$boldText $trailingText'
+              : boldText;
+
+          widgets.add(
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: AppText.small(
+                fullText,
+                style: const TextStyle(fontWeight: FontWeight.w600),
+              ),
+            ),
+          );
+        }
       }
       // Numbered list items
       else if (RegExp(r'^\d+\.').hasMatch(line)) {
@@ -84,8 +107,8 @@ class ArticleContent extends StatelessWidget {
           TextSpan(
             text: text.substring(lastMatchEnd, match.start),
             style: TextStyle(
-              fontSize: 16,
-              color: AppColors.primaryText(context),
+              fontSize: 14,
+              color: AppColors.defaultText(context),
               height: 1.6,
             ),
           ),
@@ -97,8 +120,7 @@ class ArticleContent extends StatelessWidget {
         TextSpan(
           text: match.group(1),
           style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
+            fontSize: 14,
             color: AppColors.primaryText(context),
             height: 1.6,
           ),
@@ -114,8 +136,8 @@ class ArticleContent extends StatelessWidget {
         TextSpan(
           text: text.substring(lastMatchEnd),
           style: TextStyle(
-            fontSize: 16,
-            color: AppColors.primaryText(context),
+            fontSize: 14,
+            color: AppColors.defaultText(context),
             height: 1.6,
           ),
         ),

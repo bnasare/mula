@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
-import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
+import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
@@ -59,47 +59,17 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
     return Scaffold(
       backgroundColor: AppColors.offWhite(context),
       appBar: MulaAppBar(
-        title: '',
+        title: lessonDetail!.title,
         onBackPressed: () => Navigator.of(context).pop(),
         actions: [
           IconButton(
-            icon: Icon(IconlyLight.send, color: AppColors.primaryText(context)),
+            icon: Icon(
+              Icons.share_outlined,
+              color: AppColors.defaultText(context),
+            ),
             onPressed: () {
               // TODO: Implement share functionality
             },
-          ),
-          // Mark as read button
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
-            child: OutlinedButton(
-              onPressed: _toggleReadStatus,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: isRead
-                    ? AppColors.appPrimary
-                    : AppColors.primaryText(context),
-                side: BorderSide(
-                  color: isRead
-                      ? AppColors.appPrimary
-                      : AppColors.lightGrey(context),
-                ),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 16,
-                  vertical: 8,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              child: AppText.smallest(
-                isRead ? context.localize.read : context.localize.markAsRead,
-                style: TextStyle(
-                  color: isRead
-                      ? AppColors.appPrimary
-                      : AppColors.primaryText(context),
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ),
           ),
         ],
       ),
@@ -108,13 +78,6 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Title
-            AppText.large(
-              lessonDetail!.title,
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-            AppSpacer.vLarge(),
-
             // Article header (image + metadata)
             ArticleHeader(
               imageUrl: lessonDetail!.heroImageUrl,
@@ -127,7 +90,29 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
 
             // Article content
             ArticleContent(content: lessonDetail!.content),
-            AppSpacer.vLarger(),
+            AppSpacer.vShort(),
+
+            // Mark as read button
+            Align(
+              alignment: Alignment.centerRight,
+              child: TextButton(
+                onPressed: _toggleReadStatus,
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  minimumSize: Size.zero,
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                ),
+                child: Text(
+                  isRead ? context.localize.read : context.localize.markAsRead,
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: AppColors.appPrimary,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+            ),
+            AppSpacer.vShort(),
 
             // Action buttons
             LessonActionButtons(

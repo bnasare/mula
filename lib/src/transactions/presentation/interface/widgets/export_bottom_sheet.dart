@@ -41,20 +41,13 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
                   fontSize: 22,
                 ),
               ),
-              IconButton.filled(
-                style: IconButton.styleFrom(
-                  backgroundColor: AppColors.grey(
-                    context,
-                  ).withValues(alpha: 0.1),
-                  foregroundColor: AppColors.primaryText(context),
-                  padding: EdgeInsets.zero,
-                  minimumSize: const Size(38, 38),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
+              GestureDetector(
+                onTap: () => Navigator.pop(context),
+                child: Icon(
+                  Icons.cancel,
+                  size: 22,
+                  color: AppColors.secondaryText(context),
                 ),
-                icon: const Icon(Icons.close),
-                onPressed: () => Navigator.pop(context),
               ),
             ],
           ),

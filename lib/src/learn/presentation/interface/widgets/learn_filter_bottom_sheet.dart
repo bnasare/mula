@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/single_category_selector.dart';
@@ -89,11 +90,13 @@ class _LearnFilterBottomSheetState extends State<LearnFilterBottomSheet> {
                   context.localize.filter,
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
-                IconButton(
-                  icon: const Icon(Icons.close),
-                  onPressed: () => Navigator.pop(context),
-                  padding: EdgeInsets.zero,
-                  constraints: const BoxConstraints(),
+                GestureDetector(
+                  onTap: () => Navigator.pop(context),
+                  child: Icon(
+                    Icons.cancel,
+                    size: 22,
+                    color: AppColors.secondaryText(context),
+                  ),
                 ),
               ],
             ),

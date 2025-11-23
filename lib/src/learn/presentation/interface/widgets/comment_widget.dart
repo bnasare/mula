@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
@@ -47,31 +48,28 @@ class CommentWidget extends StatelessWidget {
                       comment.authorName,
                       style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
-                    const SizedBox(width: 8),
-                    AppText.smallest(
-                      comment.timestamp,
-                      color: AppColors.secondaryText(context),
-                    ),
+                    const SizedBox(width: 4),
+                    AppText.smallest('•'),
+                    const SizedBox(width: 4),
+                    AppText.smallest(comment.timestamp),
                   ],
                 ),
                 const SizedBox(height: 6),
-                AppText.smaller(
+                AppText.smallest(
                   comment.text,
                   color: AppColors.primaryText(context),
                 ),
-                if (!isReply) ...[
-                  const SizedBox(height: 8),
-                  GestureDetector(
-                    onTap: onReplyPressed,
-                    child: AppText.smallest(
-                      context.localize.reply,
-                      style: TextStyle(
-                        color: AppColors.appPrimary,
-                        fontWeight: FontWeight.w600,
-                      ),
+                const SizedBox(height: 8),
+                GestureDetector(
+                  onTap: onReplyPressed,
+                  child: AppText.smallest(
+                    context.localize.reply,
+                    style: TextStyle(
+                      color: AppColors.appPrimary,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
-                ],
+                ),
               ],
             ),
           ),

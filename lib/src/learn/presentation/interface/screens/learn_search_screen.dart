@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
@@ -90,13 +91,13 @@ class _LearnSearchScreenState extends State<LearnSearchScreen> {
               onChanged: (value) {
                 // TODO: Implement search
               },
-              trailing: IconButton(
-                icon: Icon(
+              trailing: GestureDetector(
+                onTap: _openFilter,
+                child: Icon(
                   IconlyLight.filter,
-                  color: AppColors.primaryText(context),
+                  color: AppColors.defaultText(context),
                   size: 20,
                 ),
-                onPressed: _openFilter,
               ),
             ),
           ),
@@ -230,15 +231,13 @@ class _SearchItemTile extends StatelessWidget {
             const SizedBox(width: 16),
             Expanded(child: AppText.smaller(title)),
             if (showRemoveButton)
-              IconButton(
-                icon: Icon(
-                  Icons.close,
-                  size: 20,
+              GestureDetector(
+                onTap: onRemove,
+                child: Icon(
+                  Icons.cancel,
+                  size: 18,
                   color: AppColors.secondaryText(context),
                 ),
-                onPressed: onRemove,
-                padding: EdgeInsets.zero,
-                constraints: const BoxConstraints(),
               ),
           ],
         ),

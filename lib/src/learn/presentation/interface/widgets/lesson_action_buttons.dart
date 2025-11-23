@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
-import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 
 class LessonActionButtons extends StatelessWidget {
@@ -20,47 +21,25 @@ class LessonActionButtons extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          flex: 2,
-          child: ElevatedButton(
-            onPressed: onInvestPressed ?? () {},
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.appPrimary,
-              foregroundColor: AppColors.white(context),
-              elevation: 0,
-              padding: const EdgeInsets.symmetric(vertical: 16),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-            child: AppText.smaller(
-              context.localize.investIn(assetName),
-              style: TextStyle(
-                color: AppColors.white(context),
-                fontWeight: FontWeight.w600,
-              ),
-            ),
+          child: AppButton(
+            onTap: onInvestPressed ?? () {},
+            text: context.localize.investIn(assetName),
+            backgroundColor: AppColors.appPrimary,
+            textColor: AppColors.white(context),
+            borderRadius: 8,
+            padding: EdgeInsets.zero,
           ),
         ),
         const SizedBox(width: 12),
         Expanded(
-          child: OutlinedButton(
-            onPressed: onQuizPressed ?? () {},
-            style: OutlinedButton.styleFrom(
-              foregroundColor: AppColors.primaryText(context),
-              side: BorderSide(color: AppColors.lightGrey(context)),
-              elevation: 0,
-              padding: const EdgeInsets.symmetric(vertical: 16),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-            child: AppText.smaller(
-              context.localize.takeAQuiz,
-              style: TextStyle(
-                color: AppColors.primaryText(context),
-                fontWeight: FontWeight.w600,
-              ),
-            ),
+          child: AppButton(
+            onTap: onQuizPressed ?? () {},
+            text: context.localize.takeAQuiz,
+            backgroundColor: AppColors.transparent,
+            textColor: AppColors.primaryText(context),
+            borderColor: AppColors.border(context),
+            borderRadius: 8,
+            padding: EdgeInsets.zero,
           ),
         ),
       ],
