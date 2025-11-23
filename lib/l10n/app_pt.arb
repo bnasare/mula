@@ -332,5 +332,26 @@
   "enterAccountNumber": "Inserir Número da Conta",
   "accountLinkedSuccessfully": "Conta Vinculada com Sucesso",
   "accountLinkedSuccessDescription": "Sua conta foi vinculada com sucesso ao MULA",
-  "goBack": "Voltar"
+  "goBack": "Voltar",
+
+  "learningTracks": "Trilhas de Aprendizado",
+  "featuredTracks": "Trilhas em Destaque",
+  "popularLessons": "Lições Populares",
+  "newToInvesting": "Novo em Investimentos? Comece Aqui",
+  "newToInvestingDescription": "Se você é novo em investimentos e quer explorar o ecossistema, comece com este artigo",
+  "allTracks": "Todos",
+  "ghanaStocks": "Ações do Gana",
+  "tBillsBonds": "Títulos do Tesouro/Títulos",
+  "mutualFunds": "Fundos Mútuos",
+  "article": "Artigo",
+  "mins": "{count} mins",
+  "@mins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "whatIsAMutualFund": "O que é um Fundo Mútuo?",
+  "poolingMoneySpreading": "Juntar dinheiro, distribuir risco, crescer riqueza"
 }

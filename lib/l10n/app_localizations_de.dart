@@ -964,4 +964,47 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get goBack => 'Zurück';
+
+  @override
+  String get learningTracks => 'Lernpfade';
+
+  @override
+  String get featuredTracks => 'Empfohlene Pfade';
+
+  @override
+  String get popularLessons => 'Beliebte Lektionen';
+
+  @override
+  String get newToInvesting => 'Neu beim Investieren? Beginnen Sie Hier';
+
+  @override
+  String get newToInvestingDescription =>
+      'Wenn Sie neu beim Investieren sind und das Ökosystem erkunden möchten, beginnen Sie mit diesem Artikel';
+
+  @override
+  String get allTracks => 'Alle';
+
+  @override
+  String get ghanaStocks => 'Ghana-Aktien';
+
+  @override
+  String get tBillsBonds => 'Schatzwechsel/Anleihen';
+
+  @override
+  String get mutualFunds => 'Investmentfonds';
+
+  @override
+  String get article => 'Artikel';
+
+  @override
+  String mins(int count) {
+    return '$count Min';
+  }
+
+  @override
+  String get whatIsAMutualFund => 'Was ist ein Investmentfonds?';
+
+  @override
+  String get poolingMoneySpreading =>
+      'Geld bündeln, Risiko streuen, Vermögen vermehren';
 }

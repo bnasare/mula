@@ -331,5 +331,26 @@
   "enterAccountNumber": "Accountnummer Invoeren",
   "accountLinkedSuccessfully": "Account Succesvol Gekoppeld",
   "accountLinkedSuccessDescription": "Je account is succesvol gekoppeld aan MULA",
-  "goBack": "Ga Terug"
+  "goBack": "Ga Terug",
+
+  "learningTracks": "Leerpaden",
+  "featuredTracks": "Uitgelichte Paden",
+  "popularLessons": "Populaire Lessen",
+  "newToInvesting": "Nieuw bij Investeren? Start Hier",
+  "newToInvestingDescription": "Als je nieuw bent bij investeren en het ecosysteem wilt verkennen, begin dan met dit artikel",
+  "allTracks": "Alle",
+  "ghanaStocks": "Ghana Aandelen",
+  "tBillsBonds": "Schatkistpapier/Obligaties",
+  "mutualFunds": "Beleggingsfondsen",
+  "article": "Artikel",
+  "mins": "{count} min",
+  "@mins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "whatIsAMutualFund": "Wat is een Beleggingsfonds?",
+  "poolingMoneySpreading": "Geld bundelen, risico spreiden, vermogen laten groeien"
 }

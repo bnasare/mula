@@ -331,5 +331,26 @@
   "enterAccountNumber": "アカウント番号を入力",
   "accountLinkedSuccessfully": "アカウントのリンクが完了しました",
   "accountLinkedSuccessDescription": "あなたのアカウントはMULAに正常にリンクされました",
-  "goBack": "戻る"
+  "goBack": "戻る",
+
+  "learningTracks": "学習トラック",
+  "featuredTracks": "注目のトラック",
+  "popularLessons": "人気のレッスン",
+  "newToInvesting": "投資初心者？ここから始めよう",
+  "newToInvestingDescription": "投資初心者でエコシステムを探索したい場合は、この記事から始めてください",
+  "allTracks": "すべて",
+  "ghanaStocks": "ガーナ株",
+  "tBillsBonds": "財務省証券/債券",
+  "mutualFunds": "投資信託",
+  "article": "記事",
+  "mins": "{count}分",
+  "@mins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "whatIsAMutualFund": "投資信託とは？",
+  "poolingMoneySpreading": "資金をプールし、リスクを分散し、富を増やす"
 }

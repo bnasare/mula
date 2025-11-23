@@ -334,5 +334,26 @@
   "accountLinkedSuccessfully": "Account Linked Successfully",
   "accountLinkedSuccessDescription": "Your account has been successfully linked to MULA",
   "goBack": "Go Back",
-  "addAnother": "Add Another"
+  "addAnother": "Add Another",
+
+  "learningTracks": "Learning Tracks",
+  "featuredTracks": "Featured Tracks",
+  "popularLessons": "Popular Lessons",
+  "newToInvesting": "New to Investing? Start Here",
+  "newToInvestingDescription": "If you are new to investing and want to explore the ecosystem, start with this article",
+  "allTracks": "All",
+  "ghanaStocks": "Ghana Stocks",
+  "tBillsBonds": "T-Bills/Bonds",
+  "mutualFunds": "Mutual Funds",
+  "article": "Article",
+  "mins": "{count} mins",
+  "@mins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "whatIsAMutualFund": "What is a Mutual Fund?",
+  "poolingMoneySpreading": "Pooling money, spreading risk, growing wealth"
 }

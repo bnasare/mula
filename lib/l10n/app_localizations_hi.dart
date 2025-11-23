@@ -957,4 +957,47 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get goBack => 'वापस जाएं';
+
+  @override
+  String get learningTracks => 'सीखने के मार्ग';
+
+  @override
+  String get featuredTracks => 'विशेष मार्ग';
+
+  @override
+  String get popularLessons => 'लोकप्रिय पाठ';
+
+  @override
+  String get newToInvesting => 'निवेश में नए हैं? यहां से शुरू करें';
+
+  @override
+  String get newToInvestingDescription =>
+      'यदि आप निवेश में नए हैं और पारिस्थितिकी तंत्र का पता लगाना चाहते हैं, तो इस लेख से शुरू करें';
+
+  @override
+  String get allTracks => 'सभी';
+
+  @override
+  String get ghanaStocks => 'घाना स्टॉक';
+
+  @override
+  String get tBillsBonds => 'ट्रेजरी बिल/बांड';
+
+  @override
+  String get mutualFunds => 'म्यूचुअल फंड';
+
+  @override
+  String get article => 'लेख';
+
+  @override
+  String mins(int count) {
+    return '$count मिनट';
+  }
+
+  @override
+  String get whatIsAMutualFund => 'म्यूचुअल फंड क्या है?';
+
+  @override
+  String get poolingMoneySpreading =>
+      'पैसा इकट्ठा करना, जोखिम फैलाना, धन बढ़ाना';
 }

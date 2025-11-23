@@ -331,5 +331,26 @@
   "enterAccountNumber": "Inserisci Numero Account",
   "accountLinkedSuccessfully": "Account Collegato con Successo",
   "accountLinkedSuccessDescription": "Il tuo account è stato collegato con successo a MULA",
-  "goBack": "Torna Indietro"
+  "goBack": "Torna Indietro",
+
+  "learningTracks": "Percorsi di Apprendimento",
+  "featuredTracks": "Percorsi in Evidenza",
+  "popularLessons": "Lezioni Popolari",
+  "newToInvesting": "Nuovo agli Investimenti? Inizia Qui",
+  "newToInvestingDescription": "Se sei nuovo agli investimenti e vuoi esplorare l'ecosistema, inizia con questo articolo",
+  "allTracks": "Tutti",
+  "ghanaStocks": "Azioni del Ghana",
+  "tBillsBonds": "Buoni del Tesoro/Obbligazioni",
+  "mutualFunds": "Fondi Comuni",
+  "article": "Articolo",
+  "mins": "{count} min",
+  "@mins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "whatIsAMutualFund": "Cos'è un Fondo Comune?",
+  "poolingMoneySpreading": "Raggruppare denaro, distribuire rischio, far crescere ricchezza"
 }

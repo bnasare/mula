@@ -962,4 +962,47 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get goBack => 'Назад';
+
+  @override
+  String get learningTracks => 'Учебные Треки';
+
+  @override
+  String get featuredTracks => 'Рекомендуемые Треки';
+
+  @override
+  String get popularLessons => 'Популярные Уроки';
+
+  @override
+  String get newToInvesting => 'Новичок в Инвестировании? Начните Здесь';
+
+  @override
+  String get newToInvestingDescription =>
+      'Если вы новичок в инвестировании и хотите изучить экосистему, начните с этой статьи';
+
+  @override
+  String get allTracks => 'Все';
+
+  @override
+  String get ghanaStocks => 'Акции Ганы';
+
+  @override
+  String get tBillsBonds => 'Казначейские Векселя/Облигации';
+
+  @override
+  String get mutualFunds => 'Взаимные Фонды';
+
+  @override
+  String get article => 'Статья';
+
+  @override
+  String mins(int count) {
+    return '$count мин';
+  }
+
+  @override
+  String get whatIsAMutualFund => 'Что такое Взаимный Фонд?';
+
+  @override
+  String get poolingMoneySpreading =>
+      'Объединение денег, распределение рисков, увеличение богатства';
 }

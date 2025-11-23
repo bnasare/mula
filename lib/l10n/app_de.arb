@@ -332,5 +332,26 @@
   "enterAccountNumber": "Kontonummer eingeben",
   "accountLinkedSuccessfully": "Konto erfolgreich verknüpft",
   "accountLinkedSuccessDescription": "Ihr Konto wurde erfolgreich mit MULA verknüpft",
-  "goBack": "Zurück"
+  "goBack": "Zurück",
+
+  "learningTracks": "Lernpfade",
+  "featuredTracks": "Empfohlene Pfade",
+  "popularLessons": "Beliebte Lektionen",
+  "newToInvesting": "Neu beim Investieren? Beginnen Sie Hier",
+  "newToInvestingDescription": "Wenn Sie neu beim Investieren sind und das Ökosystem erkunden möchten, beginnen Sie mit diesem Artikel",
+  "allTracks": "Alle",
+  "ghanaStocks": "Ghana-Aktien",
+  "tBillsBonds": "Schatzwechsel/Anleihen",
+  "mutualFunds": "Investmentfonds",
+  "article": "Artikel",
+  "mins": "{count} Min",
+  "@mins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "whatIsAMutualFund": "Was ist ein Investmentfonds?",
+  "poolingMoneySpreading": "Geld bündeln, Risiko streuen, Vermögen vermehren"
 }

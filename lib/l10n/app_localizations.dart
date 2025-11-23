@@ -1933,6 +1933,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Go Back'**
   String get goBack;
+
+  /// No description provided for @learningTracks.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning Tracks'**
+  String get learningTracks;
+
+  /// No description provided for @featuredTracks.
+  ///
+  /// In en, this message translates to:
+  /// **'Featured Tracks'**
+  String get featuredTracks;
+
+  /// No description provided for @popularLessons.
+  ///
+  /// In en, this message translates to:
+  /// **'Popular Lessons'**
+  String get popularLessons;
+
+  /// No description provided for @newToInvesting.
+  ///
+  /// In en, this message translates to:
+  /// **'New to Investing? Start Here'**
+  String get newToInvesting;
+
+  /// No description provided for @newToInvestingDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'If you are new to investing and want to explore the ecosystem, start with this article'**
+  String get newToInvestingDescription;
+
+  /// No description provided for @allTracks.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get allTracks;
+
+  /// No description provided for @ghanaStocks.
+  ///
+  /// In en, this message translates to:
+  /// **'Ghana Stocks'**
+  String get ghanaStocks;
+
+  /// No description provided for @tBillsBonds.
+  ///
+  /// In en, this message translates to:
+  /// **'T-Bills/Bonds'**
+  String get tBillsBonds;
+
+  /// No description provided for @mutualFunds.
+  ///
+  /// In en, this message translates to:
+  /// **'Mutual Funds'**
+  String get mutualFunds;
+
+  /// No description provided for @article.
+  ///
+  /// In en, this message translates to:
+  /// **'Article'**
+  String get article;
+
+  /// No description provided for @mins.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} mins'**
+  String mins(int count);
+
+  /// No description provided for @whatIsAMutualFund.
+  ///
+  /// In en, this message translates to:
+  /// **'What is a Mutual Fund?'**
+  String get whatIsAMutualFund;
+
+  /// No description provided for @poolingMoneySpreading.
+  ///
+  /// In en, this message translates to:
+  /// **'Pooling money, spreading risk, growing wealth'**
+  String get poolingMoneySpreading;
 }
 
 class _AppLocalizationsDelegate

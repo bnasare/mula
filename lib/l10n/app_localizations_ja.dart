@@ -931,4 +931,45 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get goBack => '戻る';
+
+  @override
+  String get learningTracks => '学習トラック';
+
+  @override
+  String get featuredTracks => '注目のトラック';
+
+  @override
+  String get popularLessons => '人気のレッスン';
+
+  @override
+  String get newToInvesting => '投資初心者？ここから始めよう';
+
+  @override
+  String get newToInvestingDescription => '投資初心者でエコシステムを探索したい場合は、この記事から始めてください';
+
+  @override
+  String get allTracks => 'すべて';
+
+  @override
+  String get ghanaStocks => 'ガーナ株';
+
+  @override
+  String get tBillsBonds => '財務省証券/債券';
+
+  @override
+  String get mutualFunds => '投資信託';
+
+  @override
+  String get article => '記事';
+
+  @override
+  String mins(int count) {
+    return '$count分';
+  }
+
+  @override
+  String get whatIsAMutualFund => '投資信託とは？';
+
+  @override
+  String get poolingMoneySpreading => '資金をプールし、リスクを分散し、富を増やす';
 }

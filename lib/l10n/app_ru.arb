@@ -331,5 +331,26 @@
   "enterAccountNumber": "Введите Номер Счета",
   "accountLinkedSuccessfully": "Счет Успешно Привязан",
   "accountLinkedSuccessDescription": "Ваш счет был успешно привязан к MULA",
-  "goBack": "Назад"
+  "goBack": "Назад",
+
+  "learningTracks": "Учебные Треки",
+  "featuredTracks": "Рекомендуемые Треки",
+  "popularLessons": "Популярные Уроки",
+  "newToInvesting": "Новичок в Инвестировании? Начните Здесь",
+  "newToInvestingDescription": "Если вы новичок в инвестировании и хотите изучить экосистему, начните с этой статьи",
+  "allTracks": "Все",
+  "ghanaStocks": "Акции Ганы",
+  "tBillsBonds": "Казначейские Векселя/Облигации",
+  "mutualFunds": "Взаимные Фонды",
+  "article": "Статья",
+  "mins": "{count} мин",
+  "@mins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "whatIsAMutualFund": "Что такое Взаимный Фонд?",
+  "poolingMoneySpreading": "Объединение денег, распределение рисков, увеличение богатства"
 }

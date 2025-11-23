@@ -923,4 +923,45 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get goBack => '返回';
+
+  @override
+  String get learningTracks => '学习路径';
+
+  @override
+  String get featuredTracks => '精选路径';
+
+  @override
+  String get popularLessons => '热门课程';
+
+  @override
+  String get newToInvesting => '投资新手？从这里开始';
+
+  @override
+  String get newToInvestingDescription => '如果您是投资新手并想探索生态系统，请从这篇文章开始';
+
+  @override
+  String get allTracks => '全部';
+
+  @override
+  String get ghanaStocks => '加纳股票';
+
+  @override
+  String get tBillsBonds => '国库券/债券';
+
+  @override
+  String get mutualFunds => '共同基金';
+
+  @override
+  String get article => '文章';
+
+  @override
+  String mins(int count) {
+    return '$count分钟';
+  }
+
+  @override
+  String get whatIsAMutualFund => '什么是共同基金？';
+
+  @override
+  String get poolingMoneySpreading => '汇集资金，分散风险，增长财富';
 }

@@ -958,4 +958,47 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get goBack => 'Go Back';
+
+  @override
+  String get learningTracks => 'Learning Tracks';
+
+  @override
+  String get featuredTracks => 'Featured Tracks';
+
+  @override
+  String get popularLessons => 'Popular Lessons';
+
+  @override
+  String get newToInvesting => 'New to Investing? Start Here';
+
+  @override
+  String get newToInvestingDescription =>
+      'If you are new to investing and want to explore the ecosystem, start with this article';
+
+  @override
+  String get allTracks => 'All';
+
+  @override
+  String get ghanaStocks => 'Ghana Stocks';
+
+  @override
+  String get tBillsBonds => 'T-Bills/Bonds';
+
+  @override
+  String get mutualFunds => 'Mutual Funds';
+
+  @override
+  String get article => 'Article';
+
+  @override
+  String mins(int count) {
+    return '$count mins';
+  }
+
+  @override
+  String get whatIsAMutualFund => 'What is a Mutual Fund?';
+
+  @override
+  String get poolingMoneySpreading =>
+      'Pooling money, spreading risk, growing wealth';
 }
