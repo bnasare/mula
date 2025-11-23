@@ -10,17 +10,17 @@ import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/interface/widgets/performance_chart.dart';
 import '../../../domain/entities/trade_type.dart';
 import 'advanced_chart_screen.dart';
-import 'asset_holding_choose_order_type_screen.dart';
+import 'stock_choose_order_type_screen.dart';
 
-/// Asset Holding Detail screen showing comprehensive stock information
-class AssetHoldingDetailScreen extends StatelessWidget {
+/// Stock Detail screen showing comprehensive stock information
+class StockDetailScreen extends StatelessWidget {
   final String ticker;
   final String companyName;
   final double currentPrice;
   final double change;
   final double changePercentage;
 
-  const AssetHoldingDetailScreen({
+  const StockDetailScreen({
     super.key,
     required this.ticker,
     required this.companyName,
@@ -38,7 +38,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
     final isPositive = change >= 0;
 
     return Scaffold(
-      appBar: MulaAppBar(title: context.localize.assetHoldings),
+      appBar: MulaAppBar(title: context.localize.stocks),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: SingleChildScrollView(
@@ -259,7 +259,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                         onTap: () {
                           NavigationHelper.navigateTo(
                             context,
-                            AssetHoldingChooseOrderTypeScreen(
+                            StockChooseOrderTypeScreen(
                               tradeType: TradeType.sell,
                               ticker: ticker,
                               companyName: companyName,
@@ -285,7 +285,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                         onTap: () {
                           NavigationHelper.navigateTo(
                             context,
-                            AssetHoldingChooseOrderTypeScreen(
+                            StockChooseOrderTypeScreen(
                               tradeType: TradeType.buy,
                               ticker: ticker,
                               companyName: companyName,

@@ -1093,7 +1093,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get popular => 'लोकप्रिय';
 
   @override
-  String get stocks => 'स्टॉक';
+  String get stocks => 'स्टॉक्स';
 
   @override
   String get highYieldFunds => 'उच्च उपज फंड';

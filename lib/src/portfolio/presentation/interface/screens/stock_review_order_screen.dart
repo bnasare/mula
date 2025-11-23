@@ -9,7 +9,7 @@ import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../domain/entities/trade_type.dart';
 
-class AssetHoldingReviewOrderScreen extends StatelessWidget {
+class StockReviewOrderScreen extends StatelessWidget {
   final TradeType tradeType;
   final String ticker;
   final String companyName;
@@ -22,7 +22,7 @@ class AssetHoldingReviewOrderScreen extends StatelessWidget {
   final double availableCashBalance;
   final String orderType;
 
-  const AssetHoldingReviewOrderScreen({
+  const StockReviewOrderScreen({
     super.key,
     required this.tradeType,
     required this.ticker,
@@ -60,7 +60,10 @@ class AssetHoldingReviewOrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MulaAppBar(title: context.localize.reviewOrder, showBottomDivider: true),
+      appBar: MulaAppBar(
+        title: context.localize.reviewOrder,
+        showBottomDivider: true,
+      ),
       body: Column(
         children: [
           Expanded(
@@ -156,7 +159,11 @@ class AssetHoldingReviewOrderScreen extends StatelessWidget {
       // Limit order: 8 rows with Order Type at top
       switch (index) {
         case 0:
-          return _buildDetailRow(context, context.localize.orderType, context.localize.limitOrder);
+          return _buildDetailRow(
+            context,
+            context.localize.orderType,
+            context.localize.limitOrder,
+          );
         case 1:
           return _buildDetailRow(
             context,

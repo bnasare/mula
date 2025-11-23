@@ -10,7 +10,7 @@ import '../../../../dashboard/domain/entities/asset.dart';
 import '../../../../transactions/presentation/interface/screens/report_issue_screen.dart';
 import '../widgets/asset_filter_bottom_sheet.dart';
 import '../widgets/asset_holding_card.dart';
-import 'asset_holding_detail_screen.dart';
+import 'stock_detail_screen.dart';
 import 'mutual_funds_detail_screen.dart';
 import 'tbill_detail_screen.dart';
 
@@ -223,7 +223,7 @@ class AllAssetHoldingsScreen extends StatelessWidget {
 
     switch (assetType) {
       case AssetType.stocks:
-        detailScreen = AssetHoldingDetailScreen(
+        detailScreen = StockDetailScreen(
           ticker: ticker,
           companyName: name,
           currentPrice: currentPrice,
@@ -250,7 +250,7 @@ class AllAssetHoldingsScreen extends StatelessWidget {
         break;
       default:
         // For other asset types, navigate to stock detail as fallback
-        detailScreen = AssetHoldingDetailScreen(
+        detailScreen = StockDetailScreen(
           ticker: ticker,
           companyName: name,
           currentPrice: currentPrice,

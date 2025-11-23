@@ -11,9 +11,9 @@ import '../../../../../shared/utils/navigation.dart';
 import '../../../../authentication/presentation/interface/widgets/mula_text_field.dart';
 import '../../../../home/presentation/interface/widgets/asset_tab_button.dart';
 import '../../../domain/entities/trade_type.dart';
-import 'asset_holding_review_order_screen.dart';
+import 'stock_review_order_screen.dart';
 
-class AssetHoldingTradeScreen extends StatefulWidget {
+class StockTradeScreen extends StatefulWidget {
   final TradeType tradeType;
   final String ticker;
   final String companyName;
@@ -23,7 +23,7 @@ class AssetHoldingTradeScreen extends StatefulWidget {
   final String orderType; // 'market' or 'limit'
   final String broker;
 
-  const AssetHoldingTradeScreen({
+  const StockTradeScreen({
     super.key,
     required this.tradeType,
     required this.ticker,
@@ -36,11 +36,11 @@ class AssetHoldingTradeScreen extends StatefulWidget {
   });
 
   @override
-  State<AssetHoldingTradeScreen> createState() =>
-      _AssetHoldingTradeScreenState();
+  State<StockTradeScreen> createState() =>
+      _StockTradeScreenState();
 }
 
-class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
+class _StockTradeScreenState extends State<StockTradeScreen> {
   final TextEditingController _inputController = TextEditingController();
   final TextEditingController _orderPriceController = TextEditingController();
   int _selectedTab = 0; // 0 = Shares, 1 = Amount
@@ -154,7 +154,7 @@ class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
   void _handleReview() {
     NavigationHelper.navigateTo(
       context,
-      AssetHoldingReviewOrderScreen(
+      StockReviewOrderScreen(
         tradeType: widget.tradeType,
         ticker: widget.ticker,
         companyName: widget.companyName,

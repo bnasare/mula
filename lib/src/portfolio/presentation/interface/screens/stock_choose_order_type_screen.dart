@@ -8,9 +8,9 @@ import '../../../../../shared/presentation/widgets/selectable_option_card.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../domain/entities/trade_type.dart';
-import 'asset_holding_trade_screen.dart';
+import 'stock_trade_screen.dart';
 
-class AssetHoldingChooseOrderTypeScreen extends StatefulWidget {
+class StockChooseOrderTypeScreen extends StatefulWidget {
   final TradeType tradeType;
   final String ticker;
   final String companyName;
@@ -19,7 +19,7 @@ class AssetHoldingChooseOrderTypeScreen extends StatefulWidget {
   final double? currentShares; // For sell: shares user currently holds
   final String broker;
 
-  const AssetHoldingChooseOrderTypeScreen({
+  const StockChooseOrderTypeScreen({
     super.key,
     required this.tradeType,
     required this.ticker,
@@ -31,18 +31,18 @@ class AssetHoldingChooseOrderTypeScreen extends StatefulWidget {
   });
 
   @override
-  State<AssetHoldingChooseOrderTypeScreen> createState() =>
-      _AssetHoldingChooseOrderTypeScreenState();
+  State<StockChooseOrderTypeScreen> createState() =>
+      _StockChooseOrderTypeScreenState();
 }
 
-class _AssetHoldingChooseOrderTypeScreenState
-    extends State<AssetHoldingChooseOrderTypeScreen> {
+class _StockChooseOrderTypeScreenState
+    extends State<StockChooseOrderTypeScreen> {
   String _selectedOrderType = 'market';
 
   void _handleContinue() {
     NavigationHelper.navigateTo(
       context,
-      AssetHoldingTradeScreen(
+      StockTradeScreen(
         tradeType: widget.tradeType,
         ticker: widget.ticker,
         companyName: widget.companyName,

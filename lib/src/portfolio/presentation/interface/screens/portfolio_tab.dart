@@ -17,7 +17,7 @@ import '../widgets/asset_holding_card.dart';
 import '../widgets/cash_wallet_section.dart';
 import '../widgets/portfolio_asset_breakdown.dart';
 import 'all_asset_holdings_screen.dart';
-import 'asset_holding_detail_screen.dart';
+import 'stock_detail_screen.dart';
 import 'mutual_funds_detail_screen.dart';
 import 'portfolio_summary_screen.dart';
 import 'tbill_detail_screen.dart';
@@ -383,7 +383,7 @@ class PortfolioTab extends StatelessWidget {
 
     switch (assetType) {
       case AssetType.stocks:
-        detailScreen = AssetHoldingDetailScreen(
+        detailScreen = StockDetailScreen(
           ticker: ticker,
           companyName: name,
           currentPrice: currentPrice,
@@ -410,7 +410,7 @@ class PortfolioTab extends StatelessWidget {
         break;
       default:
         // For other asset types, navigate to stock detail as fallback
-        detailScreen = AssetHoldingDetailScreen(
+        detailScreen = StockDetailScreen(
           ticker: ticker,
           companyName: name,
           currentPrice: currentPrice,
