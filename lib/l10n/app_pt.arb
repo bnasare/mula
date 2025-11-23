@@ -370,5 +370,18 @@
   "views": "{count}k",
   "@views": {"placeholders": {"count": {"type": "String"}}},
   "showMoreReplies": "Mostrar {count} respostas a mais",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
+
+  "question": "Pergunta {number}",
+  "@question": {"placeholders": {"number": {"type": "int"}}},
+  "done": "Concluído",
+  "wellDone": "Muito bem {name}!",
+  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "youAnsweredCorrectly": "Você respondeu {correct} de {total} corretamente. Continue praticando para alcançar 100% de domínio",
+  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "tryAgain": "Tentar novamente",
+  "goToHome": "Ir para início",
+  "exploreOtherResources": "Explorar outros recursos",
+  "pts": "+{points}pts",
+  "@pts": {"placeholders": {"points": {"type": "int"}}}
 }

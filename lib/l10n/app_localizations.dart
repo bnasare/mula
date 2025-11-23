@@ -2077,6 +2077,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Show {count} more replies'**
   String showMoreReplies(int count);
+
+  /// No description provided for @question.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {number}'**
+  String question(int number);
+
+  /// No description provided for @wellDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Well Done {name}!'**
+  String wellDone(String name);
+
+  /// No description provided for @youAnsweredCorrectly.
+  ///
+  /// In en, this message translates to:
+  /// **'You answered {correct} of {total} correctly. Keep practicing to reach 100% mastery'**
+  String youAnsweredCorrectly(int correct, int total);
+
+  /// No description provided for @tryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Try Again'**
+  String get tryAgain;
+
+  /// No description provided for @goToHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to Home'**
+  String get goToHome;
+
+  /// No description provided for @exploreOtherResources.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore other resources'**
+  String get exploreOtherResources;
+
+  /// No description provided for @pts.
+  ///
+  /// In en, this message translates to:
+  /// **'+{points}pts'**
+  String pts(int points);
 }
 
 class _AppLocalizationsDelegate

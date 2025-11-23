@@ -369,5 +369,18 @@
   "views": "{count}k",
   "@views": {"placeholders": {"count": {"type": "String"}}},
   "showMoreReplies": "Mostra {count} risposte in più",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
+
+  "question": "Domanda {number}",
+  "@question": {"placeholders": {"number": {"type": "int"}}},
+  "done": "Fatto",
+  "wellDone": "Ben fatto {name}!",
+  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "youAnsweredCorrectly": "Hai risposto correttamente a {correct} su {total}. Continua a esercitarti per raggiungere il 100%",
+  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "tryAgain": "Riprova",
+  "goToHome": "Vai alla home",
+  "exploreOtherResources": "Esplora altre risorse",
+  "pts": "+{points}pt",
+  "@pts": {"placeholders": {"points": {"type": "int"}}}
 }

@@ -369,5 +369,18 @@
   "views": "{count}k",
   "@views": {"placeholders": {"count": {"type": "String"}}},
   "showMoreReplies": "Toon {count} meer antwoorden",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
+
+  "question": "Vraag {number}",
+  "@question": {"placeholders": {"number": {"type": "int"}}},
+  "done": "Klaar",
+  "wellDone": "Goed gedaan {name}!",
+  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "youAnsweredCorrectly": "Je hebt {correct} van {total} correct beantwoord. Blijf oefenen om 100% te bereiken",
+  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "tryAgain": "Probeer opnieuw",
+  "goToHome": "Ga naar home",
+  "exploreOtherResources": "Verken andere bronnen",
+  "pts": "+{points}pt",
+  "@pts": {"placeholders": {"points": {"type": "int"}}}
 }

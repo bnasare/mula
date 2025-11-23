@@ -369,5 +369,18 @@
   "views": "{count}k",
   "@views": {"placeholders": {"count": {"type": "String"}}},
   "showMoreReplies": "{count} और उत्तर दिखाएं",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
+
+  "question": "प्रश्न {number}",
+  "@question": {"placeholders": {"number": {"type": "int"}}},
+  "done": "हो गया",
+  "wellDone": "बहुत बढ़िया {name}!",
+  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "youAnsweredCorrectly": "आपने {total} में से {correct} सही उत्तर दिए। 100% निपुणता तक पहुंचने के लिए अभ्यास जारी रखें",
+  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "tryAgain": "फिर से कोशिश करें",
+  "goToHome": "होम पर जाएं",
+  "exploreOtherResources": "अन्य संसाधन खोजें",
+  "pts": "+{points}pts",
+  "@pts": {"placeholders": {"points": {"type": "int"}}}
 }

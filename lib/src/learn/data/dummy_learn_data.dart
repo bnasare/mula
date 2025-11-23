@@ -3,6 +3,9 @@ import '../domain/entities/learning_track.dart';
 import '../domain/entities/lesson.dart';
 import '../domain/entities/lesson_detail.dart';
 import '../domain/entities/comment.dart';
+import '../domain/entities/quiz.dart';
+import '../domain/entities/quiz_question.dart';
+import '../domain/entities/quiz_option.dart';
 
 class DummyLearnData {
   static List<LearningTrack> getFeaturedTracks() {
@@ -202,5 +205,123 @@ Imagine you have a friend who wants to start a business.
         ],
       ),
     ];
+  }
+
+  static Quiz? getQuiz(String lessonId) {
+    // For now, provide a quiz for bonds lessons
+    if (lessonId == '1' || lessonId == '2' || lessonId == '3' || lessonId == '4') {
+      return Quiz(
+        id: 'quiz_bonds_1',
+        title: 'Take a quiz',
+        lessonId: lessonId,
+        questions: [
+          QuizQuestion(
+            id: 'q1',
+            questionNumber: 1,
+            text: 'When you buy a bond, you are...',
+            points: 5,
+            options: const [
+              QuizOption(
+                id: 'q1_a',
+                label: 'a)',
+                text: 'Becoming a part-owner of a company.',
+                isCorrect: false,
+              ),
+              QuizOption(
+                id: 'q1_b',
+                label: 'b)',
+                text: 'Lending money to a government or company.',
+                isCorrect: true,
+              ),
+              QuizOption(
+                id: 'q1_c',
+                label: 'c)',
+                text: 'Gifting money to a business',
+                isCorrect: false,
+              ),
+            ],
+          ),
+          QuizQuestion(
+            id: 'q2',
+            questionNumber: 2,
+            text: 'What is the name of the regular interest payment you receive from a bond?',
+            points: 5,
+            options: const [
+              QuizOption(
+                id: 'q2_a',
+                label: 'a)',
+                text: 'Dividend',
+                isCorrect: false,
+              ),
+              QuizOption(
+                id: 'q2_b',
+                label: 'b)',
+                text: 'Coupon',
+                isCorrect: true,
+              ),
+              QuizOption(
+                id: 'q2_c',
+                label: 'c)',
+                text: 'Principal',
+                isCorrect: false,
+              ),
+            ],
+          ),
+          QuizQuestion(
+            id: 'q3',
+            questionNumber: 3,
+            text: 'What is the name of the regular interest payment you receive from a bond?',
+            points: 5,
+            options: const [
+              QuizOption(
+                id: 'q3_a',
+                label: 'a)',
+                text: 'Dividend',
+                isCorrect: false,
+              ),
+              QuizOption(
+                id: 'q3_b',
+                label: 'b)',
+                text: 'Coupon',
+                isCorrect: true,
+              ),
+              QuizOption(
+                id: 'q3_c',
+                label: 'c)',
+                text: 'Principal',
+                isCorrect: false,
+              ),
+            ],
+          ),
+          QuizQuestion(
+            id: 'q4',
+            questionNumber: 4,
+            text: 'What is the name of the regular interest payment you receive from a bond?',
+            points: 5,
+            options: const [
+              QuizOption(
+                id: 'q4_a',
+                label: 'a)',
+                text: 'Dividend',
+                isCorrect: false,
+              ),
+              QuizOption(
+                id: 'q4_b',
+                label: 'b)',
+                text: 'Coupon',
+                isCorrect: true,
+              ),
+              QuizOption(
+                id: 'q4_c',
+                label: 'c)',
+                text: 'Principal',
+                isCorrect: false,
+              ),
+            ],
+          ),
+        ],
+      );
+    }
+    return null;
   }
 }

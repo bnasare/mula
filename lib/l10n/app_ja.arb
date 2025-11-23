@@ -369,5 +369,18 @@
   "views": "{count}k",
   "@views": {"placeholders": {"count": {"type": "String"}}},
   "showMoreReplies": "{count}件の返信をもっと見る",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
+
+  "question": "質問 {number}",
+  "@question": {"placeholders": {"number": {"type": "int"}}},
+  "done": "完了",
+  "wellDone": "よくできました {name}!",
+  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "youAnsweredCorrectly": "{total}問中{correct}問正解しました。100%習得するために練習を続けましょう",
+  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "tryAgain": "もう一度",
+  "goToHome": "ホームに戻る",
+  "exploreOtherResources": "他のリソースを探す",
+  "pts": "+{points}pts",
+  "@pts": {"placeholders": {"points": {"type": "int"}}}
 }

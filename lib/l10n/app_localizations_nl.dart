@@ -1049,4 +1049,33 @@ class AppLocalizationsNl extends AppLocalizations {
   String showMoreReplies(int count) {
     return 'Toon $count meer antwoorden';
   }
+
+  @override
+  String question(int number) {
+    return 'Vraag $number';
+  }
+
+  @override
+  String wellDone(String name) {
+    return 'Goed gedaan $name!';
+  }
+
+  @override
+  String youAnsweredCorrectly(int correct, int total) {
+    return 'Je hebt $correct van $total correct beantwoord. Blijf oefenen om 100% te bereiken';
+  }
+
+  @override
+  String get tryAgain => 'Probeer opnieuw';
+
+  @override
+  String get goToHome => 'Ga naar home';
+
+  @override
+  String get exploreOtherResources => 'Verken andere bronnen';
+
+  @override
+  String pts(int points) {
+    return '+${points}pt';
+  }
 }

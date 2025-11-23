@@ -402,5 +402,45 @@
         "type": "int"
       }
     }
+  },
+
+  "question": "Question {number}",
+  "@question": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "done": "Done",
+  "wellDone": "Well Done {name}!",
+  "@wellDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "youAnsweredCorrectly": "You answered {correct} of {total} correctly. Keep practicing to reach 100% mastery",
+  "@youAnsweredCorrectly": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tryAgain": "Try Again",
+  "goToHome": "Go to Home",
+  "exploreOtherResources": "Explore other resources",
+  "pts": "+{points}pts",
+  "@pts": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
   }
 }

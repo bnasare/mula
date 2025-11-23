@@ -5,12 +5,14 @@ import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
+import '../../../../../shared/utils/navigation.dart';
 import '../../../data/dummy_learn_data.dart';
 import '../../../domain/entities/lesson_detail.dart';
 import '../widgets/article_content.dart';
 import '../widgets/article_header.dart';
 import '../widgets/comments_section.dart';
 import '../widgets/lesson_action_buttons.dart';
+import 'quiz_screen.dart';
 
 class LessonDetailScreen extends StatefulWidget {
   final String lessonId;
@@ -139,7 +141,10 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
                 // TODO: Navigate to investment screen
               },
               onQuizPressed: () {
-                // TODO: Navigate to quiz screen
+                NavigationHelper.navigateTo(
+                  context,
+                  QuizScreen(lessonId: widget.lessonId),
+                );
               },
             ),
             AppSpacer.vLarger(),

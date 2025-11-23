@@ -370,5 +370,18 @@
   "views": "{count}k",
   "@views": {"placeholders": {"count": {"type": "String"}}},
   "showMoreReplies": "显示{count}条更多回复",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
+
+  "question": "问题 {number}",
+  "@question": {"placeholders": {"number": {"type": "int"}}},
+  "done": "完成",
+  "wellDone": "做得好 {name}!",
+  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "youAnsweredCorrectly": "您正确回答了{total}题中的{correct}题。继续练习以达到100%掌握",
+  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "tryAgain": "再试一次",
+  "goToHome": "返回首页",
+  "exploreOtherResources": "探索其他资源",
+  "pts": "+{points}分",
+  "@pts": {"placeholders": {"points": {"type": "int"}}}
 }

@@ -1049,4 +1049,33 @@ class AppLocalizationsRu extends AppLocalizations {
   String showMoreReplies(int count) {
     return 'Показать еще $count ответов';
   }
+
+  @override
+  String question(int number) {
+    return 'Вопрос $number';
+  }
+
+  @override
+  String wellDone(String name) {
+    return 'Отлично $name!';
+  }
+
+  @override
+  String youAnsweredCorrectly(int correct, int total) {
+    return 'Вы правильно ответили на $correct из $total. Продолжайте практиковаться для достижения 100%';
+  }
+
+  @override
+  String get tryAgain => 'Попробовать снова';
+
+  @override
+  String get goToHome => 'На главную';
+
+  @override
+  String get exploreOtherResources => 'Изучить другие ресурсы';
+
+  @override
+  String pts(int points) {
+    return '+$pointsб';
+  }
 }

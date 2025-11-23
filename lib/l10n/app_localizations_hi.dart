@@ -1044,4 +1044,33 @@ class AppLocalizationsHi extends AppLocalizations {
   String showMoreReplies(int count) {
     return '$count और उत्तर दिखाएं';
   }
+
+  @override
+  String question(int number) {
+    return 'प्रश्न $number';
+  }
+
+  @override
+  String wellDone(String name) {
+    return 'बहुत बढ़िया $name!';
+  }
+
+  @override
+  String youAnsweredCorrectly(int correct, int total) {
+    return 'आपने $total में से $correct सही उत्तर दिए। 100% निपुणता तक पहुंचने के लिए अभ्यास जारी रखें';
+  }
+
+  @override
+  String get tryAgain => 'फिर से कोशिश करें';
+
+  @override
+  String get goToHome => 'होम पर जाएं';
+
+  @override
+  String get exploreOtherResources => 'अन्य संसाधन खोजें';
+
+  @override
+  String pts(int points) {
+    return '+${points}pts';
+  }
 }

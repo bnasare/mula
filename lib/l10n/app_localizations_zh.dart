@@ -1007,4 +1007,33 @@ class AppLocalizationsZh extends AppLocalizations {
   String showMoreReplies(int count) {
     return '显示$count条更多回复';
   }
+
+  @override
+  String question(int number) {
+    return '问题 $number';
+  }
+
+  @override
+  String wellDone(String name) {
+    return '做得好 $name!';
+  }
+
+  @override
+  String youAnsweredCorrectly(int correct, int total) {
+    return '您正确回答了$total题中的$correct题。继续练习以达到100%掌握';
+  }
+
+  @override
+  String get tryAgain => '再试一次';
+
+  @override
+  String get goToHome => '返回首页';
+
+  @override
+  String get exploreOtherResources => '探索其他资源';
+
+  @override
+  String pts(int points) {
+    return '+$points分';
+  }
 }

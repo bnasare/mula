@@ -1044,4 +1044,33 @@ class AppLocalizationsEn extends AppLocalizations {
   String showMoreReplies(int count) {
     return 'Show $count more replies';
   }
+
+  @override
+  String question(int number) {
+    return 'Question $number';
+  }
+
+  @override
+  String wellDone(String name) {
+    return 'Well Done $name!';
+  }
+
+  @override
+  String youAnsweredCorrectly(int correct, int total) {
+    return 'You answered $correct of $total correctly. Keep practicing to reach 100% mastery';
+  }
+
+  @override
+  String get tryAgain => 'Try Again';
+
+  @override
+  String get goToHome => 'Go to Home';
+
+  @override
+  String get exploreOtherResources => 'Explore other resources';
+
+  @override
+  String pts(int points) {
+    return '+${points}pts';
+  }
 }

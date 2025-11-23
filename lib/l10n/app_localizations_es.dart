@@ -468,7 +468,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get addAnother => 'Agregar Otro';
 
   @override
-  String get done => 'Listo';
+  String get done => 'Hecho';
 
   @override
   String get fundManager => 'Administrador de Fondos';
@@ -1049,5 +1049,34 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String showMoreReplies(int count) {
     return 'Mostrar $count respuestas más';
+  }
+
+  @override
+  String question(int number) {
+    return 'Pregunta $number';
+  }
+
+  @override
+  String wellDone(String name) {
+    return '¡Bien hecho $name!';
+  }
+
+  @override
+  String youAnsweredCorrectly(int correct, int total) {
+    return 'Respondiste $correct de $total correctamente. Sigue practicando para alcanzar el 100% de dominio';
+  }
+
+  @override
+  String get tryAgain => 'Intentar de nuevo';
+
+  @override
+  String get goToHome => 'Ir al inicio';
+
+  @override
+  String get exploreOtherResources => 'Explorar otros recursos';
+
+  @override
+  String pts(int points) {
+    return '+${points}pts';
   }
 }

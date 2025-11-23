@@ -1015,4 +1015,33 @@ class AppLocalizationsJa extends AppLocalizations {
   String showMoreReplies(int count) {
     return '$count件の返信をもっと見る';
   }
+
+  @override
+  String question(int number) {
+    return '質問 $number';
+  }
+
+  @override
+  String wellDone(String name) {
+    return 'よくできました $name!';
+  }
+
+  @override
+  String youAnsweredCorrectly(int correct, int total) {
+    return '$total問中$correct問正解しました。100%習得するために練習を続けましょう';
+  }
+
+  @override
+  String get tryAgain => 'もう一度';
+
+  @override
+  String get goToHome => 'ホームに戻る';
+
+  @override
+  String get exploreOtherResources => '他のリソースを探す';
+
+  @override
+  String pts(int points) {
+    return '+${points}pts';
+  }
 }

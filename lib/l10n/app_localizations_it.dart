@@ -1055,4 +1055,33 @@ class AppLocalizationsIt extends AppLocalizations {
   String showMoreReplies(int count) {
     return 'Mostra $count risposte in più';
   }
+
+  @override
+  String question(int number) {
+    return 'Domanda $number';
+  }
+
+  @override
+  String wellDone(String name) {
+    return 'Ben fatto $name!';
+  }
+
+  @override
+  String youAnsweredCorrectly(int correct, int total) {
+    return 'Hai risposto correttamente a $correct su $total. Continua a esercitarti per raggiungere il 100%';
+  }
+
+  @override
+  String get tryAgain => 'Riprova';
+
+  @override
+  String get goToHome => 'Vai alla home';
+
+  @override
+  String get exploreOtherResources => 'Esplora altre risorse';
+
+  @override
+  String pts(int points) {
+    return '+${points}pt';
+  }
 }
