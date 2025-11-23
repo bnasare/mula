@@ -2011,6 +2011,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Pooling money, spreading risk, growing wealth'**
   String get poolingMoneySpreading;
+
+  /// No description provided for @markAsRead.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as read'**
+  String get markAsRead;
+
+  /// No description provided for @read.
+  ///
+  /// In en, this message translates to:
+  /// **'Read'**
+  String get read;
+
+  /// No description provided for @investIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Invest in {asset}'**
+  String investIn(String asset);
+
+  /// No description provided for @takeAQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Take a quiz'**
+  String get takeAQuiz;
+
+  /// No description provided for @shareWithFriends.
+  ///
+  /// In en, this message translates to:
+  /// **'Share with your friends or leave a comment'**
+  String get shareWithFriends;
+
+  /// No description provided for @leaveComment.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave a comment'**
+  String get leaveComment;
+
+  /// No description provided for @reply.
+  ///
+  /// In en, this message translates to:
+  /// **'Reply'**
+  String get reply;
+
+  /// No description provided for @viewComments.
+  ///
+  /// In en, this message translates to:
+  /// **'View comments ({count})'**
+  String viewComments(String count);
+
+  /// No description provided for @minsRead.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} mins read'**
+  String minsRead(int count);
+
+  /// No description provided for @views.
+  ///
+  /// In en, this message translates to:
+  /// **'{count}k'**
+  String views(String count);
+
+  /// No description provided for @showMoreReplies.
+  ///
+  /// In en, this message translates to:
+  /// **'Show {count} more replies'**
+  String showMoreReplies(int count);
 }
 
 class _AppLocalizationsDelegate

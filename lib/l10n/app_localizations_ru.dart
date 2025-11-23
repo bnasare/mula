@@ -1005,4 +1005,48 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get poolingMoneySpreading =>
       'Объединение денег, распределение рисков, увеличение богатства';
+
+  @override
+  String get markAsRead => 'Отметить как прочитанное';
+
+  @override
+  String get read => 'Прочитано';
+
+  @override
+  String investIn(String asset) {
+    return 'Инвестировать в $asset';
+  }
+
+  @override
+  String get takeAQuiz => 'Пройти тест';
+
+  @override
+  String get shareWithFriends =>
+      'Поделитесь с друзьями или оставьте комментарий';
+
+  @override
+  String get leaveComment => 'Оставить комментарий';
+
+  @override
+  String get reply => 'Ответить';
+
+  @override
+  String viewComments(String count) {
+    return 'Просмотреть комментарии ($count)';
+  }
+
+  @override
+  String minsRead(int count) {
+    return '$count мин чтения';
+  }
+
+  @override
+  String views(String count) {
+    return '${count}k';
+  }
+
+  @override
+  String showMoreReplies(int count) {
+    return 'Показать еще $count ответов';
+  }
 }

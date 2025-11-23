@@ -353,5 +353,22 @@
     }
   },
   "whatIsAMutualFund": "O que é um Fundo Mútuo?",
-  "poolingMoneySpreading": "Juntar dinheiro, distribuir risco, crescer riqueza"
+  "poolingMoneySpreading": "Juntar dinheiro, distribuir risco, crescer riqueza",
+
+  "markAsRead": "Marcar como lido",
+  "read": "Lido",
+  "investIn": "Investir em {asset}",
+  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "takeAQuiz": "Fazer um quiz",
+  "shareWithFriends": "Compartilhe com seus amigos ou deixe um comentário",
+  "leaveComment": "Deixar um comentário",
+  "reply": "Responder",
+  "viewComments": "Ver comentários ({count})",
+  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "minsRead": "{count} mins de leitura",
+  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "views": "{count}k",
+  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "showMoreReplies": "Mostrar {count} respostas a mais",
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
 }

@@ -972,4 +972,47 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get poolingMoneySpreading => '資金をプールし、リスクを分散し、富を増やす';
+
+  @override
+  String get markAsRead => '既読にする';
+
+  @override
+  String get read => '既読';
+
+  @override
+  String investIn(String asset) {
+    return '$assetに投資する';
+  }
+
+  @override
+  String get takeAQuiz => 'クイズに挑戦';
+
+  @override
+  String get shareWithFriends => '友達と共有するかコメントを残す';
+
+  @override
+  String get leaveComment => 'コメントを残す';
+
+  @override
+  String get reply => '返信';
+
+  @override
+  String viewComments(String count) {
+    return 'コメントを見る ($count)';
+  }
+
+  @override
+  String minsRead(int count) {
+    return '$count分で読める';
+  }
+
+  @override
+  String views(String count) {
+    return '${count}k';
+  }
+
+  @override
+  String showMoreReplies(int count) {
+    return '$count件の返信をもっと見る';
+  }
 }

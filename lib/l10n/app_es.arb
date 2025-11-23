@@ -353,5 +353,22 @@
     }
   },
   "whatIsAMutualFund": "¿Qué es un Fondo Mutuo?",
-  "poolingMoneySpreading": "Agrupar dinero, distribuir riesgo, hacer crecer riqueza"
+  "poolingMoneySpreading": "Agrupar dinero, distribuir riesgo, hacer crecer riqueza",
+
+  "markAsRead": "Marcar como leído",
+  "read": "Leído",
+  "investIn": "Invertir en {asset}",
+  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "takeAQuiz": "Hacer un cuestionario",
+  "shareWithFriends": "Comparte con tus amigos o deja un comentario",
+  "leaveComment": "Dejar un comentario",
+  "reply": "Responder",
+  "viewComments": "Ver comentarios ({count})",
+  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "minsRead": "{count} mins de lectura",
+  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "views": "{count}k",
+  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "showMoreReplies": "Mostrar {count} respuestas más",
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
 }

@@ -353,5 +353,52 @@
     }
   },
   "whatIsAMutualFund": "Qu'est-ce qu'un Fonds Commun de Placement?",
-  "poolingMoneySpreading": "Regrouper l'argent, répartir les risques, faire croître la richesse"
+  "poolingMoneySpreading": "Regrouper l'argent, répartir les risques, faire croître la richesse",
+
+  "markAsRead": "Marquer comme lu",
+  "read": "Lu",
+  "investIn": "Investir dans {asset}",
+  "@investIn": {
+    "placeholders": {
+      "asset": {
+        "type": "String"
+      }
+    }
+  },
+  "takeAQuiz": "Faire un quiz",
+  "shareWithFriends": "Partagez avec vos amis ou laissez un commentaire",
+  "leaveComment": "Laisser un commentaire",
+  "reply": "Répondre",
+  "viewComments": "Voir les commentaires ({count})",
+  "@viewComments": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "minsRead": "{count} mins de lecture",
+  "@minsRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "views": "{count}k",
+  "@views": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "showMoreReplies": "Afficher {count} réponses supplémentaires",
+  "@showMoreReplies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

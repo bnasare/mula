@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
+import '../../../../../shared/utils/navigation.dart';
 import '../../../domain/entities/lesson.dart';
+import '../screens/lesson_detail_screen.dart';
 
 class LessonCard extends StatelessWidget {
   final Lesson lesson;
@@ -14,7 +16,14 @@ class LessonCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return GestureDetector(
+      onTap: () {
+        NavigationHelper.navigateTo(
+          context,
+          LessonDetailScreen(lessonId: lesson.id),
+        );
+      },
+      child: Container(
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       decoration: BoxDecoration(
         color: AppColors.card(context),
@@ -89,6 +98,7 @@ class LessonCard extends StatelessWidget {
             ),
           ),
         ],
+      ),
       ),
     );
   }

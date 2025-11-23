@@ -352,5 +352,22 @@
     }
   },
   "whatIsAMutualFund": "Что такое Взаимный Фонд?",
-  "poolingMoneySpreading": "Объединение денег, распределение рисков, увеличение богатства"
+  "poolingMoneySpreading": "Объединение денег, распределение рисков, увеличение богатства",
+
+  "markAsRead": "Отметить как прочитанное",
+  "read": "Прочитано",
+  "investIn": "Инвестировать в {asset}",
+  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "takeAQuiz": "Пройти тест",
+  "shareWithFriends": "Поделитесь с друзьями или оставьте комментарий",
+  "leaveComment": "Оставить комментарий",
+  "reply": "Ответить",
+  "viewComments": "Просмотреть комментарии ({count})",
+  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "minsRead": "{count} мин чтения",
+  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "views": "{count}k",
+  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "showMoreReplies": "Показать еще {count} ответов",
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
 }

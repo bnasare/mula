@@ -964,4 +964,47 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get poolingMoneySpreading => '汇集资金，分散风险，增长财富';
+
+  @override
+  String get markAsRead => '标记为已读';
+
+  @override
+  String get read => '已读';
+
+  @override
+  String investIn(String asset) {
+    return '投资$asset';
+  }
+
+  @override
+  String get takeAQuiz => '参加测验';
+
+  @override
+  String get shareWithFriends => '与朋友分享或发表评论';
+
+  @override
+  String get leaveComment => '发表评论';
+
+  @override
+  String get reply => '回复';
+
+  @override
+  String viewComments(String count) {
+    return '查看评论 ($count)';
+  }
+
+  @override
+  String minsRead(int count) {
+    return '$count分钟阅读';
+  }
+
+  @override
+  String views(String count) {
+    return '${count}k';
+  }
+
+  @override
+  String showMoreReplies(int count) {
+    return '显示$count条更多回复';
+  }
 }

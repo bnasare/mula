@@ -352,5 +352,22 @@
     }
   },
   "whatIsAMutualFund": "Wat is een Beleggingsfonds?",
-  "poolingMoneySpreading": "Geld bundelen, risico spreiden, vermogen laten groeien"
+  "poolingMoneySpreading": "Geld bundelen, risico spreiden, vermogen laten groeien",
+
+  "markAsRead": "Markeer als gelezen",
+  "read": "Gelezen",
+  "investIn": "Investeer in {asset}",
+  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "takeAQuiz": "Doe een quiz",
+  "shareWithFriends": "Deel met je vrienden of laat een reactie achter",
+  "leaveComment": "Laat een reactie achter",
+  "reply": "Antwoorden",
+  "viewComments": "Bekijk reacties ({count})",
+  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "minsRead": "{count} min leestijd",
+  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "views": "{count}k",
+  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "showMoreReplies": "Toon {count} meer antwoorden",
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
 }

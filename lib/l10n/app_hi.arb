@@ -352,5 +352,22 @@
     }
   },
   "whatIsAMutualFund": "म्यूचुअल फंड क्या है?",
-  "poolingMoneySpreading": "पैसा इकट्ठा करना, जोखिम फैलाना, धन बढ़ाना"
+  "poolingMoneySpreading": "पैसा इकट्ठा करना, जोखिम फैलाना, धन बढ़ाना",
+
+  "markAsRead": "पढ़ा हुआ के रूप में चिह्नित करें",
+  "read": "पढ़ा हुआ",
+  "investIn": "{asset} में निवेश करें",
+  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "takeAQuiz": "एक क्विज़ लें",
+  "shareWithFriends": "अपने दोस्तों के साथ साझा करें या टिप्पणी छोड़ें",
+  "leaveComment": "टिप्पणी छोड़ें",
+  "reply": "जवाब दें",
+  "viewComments": "टिप्पणियां देखें ({count})",
+  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "minsRead": "{count} मिनट पढ़ें",
+  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "views": "{count}k",
+  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "showMoreReplies": "{count} और उत्तर दिखाएं",
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
 }

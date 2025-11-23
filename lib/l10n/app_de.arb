@@ -353,5 +353,22 @@
     }
   },
   "whatIsAMutualFund": "Was ist ein Investmentfonds?",
-  "poolingMoneySpreading": "Geld bündeln, Risiko streuen, Vermögen vermehren"
+  "poolingMoneySpreading": "Geld bündeln, Risiko streuen, Vermögen vermehren",
+
+  "markAsRead": "Als gelesen markieren",
+  "read": "Gelesen",
+  "investIn": "In {asset} investieren",
+  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "takeAQuiz": "Quiz machen",
+  "shareWithFriends": "Mit Freunden teilen oder Kommentar hinterlassen",
+  "leaveComment": "Kommentar hinterlassen",
+  "reply": "Antworten",
+  "viewComments": "Kommentare ansehen ({count})",
+  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "minsRead": "{count} Min Lesezeit",
+  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "views": "{count}k",
+  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "showMoreReplies": "{count} weitere Antworten anzeigen",
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
 }

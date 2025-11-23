@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../domain/entities/learning_track.dart';
 import '../domain/entities/lesson.dart';
+import '../domain/entities/lesson_detail.dart';
+import '../domain/entities/comment.dart';
 
 class DummyLearnData {
   static List<LearningTrack> getFeaturedTracks() {
@@ -113,5 +115,92 @@ class DummyLearnData {
 
   static List<String> getCategories() {
     return ['all', 'ghanaStocks', 'tBillsBonds', 'mutualFunds'];
+  }
+
+  static LessonDetail? getLessonDetail(String lessonId) {
+    // For now, we'll provide detailed content for the "What are Bonds?" article
+    if (lessonId == '1' || lessonId == '2' || lessonId == '3' || lessonId == '4') {
+      return LessonDetail(
+        id: lessonId,
+        title: 'What are Bonds?',
+        date: '25th July 2025',
+        durationMinutes: 3,
+        views: '20',
+        hasVideo: true,
+        content: _getBondsArticleContent(),
+        category: 'tBillsBonds',
+        comments: _getComments(),
+        isRead: false,
+      );
+    }
+    return null;
+  }
+
+  static String _getBondsArticleContent() {
+    return '''
+**What are Bonds?** 📚
+
+Think of a bond like a personal loan, but for a government or a large company. When you buy a bond, you're lending your money to the issuer for a specific period of time. In return, the issuer promises to pay you back your original amount (the principal) on a specific date in the future (the maturity date), plus regular interest payments (called coupon payments) along the way.
+
+It's a way for governments and companies to raise money for big projects. And for you, it's a chance to invest their businesses without going to a bank.
+
+**The Key Players in the Bond World**
+
+There are three main players in every bond:
+
+1. **The Borrower**: This is the entity that issues the bond. It can be a government (like the Ministry of Finance in a government) or a company (like a big bank or corporation).
+
+2. **The Investor**: This is you! You are the one lending the money.
+
+3. **The Agreement**: This is the bond itself. It outlines all the terms of the loan: how much interest will be paid, when it'll be paid, and when the original money will be returned.
+
+**How Bonds Make You Money**
+
+You earn money from a bond in two main ways:
+
+• **Coupon Payments**: These are the regular interest payments you receive from the borrower. They are usually paid once or twice a year.
+
+• **Principal Repayment**: When the bond reaches its maturity date, the issuer pays you back your initial investment.
+
+Bonds are generally considered a **low-risk investment** compared to stocks. This is because the interest payments and the principal repayment are guaranteed by the issuer (as long as they don't go bankrupt).
+
+**Bonds vs. Stocks: A Simple Analogy**
+
+Imagine you have a friend who wants to start a business.
+
+• If you buy a **stock** in their business, you become a part-owner. You share in the profits if the business does well, but you also share in the losses if it does poorly. Your potential for reward is high, but so is your risk.
+
+• If you buy a **bond** from your friend's business, you are a lender, not an owner. They promise to pay you back your money plus interest, regardless of how the business performs. Your potential for reward is fixed, but your risk is much lower.
+''';
+  }
+
+  static List<Comment> _getComments() {
+    return [
+      const Comment(
+        id: '1',
+        authorName: 'Nicholas Asante',
+        authorAvatar: '',
+        text:
+            'This article was so helpful! The analogy about lending money to a friend\'s business made it super easy to understand. The quiz at the end was a great way to test my knowledge.',
+        timestamp: '2d',
+      ),
+      Comment(
+        id: '2',
+        authorName: 'Michel Kyei',
+        authorAvatar: '',
+        text:
+            'This article was so helpful! The analogy about lending money to a friend\'s business made it super easy to understand. The quiz at the end was a great way to test my knowledge.',
+        timestamp: '1d',
+        replies: [
+          const Comment(
+            id: '2-1',
+            authorName: 'Sarah Johnson',
+            authorAvatar: '',
+            text: 'Glad you found it helpful! The team works hard on these.',
+            timestamp: '1d',
+          ),
+        ],
+      ),
+    ];
   }
 }

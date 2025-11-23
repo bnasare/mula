@@ -352,5 +352,22 @@
     }
   },
   "whatIsAMutualFund": "投資信託とは？",
-  "poolingMoneySpreading": "資金をプールし、リスクを分散し、富を増やす"
+  "poolingMoneySpreading": "資金をプールし、リスクを分散し、富を増やす",
+
+  "markAsRead": "既読にする",
+  "read": "既読",
+  "investIn": "{asset}に投資する",
+  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "takeAQuiz": "クイズに挑戦",
+  "shareWithFriends": "友達と共有するかコメントを残す",
+  "leaveComment": "コメントを残す",
+  "reply": "返信",
+  "viewComments": "コメントを見る ({count})",
+  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "minsRead": "{count}分で読める",
+  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "views": "{count}k",
+  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "showMoreReplies": "{count}件の返信をもっと見る",
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
 }

@@ -352,5 +352,22 @@
     }
   },
   "whatIsAMutualFund": "Cos'è un Fondo Comune?",
-  "poolingMoneySpreading": "Raggruppare denaro, distribuire rischio, far crescere ricchezza"
+  "poolingMoneySpreading": "Raggruppare denaro, distribuire rischio, far crescere ricchezza",
+
+  "markAsRead": "Segna come letto",
+  "read": "Letto",
+  "investIn": "Investi in {asset}",
+  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "takeAQuiz": "Fai un quiz",
+  "shareWithFriends": "Condividi con i tuoi amici o lascia un commento",
+  "leaveComment": "Lascia un commento",
+  "reply": "Rispondi",
+  "viewComments": "Visualizza commenti ({count})",
+  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "minsRead": "{count} min di lettura",
+  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "views": "{count}k",
+  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "showMoreReplies": "Mostra {count} risposte in più",
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
 }

@@ -353,5 +353,22 @@
     }
   },
   "whatIsAMutualFund": "什么是共同基金？",
-  "poolingMoneySpreading": "汇集资金，分散风险，增长财富"
+  "poolingMoneySpreading": "汇集资金，分散风险，增长财富",
+
+  "markAsRead": "标记为已读",
+  "read": "已读",
+  "investIn": "投资{asset}",
+  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "takeAQuiz": "参加测验",
+  "shareWithFriends": "与朋友分享或发表评论",
+  "leaveComment": "发表评论",
+  "reply": "回复",
+  "viewComments": "查看评论 ({count})",
+  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "minsRead": "{count}分钟阅读",
+  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "views": "{count}k",
+  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "showMoreReplies": "显示{count}条更多回复",
+  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}}
 }

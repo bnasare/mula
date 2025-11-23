@@ -1007,4 +1007,47 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get poolingMoneySpreading =>
       'Agrupar dinero, distribuir riesgo, hacer crecer riqueza';
+
+  @override
+  String get markAsRead => 'Marcar como leído';
+
+  @override
+  String get read => 'Leído';
+
+  @override
+  String investIn(String asset) {
+    return 'Invertir en $asset';
+  }
+
+  @override
+  String get takeAQuiz => 'Hacer un cuestionario';
+
+  @override
+  String get shareWithFriends => 'Comparte con tus amigos o deja un comentario';
+
+  @override
+  String get leaveComment => 'Dejar un comentario';
+
+  @override
+  String get reply => 'Responder';
+
+  @override
+  String viewComments(String count) {
+    return 'Ver comentarios ($count)';
+  }
+
+  @override
+  String minsRead(int count) {
+    return '$count mins de lectura';
+  }
+
+  @override
+  String views(String count) {
+    return '${count}k';
+  }
+
+  @override
+  String showMoreReplies(int count) {
+    return 'Mostrar $count respuestas más';
+  }
 }

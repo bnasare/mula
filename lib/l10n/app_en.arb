@@ -355,5 +355,52 @@
     }
   },
   "whatIsAMutualFund": "What is a Mutual Fund?",
-  "poolingMoneySpreading": "Pooling money, spreading risk, growing wealth"
+  "poolingMoneySpreading": "Pooling money, spreading risk, growing wealth",
+
+  "markAsRead": "Mark as read",
+  "read": "Read",
+  "investIn": "Invest in {asset}",
+  "@investIn": {
+    "placeholders": {
+      "asset": {
+        "type": "String"
+      }
+    }
+  },
+  "takeAQuiz": "Take a quiz",
+  "shareWithFriends": "Share with your friends or leave a comment",
+  "leaveComment": "Leave a comment",
+  "reply": "Reply",
+  "viewComments": "View comments ({count})",
+  "@viewComments": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "minsRead": "{count} mins read",
+  "@minsRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "views": "{count}k",
+  "@views": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "showMoreReplies": "Show {count} more replies",
+  "@showMoreReplies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }
