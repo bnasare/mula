@@ -69,24 +69,15 @@ class _AdvancedChartScreenState extends State<AdvancedChartScreen> {
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(
-              Icons.functions,
-              color: AppColors.primaryText(context),
-            ),
+            icon: Icon(Icons.functions, color: AppColors.primaryText(context)),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(
-              Icons.add,
-              color: AppColors.primaryText(context),
-            ),
+            icon: Icon(Icons.add, color: AppColors.primaryText(context)),
             onPressed: () {},
           ),
           PopupMenuButton<String>(
-            icon: Icon(
-              Icons.more_vert,
-              color: AppColors.primaryText(context),
-            ),
+            icon: Icon(Icons.more_vert, color: AppColors.primaryText(context)),
             position: PopupMenuPosition.under,
             onSelected: (value) {
               // Handle menu item selection
@@ -117,7 +108,10 @@ class _AdvancedChartScreenState extends State<AdvancedChartScreen> {
             child: Align(
               alignment: Alignment.centerRight,
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 6,
+                ),
                 decoration: BoxDecoration(
                   color: AppColors.teal.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(4),

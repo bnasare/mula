@@ -11,10 +11,12 @@ class TransactionFilterBottomSheet extends StatefulWidget {
   const TransactionFilterBottomSheet({super.key});
 
   @override
-  State<TransactionFilterBottomSheet> createState() => _TransactionFilterBottomSheetState();
+  State<TransactionFilterBottomSheet> createState() =>
+      _TransactionFilterBottomSheetState();
 }
 
-class _TransactionFilterBottomSheetState extends State<TransactionFilterBottomSheet> {
+class _TransactionFilterBottomSheetState
+    extends State<TransactionFilterBottomSheet> {
   String? _selectedDateRange;
   String? _selectedSortBy;
   String? _selectedStatus;
@@ -70,7 +72,10 @@ class _TransactionFilterBottomSheetState extends State<TransactionFilterBottomSh
                   if (_hasActiveFilters)
                     GestureDetector(
                       onTap: _clearAllFilters,
-                      child: AppText.small('Clear All', color: AppColors.appPrimary),
+                      child: AppText.small(
+                        'Clear All',
+                        color: AppColors.appPrimary,
+                      ),
                     ),
                   if (_hasActiveFilters) const SizedBox(width: 12),
                   GestureDetector(

@@ -117,7 +117,9 @@ class _CashWalletSectionState extends State<CashWalletSection> {
                             });
                           },
                           child: Icon(
-                            _isBalanceVisible ? IconlyLight.show : IconlyLight.hide,
+                            _isBalanceVisible
+                                ? IconlyLight.show
+                                : IconlyLight.hide,
                             size: 16,
                             color: AppColors.white(context),
                           ),

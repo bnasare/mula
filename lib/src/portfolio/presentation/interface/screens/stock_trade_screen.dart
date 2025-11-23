@@ -36,8 +36,7 @@ class StockTradeScreen extends StatefulWidget {
   });
 
   @override
-  State<StockTradeScreen> createState() =>
-      _StockTradeScreenState();
+  State<StockTradeScreen> createState() => _StockTradeScreenState();
 }
 
 class _StockTradeScreenState extends State<StockTradeScreen> {
@@ -378,7 +377,10 @@ class _StockTradeScreenState extends State<StockTradeScreen> {
       // Limit order: 8 rows with Order Type at top
       switch (index) {
         case 0:
-          return _buildDetailRow(context.localize.orderType, context.localize.limitOrder);
+          return _buildDetailRow(
+            context.localize.orderType,
+            context.localize.limitOrder,
+          );
         case 1:
           return _buildDetailRow(
             context.localize.orderPrice,

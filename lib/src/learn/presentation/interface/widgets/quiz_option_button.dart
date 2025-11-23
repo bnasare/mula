@@ -57,10 +57,7 @@ class QuizOptionButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: backgroundColor,
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(
-            color: borderColor,
-            width: 1,
-          ),
+          border: Border.all(color: borderColor, width: 1),
         ),
         child: Row(
           children: [
@@ -74,11 +71,7 @@ class QuizOptionButton extends StatelessWidget {
               const SizedBox(width: 12),
               Row(
                 children: [
-                  Icon(
-                    IconlyBold.star,
-                    color: AppColors.yellow,
-                    size: 20,
-                  ),
+                  Icon(IconlyBold.star, color: AppColors.yellow, size: 20),
                   const SizedBox(width: 4),
                   AppText.smallest(
                     context.localize.pts(option.isCorrect ? 5 : 0),

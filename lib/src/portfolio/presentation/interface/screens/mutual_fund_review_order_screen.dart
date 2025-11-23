@@ -60,7 +60,10 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MulaAppBar(title: context.localize.reviewOrder, showBottomDivider: true),
+      appBar: MulaAppBar(
+        title: context.localize.reviewOrder,
+        showBottomDivider: true,
+      ),
       body: Column(
         children: [
           Expanded(
@@ -156,7 +159,11 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
       // Limit order: 7 rows with Order Type at top
       switch (index) {
         case 0:
-          return _buildDetailRow(context, context.localize.orderType, context.localize.limitOrder);
+          return _buildDetailRow(
+            context,
+            context.localize.orderType,
+            context.localize.limitOrder,
+          );
         case 1:
           return _buildDetailRow(
             context,
@@ -182,7 +189,11 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
             'GHS ${netConsideration.toStringAsFixed(2)}',
           );
         case 5:
-          return _buildDetailRow(context, context.localize.fundManager, fundManager);
+          return _buildDetailRow(
+            context,
+            context.localize.fundManager,
+            fundManager,
+          );
         case 6:
           return _buildDetailRow(
             context,
@@ -220,7 +231,11 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
             'GHS ${netConsideration.toStringAsFixed(2)}',
           );
         case 4:
-          return _buildDetailRow(context, context.localize.fundManager, fundManager);
+          return _buildDetailRow(
+            context,
+            context.localize.fundManager,
+            fundManager,
+          );
         case 5:
           return _buildDetailRow(
             context,

@@ -12,6 +12,7 @@ import '../widgets/featured_track_card.dart';
 import '../widgets/lesson_card.dart';
 import '../widgets/track_filter_tabs.dart';
 import 'learn_search_screen.dart';
+import 'lesson_detail_screen.dart';
 
 /// Learn tab - Educational content for investment learning
 class LearnTab extends StatefulWidget {
@@ -91,7 +92,17 @@ class _LearnTabState extends State<LearnTab> {
                       separatorBuilder: (context, index) =>
                           const SizedBox(width: 16),
                       itemBuilder: (context, index) {
-                        return FeaturedTrackCard(track: featuredTracks[index]);
+                        return FeaturedTrackCard(
+                          track: featuredTracks[index],
+                          onTap: () {
+                            NavigationHelper.navigateTo(
+                              context,
+                              LessonDetailScreen(
+                                lessonId: featuredTracks[index].id,
+                              ),
+                            );
+                          },
+                        );
                       },
                     ),
                   ),

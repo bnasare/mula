@@ -32,9 +32,7 @@ class MarketStatusIndicator extends StatelessWidget {
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: Colors.red.withValues(alpha: 0.1),
-      ),
+      decoration: BoxDecoration(color: Colors.red.withValues(alpha: 0.1)),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [

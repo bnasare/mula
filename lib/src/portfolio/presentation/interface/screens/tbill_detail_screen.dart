@@ -247,8 +247,10 @@ class TBillDetailScreen extends StatelessWidget {
                               tbillCode: tbillCode,
                               tbillDescription: description,
                               interestRate: currentRate,
-                              availableCashBalance: 300.00, // TODO: Get from portfolio/wallet
-                              currentHoldings: 10000.00, // TODO: Get from user's holdings
+                              availableCashBalance:
+                                  300.00, // TODO: Get from portfolio/wallet
+                              currentHoldings:
+                                  10000.00, // TODO: Get from user's holdings
                             ),
                           );
                         },
@@ -272,7 +274,8 @@ class TBillDetailScreen extends StatelessWidget {
                               tbillCode: tbillCode,
                               tbillDescription: description,
                               interestRate: currentRate,
-                              availableCashBalance: 300.00, // TODO: Get from portfolio/wallet
+                              availableCashBalance:
+                                  300.00, // TODO: Get from portfolio/wallet
                               currentHoldings: null, // Not needed for buy
                             ),
                           );

@@ -377,7 +377,10 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
       // Limit order: 7 rows with Order Type at top
       switch (index) {
         case 0:
-          return _buildDetailRow(context.localize.orderType, context.localize.limitOrder);
+          return _buildDetailRow(
+            context.localize.orderType,
+            context.localize.limitOrder,
+          );
         case 1:
           return _buildDetailRow(
             context.localize.orderPrice,

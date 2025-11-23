@@ -61,10 +61,19 @@ class _TradeBarChartState extends State<TradeBarChart> {
           setState(() {
             final scaleDelta = 1 - (details.scale - 1);
             final range = maxX - minX;
-            final newRange = (range * scaleDelta).clamp(10.0, widget.data.length.toDouble());
+            final newRange = (range * scaleDelta).clamp(
+              10.0,
+              widget.data.length.toDouble(),
+            );
             final center = (maxX + minX) / 2;
-            minX = (center - newRange / 2).clamp(0, widget.data.length - newRange);
-            maxX = (minX + newRange).clamp(newRange, widget.data.length.toDouble());
+            minX = (center - newRange / 2).clamp(
+              0,
+              widget.data.length - newRange,
+            );
+            maxX = (minX + newRange).clamp(
+              newRange,
+              widget.data.length.toDouble(),
+            );
           });
         }
       },
@@ -94,7 +103,8 @@ class _TradeBarChartState extends State<TradeBarChart> {
                   ),
                   children: [
                     TextSpan(
-                      text: '${context.localize.open}: ${priceFormat.format(bar.open)}\n',
+                      text:
+                          '${context.localize.open}: ${priceFormat.format(bar.open)}\n',
                       style: TextStyle(
                         color: AppColors.secondaryText(context),
                         fontSize: 11,
@@ -102,7 +112,8 @@ class _TradeBarChartState extends State<TradeBarChart> {
                       ),
                     ),
                     TextSpan(
-                      text: '${context.localize.high}: ${priceFormat.format(bar.high)}\n',
+                      text:
+                          '${context.localize.high}: ${priceFormat.format(bar.high)}\n',
                       style: TextStyle(
                         color: AppColors.secondaryText(context),
                         fontSize: 11,
@@ -110,7 +121,8 @@ class _TradeBarChartState extends State<TradeBarChart> {
                       ),
                     ),
                     TextSpan(
-                      text: '${context.localize.low}: ${priceFormat.format(bar.low)}\n',
+                      text:
+                          '${context.localize.low}: ${priceFormat.format(bar.low)}\n',
                       style: TextStyle(
                         color: AppColors.secondaryText(context),
                         fontSize: 11,
@@ -118,7 +130,8 @@ class _TradeBarChartState extends State<TradeBarChart> {
                       ),
                     ),
                     TextSpan(
-                      text: '${context.localize.close}: ${priceFormat.format(bar.close)}',
+                      text:
+                          '${context.localize.close}: ${priceFormat.format(bar.close)}',
                       style: TextStyle(
                         color: bar.isPositive
                             ? AppColors.activitySuccess
@@ -155,7 +168,9 @@ class _TradeBarChartState extends State<TradeBarChart> {
               sideTitles: SideTitles(
                 showTitles: true,
                 getTitlesWidget: (double value, TitleMeta meta) {
-                  if (value.toInt() >= widget.data.length) return const SizedBox();
+                  if (value.toInt() >= widget.data.length) {
+                    return const SizedBox();
+                  }
 
                   // Show date every 10 bars
                   if (value.toInt() % 10 != 0) return const SizedBox();
@@ -236,7 +251,8 @@ class _TradeBarChartState extends State<TradeBarChart> {
                     fontWeight: FontWeight.bold,
                     backgroundColor: AppColors.surface(context),
                   ),
-                  labelResolver: (line) => widget.currentPrice.toStringAsFixed(5),
+                  labelResolver: (line) =>
+                      widget.currentPrice.toStringAsFixed(5),
                 ),
               ),
             ],

@@ -133,129 +133,141 @@ class _TBillTradeScreenState extends State<TBillTradeScreen> {
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Market Status
-                  const MarketStatusIndicator(),
-                  const SizedBox(height: 16),
+                  children: [
+                    // Market Status
+                    const MarketStatusIndicator(),
+                    const SizedBox(height: 16),
 
-                  // T-Bill Info
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: AppColors.offWhite(context),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        AppText.medium(
-                          widget.tbillCode,
-                          style: TextStyle(
-                            fontWeight: FontWeight.w600,
-                            color: AppColors.primaryText(context),
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        AppText.small(
-                          widget.tbillDescription,
-                          color: AppColors.secondaryText(context),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        // Amount Input
-                        AppText.small(
-                          widget.tradeType.questionText,
-                          color: AppColors.secondaryText(context),
-                        ),
-                        const SizedBox(height: 12),
-
-                        Row(
-                          children: [
-                            AppText.medium(
-                              '${context.localize.ghs} ',
-                              style: TextStyle(
-                                color: AppColors.primaryText(context),
-                              ),
+                    // T-Bill Info
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: AppColors.offWhite(context),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          AppText.medium(
+                            widget.tbillCode,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              color: AppColors.primaryText(context),
                             ),
-                            Expanded(
-                              child: MulaTextField(
-                                controller: _amountController,
-                                hintText: '0.00',
-                                keyboardType:
-                                    const TextInputType.numberWithOptions(
-                                      decimal: true,
+                          ),
+                          const SizedBox(height: 4),
+                          AppText.small(
+                            widget.tbillDescription,
+                            color: AppColors.secondaryText(context),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // Amount Input
+                          AppText.small(
+                            widget.tradeType.questionText,
+                            color: AppColors.secondaryText(context),
+                          ),
+                          const SizedBox(height: 12),
+
+                          Row(
+                            children: [
+                              AppText.medium(
+                                '${context.localize.ghs} ',
+                                style: TextStyle(
+                                  color: AppColors.primaryText(context),
+                                ),
+                              ),
+                              Expanded(
+                                child: MulaTextField(
+                                  controller: _amountController,
+                                  hintText: '0.00',
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                        decimal: true,
+                                      ),
+                                  inputFormatters: [
+                                    FilteringTextInputFormatter.allow(
+                                      RegExp(r'^\d*\.?\d{0,2}'),
                                     ),
-                                inputFormatters: [
-                                  FilteringTextInputFormatter.allow(
-                                    RegExp(r'^\d*\.?\d{0,2}'),
-                                  ),
-                                ],
-                                onChanged: _handleAmountChange,
+                                  ],
+                                  onChanged: _handleAmountChange,
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 12),
-
-                        // Percentage Buttons
-                        Row(
-                          children: [
-                            _buildPercentageButton(context.localize.percent25, 0.25),
-                            const SizedBox(width: 8),
-                            _buildPercentageButton(context.localize.percent50, 0.50),
-                            const SizedBox(width: 8),
-                            _buildPercentageButton(context.localize.percent75, 0.75),
-                            const SizedBox(width: 8),
-                            _buildPercentageButton(context.localize.percent100, 1.0),
-                          ],
-                        ),
-                        const SizedBox(height: 32),
-
-                        // Calculation Details
-                        ListView.separated(
-                          shrinkWrap: true,
-                          physics: const NeverScrollableScrollPhysics(),
-                          itemCount: 6,
-                          separatorBuilder: (context, index) => Divider(
-                            color: AppColors.border(context),
-                            height: 24,
+                            ],
                           ),
-                          itemBuilder: (context, index) {
-                            return _buildDetailRowByIndex(index);
-                          },
-                        ),
-                      ],
+                          const SizedBox(height: 12),
+
+                          // Percentage Buttons
+                          Row(
+                            children: [
+                              _buildPercentageButton(
+                                context.localize.percent25,
+                                0.25,
+                              ),
+                              const SizedBox(width: 8),
+                              _buildPercentageButton(
+                                context.localize.percent50,
+                                0.50,
+                              ),
+                              const SizedBox(width: 8),
+                              _buildPercentageButton(
+                                context.localize.percent75,
+                                0.75,
+                              ),
+                              const SizedBox(width: 8),
+                              _buildPercentageButton(
+                                context.localize.percent100,
+                                1.0,
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 32),
+
+                          // Calculation Details
+                          ListView.separated(
+                            shrinkWrap: true,
+                            physics: const NeverScrollableScrollPhysics(),
+                            itemCount: 6,
+                            separatorBuilder: (context, index) => Divider(
+                              color: AppColors.border(context),
+                              height: 24,
+                            ),
+                            itemBuilder: (context, index) {
+                              return _buildDetailRowByIndex(index);
+                            },
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
-          ),
 
-          // Bottom Button
-          Container(
-            padding: const EdgeInsets.all(16).copyWith(bottom: 32),
-            decoration: BoxDecoration(),
-            child: AppButton(
-              text: context.localize.review,
-              onTap: _isFormValid ? _handleReview : null,
-              backgroundColor: _isFormValid
-                  ? AppColors.appPrimary
-                  : AppColors.border(context),
-              textColor: AppColors.white(context),
-              borderRadius: 12,
-              padding: EdgeInsets.zero,
+            // Bottom Button
+            Container(
+              padding: const EdgeInsets.all(16).copyWith(bottom: 32),
+              decoration: BoxDecoration(),
+              child: AppButton(
+                text: context.localize.review,
+                onTap: _isFormValid ? _handleReview : null,
+                backgroundColor: _isFormValid
+                    ? AppColors.appPrimary
+                    : AppColors.border(context),
+                textColor: AppColors.white(context),
+                borderRadius: 12,
+                padding: EdgeInsets.zero,
+              ),
             ),
-          ),
-        ],
+          ],
         ),
       ),
     );

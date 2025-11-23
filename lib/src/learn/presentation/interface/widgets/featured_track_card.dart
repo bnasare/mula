@@ -8,68 +8,72 @@ import '../../../domain/entities/learning_track.dart';
 
 class FeaturedTrackCard extends StatelessWidget {
   final LearningTrack track;
+  final VoidCallback? onTap;
 
-  const FeaturedTrackCard({super.key, required this.track});
+  const FeaturedTrackCard({super.key, required this.track, this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 320,
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        gradient:
-            track.gradient ??
-            const LinearGradient(
-              colors: [Color(0xFFFF9F43), Color(0xFFFF8A00)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 320,
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          gradient:
+              track.gradient ??
+              const LinearGradient(
+                colors: [Color(0xFFFF9F43), Color(0xFFFF8A00)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                AppText.large(track.icon, style: TextStyle(fontSize: 32)),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      AppText.smaller(
+                        track.title,
+                        style: TextStyle(
+                          color: AppColors.white(context),
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      AppText.smallest(
+                        track.description,
+                        style: TextStyle(
+                          color: AppColors.white(context).withOpacity(0.95),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        maxLines: 2,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              AppText.large(track.icon, style: TextStyle(fontSize: 32)),
-              const SizedBox(width: 16),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    AppText.smaller(
-                      track.title,
-                      style: TextStyle(
-                        color: AppColors.white(context),
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                    const SizedBox(height: 6),
-                    AppText.smallest(
-                      track.description,
-                      style: TextStyle(
-                        color: AppColors.white(context).withOpacity(0.95),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      maxLines: 2,
-                    ),
-                  ],
+            AppSpacer.vShorter(),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: AppText.smallest(
+                context.localize.mins(track.durationMinutes),
+                style: TextStyle(
+                  color: AppColors.white(context),
+                  fontWeight: FontWeight.w500,
                 ),
               ),
-            ],
-          ),
-          AppSpacer.vShorter(),
-          Align(
-            alignment: Alignment.bottomRight,
-            child: AppText.smallest(
-              context.localize.mins(track.durationMinutes),
-              style: TextStyle(
-                color: AppColors.white(context),
-                fontWeight: FontWeight.w500,
-              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

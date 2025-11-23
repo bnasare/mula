@@ -107,10 +107,7 @@ class _MutualFundChooseOrderTypeScreenState
             padding: const EdgeInsets.all(16).copyWith(bottom: 32),
             decoration: BoxDecoration(
               border: Border(
-                top: BorderSide(
-                  color: AppColors.border(context),
-                  width: 1,
-                ),
+                top: BorderSide(color: AppColors.border(context), width: 1),
               ),
             ),
             child: AppButton(

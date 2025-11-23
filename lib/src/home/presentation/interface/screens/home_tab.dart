@@ -40,55 +40,55 @@ class _HomeTabState extends State<HomeTab> {
           behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
           child: CustomScrollView(
             slivers: [
-            // App bar with user greeting
-            const HomeAppBar(),
+              // App bar with user greeting
+              const HomeAppBar(),
 
-            // Main content
-            SliverToBoxAdapter(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 24),
+              // Main content
+              SliverToBoxAdapter(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(height: 24),
 
-                  // Portfolio value card
-                  Padding(
-                    padding: context.responsivePadding(
-                      mobile: const EdgeInsets.symmetric(horizontal: 20.0),
+                    // Portfolio value card
+                    Padding(
+                      padding: context.responsivePadding(
+                        mobile: const EdgeInsets.symmetric(horizontal: 20.0),
+                      ),
+                      child: const PortfolioSection(),
                     ),
-                    child: const PortfolioSection(),
-                  ),
-                  const SizedBox(height: 24),
+                    const SizedBox(height: 24),
 
-                  // Action buttons
-                  const ActionButtonsSection(),
-                  const SizedBox(height: 24),
+                    // Action buttons
+                    const ActionButtonsSection(),
+                    const SizedBox(height: 24),
 
-                  // Learning corner
-                  Padding(
-                    padding: context.responsivePadding(
-                      mobile: const EdgeInsets.symmetric(horizontal: 20.0),
+                    // Learning corner
+                    Padding(
+                      padding: context.responsivePadding(
+                        mobile: const EdgeInsets.symmetric(horizontal: 20.0),
+                      ),
+                      child: const LearningCornerSection(),
                     ),
-                    child: const LearningCornerSection(),
-                  ),
-                  const SizedBox(height: 32),
+                    const SizedBox(height: 32),
 
-                  // Asset overview
-                  const AssetOverviewSection(),
-                  const SizedBox(height: 32),
+                    // Asset overview
+                    const AssetOverviewSection(),
+                    const SizedBox(height: 32),
 
-                  // Recent activities
-                  Padding(
-                    padding: context.responsivePadding(
-                      mobile: const EdgeInsets.symmetric(horizontal: 20.0),
+                    // Recent activities
+                    Padding(
+                      padding: context.responsivePadding(
+                        mobile: const EdgeInsets.symmetric(horizontal: 20.0),
+                      ),
+                      child: const RecentActivitiesSection(),
                     ),
-                    child: const RecentActivitiesSection(),
-                  ),
-                  const SizedBox(height: 100), // Space for bottom nav
-                ],
+                    const SizedBox(height: 100), // Space for bottom nav
+                  ],
+                ),
               ),
-            ),
-          ],
-        ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: GestureDetector(

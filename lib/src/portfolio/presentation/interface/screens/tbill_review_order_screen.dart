@@ -56,7 +56,10 @@ class TBillReviewOrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MulaAppBar(title: context.localize.reviewOrder, showBottomDivider: true),
+      appBar: MulaAppBar(
+        title: context.localize.reviewOrder,
+        showBottomDivider: true,
+      ),
       body: Column(
         children: [
           Expanded(

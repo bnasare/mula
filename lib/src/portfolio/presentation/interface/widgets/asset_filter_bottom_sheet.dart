@@ -100,7 +100,10 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
             if (_hasActiveFilters)
               GestureDetector(
                 onTap: _clearAllFilters,
-                child: AppText.small(context.localize.clearAll, color: AppColors.appPrimary),
+                child: AppText.small(
+                  context.localize.clearAll,
+                  color: AppColors.appPrimary,
+                ),
               ),
             const SizedBox(width: 12),
             GestureDetector(
@@ -130,7 +133,10 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AppText.small(context.localize.assetType, color: AppColors.primaryText(context)),
+        AppText.small(
+          context.localize.assetType,
+          color: AppColors.primaryText(context),
+        ),
         const SizedBox(height: 12),
         Wrap(
           spacing: 8,
@@ -159,7 +165,10 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AppText.small(context.localize.performance, color: AppColors.secondaryText(context)),
+        AppText.small(
+          context.localize.performance,
+          color: AppColors.secondaryText(context),
+        ),
         const SizedBox(height: 12),
         Wrap(
           spacing: 8,
@@ -196,7 +205,10 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AppText.small(context.localize.sortBy, color: AppColors.secondaryText(context)),
+        AppText.small(
+          context.localize.sortBy,
+          color: AppColors.secondaryText(context),
+        ),
         const SizedBox(height: 12),
         Wrap(
           spacing: 8,
@@ -217,7 +229,10 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AppText.small(context.localize.keywordSearch, color: AppColors.secondaryText(context)),
+        AppText.small(
+          context.localize.keywordSearch,
+          color: AppColors.secondaryText(context),
+        ),
         const SizedBox(height: 12),
         MulaTextField(
           controller: _searchController,

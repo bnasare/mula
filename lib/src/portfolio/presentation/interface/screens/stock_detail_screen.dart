@@ -264,7 +264,8 @@ class StockDetailScreen extends StatelessWidget {
                               ticker: ticker,
                               companyName: companyName,
                               currentPrice: currentPrice,
-                              availableCashBalance: 20.00, // TODO: Get from wallet
+                              availableCashBalance:
+                                  20.00, // TODO: Get from wallet
                               currentShares: 1000.0, // TODO: Get from holdings
                               broker: 'Databank', // TODO: Get from asset data
                             ),
@@ -290,7 +291,8 @@ class StockDetailScreen extends StatelessWidget {
                               ticker: ticker,
                               companyName: companyName,
                               currentPrice: currentPrice,
-                              availableCashBalance: 20.00, // TODO: Get from wallet
+                              availableCashBalance:
+                                  20.00, // TODO: Get from wallet
                               currentShares: null, // Not needed for buy
                               broker: 'Databank', // TODO: Get from asset data
                             ),

@@ -14,11 +14,7 @@ class QuizScreen extends StatefulWidget {
   final String lessonId;
   final VoidCallback? onReturnToLearn;
 
-  const QuizScreen({
-    super.key,
-    required this.lessonId,
-    this.onReturnToLearn,
-  });
+  const QuizScreen({super.key, required this.lessonId, this.onReturnToLearn});
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();

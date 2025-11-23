@@ -51,14 +51,16 @@ class PriceBar {
       final low = (open < close ? open : close) - 0.001;
       final volume = 1000000 + (i * 50000);
 
-      data.add(PriceBar(
-        timestamp: date,
-        open: open,
-        high: high,
-        low: low,
-        close: close,
-        volume: volume.toDouble(),
-      ));
+      data.add(
+        PriceBar(
+          timestamp: date,
+          open: open,
+          high: high,
+          low: low,
+          close: close,
+          volume: volume.toDouble(),
+        ),
+      );
     }
 
     return data;

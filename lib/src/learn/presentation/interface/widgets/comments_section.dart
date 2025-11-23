@@ -30,7 +30,10 @@ class _CommentsSectionState extends State<CommentsSection> {
     _comments = List.from(widget.comments);
   }
 
-  Future<void> _showCommentInput({String? replyToName, String? parentCommentId}) async {
+  Future<void> _showCommentInput({
+    String? replyToName,
+    String? parentCommentId,
+  }) async {
     final commentText = await CommentInputBottomSheet.show(
       context,
       replyToName: replyToName,
@@ -64,7 +67,7 @@ class _CommentsSectionState extends State<CommentsSection> {
 
   void _addReply(String parentId, String text) {
     final newReply = Comment(
-      id: '${parentId}-${DateTime.now().millisecondsSinceEpoch}',
+      id: '$parentId-${DateTime.now().millisecondsSinceEpoch}',
       authorName: 'You',
       authorAvatar: '',
       text: text,
@@ -74,7 +77,8 @@ class _CommentsSectionState extends State<CommentsSection> {
     // Find the parent comment and add the reply
     for (int i = 0; i < _comments.length; i++) {
       if (_comments[i].id == parentId) {
-        final updatedReplies = List<Comment>.from(_comments[i].replies)..add(newReply);
+        final updatedReplies = List<Comment>.from(_comments[i].replies)
+          ..add(newReply);
         _comments[i] = Comment(
           id: _comments[i].id,
           authorName: _comments[i].authorName,
@@ -159,8 +163,8 @@ class _CommentsSectionState extends State<CommentsSection> {
             final visibleReplies = isExpanded
                 ? totalReplies
                 : (totalReplies > _initialVisibleReplies
-                    ? _initialVisibleReplies
-                    : totalReplies);
+                      ? _initialVisibleReplies
+                      : totalReplies);
             final hiddenRepliesCount = totalReplies - visibleReplies;
 
             return Column(

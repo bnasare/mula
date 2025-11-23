@@ -118,12 +118,16 @@ class AssetHoldingCard extends StatelessWidget {
                     Icon(
                       isPositive ? Icons.arrow_upward : Icons.arrow_downward,
                       size: 12,
-                      color: isPositive ? AppColors.appPrimary : AppColors.activityError,
+                      color: isPositive
+                          ? AppColors.appPrimary
+                          : AppColors.activityError,
                     ),
                     const SizedBox(width: 2),
                     AppText.smallest(
                       '${changePercentage.abs().toStringAsFixed(2)}%',
-                      color: isPositive ? AppColors.appPrimary : AppColors.activityError,
+                      color: isPositive
+                          ? AppColors.appPrimary
+                          : AppColors.activityError,
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 6),

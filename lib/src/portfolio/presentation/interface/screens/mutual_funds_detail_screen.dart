@@ -506,7 +506,11 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                   value: 'Ghana Cedi',
                 );
               } else {
-                return _buildInfoItem(context, label: context.localize.rank, value: '24');
+                return _buildInfoItem(
+                  context,
+                  label: context.localize.rank,
+                  value: '24',
+                );
               }
             },
           ),
