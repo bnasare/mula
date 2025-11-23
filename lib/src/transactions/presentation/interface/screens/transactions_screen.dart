@@ -9,7 +9,7 @@ import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/interface/widgets/activity_list_item.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
 import '../widgets/export_bottom_sheet.dart';
-import '../widgets/filter_bottom_sheet.dart';
+import '../widgets/transaction_filter_bottom_sheet.dart';
 import '../widgets/transaction_receipt_modal.dart';
 import 'report_issue_screen.dart';
 
@@ -36,7 +36,7 @@ class TransactionsScreen extends StatelessWidget {
                 context: context,
                 isScrollControlled: true,
                 backgroundColor: AppColors.transparent,
-                builder: (context) => const FilterBottomSheet(),
+                builder: (context) => const TransactionFilterBottomSheet(),
               );
             },
           ),

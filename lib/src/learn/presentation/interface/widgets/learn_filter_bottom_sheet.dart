@@ -86,9 +86,13 @@ class _LearnFilterBottomSheetState extends State<LearnFilterBottomSheet> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                AppText.medium(
+                AppText.large(
                   context.localize.filter,
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    color: AppColors.primaryText(context),
+                    fontSize: 22,
+                  ),
                 ),
                 GestureDetector(
                   onTap: () => Navigator.pop(context),

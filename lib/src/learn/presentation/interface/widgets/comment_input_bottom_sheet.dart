@@ -77,9 +77,13 @@ class _CommentInputBottomSheetState extends State<CommentInputBottomSheet> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
-                  child: AppText.medium(
+                  child: AppText.large(
                     title,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.primaryText(context),
+                      fontSize: 22,
+                    ),
                   ),
                 ),
                 GestureDetector(

@@ -31,10 +31,7 @@ class TBillDetailScreen extends StatelessWidget {
     final isPositive = change >= 0;
 
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
-      appBar: const MulaAppBar(
-        title: 'Treasury Bill',
-      ),
+      appBar: const MulaAppBar(title: 'Treasury Bill'),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: SingleChildScrollView(
@@ -203,18 +200,21 @@ class TBillDetailScreen extends StatelessWidget {
                                 context,
                                 label: 'Quantity',
                                 value: '10,000',
+                                alignment: CrossAxisAlignment.end,
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
                                 label: 'Accrued Interest',
                                 value: currencyFormat.format(25.50),
+                                alignment: CrossAxisAlignment.end,
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
                                 label: 'Capital Gains/(Losses)',
                                 value: currencyFormat.format(2475.00),
+                                alignment: CrossAxisAlignment.end,
                               ),
                             ],
                           ),
@@ -306,13 +306,13 @@ class TBillDetailScreen extends StatelessWidget {
                           _buildInfoItem(
                             context,
                             label: 'Type',
-                            value: 'Treasury\nBill',
+                            value: 'Treasury Bill',
                           ),
                           const SizedBox(height: 24),
                           _buildInfoItem(
                             context,
                             label: 'Issuer',
-                            value: 'Government of\nGhana',
+                            value: 'Government of Ghana',
                           ),
                         ],
                       ),
@@ -321,18 +321,20 @@ class TBillDetailScreen extends StatelessWidget {
                     // Right Column
                     Expanded(
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           _buildInfoItem(
                             context,
                             label: 'Currency',
                             value: 'GHS',
+                            alignment: CrossAxisAlignment.end,
                           ),
                           const SizedBox(height: 24),
                           _buildInfoItem(
                             context,
                             label: 'Maturity Date',
-                            value: '27-\nOCT-25',
+                            value: '27-OCT-25',
+                            alignment: CrossAxisAlignment.end,
                           ),
                         ],
                       ),
@@ -388,9 +390,10 @@ class TBillDetailScreen extends StatelessWidget {
     BuildContext context, {
     required String label,
     required String value,
+    CrossAxisAlignment alignment = CrossAxisAlignment.start,
   }) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: alignment,
       children: [
         AppText(
           label,
@@ -417,9 +420,10 @@ class TBillDetailScreen extends StatelessWidget {
     BuildContext context, {
     required String label,
     required String value,
+    CrossAxisAlignment alignment = CrossAxisAlignment.start,
   }) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: alignment,
       children: [
         AppText(
           label,

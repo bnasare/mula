@@ -69,7 +69,7 @@ class _AssetDonutChartState extends State<AssetDonutChart> {
       final fontSize = isTouched ? 16.0 : 14.0;
 
       return PieChartSectionData(
-        color: _getAssetColor(asset.type),
+        color: asset.type.color,
         value: asset.percentage,
         title: '${asset.percentage.toInt()}%',
         radius: radius,
@@ -94,7 +94,7 @@ class _AssetDonutChartState extends State<AssetDonutChart> {
             return Padding(
               padding: EdgeInsets.only(right: isLast ? 0 : 16),
               child: _LegendItem(
-                color: _getAssetColor(asset.type),
+                color: asset.type.color,
                 name: asset.name,
                 percentage: asset.percentage,
                 value: asset.value,
@@ -104,23 +104,6 @@ class _AssetDonutChartState extends State<AssetDonutChart> {
         ),
       ),
     );
-  }
-
-  Color _getAssetColor(AssetType type) {
-    switch (type) {
-      case AssetType.stocks:
-        return AppColors.chartBlue; // Blue
-      case AssetType.tBills:
-        return AppColors.chartOrange; // Orange
-      case AssetType.cashWallet:
-        return AppColors.chartGreen; // Green
-      case AssetType.reits:
-        return AppColors.chartPurple; // Purple
-      case AssetType.mutualFunds:
-        return AppColors.chartRed; // Red
-      case AssetType.bonds:
-        return AppColors.chartTeal; // Teal
-    }
   }
 }
 

@@ -16,6 +16,7 @@ import '../../../../transactions/presentation/interface/screens/transactions_scr
 import '../widgets/asset_holding_card.dart';
 import '../widgets/cash_wallet_section.dart';
 import '../widgets/portfolio_asset_breakdown.dart';
+import 'all_asset_holdings_screen.dart';
 import 'asset_holding_detail_screen.dart';
 import 'mutual_funds_detail_screen.dart';
 import 'portfolio_summary_screen.dart';
@@ -168,7 +169,10 @@ class PortfolioTab extends StatelessWidget {
                           ),
                           GestureDetector(
                             onTap: () {
-                              // TODO: Navigate to all assets screen
+                              NavigationHelper.navigateTo(
+                                context,
+                                const AllAssetHoldingsScreen(),
+                              );
                             },
                             child: AppText.smaller(
                               'View all',

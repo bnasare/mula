@@ -7,14 +7,14 @@ import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../authentication/presentation/interface/widgets/mula_text_field.dart';
 
 /// Bottom sheet for filtering transactions
-class FilterBottomSheet extends StatefulWidget {
-  const FilterBottomSheet({super.key});
+class TransactionFilterBottomSheet extends StatefulWidget {
+  const TransactionFilterBottomSheet({super.key});
 
   @override
-  State<FilterBottomSheet> createState() => _FilterBottomSheetState();
+  State<TransactionFilterBottomSheet> createState() => _TransactionFilterBottomSheetState();
 }
 
-class _FilterBottomSheetState extends State<FilterBottomSheet> {
+class _TransactionFilterBottomSheetState extends State<TransactionFilterBottomSheet> {
   String? _selectedDateRange;
   String? _selectedSortBy;
   String? _selectedStatus;
@@ -24,6 +24,21 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
   void dispose() {
     _searchController.dispose();
     super.dispose();
+  }
+
+  bool get _hasActiveFilters =>
+      _selectedDateRange != null ||
+      _selectedSortBy != null ||
+      _selectedStatus != null ||
+      _searchController.text.isNotEmpty;
+
+  void _clearAllFilters() {
+    setState(() {
+      _selectedDateRange = null;
+      _selectedSortBy = null;
+      _selectedStatus = null;
+      _searchController.clear();
+    });
   }
 
   @override
@@ -50,13 +65,23 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
                   fontSize: 22,
                 ),
               ),
-              GestureDetector(
-                onTap: () => Navigator.pop(context),
-                child: Icon(
-                  Icons.cancel,
-                  size: 22,
-                  color: AppColors.secondaryText(context),
-                ),
+              Row(
+                children: [
+                  if (_hasActiveFilters)
+                    GestureDetector(
+                      onTap: _clearAllFilters,
+                      child: AppText.small('Clear All', color: AppColors.appPrimary),
+                    ),
+                  if (_hasActiveFilters) const SizedBox(width: 12),
+                  GestureDetector(
+                    onTap: () => Navigator.pop(context),
+                    child: Icon(
+                      Icons.cancel,
+                      size: 22,
+                      color: AppColors.secondaryText(context),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

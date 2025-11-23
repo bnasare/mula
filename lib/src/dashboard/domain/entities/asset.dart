@@ -1,4 +1,7 @@
 import 'package:equatable/equatable.dart';
+import 'package:flutter/material.dart';
+
+import '../../../../shared/presentation/theme/app_colors.dart';
 
 /// Represents an asset in the portfolio
 class Asset extends Equatable {
@@ -50,6 +53,24 @@ extension AssetTypeExtension on AssetType {
         return 'Mutual Funds';
       case AssetType.bonds:
         return 'Bonds';
+    }
+  }
+
+  /// Returns the chart color for this asset type
+  Color get color {
+    switch (this) {
+      case AssetType.stocks:
+        return AppColors.chartBlue;
+      case AssetType.tBills:
+        return AppColors.chartOrange;
+      case AssetType.cashWallet:
+        return AppColors.chartGreen;
+      case AssetType.reits:
+        return AppColors.chartPurple;
+      case AssetType.mutualFunds:
+        return AppColors.chartRed;
+      case AssetType.bonds:
+        return AppColors.chartTeal;
     }
   }
 }

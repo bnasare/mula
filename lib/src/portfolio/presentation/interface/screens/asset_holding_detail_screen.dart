@@ -33,10 +33,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
     final isPositive = change >= 0;
 
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
-      appBar: const MulaAppBar(
-        title: 'Asset Holdings',
-      ),
+      appBar: const MulaAppBar(title: 'Asset Holdings'),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: SingleChildScrollView(
@@ -210,18 +207,21 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                                 context,
                                 label: 'Shares',
                                 value: '10,000',
+                                alignment: CrossAxisAlignment.end,
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
                                 label: 'Cost Price',
                                 value: currencyFormat.format(2.50),
+                                alignment: CrossAxisAlignment.end,
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
                                 label: 'Capital Gains/(Losses)',
                                 value: currencyFormat.format(7000.00),
+                                alignment: CrossAxisAlignment.end,
                               ),
                             ],
                           ),
@@ -405,9 +405,10 @@ class AssetHoldingDetailScreen extends StatelessWidget {
     BuildContext context, {
     required String label,
     required String value,
+    CrossAxisAlignment alignment = CrossAxisAlignment.start,
   }) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: alignment,
       children: [
         AppText(
           label,
