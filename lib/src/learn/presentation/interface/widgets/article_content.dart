@@ -5,10 +5,7 @@ import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 class ArticleContent extends StatelessWidget {
   final String content;
 
-  const ArticleContent({
-    super.key,
-    required this.content,
-  });
+  const ArticleContent({super.key, required this.content});
 
   @override
   Widget build(BuildContext context) {
@@ -125,8 +122,6 @@ class ArticleContent extends StatelessWidget {
       );
     }
 
-    return RichText(
-      text: TextSpan(children: spans),
-    );
+    return RichText(text: TextSpan(children: spans));
   }
 }

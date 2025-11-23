@@ -138,8 +138,9 @@ class _LearnFilterBottomSheetState extends State<LearnFilterBottomSheet> {
                         color: isSelected
                             ? AppColors.appPrimary
                             : AppColors.primaryText(context),
-                        fontWeight:
-                            isSelected ? FontWeight.w600 : FontWeight.normal,
+                        fontWeight: isSelected
+                            ? FontWeight.w600
+                            : FontWeight.normal,
                       ),
                     ),
                   ),

@@ -9,10 +9,7 @@ import 'comment_widget.dart';
 class CommentsSection extends StatefulWidget {
   final List<Comment> comments;
 
-  const CommentsSection({
-    super.key,
-    required this.comments,
-  });
+  const CommentsSection({super.key, required this.comments});
 
   @override
   State<CommentsSection> createState() => _CommentsSectionState();
@@ -63,7 +60,9 @@ class _CommentsSectionState extends State<CommentsSection> {
               ),
               const SizedBox(width: 8),
               Icon(
-                _isExpanded ? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down,
+                _isExpanded
+                    ? Icons.keyboard_arrow_up
+                    : Icons.keyboard_arrow_down,
                 size: 20,
                 color: AppColors.appPrimary,
               ),
@@ -85,10 +84,7 @@ class _CommentsSectionState extends State<CommentsSection> {
                 ),
                 // Render replies
                 ...comment.replies.map((reply) {
-                  return CommentWidget(
-                    comment: reply,
-                    isReply: true,
-                  );
+                  return CommentWidget(comment: reply, isReply: true);
                 }),
               ],
             );

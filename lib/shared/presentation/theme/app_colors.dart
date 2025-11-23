@@ -152,14 +152,24 @@ class AppColors {
   static const Color info = Color(0xFF2196F3);
 
   // Activity/Transaction status colors
-  static const Color activitySuccess = Color(0xFF4CAF50); // Green for completed/buy
-  static const Color activitySuccessLight = Color(0xFFE8F5E9); // Light green background
+  static const Color activitySuccess = Color(
+    0xFF4CAF50,
+  ); // Green for completed/buy
+  static const Color activitySuccessLight = Color(
+    0xFFE8F5E9,
+  ); // Light green background
   static const Color activityError = Color(0xFFEF5350); // Red for failed/sell
-  static const Color activityErrorLight = Color(0xFFFFEBEE); // Light red background
+  static const Color activityErrorLight = Color(
+    0xFFFFEBEE,
+  ); // Light red background
   static const Color activityPending = Color(0xFFFFA000); // Amber for pending
-  static const Color activityPendingLight = Color(0xFFFFF8E1); // Light amber background
+  static const Color activityPendingLight = Color(
+    0xFFFFF8E1,
+  ); // Light amber background
   static const Color activityDeposit = Color(0xFFFF9800); // Orange for deposit
-  static const Color activityDepositLight = Color(0xFFFFF3E0); // Light orange background
+  static const Color activityDepositLight = Color(
+    0xFFFFF3E0,
+  ); // Light orange background
 
   // Blues
   static const Color blue = Color(0xFF0D47A1);
@@ -209,10 +219,23 @@ class AppColors {
 
   // ==================== GRADIENTS ====================
 
-  static const List<Color> orangeGradient = [Color(0xFFFF9F43), Color(0xFFFF8A00)];
-  static const List<Color> purpleGradient = [Color(0xFF667EEA), Color(0xFF764BA2)];
-  static const List<Color> greenGradient = [Color(0xFF4CAF50), Color(0xFF2E7D32)];
-  static const List<Color> walletGradient = [Color(0xFF9C27B0), Color(0xFF7B1FA2), Color(0xFF6A1B9A)];
+  static const List<Color> orangeGradient = [
+    Color(0xFFFF9F43),
+    Color(0xFFFF8A00),
+  ];
+  static const List<Color> purpleGradient = [
+    Color(0xFF667EEA),
+    Color(0xFF764BA2),
+  ];
+  static const List<Color> greenGradient = [
+    Color(0xFF4CAF50),
+    Color(0xFF2E7D32),
+  ];
+  static const List<Color> walletGradient = [
+    Color(0xFF9C27B0),
+    Color(0xFF7B1FA2),
+    Color(0xFF6A1B9A),
+  ];
 
   // ==================== CHART COLORS ====================
 

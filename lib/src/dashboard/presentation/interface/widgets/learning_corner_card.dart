@@ -32,7 +32,7 @@ class LearningCornerCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(18),
         boxShadow: [
           BoxShadow(
-            color:  AppColors.orangeGradient.first.withOpacity(0.3),
+            color: AppColors.orangeGradient.first.withOpacity(0.3),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),

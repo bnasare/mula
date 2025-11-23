@@ -24,72 +24,72 @@ class ActionButtonsSection extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Row(
           children: [
-          ActionButton(
-            icon: IconlyLight.wallet,
-            label: context.localize.deposit,
-            onTap: () {
-              NavigationHelper.navigateTo(
-                context,
-                const DepositAccountSelectionScreen(),
-              );
-            },
-          ),
-          const SizedBox(width: 12),
-          ActionButton(
-            icon: IconlyLight.download,
-            label: context.localize.withdraw,
-            onTap: () {
-              NavigationHelper.navigateTo(
-                context,
-                const WithdrawAccountSelectionScreen(),
-              );
-            },
-          ),
-          const SizedBox(width: 12),
-          ActionButton(
-            icon: IconlyLight.swap,
-            label: context.localize.trade,
-            onTap: () {
-              // TODO: Navigate to trade screen
-              SnackBarHelper.showInfoSnackBar(
-                context,
-                context.localize.comingSoon,
-              );
-            },
-          ),
-          const SizedBox(width: 12),
-          ActionButton(
-            icon: IconlyLight.chart,
-            label: context.localize.viewPortfolio,
-            onTap: () {
-              // Switch to portfolio tab
-              context.read<DashboardProvider>().changeTab(2);
-            },
-          ),
-          const SizedBox(width: 12),
-          ActionButton(
-            icon: Icons.link,
-            label: context.localize.linkAccount,
-            onTap: () {
-              NavigationHelper.navigateTo(
-                context,
-                const LinkedAccountsScreen(),
-              );
-            },
-          ),
-          const SizedBox(width: 12),
-          ActionButton(
-            icon: IconlyLight.wallet,
-            label: context.localize.cashWallet,
-            onTap: () {
-              NavigationHelper.navigateTo(
-                context,
-                CashWalletScreen(
-                  dashboardProvider: context.read<DashboardProvider>(),
-                ),
-              );
-            },
-          ),
+            ActionButton(
+              icon: IconlyLight.wallet,
+              label: context.localize.deposit,
+              onTap: () {
+                NavigationHelper.navigateTo(
+                  context,
+                  const DepositAccountSelectionScreen(),
+                );
+              },
+            ),
+            const SizedBox(width: 12),
+            ActionButton(
+              icon: IconlyLight.download,
+              label: context.localize.withdraw,
+              onTap: () {
+                NavigationHelper.navigateTo(
+                  context,
+                  const WithdrawAccountSelectionScreen(),
+                );
+              },
+            ),
+            const SizedBox(width: 12),
+            ActionButton(
+              icon: IconlyLight.swap,
+              label: context.localize.trade,
+              onTap: () {
+                // TODO: Navigate to trade screen
+                SnackBarHelper.showInfoSnackBar(
+                  context,
+                  context.localize.comingSoon,
+                );
+              },
+            ),
+            const SizedBox(width: 12),
+            ActionButton(
+              icon: IconlyLight.chart,
+              label: context.localize.viewPortfolio,
+              onTap: () {
+                // Switch to portfolio tab
+                context.read<DashboardProvider>().changeTab(2);
+              },
+            ),
+            const SizedBox(width: 12),
+            ActionButton(
+              icon: Icons.link,
+              label: context.localize.linkAccount,
+              onTap: () {
+                NavigationHelper.navigateTo(
+                  context,
+                  const LinkedAccountsScreen(),
+                );
+              },
+            ),
+            const SizedBox(width: 12),
+            ActionButton(
+              icon: IconlyLight.wallet,
+              label: context.localize.cashWallet,
+              onTap: () {
+                NavigationHelper.navigateTo(
+                  context,
+                  CashWalletScreen(
+                    dashboardProvider: context.read<DashboardProvider>(),
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),

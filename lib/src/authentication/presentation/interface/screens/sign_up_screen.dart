@@ -117,15 +117,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: AppColors.border(context)),
+                          borderSide: BorderSide(
+                            color: AppColors.border(context),
+                          ),
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: AppColors.border(context)),
+                          borderSide: BorderSide(
+                            color: AppColors.border(context),
+                          ),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: AppColors.hintText(context)),
+                          borderSide: BorderSide(
+                            color: AppColors.hintText(context),
+                          ),
                         ),
                         filled: true,
                         isDense: true,

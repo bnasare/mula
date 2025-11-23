@@ -101,7 +101,7 @@ class _PerformanceChartState extends State<PerformanceChart> {
                   LineChartBarData(
                     spots: data.spots,
                     isCurved: true,
-                    color:  AppColors.activitySuccess,
+                    color: AppColors.activitySuccess,
                     barWidth: 1,
                     isStrokeCapRound: true,
                     dotData: const FlDotData(show: false),
@@ -111,9 +111,9 @@ class _PerformanceChartState extends State<PerformanceChart> {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                           AppColors.activitySuccess.withOpacity(0.3),
-                           AppColors.activitySuccess.withOpacity(0.1),
-                           AppColors.activitySuccess.withOpacity(0.0),
+                          AppColors.activitySuccess.withOpacity(0.3),
+                          AppColors.activitySuccess.withOpacity(0.1),
+                          AppColors.activitySuccess.withOpacity(0.0),
                         ],
                       ),
                     ),

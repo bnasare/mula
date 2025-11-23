@@ -346,7 +346,10 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
                 focusNode: _focusNode,
                 keyboardType: TextInputType.text, // Allow both numbers and text
                 textInputAction: TextInputAction.done,
-                style: TextStyle(color: AppColors.primaryText(context), fontSize: 13),
+                style: TextStyle(
+                  color: AppColors.primaryText(context),
+                  fontSize: 13,
+                ),
                 inputFormatters: [
                   // Custom formatter to enforce our input rules
                   _FullUnitTextInputFormatter(),

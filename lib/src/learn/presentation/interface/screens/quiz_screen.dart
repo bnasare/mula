@@ -12,10 +12,7 @@ import '../widgets/quiz_results_dialog.dart';
 class QuizScreen extends StatefulWidget {
   final String lessonId;
 
-  const QuizScreen({
-    super.key,
-    required this.lessonId,
-  });
+  const QuizScreen({super.key, required this.lessonId});
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -95,9 +92,7 @@ class _QuizScreenState extends State<QuizScreen> {
           title: context.localize.takeAQuiz,
           onBackPressed: () => Navigator.of(context).pop(),
         ),
-        body: Center(
-          child: AppText.small('Quiz not found'),
-        ),
+        body: Center(child: AppText.small('Quiz not found')),
       );
     }
 

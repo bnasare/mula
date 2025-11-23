@@ -83,9 +83,7 @@ class ConfirmationDialog extends StatelessWidget {
     final buttonTextColor = primaryButtonTextColor ?? AppColors.white(context);
 
     return Dialog(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       backgroundColor: AppColors.white(context),
       child: Padding(
         padding: EdgeInsets.symmetric(

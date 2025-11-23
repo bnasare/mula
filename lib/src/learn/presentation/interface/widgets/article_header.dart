@@ -58,10 +58,7 @@ class ArticleHeader extends StatelessWidget {
         // Metadata row
         Row(
           children: [
-            AppText.smallest(
-              date,
-              color: AppColors.secondaryText(context),
-            ),
+            AppText.smallest(date, color: AppColors.secondaryText(context)),
             const SizedBox(width: 8),
             Container(
               width: 4,

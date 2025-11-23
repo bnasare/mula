@@ -17,10 +17,7 @@ import 'quiz_screen.dart';
 class LessonDetailScreen extends StatefulWidget {
   final String lessonId;
 
-  const LessonDetailScreen({
-    super.key,
-    required this.lessonId,
-  });
+  const LessonDetailScreen({super.key, required this.lessonId});
 
   @override
   State<LessonDetailScreen> createState() => _LessonDetailScreenState();
@@ -55,9 +52,7 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
           title: '',
           onBackPressed: () => Navigator.of(context).pop(),
         ),
-        body: Center(
-          child: AppText.small('Lesson not found'),
-        ),
+        body: Center(child: AppText.small('Lesson not found')),
       );
     }
 
@@ -68,10 +63,7 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
         onBackPressed: () => Navigator.of(context).pop(),
         actions: [
           IconButton(
-            icon: Icon(
-              IconlyLight.send,
-              color: AppColors.primaryText(context),
-            ),
+            icon: Icon(IconlyLight.send, color: AppColors.primaryText(context)),
             onPressed: () {
               // TODO: Implement share functionality
             },
@@ -90,7 +82,10 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
                       ? AppColors.appPrimary
                       : AppColors.lightGrey(context),
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 8,
+                ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),

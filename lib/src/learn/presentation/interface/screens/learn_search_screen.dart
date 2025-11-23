@@ -123,8 +123,9 @@ class _LearnSearchScreenState extends State<LearnSearchScreen> {
                     fontSize: 14,
                     color: AppColors.primaryText(context),
                   ),
-                  items: [context.localize.relevance, 'Date', 'Name']
-                      .map((String value) {
+                  items: [context.localize.relevance, 'Date', 'Name'].map((
+                    String value,
+                  ) {
                     return DropdownMenuItem<String>(
                       value: value,
                       child: AppText.smaller(value),
@@ -161,13 +162,15 @@ class _LearnSearchScreenState extends State<LearnSearchScreen> {
               children: [
                 // Search History
                 if (_searchHistory.isNotEmpty) ...[
-                  ..._searchHistory.map((item) => _SearchItemTile(
-                        title: item.title,
-                        onTap: () {
-                          // TODO: Navigate to search result
-                        },
-                        onRemove: () => _removeHistoryItem(item.id),
-                      )),
+                  ..._searchHistory.map(
+                    (item) => _SearchItemTile(
+                      title: item.title,
+                      onTap: () {
+                        // TODO: Navigate to search result
+                      },
+                      onRemove: () => _removeHistoryItem(item.id),
+                    ),
+                  ),
                   const SizedBox(height: 24),
                 ],
 
@@ -177,16 +180,18 @@ class _LearnSearchScreenState extends State<LearnSearchScreen> {
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 12),
-                ..._popularSearches.map((item) => _SearchItemTile(
-                      title: item.title,
-                      onTap: () {
-                        // TODO: Navigate to search result
-                      },
-                      onRemove: () {
-                        // Popular items can't be removed
-                      },
-                      showRemoveButton: false,
-                    )),
+                ..._popularSearches.map(
+                  (item) => _SearchItemTile(
+                    title: item.title,
+                    onTap: () {
+                      // TODO: Navigate to search result
+                    },
+                    onRemove: () {
+                      // Popular items can't be removed
+                    },
+                    showRemoveButton: false,
+                  ),
+                ),
               ],
             ),
           ),
@@ -223,9 +228,7 @@ class _SearchItemTile extends StatelessWidget {
               color: AppColors.secondaryText(context),
             ),
             const SizedBox(width: 16),
-            Expanded(
-              child: AppText.smaller(title),
-            ),
+            Expanded(child: AppText.smaller(title)),
             if (showRemoveButton)
               IconButton(
                 icon: Icon(

@@ -41,9 +41,7 @@ class QuizResultsDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Dialog(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Padding(
         padding: const EdgeInsets.all(32),
         child: Column(
@@ -57,11 +55,7 @@ class QuizResultsDialog extends StatelessWidget {
                 color: const Color(0xFFFFC107).withOpacity(0.2),
                 shape: BoxShape.circle,
               ),
-              child: const Icon(
-                Icons.star,
-                color: Color(0xFFFFC107),
-                size: 40,
-              ),
+              child: const Icon(Icons.star, color: Color(0xFFFFC107), size: 40),
             ),
             const SizedBox(height: 24),
 

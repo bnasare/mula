@@ -57,11 +57,7 @@ class QuizOptionButton extends StatelessWidget {
               const SizedBox(width: 12),
               Row(
                 children: [
-                  const Icon(
-                    Icons.star,
-                    color: Color(0xFFFFC107),
-                    size: 20,
-                  ),
+                  const Icon(Icons.star, color: Color(0xFFFFC107), size: 20),
                   const SizedBox(width: 4),
                   AppText.smallest(
                     context.localize.pts(option.isCorrect ? 5 : 0),

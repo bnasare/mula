@@ -82,7 +82,10 @@ class _PortfolioValueCardState extends State<PortfolioValueCard> {
               const SizedBox(width: 8),
               if (_isBalanceVisible)
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 4,
+                  ),
                   decoration: BoxDecoration(
                     color: isPositive
                         ? AppColors.appPrimary.withOpacity(0.1)

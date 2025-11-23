@@ -124,7 +124,10 @@ class DummyLearnData {
 
   static LessonDetail? getLessonDetail(String lessonId) {
     // For now, we'll provide detailed content for the "What are Bonds?" article
-    if (lessonId == '1' || lessonId == '2' || lessonId == '3' || lessonId == '4') {
+    if (lessonId == '1' ||
+        lessonId == '2' ||
+        lessonId == '3' ||
+        lessonId == '4') {
       return LessonDetail(
         id: lessonId,
         title: 'What are Bonds?',
@@ -211,7 +214,10 @@ Imagine you have a friend who wants to start a business.
 
   static Quiz? getQuiz(String lessonId) {
     // For now, provide a quiz for bonds lessons
-    if (lessonId == '1' || lessonId == '2' || lessonId == '3' || lessonId == '4') {
+    if (lessonId == '1' ||
+        lessonId == '2' ||
+        lessonId == '3' ||
+        lessonId == '4') {
       return Quiz(
         id: 'quiz_bonds_1',
         title: 'Take a quiz',
@@ -246,7 +252,8 @@ Imagine you have a friend who wants to start a business.
           QuizQuestion(
             id: 'q2',
             questionNumber: 2,
-            text: 'What is the name of the regular interest payment you receive from a bond?',
+            text:
+                'What is the name of the regular interest payment you receive from a bond?',
             points: 5,
             options: const [
               QuizOption(
@@ -272,7 +279,8 @@ Imagine you have a friend who wants to start a business.
           QuizQuestion(
             id: 'q3',
             questionNumber: 3,
-            text: 'What is the name of the regular interest payment you receive from a bond?',
+            text:
+                'What is the name of the regular interest payment you receive from a bond?',
             points: 5,
             options: const [
               QuizOption(
@@ -298,7 +306,8 @@ Imagine you have a friend who wants to start a business.
           QuizQuestion(
             id: 'q4',
             questionNumber: 4,
-            text: 'What is the name of the regular interest payment you receive from a bond?',
+            text:
+                'What is the name of the regular interest payment you receive from a bond?',
             points: 5,
             options: const [
               QuizOption(
@@ -329,51 +338,26 @@ Imagine you have a friend who wants to start a business.
 
   static List<SearchItem> getSearchHistory() {
     return const [
-      SearchItem(
-        id: 'h1',
-        title: 'MTNGH',
-        type: SearchItemType.history,
-      ),
-      SearchItem(
-        id: 'h2',
-        title: 'CCMF',
-        type: SearchItemType.history,
-      ),
-      SearchItem(
-        id: 'h3',
-        title: 'CB 18-APR-28',
-        type: SearchItemType.history,
-      ),
+      SearchItem(id: 'h1', title: 'MTNGH', type: SearchItemType.history),
+      SearchItem(id: 'h2', title: 'CCMF', type: SearchItemType.history),
+      SearchItem(id: 'h3', title: 'CB 18-APR-28', type: SearchItemType.history),
     ];
   }
 
   static List<SearchItem> getPopularSearches() {
     return const [
-      SearchItem(
-        id: 'p1',
-        title: 'Stocks',
-        type: SearchItemType.popular,
-      ),
+      SearchItem(id: 'p1', title: 'Stocks', type: SearchItemType.popular),
       SearchItem(
         id: 'p2',
         title: 'High-Yield Funds',
         type: SearchItemType.popular,
       ),
-      SearchItem(
-        id: 'p3',
-        title: 'T-Bills',
-        type: SearchItemType.popular,
-      ),
+      SearchItem(id: 'p3', title: 'T-Bills', type: SearchItemType.popular),
     ];
   }
 
   static List<String> getStockLevels() {
-    return [
-      'All Stocks',
-      'Blue Chip',
-      'Mid Cap',
-      'Small Cap',
-    ];
+    return ['All Stocks', 'Blue Chip', 'Mid Cap', 'Small Cap'];
   }
 
   static List<String> getSearchCategories() {
