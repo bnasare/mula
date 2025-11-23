@@ -109,7 +109,10 @@ class _CommentsSectionState extends State<CommentsSection> {
               Expanded(
                 child: AppText.smaller(
                   context.localize.leaveComment,
-                  color: AppColors.secondaryText(context),
+                  style: TextStyle(
+                    color: AppColors.secondaryText(context),
+                    decoration: TextDecoration.underline,
+                  ),
                 ),
               ),
             ],

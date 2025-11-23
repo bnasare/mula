@@ -38,9 +38,9 @@ class QuizOptionButton extends StatelessWidget {
       borderColor = AppColors.error;
       textColor = AppColors.white(context);
     } else if (shouldShowAsSelected) {
-      // Correct answer (selected or not) - show in deep green
-      backgroundColor = AppColors.darkGreen;
-      borderColor = AppColors.darkGreen;
+      // Correct answer (selected or not) - show in app primary green
+      backgroundColor = AppColors.appPrimary;
+      borderColor = AppColors.appPrimary;
       textColor = AppColors.white(context);
     } else {
       // Default unselected state

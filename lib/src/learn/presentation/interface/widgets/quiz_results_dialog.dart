@@ -98,7 +98,7 @@ class QuizResultsDialog extends StatelessWidget {
                             TextSpan(
                               text: correctStr,
                               style: TextStyle(
-                                color: AppColors.green,
+                                color: AppColors.appPrimary,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -107,7 +107,7 @@ class QuizResultsDialog extends StatelessWidget {
                               TextSpan(
                                 text: totalStr,
                                 style: TextStyle(
-                                  color: AppColors.green,
+                                  color: AppColors.appPrimary,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
