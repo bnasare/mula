@@ -1066,6 +1066,14 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String quizScoreMessage(int correct, int total) {
+    return 'Je hebt $correct van $total correct beantwoord';
+  }
+
+  @override
+  String get keepPracticing => 'Blijf oefenen om 100% te bereiken';
+
+  @override
   String get tryAgain => 'Probeer opnieuw';
 
   @override

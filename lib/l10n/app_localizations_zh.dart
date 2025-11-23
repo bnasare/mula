@@ -1024,6 +1024,14 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String quizScoreMessage(int correct, int total) {
+    return '您正确回答了$total题中的$correct题';
+  }
+
+  @override
+  String get keepPracticing => '继续练习以达到100%掌握';
+
+  @override
   String get tryAgain => '再试一次';
 
   @override

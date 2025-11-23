@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
@@ -21,8 +23,31 @@ class QuizOptionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool isCorrect = option.isCorrect;
+    final bool isWrongAnswer = showCorrectAnswer && isSelected && !isCorrect;
     final bool shouldHighlightCorrect = showCorrectAnswer && isCorrect;
     final bool shouldShowAsSelected = isSelected || shouldHighlightCorrect;
+
+    // Determine colors based on correct/incorrect state
+    Color backgroundColor;
+    Color borderColor;
+    Color textColor;
+
+    if (isWrongAnswer) {
+      // Wrong answer selected - show in red
+      backgroundColor = AppColors.error;
+      borderColor = AppColors.error;
+      textColor = AppColors.white(context);
+    } else if (shouldShowAsSelected) {
+      // Correct answer (selected or not) - show in deep green
+      backgroundColor = AppColors.darkGreen;
+      borderColor = AppColors.darkGreen;
+      textColor = AppColors.white(context);
+    } else {
+      // Default unselected state
+      backgroundColor = AppColors.card(context);
+      borderColor = AppColors.lightGrey(context);
+      textColor = AppColors.primaryText(context);
+    }
 
     return GestureDetector(
       onTap: showCorrectAnswer ? null : onTap,
@@ -30,14 +55,10 @@ class QuizOptionButton extends StatelessWidget {
         margin: const EdgeInsets.only(bottom: 12),
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: shouldShowAsSelected
-              ? AppColors.appPrimary
-              : AppColors.card(context),
+          color: backgroundColor,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
-            color: shouldShowAsSelected
-                ? AppColors.appPrimary
-                : AppColors.lightGrey(context),
+            color: borderColor,
             width: 1,
           ),
         ),
@@ -46,23 +67,23 @@ class QuizOptionButton extends StatelessWidget {
             Expanded(
               child: AppText.smaller(
                 '${option.label} ${option.text}',
-                style: TextStyle(
-                  color: shouldShowAsSelected
-                      ? AppColors.white(context)
-                      : AppColors.primaryText(context),
-                ),
+                style: TextStyle(color: textColor),
               ),
             ),
             if (shouldHighlightCorrect) ...[
               const SizedBox(width: 12),
               Row(
                 children: [
-                  const Icon(Icons.star, color: Color(0xFFFFC107), size: 20),
+                  Icon(
+                    IconlyBold.star,
+                    color: AppColors.yellow,
+                    size: 20,
+                  ),
                   const SizedBox(width: 4),
                   AppText.smallest(
                     context.localize.pts(option.isCorrect ? 5 : 0),
-                    style: const TextStyle(
-                      color: Color(0xFFFFC107),
+                    style: TextStyle(
+                      color: AppColors.yellow,
                       fontWeight: FontWeight.w600,
                     ),
                   ),

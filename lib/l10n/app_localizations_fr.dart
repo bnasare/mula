@@ -1073,6 +1073,15 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String quizScoreMessage(int correct, int total) {
+    return 'Vous avez répondu correctement à $correct sur $total';
+  }
+
+  @override
+  String get keepPracticing =>
+      'Continuez à pratiquer pour atteindre 100% de maîtrise';
+
+  @override
   String get tryAgain => 'Réessayer';
 
   @override

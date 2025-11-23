@@ -73,130 +73,133 @@ class _LearnSearchScreenState extends State<LearnSearchScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
-      appBar: MulaAppBar(
-        title: '',
-        showBackButton: true,
-        onBackPressed: () => Navigator.of(context).pop(),
-      ),
-      body: Column(
-        children: [
-          // Search bar section
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: MulaSearchBar(
-              hintText: context.localize.searchByAsset,
-              controller: _searchController,
-              onChanged: (value) {
-                // TODO: Implement search
-              },
-              trailing: GestureDetector(
-                onTap: _openFilter,
-                child: Icon(
-                  IconlyLight.filter,
-                  color: AppColors.defaultText(context),
-                  size: 20,
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: Scaffold(
+        backgroundColor: AppColors.offWhite(context),
+        appBar: MulaAppBar(
+          title: '',
+          showBackButton: true,
+          onBackPressed: () => Navigator.of(context).pop(),
+        ),
+        body: Column(
+          children: [
+            // Search bar section
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: MulaSearchBar(
+                hintText: context.localize.searchByAsset,
+                controller: _searchController,
+                onChanged: (value) {
+                  // TODO: Implement search
+                },
+                trailing: GestureDetector(
+                  onTap: _openFilter,
+                  child: Icon(
+                    IconlyLight.filter,
+                    color: AppColors.defaultText(context),
+                    size: 20,
+                  ),
                 ),
               ),
             ),
-          ),
 
-          // Sort and Clear section
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              children: [
-                AppText.smaller(
-                  context.localize.sortBy,
-                  color: AppColors.secondaryText(context),
-                ),
-                const SizedBox(width: 8),
-                DropdownButton<String>(
-                  value: _sortBy,
-                  underline: const SizedBox(),
-                  icon: Icon(
-                    Icons.keyboard_arrow_down,
-                    size: 16,
+            // Sort and Clear section
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  AppText.smaller(
+                    context.localize.sortBy,
                     color: AppColors.secondaryText(context),
                   ),
-                  style: TextStyle(
-                    fontSize: 14,
-                    color: AppColors.primaryText(context),
-                  ),
-                  items: [context.localize.relevance, 'Date', 'Name'].map((
-                    String value,
-                  ) {
-                    return DropdownMenuItem<String>(
-                      value: value,
-                      child: AppText.smaller(value),
-                    );
-                  }).toList(),
-                  onChanged: (value) {
-                    if (value != null) {
-                      setState(() {
-                        _sortBy = value;
-                      });
-                    }
-                  },
-                ),
-                const Spacer(),
-                GestureDetector(
-                  onTap: _clearAll,
-                  child: AppText.smaller(
-                    context.localize.clearAll,
+                  const SizedBox(width: 8),
+                  DropdownButton<String>(
+                    value: _sortBy,
+                    underline: const SizedBox(),
+                    icon: Icon(
+                      Icons.keyboard_arrow_down,
+                      size: 16,
+                      color: AppColors.secondaryText(context),
+                    ),
                     style: TextStyle(
-                      color: AppColors.appPrimary,
-                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                      color: AppColors.primaryText(context),
+                    ),
+                    items: [context.localize.relevance, 'Date', 'Name'].map((
+                      String value,
+                    ) {
+                      return DropdownMenuItem<String>(
+                        value: value,
+                        child: AppText.smaller(value),
+                      );
+                    }).toList(),
+                    onChanged: (value) {
+                      if (value != null) {
+                        setState(() {
+                          _sortBy = value;
+                        });
+                      }
+                    },
+                  ),
+                  const Spacer(),
+                  GestureDetector(
+                    onTap: _clearAll,
+                    child: AppText.smaller(
+                      context.localize.clearAll,
+                      style: TextStyle(
+                        color: AppColors.appPrimary,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          const SizedBox(height: 16),
+            const SizedBox(height: 16),
 
-          // Search results/history
-          Expanded(
-            child: ListView(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              children: [
-                // Search History
-                if (_searchHistory.isNotEmpty) ...[
-                  ..._searchHistory.map(
+            // Search results/history
+            Expanded(
+              child: ListView(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                children: [
+                  // Search History
+                  if (_searchHistory.isNotEmpty) ...[
+                    ..._searchHistory.map(
+                      (item) => _SearchItemTile(
+                        title: item.title,
+                        onTap: () {
+                          // TODO: Navigate to search result
+                        },
+                        onRemove: () => _removeHistoryItem(item.id),
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+                  ],
+
+                  // Popular Section
+                  AppText.small(
+                    context.localize.popular,
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  const SizedBox(height: 12),
+                  ..._popularSearches.map(
                     (item) => _SearchItemTile(
                       title: item.title,
                       onTap: () {
                         // TODO: Navigate to search result
                       },
-                      onRemove: () => _removeHistoryItem(item.id),
+                      onRemove: () {
+                        // Popular items can't be removed
+                      },
+                      showRemoveButton: false,
                     ),
                   ),
-                  const SizedBox(height: 24),
                 ],
-
-                // Popular Section
-                AppText.small(
-                  context.localize.popular,
-                  style: const TextStyle(fontWeight: FontWeight.w600),
-                ),
-                const SizedBox(height: 12),
-                ..._popularSearches.map(
-                  (item) => _SearchItemTile(
-                    title: item.title,
-                    onTap: () {
-                      // TODO: Navigate to search result
-                    },
-                    onRemove: () {
-                      // Popular items can't be removed
-                    },
-                    showRemoveButton: false,
-                  ),
-                ),
-              ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

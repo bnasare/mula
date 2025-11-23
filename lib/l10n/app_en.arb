@@ -432,6 +432,18 @@
       }
     }
   },
+  "quizScoreMessage": "You answered {correct} of {total} correctly",
+  "@quizScoreMessage": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "keepPracticing": "Keep practicing to reach 100% mastery",
   "tryAgain": "Try Again",
   "goToHome": "Go to Home",
   "exploreOtherResources": "Explore other resources",

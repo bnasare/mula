@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
@@ -101,76 +102,50 @@ class _QuizScreenState extends State<QuizScreen> {
       appBar: MulaAppBar(
         title: quiz!.title,
         onBackPressed: () => Navigator.of(context).pop(),
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ...quiz!.questions.map((question) {
-                    return Padding(
-                      padding: const EdgeInsets.only(bottom: 32),
-                      child: QuizQuestionCard(
-                        question: question,
-                        selectedOptionId: selectedAnswers[question.id],
-                        showCorrectAnswer: showResults,
-                        onOptionSelected: (optionId) =>
-                            _onOptionSelected(question.id, optionId),
-                      ),
-                    );
-                  }),
-                ],
-              ),
-            ),
-          ),
-
-          // Done button at bottom
-          if (!showResults)
-            Container(
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: AppColors.offWhite(context),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.05),
-                    blurRadius: 10,
-                    offset: const Offset(0, -5),
-                  ),
-                ],
-              ),
-              child: SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: selectedAnswers.length == quiz!.questions.length
+        actions: !showResults
+            ? [
+                GestureDetector(
+                  onTap: selectedAnswers.length == quiz!.questions.length
                       ? _submitQuiz
                       : null,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.appPrimary,
-                    foregroundColor: AppColors.white(context),
-                    disabledBackgroundColor: AppColors.lightGrey(context),
-                    disabledForegroundColor: AppColors.secondaryText(context),
-                    elevation: 0,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                  ),
-                  child: AppText.smaller(
-                    context.localize.done,
-                    style: TextStyle(
-                      color: selectedAnswers.length == quiz!.questions.length
-                          ? AppColors.white(context)
-                          : AppColors.secondaryText(context),
-                      fontWeight: FontWeight.w600,
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Center(
+                      child: AppText.smaller(
+                        context.localize.done,
+                        style: TextStyle(
+                          color:
+                              selectedAnswers.length == quiz!.questions.length
+                              ? AppColors.appPrimary
+                              : AppColors.secondaryText(context),
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ),
-        ],
+              ]
+            : null,
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ...quiz!.questions.map((question) {
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 32),
+                child: QuizQuestionCard(
+                  question: question,
+                  selectedOptionId: selectedAnswers[question.id],
+                  showCorrectAnswer: showResults,
+                  onOptionSelected: (optionId) =>
+                      _onOptionSelected(question.id, optionId),
+                ),
+              );
+            }),
+          ],
+        ),
       ),
     );
   }

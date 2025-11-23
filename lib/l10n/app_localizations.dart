@@ -2096,6 +2096,18 @@ abstract class AppLocalizations {
   /// **'You answered {correct} of {total} correctly. Keep practicing to reach 100% mastery'**
   String youAnsweredCorrectly(int correct, int total);
 
+  /// No description provided for @quizScoreMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'You answered {correct} of {total} correctly'**
+  String quizScoreMessage(int correct, int total);
+
+  /// No description provided for @keepPracticing.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep practicing to reach 100% mastery'**
+  String get keepPracticing;
+
   /// No description provided for @tryAgain.
   ///
   /// In en, this message translates to:

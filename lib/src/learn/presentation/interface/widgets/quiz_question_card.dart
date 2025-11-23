@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../domain/entities/quiz_question.dart';
@@ -24,9 +25,9 @@ class QuizQuestionCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // Question header
-        AppText.small(
+        AppText.smaller(
           '${context.localize.question(question.questionNumber)}: ${question.text}',
-          style: const TextStyle(fontWeight: FontWeight.w600),
+          style: const TextStyle(fontWeight: FontWeight.w500),
         ),
         const SizedBox(height: 16),
 
