@@ -5,10 +5,12 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/domain/entities/asset.dart';
 import '../../../../dashboard/presentation/interface/widgets/asset_donut_chart.dart';
 import '../../../../dashboard/presentation/interface/widgets/performance_chart.dart';
 import '../../../../home/presentation/interface/widgets/asset_tab_button.dart';
+import 'advanced_chart_screen.dart';
 
 /// Mutual Funds Detail screen showing comprehensive fund information
 class MutualFundsDetailScreen extends StatefulWidget {
@@ -176,7 +178,16 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                         alignment: Alignment.centerRight,
                         child: GestureDetector(
                           onTap: () {
-                            // TODO: Navigate to advanced chart
+                            NavigationHelper.navigateTo(
+                              context,
+                              AdvancedChartScreen(
+                                ticker: widget.ticker,
+                                companyName: widget.fundName,
+                                currentPrice: widget.currentPrice,
+                                change: widget.change,
+                                changePercentage: widget.changePercentage,
+                              ),
+                            );
                           },
                           child: AppText.smaller(
                             'See Advanced Chart',
@@ -914,15 +925,19 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                       child: LinearProgressIndicator(
                         value: asset.percentage / 100,
                         minHeight: 32,
-                        backgroundColor: AppColors.grey(context).withValues(alpha: 0.1),
-                        valueColor: AlwaysStoppedAnimation<Color>(asset.type.color),
+                        backgroundColor: AppColors.grey(
+                          context,
+                        ).withValues(alpha: 0.1),
+                        valueColor: AlwaysStoppedAnimation<Color>(
+                          asset.type.color,
+                        ),
                       ),
                     ),
                   ),
                 ],
               ),
             );
-          }).toList(),
+          }),
 
           const SizedBox(height: 8),
 

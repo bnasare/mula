@@ -6,7 +6,7 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 
 /// Cash wallet section with balance display and card visual
-class CashWalletSection extends StatelessWidget {
+class CashWalletSection extends StatefulWidget {
   final double balance;
   final String userName;
   final VoidCallback? onTap;
@@ -19,6 +19,13 @@ class CashWalletSection extends StatelessWidget {
   });
 
   @override
+  State<CashWalletSection> createState() => _CashWalletSectionState();
+}
+
+class _CashWalletSectionState extends State<CashWalletSection> {
+  bool _isBalanceVisible = true;
+
+  @override
   Widget build(BuildContext context) {
     final currencyFormat = NumberFormat.currency(
       symbol: 'GHS ',
@@ -26,9 +33,9 @@ class CashWalletSection extends StatelessWidget {
     );
 
     return GestureDetector(
-      onTap: onTap,
+      onTap: widget.onTap,
       child: Container(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
@@ -51,10 +58,7 @@ class CashWalletSection extends StatelessWidget {
                           color: AppColors.offWhite(context),
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: const Icon(
-                          IconlyBold.wallet,
-                          size: 20,
-                        ),
+                        child: const Icon(IconlyLight.wallet, size: 20),
                       ),
                       const SizedBox(width: 12),
                       AppText.small(
@@ -66,7 +70,9 @@ class CashWalletSection extends StatelessWidget {
                   const SizedBox(height: 8),
                   // Balance value
                   AppText.large(
-                    currencyFormat.format(balance),
+                    _isBalanceVisible
+                        ? currencyFormat.format(widget.balance)
+                        : '••••••',
                     color: AppColors.primaryText(context),
                   ),
                 ],
@@ -76,7 +82,7 @@ class CashWalletSection extends StatelessWidget {
 
             // Right side: Purple gradient card
             Container(
-              width: 130,
+              width: 150,
               height: 100,
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
@@ -106,17 +112,24 @@ class CashWalletSection extends StatelessWidget {
                             fontSize: 12,
                           ),
                         ),
-                        const Icon(
-                          IconlyLight.show,
-                          size: 16,
-                          color: Colors.white,
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _isBalanceVisible = !_isBalanceVisible;
+                            });
+                          },
+                          child: Icon(
+                            _isBalanceVisible ? IconlyLight.show : IconlyLight.hide,
+                            size: 16,
+                            color: Colors.white,
+                          ),
                         ),
                       ],
                     ),
 
                     // User name
                     AppText.medium(
-                      userName,
+                      widget.userName,
                       style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,

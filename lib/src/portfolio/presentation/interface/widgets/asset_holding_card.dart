@@ -65,7 +65,7 @@ class AssetHoldingCard extends StatelessWidget {
                         fit: BoxFit.cover,
                         errorBuilder: (context, error, stackTrace) {
                           return Icon(
-                            IconlyBold.work,
+                            IconlyLight.work,
                             size: 20,
                             color: AppColors.secondaryText(context),
                           );
@@ -73,7 +73,7 @@ class AssetHoldingCard extends StatelessWidget {
                       ),
                     )
                   : Icon(
-                      IconlyBold.work,
+                      IconlyLight.work,
                       size: 20,
                       color: AppColors.secondaryText(context),
                     ),

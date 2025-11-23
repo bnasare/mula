@@ -5,7 +5,9 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/interface/widgets/performance_chart.dart';
+import 'advanced_chart_screen.dart';
 
 /// Asset Holding Detail screen showing comprehensive stock information
 class AssetHoldingDetailScreen extends StatelessWidget {
@@ -117,7 +119,16 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                       alignment: Alignment.centerRight,
                       child: GestureDetector(
                         onTap: () {
-                          // TODO: Navigate to advanced chart
+                          NavigationHelper.navigateTo(
+                            context,
+                            AdvancedChartScreen(
+                              ticker: ticker,
+                              companyName: companyName,
+                              currentPrice: currentPrice,
+                              change: change,
+                              changePercentage: changePercentage,
+                            ),
+                          );
                         },
                         child: AppText.smaller(
                           'See Advanced Chart',
