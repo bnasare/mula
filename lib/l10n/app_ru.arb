@@ -12,7 +12,7 @@
   "emailOrPhone": "Email или телефон",
   "enterEmailOrPhone": "Введите ваш email или номер телефона",
   "forgotPassword": "Забыли пароль?",
-  "dontHaveAccount": "Нет учетной записи?",
+  "dontHaveAccount": "Нет счета?",
   "signUp": "Зарегистрироваться",
   "resetYourPassword": "Сбросьте ваш пароль",
   "resetPasswordDescription": "Введите ваш email или номер телефона, чтобы получить код подтверждения",
@@ -25,7 +25,6 @@
   "resetPassword": "Сбросить пароль",
   "passwordResetSuccessful": "Пароль успешно сброшен",
   "passwordResetSuccessDescription": "Ваш пароль был успешно сброшен. Теперь вы можете войти с новым паролем",
-
   "letsGetYouStarted": "Давайте начнём",
   "createFreeAccountDescription": "Создайте бесплатный аккаунт MULA менее чем за минуту.",
   "fullName": "Полное имя",
@@ -44,7 +43,6 @@
   "termsOfService": "Условиями обслуживания",
   "and": "и",
   "privacyPolicy": "Политикой конфиденциальности",
-
   "otpVerification": "OTP-верификация",
   "enterVerificationCode": "Введите проверочный код, который мы только что отправили на ваш адрес электронной почты",
   "phoneNumber": "Номер телефона",
@@ -52,7 +50,6 @@
   "verify": "Подтвердить",
   "didntReceiveCode": "Не получили код?",
   "resend": "Отправить снова",
-
   "security": "Безопасность",
   "enableFaceId": "Включить Face ID",
   "enable": "Включить",
@@ -66,7 +63,6 @@
   "pinCreatedDescription": "Давайте завершим регистрацию вашей учетной записи",
   "continueButton": "Продолжить",
   "enterYourPin": "Введите свой PIN-код, чтобы продолжить",
-
   "tellUsAboutYou": "Расскажите о себе",
   "tellUsAboutYouDescription": "Это помогает нам персонализировать ваш опыт MULA",
   "dateOfBirth": "Дата рождения",
@@ -80,39 +76,31 @@
   "enterGpsAddress": "Введите ваш GPS-адрес",
   "occupation": "Род занятий",
   "whatIsYourOccupation": "Каким вы занимаетесь?",
-
   "personalDetails": "Личные данные",
   "personalDetailsDescription": "Нам нужно несколько деталей для настройки вашей учетной записи",
   "nationality": "Гражданство",
   "selectNationality": "Выберите ваше гражданство",
   "emergencyNumber": "Номер экстренной связи",
   "enterEmergencyNumber": "Введите контактный номер экстренной связи",
-
   "identificationDetails": "Идентификационные данные",
   "submit": "Отправить",
-
   "bankDetails": "Банковские данные",
   "selectBank": "Выбрать банк",
   "selectYourBank": "Выберите ваш банк",
   "bankAccountNumber": "Номер банковского счета",
   "enterYourAccountNumber": "Введите номер вашего счета",
-
   "chooseAccountType": "Выбрать тип счета",
   "chooseAccountTypeDescription": "Выбор правильного типа счета помогает нам связать вас с подходящими провайдерами.",
-
   "brokers": "Брокеры",
   "brokersDescription": "Выберите своего брокера, чтобы начать свою инвестиционную деятельность.",
   "noBrokersFound": "Брокеры не найдены",
-
   "accountDetailsSuccessfullySubmitted": "Данные учетной записи успешно отправлены",
   "accountDetailsSuccessDescription": "Ваша учетная запись была создана. Проверьте свою электронную почту, чтобы подтвердить учетную запись. Проверьте свою почту на наличие обновлений о статусе проверки.",
-
   "idVerification": "Проверка личности",
   "selectIdType": "Выберите тип удостоверения для подтверждения личности",
   "ghanaCard": "Карта Ганы",
   "driversLicense": "Водительские права",
   "passport": "Паспорт",
-
   "uploadDocumentsDescription": "Безопасно загрузите свои документы для подтверждения личности и завершения настройки аккаунта",
   "pictureOfFront": "Фото лицевой стороны",
   "pictureOfBack": "Фото обратной стороны",
@@ -120,10 +108,9 @@
   "imageUploaded": "Изображение загружено",
   "maxSize": "Макс. размер: 2MB",
   "number": "Номер",
-  "issueDate": "Дата выдачи",
+  "issueDate": "Дата выпуска",
   "expiryDate": "Дата истечения",
   "next": "Далее",
-
   "investmentExperience": "Ваш Опыт Инвестирования",
   "investmentExperienceDescription": "Это помогает нам рекомендовать лучшие инструменты, ресурсы и макет для вас",
   "beginner": "Новичок",
@@ -132,7 +119,6 @@
   "intermediateDescription": "Я немного инвестировал и понимаю, как все работает.",
   "advanced": "Продвинутый",
   "advancedDescription": "Я опытный и хочу полный доступ к продвинутым инструментам.",
-
   "goodHandsTitle": "Вы в надежных руках",
   "goodHandsDescription": "Инвестирование может показаться пугающим, но с MULA вам не нужно быть экспертом, чтобы начать. Мы проведем вас через каждый шаг, от привязки ваших счетов до понимания вашего портфеля, чтобы вы могли инвестировать с уверенностью.",
   "hereIsWhatYouCanExpect": "Вот что вы можете ожидать:",
@@ -140,28 +126,23 @@
   "supportWheneverNeeded": "Поддержка в любое время, когда вам нужна",
   "guidanceToExplore": "Руководство для изучения инвестиционных возможностей",
   "simpleExplanations": "Простые объяснения на каждом шагу",
-
   "linkInvestmentAccounts": "Привяжите Ваши Инвестиционные Счета",
   "linkAccountsDescription": "Это помогает нам показать все, что вы владеете, в одном месте",
   "csdAccount": "У меня есть счет CSD",
   "csdAccountDescription": "Для ценных бумаг, таких как акции, облигации и казначейские векселя",
   "cisAccount": "У меня есть счет CIS",
   "cisAccountDescription": "От управляющих фондами, таких как Databank, EDC и т. д.",
-  "dontHaveAccount": "Нет счета?",
   "dontHaveAccountDescription": "Вы можете создать счет и начать инвестировать сегодня",
-
   "selectFundManager": "Выбрать управляющего фондами",
   "selectFundManagerDescription": "Выберите своего управляющего фондами, чтобы начать свою инвестиционную деятельность.",
   "searchByAssetNameOrType": "Поиск по названию или типу актива",
   "addAnother": "Добавить ещё",
   "done": "Готово",
-
   "fundManager": "Управляющий фондами",
   "fundsManaged": "Фонды, управляемые",
   "select": "Выбрать",
   "fundManagerLinkedSuccessfully": "Управляющий фондами успешно привязан",
   "fundManagerLinkedSuccessDescription": "Ваш управляющий фондами был привязан к вашей учетной записи. Теперь вы можете просматривать и управлять своими инвестициями.",
-
   "enterCsdAccountNumber": "Каков номер вашего счета CSD?",
   "csdAccountNumberDescription": "Вы можете найти этот номер в своем сертификате казначейского векселя. Если у вас его нет, обратитесь за помощью к своему брокеру",
   "accountNumber": "Номер счета",
@@ -171,7 +152,6 @@
   "weFoundYourBrokers": "Мы нашли ваших брокеров",
   "signInToBrokersDescription": "Войдите в свои брокерские счета, чтобы мы могли безопасно получить ваши инвестиции",
   "add": "Добавить",
-
   "deposit": "Внести",
   "chooseAccountToTopUp": "Выберите счет для пополнения",
   "mobileMoneyDeposit": "Mobile Money",
@@ -210,7 +190,6 @@
   "noNotifications": "Нет уведомлений",
   "noNotificationsDescription": "Вы в курсе всех дел!",
   "markAllAsRead": "Отметить все как прочитанные",
-
   "home": "Главная",
   "explore": "Исследовать",
   "portfolio": "Портфель",
@@ -267,7 +246,7 @@
   "last30Days": "Последние 30 дней",
   "last60Days": "Последние 60 дней",
   "thisYear": "Этот Год",
-  "customDate": "Пользовательская Дата",
+  "customDate": "Настраиваемая Дата",
   "all": "Все",
   "transfer": "Перевод",
   "chooseFileFormat": "Выберите формат файла",
@@ -282,7 +261,6 @@
   "withdrawComingSoon": "Снятие скоро",
   "depositComingSoon": "Внесение скоро",
   "noTransactionsYet": "Пока нет транзакций",
-
   "hiImMulaBot": "Привет, я Mula Bot",
   "yourPersonalGuide": "Ваш личный гид по умным инвестициям",
   "startChat": "Начать чат",
@@ -332,7 +310,6 @@
   "accountLinkedSuccessfully": "Счет Успешно Привязан",
   "accountLinkedSuccessDescription": "Ваш счет был успешно привязан к MULA",
   "goBack": "Назад",
-
   "learningTracks": "Учебные Треки",
   "featuredTracks": "Рекомендуемые Треки",
   "popularLessons": "Популярные Уроки",
@@ -341,7 +318,7 @@
   "allTracks": "Все",
   "ghanaStocks": "Акции Ганы",
   "tBillsBonds": "Казначейские Векселя/Облигации",
-  "mutualFunds": "Взаимные Фонды",
+  "mutualFunds": "Паевые Фонды",
   "article": "Статья",
   "mins": "{count} мин",
   "@mins": {
@@ -353,57 +330,266 @@
   },
   "whatIsAMutualFund": "Что такое Взаимный Фонд?",
   "poolingMoneySpreading": "Объединение денег, распределение рисков, увеличение богатства",
-
   "markAsRead": "Отметить как прочитанное",
   "read": "Прочитано",
   "investIn": "Инвестировать в {asset}",
-  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "@investIn": {
+    "placeholders": {
+      "asset": {
+        "type": "String"
+      }
+    }
+  },
   "takeAQuiz": "Пройти тест",
   "shareWithFriends": "Поделитесь с друзьями или оставьте комментарий",
   "leaveComment": "Оставить комментарий",
   "reply": "Ответить",
   "viewComments": "Просмотреть комментарии ({count})",
-  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "@viewComments": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "minsRead": "{count} мин чтения",
-  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "@minsRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "views": "{count}k",
-  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "@views": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "showMoreReplies": "Показать еще {count} ответов",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
-
+  "@showMoreReplies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "question": "Вопрос {number}",
-  "@question": {"placeholders": {"number": {"type": "int"}}},
-  "done": "Готово",
+  "@question": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
   "wellDone": "Отлично {name}!",
-  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "@wellDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "youAnsweredCorrectly": "Вы правильно ответили на {correct} из {total}. Продолжайте практиковаться для достижения 100%",
-  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@youAnsweredCorrectly": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "quizScoreMessage": "Вы правильно ответили на {correct} из {total}",
-  "@quizScoreMessage": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@quizScoreMessage": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "keepPracticing": "Продолжайте практиковаться для достижения 100%",
   "tryAgain": "Попробовать снова",
   "goToHome": "На главную",
   "exploreOtherResources": "Изучить другие ресурсы",
   "pts": "+{points}б",
-  "@pts": {"placeholders": {"points": {"type": "int"}}},
-
+  "@pts": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "searchByAsset": "Поиск по активу",
-  "sortBy": "Сортировать по",
   "relevance": "Актуальности",
-  "clearAll": "Очистить все",
   "popular": "Популярное",
   "stocks": "Акции",
   "highYieldFunds": "Высокодоходные Фонды",
   "tBills": "Казначейские Векселя",
-  "filter": "Фильтр",
-  "dateRange": "Диапазон Дат",
-  "last30Days": "Последние 30 дней",
-  "last60Days": "Последние 60 дней",
-  "thisYear": "Этот Год",
-  "customDate": "Настраиваемая Дата",
   "stock": "Акция",
   "selectLevel": "Выбрать уровень",
   "category": "Категория",
   "selectCategory": "Выбрать Категорию",
-  "apply": "Применить"
+  "assetBreakdown": "Разбивка Активов",
+  "assetHoldings": "Владения Активами",
+  "portfolioSummary": "Сводка Портфеля",
+  "totalInvestmentValue": "Общая Стоимость Инвестиций",
+  "totalDeposit": "Общий Депозит",
+  "totalWithdrawal": "Общий Вывод",
+  "realizedIncome": "Реализованный Доход",
+  "unrealizedIncome": "Нереализованный Доход",
+  "cumulativeReturn": "Накопленная Доходность",
+  "seePortfolioSummary": "Посмотреть сводку портфеля",
+  "noPortfolioData": "Нет данных о портфеле",
+  "seeAdvancedChart": "Посмотреть Расширенный График",
+  "myInvestments": "Мои Инвестиции",
+  "currentValue": "Текущая Стоимость",
+  "returnLabel": "Доходность",
+  "shares": "Акции",
+  "costPrice": "Себестоимость",
+  "capitalGains": "Прирост/(Убыток) Капитала",
+  "about": "О компании",
+  "treasuryBill": "Казначейский Вексель",
+  "purchaseInterestRate": "Процентная Ставка Покупки",
+  "accruedInterest": "Накопленные Проценты",
+  "overview": "Обзор",
+  "holdings": "Владения",
+  "allocation": "Распределение",
+  "metrics": "Метрики",
+  "units": "Единицы",
+  "industry": "Отрасль",
+  "rank": "Ранг",
+  "ghanaCedi": "Ганский Седи",
+  "backToChart": "Вернуться к графику",
+  "limitMarket": "Лимитный Рынок",
+  "marketOrder": "Рыночный Ордер",
+  "cashBalance": "Денежный Баланс",
+  "enterSharesPurchaseHint": "Введите количество акций, которые хотите купить",
+  "enterSharesSellHint": "Введите количество акций, которые хотите продать",
+  "enterAmountPurchaseHint": "Введите сумму, которую хотите купить",
+  "enterAmountSellHint": "Введите сумму, которую хотите продать",
+  "reviewOrder": "Проверить Заказ",
+  "review": "Проверить",
+  "interestRate": "Процентная Ставка",
+  "grossConsideration": "Валовое Возмещение",
+  "informationTechnology": "Информационные Технологии",
+  "companyInc": "Company Inc",
+  "sector": "Сектор",
+  "country": "Страна",
+  "weight": "Вес",
+  "treasuryBillAbout": "Казначейские векселя - это краткосрочные государственные ценные бумаги, выпускаемые правительством Ганы для привлечения средств на государственные операции и управления денежными потоками. Они считаются одним из самых безопасных вариантов инвестирования в Гане.",
+  "mutualFundAbout": "Паевой фонд - это инвестиционный инструмент, который объединяет деньги нескольких инвесторов для инвестирования в диверсифицированный портфель акций, облигаций или других ценных бумаг. Фондом управляют профессиональные управляющие, которые принимают инвестиционные решения от имени инвесторов.",
+  "chooseOrderType": "Выбрать тип ордера",
+  "chooseHowExecute": "Выберите, как вы хотите, чтобы ваш заказ был выполнен",
+  "marketOrderDesc": "Выполнить немедленно по лучшей доступной цене",
+  "limitOrderDesc": "Установите свою собственную цену. Ордер выполняется только при достижении выбранной цены",
+  "limitOrder": "Лимитный ордер",
+  "confirmDetailsBeforeBuy": "Подтвердите детали перед покупкой",
+  "confirmDetailsBeforeSell": "Подтвердите детали перед продажей",
+  "confirmDetailsBeforeProceeding": "Подтвердите детали перед продолжением",
+  "orderType": "Тип ордера",
+  "orderPrice": "Цена ордера",
+  "numberOfShares": "Количество акций",
+  "currentPrice": "Текущая цена",
+  "totalCharges": "Общие расходы",
+  "netConsideration": "Чистая сумма",
+  "availableCashBalance": "Доступный остаток наличных",
+  "confirm": "Подтвердить",
+  "orderSuccessful": "Ордер успешен",
+  "orderSubmittedBroker": "Ваш запрос на ордер был отправлен брокеру",
+  "orderSubmittedFundManager": "Ваш запрос на ордер был отправлен управляющему фондом",
+  "trackInPortfolio": "Отслеживать в портфеле",
+  "tradeOtherStocks": "Торговать другими акциями",
+  "tradeOtherFunds": "Торговать другими фондами",
+  "tradeOtherSecurities": "Торговать другими ценными бумагами",
+  "estimatedMaturityValue": "Расчетная стоимость погашения",
+  "availableCashBalanceTitle": "Доступный остаток наличных",
+  "noDataAvailable": "Данные недоступны",
+  "open": "Открытие",
+  "high": "Максимум",
+  "low": "Минимум",
+  "close": "Закрытие",
+  "howMuchBuy": "Сколько вы хотите купить?",
+  "howMuchSell": "Сколько вы хотите продать?",
+  "buySuccessful": "Покупка успешна",
+  "sellSuccessful": "Продажа успешна",
+  "sharesLabel": "Акции",
+  "assetType": "Тип актива",
+  "bonds": "Облигации",
+  "reits": "REIT",
+  "positive": "Положительный",
+  "negative": "Отрицательный",
+  "valueHighToLow": "Стоимость (от высокой к низкой)",
+  "valueLowToHigh": "Стоимость (от низкой к высокой)",
+  "changePercentHighToLow": "Изменение % (от высокого к низкому)",
+  "changePercentLowToHigh": "Изменение % (от низкого к высокому)",
+  "searchByAssetName": "Поиск по названию актива",
+  "dateOfIncorporation": "Дата регистрации",
+  "dateOfIPO": "Дата IPO",
+  "telecommunications": "Телекоммуникации",
+  "previousClose": "Предыдущее закрытие(GHS)",
+  "openGHS": "Открытие(GHS)",
+  "daysRange": "Дневной диапазон(GHS)",
+  "volumeTraded": "Объем торгов",
+  "fiftyTwoWeekRange": "Диапазон 52 недель(GHS)",
+  "peRatio": "Коэффициент P/E",
+  "earningsPerShare": "Прибыль на акцию(GHS)",
+  "dividendYield": "Дивидендная доходность",
+  "marketCap": "Рыночная капитализация(GHS)",
+  "sharesOutstanding": "Акции в обращении",
+  "capitalGainsLosses": "Прирост/(Убыток) капитала",
+  "issuer": "Эмитент",
+  "governmentOfGhana": "Правительство Ганы",
+  "currency": "Валюта",
+  "ghs": "GHS",
+  "maturityDate": "Дата погашения",
+  "currentRate": "Текущая ставка",
+  "maturityRate": "Ставка погашения",
+  "couponRate": "Купонная ставка",
+  "enterSharesPurchase": "Введите количество акций, которые вы хотите купить",
+  "enterSharesSell": "Введите количество акций, которые вы хотите продать",
+  "enterAmountPurchase": "Введите сумму, которую вы хотите купить",
+  "enterAmountSell": "Введите сумму, которую вы хотите продать",
+  "orderExecutedInstantly": "Ваш ордер будет исполнен мгновенно по лучшей доступной цене",
+  "orderExecutedAtPrice": "Ваш ордер будет исполнен, если будет достигнута выбранная цена",
+  "enterOrderPrice": "Введите цену ордера",
+  "percent25": "25%",
+  "percent50": "50%",
+  "percent75": "75%",
+  "percent100": "100%",
+  "enterUnitsPurchase": "Введите количество паев, которые вы хотите купить",
+  "enterUnitsSell": "Введите количество паев, которые вы хотите продать",
+  "numberOfUnits": "Количество паев",
+  "nav": "Стоимость чистых активов",
+  "aum": "Активы под управлением",
+  "expenseRatio": "Коэффициент расходов",
+  "minimumInvestment": "Минимальные инвестиции",
+  "inceptionDate": "Дата создания",
+  "ytdReturn": "Доходность с начала года",
+  "oneYearReturn": "Доходность за 1 год",
+  "threeYearReturn": "Доходность за 3 года",
+  "fiveYearReturn": "Доходность за 5 лет",
+  "tenYearReturn": "Доходность за 10 лет",
+  "sinceInception": "С момента создания",
+  "standardDeviation": "Стандартное отклонение",
+  "sharpeRatio": "Коэффициент Шарпа",
+  "beta": "Бета",
+  "alpha": "Альфа",
+  "rSquared": "R-квадрат",
+  "turnoverRatio": "Коэффициент оборачиваемости",
+  "dateOfIpo": "Дата IPO",
+  "fundType": "Тип фонда",
+  "managementFee": "Плата за управление",
+  "annualizedReturns": "Годовая доходность",
+  "averageGain": "Средняя прибыль",
+  "averageLoss": "Средний убыток",
+  "maximumDrawdown": "Максимальная просадка",
+  "sortinoRatio": "Коэффициент Сортино",
+  "loads": "Нагрузки"
 }

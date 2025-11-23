@@ -767,7 +767,7 @@ abstract class AppLocalizations {
   /// No description provided for @issueDate.
   ///
   /// In en, this message translates to:
-  /// **'Issue date'**
+  /// **'Issue Date'**
   String get issueDate;
 
   /// No description provided for @expiryDate.
@@ -1265,7 +1265,7 @@ abstract class AppLocalizations {
   /// No description provided for @clearAll.
   ///
   /// In en, this message translates to:
-  /// **'Clear all'**
+  /// **'Clear All'**
   String get clearAll;
 
   /// No description provided for @noNotifications.
@@ -2485,6 +2485,648 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. The fund is managed by professional fund managers who make investment decisions on behalf of the investors.'**
   String get mutualFundAbout;
+
+  /// No description provided for @chooseOrderType.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose Order Type'**
+  String get chooseOrderType;
+
+  /// No description provided for @chooseHowExecute.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose how you want your order to be executed'**
+  String get chooseHowExecute;
+
+  /// No description provided for @marketOrderDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Execute immediately at the best available price'**
+  String get marketOrderDesc;
+
+  /// No description provided for @limitOrderDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Set your own price. The order only executes if the chosen price is reached'**
+  String get limitOrderDesc;
+
+  /// No description provided for @limitOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Limit Order'**
+  String get limitOrder;
+
+  /// No description provided for @confirmDetailsBeforeBuy.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm the details before you buy'**
+  String get confirmDetailsBeforeBuy;
+
+  /// No description provided for @confirmDetailsBeforeSell.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm the details before you sell'**
+  String get confirmDetailsBeforeSell;
+
+  /// No description provided for @confirmDetailsBeforeProceeding.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm the details before proceeding'**
+  String get confirmDetailsBeforeProceeding;
+
+  /// No description provided for @orderType.
+  ///
+  /// In en, this message translates to:
+  /// **'Order Type'**
+  String get orderType;
+
+  /// No description provided for @orderPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Order Price'**
+  String get orderPrice;
+
+  /// No description provided for @numberOfShares.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of Shares'**
+  String get numberOfShares;
+
+  /// No description provided for @currentPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Price'**
+  String get currentPrice;
+
+  /// No description provided for @totalCharges.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Charges'**
+  String get totalCharges;
+
+  /// No description provided for @netConsideration.
+  ///
+  /// In en, this message translates to:
+  /// **'Net Consideration'**
+  String get netConsideration;
+
+  /// No description provided for @availableCashBalance.
+  ///
+  /// In en, this message translates to:
+  /// **'Available Cash balance'**
+  String get availableCashBalance;
+
+  /// No description provided for @confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirm;
+
+  /// No description provided for @orderSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Order Successful'**
+  String get orderSuccessful;
+
+  /// No description provided for @orderSubmittedBroker.
+  ///
+  /// In en, this message translates to:
+  /// **'Your order request has been submitted to the Broker'**
+  String get orderSubmittedBroker;
+
+  /// No description provided for @orderSubmittedFundManager.
+  ///
+  /// In en, this message translates to:
+  /// **'Your order request has been submitted to the Fund Manager'**
+  String get orderSubmittedFundManager;
+
+  /// No description provided for @trackInPortfolio.
+  ///
+  /// In en, this message translates to:
+  /// **'Track in Portfolio'**
+  String get trackInPortfolio;
+
+  /// No description provided for @tradeOtherStocks.
+  ///
+  /// In en, this message translates to:
+  /// **'Trade other stocks'**
+  String get tradeOtherStocks;
+
+  /// No description provided for @tradeOtherFunds.
+  ///
+  /// In en, this message translates to:
+  /// **'Trade other funds'**
+  String get tradeOtherFunds;
+
+  /// No description provided for @tradeOtherSecurities.
+  ///
+  /// In en, this message translates to:
+  /// **'Trade other securities'**
+  String get tradeOtherSecurities;
+
+  /// No description provided for @estimatedMaturityValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated Maturity Value'**
+  String get estimatedMaturityValue;
+
+  /// No description provided for @availableCashBalanceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Available Cash Balance'**
+  String get availableCashBalanceTitle;
+
+  /// No description provided for @noDataAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'No data available'**
+  String get noDataAvailable;
+
+  /// No description provided for @open.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get open;
+
+  /// No description provided for @high.
+  ///
+  /// In en, this message translates to:
+  /// **'High'**
+  String get high;
+
+  /// No description provided for @low.
+  ///
+  /// In en, this message translates to:
+  /// **'Low'**
+  String get low;
+
+  /// No description provided for @close.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get close;
+
+  /// No description provided for @howMuchBuy.
+  ///
+  /// In en, this message translates to:
+  /// **'How much do you want to buy?'**
+  String get howMuchBuy;
+
+  /// No description provided for @howMuchSell.
+  ///
+  /// In en, this message translates to:
+  /// **'How much do you want to sell?'**
+  String get howMuchSell;
+
+  /// No description provided for @buySuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy Successful'**
+  String get buySuccessful;
+
+  /// No description provided for @sellSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Sell Successful'**
+  String get sellSuccessful;
+
+  /// No description provided for @sharesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Shares'**
+  String get sharesLabel;
+
+  /// No description provided for @assetType.
+  ///
+  /// In en, this message translates to:
+  /// **'Asset Type'**
+  String get assetType;
+
+  /// No description provided for @bonds.
+  ///
+  /// In en, this message translates to:
+  /// **'Bonds'**
+  String get bonds;
+
+  /// No description provided for @reits.
+  ///
+  /// In en, this message translates to:
+  /// **'REITs'**
+  String get reits;
+
+  /// No description provided for @positive.
+  ///
+  /// In en, this message translates to:
+  /// **'Positive'**
+  String get positive;
+
+  /// No description provided for @negative.
+  ///
+  /// In en, this message translates to:
+  /// **'Negative'**
+  String get negative;
+
+  /// No description provided for @valueHighToLow.
+  ///
+  /// In en, this message translates to:
+  /// **'Value (High to Low)'**
+  String get valueHighToLow;
+
+  /// No description provided for @valueLowToHigh.
+  ///
+  /// In en, this message translates to:
+  /// **'Value (Low to High)'**
+  String get valueLowToHigh;
+
+  /// No description provided for @changePercentHighToLow.
+  ///
+  /// In en, this message translates to:
+  /// **'Change % (High to Low)'**
+  String get changePercentHighToLow;
+
+  /// No description provided for @changePercentLowToHigh.
+  ///
+  /// In en, this message translates to:
+  /// **'Change % (Low to High)'**
+  String get changePercentLowToHigh;
+
+  /// No description provided for @searchByAssetName.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by asset name'**
+  String get searchByAssetName;
+
+  /// No description provided for @dateOfIncorporation.
+  ///
+  /// In en, this message translates to:
+  /// **'Date of Incorporation'**
+  String get dateOfIncorporation;
+
+  /// No description provided for @dateOfIPO.
+  ///
+  /// In en, this message translates to:
+  /// **'Date of IPO'**
+  String get dateOfIPO;
+
+  /// No description provided for @telecommunications.
+  ///
+  /// In en, this message translates to:
+  /// **'Telecommunications'**
+  String get telecommunications;
+
+  /// No description provided for @previousClose.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous Close(GHS)'**
+  String get previousClose;
+
+  /// No description provided for @openGHS.
+  ///
+  /// In en, this message translates to:
+  /// **'Open(GHS)'**
+  String get openGHS;
+
+  /// No description provided for @daysRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Day\'s Range(GHS)'**
+  String get daysRange;
+
+  /// No description provided for @volumeTraded.
+  ///
+  /// In en, this message translates to:
+  /// **'Volume Traded'**
+  String get volumeTraded;
+
+  /// No description provided for @fiftyTwoWeekRange.
+  ///
+  /// In en, this message translates to:
+  /// **'52-Week Range(GHS)'**
+  String get fiftyTwoWeekRange;
+
+  /// No description provided for @peRatio.
+  ///
+  /// In en, this message translates to:
+  /// **'P/E Ratio'**
+  String get peRatio;
+
+  /// No description provided for @earningsPerShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Earnings Per Share(GHS)'**
+  String get earningsPerShare;
+
+  /// No description provided for @dividendYield.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividend Yield'**
+  String get dividendYield;
+
+  /// No description provided for @marketCap.
+  ///
+  /// In en, this message translates to:
+  /// **'Market Cap(GHS)'**
+  String get marketCap;
+
+  /// No description provided for @sharesOutstanding.
+  ///
+  /// In en, this message translates to:
+  /// **'Shares Outstanding'**
+  String get sharesOutstanding;
+
+  /// No description provided for @capitalGainsLosses.
+  ///
+  /// In en, this message translates to:
+  /// **'Capital Gains/(Losses)'**
+  String get capitalGainsLosses;
+
+  /// No description provided for @issuer.
+  ///
+  /// In en, this message translates to:
+  /// **'Issuer'**
+  String get issuer;
+
+  /// No description provided for @governmentOfGhana.
+  ///
+  /// In en, this message translates to:
+  /// **'Government of Ghana'**
+  String get governmentOfGhana;
+
+  /// No description provided for @currency.
+  ///
+  /// In en, this message translates to:
+  /// **'Currency'**
+  String get currency;
+
+  /// No description provided for @ghs.
+  ///
+  /// In en, this message translates to:
+  /// **'GHS'**
+  String get ghs;
+
+  /// No description provided for @maturityDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Maturity Date'**
+  String get maturityDate;
+
+  /// No description provided for @currentRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Rate'**
+  String get currentRate;
+
+  /// No description provided for @maturityRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Maturity Rate'**
+  String get maturityRate;
+
+  /// No description provided for @couponRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Coupon Rate'**
+  String get couponRate;
+
+  /// No description provided for @enterSharesPurchase.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter number of shares you want to purchase'**
+  String get enterSharesPurchase;
+
+  /// No description provided for @enterSharesSell.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter number of shares you want to sell'**
+  String get enterSharesSell;
+
+  /// No description provided for @enterAmountPurchase.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the amount you want to purchase'**
+  String get enterAmountPurchase;
+
+  /// No description provided for @enterAmountSell.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the amount you want to sell'**
+  String get enterAmountSell;
+
+  /// No description provided for @orderExecutedInstantly.
+  ///
+  /// In en, this message translates to:
+  /// **'Your order will be executed instantly at the best available price'**
+  String get orderExecutedInstantly;
+
+  /// No description provided for @orderExecutedAtPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Your order will be executed if the chosen price is reached'**
+  String get orderExecutedAtPrice;
+
+  /// No description provided for @enterOrderPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter order price'**
+  String get enterOrderPrice;
+
+  /// No description provided for @percent25.
+  ///
+  /// In en, this message translates to:
+  /// **'25%'**
+  String get percent25;
+
+  /// No description provided for @percent50.
+  ///
+  /// In en, this message translates to:
+  /// **'50%'**
+  String get percent50;
+
+  /// No description provided for @percent75.
+  ///
+  /// In en, this message translates to:
+  /// **'75%'**
+  String get percent75;
+
+  /// No description provided for @percent100.
+  ///
+  /// In en, this message translates to:
+  /// **'100%'**
+  String get percent100;
+
+  /// No description provided for @enterUnitsPurchase.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter number of units you want to purchase'**
+  String get enterUnitsPurchase;
+
+  /// No description provided for @enterUnitsSell.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter number of units you want to sell'**
+  String get enterUnitsSell;
+
+  /// No description provided for @numberOfUnits.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of Units'**
+  String get numberOfUnits;
+
+  /// No description provided for @nav.
+  ///
+  /// In en, this message translates to:
+  /// **'NAV'**
+  String get nav;
+
+  /// No description provided for @aum.
+  ///
+  /// In en, this message translates to:
+  /// **'AUM'**
+  String get aum;
+
+  /// No description provided for @expenseRatio.
+  ///
+  /// In en, this message translates to:
+  /// **'Expense Ratio'**
+  String get expenseRatio;
+
+  /// No description provided for @minimumInvestment.
+  ///
+  /// In en, this message translates to:
+  /// **'Minimum Investment'**
+  String get minimumInvestment;
+
+  /// No description provided for @inceptionDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Inception Date'**
+  String get inceptionDate;
+
+  /// No description provided for @ytdReturn.
+  ///
+  /// In en, this message translates to:
+  /// **'YTD Return'**
+  String get ytdReturn;
+
+  /// No description provided for @oneYearReturn.
+  ///
+  /// In en, this message translates to:
+  /// **'1-Year Return'**
+  String get oneYearReturn;
+
+  /// No description provided for @threeYearReturn.
+  ///
+  /// In en, this message translates to:
+  /// **'3-Year Return'**
+  String get threeYearReturn;
+
+  /// No description provided for @fiveYearReturn.
+  ///
+  /// In en, this message translates to:
+  /// **'5-Year Return'**
+  String get fiveYearReturn;
+
+  /// No description provided for @tenYearReturn.
+  ///
+  /// In en, this message translates to:
+  /// **'10-Year Return'**
+  String get tenYearReturn;
+
+  /// No description provided for @sinceInception.
+  ///
+  /// In en, this message translates to:
+  /// **'Since Inception'**
+  String get sinceInception;
+
+  /// No description provided for @standardDeviation.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard Deviation'**
+  String get standardDeviation;
+
+  /// No description provided for @sharpeRatio.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharpe Ratio'**
+  String get sharpeRatio;
+
+  /// No description provided for @beta.
+  ///
+  /// In en, this message translates to:
+  /// **'Beta'**
+  String get beta;
+
+  /// No description provided for @alpha.
+  ///
+  /// In en, this message translates to:
+  /// **'Alpha'**
+  String get alpha;
+
+  /// No description provided for @rSquared.
+  ///
+  /// In en, this message translates to:
+  /// **'R-Squared'**
+  String get rSquared;
+
+  /// No description provided for @turnoverRatio.
+  ///
+  /// In en, this message translates to:
+  /// **'Turnover Ratio'**
+  String get turnoverRatio;
+
+  /// No description provided for @dateOfIpo.
+  ///
+  /// In en, this message translates to:
+  /// **'Date of IPO'**
+  String get dateOfIpo;
+
+  /// No description provided for @fundType.
+  ///
+  /// In en, this message translates to:
+  /// **'Fund Type'**
+  String get fundType;
+
+  /// No description provided for @managementFee.
+  ///
+  /// In en, this message translates to:
+  /// **'Management Fee'**
+  String get managementFee;
+
+  /// No description provided for @annualizedReturns.
+  ///
+  /// In en, this message translates to:
+  /// **'Annualized Returns'**
+  String get annualizedReturns;
+
+  /// No description provided for @averageGain.
+  ///
+  /// In en, this message translates to:
+  /// **'Average Gain'**
+  String get averageGain;
+
+  /// No description provided for @averageLoss.
+  ///
+  /// In en, this message translates to:
+  /// **'Average Loss'**
+  String get averageLoss;
+
+  /// No description provided for @maximumDrawdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum Drawdown'**
+  String get maximumDrawdown;
+
+  /// No description provided for @sortinoRatio.
+  ///
+  /// In en, this message translates to:
+  /// **'Sortino Ratio'**
+  String get sortinoRatio;
+
+  /// No description provided for @loads.
+  ///
+  /// In en, this message translates to:
+  /// **'Loads'**
+  String get loads;
 }
 
 class _AppLocalizationsDelegate

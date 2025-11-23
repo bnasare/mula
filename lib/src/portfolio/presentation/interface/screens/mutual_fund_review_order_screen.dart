@@ -5,6 +5,7 @@ import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/confetti_success_screen.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../domain/entities/trade_type.dart';
 
@@ -40,15 +41,14 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
     NavigationHelper.navigateTo(
       context,
       ConfettiSuccessScreen(
-        title: 'Order Successful',
-        description:
-            'Your order request has been submitted to the Fund Manager',
-        primaryButtonText: 'Track in Portfolio',
+        title: context.localize.orderSuccessful,
+        description: context.localize.orderSubmittedFundManager,
+        primaryButtonText: context.localize.trackInPortfolio,
         onPrimaryButtonTap: () {
           // Navigate back to dashboard
           Navigator.of(context).popUntil((route) => route.isFirst);
         },
-        secondaryButtonText: 'Trade other funds',
+        secondaryButtonText: context.localize.tradeOtherFunds,
         onSecondaryButtonTap: () {
           // Pop back to dashboard
           Navigator.of(context).popUntil((route) => route.isFirst);
@@ -60,7 +60,7 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const MulaAppBar(title: 'Review Order', showBottomDivider: true),
+      appBar: MulaAppBar(title: context.localize.reviewOrder, showBottomDivider: true),
       body: Column(
         children: [
           Expanded(
@@ -70,7 +70,9 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   AppText.small(
-                    'Confirm the details before you ${tradeType == TradeType.buy ? 'buy' : 'sell'}',
+                    tradeType == TradeType.buy
+                        ? context.localize.confirmDetailsBeforeBuy
+                        : context.localize.confirmDetailsBeforeSell,
                     color: AppColors.secondaryText(context),
                   ),
                   const SizedBox(height: 16),
@@ -136,10 +138,10 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(16).copyWith(bottom: 32),
             child: AppButton(
-              text: 'Confirm',
+              text: context.localize.confirm,
               onTap: () => _handleConfirm(context),
               backgroundColor: AppColors.appPrimary,
-              textColor: Colors.white,
+              textColor: AppColors.white(context),
               borderRadius: 12,
               padding: EdgeInsets.zero,
             ),
@@ -154,37 +156,37 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
       // Limit order: 7 rows with Order Type at top
       switch (index) {
         case 0:
-          return _buildDetailRow(context, 'Order Type', 'Limit Order');
+          return _buildDetailRow(context, context.localize.orderType, context.localize.limitOrder);
         case 1:
           return _buildDetailRow(
             context,
-            'Order Price',
+            context.localize.orderPrice,
             'GHS ${orderPrice.toStringAsFixed(2)}',
           );
         case 2:
           return _buildDetailRow(
             context,
-            'Gross Consideration',
+            context.localize.grossConsideration,
             'GHS ${grossConsideration.toStringAsFixed(2)}',
           );
         case 3:
           return _buildDetailRow(
             context,
-            'Total Charges',
+            context.localize.totalCharges,
             'GHS ${totalCharges.toStringAsFixed(2)}',
           );
         case 4:
           return _buildDetailRow(
             context,
-            'Net Consideration',
+            context.localize.netConsideration,
             'GHS ${netConsideration.toStringAsFixed(2)}',
           );
         case 5:
-          return _buildDetailRow(context, 'Fund Manager', fundManager);
+          return _buildDetailRow(context, context.localize.fundManager, fundManager);
         case 6:
           return _buildDetailRow(
             context,
-            'Available Cash balance',
+            context.localize.availableCashBalance,
             'GHS ${availableCashBalance.toStringAsFixed(2)}',
           );
         default:
@@ -196,33 +198,33 @@ class MutualFundReviewOrderScreen extends StatelessWidget {
         case 0:
           return _buildDetailRow(
             context,
-            'Current Price',
+            context.localize.currentPrice,
             'GHS ${orderPrice.toStringAsFixed(2)}',
           );
         case 1:
           return _buildDetailRow(
             context,
-            'Gross Consideration',
+            context.localize.grossConsideration,
             'GHS ${grossConsideration.toStringAsFixed(2)}',
           );
         case 2:
           return _buildDetailRow(
             context,
-            'Total Charges',
+            context.localize.totalCharges,
             'GHS ${totalCharges.toStringAsFixed(2)}',
           );
         case 3:
           return _buildDetailRow(
             context,
-            'Net Consideration',
+            context.localize.netConsideration,
             'GHS ${netConsideration.toStringAsFixed(2)}',
           );
         case 4:
-          return _buildDetailRow(context, 'Fund Manager', fundManager);
+          return _buildDetailRow(context, context.localize.fundManager, fundManager);
         case 5:
           return _buildDetailRow(
             context,
-            'Available Cash balance',
+            context.localize.availableCashBalance,
             'GHS ${availableCashBalance.toStringAsFixed(2)}',
           );
         default:

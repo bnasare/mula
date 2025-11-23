@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../authentication/presentation/interface/widgets/mula_text_field.dart';
 
 /// Bottom sheet for filtering asset holdings
@@ -87,7 +88,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         AppText.large(
-          'Filter',
+          context.localize.filter,
           style: TextStyle(
             fontWeight: FontWeight.w500,
             color: AppColors.primaryText(context),
@@ -99,7 +100,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
             if (_hasActiveFilters)
               GestureDetector(
                 onTap: _clearAllFilters,
-                child: AppText.small('Clear All', color: AppColors.appPrimary),
+                child: AppText.small(context.localize.clearAll, color: AppColors.appPrimary),
               ),
             const SizedBox(width: 12),
             GestureDetector(
@@ -118,18 +119,18 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
 
   Widget _buildAssetTypeSection(BuildContext context) {
     final assetTypes = [
-      'All',
-      'Stocks',
-      'Mutual Funds',
-      'T-Bills',
-      'Bonds',
-      'REITs',
+      context.localize.all,
+      context.localize.stocks,
+      context.localize.mutualFunds,
+      context.localize.tBills,
+      context.localize.bonds,
+      context.localize.reits,
     ];
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AppText.small('Asset Type', color: AppColors.primaryText(context)),
+        AppText.small(context.localize.assetType, color: AppColors.primaryText(context)),
         const SizedBox(height: 12),
         Wrap(
           spacing: 8,
@@ -137,7 +138,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
           children: assetTypes.map((type) {
             return _buildMultiSelectChip(type, _selectedAssetTypes, (value) {
               setState(() {
-                if (value == 'All') {
+                if (value == context.localize.all) {
                   _selectedAssetTypes.clear();
                 } else {
                   if (_selectedAssetTypes.contains(value)) {
@@ -158,21 +159,21 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AppText.small('Performance', color: AppColors.secondaryText(context)),
+        AppText.small(context.localize.performance, color: AppColors.secondaryText(context)),
         const SizedBox(height: 12),
         Wrap(
           spacing: 8,
           runSpacing: 8,
           children: [
             _buildStatusChip(
-              'Positive',
+              context.localize.positive,
               AppColors.activitySuccess,
               AppColors.activitySuccessLight,
               _selectedPerformance,
               (value) => setState(() => _selectedPerformance = value),
             ),
             _buildStatusChip(
-              'Negative',
+              context.localize.negative,
               AppColors.activityError,
               AppColors.activityErrorLight,
               _selectedPerformance,
@@ -186,16 +187,16 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
 
   Widget _buildSortBySection(BuildContext context) {
     final sortOptions = [
-      'Value (High to Low)',
-      'Value (Low to High)',
-      'Change % (High to Low)',
-      'Change % (Low to High)',
+      context.localize.valueHighToLow,
+      context.localize.valueLowToHigh,
+      context.localize.changePercentHighToLow,
+      context.localize.changePercentLowToHigh,
     ];
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AppText.small('Sort By', color: AppColors.secondaryText(context)),
+        AppText.small(context.localize.sortBy, color: AppColors.secondaryText(context)),
         const SizedBox(height: 12),
         Wrap(
           spacing: 8,
@@ -216,11 +217,11 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AppText.small('Search', color: AppColors.secondaryText(context)),
+        AppText.small(context.localize.keywordSearch, color: AppColors.secondaryText(context)),
         const SizedBox(height: 12),
         MulaTextField(
           controller: _searchController,
-          hintText: 'Search by asset name',
+          hintText: context.localize.searchByAssetName,
           filled: true,
           fillColor: AppColors.offWhite(context),
         ),
@@ -230,7 +231,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
 
   Widget _buildApplyButton(BuildContext context) {
     return AppButton(
-      text: 'Apply',
+      text: context.localize.apply,
       backgroundColor: AppColors.appPrimary,
       textColor: AppColors.white(context),
       borderRadius: 8,
@@ -321,7 +322,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
           color: bgColor,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: isSelected ? textColor : Colors.transparent,
+            color: isSelected ? textColor : AppColors.transparent,
             width: isSelected ? 0.6 : 0,
           ),
         ),

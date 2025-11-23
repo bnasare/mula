@@ -216,7 +216,7 @@ class TBillDetailScreen extends StatelessWidget {
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Capital Gains/(Losses)',
+                                label: context.localize.capitalGains,
                                 value: currencyFormat.format(2475.00),
                                 alignment: CrossAxisAlignment.end,
                               ),
@@ -329,13 +329,13 @@ class TBillDetailScreen extends StatelessWidget {
                         children: [
                           _buildInfoItem(
                             context,
-                            label: 'Type',
+                            label: context.localize.type,
                             value: 'Treasury Bill',
                           ),
                           const SizedBox(height: 24),
                           _buildInfoItem(
                             context,
-                            label: 'Issuer',
+                            label: context.localize.issuer,
                             value: 'Government of Ghana',
                           ),
                         ],
@@ -349,14 +349,14 @@ class TBillDetailScreen extends StatelessWidget {
                         children: [
                           _buildInfoItem(
                             context,
-                            label: 'Currency',
+                            label: context.localize.currency,
                             value: 'GHS',
                             alignment: CrossAxisAlignment.end,
                           ),
                           const SizedBox(height: 24),
                           _buildInfoItem(
                             context,
-                            label: 'Maturity Date',
+                            label: context.localize.maturityDate,
                             value: '27-OCT-25',
                             alignment: CrossAxisAlignment.end,
                           ),
@@ -376,22 +376,21 @@ class TBillDetailScreen extends StatelessWidget {
   }
 
   Widget _buildTBillDetailItem(BuildContext context, int index) {
-    final Map<String, String> details = {
-      'Current Rate': '10.83%',
-      'Maturity Rate': '15.49%',
-      'Issue Date': 'July 30, 2025',
-      'Maturity Date': 'October 27, 2025',
-      'Coupon Rate': 'N/A',
-    };
+    final details = [
+      (context.localize.currentRate, '10.83%'),
+      (context.localize.maturityRate, '15.49%'),
+      (context.localize.issueDate, 'July 30, 2025'),
+      (context.localize.maturityDate, 'October 27, 2025'),
+      (context.localize.couponRate, 'N/A'),
+    ];
 
-    final keys = details.keys.toList();
-    if (index >= keys.length) return const SizedBox.shrink();
+    if (index >= details.length) return const SizedBox.shrink();
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         AppText(
-          keys[index],
+          details[index].$1,
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w400,
@@ -399,7 +398,7 @@ class TBillDetailScreen extends StatelessWidget {
           ),
         ),
         AppText(
-          details[keys[index]]!,
+          details[index].$2,
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w600,

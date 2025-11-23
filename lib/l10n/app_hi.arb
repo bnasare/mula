@@ -25,7 +25,6 @@
   "resetPassword": "पासवर्ड रीसेट करें",
   "passwordResetSuccessful": "पासवर्ड सफलतापूर्वक रीसेट हो गया",
   "passwordResetSuccessDescription": "आपका पासवर्ड सफलतापूर्वक रीसेट हो गया है। अब आप अपने नए पासवर्ड से साइन इन कर सकते हैं",
-
   "letsGetYouStarted": "आइए शुरू करें",
   "createFreeAccountDescription": "एक मिनट से भी कम समय में अपना मुफ़्त MULA खाता बनाएं।",
   "fullName": "पूरा नाम",
@@ -44,7 +43,6 @@
   "termsOfService": "सेवा की शर्तें",
   "and": "और",
   "privacyPolicy": "गोपनीयता नीति",
-
   "otpVerification": "OTP सत्यापन",
   "enterVerificationCode": "वह सत्यापन कोड दर्ज करें जो हमने अभी आपके ईमेल पते पर भेजा है",
   "phoneNumber": "फोन नंबर",
@@ -52,7 +50,6 @@
   "verify": "सत्यापित करें",
   "didntReceiveCode": "कोड प्राप्त नहीं हुआ?",
   "resend": "पुनः भेजें",
-
   "security": "सुरक्षा",
   "enableFaceId": "Face ID सक्षम करें",
   "enable": "सक्षम करें",
@@ -66,7 +63,6 @@
   "pinCreatedDescription": "आइए अपने खाते का पंजीकरण पूरा करें",
   "continueButton": "जारी रखें",
   "enterYourPin": "जारी रखने के लिए अपना पिन दर्ज करें",
-
   "tellUsAboutYou": "हमें अपने बारे में बताएं",
   "tellUsAboutYouDescription": "यह हमें आपके MULA अनुभव को वैयक्तिकृत करने में मदद करता है",
   "dateOfBirth": "जन्म तिथि",
@@ -80,39 +76,31 @@
   "enterGpsAddress": "अपना GPS पता दर्ज करें",
   "occupation": "पेशा",
   "whatIsYourOccupation": "आपका पेशा क्या है?",
-
   "personalDetails": "व्यक्तिगत विवरण",
   "personalDetailsDescription": "आपके खाते को सेटअप करने के लिए हमें कुछ विवरण चाहिए",
   "nationality": "राष्ट्रीयता",
   "selectNationality": "अपनी राष्ट्रीयता चुनें",
   "emergencyNumber": "आपातकालीन नंबर",
   "enterEmergencyNumber": "आपातकालीन संपर्क नंबर दर्ज करें",
-
   "identificationDetails": "पहचान विवरण",
   "submit": "जमा करें",
-
   "bankDetails": "बैंक विवरण",
   "selectBank": "बैंक चुनें",
   "selectYourBank": "अपना बैंक चुनें",
   "bankAccountNumber": "बैंक खाता संख्या",
   "enterYourAccountNumber": "अपना खाता संख्या दर्ज करें",
-
   "chooseAccountType": "खाता प्रकार चुनें",
   "chooseAccountTypeDescription": "सही खाता प्रकार चुनने से हमें आपको सही प्रदाताओं से जोड़ने में मदद मिलती है।",
-
   "brokers": "ब्रोकर्स",
   "brokersDescription": "अपनी निवेश यात्रा शुरू करने के लिए अपना ब्रोकर चुनें।",
   "noBrokersFound": "कोई ब्रोकर नहीं मिला",
-
   "accountDetailsSuccessfullySubmitted": "खाता विवरण सफलतापूर्वक जमा किया गया",
   "accountDetailsSuccessDescription": "आपका खाता बन गया है। अपने खाते को मान्य करने के लिए अपना ईमेल जांचें। सत्यापन की स्थिति पर अपडेट के लिए अपना ईमेल जांचें।",
-
   "idVerification": "पहचान सत्यापन",
   "selectIdType": "अपनी पहचान सत्यापित करने के लिए एक आईडी प्रकार चुनें",
   "ghanaCard": "घाना कार्ड",
   "driversLicense": "ड्राइविंग लाइसेंस",
   "passport": "पासपोर्ट",
-
   "uploadDocumentsDescription": "अपनी पहचान सत्यापित करने और अपने खाते की सेटअप पूरी करने के लिए अपने दस्तावेज़ सुरक्षित रूप से अपलोड करें",
   "pictureOfFront": "सामने की तस्वीर",
   "pictureOfBack": "पीछे की तस्वीर",
@@ -123,7 +111,6 @@
   "issueDate": "जारी करने की तिथि",
   "expiryDate": "समाप्ति तिथि",
   "next": "अगला",
-
   "investmentExperience": "आपका निवेश अनुभव",
   "investmentExperienceDescription": "यह हमें आपके लिए सर्वोत्तम टूल, संसाधन और लेआउट की अनुशंसा करने में मदद करता है",
   "beginner": "शुरुआती",
@@ -132,7 +119,6 @@
   "intermediateDescription": "मैंने कुछ निवेश किया है और समझता हूं कि चीजें कैसे काम करती हैं।",
   "advanced": "उन्नत",
   "advancedDescription": "मैं अनुभवी हूं और उन्नत टूल तक पूर्ण पहुंच चाहता हूं।",
-
   "goodHandsTitle": "आप अच्छे हाथों में हैं",
   "goodHandsDescription": "निवेश भयावह लग सकता है, लेकिन MULA के साथ, आपको शुरू करने के लिए विशेषज्ञ होने की आवश्यकता नहीं है। हम आपको हर कदम पर मार्गदर्शन करेंगे, आपके खातों को लिंक करने से लेकर आपके पोर्टफोलियो को समझने तक, ताकि आप आत्मविश्वास के साथ निवेश कर सकें।",
   "hereIsWhatYouCanExpect": "यहां वह है जो आप उम्मीद कर सकते हैं:",
@@ -140,28 +126,23 @@
   "supportWheneverNeeded": "जब भी आपको इसकी आवश्यकता हो सहायता",
   "guidanceToExplore": "निवेश के अवसरों का पता लगाने के लिए मार्गदर्शन",
   "simpleExplanations": "हर कदम पर सरल स्पष्टीकरण",
-
   "linkInvestmentAccounts": "अपने निवेश खातों को लिंक करें",
   "linkAccountsDescription": "यह हमें आपकी स्वामित्व वाली हर चीज़ को एक ही स्थान पर दिखाने में मदद करता है",
   "csdAccount": "मेरे पास CSD खाता है",
   "csdAccountDescription": "स्टॉक, बॉन्ड और ट्रेजरी बिल जैसी प्रतिभूतियों के लिए",
   "cisAccount": "मेरे पास CIS खाता है",
   "cisAccountDescription": "Databank, EDC आदि जैसे फंड मैनेजरों से",
-  "dontHaveAccount": "खाता नहीं है?",
   "dontHaveAccountDescription": "आप एक खाता बना सकते हैं और आज ही निवेश करना शुरू कर सकते हैं",
-
   "selectFundManager": "फंड मैनेजर चुनें",
   "selectFundManagerDescription": "अपनी निवेश यात्रा शुरू करने के लिए अपना फंड मैनेजर चुनें।",
   "searchByAssetNameOrType": "संपत्ति नाम या प्रकार से खोजें",
   "addAnother": "एक और जोड़ें",
   "done": "हो गया",
-
   "fundManager": "फंड मैनेजर",
   "fundsManaged": "द्वारा प्रबंधित फंड",
   "select": "चुनें",
   "fundManagerLinkedSuccessfully": "फंड मैनेजर सफलतापूर्वक जुड़ा",
   "fundManagerLinkedSuccessDescription": "आपका फंड मैनेजर आपके खाते से जुड़ गया है। अब आप अपने निवेश देख और प्रबंधित कर सकते हैं।",
-
   "enterCsdAccountNumber": "आपका CSD खाता संख्या क्या है?",
   "csdAccountNumberDescription": "आप यह संख्या अपने ट्रेजरी बिल प्रमाणपत्र पर पा सकते हैं। यदि आपके पास नहीं है, तो सहायता के लिए अपने ब्रोकर से संपर्क करें",
   "accountNumber": "खाता संख्या",
@@ -171,7 +152,6 @@
   "weFoundYourBrokers": "हमें आपके ब्रोकर मिल गए",
   "signInToBrokersDescription": "अपने ब्रोकर खातों में साइन इन करें ताकि हम आपके निवेश सुरक्षित रूप से प्राप्त कर सकें",
   "add": "जोड़ें",
-
   "deposit": "जमा करें",
   "chooseAccountToTopUp": "टॉप अप करने के लिए एक खाता चुनें",
   "mobileMoneyDeposit": "मोबाइल मनी",
@@ -206,11 +186,10 @@
   "moneySuccessfullyWithdrawn": "पैसा सफलतापूर्वक निकाल लिया गया है",
   "enterPinToConfirm": "पुष्टि करने के लिए अपना पिन दर्ज करें",
   "notifications": "सूचनाएं",
-  "clearAll": "सभी साफ़ करें",
+  "clearAll": "सभी साफ करें",
   "noNotifications": "कोई सूचना नहीं",
   "noNotificationsDescription": "आप अद्यतित हैं!",
   "markAllAsRead": "सभी को पढ़ा हुआ चिह्नित करें",
-
   "home": "होम",
   "explore": "एक्सप्लोर करें",
   "portfolio": "पोर्टफोलियो",
@@ -260,7 +239,7 @@
   "buy": "खरीदें",
   "sell": "बेचें",
   "dateRange": "तिथि सीमा",
-  "sortBy": "इसके अनुसार क्रमबद्ध करें",
+  "sortBy": "द्वारा क्रमबद्ध करें",
   "sortByStatus": "स्थिति के अनुसार क्रमबद्ध करें",
   "keywordSearch": "कीवर्ड खोज",
   "enterAKeyword": "एक कीवर्ड दर्ज करें",
@@ -282,7 +261,6 @@
   "withdrawComingSoon": "निकासी जल्द आ रही है",
   "depositComingSoon": "जमा जल्द आ रहा है",
   "noTransactionsYet": "अभी तक कोई लेनदेन नहीं",
-
   "hiImMulaBot": "नमस्ते, मैं Mula Bot हूं",
   "yourPersonalGuide": "स्मार्ट निवेश के लिए आपका व्यक्तिगत मार्गदर्शक",
   "startChat": "चैट शुरू करें",
@@ -332,7 +310,6 @@
   "accountLinkedSuccessfully": "खाता सफलतापूर्वक लिंक किया गया",
   "accountLinkedSuccessDescription": "आपका खाता MULA से सफलतापूर्वक लिंक हो गया है",
   "goBack": "वापस जाएं",
-
   "learningTracks": "सीखने के मार्ग",
   "featuredTracks": "विशेष मार्ग",
   "popularLessons": "लोकप्रिय पाठ",
@@ -341,7 +318,7 @@
   "allTracks": "सभी",
   "ghanaStocks": "घाना स्टॉक",
   "tBillsBonds": "ट्रेजरी बिल/बांड",
-  "mutualFunds": "म्यूचुअल फंड",
+  "mutualFunds": "म्यूचुअल फंड्स",
   "article": "लेख",
   "mins": "{count} मिनट",
   "@mins": {
@@ -353,57 +330,266 @@
   },
   "whatIsAMutualFund": "म्यूचुअल फंड क्या है?",
   "poolingMoneySpreading": "पैसा इकट्ठा करना, जोखिम फैलाना, धन बढ़ाना",
-
   "markAsRead": "पढ़ा हुआ के रूप में चिह्नित करें",
   "read": "पढ़ा हुआ",
   "investIn": "{asset} में निवेश करें",
-  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "@investIn": {
+    "placeholders": {
+      "asset": {
+        "type": "String"
+      }
+    }
+  },
   "takeAQuiz": "एक क्विज़ लें",
   "shareWithFriends": "अपने दोस्तों के साथ साझा करें या टिप्पणी छोड़ें",
   "leaveComment": "टिप्पणी छोड़ें",
   "reply": "जवाब दें",
   "viewComments": "टिप्पणियां देखें ({count})",
-  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "@viewComments": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "minsRead": "{count} मिनट पढ़ें",
-  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "@minsRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "views": "{count}k",
-  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "@views": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "showMoreReplies": "{count} और उत्तर दिखाएं",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
-
+  "@showMoreReplies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "question": "प्रश्न {number}",
-  "@question": {"placeholders": {"number": {"type": "int"}}},
-  "done": "हो गया",
+  "@question": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
   "wellDone": "बहुत बढ़िया {name}!",
-  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "@wellDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "youAnsweredCorrectly": "आपने {total} में से {correct} सही उत्तर दिए। 100% निपुणता तक पहुंचने के लिए अभ्यास जारी रखें",
-  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@youAnsweredCorrectly": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "quizScoreMessage": "आपने {total} में से {correct} सही उत्तर दिए",
-  "@quizScoreMessage": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@quizScoreMessage": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "keepPracticing": "100% निपुणता तक पहुंचने के लिए अभ्यास जारी रखें",
   "tryAgain": "फिर से कोशिश करें",
   "goToHome": "होम पर जाएं",
   "exploreOtherResources": "अन्य संसाधन खोजें",
   "pts": "+{points}pts",
-  "@pts": {"placeholders": {"points": {"type": "int"}}},
-
+  "@pts": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "searchByAsset": "संपत्ति द्वारा खोजें",
-  "sortBy": "द्वारा क्रमबद्ध करें",
   "relevance": "प्रासंगिकता",
-  "clearAll": "सभी साफ करें",
   "popular": "लोकप्रिय",
   "stocks": "स्टॉक",
   "highYieldFunds": "उच्च उपज फंड",
   "tBills": "ट्रेजरी बिल",
-  "filter": "फ़िल्टर",
-  "dateRange": "तिथि सीमा",
-  "last30Days": "पिछले 30 दिन",
-  "last60Days": "पिछले 60 दिन",
-  "thisYear": "इस वर्ष",
-  "customDate": "कस्टम तिथि",
   "stock": "स्टॉक",
   "selectLevel": "स्तर चुनें",
   "category": "श्रेणी",
   "selectCategory": "श्रेणी चुनें",
-  "apply": "लागू करें"
+  "assetBreakdown": "संपत्ति विभाजन",
+  "assetHoldings": "संपत्ति होल्डिंग्स",
+  "portfolioSummary": "पोर्टफोलियो सारांश",
+  "totalInvestmentValue": "कुल निवेश मूल्य",
+  "totalDeposit": "कुल जमा",
+  "totalWithdrawal": "कुल निकासी",
+  "realizedIncome": "वास्तविक आय",
+  "unrealizedIncome": "अवास्तविक आय",
+  "cumulativeReturn": "संचयी रिटर्न",
+  "seePortfolioSummary": "पोर्टफोलियो सारांश देखें",
+  "noPortfolioData": "कोई पोर्टफोलियो डेटा उपलब्ध नहीं",
+  "seeAdvancedChart": "उन्नत चार्ट देखें",
+  "myInvestments": "मेरे निवेश",
+  "currentValue": "वर्तमान मूल्य",
+  "returnLabel": "रिटर्न",
+  "shares": "शेयर",
+  "costPrice": "लागत मूल्य",
+  "capitalGains": "पूंजीगत लाभ/(हानि)",
+  "about": "के बारे में",
+  "treasuryBill": "ट्रेजरी बिल",
+  "purchaseInterestRate": "खरीद ब्याज दर",
+  "accruedInterest": "संचित ब्याज",
+  "overview": "अवलोकन",
+  "holdings": "होल्डिंग्स",
+  "allocation": "आवंटन",
+  "metrics": "मेट्रिक्स",
+  "units": "इकाइयाँ",
+  "industry": "उद्योग",
+  "rank": "रैंक",
+  "ghanaCedi": "घाना सेडी",
+  "backToChart": "चार्ट पर वापस जाएं",
+  "limitMarket": "सीमा बाजार",
+  "marketOrder": "बाजार ऑर्डर",
+  "cashBalance": "नकद शेष",
+  "enterSharesPurchaseHint": "आप जितने शेयर खरीदना चाहते हैं वह संख्या दर्ज करें",
+  "enterSharesSellHint": "आप जितने शेयर बेचना चाहते हैं वह संख्या दर्ज करें",
+  "enterAmountPurchaseHint": "आप जितनी राशि खरीदना चाहते हैं वह दर्ज करें",
+  "enterAmountSellHint": "आप जितनी राशि बेचना चाहते हैं वह दर्ज करें",
+  "reviewOrder": "ऑर्डर की समीक्षा करें",
+  "review": "समीक्षा",
+  "interestRate": "ब्याज दर",
+  "grossConsideration": "सकल प्रतिफल",
+  "informationTechnology": "सूचना प्रौद्योगिकी",
+  "companyInc": "Company Inc",
+  "sector": "क्षेत्र",
+  "country": "देश",
+  "weight": "वजन",
+  "treasuryBillAbout": "ट्रेजरी बिल घाना सरकार द्वारा जारी अल्पकालिक सरकारी प्रतिभूतियां हैं जो सरकारी संचालन के लिए धन जुटाने और नकदी प्रवाह का प्रबंधन करने के लिए हैं। इन्हें घाना में सबसे सुरक्षित निवेश विकल्पों में से एक माना जाता है।",
+  "mutualFundAbout": "म्यूचुअल फंड एक निवेश वाहन है जो कई निवेशकों से पैसा एकत्र करता है ताकि स्टॉक, बॉन्ड या अन्य प्रतिभूतियों के विविध पोर्टफोलियो में निवेश किया जा सके। फंड का प्रबंधन पेशेवर फंड मैनेजरों द्वारा किया जाता है जो निवेशकों की ओर से निवेश निर्णय लेते हैं।",
+  "chooseOrderType": "ऑर्डर प्रकार चुनें",
+  "chooseHowExecute": "चुनें कि आप अपना ऑर्डर कैसे निष्पादित करना चाहते हैं",
+  "marketOrderDesc": "सर्वोत्तम उपलब्ध मूल्य पर तुरंत निष्पादित करें",
+  "limitOrderDesc": "अपनी खुद की कीमत निर्धारित करें। ऑर्डर केवल तभी निष्पादित होता है जब चुनी गई कीमत पहुंच जाती है",
+  "limitOrder": "लिमिट ऑर्डर",
+  "confirmDetailsBeforeBuy": "खरीदने से पहले विवरण की पुष्टि करें",
+  "confirmDetailsBeforeSell": "बेचने से पहले विवरण की पुष्टि करें",
+  "confirmDetailsBeforeProceeding": "आगे बढ़ने से पहले विवरण की पुष्टि करें",
+  "orderType": "ऑर्डर प्रकार",
+  "orderPrice": "ऑर्डर मूल्य",
+  "numberOfShares": "शेयरों की संख्या",
+  "currentPrice": "वर्तमान मूल्य",
+  "totalCharges": "कुल शुल्क",
+  "netConsideration": "शुद्ध विचार",
+  "availableCashBalance": "उपलब्ध नकद शेष",
+  "confirm": "पुष्टि करें",
+  "orderSuccessful": "ऑर्डर सफल",
+  "orderSubmittedBroker": "आपका ऑर्डर अनुरोध ब्रोकर को सबमिट कर दिया गया है",
+  "orderSubmittedFundManager": "आपका ऑर्डर अनुरोध फंड मैनेजर को सबमिट कर दिया गया है",
+  "trackInPortfolio": "पोर्टफोलियो में ट्रैक करें",
+  "tradeOtherStocks": "अन्य स्टॉक ट्रेड करें",
+  "tradeOtherFunds": "अन्य फंड ट्रेड करें",
+  "tradeOtherSecurities": "अन्य प्रतिभूतियां ट्रेड करें",
+  "estimatedMaturityValue": "अनुमानित परिपक्वता मूल्य",
+  "availableCashBalanceTitle": "उपलब्ध नकद शेष",
+  "noDataAvailable": "कोई डेटा उपलब्ध नहीं",
+  "open": "खुला",
+  "high": "उच्च",
+  "low": "निम्न",
+  "close": "बंद",
+  "howMuchBuy": "आप कितना खरीदना चाहते हैं?",
+  "howMuchSell": "आप कितना बेचना चाहते हैं?",
+  "buySuccessful": "खरीदारी सफल",
+  "sellSuccessful": "बिक्री सफल",
+  "sharesLabel": "शेयर",
+  "assetType": "संपत्ति प्रकार",
+  "bonds": "बांड",
+  "reits": "आरईआईटी",
+  "positive": "सकारात्मक",
+  "negative": "नकारात्मक",
+  "valueHighToLow": "मूल्य (उच्च से निम्न)",
+  "valueLowToHigh": "मूल्य (निम्न से उच्च)",
+  "changePercentHighToLow": "परिवर्तन % (उच्च से निम्न)",
+  "changePercentLowToHigh": "परिवर्तन % (निम्न से उच्च)",
+  "searchByAssetName": "संपत्ति नाम से खोजें",
+  "dateOfIncorporation": "निगमन तिथि",
+  "dateOfIPO": "आईपीओ तिथि",
+  "telecommunications": "दूरसंचार",
+  "previousClose": "पिछला बंद(GHS)",
+  "openGHS": "खुला(GHS)",
+  "daysRange": "दिन की सीमा(GHS)",
+  "volumeTraded": "व्यापारित मात्रा",
+  "fiftyTwoWeekRange": "52-सप्ताह सीमा(GHS)",
+  "peRatio": "पी/ई अनुपात",
+  "earningsPerShare": "प्रति शेयर आय(GHS)",
+  "dividendYield": "लाभांश उपज",
+  "marketCap": "बाजार पूंजीकरण(GHS)",
+  "sharesOutstanding": "बकाया शेयर",
+  "capitalGainsLosses": "पूंजीगत लाभ/(हानि)",
+  "issuer": "जारीकर्ता",
+  "governmentOfGhana": "घाना सरकार",
+  "currency": "मुद्रा",
+  "ghs": "GHS",
+  "maturityDate": "परिपक्वता तिथि",
+  "currentRate": "वर्तमान दर",
+  "maturityRate": "परिपक्वता दर",
+  "couponRate": "कूपन दर",
+  "enterSharesPurchase": "आप जितने शेयर खरीदना चाहते हैं उनकी संख्या दर्ज करें",
+  "enterSharesSell": "आप जितने शेयर बेचना चाहते हैं उनकी संख्या दर्ज करें",
+  "enterAmountPurchase": "आप जितनी राशि खरीदना चाहते हैं उसे दर्ज करें",
+  "enterAmountSell": "आप जितनी राशि बेचना चाहते हैं उसे दर्ज करें",
+  "orderExecutedInstantly": "आपका ऑर्डर सर्वोत्तम उपलब्ध मूल्य पर तुरंत निष्पादित किया जाएगा",
+  "orderExecutedAtPrice": "यदि चुनी गई कीमत पहुंच जाती है तो आपका ऑर्डर निष्पादित किया जाएगा",
+  "enterOrderPrice": "ऑर्डर मूल्य दर्ज करें",
+  "percent25": "25%",
+  "percent50": "50%",
+  "percent75": "75%",
+  "percent100": "100%",
+  "enterUnitsPurchase": "आप जितनी इकाइयां खरीदना चाहते हैं उनकी संख्या दर्ज करें",
+  "enterUnitsSell": "आप जितनी इकाइयां बेचना चाहते हैं उनकी संख्या दर्ज करें",
+  "numberOfUnits": "इकाइयों की संख्या",
+  "nav": "NAV",
+  "aum": "प्रबंधनाधीन संपत्ति",
+  "expenseRatio": "व्यय अनुपात",
+  "minimumInvestment": "न्यूनतम निवेश",
+  "inceptionDate": "स्थापना तिथि",
+  "ytdReturn": "वर्ष-दर-तारीख रिटर्न",
+  "oneYearReturn": "1-वर्ष रिटर्न",
+  "threeYearReturn": "3-वर्ष रिटर्न",
+  "fiveYearReturn": "5-वर्ष रिटर्न",
+  "tenYearReturn": "10-वर्ष रिटर्न",
+  "sinceInception": "स्थापना के बाद से",
+  "standardDeviation": "मानक विचलन",
+  "sharpeRatio": "शार्प अनुपात",
+  "beta": "बीटा",
+  "alpha": "अल्फा",
+  "rSquared": "R-वर्ग",
+  "turnoverRatio": "टर्नओवर अनुपात",
+  "dateOfIpo": "आईपीओ की तारीख",
+  "fundType": "फंड प्रकार",
+  "managementFee": "प्रबंधन शुल्क",
+  "annualizedReturns": "वार्षिक रिटर्न",
+  "averageGain": "औसत लाभ",
+  "averageLoss": "औसत नुकसान",
+  "maximumDrawdown": "अधिकतम ड्रॉडाउन",
+  "sortinoRatio": "सोर्टिनो अनुपात",
+  "loads": "लोड शुल्क"
 }

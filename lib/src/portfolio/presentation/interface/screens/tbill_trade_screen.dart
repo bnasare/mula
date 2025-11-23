@@ -180,7 +180,7 @@ class _TBillTradeScreenState extends State<TBillTradeScreen> {
                         Row(
                           children: [
                             AppText.medium(
-                              'GHS ',
+                              '${context.localize.ghs} ',
                               style: TextStyle(
                                 color: AppColors.primaryText(context),
                               ),
@@ -208,13 +208,13 @@ class _TBillTradeScreenState extends State<TBillTradeScreen> {
                         // Percentage Buttons
                         Row(
                           children: [
-                            _buildPercentageButton('25%', 0.25),
+                            _buildPercentageButton(context.localize.percent25, 0.25),
                             const SizedBox(width: 8),
-                            _buildPercentageButton('50%', 0.50),
+                            _buildPercentageButton(context.localize.percent50, 0.50),
                             const SizedBox(width: 8),
-                            _buildPercentageButton('75%', 0.75),
+                            _buildPercentageButton(context.localize.percent75, 0.75),
                             const SizedBox(width: 8),
-                            _buildPercentageButton('100%', 1.0),
+                            _buildPercentageButton(context.localize.percent100, 1.0),
                           ],
                         ),
                         const SizedBox(height: 32),
@@ -250,7 +250,7 @@ class _TBillTradeScreenState extends State<TBillTradeScreen> {
               backgroundColor: _isFormValid
                   ? AppColors.appPrimary
                   : AppColors.border(context),
-              textColor: Colors.white,
+              textColor: AppColors.white(context),
               borderRadius: 12,
               padding: EdgeInsets.zero,
             ),
@@ -300,23 +300,23 @@ class _TBillTradeScreenState extends State<TBillTradeScreen> {
         );
       case 2:
         return _buildDetailRow(
-          'Total Charges',
+          context.localize.totalCharges,
           'GHS ${_totalCharges.toStringAsFixed(2)}',
         );
       case 3:
         return _buildDetailRow(
-          'Net Consideration',
+          context.localize.netConsideration,
           'GHS ${_netConsideration.toStringAsFixed(2)}',
           isHighlighted: true,
         );
       case 4:
         return _buildDetailRow(
-          'Estimated Maturity Value',
+          context.localize.estimatedMaturityValue,
           'GHS ${_estimatedMaturityValue.toStringAsFixed(2)}',
         );
       case 5:
         return _buildDetailRow(
-          'Available Cash Balance',
+          context.localize.availableCashBalance,
           'GHS ${widget.availableCashBalance.toStringAsFixed(2)}',
         );
       default:

@@ -25,7 +25,6 @@
   "resetPassword": "Reimposta Password",
   "passwordResetSuccessful": "Password Reimpostata con Successo",
   "passwordResetSuccessDescription": "La tua password è stata reimpostata con successo. Ora puoi accedere con la tua nuova password",
-
   "letsGetYouStarted": "Iniziamo",
   "createFreeAccountDescription": "Crea il tuo account MULA gratuito in meno di un minuto.",
   "fullName": "Nome Completo",
@@ -44,7 +43,6 @@
   "termsOfService": "Termini di Servizio",
   "and": "e",
   "privacyPolicy": "Informativa sulla Privacy",
-
   "otpVerification": "Verifica OTP",
   "enterVerificationCode": "Inserisci il codice di verifica che abbiamo appena inviato al tuo indirizzo email",
   "phoneNumber": "Numero di telefono",
@@ -52,7 +50,6 @@
   "verify": "Verifica",
   "didntReceiveCode": "Non hai ricevuto il codice?",
   "resend": "Invia di nuovo",
-
   "security": "Sicurezza",
   "enableFaceId": "Abilita Face ID",
   "enable": "Abilita",
@@ -66,7 +63,6 @@
   "pinCreatedDescription": "Completiamo la registrazione del tuo account",
   "continueButton": "Continua",
   "enterYourPin": "Inserisci il tuo PIN per continuare",
-
   "tellUsAboutYou": "Parlaci di Te",
   "tellUsAboutYouDescription": "Questo ci aiuta a personalizzare la tua esperienza MULA",
   "dateOfBirth": "Data di Nascita",
@@ -80,39 +76,31 @@
   "enterGpsAddress": "Inserisci il Tuo Indirizzo GPS",
   "occupation": "Occupazione",
   "whatIsYourOccupation": "Qual è la tua occupazione?",
-
   "personalDetails": "Dettagli Personali",
   "personalDetailsDescription": "Abbiamo bisogno di alcuni dettagli per configurare il tuo account",
   "nationality": "Nazionalità",
   "selectNationality": "Seleziona la tua nazionalità",
   "emergencyNumber": "Numero di Emergenza",
   "enterEmergencyNumber": "Inserisci il numero di contatto di emergenza",
-
   "identificationDetails": "Dettagli di Identificazione",
   "submit": "Invia",
-
   "bankDetails": "Dettagli Bancari",
   "selectBank": "Seleziona Banca",
   "selectYourBank": "Seleziona la tua banca",
   "bankAccountNumber": "Numero di conto bancario",
   "enterYourAccountNumber": "Inserisci il tuo numero di conto",
-
   "chooseAccountType": "Scegli il Tipo di Account",
   "chooseAccountTypeDescription": "Scegliere il giusto tipo di account ci aiuta a connetterti con i fornitori giusti.",
-
   "brokers": "Broker",
   "brokersDescription": "Seleziona il tuo broker per iniziare il tuo viaggio di investimento.",
   "noBrokersFound": "Nessun broker trovato",
-
   "accountDetailsSuccessfullySubmitted": "Dettagli account inviati con successo",
   "accountDetailsSuccessDescription": "Il tuo account è stato creato. Controlla la tua email per convalidare il tuo account. Controlla la tua email per aggiornamenti sullo stato della verifica.",
-
   "idVerification": "Verifica Identità",
   "selectIdType": "Seleziona un tipo di ID per verificare la tua identità",
   "ghanaCard": "Carta del Ghana",
   "driversLicense": "Patente di Guida",
   "passport": "Passaporto",
-
   "uploadDocumentsDescription": "Carica i tuoi documenti in modo sicuro per verificare la tua identità e completare la configurazione del tuo account",
   "pictureOfFront": "Foto del fronte",
   "pictureOfBack": "Foto del retro",
@@ -123,7 +111,6 @@
   "issueDate": "Data di emissione",
   "expiryDate": "Data di scadenza",
   "next": "Avanti",
-
   "investmentExperience": "La Tua Esperienza di Investimento",
   "investmentExperienceDescription": "Questo ci aiuta a consigliare i migliori strumenti, risorse e layout per te",
   "beginner": "Principiante",
@@ -132,7 +119,6 @@
   "intermediateDescription": "Ho fatto qualche investimento e capisco come funzionano le cose.",
   "advanced": "Avanzato",
   "advancedDescription": "Ho esperienza e voglio l'accesso completo agli strumenti avanzati.",
-
   "goodHandsTitle": "Sei in buone mani",
   "goodHandsDescription": "Investire può sembrare intimidatorio, ma con MULA, non è necessario essere un esperto per iniziare. Ti guideremo in ogni fase, dal collegamento dei tuoi account alla comprensione del tuo portafoglio, in modo che tu possa investire con fiducia.",
   "hereIsWhatYouCanExpect": "Ecco cosa puoi aspettarti:",
@@ -140,28 +126,23 @@
   "supportWheneverNeeded": "Supporto ogni volta che ne hai bisogno",
   "guidanceToExplore": "Guida per esplorare opportunità di investimento",
   "simpleExplanations": "Spiegazioni semplici ad ogni passo",
-
   "linkInvestmentAccounts": "Collega i Tuoi Conti di Investimento",
   "linkAccountsDescription": "Questo ci aiuta a mostrarti tutto ciò che possiedi, in un unico posto",
   "csdAccount": "Ho un account CSD",
   "csdAccountDescription": "Per titoli come azioni, obbligazioni e buoni del tesoro",
   "cisAccount": "Ho un account CIS",
   "cisAccountDescription": "Da gestori di fondi come Databank, EDC, ecc.",
-  "dontHaveAccount": "Non hai un account?",
   "dontHaveAccountDescription": "Puoi creare un account e iniziare a investire oggi",
-
   "selectFundManager": "Seleziona Gestore Fondi",
   "selectFundManagerDescription": "Seleziona il tuo gestore fondi per iniziare il tuo viaggio di investimento.",
   "searchByAssetNameOrType": "Cerca per nome o tipo di asset",
   "addAnother": "Aggiungi un Altro",
   "done": "Fatto",
-
   "fundManager": "Gestore Fondi",
   "fundsManaged": "Fondi gestiti da",
   "select": "Seleziona",
   "fundManagerLinkedSuccessfully": "Gestore fondi collegato con successo",
   "fundManagerLinkedSuccessDescription": "Il tuo gestore fondi è stato collegato al tuo account. Ora puoi visualizzare e gestire i tuoi investimenti.",
-
   "enterCsdAccountNumber": "Qual è il tuo numero di account CSD?",
   "csdAccountNumberDescription": "Puoi trovare questo numero sul tuo certificato di buono del tesoro. Se non ce l'hai, contatta il tuo broker per assistenza",
   "accountNumber": "Numero di Account",
@@ -171,7 +152,6 @@
   "weFoundYourBrokers": "Abbiamo trovato i tuoi broker",
   "signInToBrokersDescription": "Accedi ai tuoi account broker in modo che possiamo recuperare i tuoi investimenti in modo sicuro",
   "add": "Aggiungi",
-
   "deposit": "Deposita",
   "chooseAccountToTopUp": "Scegli un account da ricaricare",
   "mobileMoneyDeposit": "Mobile Money",
@@ -206,11 +186,10 @@
   "moneySuccessfullyWithdrawn": "Il denaro è stato prelevato con successo",
   "enterPinToConfirm": "Inserisci il tuo PIN per confermare",
   "notifications": "Notifiche",
-  "clearAll": "Cancella Tutto",
+  "clearAll": "Cancella tutto",
   "noNotifications": "Nessuna Notifica",
   "noNotificationsDescription": "Sei aggiornato!",
   "markAllAsRead": "Segna tutto come letto",
-
   "home": "Home",
   "explore": "Esplora",
   "portfolio": "Portafoglio",
@@ -234,7 +213,7 @@
   "transactions": "Transazioni",
   "reportAnIssue": "Segnala un problema",
   "export": "Esporta",
-  "filter": "Filtra",
+  "filter": "Filtro",
   "apply": "Applica",
   "balance": "Saldo",
   "emergencyFunds": "Fondi di Emergenza",
@@ -282,7 +261,6 @@
   "withdrawComingSoon": "Prelievo prossimamente",
   "depositComingSoon": "Deposito prossimamente",
   "noTransactionsYet": "Nessuna transazione ancora",
-
   "hiImMulaBot": "Ciao, sono Mula Bot",
   "yourPersonalGuide": "La tua guida personale per investire in modo intelligente",
   "startChat": "Inizia Chat",
@@ -332,7 +310,6 @@
   "accountLinkedSuccessfully": "Account Collegato con Successo",
   "accountLinkedSuccessDescription": "Il tuo account è stato collegato con successo a MULA",
   "goBack": "Torna Indietro",
-
   "learningTracks": "Percorsi di Apprendimento",
   "featuredTracks": "Percorsi in Evidenza",
   "popularLessons": "Lezioni Popolari",
@@ -353,57 +330,266 @@
   },
   "whatIsAMutualFund": "Cos'è un Fondo Comune?",
   "poolingMoneySpreading": "Raggruppare denaro, distribuire rischio, far crescere ricchezza",
-
   "markAsRead": "Segna come letto",
   "read": "Letto",
   "investIn": "Investi in {asset}",
-  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "@investIn": {
+    "placeholders": {
+      "asset": {
+        "type": "String"
+      }
+    }
+  },
   "takeAQuiz": "Fai un quiz",
   "shareWithFriends": "Condividi con i tuoi amici o lascia un commento",
   "leaveComment": "Lascia un commento",
   "reply": "Rispondi",
   "viewComments": "Visualizza commenti ({count})",
-  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "@viewComments": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "minsRead": "{count} min di lettura",
-  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "@minsRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "views": "{count}k",
-  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "@views": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "showMoreReplies": "Mostra {count} risposte in più",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
-
+  "@showMoreReplies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "question": "Domanda {number}",
-  "@question": {"placeholders": {"number": {"type": "int"}}},
-  "done": "Fatto",
+  "@question": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
   "wellDone": "Ben fatto {name}!",
-  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "@wellDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "youAnsweredCorrectly": "Hai risposto correttamente a {correct} su {total}. Continua a esercitarti per raggiungere il 100%",
-  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@youAnsweredCorrectly": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "quizScoreMessage": "Hai risposto correttamente a {correct} su {total}",
-  "@quizScoreMessage": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@quizScoreMessage": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "keepPracticing": "Continua a esercitarti per raggiungere il 100%",
   "tryAgain": "Riprova",
   "goToHome": "Vai alla home",
   "exploreOtherResources": "Esplora altre risorse",
   "pts": "+{points}pt",
-  "@pts": {"placeholders": {"points": {"type": "int"}}},
-
+  "@pts": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "searchByAsset": "Cerca per asset",
-  "sortBy": "Ordina per",
   "relevance": "Rilevanza",
-  "clearAll": "Cancella tutto",
   "popular": "Popolare",
   "stocks": "Azioni",
   "highYieldFunds": "Fondi ad Alto Rendimento",
   "tBills": "Buoni del Tesoro",
-  "filter": "Filtro",
-  "dateRange": "Intervallo di Date",
-  "last30Days": "Ultimi 30 giorni",
-  "last60Days": "Ultimi 60 giorni",
-  "thisYear": "Quest'Anno",
-  "customDate": "Data Personalizzata",
   "stock": "Azione",
   "selectLevel": "Seleziona livello",
   "category": "Categoria",
   "selectCategory": "Seleziona Categoria",
-  "apply": "Applica"
+  "assetBreakdown": "Ripartizione Patrimoniale",
+  "assetHoldings": "Partecipazioni Patrimoniali",
+  "portfolioSummary": "Riepilogo Portafoglio",
+  "totalInvestmentValue": "Valore Totale Investimenti",
+  "totalDeposit": "Deposito Totale",
+  "totalWithdrawal": "Prelievo Totale",
+  "realizedIncome": "Reddito Realizzato",
+  "unrealizedIncome": "Reddito Non Realizzato",
+  "cumulativeReturn": "Rendimento Cumulativo",
+  "seePortfolioSummary": "Vedi riepilogo portafoglio",
+  "noPortfolioData": "Nessun dato portafoglio disponibile",
+  "seeAdvancedChart": "Vedi Grafico Avanzato",
+  "myInvestments": "I Miei Investimenti",
+  "currentValue": "Valore Attuale",
+  "returnLabel": "Rendimento",
+  "shares": "Azioni",
+  "costPrice": "Prezzo di costo",
+  "capitalGains": "Plusvalenze/(Minusvalenze)",
+  "about": "Informazioni",
+  "treasuryBill": "Buono del Tesoro",
+  "purchaseInterestRate": "Tasso di Interesse di Acquisto",
+  "accruedInterest": "Interessi Maturati",
+  "overview": "Panoramica",
+  "holdings": "Partecipazioni",
+  "allocation": "Allocazione",
+  "metrics": "Metriche",
+  "units": "Unità",
+  "industry": "Settore",
+  "rank": "Classifica",
+  "ghanaCedi": "Cedi Ghanese",
+  "backToChart": "Torna al grafico",
+  "limitMarket": "Mercato Limitato",
+  "marketOrder": "Ordine di Mercato",
+  "cashBalance": "Saldo Cassa",
+  "enterSharesPurchaseHint": "Inserisci il numero di azioni che vuoi acquistare",
+  "enterSharesSellHint": "Inserisci il numero di azioni che vuoi vendere",
+  "enterAmountPurchaseHint": "Inserisci l'importo che vuoi acquistare",
+  "enterAmountSellHint": "Inserisci l'importo che vuoi vendere",
+  "reviewOrder": "Rivedi Ordine",
+  "review": "Rivedi",
+  "interestRate": "Tasso di Interesse",
+  "grossConsideration": "Corrispettivo Lordo",
+  "informationTechnology": "Tecnologia dell'Informazione",
+  "companyInc": "Company Inc",
+  "sector": "Settore",
+  "country": "Paese",
+  "weight": "Peso",
+  "treasuryBillAbout": "I Buoni del Tesoro sono titoli governativi a breve termine emessi dal Governo del Ghana per raccogliere fondi per le operazioni governative e gestire il flusso di cassa. Sono considerati una delle opzioni di investimento più sicure in Ghana.",
+  "mutualFundAbout": "Un fondo comune è un veicolo di investimento che raccoglie denaro da più investitori per investire in un portafoglio diversificato di azioni, obbligazioni o altri titoli. Il fondo è gestito da gestori di fondi professionisti che prendono decisioni di investimento per conto degli investitori.",
+  "chooseOrderType": "Scegli il tipo di ordine",
+  "chooseHowExecute": "Scegli come vuoi che il tuo ordine venga eseguito",
+  "marketOrderDesc": "Esegui immediatamente al miglior prezzo disponibile",
+  "limitOrderDesc": "Imposta il tuo prezzo. L'ordine viene eseguito solo se viene raggiunto il prezzo scelto",
+  "limitOrder": "Ordine limite",
+  "confirmDetailsBeforeBuy": "Conferma i dettagli prima di acquistare",
+  "confirmDetailsBeforeSell": "Conferma i dettagli prima di vendere",
+  "confirmDetailsBeforeProceeding": "Conferma i dettagli prima di procedere",
+  "orderType": "Tipo di ordine",
+  "orderPrice": "Prezzo dell'ordine",
+  "numberOfShares": "Numero di azioni",
+  "currentPrice": "Prezzo attuale",
+  "totalCharges": "Costi totali",
+  "netConsideration": "Controvalore netto",
+  "availableCashBalance": "Saldo di cassa disponibile",
+  "confirm": "Conferma",
+  "orderSuccessful": "Ordine riuscito",
+  "orderSubmittedBroker": "La tua richiesta d'ordine è stata inviata al broker",
+  "orderSubmittedFundManager": "La tua richiesta d'ordine è stata inviata al gestore del fondo",
+  "trackInPortfolio": "Traccia nel portafoglio",
+  "tradeOtherStocks": "Scambia altre azioni",
+  "tradeOtherFunds": "Scambia altri fondi",
+  "tradeOtherSecurities": "Scambia altri titoli",
+  "estimatedMaturityValue": "Valore di scadenza stimato",
+  "availableCashBalanceTitle": "Saldo di cassa disponibile",
+  "noDataAvailable": "Nessun dato disponibile",
+  "open": "Apertura",
+  "high": "Massimo",
+  "low": "Minimo",
+  "close": "Chiusura",
+  "howMuchBuy": "Quanto vuoi comprare?",
+  "howMuchSell": "Quanto vuoi vendere?",
+  "buySuccessful": "Acquisto riuscito",
+  "sellSuccessful": "Vendita riuscita",
+  "sharesLabel": "Azioni",
+  "assetType": "Tipo di attività",
+  "bonds": "Obbligazioni",
+  "reits": "REIT",
+  "positive": "Positivo",
+  "negative": "Negativo",
+  "valueHighToLow": "Valore (Alto a Basso)",
+  "valueLowToHigh": "Valore (Basso ad Alto)",
+  "changePercentHighToLow": "Variazione % (Alto a Basso)",
+  "changePercentLowToHigh": "Variazione % (Basso ad Alto)",
+  "searchByAssetName": "Cerca per nome attività",
+  "dateOfIncorporation": "Data di costituzione",
+  "dateOfIPO": "Data di IPO",
+  "telecommunications": "Telecomunicazioni",
+  "previousClose": "Chiusura precedente(GHS)",
+  "openGHS": "Apertura(GHS)",
+  "daysRange": "Range giornaliero(GHS)",
+  "volumeTraded": "Volume scambiato",
+  "fiftyTwoWeekRange": "Range 52 settimane(GHS)",
+  "peRatio": "Rapporto P/E",
+  "earningsPerShare": "Utile per azione(GHS)",
+  "dividendYield": "Rendimento da dividendo",
+  "marketCap": "Capitalizzazione di mercato(GHS)",
+  "sharesOutstanding": "Azioni in circolazione",
+  "capitalGainsLosses": "Plusvalenze/(Minusvalenze)",
+  "issuer": "Emittente",
+  "governmentOfGhana": "Governo del Ghana",
+  "currency": "Valuta",
+  "ghs": "GHS",
+  "maturityDate": "Data di scadenza",
+  "currentRate": "Tasso attuale",
+  "maturityRate": "Tasso di scadenza",
+  "couponRate": "Tasso della cedola",
+  "enterSharesPurchase": "Inserisci il numero di azioni che vuoi acquistare",
+  "enterSharesSell": "Inserisci il numero di azioni che vuoi vendere",
+  "enterAmountPurchase": "Inserisci l'importo che vuoi acquistare",
+  "enterAmountSell": "Inserisci l'importo che vuoi vendere",
+  "orderExecutedInstantly": "Il tuo ordine verrà eseguito istantaneamente al miglior prezzo disponibile",
+  "orderExecutedAtPrice": "Il tuo ordine verrà eseguito se viene raggiunto il prezzo scelto",
+  "enterOrderPrice": "Inserisci il prezzo dell'ordine",
+  "percent25": "25%",
+  "percent50": "50%",
+  "percent75": "75%",
+  "percent100": "100%",
+  "enterUnitsPurchase": "Inserisci il numero di quote che vuoi acquistare",
+  "enterUnitsSell": "Inserisci il numero di quote che vuoi vendere",
+  "numberOfUnits": "Numero di quote",
+  "nav": "NAV",
+  "aum": "Patrimonio gestito",
+  "expenseRatio": "Rapporto di spesa",
+  "minimumInvestment": "Investimento minimo",
+  "inceptionDate": "Data di avvio",
+  "ytdReturn": "Rendimento da inizio anno",
+  "oneYearReturn": "Rendimento a 1 anno",
+  "threeYearReturn": "Rendimento a 3 anni",
+  "fiveYearReturn": "Rendimento a 5 anni",
+  "tenYearReturn": "Rendimento a 10 anni",
+  "sinceInception": "Dall'avvio",
+  "standardDeviation": "Deviazione standard",
+  "sharpeRatio": "Indice di Sharpe",
+  "beta": "Beta",
+  "alpha": "Alfa",
+  "rSquared": "R quadrato",
+  "turnoverRatio": "Rapporto di turnover",
+  "dateOfIpo": "Data dell'IPO",
+  "fundType": "Tipo di fondo",
+  "managementFee": "Commissione di gestione",
+  "annualizedReturns": "Rendimenti annualizzati",
+  "averageGain": "Guadagno medio",
+  "averageLoss": "Perdita media",
+  "maximumDrawdown": "Drawdown massimo",
+  "sortinoRatio": "Rapporto di Sortino",
+  "loads": "Commissioni di sottoscrizione"
 }

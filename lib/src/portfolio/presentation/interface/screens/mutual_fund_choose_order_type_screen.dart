@@ -5,6 +5,7 @@ import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/presentation/widgets/selectable_option_card.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../domain/entities/trade_type.dart';
 import 'mutual_fund_trade_screen.dart';
@@ -55,7 +56,7 @@ class _MutualFundChooseOrderTypeScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.background(context),
-      appBar: const MulaAppBar(title: 'Choose Order Type'),
+      appBar: MulaAppBar(title: context.localize.chooseOrderType),
       body: Column(
         children: [
           Expanded(
@@ -65,7 +66,7 @@ class _MutualFundChooseOrderTypeScreenState
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   AppText.small(
-                    'Choose how you want your order to be executed',
+                    context.localize.chooseHowExecute,
                     color: AppColors.secondaryText(context),
                   ),
                   const SizedBox(height: 24),
@@ -74,9 +75,8 @@ class _MutualFundChooseOrderTypeScreenState
                   SelectableOptionCard(
                     value: 'market',
                     selectedValue: _selectedOrderType,
-                    title: 'Market Order',
-                    description:
-                        'Execute immediately at the best available price',
+                    title: context.localize.marketOrder,
+                    description: context.localize.marketOrderDesc,
                     onTap: () {
                       setState(() {
                         _selectedOrderType = 'market';
@@ -89,9 +89,8 @@ class _MutualFundChooseOrderTypeScreenState
                   SelectableOptionCard(
                     value: 'limit',
                     selectedValue: _selectedOrderType,
-                    title: 'Limit Order',
-                    description:
-                        'Set your own price. The order only executes if the chosen price is reached',
+                    title: context.localize.limitOrder,
+                    description: context.localize.limitOrderDesc,
                     onTap: () {
                       setState(() {
                         _selectedOrderType = 'limit';
@@ -115,10 +114,10 @@ class _MutualFundChooseOrderTypeScreenState
               ),
             ),
             child: AppButton(
-              text: 'Continue',
+              text: context.localize.continueButton,
               onTap: _handleContinue,
               backgroundColor: AppColors.appPrimary,
-              textColor: Colors.white,
+              textColor: AppColors.white(context),
               borderRadius: 12,
               padding: EdgeInsets.zero,
             ),

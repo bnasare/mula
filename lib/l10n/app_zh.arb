@@ -1,6 +1,5 @@
 {
   "@@locale": "zh",
-
   "welcomeTo": "欢迎来到",
   "mula": "MULA",
   "oneAppAllInvestments": "一个应用。所有投资",
@@ -26,7 +25,6 @@
   "resetPassword": "重置密码",
   "passwordResetSuccessful": "密码重置成功",
   "passwordResetSuccessDescription": "您的密码已成功重置。现在您可以使用新密码登录",
-
   "letsGetYouStarted": "让我们开始吧",
   "createFreeAccountDescription": "不到一分钟即可创建您的免费 MULA 账户。",
   "fullName": "全名",
@@ -45,7 +43,6 @@
   "termsOfService": "服务条款",
   "and": "和",
   "privacyPolicy": "隐私政策",
-
   "otpVerification": "OTP 验证",
   "enterVerificationCode": "输入我们刚刚发送到您电子邮箱的验证码",
   "phoneNumber": "电话号码",
@@ -53,7 +50,6 @@
   "verify": "验证",
   "didntReceiveCode": "没有收到验证码？",
   "resend": "重新发送",
-
   "security": "安全",
   "enableFaceId": "启用 Face ID",
   "enable": "启用",
@@ -67,7 +63,6 @@
   "pinCreatedDescription": "让我们完成您的账户注册",
   "continueButton": "继续",
   "enterYourPin": "输入您的PIN码以继续",
-
   "tellUsAboutYou": "告诉我们关于您",
   "tellUsAboutYouDescription": "这有助于我们个性化您的 MULA 体验",
   "dateOfBirth": "出生日期",
@@ -81,39 +76,31 @@
   "enterGpsAddress": "输入您的 GPS 地址",
   "occupation": "职业",
   "whatIsYourOccupation": "您的职业是什么？",
-
   "personalDetails": "个人信息",
   "personalDetailsDescription": "我们需要一些详细信息来设置您的账户",
   "nationality": "国籍",
   "selectNationality": "选择您的国籍",
   "emergencyNumber": "紧急联系电话",
   "enterEmergencyNumber": "输入紧急联系电话",
-
   "identificationDetails": "身份信息",
   "submit": "提交",
-
   "bankDetails": "银行详情",
   "selectBank": "选择银行",
   "selectYourBank": "选择您的银行",
   "bankAccountNumber": "银行账户号码",
   "enterYourAccountNumber": "输入您的账户号码",
-
   "chooseAccountType": "选择账户类型",
   "chooseAccountTypeDescription": "选择正确的账户类型可帮助我们将您与合适的提供商联系起来。",
-
   "brokers": "经纪人",
   "brokersDescription": "选择您的经纪人开始您的投资之旅。",
   "noBrokersFound": "未找到经纪人",
-
   "accountDetailsSuccessfullySubmitted": "账户详情提交成功",
   "accountDetailsSuccessDescription": "您的账户已创建。请检查您的邮箱以验证您的账户。请查看您的邮箱了解验证状态的更新。",
-
   "idVerification": "身份验证",
   "selectIdType": "选择身份证件类型以验证您的身份",
   "ghanaCard": "加纳卡",
   "driversLicense": "驾驶执照",
   "passport": "护照",
-
   "uploadDocumentsDescription": "安全上传您的文件以验证您的身份并完成账户设置",
   "pictureOfFront": "正面照片",
   "pictureOfBack": "背面照片",
@@ -124,7 +111,6 @@
   "issueDate": "发行日期",
   "expiryDate": "到期日期",
   "next": "下一步",
-
   "investmentExperience": "您的投资经验",
   "investmentExperienceDescription": "这有助于我们为您推荐最佳的工具、资源和布局",
   "beginner": "初学者",
@@ -133,7 +119,6 @@
   "intermediateDescription": "我已经做过一些投资，了解事情的运作方式。",
   "advanced": "高级",
   "advancedDescription": "我有经验，想要完全访问高级工具。",
-
   "goodHandsTitle": "您在安全的手中",
   "goodHandsDescription": "投资可能听起来令人生畏，但使用 MULA，您无需成为专家即可开始。我们将引导您完成每一步，从关联您的账户到了解您的投资组合，让您充满信心地进行投资。",
   "hereIsWhatYouCanExpect": "您可以期待以下内容：",
@@ -141,28 +126,23 @@
   "supportWheneverNeeded": "随时为您提供支持",
   "guidanceToExplore": "探索投资机会的指导",
   "simpleExplanations": "每一步都有简单的解释",
-
   "linkInvestmentAccounts": "关联您的投资账户",
   "linkAccountsDescription": "这有助于我们在一个地方向您展示您拥有的一切",
   "csdAccount": "我有 CSD 账户",
   "csdAccountDescription": "用于股票、债券和国债等证券",
   "cisAccount": "我有 CIS 账户",
   "cisAccountDescription": "来自 Databank、EDC 等基金管理公司",
-  "dontHaveAccount": "还没有账户？",
   "dontHaveAccountDescription": "您可以创建账户并立即开始投资",
-
   "selectFundManager": "选择基金管理公司",
   "selectFundManagerDescription": "选择您的基金管理公司开始您的投资之旅。",
   "searchByAssetNameOrType": "按资产名称或类型搜索",
   "addAnother": "添加另一个",
   "done": "完成",
-
   "fundManager": "基金管理公司",
   "fundsManaged": "管理的基金",
   "select": "选择",
   "fundManagerLinkedSuccessfully": "基金管理公司关联成功",
   "fundManagerLinkedSuccessDescription": "您的基金管理公司已关联到您的账户。您现在可以查看和管理您的投资。",
-
   "enterCsdAccountNumber": "您的 CSD 账户号码是什么？",
   "csdAccountNumberDescription": "您可以在国债证书上找到此号码。如果您没有，请联系您的经纪人寻求帮助",
   "accountNumber": "账户号码",
@@ -172,7 +152,6 @@
   "weFoundYourBrokers": "我们找到了您的经纪人",
   "signInToBrokersDescription": "登录您的经纪人账户，以便我们安全地获取您的投资",
   "add": "添加",
-
   "deposit": "存款",
   "chooseAccountToTopUp": "选择要充值的账户",
   "mobileMoneyDeposit": "移动支付",
@@ -207,11 +186,10 @@
   "moneySuccessfullyWithdrawn": "资金已成功取出",
   "enterPinToConfirm": "输入您的 PIN 码以确认",
   "notifications": "通知",
-  "clearAll": "全部清除",
+  "clearAll": "清除全部",
   "noNotifications": "无通知",
   "noNotificationsDescription": "您已经查看完所有内容！",
   "markAllAsRead": "全部标记为已读",
-
   "home": "主页",
   "explore": "探索",
   "portfolio": "投资组合",
@@ -283,7 +261,6 @@
   "withdrawComingSoon": "取款即将推出",
   "depositComingSoon": "存款即将推出",
   "noTransactionsYet": "还没有交易记录",
-
   "hiImMulaBot": "你好，我是 Mula Bot",
   "yourPersonalGuide": "您的智能投资个人指南",
   "startChat": "开始聊天",
@@ -333,7 +310,6 @@
   "accountLinkedSuccessfully": "账户关联成功",
   "accountLinkedSuccessDescription": "您的账户已成功关联到MULA",
   "goBack": "返回",
-
   "learningTracks": "学习路径",
   "featuredTracks": "精选路径",
   "popularLessons": "热门课程",
@@ -354,57 +330,266 @@
   },
   "whatIsAMutualFund": "什么是共同基金？",
   "poolingMoneySpreading": "汇集资金，分散风险，增长财富",
-
   "markAsRead": "标记为已读",
   "read": "已读",
   "investIn": "投资{asset}",
-  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "@investIn": {
+    "placeholders": {
+      "asset": {
+        "type": "String"
+      }
+    }
+  },
   "takeAQuiz": "参加测验",
   "shareWithFriends": "与朋友分享或发表评论",
   "leaveComment": "发表评论",
   "reply": "回复",
   "viewComments": "查看评论 ({count})",
-  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "@viewComments": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "minsRead": "{count}分钟阅读",
-  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "@minsRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "views": "{count}k",
-  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "@views": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "showMoreReplies": "显示{count}条更多回复",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
-
+  "@showMoreReplies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "question": "问题 {number}",
-  "@question": {"placeholders": {"number": {"type": "int"}}},
-  "done": "完成",
+  "@question": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
   "wellDone": "做得好 {name}!",
-  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "@wellDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "youAnsweredCorrectly": "您正确回答了{total}题中的{correct}题。继续练习以达到100%掌握",
-  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@youAnsweredCorrectly": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "quizScoreMessage": "您正确回答了{total}题中的{correct}题",
-  "@quizScoreMessage": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@quizScoreMessage": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "keepPracticing": "继续练习以达到100%掌握",
   "tryAgain": "再试一次",
   "goToHome": "返回首页",
   "exploreOtherResources": "探索其他资源",
   "pts": "+{points}分",
-  "@pts": {"placeholders": {"points": {"type": "int"}}},
-
+  "@pts": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "searchByAsset": "按资产搜索",
-  "sortBy": "排序方式",
   "relevance": "相关性",
-  "clearAll": "清除全部",
   "popular": "热门",
   "stocks": "股票",
   "highYieldFunds": "高收益基金",
   "tBills": "国库券",
-  "filter": "筛选",
-  "dateRange": "日期范围",
-  "last30Days": "最近30天",
-  "last60Days": "最近60天",
-  "thisYear": "今年",
-  "customDate": "自定义日期",
   "stock": "股票",
   "selectLevel": "选择级别",
   "category": "类别",
   "selectCategory": "选择类别",
-  "apply": "应用"
+  "assetBreakdown": "资产分类",
+  "assetHoldings": "资产持有",
+  "portfolioSummary": "投资组合摘要",
+  "totalInvestmentValue": "总投资价值",
+  "totalDeposit": "总存款",
+  "totalWithdrawal": "总提款",
+  "realizedIncome": "已实现收入",
+  "unrealizedIncome": "未实现收入",
+  "cumulativeReturn": "累计回报",
+  "seePortfolioSummary": "查看投资组合摘要",
+  "noPortfolioData": "无可用的投资组合数据",
+  "seeAdvancedChart": "查看高级图表",
+  "myInvestments": "我的投资",
+  "currentValue": "当前价值",
+  "returnLabel": "回报",
+  "shares": "股份",
+  "costPrice": "成本价",
+  "capitalGains": "资本收益/(损失)",
+  "about": "关于",
+  "treasuryBill": "国库券",
+  "purchaseInterestRate": "购买利率",
+  "accruedInterest": "应计利息",
+  "overview": "概述",
+  "holdings": "持有",
+  "allocation": "配置",
+  "metrics": "指标",
+  "units": "单位",
+  "industry": "行业",
+  "rank": "排名",
+  "ghanaCedi": "加纳塞地",
+  "backToChart": "返回图表",
+  "limitMarket": "限价市场",
+  "marketOrder": "市价订单",
+  "cashBalance": "现金余额",
+  "enterSharesPurchaseHint": "输入您想购买的股份数量",
+  "enterSharesSellHint": "输入您想出售的股份数量",
+  "enterAmountPurchaseHint": "输入您想购买的金额",
+  "enterAmountSellHint": "输入您想出售的金额",
+  "reviewOrder": "审核订单",
+  "review": "审核",
+  "interestRate": "利率",
+  "grossConsideration": "总对价",
+  "informationTechnology": "信息技术",
+  "companyInc": "Company Inc",
+  "sector": "部门",
+  "country": "国家",
+  "weight": "权重",
+  "treasuryBillAbout": "国库券是加纳政府发行的短期政府证券，用于为政府运营筹集资金和管理现金流。它们被认为是加纳最安全的投资选择之一。",
+  "mutualFundAbout": "共同基金是一种投资工具，汇集多个投资者的资金，投资于股票、债券或其他证券的多元化投资组合。该基金由专业基金经理管理，代表投资者做出投资决策。",
+  "chooseOrderType": "选择订单类型",
+  "chooseHowExecute": "选择您希望如何执行订单",
+  "marketOrderDesc": "立即以最佳可用价格执行",
+  "limitOrderDesc": "设定您自己的价格。订单仅在达到所选价格时执行",
+  "limitOrder": "限价订单",
+  "confirmDetailsBeforeBuy": "购买前确认详情",
+  "confirmDetailsBeforeSell": "出售前确认详情",
+  "confirmDetailsBeforeProceeding": "继续前确认详情",
+  "orderType": "订单类型",
+  "orderPrice": "订单价格",
+  "numberOfShares": "股份数量",
+  "currentPrice": "当前价格",
+  "totalCharges": "总费用",
+  "netConsideration": "净对价",
+  "availableCashBalance": "可用现金余额",
+  "confirm": "确认",
+  "orderSuccessful": "订单成功",
+  "orderSubmittedBroker": "您的订单请求已提交给经纪人",
+  "orderSubmittedFundManager": "您的订单请求已提交给基金经理",
+  "trackInPortfolio": "在投资组合中跟踪",
+  "tradeOtherStocks": "交易其他股票",
+  "tradeOtherFunds": "交易其他基金",
+  "tradeOtherSecurities": "交易其他证券",
+  "estimatedMaturityValue": "预计到期价值",
+  "availableCashBalanceTitle": "可用现金余额",
+  "noDataAvailable": "无可用数据",
+  "open": "开盘",
+  "high": "最高",
+  "low": "最低",
+  "close": "收盘",
+  "howMuchBuy": "您想购买多少？",
+  "howMuchSell": "您想出售多少？",
+  "buySuccessful": "购买成功",
+  "sellSuccessful": "出售成功",
+  "sharesLabel": "股份",
+  "assetType": "资产类型",
+  "bonds": "债券",
+  "reits": "房地产投资信托",
+  "positive": "正面",
+  "negative": "负面",
+  "valueHighToLow": "价值（从高到低）",
+  "valueLowToHigh": "价值（从低到高）",
+  "changePercentHighToLow": "变化%（从高到低）",
+  "changePercentLowToHigh": "变化%（从低到高）",
+  "searchByAssetName": "按资产名称搜索",
+  "dateOfIncorporation": "成立日期",
+  "dateOfIPO": "IPO日期",
+  "telecommunications": "电信",
+  "previousClose": "昨收(GHS)",
+  "openGHS": "开盘(GHS)",
+  "daysRange": "当日范围(GHS)",
+  "volumeTraded": "成交量",
+  "fiftyTwoWeekRange": "52周范围(GHS)",
+  "peRatio": "市盈率",
+  "earningsPerShare": "每股收益(GHS)",
+  "dividendYield": "股息收益率",
+  "marketCap": "市值(GHS)",
+  "sharesOutstanding": "流通股",
+  "capitalGainsLosses": "资本收益/(损失)",
+  "issuer": "发行人",
+  "governmentOfGhana": "加纳政府",
+  "currency": "货币",
+  "ghs": "GHS",
+  "maturityDate": "到期日",
+  "currentRate": "当前利率",
+  "maturityRate": "到期利率",
+  "couponRate": "票面利率",
+  "enterSharesPurchase": "输入您要购买的股份数量",
+  "enterSharesSell": "输入您要出售的股份数量",
+  "enterAmountPurchase": "输入您要购买的金额",
+  "enterAmountSell": "输入您要出售的金额",
+  "orderExecutedInstantly": "您的订单将立即以最佳可用价格执行",
+  "orderExecutedAtPrice": "如果达到所选价格，您的订单将被执行",
+  "enterOrderPrice": "输入订单价格",
+  "percent25": "25%",
+  "percent50": "50%",
+  "percent75": "75%",
+  "percent100": "100%",
+  "enterUnitsPurchase": "输入您要购买的份额数量",
+  "enterUnitsSell": "输入您要出售的份额数量",
+  "numberOfUnits": "份额数量",
+  "nav": "净值",
+  "aum": "管理资产",
+  "expenseRatio": "费用率",
+  "minimumInvestment": "最低投资额",
+  "inceptionDate": "成立日期",
+  "ytdReturn": "年初至今回报",
+  "oneYearReturn": "1年回报",
+  "threeYearReturn": "3年回报",
+  "fiveYearReturn": "5年回报",
+  "tenYearReturn": "10年回报",
+  "sinceInception": "自成立以来",
+  "standardDeviation": "标准差",
+  "sharpeRatio": "夏普比率",
+  "beta": "贝塔",
+  "alpha": "阿尔法",
+  "rSquared": "R平方",
+  "turnoverRatio": "周转率",
+  "dateOfIpo": "IPO日期",
+  "fundType": "基金类型",
+  "managementFee": "管理费",
+  "annualizedReturns": "年化收益",
+  "averageGain": "平均收益",
+  "averageLoss": "平均损失",
+  "maximumDrawdown": "最大回撤",
+  "sortinoRatio": "索提诺比率",
+  "loads": "费用"
 }

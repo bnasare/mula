@@ -29,8 +29,8 @@ class _LearnSearchScreenState extends State<LearnSearchScreen> {
   @override
   void initState() {
     super.initState();
-    _searchHistory = DummyLearnData.getSearchHistory();
-    _popularSearches = DummyLearnData.getPopularSearches();
+    _searchHistory = List.from(DummyLearnData.getSearchHistory());
+    _popularSearches = List.from(DummyLearnData.getPopularSearches());
   }
 
   @override

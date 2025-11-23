@@ -169,15 +169,15 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
     );
   }
 
-  String get _inputHint {
+  String _inputHint(BuildContext context) {
     if (_selectedTab == 0) {
       return widget.tradeType == TradeType.buy
-          ? 'Enter number of units you want to purchase'
-          : 'Enter number of units you want to sell';
+          ? context.localize.enterUnitsPurchase
+          : context.localize.enterUnitsSell;
     } else {
       return widget.tradeType == TradeType.buy
-          ? 'Enter the amount you want to purchase'
-          : 'Enter the amount you want to sell';
+          ? context.localize.enterAmountPurchase
+          : context.localize.enterAmountSell;
     }
   }
 
@@ -203,8 +203,8 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: AppText.smaller(
                         widget.orderType == 'market'
-                            ? 'Your order will be executed instantly at the best available price'
-                            : 'Your order will be executed if the chosen price is reached',
+                            ? context.localize.orderExecutedInstantly
+                            : context.localize.orderExecutedAtPrice,
                         color: AppColors.primaryText(context),
                       ),
                     ),
@@ -267,14 +267,14 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
                               children: [
                                 Expanded(
                                   child: AssetTabButton(
-                                    label: 'Units',
+                                    label: context.localize.units,
                                     isActive: _selectedTab == 0,
                                     onTap: () => _handleTabChange(0),
                                   ),
                                 ),
                                 Expanded(
                                   child: AssetTabButton(
-                                    label: 'Amount',
+                                    label: context.localize.amount,
                                     isActive: _selectedTab == 1,
                                     onTap: () => _handleTabChange(1),
                                   ),
@@ -286,7 +286,7 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
 
                           // Input Field
                           AppText.small(
-                            _inputHint,
+                            _inputHint(context),
                             color: AppColors.secondaryText(context),
                           ),
                           const SizedBox(height: 12),
@@ -309,7 +309,7 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
                           if (widget.orderType == 'limit') ...[
                             const SizedBox(height: 24),
                             AppText.small(
-                              'Enter order price',
+                              context.localize.enterOrderPrice,
                               color: AppColors.secondaryText(context),
                             ),
                             const SizedBox(height: 12),
@@ -361,7 +361,7 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
                 backgroundColor: _isFormValid
                     ? AppColors.appPrimary
                     : AppColors.border(context),
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,
               ),
@@ -377,35 +377,35 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
       // Limit order: 7 rows with Order Type at top
       switch (index) {
         case 0:
-          return _buildDetailRow('Order Type', 'Limit Order');
+          return _buildDetailRow(context.localize.orderType, context.localize.limitOrder);
         case 1:
           return _buildDetailRow(
-            'Order Price',
+            context.localize.orderPrice,
             'GHS ${_effectivePrice.toStringAsFixed(2)}',
           );
         case 2:
           return _buildDetailRow(
-            'Gross Consideration',
+            context.localize.grossConsideration,
             'GHS ${_grossConsideration.toStringAsFixed(2)}',
           );
         case 3:
           return _buildDetailRow(
-            'Total Charges',
+            context.localize.totalCharges,
             'GHS ${_totalCharges.toStringAsFixed(2)}',
           );
         case 4:
           return _buildDetailRow(
-            'Net Consideration',
+            context.localize.netConsideration,
             'GHS ${_netConsideration.toStringAsFixed(2)}',
           );
         case 5:
           return _buildDetailRow(
-            'Fund Manager',
+            context.localize.fundManager,
             'Databank', // TODO: Get from fund data
           );
         case 6:
           return _buildDetailRow(
-            'Available Cash balance',
+            context.localize.availableCashBalance,
             'GHS ${widget.availableCashBalance.toStringAsFixed(2)}',
           );
         default:
@@ -416,32 +416,32 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
       switch (index) {
         case 0:
           return _buildDetailRow(
-            'Current Price',
+            context.localize.currentPrice,
             'GHS ${_effectivePrice.toStringAsFixed(2)}',
           );
         case 1:
           return _buildDetailRow(
-            'Gross Consideration',
+            context.localize.grossConsideration,
             'GHS ${_grossConsideration.toStringAsFixed(2)}',
           );
         case 2:
           return _buildDetailRow(
-            'Total Charges',
+            context.localize.totalCharges,
             'GHS ${_totalCharges.toStringAsFixed(2)}',
           );
         case 3:
           return _buildDetailRow(
-            'Net Consideration',
+            context.localize.netConsideration,
             'GHS ${_netConsideration.toStringAsFixed(2)}',
           );
         case 4:
           return _buildDetailRow(
-            'Fund Manager',
+            context.localize.fundManager,
             'Databank', // TODO: Get from fund data
           );
         case 5:
           return _buildDetailRow(
-            'Available Cash balance',
+            context.localize.availableCashBalance,
             'GHS ${widget.availableCashBalance.toStringAsFixed(2)}',
           );
         default:

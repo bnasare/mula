@@ -1084,152 +1084,472 @@ class AppLocalizationsJa extends AppLocalizations {
   String get selectCategory => 'カテゴリーを選択';
 
   @override
-  String get assetBreakdown => 'Asset Breakdown';
+  String get assetBreakdown => '資産内訳';
 
   @override
-  String get assetHoldings => 'Asset Holdings';
+  String get assetHoldings => '資産保有';
 
   @override
-  String get portfolioSummary => 'Portfolio Summary';
+  String get portfolioSummary => 'ポートフォリオサマリー';
 
   @override
-  String get totalInvestmentValue => 'Total Investment Value';
+  String get totalInvestmentValue => '総投資額';
 
   @override
-  String get totalDeposit => 'Total Deposit';
+  String get totalDeposit => '総入金額';
 
   @override
-  String get totalWithdrawal => 'Total Withdrawal';
+  String get totalWithdrawal => '総出金額';
 
   @override
-  String get realizedIncome => 'Realized Income';
+  String get realizedIncome => '実現損益';
 
   @override
-  String get unrealizedIncome => 'Unrealized Income';
+  String get unrealizedIncome => '未実現損益';
 
   @override
-  String get cumulativeReturn => 'Cumulative Return';
+  String get cumulativeReturn => '累積収益';
 
   @override
-  String get seePortfolioSummary => 'See portfolio summary';
+  String get seePortfolioSummary => 'ポートフォリオサマリーを見る';
 
   @override
-  String get noPortfolioData => 'No portfolio data available';
+  String get noPortfolioData => 'ポートフォリオデータがありません';
 
   @override
-  String get seeAdvancedChart => 'See Advanced Chart';
+  String get seeAdvancedChart => '詳細チャートを見る';
 
   @override
-  String get myInvestments => 'My Investments';
+  String get myInvestments => 'マイ投資';
 
   @override
-  String get currentValue => 'Current Value';
+  String get currentValue => '現在の価値';
 
   @override
-  String get returnLabel => 'Return';
+  String get returnLabel => 'リターン';
 
   @override
-  String get shares => 'Shares';
+  String get shares => '株式';
 
   @override
-  String get costPrice => 'Cost Price';
+  String get costPrice => '原価';
 
   @override
-  String get capitalGains => 'Capital Gains/(Losses)';
+  String get capitalGains => 'キャピタルゲイン/(損失)';
 
   @override
-  String get about => 'About';
+  String get about => 'について';
 
   @override
-  String get treasuryBill => 'Treasury Bill';
+  String get treasuryBill => '財務省証券';
 
   @override
-  String get purchaseInterestRate => 'Purchase Interest Rate';
+  String get purchaseInterestRate => '購入金利';
 
   @override
-  String get accruedInterest => 'Accrued Interest';
+  String get accruedInterest => '未収利息';
 
   @override
-  String get overview => 'Overview';
+  String get overview => '概要';
 
   @override
-  String get holdings => 'Holdings';
+  String get holdings => '保有銘柄';
 
   @override
-  String get allocation => 'Allocation';
+  String get allocation => '配分';
 
   @override
-  String get metrics => 'Metrics';
+  String get metrics => 'メトリクス';
 
   @override
-  String get units => 'Units';
+  String get units => 'ユニット';
 
   @override
-  String get industry => 'Industry';
+  String get industry => '業界';
 
   @override
-  String get rank => 'Rank';
+  String get rank => 'ランク';
 
   @override
-  String get ghanaCedi => 'Ghana Cedi';
+  String get ghanaCedi => 'ガーナセディ';
 
   @override
-  String get backToChart => 'Back to chart';
+  String get backToChart => 'チャートに戻る';
 
   @override
-  String get limitMarket => 'Limit Market';
+  String get limitMarket => '指値市場';
 
   @override
-  String get marketOrder => 'Market Order';
+  String get marketOrder => '成行注文';
 
   @override
-  String get cashBalance => 'Cash Balance';
+  String get cashBalance => '現金残高';
 
   @override
-  String get enterSharesPurchaseHint =>
-      'Enter number of shares you want to purchase';
+  String get enterSharesPurchaseHint => '購入したい株式数を入力してください';
 
   @override
-  String get enterSharesSellHint => 'Enter number of shares you want to sell';
+  String get enterSharesSellHint => '売却したい株式数を入力してください';
 
   @override
-  String get enterAmountPurchaseHint => 'Enter the amount you want to purchase';
+  String get enterAmountPurchaseHint => '購入したい金額を入力してください';
 
   @override
-  String get enterAmountSellHint => 'Enter the amount you want to sell';
+  String get enterAmountSellHint => '売却したい金額を入力してください';
 
   @override
-  String get reviewOrder => 'Review Order';
+  String get reviewOrder => '注文確認';
 
   @override
-  String get review => 'Review';
+  String get review => '確認';
 
   @override
-  String get interestRate => 'Interest Rate';
+  String get interestRate => '金利';
 
   @override
-  String get grossConsideration => 'Gross Consideration';
+  String get grossConsideration => '総対価';
 
   @override
-  String get informationTechnology => 'Information Technology';
+  String get informationTechnology => '情報技術';
 
   @override
   String get companyInc => 'Company Inc';
 
   @override
-  String get sector => 'Sector';
+  String get sector => 'セクター';
 
   @override
-  String get country => 'Country';
+  String get country => '国';
 
   @override
-  String get weight => 'Weight';
+  String get weight => 'ウェイト';
 
   @override
   String get treasuryBillAbout =>
-      'Treasury Bills (T-Bills) are short-term government securities issued by the Government of Ghana to raise funds for government operations and manage cash flow. They are considered one of the safest investment options in Ghana.';
+      '財務省証券（T-Bills）は、ガーナ政府が政府運営の資金調達と現金流量管理のために発行する短期政府証券です。ガーナで最も安全な投資オプションの1つと考えられています。';
 
   @override
   String get mutualFundAbout =>
-      'A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. The fund is managed by professional fund managers who make investment decisions on behalf of the investors.';
+      '投資信託は、複数の投資家から資金を集め、株式、債券、その他の証券の分散ポートフォリオに投資する投資手段です。ファンドは、投資家に代わって投資決定を行うプロのファンドマネージャーによって管理されます。';
+
+  @override
+  String get chooseOrderType => '注文タイプを選択';
+
+  @override
+  String get chooseHowExecute => '注文の実行方法を選択してください';
+
+  @override
+  String get marketOrderDesc => '最良の利用可能価格ですぐに実行する';
+
+  @override
+  String get limitOrderDesc => '独自の価格を設定します。選択した価格に達した場合にのみ注文が実行されます';
+
+  @override
+  String get limitOrder => '指値注文';
+
+  @override
+  String get confirmDetailsBeforeBuy => '購入前に詳細を確認する';
+
+  @override
+  String get confirmDetailsBeforeSell => '売却前に詳細を確認する';
+
+  @override
+  String get confirmDetailsBeforeProceeding => '続行する前に詳細を確認する';
+
+  @override
+  String get orderType => '注文タイプ';
+
+  @override
+  String get orderPrice => '注文価格';
+
+  @override
+  String get numberOfShares => '株式数';
+
+  @override
+  String get currentPrice => '現在価格';
+
+  @override
+  String get totalCharges => '総手数料';
+
+  @override
+  String get netConsideration => '純対価';
+
+  @override
+  String get availableCashBalance => '利用可能な現金残高';
+
+  @override
+  String get confirm => '確認';
+
+  @override
+  String get orderSuccessful => '注文成功';
+
+  @override
+  String get orderSubmittedBroker => '注文リクエストがブローカーに送信されました';
+
+  @override
+  String get orderSubmittedFundManager => '注文リクエストがファンドマネージャーに送信されました';
+
+  @override
+  String get trackInPortfolio => 'ポートフォリオで追跡';
+
+  @override
+  String get tradeOtherStocks => '他の株式を取引';
+
+  @override
+  String get tradeOtherFunds => '他のファンドを取引';
+
+  @override
+  String get tradeOtherSecurities => '他の証券を取引';
+
+  @override
+  String get estimatedMaturityValue => '推定満期価値';
+
+  @override
+  String get availableCashBalanceTitle => '利用可能な現金残高';
+
+  @override
+  String get noDataAvailable => 'データがありません';
+
+  @override
+  String get open => '始値';
+
+  @override
+  String get high => '高値';
+
+  @override
+  String get low => '安値';
+
+  @override
+  String get close => '終値';
+
+  @override
+  String get howMuchBuy => 'いくら購入しますか？';
+
+  @override
+  String get howMuchSell => 'いくら売却しますか？';
+
+  @override
+  String get buySuccessful => '購入成功';
+
+  @override
+  String get sellSuccessful => '売却成功';
+
+  @override
+  String get sharesLabel => '株式';
+
+  @override
+  String get assetType => '資産タイプ';
+
+  @override
+  String get bonds => '債券';
+
+  @override
+  String get reits => 'REIT';
+
+  @override
+  String get positive => 'プラス';
+
+  @override
+  String get negative => 'マイナス';
+
+  @override
+  String get valueHighToLow => '価値（高から低）';
+
+  @override
+  String get valueLowToHigh => '価値（低から高）';
+
+  @override
+  String get changePercentHighToLow => '変化率（高から低）';
+
+  @override
+  String get changePercentLowToHigh => '変化率（低から高）';
+
+  @override
+  String get searchByAssetName => '資産名で検索';
+
+  @override
+  String get dateOfIncorporation => '設立日';
+
+  @override
+  String get dateOfIPO => 'IPO日';
+
+  @override
+  String get telecommunications => '通信';
+
+  @override
+  String get previousClose => '前日終値(GHS)';
+
+  @override
+  String get openGHS => '始値(GHS)';
+
+  @override
+  String get daysRange => '当日レンジ(GHS)';
+
+  @override
+  String get volumeTraded => '取引高';
+
+  @override
+  String get fiftyTwoWeekRange => '52週レンジ(GHS)';
+
+  @override
+  String get peRatio => 'PER';
+
+  @override
+  String get earningsPerShare => '1株当たり利益(GHS)';
+
+  @override
+  String get dividendYield => '配当利回り';
+
+  @override
+  String get marketCap => '時価総額(GHS)';
+
+  @override
+  String get sharesOutstanding => '発行済株式数';
+
+  @override
+  String get capitalGainsLosses => 'キャピタルゲイン/(ロス)';
+
+  @override
+  String get issuer => '発行体';
+
+  @override
+  String get governmentOfGhana => 'ガーナ政府';
+
+  @override
+  String get currency => '通貨';
+
+  @override
+  String get ghs => 'GHS';
+
+  @override
+  String get maturityDate => '満期日';
+
+  @override
+  String get currentRate => '現在金利';
+
+  @override
+  String get maturityRate => '満期金利';
+
+  @override
+  String get couponRate => 'クーポンレート';
+
+  @override
+  String get enterSharesPurchase => '購入したい株数を入力してください';
+
+  @override
+  String get enterSharesSell => '売却したい株数を入力してください';
+
+  @override
+  String get enterAmountPurchase => '購入したい金額を入力してください';
+
+  @override
+  String get enterAmountSell => '売却したい金額を入力してください';
+
+  @override
+  String get orderExecutedInstantly => 'ご注文は最良の利用可能価格ですぐに執行されます';
+
+  @override
+  String get orderExecutedAtPrice => '選択した価格に達した場合、ご注文が執行されます';
+
+  @override
+  String get enterOrderPrice => '注文価格を入力してください';
+
+  @override
+  String get percent25 => '25%';
+
+  @override
+  String get percent50 => '50%';
+
+  @override
+  String get percent75 => '75%';
+
+  @override
+  String get percent100 => '100%';
+
+  @override
+  String get enterUnitsPurchase => '購入したい口数を入力してください';
+
+  @override
+  String get enterUnitsSell => '売却したい口数を入力してください';
+
+  @override
+  String get numberOfUnits => '口数';
+
+  @override
+  String get nav => '純資産価値';
+
+  @override
+  String get aum => '運用資産総額';
+
+  @override
+  String get expenseRatio => '経費率';
+
+  @override
+  String get minimumInvestment => '最低投資額';
+
+  @override
+  String get inceptionDate => '設定日';
+
+  @override
+  String get ytdReturn => '年初来リターン';
+
+  @override
+  String get oneYearReturn => '1年リターン';
+
+  @override
+  String get threeYearReturn => '3年リターン';
+
+  @override
+  String get fiveYearReturn => '5年リターン';
+
+  @override
+  String get tenYearReturn => '10年リターン';
+
+  @override
+  String get sinceInception => '設定来';
+
+  @override
+  String get standardDeviation => '標準偏差';
+
+  @override
+  String get sharpeRatio => 'シャープレシオ';
+
+  @override
+  String get beta => 'ベータ';
+
+  @override
+  String get alpha => 'アルファ';
+
+  @override
+  String get rSquared => '決定係数';
+
+  @override
+  String get turnoverRatio => '回転率';
+
+  @override
+  String get dateOfIpo => 'IPO日';
+
+  @override
+  String get fundType => 'ファンドタイプ';
+
+  @override
+  String get managementFee => '管理手数料';
+
+  @override
+  String get annualizedReturns => '年率リターン';
+
+  @override
+  String get averageGain => '平均利益';
+
+  @override
+  String get averageLoss => '平均損失';
+
+  @override
+  String get maximumDrawdown => '最大ドローダウン';
+
+  @override
+  String get sortinoRatio => 'ソルティノレシオ';
+
+  @override
+  String get loads => 'ロード';
 }

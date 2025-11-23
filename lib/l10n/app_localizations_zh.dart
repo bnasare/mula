@@ -1076,152 +1076,472 @@ class AppLocalizationsZh extends AppLocalizations {
   String get selectCategory => '选择类别';
 
   @override
-  String get assetBreakdown => 'Asset Breakdown';
+  String get assetBreakdown => '资产分类';
 
   @override
-  String get assetHoldings => 'Asset Holdings';
+  String get assetHoldings => '资产持有';
 
   @override
-  String get portfolioSummary => 'Portfolio Summary';
+  String get portfolioSummary => '投资组合摘要';
 
   @override
-  String get totalInvestmentValue => 'Total Investment Value';
+  String get totalInvestmentValue => '总投资价值';
 
   @override
-  String get totalDeposit => 'Total Deposit';
+  String get totalDeposit => '总存款';
 
   @override
-  String get totalWithdrawal => 'Total Withdrawal';
+  String get totalWithdrawal => '总提款';
 
   @override
-  String get realizedIncome => 'Realized Income';
+  String get realizedIncome => '已实现收入';
 
   @override
-  String get unrealizedIncome => 'Unrealized Income';
+  String get unrealizedIncome => '未实现收入';
 
   @override
-  String get cumulativeReturn => 'Cumulative Return';
+  String get cumulativeReturn => '累计回报';
 
   @override
-  String get seePortfolioSummary => 'See portfolio summary';
+  String get seePortfolioSummary => '查看投资组合摘要';
 
   @override
-  String get noPortfolioData => 'No portfolio data available';
+  String get noPortfolioData => '无可用的投资组合数据';
 
   @override
-  String get seeAdvancedChart => 'See Advanced Chart';
+  String get seeAdvancedChart => '查看高级图表';
 
   @override
-  String get myInvestments => 'My Investments';
+  String get myInvestments => '我的投资';
 
   @override
-  String get currentValue => 'Current Value';
+  String get currentValue => '当前价值';
 
   @override
-  String get returnLabel => 'Return';
+  String get returnLabel => '回报';
 
   @override
-  String get shares => 'Shares';
+  String get shares => '股份';
 
   @override
-  String get costPrice => 'Cost Price';
+  String get costPrice => '成本价';
 
   @override
-  String get capitalGains => 'Capital Gains/(Losses)';
+  String get capitalGains => '资本收益/(损失)';
 
   @override
-  String get about => 'About';
+  String get about => '关于';
 
   @override
-  String get treasuryBill => 'Treasury Bill';
+  String get treasuryBill => '国库券';
 
   @override
-  String get purchaseInterestRate => 'Purchase Interest Rate';
+  String get purchaseInterestRate => '购买利率';
 
   @override
-  String get accruedInterest => 'Accrued Interest';
+  String get accruedInterest => '应计利息';
 
   @override
-  String get overview => 'Overview';
+  String get overview => '概述';
 
   @override
-  String get holdings => 'Holdings';
+  String get holdings => '持有';
 
   @override
-  String get allocation => 'Allocation';
+  String get allocation => '配置';
 
   @override
-  String get metrics => 'Metrics';
+  String get metrics => '指标';
 
   @override
-  String get units => 'Units';
+  String get units => '单位';
 
   @override
-  String get industry => 'Industry';
+  String get industry => '行业';
 
   @override
-  String get rank => 'Rank';
+  String get rank => '排名';
 
   @override
-  String get ghanaCedi => 'Ghana Cedi';
+  String get ghanaCedi => '加纳塞地';
 
   @override
-  String get backToChart => 'Back to chart';
+  String get backToChart => '返回图表';
 
   @override
-  String get limitMarket => 'Limit Market';
+  String get limitMarket => '限价市场';
 
   @override
-  String get marketOrder => 'Market Order';
+  String get marketOrder => '市价订单';
 
   @override
-  String get cashBalance => 'Cash Balance';
+  String get cashBalance => '现金余额';
 
   @override
-  String get enterSharesPurchaseHint =>
-      'Enter number of shares you want to purchase';
+  String get enterSharesPurchaseHint => '输入您想购买的股份数量';
 
   @override
-  String get enterSharesSellHint => 'Enter number of shares you want to sell';
+  String get enterSharesSellHint => '输入您想出售的股份数量';
 
   @override
-  String get enterAmountPurchaseHint => 'Enter the amount you want to purchase';
+  String get enterAmountPurchaseHint => '输入您想购买的金额';
 
   @override
-  String get enterAmountSellHint => 'Enter the amount you want to sell';
+  String get enterAmountSellHint => '输入您想出售的金额';
 
   @override
-  String get reviewOrder => 'Review Order';
+  String get reviewOrder => '审核订单';
 
   @override
-  String get review => 'Review';
+  String get review => '审核';
 
   @override
-  String get interestRate => 'Interest Rate';
+  String get interestRate => '利率';
 
   @override
-  String get grossConsideration => 'Gross Consideration';
+  String get grossConsideration => '总对价';
 
   @override
-  String get informationTechnology => 'Information Technology';
+  String get informationTechnology => '信息技术';
 
   @override
   String get companyInc => 'Company Inc';
 
   @override
-  String get sector => 'Sector';
+  String get sector => '部门';
 
   @override
-  String get country => 'Country';
+  String get country => '国家';
 
   @override
-  String get weight => 'Weight';
+  String get weight => '权重';
 
   @override
   String get treasuryBillAbout =>
-      'Treasury Bills (T-Bills) are short-term government securities issued by the Government of Ghana to raise funds for government operations and manage cash flow. They are considered one of the safest investment options in Ghana.';
+      '国库券是加纳政府发行的短期政府证券，用于为政府运营筹集资金和管理现金流。它们被认为是加纳最安全的投资选择之一。';
 
   @override
   String get mutualFundAbout =>
-      'A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. The fund is managed by professional fund managers who make investment decisions on behalf of the investors.';
+      '共同基金是一种投资工具，汇集多个投资者的资金，投资于股票、债券或其他证券的多元化投资组合。该基金由专业基金经理管理，代表投资者做出投资决策。';
+
+  @override
+  String get chooseOrderType => '选择订单类型';
+
+  @override
+  String get chooseHowExecute => '选择您希望如何执行订单';
+
+  @override
+  String get marketOrderDesc => '立即以最佳可用价格执行';
+
+  @override
+  String get limitOrderDesc => '设定您自己的价格。订单仅在达到所选价格时执行';
+
+  @override
+  String get limitOrder => '限价订单';
+
+  @override
+  String get confirmDetailsBeforeBuy => '购买前确认详情';
+
+  @override
+  String get confirmDetailsBeforeSell => '出售前确认详情';
+
+  @override
+  String get confirmDetailsBeforeProceeding => '继续前确认详情';
+
+  @override
+  String get orderType => '订单类型';
+
+  @override
+  String get orderPrice => '订单价格';
+
+  @override
+  String get numberOfShares => '股份数量';
+
+  @override
+  String get currentPrice => '当前价格';
+
+  @override
+  String get totalCharges => '总费用';
+
+  @override
+  String get netConsideration => '净对价';
+
+  @override
+  String get availableCashBalance => '可用现金余额';
+
+  @override
+  String get confirm => '确认';
+
+  @override
+  String get orderSuccessful => '订单成功';
+
+  @override
+  String get orderSubmittedBroker => '您的订单请求已提交给经纪人';
+
+  @override
+  String get orderSubmittedFundManager => '您的订单请求已提交给基金经理';
+
+  @override
+  String get trackInPortfolio => '在投资组合中跟踪';
+
+  @override
+  String get tradeOtherStocks => '交易其他股票';
+
+  @override
+  String get tradeOtherFunds => '交易其他基金';
+
+  @override
+  String get tradeOtherSecurities => '交易其他证券';
+
+  @override
+  String get estimatedMaturityValue => '预计到期价值';
+
+  @override
+  String get availableCashBalanceTitle => '可用现金余额';
+
+  @override
+  String get noDataAvailable => '无可用数据';
+
+  @override
+  String get open => '开盘';
+
+  @override
+  String get high => '最高';
+
+  @override
+  String get low => '最低';
+
+  @override
+  String get close => '收盘';
+
+  @override
+  String get howMuchBuy => '您想购买多少？';
+
+  @override
+  String get howMuchSell => '您想出售多少？';
+
+  @override
+  String get buySuccessful => '购买成功';
+
+  @override
+  String get sellSuccessful => '出售成功';
+
+  @override
+  String get sharesLabel => '股份';
+
+  @override
+  String get assetType => '资产类型';
+
+  @override
+  String get bonds => '债券';
+
+  @override
+  String get reits => '房地产投资信托';
+
+  @override
+  String get positive => '正面';
+
+  @override
+  String get negative => '负面';
+
+  @override
+  String get valueHighToLow => '价值（从高到低）';
+
+  @override
+  String get valueLowToHigh => '价值（从低到高）';
+
+  @override
+  String get changePercentHighToLow => '变化%（从高到低）';
+
+  @override
+  String get changePercentLowToHigh => '变化%（从低到高）';
+
+  @override
+  String get searchByAssetName => '按资产名称搜索';
+
+  @override
+  String get dateOfIncorporation => '成立日期';
+
+  @override
+  String get dateOfIPO => 'IPO日期';
+
+  @override
+  String get telecommunications => '电信';
+
+  @override
+  String get previousClose => '昨收(GHS)';
+
+  @override
+  String get openGHS => '开盘(GHS)';
+
+  @override
+  String get daysRange => '当日范围(GHS)';
+
+  @override
+  String get volumeTraded => '成交量';
+
+  @override
+  String get fiftyTwoWeekRange => '52周范围(GHS)';
+
+  @override
+  String get peRatio => '市盈率';
+
+  @override
+  String get earningsPerShare => '每股收益(GHS)';
+
+  @override
+  String get dividendYield => '股息收益率';
+
+  @override
+  String get marketCap => '市值(GHS)';
+
+  @override
+  String get sharesOutstanding => '流通股';
+
+  @override
+  String get capitalGainsLosses => '资本收益/(损失)';
+
+  @override
+  String get issuer => '发行人';
+
+  @override
+  String get governmentOfGhana => '加纳政府';
+
+  @override
+  String get currency => '货币';
+
+  @override
+  String get ghs => 'GHS';
+
+  @override
+  String get maturityDate => '到期日';
+
+  @override
+  String get currentRate => '当前利率';
+
+  @override
+  String get maturityRate => '到期利率';
+
+  @override
+  String get couponRate => '票面利率';
+
+  @override
+  String get enterSharesPurchase => '输入您要购买的股份数量';
+
+  @override
+  String get enterSharesSell => '输入您要出售的股份数量';
+
+  @override
+  String get enterAmountPurchase => '输入您要购买的金额';
+
+  @override
+  String get enterAmountSell => '输入您要出售的金额';
+
+  @override
+  String get orderExecutedInstantly => '您的订单将立即以最佳可用价格执行';
+
+  @override
+  String get orderExecutedAtPrice => '如果达到所选价格，您的订单将被执行';
+
+  @override
+  String get enterOrderPrice => '输入订单价格';
+
+  @override
+  String get percent25 => '25%';
+
+  @override
+  String get percent50 => '50%';
+
+  @override
+  String get percent75 => '75%';
+
+  @override
+  String get percent100 => '100%';
+
+  @override
+  String get enterUnitsPurchase => '输入您要购买的份额数量';
+
+  @override
+  String get enterUnitsSell => '输入您要出售的份额数量';
+
+  @override
+  String get numberOfUnits => '份额数量';
+
+  @override
+  String get nav => '净值';
+
+  @override
+  String get aum => '管理资产';
+
+  @override
+  String get expenseRatio => '费用率';
+
+  @override
+  String get minimumInvestment => '最低投资额';
+
+  @override
+  String get inceptionDate => '成立日期';
+
+  @override
+  String get ytdReturn => '年初至今回报';
+
+  @override
+  String get oneYearReturn => '1年回报';
+
+  @override
+  String get threeYearReturn => '3年回报';
+
+  @override
+  String get fiveYearReturn => '5年回报';
+
+  @override
+  String get tenYearReturn => '10年回报';
+
+  @override
+  String get sinceInception => '自成立以来';
+
+  @override
+  String get standardDeviation => '标准差';
+
+  @override
+  String get sharpeRatio => '夏普比率';
+
+  @override
+  String get beta => '贝塔';
+
+  @override
+  String get alpha => '阿尔法';
+
+  @override
+  String get rSquared => 'R平方';
+
+  @override
+  String get turnoverRatio => '周转率';
+
+  @override
+  String get dateOfIpo => 'IPO日期';
+
+  @override
+  String get fundType => '基金类型';
+
+  @override
+  String get managementFee => '管理费';
+
+  @override
+  String get annualizedReturns => '年化收益';
+
+  @override
+  String get averageGain => '平均收益';
+
+  @override
+  String get averageLoss => '平均损失';
+
+  @override
+  String get maximumDrawdown => '最大回撤';
+
+  @override
+  String get sortinoRatio => '索提诺比率';
+
+  @override
+  String get loads => '费用';
 }

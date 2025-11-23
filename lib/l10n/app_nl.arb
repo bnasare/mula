@@ -25,7 +25,6 @@
   "resetPassword": "Wachtwoord opnieuw instellen",
   "passwordResetSuccessful": "Wachtwoord succesvol opnieuw ingesteld",
   "passwordResetSuccessDescription": "Uw wachtwoord is succesvol opnieuw ingesteld. U kunt nu inloggen met uw nieuwe wachtwoord",
-
   "letsGetYouStarted": "Laten we beginnen",
   "createFreeAccountDescription": "Maak je gratis MULA-account in minder dan een minuut.",
   "fullName": "Volledige Naam",
@@ -44,7 +43,6 @@
   "termsOfService": "Servicevoorwaarden",
   "and": "en",
   "privacyPolicy": "Privacybeleid",
-
   "otpVerification": "OTP-verificatie",
   "enterVerificationCode": "Voer de verificatiecode in die we zojuist naar je e-mailadres hebben gestuurd",
   "phoneNumber": "Telefoonnummer",
@@ -52,7 +50,6 @@
   "verify": "Verifiëren",
   "didntReceiveCode": "Code niet ontvangen?",
   "resend": "Opnieuw verzenden",
-
   "security": "Beveiliging",
   "enableFaceId": "Face ID inschakelen",
   "enable": "Inschakelen",
@@ -66,7 +63,6 @@
   "pinCreatedDescription": "Laten we je accountregistratie voltooien",
   "continueButton": "Doorgaan",
   "enterYourPin": "Voer je pincode in om door te gaan",
-
   "tellUsAboutYou": "Vertel ons over jezelf",
   "tellUsAboutYouDescription": "Dit helpt ons je MULA-ervaring te personaliseren",
   "dateOfBirth": "Geboortedatum",
@@ -80,39 +76,31 @@
   "enterGpsAddress": "Voer je GPS-adres in",
   "occupation": "Beroep",
   "whatIsYourOccupation": "Wat is je beroep?",
-
   "personalDetails": "Persoonlijke gegevens",
   "personalDetailsDescription": "We hebben wat gegevens nodig om uw account in te stellen",
   "nationality": "Nationaliteit",
   "selectNationality": "Selecteer uw nationaliteit",
   "emergencyNumber": "Noodcontactnummer",
   "enterEmergencyNumber": "Voer noodcontactnummer in",
-
   "identificationDetails": "Identificatiegegevens",
   "submit": "Indienen",
-
   "bankDetails": "Bankgegevens",
   "selectBank": "Bank selecteren",
   "selectYourBank": "Selecteer uw bank",
   "bankAccountNumber": "Bankrekeningnummer",
   "enterYourAccountNumber": "Voer uw rekeningnummer in",
-
   "chooseAccountType": "Kies accounttype",
   "chooseAccountTypeDescription": "Het kiezen van het juiste accounttype helpt ons u te verbinden met de juiste providers.",
-
   "brokers": "Makelaars",
   "brokersDescription": "Selecteer uw makelaar om uw investeringsreis te starten.",
   "noBrokersFound": "Geen makelaars gevonden",
-
   "accountDetailsSuccessfullySubmitted": "Accountgegevens succesvol ingediend",
   "accountDetailsSuccessDescription": "Uw account is aangemaakt. Controleer uw e-mail om uw account te valideren. Controleer uw e-mail voor updates over de status van verificatie.",
-
   "idVerification": "ID-verificatie",
   "selectIdType": "Selecteer een ID-type om je identiteit te verifiëren",
   "ghanaCard": "Ghana-kaart",
   "driversLicense": "Rijbewijs",
   "passport": "Paspoort",
-
   "uploadDocumentsDescription": "Upload je documenten veilig om je identiteit te verifiëren en je account in te stellen",
   "pictureOfFront": "Foto van de voorkant",
   "pictureOfBack": "Foto van de achterkant",
@@ -123,7 +111,6 @@
   "issueDate": "Uitgiftedatum",
   "expiryDate": "Vervaldatum",
   "next": "Volgende",
-
   "investmentExperience": "Je beleggingservaring",
   "investmentExperienceDescription": "Dit helpt ons de beste tools, bronnen en lay-out voor je te aanbevelen",
   "beginner": "Beginner",
@@ -132,7 +119,6 @@
   "intermediateDescription": "Ik heb wat belegd en begrijp hoe dingen werken.",
   "advanced": "Gevorderd",
   "advancedDescription": "Ik ben ervaren en wil volledige toegang tot geavanceerde tools.",
-
   "goodHandsTitle": "Je bent in goede handen",
   "goodHandsDescription": "Beleggen kan intimiderend klinken, maar met MULA hoef je geen expert te zijn om te beginnen. We begeleiden je bij elke stap, van het koppelen van je accounts tot het begrijpen van je portfolio, zodat je met vertrouwen kunt beleggen.",
   "hereIsWhatYouCanExpect": "Dit is wat je kunt verwachten:",
@@ -140,28 +126,23 @@
   "supportWheneverNeeded": "Ondersteuning wanneer je het nodig hebt",
   "guidanceToExplore": "Begeleiding om beleggingsmogelijkheden te verkennen",
   "simpleExplanations": "Eenvoudige uitleg bij elke stap",
-
   "linkInvestmentAccounts": "Koppel je beleggingsaccounts",
   "linkAccountsDescription": "Dit helpt ons je alles wat je bezit op één plek te laten zien",
   "csdAccount": "Ik heb een CSD-account",
   "csdAccountDescription": "Voor effecten zoals aandelen, obligaties en schatkistpapier",
   "cisAccount": "Ik heb een CIS-account",
   "cisAccountDescription": "Van fondsbeheerders zoals Databank, EDC, enz.",
-  "dontHaveAccount": "Heb je geen account?",
   "dontHaveAccountDescription": "Je kunt een account aanmaken en vandaag nog beginnen met beleggen",
-
   "selectFundManager": "Fondsbeheerder selecteren",
   "selectFundManagerDescription": "Selecteer uw fondsbeheerder om uw investeringsreis te starten.",
   "searchByAssetNameOrType": "Zoeken op activanaam of -type",
   "addAnother": "Nog een toevoegen",
   "done": "Klaar",
-
   "fundManager": "Fondsbeheerder",
   "fundsManaged": "Fondsen beheerd door",
   "select": "Selecteren",
   "fundManagerLinkedSuccessfully": "Fondsbeheerder succesvol gekoppeld",
   "fundManagerLinkedSuccessDescription": "Uw fondsbeheerder is gekoppeld aan uw account. U kunt nu uw investeringen bekijken en beheren.",
-
   "enterCsdAccountNumber": "Wat is uw CSD-accountnummer?",
   "csdAccountNumberDescription": "U kunt dit nummer vinden op uw schatkistpapier certificaat. Als u het niet heeft, neem dan contact op met uw makelaar",
   "accountNumber": "Accountnummer",
@@ -171,7 +152,6 @@
   "weFoundYourBrokers": "We hebben uw makelaars gevonden",
   "signInToBrokersDescription": "Log in op uw makelaarsaccounts zodat we uw investeringen veilig kunnen ophalen",
   "add": "Toevoegen",
-
   "deposit": "Storten",
   "chooseAccountToTopUp": "Kies een account om op te laden",
   "mobileMoneyDeposit": "Mobile Money",
@@ -210,7 +190,6 @@
   "noNotifications": "Geen meldingen",
   "noNotificationsDescription": "U bent helemaal bij!",
   "markAllAsRead": "Alles markeren als gelezen",
-
   "home": "Home",
   "explore": "Verkennen",
   "portfolio": "Portfolio",
@@ -234,7 +213,7 @@
   "transactions": "Transacties",
   "reportAnIssue": "Probleem melden",
   "export": "Exporteren",
-  "filter": "Filteren",
+  "filter": "Filter",
   "apply": "Toepassen",
   "balance": "Saldo",
   "emergencyFunds": "Noodfondsen",
@@ -282,7 +261,6 @@
   "withdrawComingSoon": "Opnemen binnenkort beschikbaar",
   "depositComingSoon": "Storten binnenkort beschikbaar",
   "noTransactionsYet": "Nog geen transacties",
-
   "hiImMulaBot": "Hoi, ik ben Mula Bot",
   "yourPersonalGuide": "Je persoonlijke gids voor slim investeren",
   "startChat": "Chat starten",
@@ -332,7 +310,6 @@
   "accountLinkedSuccessfully": "Account Succesvol Gekoppeld",
   "accountLinkedSuccessDescription": "Je account is succesvol gekoppeld aan MULA",
   "goBack": "Ga Terug",
-
   "learningTracks": "Leerpaden",
   "featuredTracks": "Uitgelichte Paden",
   "popularLessons": "Populaire Lessen",
@@ -353,57 +330,266 @@
   },
   "whatIsAMutualFund": "Wat is een Beleggingsfonds?",
   "poolingMoneySpreading": "Geld bundelen, risico spreiden, vermogen laten groeien",
-
   "markAsRead": "Markeer als gelezen",
   "read": "Gelezen",
   "investIn": "Investeer in {asset}",
-  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "@investIn": {
+    "placeholders": {
+      "asset": {
+        "type": "String"
+      }
+    }
+  },
   "takeAQuiz": "Doe een quiz",
   "shareWithFriends": "Deel met je vrienden of laat een reactie achter",
   "leaveComment": "Laat een reactie achter",
   "reply": "Antwoorden",
   "viewComments": "Bekijk reacties ({count})",
-  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "@viewComments": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "minsRead": "{count} min leestijd",
-  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "@minsRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "views": "{count}k",
-  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "@views": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "showMoreReplies": "Toon {count} meer antwoorden",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
-
+  "@showMoreReplies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "question": "Vraag {number}",
-  "@question": {"placeholders": {"number": {"type": "int"}}},
-  "done": "Klaar",
+  "@question": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
   "wellDone": "Goed gedaan {name}!",
-  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "@wellDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "youAnsweredCorrectly": "Je hebt {correct} van {total} correct beantwoord. Blijf oefenen om 100% te bereiken",
-  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@youAnsweredCorrectly": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "quizScoreMessage": "Je hebt {correct} van {total} correct beantwoord",
-  "@quizScoreMessage": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@quizScoreMessage": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "keepPracticing": "Blijf oefenen om 100% te bereiken",
   "tryAgain": "Probeer opnieuw",
   "goToHome": "Ga naar home",
   "exploreOtherResources": "Verken andere bronnen",
   "pts": "+{points}pt",
-  "@pts": {"placeholders": {"points": {"type": "int"}}},
-
+  "@pts": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "searchByAsset": "Zoeken op activum",
-  "sortBy": "Sorteren op",
   "relevance": "Relevantie",
-  "clearAll": "Alles wissen",
   "popular": "Populair",
   "stocks": "Aandelen",
   "highYieldFunds": "Hoogrentende Fondsen",
   "tBills": "Schatkistpapier",
-  "filter": "Filter",
-  "dateRange": "Datumbereik",
-  "last30Days": "Laatste 30 dagen",
-  "last60Days": "Laatste 60 dagen",
-  "thisYear": "Dit Jaar",
-  "customDate": "Aangepaste Datum",
   "stock": "Aandeel",
   "selectLevel": "Selecteer niveau",
   "category": "Categorie",
   "selectCategory": "Selecteer Categorie",
-  "apply": "Toepassen"
+  "assetBreakdown": "Vermogensverdeling",
+  "assetHoldings": "Vermogensbezit",
+  "portfolioSummary": "Portefeuilleoverzicht",
+  "totalInvestmentValue": "Totale Investeringswaarde",
+  "totalDeposit": "Totale Storting",
+  "totalWithdrawal": "Totale Opname",
+  "realizedIncome": "Gerealiseerd Inkomen",
+  "unrealizedIncome": "Niet-gerealiseerd Inkomen",
+  "cumulativeReturn": "Cumulatief Rendement",
+  "seePortfolioSummary": "Bekijk portefeuilleoverzicht",
+  "noPortfolioData": "Geen portefeuillegegevens beschikbaar",
+  "seeAdvancedChart": "Bekijk Geavanceerde Grafiek",
+  "myInvestments": "Mijn Investeringen",
+  "currentValue": "Huidige Waarde",
+  "returnLabel": "Rendement",
+  "shares": "Aandelen",
+  "costPrice": "Kostprijs",
+  "capitalGains": "Vermogenswinsten/(Verliezen)",
+  "about": "Over",
+  "treasuryBill": "Schatkistpapier",
+  "purchaseInterestRate": "Aankoop Rentepercentage",
+  "accruedInterest": "Opgelopen Rente",
+  "overview": "Overzicht",
+  "holdings": "Bezittingen",
+  "allocation": "Allocatie",
+  "metrics": "Statistieken",
+  "units": "Eenheden",
+  "industry": "Industrie",
+  "rank": "Rang",
+  "ghanaCedi": "Ghanese Cedi",
+  "backToChart": "Terug naar grafiek",
+  "limitMarket": "Limietmarkt",
+  "marketOrder": "Marktorder",
+  "cashBalance": "Kassaldo",
+  "enterSharesPurchaseHint": "Voer het aantal aandelen in dat u wilt kopen",
+  "enterSharesSellHint": "Voer het aantal aandelen in dat u wilt verkopen",
+  "enterAmountPurchaseHint": "Voer het bedrag in dat u wilt kopen",
+  "enterAmountSellHint": "Voer het bedrag in dat u wilt verkopen",
+  "reviewOrder": "Order Beoordelen",
+  "review": "Beoordelen",
+  "interestRate": "Rentepercentage",
+  "grossConsideration": "Bruto Tegenprestatie",
+  "informationTechnology": "Informatietechnologie",
+  "companyInc": "Company Inc",
+  "sector": "Sector",
+  "country": "Land",
+  "weight": "Gewicht",
+  "treasuryBillAbout": "Schatkistpapier zijn kortlopende overheidspapieren uitgegeven door de regering van Ghana om fondsen te werven voor overheidsoperaties en cashflow te beheren. Ze worden beschouwd als een van de veiligste beleggingsopties in Ghana.",
+  "mutualFundAbout": "Een beleggingsfonds is een investeringsinstrument dat geld van meerdere beleggers bundelt om te beleggen in een gediversifieerde portefeuille van aandelen, obligaties of andere effecten. Het fonds wordt beheerd door professionele fondsbeheerders die namens de beleggers investeringsbeslissingen nemen.",
+  "chooseOrderType": "Kies ordertype",
+  "chooseHowExecute": "Kies hoe u uw order wilt laten uitvoeren",
+  "marketOrderDesc": "Voer onmiddellijk uit tegen de best beschikbare prijs",
+  "limitOrderDesc": "Stel uw eigen prijs in. De order wordt alleen uitgevoerd als de gekozen prijs wordt bereikt",
+  "limitOrder": "Limietorder",
+  "confirmDetailsBeforeBuy": "Bevestig de details voordat u koopt",
+  "confirmDetailsBeforeSell": "Bevestig de details voordat u verkoopt",
+  "confirmDetailsBeforeProceeding": "Bevestig de details voordat u doorgaat",
+  "orderType": "Ordertype",
+  "orderPrice": "Orderprijs",
+  "numberOfShares": "Aantal aandelen",
+  "currentPrice": "Huidige prijs",
+  "totalCharges": "Totale kosten",
+  "netConsideration": "Netto tegenprestatie",
+  "availableCashBalance": "Beschikbaar kassaldo",
+  "confirm": "Bevestigen",
+  "orderSuccessful": "Order succesvol",
+  "orderSubmittedBroker": "Uw orderaanvraag is naar de makelaar verzonden",
+  "orderSubmittedFundManager": "Uw orderaanvraag is naar de fondsbeheerder verzonden",
+  "trackInPortfolio": "Volgen in portfolio",
+  "tradeOtherStocks": "Handel andere aandelen",
+  "tradeOtherFunds": "Handel andere fondsen",
+  "tradeOtherSecurities": "Handel andere effecten",
+  "estimatedMaturityValue": "Geschatte looptijdwaarde",
+  "availableCashBalanceTitle": "Beschikbaar kassaldo",
+  "noDataAvailable": "Geen gegevens beschikbaar",
+  "open": "Opening",
+  "high": "Hoogste",
+  "low": "Laagste",
+  "close": "Sluiting",
+  "howMuchBuy": "Hoeveel wil je kopen?",
+  "howMuchSell": "Hoeveel wil je verkopen?",
+  "buySuccessful": "Aankoop geslaagd",
+  "sellSuccessful": "Verkoop geslaagd",
+  "sharesLabel": "Aandelen",
+  "assetType": "Type activa",
+  "bonds": "Obligaties",
+  "reits": "REIT's",
+  "positive": "Positief",
+  "negative": "Negatief",
+  "valueHighToLow": "Waarde (Hoog naar Laag)",
+  "valueLowToHigh": "Waarde (Laag naar Hoog)",
+  "changePercentHighToLow": "Verandering % (Hoog naar Laag)",
+  "changePercentLowToHigh": "Verandering % (Laag naar Hoog)",
+  "searchByAssetName": "Zoeken op activanaam",
+  "dateOfIncorporation": "Oprichtingsdatum",
+  "dateOfIPO": "IPO-datum",
+  "telecommunications": "Telecommunicatie",
+  "previousClose": "Vorige slotkoers(GHS)",
+  "openGHS": "Opening(GHS)",
+  "daysRange": "Dagbereik(GHS)",
+  "volumeTraded": "Verhandeld volume",
+  "fiftyTwoWeekRange": "52-weken bereik(GHS)",
+  "peRatio": "K/W-verhouding",
+  "earningsPerShare": "Winst per aandeel(GHS)",
+  "dividendYield": "Dividendrendement",
+  "marketCap": "Marktkapitalisatie(GHS)",
+  "sharesOutstanding": "Uitstaande aandelen",
+  "capitalGainsLosses": "Vermogenswinsten/(Verliezen)",
+  "issuer": "Uitgever",
+  "governmentOfGhana": "Regering van Ghana",
+  "currency": "Valuta",
+  "ghs": "GHS",
+  "maturityDate": "Vervaldatum",
+  "currentRate": "Huidige rente",
+  "maturityRate": "Vervalrente",
+  "couponRate": "Couponrente",
+  "enterSharesPurchase": "Voer het aantal aandelen in dat u wilt kopen",
+  "enterSharesSell": "Voer het aantal aandelen in dat u wilt verkopen",
+  "enterAmountPurchase": "Voer het bedrag in dat u wilt kopen",
+  "enterAmountSell": "Voer het bedrag in dat u wilt verkopen",
+  "orderExecutedInstantly": "Uw order wordt onmiddellijk uitgevoerd tegen de best beschikbare prijs",
+  "orderExecutedAtPrice": "Uw order wordt uitgevoerd als de gekozen prijs wordt bereikt",
+  "enterOrderPrice": "Voer orderprijs in",
+  "percent25": "25%",
+  "percent50": "50%",
+  "percent75": "75%",
+  "percent100": "100%",
+  "enterUnitsPurchase": "Voer het aantal eenheden in dat u wilt kopen",
+  "enterUnitsSell": "Voer het aantal eenheden in dat u wilt verkopen",
+  "numberOfUnits": "Aantal eenheden",
+  "nav": "NIW",
+  "aum": "Beheerd vermogen",
+  "expenseRatio": "Kostenratio",
+  "minimumInvestment": "Minimum investering",
+  "inceptionDate": "Oprichtingsdatum",
+  "ytdReturn": "Rendement dit jaar",
+  "oneYearReturn": "1-jaars rendement",
+  "threeYearReturn": "3-jaars rendement",
+  "fiveYearReturn": "5-jaars rendement",
+  "tenYearReturn": "10-jaars rendement",
+  "sinceInception": "Sinds oprichting",
+  "standardDeviation": "Standaarddeviatie",
+  "sharpeRatio": "Sharpe-ratio",
+  "beta": "Bèta",
+  "alpha": "Alfa",
+  "rSquared": "R-kwadraat",
+  "turnoverRatio": "Omzet ratio",
+  "dateOfIpo": "Datum van beursgang",
+  "fundType": "Fondstype",
+  "managementFee": "Beheerkosten",
+  "annualizedReturns": "Geannualiseerd rendement",
+  "averageGain": "Gemiddelde winst",
+  "averageLoss": "Gemiddeld verlies",
+  "maximumDrawdown": "Maximale drawdown",
+  "sortinoRatio": "Sortino-ratio",
+  "loads": "Kosten"
 }

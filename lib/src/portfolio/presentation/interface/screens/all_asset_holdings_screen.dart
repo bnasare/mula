@@ -149,7 +149,7 @@ class AllAssetHoldingsScreen extends StatelessWidget {
               showModalBottomSheet(
                 context: context,
                 isScrollControlled: true,
-                backgroundColor: Colors.transparent,
+                backgroundColor: AppColors.transparent,
                 builder: (context) => const AssetFilterBottomSheet(),
               );
             },

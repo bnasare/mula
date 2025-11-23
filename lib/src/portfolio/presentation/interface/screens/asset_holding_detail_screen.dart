@@ -353,19 +353,19 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                       case 0:
                         return _buildInfoItem(
                           context,
-                          label: 'Date of Incorporation',
+                          label: context.localize.dateOfIncorporation,
                           value: 'April 1994',
                         );
                       case 1:
                         return _buildInfoItem(
                           context,
-                          label: 'Date of IPO',
+                          label: context.localize.dateOfIpo,
                           value: '3rd September, 2018',
                         );
                       case 2:
                         return _buildInfoItem(
                           context,
-                          label: 'Sector',
+                          label: context.localize.sector,
                           value: 'Telecommunications',
                         );
                       default:
@@ -384,26 +384,25 @@ class AssetHoldingDetailScreen extends StatelessWidget {
   }
 
   Widget _buildStockDetailItem(BuildContext context, int index) {
-    final Map<String, String> details = {
-      'Previous Close(GHS)': '3.98',
-      'Open(GHS)': '3.97',
-      'Day\'s Range(GHS)': '3.78 - 4.06',
-      'Volume Traded': '125,348,479',
-      '52-Week Range(GHS)': '1.78 - 4.02',
-      'P/E Ratio': '7.45x',
-      'Earnings Per Share(GHS)': '0.55',
-      'Dividend Yield': '1.96%',
-      'Market Cap(GHS)': '5,410B',
-      'Shares Outstanding': '1,245,890,367,470',
-    };
+    final details = [
+      (context.localize.previousClose, '3.98'),
+      (context.localize.open, '3.97'),
+      (context.localize.daysRange, '3.78 - 4.06'),
+      (context.localize.volumeTraded, '125,348,479'),
+      (context.localize.fiftyTwoWeekRange, '1.78 - 4.02'),
+      (context.localize.peRatio, '7.45x'),
+      (context.localize.earningsPerShare, '0.55'),
+      (context.localize.dividendYield, '1.96%'),
+      (context.localize.marketCap, '5,410B'),
+      (context.localize.sharesOutstanding, '1,245,890,367,470'),
+    ];
 
-    final keys = details.keys.toList();
-    if (index >= keys.length) return const SizedBox.shrink();
+    if (index >= details.length) return const SizedBox.shrink();
 
     return _buildInfoItem(
       context,
-      label: keys[index],
-      value: details[keys[index]]!,
+      label: details[index].$1,
+      value: details[index].$2,
     );
   }
 

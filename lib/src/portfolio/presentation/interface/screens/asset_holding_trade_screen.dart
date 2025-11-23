@@ -170,15 +170,15 @@ class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
     );
   }
 
-  String get _inputHint {
+  String _inputHint(BuildContext context) {
     if (_selectedTab == 0) {
       return widget.tradeType == TradeType.buy
-          ? 'Enter number of shares you want to purchase'
-          : 'Enter number of shares you want to sell';
+          ? context.localize.enterSharesPurchase
+          : context.localize.enterSharesSell;
     } else {
       return widget.tradeType == TradeType.buy
-          ? 'Enter the amount you want to purchase'
-          : 'Enter the amount you want to sell';
+          ? context.localize.enterAmountPurchase
+          : context.localize.enterAmountSell;
     }
   }
 
@@ -204,8 +204,8 @@ class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: AppText.smaller(
                         widget.orderType == 'market'
-                            ? 'Your order will be executed instantly at the best available price'
-                            : 'Your order will be executed if the chosen price is reached',
+                            ? context.localize.orderExecutedInstantly
+                            : context.localize.orderExecutedAtPrice,
                         color: AppColors.primaryText(context),
                       ),
                     ),
@@ -268,14 +268,14 @@ class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
                               children: [
                                 Expanded(
                                   child: AssetTabButton(
-                                    label: 'Shares',
+                                    label: context.localize.sharesLabel,
                                     isActive: _selectedTab == 0,
                                     onTap: () => _handleTabChange(0),
                                   ),
                                 ),
                                 Expanded(
                                   child: AssetTabButton(
-                                    label: 'Amount',
+                                    label: context.localize.amount,
                                     isActive: _selectedTab == 1,
                                     onTap: () => _handleTabChange(1),
                                   ),
@@ -287,7 +287,7 @@ class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
 
                           // Input Field
                           AppText.small(
-                            _inputHint,
+                            _inputHint(context),
                             color: AppColors.secondaryText(context),
                           ),
                           const SizedBox(height: 12),
@@ -310,7 +310,7 @@ class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
                           if (widget.orderType == 'limit') ...[
                             const SizedBox(height: 24),
                             AppText.small(
-                              'Enter order price',
+                              context.localize.enterOrderPrice,
                               color: AppColors.secondaryText(context),
                             ),
                             const SizedBox(height: 12),
@@ -362,7 +362,7 @@ class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
                 backgroundColor: _isFormValid
                     ? AppColors.appPrimary
                     : AppColors.border(context),
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,
               ),
@@ -378,40 +378,40 @@ class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
       // Limit order: 8 rows with Order Type at top
       switch (index) {
         case 0:
-          return _buildDetailRow('Order Type', 'Limit Order');
+          return _buildDetailRow(context.localize.orderType, context.localize.limitOrder);
         case 1:
           return _buildDetailRow(
-            'Order Price',
+            context.localize.orderPrice,
             'GHS ${_effectivePrice.toStringAsFixed(2)}',
           );
         case 2:
           return _buildDetailRow(
-            'Number of Shares',
+            context.localize.numberOfShares,
             _calculatedShares.toStringAsFixed(4),
           );
         case 3:
           return _buildDetailRow(
-            'Gross Consideration',
+            context.localize.grossConsideration,
             'GHS ${_grossConsideration.toStringAsFixed(2)}',
           );
         case 4:
           return _buildDetailRow(
-            'Total Charges',
+            context.localize.totalCharges,
             'GHS ${_totalCharges.toStringAsFixed(2)}',
           );
         case 5:
           return _buildDetailRow(
-            'Net Consideration',
+            context.localize.netConsideration,
             'GHS ${_netConsideration.toStringAsFixed(2)}',
           );
         case 6:
           return _buildDetailRow(
-            'Broker',
+            context.localize.broker,
             widget.broker, // TODO: Get from asset data
           );
         case 7:
           return _buildDetailRow(
-            'Available Cash balance',
+            context.localize.availableCashBalance,
             'GHS ${widget.availableCashBalance.toStringAsFixed(2)}',
           );
         default:
@@ -422,37 +422,37 @@ class _AssetHoldingTradeScreenState extends State<AssetHoldingTradeScreen> {
       switch (index) {
         case 0:
           return _buildDetailRow(
-            'Current Price',
+            context.localize.currentPrice,
             'GHS ${_effectivePrice.toStringAsFixed(2)}',
           );
         case 1:
           return _buildDetailRow(
-            'Number of Shares',
+            context.localize.numberOfShares,
             _calculatedShares.toStringAsFixed(4),
           );
         case 2:
           return _buildDetailRow(
-            'Gross Consideration',
+            context.localize.grossConsideration,
             'GHS ${_grossConsideration.toStringAsFixed(2)}',
           );
         case 3:
           return _buildDetailRow(
-            'Total Charges',
+            context.localize.totalCharges,
             'GHS ${_totalCharges.toStringAsFixed(2)}',
           );
         case 4:
           return _buildDetailRow(
-            'Net Consideration',
+            context.localize.netConsideration,
             'GHS ${_netConsideration.toStringAsFixed(2)}',
           );
         case 5:
           return _buildDetailRow(
-            'Broker',
+            context.localize.broker,
             widget.broker, // TODO: Get from asset data
           );
         case 6:
           return _buildDetailRow(
-            'Available Cash balance',
+            context.localize.availableCashBalance,
             'GHS ${widget.availableCashBalance.toStringAsFixed(2)}',
           );
         default:

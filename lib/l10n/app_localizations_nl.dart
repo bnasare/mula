@@ -1118,134 +1118,135 @@ class AppLocalizationsNl extends AppLocalizations {
   String get selectCategory => 'Selecteer Categorie';
 
   @override
-  String get assetBreakdown => 'Asset Breakdown';
+  String get assetBreakdown => 'Vermogensverdeling';
 
   @override
-  String get assetHoldings => 'Asset Holdings';
+  String get assetHoldings => 'Vermogensbezit';
 
   @override
-  String get portfolioSummary => 'Portfolio Summary';
+  String get portfolioSummary => 'Portefeuilleoverzicht';
 
   @override
-  String get totalInvestmentValue => 'Total Investment Value';
+  String get totalInvestmentValue => 'Totale Investeringswaarde';
 
   @override
-  String get totalDeposit => 'Total Deposit';
+  String get totalDeposit => 'Totale Storting';
 
   @override
-  String get totalWithdrawal => 'Total Withdrawal';
+  String get totalWithdrawal => 'Totale Opname';
 
   @override
-  String get realizedIncome => 'Realized Income';
+  String get realizedIncome => 'Gerealiseerd Inkomen';
 
   @override
-  String get unrealizedIncome => 'Unrealized Income';
+  String get unrealizedIncome => 'Niet-gerealiseerd Inkomen';
 
   @override
-  String get cumulativeReturn => 'Cumulative Return';
+  String get cumulativeReturn => 'Cumulatief Rendement';
 
   @override
-  String get seePortfolioSummary => 'See portfolio summary';
+  String get seePortfolioSummary => 'Bekijk portefeuilleoverzicht';
 
   @override
-  String get noPortfolioData => 'No portfolio data available';
+  String get noPortfolioData => 'Geen portefeuillegegevens beschikbaar';
 
   @override
-  String get seeAdvancedChart => 'See Advanced Chart';
+  String get seeAdvancedChart => 'Bekijk Geavanceerde Grafiek';
 
   @override
-  String get myInvestments => 'My Investments';
+  String get myInvestments => 'Mijn Investeringen';
 
   @override
-  String get currentValue => 'Current Value';
+  String get currentValue => 'Huidige Waarde';
 
   @override
-  String get returnLabel => 'Return';
+  String get returnLabel => 'Rendement';
 
   @override
-  String get shares => 'Shares';
+  String get shares => 'Aandelen';
 
   @override
-  String get costPrice => 'Cost Price';
+  String get costPrice => 'Kostprijs';
 
   @override
-  String get capitalGains => 'Capital Gains/(Losses)';
+  String get capitalGains => 'Vermogenswinsten/(Verliezen)';
 
   @override
-  String get about => 'About';
+  String get about => 'Over';
 
   @override
-  String get treasuryBill => 'Treasury Bill';
+  String get treasuryBill => 'Schatkistpapier';
 
   @override
-  String get purchaseInterestRate => 'Purchase Interest Rate';
+  String get purchaseInterestRate => 'Aankoop Rentepercentage';
 
   @override
-  String get accruedInterest => 'Accrued Interest';
+  String get accruedInterest => 'Opgelopen Rente';
 
   @override
-  String get overview => 'Overview';
+  String get overview => 'Overzicht';
 
   @override
-  String get holdings => 'Holdings';
+  String get holdings => 'Bezittingen';
 
   @override
-  String get allocation => 'Allocation';
+  String get allocation => 'Allocatie';
 
   @override
-  String get metrics => 'Metrics';
+  String get metrics => 'Statistieken';
 
   @override
-  String get units => 'Units';
+  String get units => 'Eenheden';
 
   @override
-  String get industry => 'Industry';
+  String get industry => 'Industrie';
 
   @override
-  String get rank => 'Rank';
+  String get rank => 'Rang';
 
   @override
-  String get ghanaCedi => 'Ghana Cedi';
+  String get ghanaCedi => 'Ghanese Cedi';
 
   @override
-  String get backToChart => 'Back to chart';
+  String get backToChart => 'Terug naar grafiek';
 
   @override
-  String get limitMarket => 'Limit Market';
+  String get limitMarket => 'Limietmarkt';
 
   @override
-  String get marketOrder => 'Market Order';
+  String get marketOrder => 'Marktorder';
 
   @override
-  String get cashBalance => 'Cash Balance';
+  String get cashBalance => 'Kassaldo';
 
   @override
   String get enterSharesPurchaseHint =>
-      'Enter number of shares you want to purchase';
+      'Voer het aantal aandelen in dat u wilt kopen';
 
   @override
-  String get enterSharesSellHint => 'Enter number of shares you want to sell';
+  String get enterSharesSellHint =>
+      'Voer het aantal aandelen in dat u wilt verkopen';
 
   @override
-  String get enterAmountPurchaseHint => 'Enter the amount you want to purchase';
+  String get enterAmountPurchaseHint => 'Voer het bedrag in dat u wilt kopen';
 
   @override
-  String get enterAmountSellHint => 'Enter the amount you want to sell';
+  String get enterAmountSellHint => 'Voer het bedrag in dat u wilt verkopen';
 
   @override
-  String get reviewOrder => 'Review Order';
+  String get reviewOrder => 'Order Beoordelen';
 
   @override
-  String get review => 'Review';
+  String get review => 'Beoordelen';
 
   @override
-  String get interestRate => 'Interest Rate';
+  String get interestRate => 'Rentepercentage';
 
   @override
-  String get grossConsideration => 'Gross Consideration';
+  String get grossConsideration => 'Bruto Tegenprestatie';
 
   @override
-  String get informationTechnology => 'Information Technology';
+  String get informationTechnology => 'Informatietechnologie';
 
   @override
   String get companyInc => 'Company Inc';
@@ -1254,16 +1255,349 @@ class AppLocalizationsNl extends AppLocalizations {
   String get sector => 'Sector';
 
   @override
-  String get country => 'Country';
+  String get country => 'Land';
 
   @override
-  String get weight => 'Weight';
+  String get weight => 'Gewicht';
 
   @override
   String get treasuryBillAbout =>
-      'Treasury Bills (T-Bills) are short-term government securities issued by the Government of Ghana to raise funds for government operations and manage cash flow. They are considered one of the safest investment options in Ghana.';
+      'Schatkistpapier zijn kortlopende overheidspapieren uitgegeven door de regering van Ghana om fondsen te werven voor overheidsoperaties en cashflow te beheren. Ze worden beschouwd als een van de veiligste beleggingsopties in Ghana.';
 
   @override
   String get mutualFundAbout =>
-      'A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. The fund is managed by professional fund managers who make investment decisions on behalf of the investors.';
+      'Een beleggingsfonds is een investeringsinstrument dat geld van meerdere beleggers bundelt om te beleggen in een gediversifieerde portefeuille van aandelen, obligaties of andere effecten. Het fonds wordt beheerd door professionele fondsbeheerders die namens de beleggers investeringsbeslissingen nemen.';
+
+  @override
+  String get chooseOrderType => 'Kies ordertype';
+
+  @override
+  String get chooseHowExecute => 'Kies hoe u uw order wilt laten uitvoeren';
+
+  @override
+  String get marketOrderDesc =>
+      'Voer onmiddellijk uit tegen de best beschikbare prijs';
+
+  @override
+  String get limitOrderDesc =>
+      'Stel uw eigen prijs in. De order wordt alleen uitgevoerd als de gekozen prijs wordt bereikt';
+
+  @override
+  String get limitOrder => 'Limietorder';
+
+  @override
+  String get confirmDetailsBeforeBuy => 'Bevestig de details voordat u koopt';
+
+  @override
+  String get confirmDetailsBeforeSell =>
+      'Bevestig de details voordat u verkoopt';
+
+  @override
+  String get confirmDetailsBeforeProceeding =>
+      'Bevestig de details voordat u doorgaat';
+
+  @override
+  String get orderType => 'Ordertype';
+
+  @override
+  String get orderPrice => 'Orderprijs';
+
+  @override
+  String get numberOfShares => 'Aantal aandelen';
+
+  @override
+  String get currentPrice => 'Huidige prijs';
+
+  @override
+  String get totalCharges => 'Totale kosten';
+
+  @override
+  String get netConsideration => 'Netto tegenprestatie';
+
+  @override
+  String get availableCashBalance => 'Beschikbaar kassaldo';
+
+  @override
+  String get confirm => 'Bevestigen';
+
+  @override
+  String get orderSuccessful => 'Order succesvol';
+
+  @override
+  String get orderSubmittedBroker =>
+      'Uw orderaanvraag is naar de makelaar verzonden';
+
+  @override
+  String get orderSubmittedFundManager =>
+      'Uw orderaanvraag is naar de fondsbeheerder verzonden';
+
+  @override
+  String get trackInPortfolio => 'Volgen in portfolio';
+
+  @override
+  String get tradeOtherStocks => 'Handel andere aandelen';
+
+  @override
+  String get tradeOtherFunds => 'Handel andere fondsen';
+
+  @override
+  String get tradeOtherSecurities => 'Handel andere effecten';
+
+  @override
+  String get estimatedMaturityValue => 'Geschatte looptijdwaarde';
+
+  @override
+  String get availableCashBalanceTitle => 'Beschikbaar kassaldo';
+
+  @override
+  String get noDataAvailable => 'Geen gegevens beschikbaar';
+
+  @override
+  String get open => 'Opening';
+
+  @override
+  String get high => 'Hoogste';
+
+  @override
+  String get low => 'Laagste';
+
+  @override
+  String get close => 'Sluiting';
+
+  @override
+  String get howMuchBuy => 'Hoeveel wil je kopen?';
+
+  @override
+  String get howMuchSell => 'Hoeveel wil je verkopen?';
+
+  @override
+  String get buySuccessful => 'Aankoop geslaagd';
+
+  @override
+  String get sellSuccessful => 'Verkoop geslaagd';
+
+  @override
+  String get sharesLabel => 'Aandelen';
+
+  @override
+  String get assetType => 'Type activa';
+
+  @override
+  String get bonds => 'Obligaties';
+
+  @override
+  String get reits => 'REIT\'s';
+
+  @override
+  String get positive => 'Positief';
+
+  @override
+  String get negative => 'Negatief';
+
+  @override
+  String get valueHighToLow => 'Waarde (Hoog naar Laag)';
+
+  @override
+  String get valueLowToHigh => 'Waarde (Laag naar Hoog)';
+
+  @override
+  String get changePercentHighToLow => 'Verandering % (Hoog naar Laag)';
+
+  @override
+  String get changePercentLowToHigh => 'Verandering % (Laag naar Hoog)';
+
+  @override
+  String get searchByAssetName => 'Zoeken op activanaam';
+
+  @override
+  String get dateOfIncorporation => 'Oprichtingsdatum';
+
+  @override
+  String get dateOfIPO => 'IPO-datum';
+
+  @override
+  String get telecommunications => 'Telecommunicatie';
+
+  @override
+  String get previousClose => 'Vorige slotkoers(GHS)';
+
+  @override
+  String get openGHS => 'Opening(GHS)';
+
+  @override
+  String get daysRange => 'Dagbereik(GHS)';
+
+  @override
+  String get volumeTraded => 'Verhandeld volume';
+
+  @override
+  String get fiftyTwoWeekRange => '52-weken bereik(GHS)';
+
+  @override
+  String get peRatio => 'K/W-verhouding';
+
+  @override
+  String get earningsPerShare => 'Winst per aandeel(GHS)';
+
+  @override
+  String get dividendYield => 'Dividendrendement';
+
+  @override
+  String get marketCap => 'Marktkapitalisatie(GHS)';
+
+  @override
+  String get sharesOutstanding => 'Uitstaande aandelen';
+
+  @override
+  String get capitalGainsLosses => 'Vermogenswinsten/(Verliezen)';
+
+  @override
+  String get issuer => 'Uitgever';
+
+  @override
+  String get governmentOfGhana => 'Regering van Ghana';
+
+  @override
+  String get currency => 'Valuta';
+
+  @override
+  String get ghs => 'GHS';
+
+  @override
+  String get maturityDate => 'Vervaldatum';
+
+  @override
+  String get currentRate => 'Huidige rente';
+
+  @override
+  String get maturityRate => 'Vervalrente';
+
+  @override
+  String get couponRate => 'Couponrente';
+
+  @override
+  String get enterSharesPurchase =>
+      'Voer het aantal aandelen in dat u wilt kopen';
+
+  @override
+  String get enterSharesSell =>
+      'Voer het aantal aandelen in dat u wilt verkopen';
+
+  @override
+  String get enterAmountPurchase => 'Voer het bedrag in dat u wilt kopen';
+
+  @override
+  String get enterAmountSell => 'Voer het bedrag in dat u wilt verkopen';
+
+  @override
+  String get orderExecutedInstantly =>
+      'Uw order wordt onmiddellijk uitgevoerd tegen de best beschikbare prijs';
+
+  @override
+  String get orderExecutedAtPrice =>
+      'Uw order wordt uitgevoerd als de gekozen prijs wordt bereikt';
+
+  @override
+  String get enterOrderPrice => 'Voer orderprijs in';
+
+  @override
+  String get percent25 => '25%';
+
+  @override
+  String get percent50 => '50%';
+
+  @override
+  String get percent75 => '75%';
+
+  @override
+  String get percent100 => '100%';
+
+  @override
+  String get enterUnitsPurchase =>
+      'Voer het aantal eenheden in dat u wilt kopen';
+
+  @override
+  String get enterUnitsSell =>
+      'Voer het aantal eenheden in dat u wilt verkopen';
+
+  @override
+  String get numberOfUnits => 'Aantal eenheden';
+
+  @override
+  String get nav => 'NIW';
+
+  @override
+  String get aum => 'Beheerd vermogen';
+
+  @override
+  String get expenseRatio => 'Kostenratio';
+
+  @override
+  String get minimumInvestment => 'Minimum investering';
+
+  @override
+  String get inceptionDate => 'Oprichtingsdatum';
+
+  @override
+  String get ytdReturn => 'Rendement dit jaar';
+
+  @override
+  String get oneYearReturn => '1-jaars rendement';
+
+  @override
+  String get threeYearReturn => '3-jaars rendement';
+
+  @override
+  String get fiveYearReturn => '5-jaars rendement';
+
+  @override
+  String get tenYearReturn => '10-jaars rendement';
+
+  @override
+  String get sinceInception => 'Sinds oprichting';
+
+  @override
+  String get standardDeviation => 'Standaarddeviatie';
+
+  @override
+  String get sharpeRatio => 'Sharpe-ratio';
+
+  @override
+  String get beta => 'Bèta';
+
+  @override
+  String get alpha => 'Alfa';
+
+  @override
+  String get rSquared => 'R-kwadraat';
+
+  @override
+  String get turnoverRatio => 'Omzet ratio';
+
+  @override
+  String get dateOfIpo => 'Datum van beursgang';
+
+  @override
+  String get fundType => 'Fondstype';
+
+  @override
+  String get managementFee => 'Beheerkosten';
+
+  @override
+  String get annualizedReturns => 'Geannualiseerd rendement';
+
+  @override
+  String get averageGain => 'Gemiddelde winst';
+
+  @override
+  String get averageLoss => 'Gemiddeld verlies';
+
+  @override
+  String get maximumDrawdown => 'Maximale drawdown';
+
+  @override
+  String get sortinoRatio => 'Sortino-ratio';
+
+  @override
+  String get loads => 'Kosten';
 }

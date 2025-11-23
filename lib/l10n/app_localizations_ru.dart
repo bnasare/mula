@@ -352,7 +352,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get number => 'Номер';
 
   @override
-  String get issueDate => 'Дата выдачи';
+  String get issueDate => 'Дата выпуска';
 
   @override
   String get expiryDate => 'Дата истечения';
@@ -989,7 +989,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tBillsBonds => 'Казначейские Векселя/Облигации';
 
   @override
-  String get mutualFunds => 'Взаимные Фонды';
+  String get mutualFunds => 'Паевые Фонды';
 
   @override
   String get article => 'Статья';
@@ -1118,152 +1118,485 @@ class AppLocalizationsRu extends AppLocalizations {
   String get selectCategory => 'Выбрать Категорию';
 
   @override
-  String get assetBreakdown => 'Asset Breakdown';
+  String get assetBreakdown => 'Разбивка Активов';
 
   @override
-  String get assetHoldings => 'Asset Holdings';
+  String get assetHoldings => 'Владения Активами';
 
   @override
-  String get portfolioSummary => 'Portfolio Summary';
+  String get portfolioSummary => 'Сводка Портфеля';
 
   @override
-  String get totalInvestmentValue => 'Total Investment Value';
+  String get totalInvestmentValue => 'Общая Стоимость Инвестиций';
 
   @override
-  String get totalDeposit => 'Total Deposit';
+  String get totalDeposit => 'Общий Депозит';
 
   @override
-  String get totalWithdrawal => 'Total Withdrawal';
+  String get totalWithdrawal => 'Общий Вывод';
 
   @override
-  String get realizedIncome => 'Realized Income';
+  String get realizedIncome => 'Реализованный Доход';
 
   @override
-  String get unrealizedIncome => 'Unrealized Income';
+  String get unrealizedIncome => 'Нереализованный Доход';
 
   @override
-  String get cumulativeReturn => 'Cumulative Return';
+  String get cumulativeReturn => 'Накопленная Доходность';
 
   @override
-  String get seePortfolioSummary => 'See portfolio summary';
+  String get seePortfolioSummary => 'Посмотреть сводку портфеля';
 
   @override
-  String get noPortfolioData => 'No portfolio data available';
+  String get noPortfolioData => 'Нет данных о портфеле';
 
   @override
-  String get seeAdvancedChart => 'See Advanced Chart';
+  String get seeAdvancedChart => 'Посмотреть Расширенный График';
 
   @override
-  String get myInvestments => 'My Investments';
+  String get myInvestments => 'Мои Инвестиции';
 
   @override
-  String get currentValue => 'Current Value';
+  String get currentValue => 'Текущая Стоимость';
 
   @override
-  String get returnLabel => 'Return';
+  String get returnLabel => 'Доходность';
 
   @override
-  String get shares => 'Shares';
+  String get shares => 'Акции';
 
   @override
-  String get costPrice => 'Cost Price';
+  String get costPrice => 'Себестоимость';
 
   @override
-  String get capitalGains => 'Capital Gains/(Losses)';
+  String get capitalGains => 'Прирост/(Убыток) Капитала';
 
   @override
-  String get about => 'About';
+  String get about => 'О компании';
 
   @override
-  String get treasuryBill => 'Treasury Bill';
+  String get treasuryBill => 'Казначейский Вексель';
 
   @override
-  String get purchaseInterestRate => 'Purchase Interest Rate';
+  String get purchaseInterestRate => 'Процентная Ставка Покупки';
 
   @override
-  String get accruedInterest => 'Accrued Interest';
+  String get accruedInterest => 'Накопленные Проценты';
 
   @override
-  String get overview => 'Overview';
+  String get overview => 'Обзор';
 
   @override
-  String get holdings => 'Holdings';
+  String get holdings => 'Владения';
 
   @override
-  String get allocation => 'Allocation';
+  String get allocation => 'Распределение';
 
   @override
-  String get metrics => 'Metrics';
+  String get metrics => 'Метрики';
 
   @override
-  String get units => 'Units';
+  String get units => 'Единицы';
 
   @override
-  String get industry => 'Industry';
+  String get industry => 'Отрасль';
 
   @override
-  String get rank => 'Rank';
+  String get rank => 'Ранг';
 
   @override
-  String get ghanaCedi => 'Ghana Cedi';
+  String get ghanaCedi => 'Ганский Седи';
 
   @override
-  String get backToChart => 'Back to chart';
+  String get backToChart => 'Вернуться к графику';
 
   @override
-  String get limitMarket => 'Limit Market';
+  String get limitMarket => 'Лимитный Рынок';
 
   @override
-  String get marketOrder => 'Market Order';
+  String get marketOrder => 'Рыночный Ордер';
 
   @override
-  String get cashBalance => 'Cash Balance';
+  String get cashBalance => 'Денежный Баланс';
 
   @override
   String get enterSharesPurchaseHint =>
-      'Enter number of shares you want to purchase';
+      'Введите количество акций, которые хотите купить';
 
   @override
-  String get enterSharesSellHint => 'Enter number of shares you want to sell';
+  String get enterSharesSellHint =>
+      'Введите количество акций, которые хотите продать';
 
   @override
-  String get enterAmountPurchaseHint => 'Enter the amount you want to purchase';
+  String get enterAmountPurchaseHint => 'Введите сумму, которую хотите купить';
 
   @override
-  String get enterAmountSellHint => 'Enter the amount you want to sell';
+  String get enterAmountSellHint => 'Введите сумму, которую хотите продать';
 
   @override
-  String get reviewOrder => 'Review Order';
+  String get reviewOrder => 'Проверить Заказ';
 
   @override
-  String get review => 'Review';
+  String get review => 'Проверить';
 
   @override
-  String get interestRate => 'Interest Rate';
+  String get interestRate => 'Процентная Ставка';
 
   @override
-  String get grossConsideration => 'Gross Consideration';
+  String get grossConsideration => 'Валовое Возмещение';
 
   @override
-  String get informationTechnology => 'Information Technology';
+  String get informationTechnology => 'Информационные Технологии';
 
   @override
   String get companyInc => 'Company Inc';
 
   @override
-  String get sector => 'Sector';
+  String get sector => 'Сектор';
 
   @override
-  String get country => 'Country';
+  String get country => 'Страна';
 
   @override
-  String get weight => 'Weight';
+  String get weight => 'Вес';
 
   @override
   String get treasuryBillAbout =>
-      'Treasury Bills (T-Bills) are short-term government securities issued by the Government of Ghana to raise funds for government operations and manage cash flow. They are considered one of the safest investment options in Ghana.';
+      'Казначейские векселя - это краткосрочные государственные ценные бумаги, выпускаемые правительством Ганы для привлечения средств на государственные операции и управления денежными потоками. Они считаются одним из самых безопасных вариантов инвестирования в Гане.';
 
   @override
   String get mutualFundAbout =>
-      'A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. The fund is managed by professional fund managers who make investment decisions on behalf of the investors.';
+      'Паевой фонд - это инвестиционный инструмент, который объединяет деньги нескольких инвесторов для инвестирования в диверсифицированный портфель акций, облигаций или других ценных бумаг. Фондом управляют профессиональные управляющие, которые принимают инвестиционные решения от имени инвесторов.';
+
+  @override
+  String get chooseOrderType => 'Выбрать тип ордера';
+
+  @override
+  String get chooseHowExecute =>
+      'Выберите, как вы хотите, чтобы ваш заказ был выполнен';
+
+  @override
+  String get marketOrderDesc => 'Выполнить немедленно по лучшей доступной цене';
+
+  @override
+  String get limitOrderDesc =>
+      'Установите свою собственную цену. Ордер выполняется только при достижении выбранной цены';
+
+  @override
+  String get limitOrder => 'Лимитный ордер';
+
+  @override
+  String get confirmDetailsBeforeBuy => 'Подтвердите детали перед покупкой';
+
+  @override
+  String get confirmDetailsBeforeSell => 'Подтвердите детали перед продажей';
+
+  @override
+  String get confirmDetailsBeforeProceeding =>
+      'Подтвердите детали перед продолжением';
+
+  @override
+  String get orderType => 'Тип ордера';
+
+  @override
+  String get orderPrice => 'Цена ордера';
+
+  @override
+  String get numberOfShares => 'Количество акций';
+
+  @override
+  String get currentPrice => 'Текущая цена';
+
+  @override
+  String get totalCharges => 'Общие расходы';
+
+  @override
+  String get netConsideration => 'Чистая сумма';
+
+  @override
+  String get availableCashBalance => 'Доступный остаток наличных';
+
+  @override
+  String get confirm => 'Подтвердить';
+
+  @override
+  String get orderSuccessful => 'Ордер успешен';
+
+  @override
+  String get orderSubmittedBroker =>
+      'Ваш запрос на ордер был отправлен брокеру';
+
+  @override
+  String get orderSubmittedFundManager =>
+      'Ваш запрос на ордер был отправлен управляющему фондом';
+
+  @override
+  String get trackInPortfolio => 'Отслеживать в портфеле';
+
+  @override
+  String get tradeOtherStocks => 'Торговать другими акциями';
+
+  @override
+  String get tradeOtherFunds => 'Торговать другими фондами';
+
+  @override
+  String get tradeOtherSecurities => 'Торговать другими ценными бумагами';
+
+  @override
+  String get estimatedMaturityValue => 'Расчетная стоимость погашения';
+
+  @override
+  String get availableCashBalanceTitle => 'Доступный остаток наличных';
+
+  @override
+  String get noDataAvailable => 'Данные недоступны';
+
+  @override
+  String get open => 'Открытие';
+
+  @override
+  String get high => 'Максимум';
+
+  @override
+  String get low => 'Минимум';
+
+  @override
+  String get close => 'Закрытие';
+
+  @override
+  String get howMuchBuy => 'Сколько вы хотите купить?';
+
+  @override
+  String get howMuchSell => 'Сколько вы хотите продать?';
+
+  @override
+  String get buySuccessful => 'Покупка успешна';
+
+  @override
+  String get sellSuccessful => 'Продажа успешна';
+
+  @override
+  String get sharesLabel => 'Акции';
+
+  @override
+  String get assetType => 'Тип актива';
+
+  @override
+  String get bonds => 'Облигации';
+
+  @override
+  String get reits => 'REIT';
+
+  @override
+  String get positive => 'Положительный';
+
+  @override
+  String get negative => 'Отрицательный';
+
+  @override
+  String get valueHighToLow => 'Стоимость (от высокой к низкой)';
+
+  @override
+  String get valueLowToHigh => 'Стоимость (от низкой к высокой)';
+
+  @override
+  String get changePercentHighToLow => 'Изменение % (от высокого к низкому)';
+
+  @override
+  String get changePercentLowToHigh => 'Изменение % (от низкого к высокому)';
+
+  @override
+  String get searchByAssetName => 'Поиск по названию актива';
+
+  @override
+  String get dateOfIncorporation => 'Дата регистрации';
+
+  @override
+  String get dateOfIPO => 'Дата IPO';
+
+  @override
+  String get telecommunications => 'Телекоммуникации';
+
+  @override
+  String get previousClose => 'Предыдущее закрытие(GHS)';
+
+  @override
+  String get openGHS => 'Открытие(GHS)';
+
+  @override
+  String get daysRange => 'Дневной диапазон(GHS)';
+
+  @override
+  String get volumeTraded => 'Объем торгов';
+
+  @override
+  String get fiftyTwoWeekRange => 'Диапазон 52 недель(GHS)';
+
+  @override
+  String get peRatio => 'Коэффициент P/E';
+
+  @override
+  String get earningsPerShare => 'Прибыль на акцию(GHS)';
+
+  @override
+  String get dividendYield => 'Дивидендная доходность';
+
+  @override
+  String get marketCap => 'Рыночная капитализация(GHS)';
+
+  @override
+  String get sharesOutstanding => 'Акции в обращении';
+
+  @override
+  String get capitalGainsLosses => 'Прирост/(Убыток) капитала';
+
+  @override
+  String get issuer => 'Эмитент';
+
+  @override
+  String get governmentOfGhana => 'Правительство Ганы';
+
+  @override
+  String get currency => 'Валюта';
+
+  @override
+  String get ghs => 'GHS';
+
+  @override
+  String get maturityDate => 'Дата погашения';
+
+  @override
+  String get currentRate => 'Текущая ставка';
+
+  @override
+  String get maturityRate => 'Ставка погашения';
+
+  @override
+  String get couponRate => 'Купонная ставка';
+
+  @override
+  String get enterSharesPurchase =>
+      'Введите количество акций, которые вы хотите купить';
+
+  @override
+  String get enterSharesSell =>
+      'Введите количество акций, которые вы хотите продать';
+
+  @override
+  String get enterAmountPurchase => 'Введите сумму, которую вы хотите купить';
+
+  @override
+  String get enterAmountSell => 'Введите сумму, которую вы хотите продать';
+
+  @override
+  String get orderExecutedInstantly =>
+      'Ваш ордер будет исполнен мгновенно по лучшей доступной цене';
+
+  @override
+  String get orderExecutedAtPrice =>
+      'Ваш ордер будет исполнен, если будет достигнута выбранная цена';
+
+  @override
+  String get enterOrderPrice => 'Введите цену ордера';
+
+  @override
+  String get percent25 => '25%';
+
+  @override
+  String get percent50 => '50%';
+
+  @override
+  String get percent75 => '75%';
+
+  @override
+  String get percent100 => '100%';
+
+  @override
+  String get enterUnitsPurchase =>
+      'Введите количество паев, которые вы хотите купить';
+
+  @override
+  String get enterUnitsSell =>
+      'Введите количество паев, которые вы хотите продать';
+
+  @override
+  String get numberOfUnits => 'Количество паев';
+
+  @override
+  String get nav => 'Стоимость чистых активов';
+
+  @override
+  String get aum => 'Активы под управлением';
+
+  @override
+  String get expenseRatio => 'Коэффициент расходов';
+
+  @override
+  String get minimumInvestment => 'Минимальные инвестиции';
+
+  @override
+  String get inceptionDate => 'Дата создания';
+
+  @override
+  String get ytdReturn => 'Доходность с начала года';
+
+  @override
+  String get oneYearReturn => 'Доходность за 1 год';
+
+  @override
+  String get threeYearReturn => 'Доходность за 3 года';
+
+  @override
+  String get fiveYearReturn => 'Доходность за 5 лет';
+
+  @override
+  String get tenYearReturn => 'Доходность за 10 лет';
+
+  @override
+  String get sinceInception => 'С момента создания';
+
+  @override
+  String get standardDeviation => 'Стандартное отклонение';
+
+  @override
+  String get sharpeRatio => 'Коэффициент Шарпа';
+
+  @override
+  String get beta => 'Бета';
+
+  @override
+  String get alpha => 'Альфа';
+
+  @override
+  String get rSquared => 'R-квадрат';
+
+  @override
+  String get turnoverRatio => 'Коэффициент оборачиваемости';
+
+  @override
+  String get dateOfIpo => 'Дата IPO';
+
+  @override
+  String get fundType => 'Тип фонда';
+
+  @override
+  String get managementFee => 'Плата за управление';
+
+  @override
+  String get annualizedReturns => 'Годовая доходность';
+
+  @override
+  String get averageGain => 'Средняя прибыль';
+
+  @override
+  String get averageLoss => 'Средний убыток';
+
+  @override
+  String get maximumDrawdown => 'Максимальная просадка';
+
+  @override
+  String get sortinoRatio => 'Коэффициент Сортино';
+
+  @override
+  String get loads => 'Нагрузки';
 }

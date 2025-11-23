@@ -12,7 +12,7 @@
   "emailOrPhone": "メールまたは電話",
   "enterEmailOrPhone": "メールアドレスまたは電話番号を入力してください",
   "forgotPassword": "パスワードをお忘れですか？",
-  "dontHaveAccount": "アカウントをお持ちでないですか？",
+  "dontHaveAccount": "アカウントをお持ちではありませんか？",
   "signUp": "サインアップ",
   "resetYourPassword": "パスワードをリセット",
   "resetPasswordDescription": "確認コードを受け取るには、メールアドレスまたは電話番号を入力してください",
@@ -25,7 +25,6 @@
   "resetPassword": "パスワードをリセット",
   "passwordResetSuccessful": "パスワードのリセットに成功しました",
   "passwordResetSuccessDescription": "パスワードが正常にリセットされました。新しいパスワードでサインインできるようになりました",
-
   "letsGetYouStarted": "始めましょう",
   "createFreeAccountDescription": "1分以内に無料のMULAアカウントを作成できます。",
   "fullName": "フルネーム",
@@ -44,7 +43,6 @@
   "termsOfService": "利用規約",
   "and": "および",
   "privacyPolicy": "プライバシーポリシー",
-
   "otpVerification": "OTP認証",
   "enterVerificationCode": "メールアドレスに送信した認証コードを入力してください",
   "phoneNumber": "電話番号",
@@ -52,7 +50,6 @@
   "verify": "認証する",
   "didntReceiveCode": "コードが届きませんでしたか？",
   "resend": "再送信",
-
   "security": "セキュリティ",
   "enableFaceId": "Face ID を有効にする",
   "enable": "有効にする",
@@ -66,7 +63,6 @@
   "pinCreatedDescription": "アカウント登録を完了しましょう",
   "continueButton": "続ける",
   "enterYourPin": "続行するにはPINを入力してください",
-
   "tellUsAboutYou": "あなたについて教えてください",
   "tellUsAboutYouDescription": "これにより、MULAエクスペリエンスをパーソナライズできます",
   "dateOfBirth": "生年月日",
@@ -80,39 +76,31 @@
   "enterGpsAddress": "GPS住所を入力してください",
   "occupation": "職業",
   "whatIsYourOccupation": "ご職業は何ですか？",
-
   "personalDetails": "個人情報",
   "personalDetailsDescription": "アカウントを設定するためにいくつかの詳細が必要です",
   "nationality": "国籍",
   "selectNationality": "国籍を選択してください",
   "emergencyNumber": "緊急連絡先番号",
   "enterEmergencyNumber": "緊急連絡先番号を入力してください",
-
   "identificationDetails": "身分証明書の詳細",
   "submit": "送信",
-
   "bankDetails": "銀行詳細",
   "selectBank": "銀行を選択",
   "selectYourBank": "銀行を選択してください",
   "bankAccountNumber": "銀行口座番号",
   "enterYourAccountNumber": "口座番号を入力してください",
-
   "chooseAccountType": "アカウントタイプを選択",
   "chooseAccountTypeDescription": "適切なアカウントタイプを選択することで、適切なプロバイダーに接続できます。",
-
   "brokers": "ブローカー",
   "brokersDescription": "投資の旅を始めるために、ブローカーを選択してください。",
   "noBrokersFound": "ブローカーが見つかりません",
-
   "accountDetailsSuccessfullySubmitted": "アカウント詳細が正常に送信されました",
   "accountDetailsSuccessDescription": "アカウントが作成されました。アカウントを検証するためにメールを確認してください。確認ステータスの更新についてメールを確認してください。",
-
   "idVerification": "本人確認",
   "selectIdType": "本人確認のためIDタイプを選択してください",
   "ghanaCard": "ガーナカード",
   "driversLicense": "運転免許証",
   "passport": "パスポート",
-
   "uploadDocumentsDescription": "本人確認のため、文書を安全にアップロードして、アカウント設定を完了してください",
   "pictureOfFront": "表面の写真",
   "pictureOfBack": "裏面の写真",
@@ -123,7 +111,6 @@
   "issueDate": "発行日",
   "expiryDate": "有効期限",
   "next": "次へ",
-
   "investmentExperience": "あなたの投資経験",
   "investmentExperienceDescription": "これにより、最適なツール、リソース、レイアウトをお勧めできます",
   "beginner": "初心者",
@@ -132,7 +119,6 @@
   "intermediateDescription": "少し投資をしたことがあり、仕組みを理解しています。",
   "advanced": "上級者",
   "advancedDescription": "経験があり、高度なツールへの完全なアクセスが必要です。",
-
   "goodHandsTitle": "あなたは良い手の中にいます",
   "goodHandsDescription": "投資は intimidating に聞こえるかもしれませんが、MULAを使用すれば、開始するために専門家である必要はありません。アカウントのリンクからポートフォリオの理解まで、すべてのステップをご案内し、自信を持って投資できるようにします。",
   "hereIsWhatYouCanExpect": "期待できることは次のとおりです:",
@@ -140,28 +126,23 @@
   "supportWheneverNeeded": "必要なときにいつでもサポート",
   "guidanceToExplore": "投資機会を探索するためのガイダンス",
   "simpleExplanations": "各ステップでの簡単な説明",
-
   "linkInvestmentAccounts": "投資アカウントをリンク",
   "linkAccountsDescription": "これにより、所有するすべてのものを1か所で表示できます",
   "csdAccount": "CSDアカウントを持っています",
   "csdAccountDescription": "株式、債券、国債などの証券用",
   "cisAccount": "CISアカウントを持っています",
   "cisAccountDescription": "Databank、EDCなどのファンドマネージャーから",
-  "dontHaveAccount": "アカウントをお持ちではありませんか？",
   "dontHaveAccountDescription": "アカウントを作成して今日から投資を始めることができます",
-
   "selectFundManager": "ファンドマネージャーを選択",
   "selectFundManagerDescription": "投資の旅を始めるために、ファンドマネージャーを選択してください。",
   "searchByAssetNameOrType": "資産名またはタイプで検索",
   "addAnother": "別のものを追加",
   "done": "完了",
-
   "fundManager": "ファンドマネージャー",
   "fundsManaged": "管理されているファンド",
   "select": "選択",
   "fundManagerLinkedSuccessfully": "ファンドマネージャーが正常にリンクされました",
   "fundManagerLinkedSuccessDescription": "ファンドマネージャーがアカウントにリンクされました。投資を表示および管理できるようになりました。",
-
   "enterCsdAccountNumber": "CSDアカウント番号は何ですか？",
   "csdAccountNumberDescription": "この番号は国債証書で見つけることができます。お持ちでない場合は、ブローカーに連絡してサポートを受けてください",
   "accountNumber": "アカウント番号",
@@ -171,7 +152,6 @@
   "weFoundYourBrokers": "ブローカーが見つかりました",
   "signInToBrokersDescription": "投資を安全に取得できるように、ブローカーアカウントにサインインしてください",
   "add": "追加",
-
   "deposit": "入金",
   "chooseAccountToTopUp": "チャージするアカウントを選択",
   "mobileMoneyDeposit": "モバイルマネー",
@@ -210,7 +190,6 @@
   "noNotifications": "通知なし",
   "noNotificationsDescription": "すべて最新です！",
   "markAllAsRead": "すべて既読にする",
-
   "home": "ホーム",
   "explore": "探索",
   "portfolio": "ポートフォリオ",
@@ -259,8 +238,8 @@
   "cancelled": "キャンセル",
   "buy": "購入",
   "sell": "売却",
-  "dateRange": "日付範囲",
-  "sortBy": "並べ替え",
+  "dateRange": "期間",
+  "sortBy": "並び替え",
   "sortByStatus": "ステータスで並べ替え",
   "keywordSearch": "キーワード検索",
   "enterAKeyword": "キーワードを入力",
@@ -282,7 +261,6 @@
   "withdrawComingSoon": "出金は近日公開",
   "depositComingSoon": "入金は近日公開",
   "noTransactionsYet": "まだ取引がありません",
-
   "hiImMulaBot": "こんにちは、Mula Botです",
   "yourPersonalGuide": "スマートな投資のための個人ガイド",
   "startChat": "チャットを開始",
@@ -332,7 +310,6 @@
   "accountLinkedSuccessfully": "アカウントのリンクが完了しました",
   "accountLinkedSuccessDescription": "あなたのアカウントはMULAに正常にリンクされました",
   "goBack": "戻る",
-
   "learningTracks": "学習トラック",
   "featuredTracks": "注目のトラック",
   "popularLessons": "人気のレッスン",
@@ -353,57 +330,266 @@
   },
   "whatIsAMutualFund": "投資信託とは？",
   "poolingMoneySpreading": "資金をプールし、リスクを分散し、富を増やす",
-
   "markAsRead": "既読にする",
   "read": "既読",
   "investIn": "{asset}に投資する",
-  "@investIn": {"placeholders": {"asset": {"type": "String"}}},
+  "@investIn": {
+    "placeholders": {
+      "asset": {
+        "type": "String"
+      }
+    }
+  },
   "takeAQuiz": "クイズに挑戦",
   "shareWithFriends": "友達と共有するかコメントを残す",
   "leaveComment": "コメントを残す",
   "reply": "返信",
   "viewComments": "コメントを見る ({count})",
-  "@viewComments": {"placeholders": {"count": {"type": "String"}}},
+  "@viewComments": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "minsRead": "{count}分で読める",
-  "@minsRead": {"placeholders": {"count": {"type": "int"}}},
+  "@minsRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "views": "{count}k",
-  "@views": {"placeholders": {"count": {"type": "String"}}},
+  "@views": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
   "showMoreReplies": "{count}件の返信をもっと見る",
-  "@showMoreReplies": {"placeholders": {"count": {"type": "int"}}},
-
+  "@showMoreReplies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "question": "質問 {number}",
-  "@question": {"placeholders": {"number": {"type": "int"}}},
-  "done": "完了",
+  "@question": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
   "wellDone": "よくできました {name}!",
-  "@wellDone": {"placeholders": {"name": {"type": "String"}}},
+  "@wellDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "youAnsweredCorrectly": "{total}問中{correct}問正解しました。100%習得するために練習を続けましょう",
-  "@youAnsweredCorrectly": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@youAnsweredCorrectly": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "quizScoreMessage": "{total}問中{correct}問正解しました",
-  "@quizScoreMessage": {"placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@quizScoreMessage": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "keepPracticing": "100%習得するために練習を続けましょう",
   "tryAgain": "もう一度",
   "goToHome": "ホームに戻る",
   "exploreOtherResources": "他のリソースを探す",
   "pts": "+{points}pts",
-  "@pts": {"placeholders": {"points": {"type": "int"}}},
-
+  "@pts": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "searchByAsset": "資産で検索",
-  "sortBy": "並び替え",
   "relevance": "関連性",
-  "clearAll": "すべてクリア",
   "popular": "人気",
   "stocks": "株式",
   "highYieldFunds": "高利回りファンド",
   "tBills": "財務省短期証券",
-  "filter": "フィルター",
-  "dateRange": "期間",
-  "last30Days": "過去30日間",
-  "last60Days": "過去60日間",
-  "thisYear": "今年",
-  "customDate": "カスタム日付",
   "stock": "株式",
   "selectLevel": "レベルを選択",
   "category": "カテゴリー",
   "selectCategory": "カテゴリーを選択",
-  "apply": "適用"
+  "assetBreakdown": "資産内訳",
+  "assetHoldings": "資産保有",
+  "portfolioSummary": "ポートフォリオサマリー",
+  "totalInvestmentValue": "総投資額",
+  "totalDeposit": "総入金額",
+  "totalWithdrawal": "総出金額",
+  "realizedIncome": "実現損益",
+  "unrealizedIncome": "未実現損益",
+  "cumulativeReturn": "累積収益",
+  "seePortfolioSummary": "ポートフォリオサマリーを見る",
+  "noPortfolioData": "ポートフォリオデータがありません",
+  "seeAdvancedChart": "詳細チャートを見る",
+  "myInvestments": "マイ投資",
+  "currentValue": "現在の価値",
+  "returnLabel": "リターン",
+  "shares": "株式",
+  "costPrice": "原価",
+  "capitalGains": "キャピタルゲイン/(損失)",
+  "about": "について",
+  "treasuryBill": "財務省証券",
+  "purchaseInterestRate": "購入金利",
+  "accruedInterest": "未収利息",
+  "overview": "概要",
+  "holdings": "保有銘柄",
+  "allocation": "配分",
+  "metrics": "メトリクス",
+  "units": "ユニット",
+  "industry": "業界",
+  "rank": "ランク",
+  "ghanaCedi": "ガーナセディ",
+  "backToChart": "チャートに戻る",
+  "limitMarket": "指値市場",
+  "marketOrder": "成行注文",
+  "cashBalance": "現金残高",
+  "enterSharesPurchaseHint": "購入したい株式数を入力してください",
+  "enterSharesSellHint": "売却したい株式数を入力してください",
+  "enterAmountPurchaseHint": "購入したい金額を入力してください",
+  "enterAmountSellHint": "売却したい金額を入力してください",
+  "reviewOrder": "注文確認",
+  "review": "確認",
+  "interestRate": "金利",
+  "grossConsideration": "総対価",
+  "informationTechnology": "情報技術",
+  "companyInc": "Company Inc",
+  "sector": "セクター",
+  "country": "国",
+  "weight": "ウェイト",
+  "treasuryBillAbout": "財務省証券（T-Bills）は、ガーナ政府が政府運営の資金調達と現金流量管理のために発行する短期政府証券です。ガーナで最も安全な投資オプションの1つと考えられています。",
+  "mutualFundAbout": "投資信託は、複数の投資家から資金を集め、株式、債券、その他の証券の分散ポートフォリオに投資する投資手段です。ファンドは、投資家に代わって投資決定を行うプロのファンドマネージャーによって管理されます。",
+  "chooseOrderType": "注文タイプを選択",
+  "chooseHowExecute": "注文の実行方法を選択してください",
+  "marketOrderDesc": "最良の利用可能価格ですぐに実行する",
+  "limitOrderDesc": "独自の価格を設定します。選択した価格に達した場合にのみ注文が実行されます",
+  "limitOrder": "指値注文",
+  "confirmDetailsBeforeBuy": "購入前に詳細を確認する",
+  "confirmDetailsBeforeSell": "売却前に詳細を確認する",
+  "confirmDetailsBeforeProceeding": "続行する前に詳細を確認する",
+  "orderType": "注文タイプ",
+  "orderPrice": "注文価格",
+  "numberOfShares": "株式数",
+  "currentPrice": "現在価格",
+  "totalCharges": "総手数料",
+  "netConsideration": "純対価",
+  "availableCashBalance": "利用可能な現金残高",
+  "confirm": "確認",
+  "orderSuccessful": "注文成功",
+  "orderSubmittedBroker": "注文リクエストがブローカーに送信されました",
+  "orderSubmittedFundManager": "注文リクエストがファンドマネージャーに送信されました",
+  "trackInPortfolio": "ポートフォリオで追跡",
+  "tradeOtherStocks": "他の株式を取引",
+  "tradeOtherFunds": "他のファンドを取引",
+  "tradeOtherSecurities": "他の証券を取引",
+  "estimatedMaturityValue": "推定満期価値",
+  "availableCashBalanceTitle": "利用可能な現金残高",
+  "noDataAvailable": "データがありません",
+  "open": "始値",
+  "high": "高値",
+  "low": "安値",
+  "close": "終値",
+  "howMuchBuy": "いくら購入しますか？",
+  "howMuchSell": "いくら売却しますか？",
+  "buySuccessful": "購入成功",
+  "sellSuccessful": "売却成功",
+  "sharesLabel": "株式",
+  "assetType": "資産タイプ",
+  "bonds": "債券",
+  "reits": "REIT",
+  "positive": "プラス",
+  "negative": "マイナス",
+  "valueHighToLow": "価値（高から低）",
+  "valueLowToHigh": "価値（低から高）",
+  "changePercentHighToLow": "変化率（高から低）",
+  "changePercentLowToHigh": "変化率（低から高）",
+  "searchByAssetName": "資産名で検索",
+  "dateOfIncorporation": "設立日",
+  "dateOfIPO": "IPO日",
+  "telecommunications": "通信",
+  "previousClose": "前日終値(GHS)",
+  "openGHS": "始値(GHS)",
+  "daysRange": "当日レンジ(GHS)",
+  "volumeTraded": "取引高",
+  "fiftyTwoWeekRange": "52週レンジ(GHS)",
+  "peRatio": "PER",
+  "earningsPerShare": "1株当たり利益(GHS)",
+  "dividendYield": "配当利回り",
+  "marketCap": "時価総額(GHS)",
+  "sharesOutstanding": "発行済株式数",
+  "capitalGainsLosses": "キャピタルゲイン/(ロス)",
+  "issuer": "発行体",
+  "governmentOfGhana": "ガーナ政府",
+  "currency": "通貨",
+  "ghs": "GHS",
+  "maturityDate": "満期日",
+  "currentRate": "現在金利",
+  "maturityRate": "満期金利",
+  "couponRate": "クーポンレート",
+  "enterSharesPurchase": "購入したい株数を入力してください",
+  "enterSharesSell": "売却したい株数を入力してください",
+  "enterAmountPurchase": "購入したい金額を入力してください",
+  "enterAmountSell": "売却したい金額を入力してください",
+  "orderExecutedInstantly": "ご注文は最良の利用可能価格ですぐに執行されます",
+  "orderExecutedAtPrice": "選択した価格に達した場合、ご注文が執行されます",
+  "enterOrderPrice": "注文価格を入力してください",
+  "percent25": "25%",
+  "percent50": "50%",
+  "percent75": "75%",
+  "percent100": "100%",
+  "enterUnitsPurchase": "購入したい口数を入力してください",
+  "enterUnitsSell": "売却したい口数を入力してください",
+  "numberOfUnits": "口数",
+  "nav": "純資産価値",
+  "aum": "運用資産総額",
+  "expenseRatio": "経費率",
+  "minimumInvestment": "最低投資額",
+  "inceptionDate": "設定日",
+  "ytdReturn": "年初来リターン",
+  "oneYearReturn": "1年リターン",
+  "threeYearReturn": "3年リターン",
+  "fiveYearReturn": "5年リターン",
+  "tenYearReturn": "10年リターン",
+  "sinceInception": "設定来",
+  "standardDeviation": "標準偏差",
+  "sharpeRatio": "シャープレシオ",
+  "beta": "ベータ",
+  "alpha": "アルファ",
+  "rSquared": "決定係数",
+  "turnoverRatio": "回転率",
+  "dateOfIpo": "IPO日",
+  "fundType": "ファンドタイプ",
+  "managementFee": "管理手数料",
+  "annualizedReturns": "年率リターン",
+  "averageGain": "平均利益",
+  "averageLoss": "平均損失",
+  "maximumDrawdown": "最大ドローダウン",
+  "sortinoRatio": "ソルティノレシオ",
+  "loads": "ロード"
 }

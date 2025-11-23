@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../dashboard/domain/entities/asset.dart';
 
 /// Card displaying a single asset holding with details
@@ -136,7 +137,7 @@ class AssetHoldingCard extends StatelessWidget {
                       ),
                     ),
                     AppText.smallest(
-                      '$shares Shares',
+                      '$shares ${context.localize.sharesLabel}',
                       color: AppColors.secondaryText(context),
                     ),
                   ],

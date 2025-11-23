@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../domain/entities/price_bar.dart';
 
 class TradeBarChart extends StatefulWidget {
@@ -51,7 +52,7 @@ class _TradeBarChartState extends State<TradeBarChart> {
   @override
   Widget build(BuildContext context) {
     if (widget.data.isEmpty) {
-      return const Center(child: Text('No data available'));
+      return Center(child: Text(context.localize.noDataAvailable));
     }
 
     return GestureDetector(
@@ -93,7 +94,7 @@ class _TradeBarChartState extends State<TradeBarChart> {
                   ),
                   children: [
                     TextSpan(
-                      text: 'Open: ${priceFormat.format(bar.open)}\n',
+                      text: '${context.localize.open}: ${priceFormat.format(bar.open)}\n',
                       style: TextStyle(
                         color: AppColors.secondaryText(context),
                         fontSize: 11,
@@ -101,7 +102,7 @@ class _TradeBarChartState extends State<TradeBarChart> {
                       ),
                     ),
                     TextSpan(
-                      text: 'High: ${priceFormat.format(bar.high)}\n',
+                      text: '${context.localize.high}: ${priceFormat.format(bar.high)}\n',
                       style: TextStyle(
                         color: AppColors.secondaryText(context),
                         fontSize: 11,
@@ -109,7 +110,7 @@ class _TradeBarChartState extends State<TradeBarChart> {
                       ),
                     ),
                     TextSpan(
-                      text: 'Low: ${priceFormat.format(bar.low)}\n',
+                      text: '${context.localize.low}: ${priceFormat.format(bar.low)}\n',
                       style: TextStyle(
                         color: AppColors.secondaryText(context),
                         fontSize: 11,
@@ -117,7 +118,7 @@ class _TradeBarChartState extends State<TradeBarChart> {
                       ),
                     ),
                     TextSpan(
-                      text: 'Close: ${priceFormat.format(bar.close)}',
+                      text: '${context.localize.close}: ${priceFormat.format(bar.close)}',
                       style: TextStyle(
                         color: bar.isPositive
                             ? AppColors.activitySuccess

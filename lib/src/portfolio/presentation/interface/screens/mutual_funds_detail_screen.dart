@@ -51,167 +51,177 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
 
     return Scaffold(
       appBar: MulaAppBar(title: context.localize.mutualFunds),
-      body: ScrollConfiguration(
-        behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const SizedBox(height: 16),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(height: 16),
 
-              // Tab Bar
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Container(
-                  padding: const EdgeInsets.all(4),
-                  decoration: BoxDecoration(
-                    color: AppColors.grey(context).withValues(alpha: 0.05),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: AssetTabButton(
-                          label: context.localize.overview,
-                          isActive: _selectedTab == 0,
-                          onTap: () => setState(() => _selectedTab = 0),
-                        ),
-                      ),
-                      Expanded(
-                        child: AssetTabButton(
-                          label: context.localize.holdings,
-                          isActive: _selectedTab == 1,
-                          onTap: () => setState(() => _selectedTab = 1),
-                        ),
-                      ),
-                      Expanded(
-                        child: AssetTabButton(
-                          label: context.localize.allocation,
-                          isActive: _selectedTab == 2,
-                          onTap: () => setState(() => _selectedTab = 2),
-                        ),
-                      ),
-                      Expanded(
-                        child: AssetTabButton(
-                          label: context.localize.metrics,
-                          isActive: _selectedTab == 3,
-                          onTap: () => setState(() => _selectedTab = 3),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+          // Tab Bar (Fixed - stays at top)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Container(
+              padding: const EdgeInsets.all(4),
+              decoration: BoxDecoration(
+                color: AppColors.grey(context).withValues(alpha: 0.05),
+                borderRadius: BorderRadius.circular(8),
               ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: AssetTabButton(
+                      label: context.localize.overview,
+                      isActive: _selectedTab == 0,
+                      onTap: () => setState(() => _selectedTab = 0),
+                    ),
+                  ),
+                  Expanded(
+                    child: AssetTabButton(
+                      label: context.localize.holdings,
+                      isActive: _selectedTab == 1,
+                      onTap: () => setState(() => _selectedTab = 1),
+                    ),
+                  ),
+                  Expanded(
+                    child: AssetTabButton(
+                      label: context.localize.allocation,
+                      isActive: _selectedTab == 2,
+                      onTap: () => setState(() => _selectedTab = 2),
+                    ),
+                  ),
+                  Expanded(
+                    child: AssetTabButton(
+                      label: context.localize.metrics,
+                      isActive: _selectedTab == 3,
+                      onTap: () => setState(() => _selectedTab = 3),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
 
-              const SizedBox(height: 24),
-
-              // Header Section
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+          // Scrollable Content (Header + Tab Content)
+          Expanded(
+            child: ScrollConfiguration(
+              behavior: ScrollConfiguration.of(
+                context,
+              ).copyWith(scrollbars: false),
+              child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        // Left: Ticker and Fund Name
-                        Expanded(
-                          child: Column(
+                    const SizedBox(height: 24),
+
+                    // Header Section
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              AppText.small(
-                                widget.ticker,
-                                color: AppColors.secondaryText(context),
-                              ),
-                              const SizedBox(height: 4),
-                              AppText.large(
-                                widget.fundName,
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.w600,
+                              // Left: Ticker and Fund Name
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    AppText.small(
+                                      widget.ticker,
+                                      color: AppColors.secondaryText(context),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    AppText.large(
+                                      widget.fundName,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
                                 ),
+                              ),
+                              // Right: Price and Change
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  AppText.large(
+                                    currencyFormat.format(widget.currentPrice),
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 4),
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      AppText.small(
+                                        '${currencyFormat.format(widget.change.abs())} (',
+                                        color: isPositive
+                                            ? AppColors.appPrimary
+                                            : AppColors.activityError,
+                                      ),
+                                      Icon(
+                                        isPositive
+                                            ? Icons.arrow_upward
+                                            : Icons.arrow_downward,
+                                        size: 12,
+                                        color: isPositive
+                                            ? AppColors.appPrimary
+                                            : AppColors.activityError,
+                                      ),
+                                      AppText.small(
+                                        '${widget.changePercentage.abs().toStringAsFixed(1)}%)',
+                                        color: isPositive
+                                            ? AppColors.appPrimary
+                                            : AppColors.activityError,
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ],
                           ),
-                        ),
-                        // Right: Price and Change
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            AppText.large(
-                              currencyFormat.format(widget.currentPrice),
-                              style: const TextStyle(
-                                fontWeight: FontWeight.w600,
+                          if (_selectedTab == 0 || _selectedTab == 3) ...[
+                            const SizedBox(height: 8),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: GestureDetector(
+                                onTap: () {
+                                  NavigationHelper.navigateTo(
+                                    context,
+                                    AdvancedChartScreen(
+                                      ticker: widget.ticker,
+                                      companyName: widget.fundName,
+                                      currentPrice: widget.currentPrice,
+                                      change: widget.change,
+                                      changePercentage: widget.changePercentage,
+                                    ),
+                                  );
+                                },
+                                child: AppText.smaller(
+                                  context.localize.seeAdvancedChart,
+                                  color: AppColors.appPrimary,
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 4),
-                            Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                AppText.small(
-                                  '${currencyFormat.format(widget.change.abs())} (',
-                                  color: isPositive
-                                      ? AppColors.appPrimary
-                                      : AppColors.activityError,
-                                ),
-                                Icon(
-                                  isPositive
-                                      ? Icons.arrow_upward
-                                      : Icons.arrow_downward,
-                                  size: 12,
-                                  color: isPositive
-                                      ? AppColors.appPrimary
-                                      : AppColors.activityError,
-                                ),
-                                AppText.small(
-                                  '${widget.changePercentage.abs().toStringAsFixed(1)}%)',
-                                  color: isPositive
-                                      ? AppColors.appPrimary
-                                      : AppColors.activityError,
-                                ),
-                              ],
                             ),
                           ],
-                        ),
-                      ],
-                    ),
-                    if (_selectedTab == 0 || _selectedTab == 3) ...[
-                      const SizedBox(height: 8),
-                      Align(
-                        alignment: Alignment.centerRight,
-                        child: GestureDetector(
-                          onTap: () {
-                            NavigationHelper.navigateTo(
-                              context,
-                              AdvancedChartScreen(
-                                ticker: widget.ticker,
-                                companyName: widget.fundName,
-                                currentPrice: widget.currentPrice,
-                                change: widget.change,
-                                changePercentage: widget.changePercentage,
-                              ),
-                            );
-                          },
-                          child: AppText.smaller(
-                            context.localize.seeAdvancedChart,
-                            color: AppColors.appPrimary,
-                          ),
-                        ),
+                        ],
                       ),
-                    ],
+                    ),
+
+                    const SizedBox(height: 24),
+
+                    // Tab Content
+                    _buildTabContent(currencyFormat),
+
+                    const SizedBox(height: 100),
                   ],
                 ),
               ),
-
-              const SizedBox(height: 24),
-
-              // Tab Content
-              _buildTabContent(currencyFormat),
-
-              const SizedBox(height: 100),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
@@ -295,7 +305,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                         const SizedBox(height: 16),
                         _buildInvestmentItem(
                           context,
-                          label: 'Return',
+                          label: context.localize.returnLabel,
                           value: '23.5%',
                         ),
                       ],
@@ -309,21 +319,21 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                       children: [
                         _buildInvestmentItem(
                           context,
-                          label: 'Units',
+                          label: context.localize.units,
                           value: '10,000',
                           alignment: CrossAxisAlignment.end,
                         ),
                         const SizedBox(height: 16),
                         _buildInvestmentItem(
                           context,
-                          label: 'Cost Price',
+                          label: context.localize.costPrice,
                           value: currencyFormat.format(2.50),
                           alignment: CrossAxisAlignment.end,
                         ),
                         const SizedBox(height: 16),
                         _buildInvestmentItem(
                           context,
-                          label: 'Capital Gains/(Losses)',
+                          label: context.localize.capitalGains,
                           value: currencyFormat.format(2000.00),
                           alignment: CrossAxisAlignment.end,
                         ),
@@ -355,11 +365,12 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                         fundName: widget.fundName,
                         currentPrice: widget.currentPrice,
                         availableCashBalance: 20.00, // TODO: Get from wallet
-                        currentHoldings: 100.0, // TODO: Get from user's holdings
+                        currentHoldings:
+                            100.0, // TODO: Get from user's holdings
                       ),
                     );
                   },
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: AppColors.transparent,
                   textColor: AppColors.primaryText(context),
                   borderColor: AppColors.border(context),
                   borderWidth: 1,
@@ -385,7 +396,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                     );
                   },
                   backgroundColor: AppColors.appPrimary,
-                  textColor: Colors.white,
+                  textColor: AppColors.white(context),
                   borderRadius: 8,
                   padding: EdgeInsets.zero,
                 ),
@@ -403,7 +414,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AppText.medium(
-                'Industry',
+                context.localize.industry,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: AppColors.primaryText(context),
@@ -491,11 +502,11 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
               if (index == 0) {
                 return _buildInfoItem(
                   context,
-                  label: 'Currency',
+                  label: context.localize.currency,
                   value: 'Ghana Cedi',
                 );
               } else {
-                return _buildInfoItem(context, label: 'Rank', value: '24');
+                return _buildInfoItem(context, label: context.localize.rank, value: '24');
               }
             },
           ),
@@ -517,24 +528,23 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
   }
 
   Widget _buildFundDetailItem(BuildContext context, int index) {
-    final Map<String, String> details = {
-      'Previous Close(GHS)': '2.0229',
-      'Net Asset Value(GHS)': '171.7M',
-      '52-Week Range(GHS)': '1.7846 - 2.0231',
-      'Minimum Investment(GHS)': '100.00',
-      'Fund Manager': 'IC Asset Managers',
-      'Fund Type': 'Fixed Income',
-      'Management Fee': '2.5% AUM',
-      'Inception Date': 'April 29, 2022',
-    };
+    final details = [
+      (context.localize.previousClose, '2.0229'),
+      (context.localize.nav, '171.7M'),
+      (context.localize.fiftyTwoWeekRange, '1.7846 - 2.0231'),
+      (context.localize.minimumInvestment, '100.00'),
+      (context.localize.fundManager, 'IC Asset Managers'),
+      (context.localize.fundType, 'Fixed Income'),
+      (context.localize.managementFee, '2.5% AUM'),
+      (context.localize.inceptionDate, 'April 29, 2022'),
+    ];
 
-    final keys = details.keys.toList();
-    if (index >= keys.length) return const SizedBox.shrink();
+    if (index >= details.length) return const SizedBox.shrink();
 
     return _buildInfoItem(
       context,
-      label: keys[index],
-      value: details[keys[index]]!,
+      label: details[index].$1,
+      value: details[index].$2,
     );
   }
 
@@ -646,7 +656,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                     ),
                   ),
                   AppText.small(
-                    'Holdings',
+                    context.localize.holdings,
                     color: AppColors.secondaryText(context),
                   ),
                 ],
@@ -772,7 +782,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               AppText.medium(
-                'Allocation',
+                context.localize.allocation,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: AppColors.primaryText(context),
@@ -789,21 +799,21 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                   PopupMenuItem(
                     value: 'Country',
                     child: AppText.small(
-                      'Country',
+                      context.localize.country,
                       color: AppColors.primaryText(context),
                     ),
                   ),
                   PopupMenuItem(
                     value: 'Sector',
                     child: AppText.small(
-                      'Sector',
+                      context.localize.sector,
                       color: AppColors.primaryText(context),
                     ),
                   ),
                   PopupMenuItem(
                     value: 'Asset Class',
                     child: AppText.small(
-                      'Asset Class',
+                      context.localize.assetClass,
                       color: AppColors.primaryText(context),
                     ),
                   ),
@@ -862,7 +872,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                 ),
               ),
               AppText.small(
-                'Weight',
+                context.localize.weight,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: AppColors.primaryText(context),
@@ -982,15 +992,15 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
 
   Widget _buildMetricsTab() {
     final metrics = [
-      {'label': 'Annualized Returns', 'value': '12.5%'},
-      {'label': 'Average Gain', 'value': '+0.3518'},
-      {'label': 'Average Loss', 'value': '-0.2719'},
-      {'label': 'Maximum Drawdown', 'value': '-1.3428'},
-      {'label': 'Sharpe Ratio', 'value': '0.63'},
-      {'label': 'Sortino Ratio', 'value': '0.39'},
-      {'label': 'Alpha', 'value': '0.57'},
-      {'label': 'Beta', 'value': '2.4'},
-      {'label': 'Loads', 'value': '0.075%'},
+      {'label': context.localize.annualizedReturns, 'value': '12.5%'},
+      {'label': context.localize.averageGain, 'value': '+0.3518'},
+      {'label': context.localize.averageLoss, 'value': '-0.2719'},
+      {'label': context.localize.maximumDrawdown, 'value': '-1.3428'},
+      {'label': context.localize.sharpeRatio, 'value': '0.63'},
+      {'label': context.localize.sortinoRatio, 'value': '0.39'},
+      {'label': context.localize.alpha, 'value': '0.57'},
+      {'label': context.localize.beta, 'value': '2.4'},
+      {'label': context.localize.loads, 'value': '0.075%'},
     ];
 
     return Column(
@@ -1099,7 +1109,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     AppText(
-                      'Currency',
+                      context.localize.currency,
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
@@ -1125,7 +1135,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     AppText(
-                      'Rank',
+                      context.localize.rank,
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
