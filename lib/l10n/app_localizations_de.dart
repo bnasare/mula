@@ -1080,4 +1080,34 @@ class AppLocalizationsDe extends AppLocalizations {
   String pts(int points) {
     return '+${points}Pkt';
   }
+
+  @override
+  String get searchByAsset => 'Search by asset, fund manager, category';
+
+  @override
+  String get relevance => 'Relevance';
+
+  @override
+  String get popular => 'Popular';
+
+  @override
+  String get stocks => 'Stocks';
+
+  @override
+  String get highYieldFunds => 'High-Yield Funds';
+
+  @override
+  String get tBills => 'T-Bills';
+
+  @override
+  String get stock => 'Stock';
+
+  @override
+  String get selectLevel => 'Select level';
+
+  @override
+  String get category => 'Category';
+
+  @override
+  String get selectCategory => 'Select Category';
 }

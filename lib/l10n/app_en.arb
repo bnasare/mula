@@ -442,5 +442,25 @@
         "type": "int"
       }
     }
-  }
+  },
+
+  "searchByAsset": "Search by asset, fund manager, category",
+  "sortBy": "Sort by:",
+  "relevance": "Relevance",
+  "clearAll": "Clear all",
+  "popular": "Popular",
+  "stocks": "Stocks",
+  "highYieldFunds": "High-Yield Funds",
+  "tBills": "T-Bills",
+  "filter": "Filter",
+  "dateRange": "Date Range",
+  "last30Days": "Last 30 days",
+  "last60Days": "Last 60 days",
+  "thisYear": "This Year",
+  "customDate": "Custom Date",
+  "stock": "Stock",
+  "selectLevel": "Select level",
+  "category": "Category",
+  "selectCategory": "Select Category",
+  "apply": "Apply"
 }

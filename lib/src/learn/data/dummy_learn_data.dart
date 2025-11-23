@@ -6,6 +6,7 @@ import '../domain/entities/comment.dart';
 import '../domain/entities/quiz.dart';
 import '../domain/entities/quiz_question.dart';
 import '../domain/entities/quiz_option.dart';
+import '../domain/entities/search_item.dart';
 
 class DummyLearnData {
   static List<LearningTrack> getFeaturedTracks() {
@@ -323,5 +324,65 @@ Imagine you have a friend who wants to start a business.
       );
     }
     return null;
+  }
+
+  static List<SearchItem> getSearchHistory() {
+    return const [
+      SearchItem(
+        id: 'h1',
+        title: 'MTNGH',
+        type: SearchItemType.history,
+      ),
+      SearchItem(
+        id: 'h2',
+        title: 'CCMF',
+        type: SearchItemType.history,
+      ),
+      SearchItem(
+        id: 'h3',
+        title: 'CB 18-APR-28',
+        type: SearchItemType.history,
+      ),
+    ];
+  }
+
+  static List<SearchItem> getPopularSearches() {
+    return const [
+      SearchItem(
+        id: 'p1',
+        title: 'Stocks',
+        type: SearchItemType.popular,
+      ),
+      SearchItem(
+        id: 'p2',
+        title: 'High-Yield Funds',
+        type: SearchItemType.popular,
+      ),
+      SearchItem(
+        id: 'p3',
+        title: 'T-Bills',
+        type: SearchItemType.popular,
+      ),
+    ];
+  }
+
+  static List<String> getStockLevels() {
+    return [
+      'All Stocks',
+      'Blue Chip',
+      'Mid Cap',
+      'Small Cap',
+    ];
+  }
+
+  static List<String> getSearchCategories() {
+    return [
+      'All Categories',
+      'Stocks',
+      'Bonds',
+      'T-Bills',
+      'Mutual Funds',
+      'High-Yield Funds',
+    ];
   }
 }

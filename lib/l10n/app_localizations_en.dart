@@ -619,7 +619,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notifications => 'Notifications';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => 'Clear all';
 
   @override
   String get noNotifications => 'No Notifications';
@@ -778,7 +778,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dateRange => 'Date Range';
 
   @override
-  String get sortBy => 'Sort by';
+  String get sortBy => 'Sort by:';
 
   @override
   String get sortByStatus => 'Sort by Status';
@@ -1073,4 +1073,34 @@ class AppLocalizationsEn extends AppLocalizations {
   String pts(int points) {
     return '+${points}pts';
   }
+
+  @override
+  String get searchByAsset => 'Search by asset, fund manager, category';
+
+  @override
+  String get relevance => 'Relevance';
+
+  @override
+  String get popular => 'Popular';
+
+  @override
+  String get stocks => 'Stocks';
+
+  @override
+  String get highYieldFunds => 'High-Yield Funds';
+
+  @override
+  String get tBills => 'T-Bills';
+
+  @override
+  String get stock => 'Stock';
+
+  @override
+  String get selectLevel => 'Select level';
+
+  @override
+  String get category => 'Category';
+
+  @override
+  String get selectCategory => 'Select Category';
 }

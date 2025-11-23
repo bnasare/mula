@@ -1265,7 +1265,7 @@ abstract class AppLocalizations {
   /// No description provided for @clearAll.
   ///
   /// In en, this message translates to:
-  /// **'Clear All'**
+  /// **'Clear all'**
   String get clearAll;
 
   /// No description provided for @noNotifications.
@@ -1583,7 +1583,7 @@ abstract class AppLocalizations {
   /// No description provided for @sortBy.
   ///
   /// In en, this message translates to:
-  /// **'Sort by'**
+  /// **'Sort by:'**
   String get sortBy;
 
   /// No description provided for @sortByStatus.
@@ -2119,6 +2119,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'+{points}pts'**
   String pts(int points);
+
+  /// No description provided for @searchByAsset.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by asset, fund manager, category'**
+  String get searchByAsset;
+
+  /// No description provided for @relevance.
+  ///
+  /// In en, this message translates to:
+  /// **'Relevance'**
+  String get relevance;
+
+  /// No description provided for @popular.
+  ///
+  /// In en, this message translates to:
+  /// **'Popular'**
+  String get popular;
+
+  /// No description provided for @stocks.
+  ///
+  /// In en, this message translates to:
+  /// **'Stocks'**
+  String get stocks;
+
+  /// No description provided for @highYieldFunds.
+  ///
+  /// In en, this message translates to:
+  /// **'High-Yield Funds'**
+  String get highYieldFunds;
+
+  /// No description provided for @tBills.
+  ///
+  /// In en, this message translates to:
+  /// **'T-Bills'**
+  String get tBills;
+
+  /// No description provided for @stock.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock'**
+  String get stock;
+
+  /// No description provided for @selectLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Select level'**
+  String get selectLevel;
+
+  /// No description provided for @category.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get category;
+
+  /// No description provided for @selectCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Category'**
+  String get selectCategory;
 }
 
 class _AppLocalizationsDelegate

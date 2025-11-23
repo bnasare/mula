@@ -5,10 +5,12 @@ import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
+import '../../../../../shared/utils/navigation.dart';
 import '../../../data/dummy_learn_data.dart';
 import '../widgets/featured_track_card.dart';
 import '../widgets/lesson_card.dart';
 import '../widgets/track_filter_tabs.dart';
+import 'learn_search_screen.dart';
 
 /// Learn tab - Educational content for investment learning
 class LearnTab extends StatefulWidget {
@@ -39,7 +41,7 @@ class _LearnTabState extends State<LearnTab> {
               color: AppColors.primaryText(context),
             ),
             onPressed: () {
-              // TODO: Implement search functionality
+              NavigationHelper.navigateTo(context, const LearnSearchScreen());
             },
           ),
         ],

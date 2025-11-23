@@ -413,5 +413,25 @@
   "goToHome": "Aller à l'accueil",
   "exploreOtherResources": "Explorer d'autres ressources",
   "pts": "+{points}pts",
-  "@pts": {"placeholders": {"points": {"type": "int"}}}
+  "@pts": {"placeholders": {"points": {"type": "int"}}},
+
+  "searchByAsset": "Rechercher par actif, gestionnaire de fonds, catégorie",
+  "sortBy": "Trier par:",
+  "relevance": "Pertinence",
+  "clearAll": "Tout effacer",
+  "popular": "Populaire",
+  "stocks": "Actions",
+  "highYieldFunds": "Fonds à Haut Rendement",
+  "tBills": "Bons du Trésor",
+  "filter": "Filtre",
+  "dateRange": "Plage de Dates",
+  "last30Days": "30 derniers jours",
+  "last60Days": "60 derniers jours",
+  "thisYear": "Cette Année",
+  "customDate": "Date Personnalisée",
+  "stock": "Action",
+  "selectLevel": "Sélectionner le niveau",
+  "category": "Catégorie",
+  "selectCategory": "Sélectionner la Catégorie",
+  "apply": "Appliquer"
 }

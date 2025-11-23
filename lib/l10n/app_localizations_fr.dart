@@ -625,7 +625,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get notifications => 'Notifications';
 
   @override
-  String get clearAll => 'Tout Effacer';
+  String get clearAll => 'Tout effacer';
 
   @override
   String get noNotifications => 'Aucune Notification';
@@ -707,7 +707,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get export => 'Exporter';
 
   @override
-  String get filter => 'Filtrer';
+  String get filter => 'Filtre';
 
   @override
   String get apply => 'Appliquer';
@@ -785,7 +785,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get dateRange => 'Plage de Dates';
 
   @override
-  String get sortBy => 'Trier par';
+  String get sortBy => 'Trier par:';
 
   @override
   String get sortByStatus => 'Trier par Statut';
@@ -1085,4 +1085,35 @@ class AppLocalizationsFr extends AppLocalizations {
   String pts(int points) {
     return '+${points}pts';
   }
+
+  @override
+  String get searchByAsset =>
+      'Rechercher par actif, gestionnaire de fonds, catégorie';
+
+  @override
+  String get relevance => 'Pertinence';
+
+  @override
+  String get popular => 'Populaire';
+
+  @override
+  String get stocks => 'Actions';
+
+  @override
+  String get highYieldFunds => 'Fonds à Haut Rendement';
+
+  @override
+  String get tBills => 'Bons du Trésor';
+
+  @override
+  String get stock => 'Action';
+
+  @override
+  String get selectLevel => 'Sélectionner le niveau';
+
+  @override
+  String get category => 'Catégorie';
+
+  @override
+  String get selectCategory => 'Sélectionner la Catégorie';
 }
