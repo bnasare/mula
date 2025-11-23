@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 
 /// Portfolio Summary screen showing detailed investment metrics
 class PortfolioSummaryScreen extends StatelessWidget {
@@ -18,8 +19,8 @@ class PortfolioSummaryScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: AppColors.offWhite(context),
-      appBar: const MulaAppBar(
-        title: 'Portfolio Summary',
+      appBar: MulaAppBar(
+        title: context.localize.portfolioSummary,
       ),
       body: ListView.separated(
         padding: const EdgeInsets.all(20),
@@ -34,37 +35,37 @@ class PortfolioSummaryScreen extends StatelessWidget {
             case 0:
               return _buildSummaryItem(
                 context,
-                label: 'Total Investment Value',
+                label: context.localize.totalInvestmentValue,
                 value: currencyFormat.format(5304.05),
               );
             case 1:
               return _buildSummaryItem(
                 context,
-                label: 'Total Deposit',
+                label: context.localize.totalDeposit,
                 value: currencyFormat.format(4800.00),
               );
             case 2:
               return _buildSummaryItem(
                 context,
-                label: 'Total Withdrawal',
+                label: context.localize.totalWithdrawal,
                 value: currencyFormat.format(0.00),
               );
             case 3:
               return _buildSummaryItem(
                 context,
-                label: 'Realized Income',
+                label: context.localize.realizedIncome,
                 value: currencyFormat.format(0.00),
               );
             case 4:
               return _buildSummaryItem(
                 context,
-                label: 'Unrealized Income',
+                label: context.localize.unrealizedIncome,
                 value: currencyFormat.format(504.05),
               );
             case 5:
               return _buildSummaryItem(
                 context,
-                label: 'Cumulative Return',
+                label: context.localize.cumulativeReturn,
                 value: '12.5%',
               );
             default:

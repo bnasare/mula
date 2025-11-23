@@ -4,6 +4,7 @@ import 'package:iconly/iconly.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/domain/entities/asset.dart';
 import '../../../../transactions/presentation/interface/screens/report_issue_screen.dart';
@@ -135,7 +136,7 @@ class AllAssetHoldingsScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: MulaAppBarHelpers.withActions(
-        title: 'Asset Holdings',
+        title: context.localize.assetHoldings,
         actions: [
           // Filter Button
           IconButton(
@@ -170,7 +171,7 @@ class AllAssetHoldingsScreen extends StatelessWidget {
               PopupMenuItem(
                 value: 'report',
                 child: AppText.small(
-                  'Report an Issue',
+                  context.localize.reportAnIssue,
                   color: AppColors.primaryText(context),
                 ),
               ),

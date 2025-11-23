@@ -6,6 +6,7 @@ import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/market_status_indicator.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../authentication/presentation/interface/widgets/mula_text_field.dart';
 import '../../../../home/presentation/interface/widgets/asset_tab_button.dart';
@@ -355,7 +356,7 @@ class _MutualFundTradeScreenState extends State<MutualFundTradeScreen> {
             Padding(
               padding: const EdgeInsets.all(16).copyWith(bottom: 32),
               child: AppButton(
-                text: 'Review Order',
+                text: context.localize.reviewOrder,
                 onTap: _isFormValid ? _handleReview : null,
                 backgroundColor: _isFormValid
                     ? AppColors.appPrimary

@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 
 /// Cash wallet section with balance display and card visual
 class CashWalletSection extends StatefulWidget {
@@ -37,7 +38,7 @@ class _CashWalletSectionState extends State<CashWalletSection> {
       child: Container(
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: AppColors.white(context),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(color: AppColors.border(context), width: 0.5),
         ),
@@ -62,7 +63,7 @@ class _CashWalletSectionState extends State<CashWalletSection> {
                       ),
                       const SizedBox(width: 12),
                       AppText.small(
-                        'Cash Balance',
+                        context.localize.cashBalance,
                         color: AppColors.secondaryText(context),
                       ),
                     ],
@@ -85,13 +86,10 @@ class _CashWalletSectionState extends State<CashWalletSection> {
               width: 150,
               height: 100,
               decoration: BoxDecoration(
-                gradient: const LinearGradient(
+                gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [
-                    Color(0xFF7B68EE), // Medium slate blue
-                    Color(0xFF6A5ACD), // Slate blue
-                  ],
+                  colors: AppColors.purpleGradient,
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),
@@ -106,9 +104,9 @@ class _CashWalletSectionState extends State<CashWalletSection> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         AppText.smallest(
-                          'Balance',
-                          style: const TextStyle(
-                            color: Colors.white,
+                          context.localize.balance,
+                          style: TextStyle(
+                            color: AppColors.white(context),
                             fontSize: 12,
                           ),
                         ),
@@ -121,7 +119,7 @@ class _CashWalletSectionState extends State<CashWalletSection> {
                           child: Icon(
                             _isBalanceVisible ? IconlyLight.show : IconlyLight.hide,
                             size: 16,
-                            color: Colors.white,
+                            color: AppColors.white(context),
                           ),
                         ),
                       ],
@@ -130,8 +128,8 @@ class _CashWalletSectionState extends State<CashWalletSection> {
                     // User name
                     AppText.medium(
                       widget.userName,
-                      style: const TextStyle(
-                        color: Colors.white,
+                      style: TextStyle(
+                        color: AppColors.white(context),
                         fontWeight: FontWeight.w600,
                       ),
                     ),

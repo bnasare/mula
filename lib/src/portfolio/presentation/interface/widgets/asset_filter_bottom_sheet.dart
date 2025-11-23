@@ -44,7 +44,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.white(context),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
       ),
       padding: const EdgeInsets.all(24),
@@ -232,7 +232,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
     return AppButton(
       text: 'Apply',
       backgroundColor: AppColors.appPrimary,
-      textColor: Colors.white,
+      textColor: AppColors.white(context),
       borderRadius: 8,
       padding: EdgeInsets.zero,
       onTap: () {
@@ -259,7 +259,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             width: 0.6,
-            color: isSelected ? AppColors.appPrimary : Colors.transparent,
+            color: isSelected ? AppColors.appPrimary : AppColors.transparent,
           ),
         ),
         child: AppText.smallest(
@@ -292,7 +292,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             width: 0.6,
-            color: isSelected ? AppColors.appPrimary : Colors.transparent,
+            color: isSelected ? AppColors.appPrimary : AppColors.transparent,
           ),
         ),
         child: AppText.smallest(

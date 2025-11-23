@@ -6,6 +6,7 @@ import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/market_status_indicator.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../authentication/presentation/interface/widgets/mula_text_field.dart';
 import '../../../domain/entities/trade_type.dart';
@@ -244,7 +245,7 @@ class _TBillTradeScreenState extends State<TBillTradeScreen> {
             padding: const EdgeInsets.all(16).copyWith(bottom: 32),
             decoration: BoxDecoration(),
             child: AppButton(
-              text: 'Review',
+              text: context.localize.review,
               onTap: _isFormValid ? _handleReview : null,
               backgroundColor: _isFormValid
                   ? AppColors.appPrimary
@@ -289,12 +290,12 @@ class _TBillTradeScreenState extends State<TBillTradeScreen> {
     switch (index) {
       case 0:
         return _buildDetailRow(
-          'Interest Rate',
+          context.localize.interestRate,
           '${widget.interestRate.toStringAsFixed(2)}%',
         );
       case 1:
         return _buildDetailRow(
-          'Gross Consideration',
+          context.localize.grossConsideration,
           'GHS ${_grossConsideration.toStringAsFixed(2)}',
         );
       case 2:

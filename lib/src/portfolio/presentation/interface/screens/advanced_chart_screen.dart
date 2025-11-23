@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../domain/entities/price_bar.dart';
 import '../widgets/trade_bar_chart.dart';
 
@@ -35,14 +36,14 @@ class _AdvancedChartScreenState extends State<AdvancedChartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white(context),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.white(context),
         elevation: 0,
         leading: TextButton(
           onPressed: () => Navigator.of(context).pop(),
           child: Text(
-            'Back to chart',
+            context.localize.backToChart,
             style: TextStyle(
               color: AppColors.primaryText(context),
               fontSize: 14,
@@ -96,13 +97,13 @@ class _AdvancedChartScreenState extends State<AdvancedChartScreen> {
               }
             },
             itemBuilder: (BuildContext context) => [
-              const PopupMenuItem<String>(
+              PopupMenuItem<String>(
                 value: 'limit',
-                child: Text('Limit Market'),
+                child: Text(context.localize.limitMarket),
               ),
-              const PopupMenuItem<String>(
+              PopupMenuItem<String>(
                 value: 'market',
-                child: Text('Market Order'),
+                child: Text(context.localize.marketOrder),
               ),
             ],
           ),
@@ -118,13 +119,13 @@ class _AdvancedChartScreenState extends State<AdvancedChartScreen> {
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
-                  color: Colors.teal.shade50,
+                  color: AppColors.teal.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(4),
                 ),
                 child: Text(
                   widget.currentPrice.toStringAsFixed(5),
-                  style: const TextStyle(
-                    color: Colors.teal,
+                  style: TextStyle(
+                    color: AppColors.teal,
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
                   ),

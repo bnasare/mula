@@ -5,6 +5,7 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/interface/widgets/performance_chart.dart';
 import '../../../domain/entities/trade_type.dart';
@@ -37,7 +38,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
     final isPositive = change >= 0;
 
     return Scaffold(
-      appBar: const MulaAppBar(title: 'Asset Holdings'),
+      appBar: MulaAppBar(title: context.localize.assetHoldings),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: SingleChildScrollView(
@@ -93,7 +94,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                                   '${currencyFormat.format(change.abs())} (',
                                   color: isPositive
                                       ? AppColors.appPrimary
-                                      : Colors.red,
+                                      : AppColors.activityError,
                                 ),
                                 Icon(
                                   isPositive
@@ -102,13 +103,13 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                                   size: 12,
                                   color: isPositive
                                       ? AppColors.appPrimary
-                                      : Colors.red,
+                                      : AppColors.activityError,
                                 ),
                                 AppText.small(
                                   '${changePercentage.abs().toStringAsFixed(1)}%)',
                                   color: isPositive
                                       ? AppColors.appPrimary
-                                      : Colors.red,
+                                      : AppColors.activityError,
                                 ),
                               ],
                             ),
@@ -133,7 +134,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                           );
                         },
                         child: AppText.smaller(
-                          'See Advanced Chart',
+                          context.localize.seeAdvancedChart,
                           color: AppColors.appPrimary,
                         ),
                       ),
@@ -176,7 +177,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     AppText.medium(
-                      'My Investments',
+                      context.localize.myInvestments,
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         color: AppColors.primaryText(context),
@@ -192,19 +193,19 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                             children: [
                               _buildInvestmentItem(
                                 context,
-                                label: 'Current Value',
+                                label: context.localize.currentValue,
                                 value: currencyFormat.format(30000.00),
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Total Cost',
+                                label: context.localize.totalCost,
                                 value: currencyFormat.format(23000.00),
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Return',
+                                label: context.localize.returnLabel,
                                 value: '30.4%',
                               ),
                             ],
@@ -218,21 +219,21 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                             children: [
                               _buildInvestmentItem(
                                 context,
-                                label: 'Shares',
+                                label: context.localize.shares,
                                 value: '10,000',
                                 alignment: CrossAxisAlignment.end,
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Cost Price',
+                                label: context.localize.costPrice,
                                 value: currencyFormat.format(2.50),
                                 alignment: CrossAxisAlignment.end,
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Capital Gains/(Losses)',
+                                label: context.localize.capitalGains,
                                 value: currencyFormat.format(7000.00),
                                 alignment: CrossAxisAlignment.end,
                               ),
@@ -254,7 +255,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                   children: [
                     Expanded(
                       child: AppButton(
-                        text: 'Sell',
+                        text: context.localize.sell,
                         onTap: () {
                           NavigationHelper.navigateTo(
                             context,
@@ -269,7 +270,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                             ),
                           );
                         },
-                        backgroundColor: Colors.transparent,
+                        backgroundColor: AppColors.transparent,
                         textColor: AppColors.primaryText(context),
                         borderColor: AppColors.border(context),
                         borderWidth: 1,
@@ -280,7 +281,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                     const SizedBox(width: 12),
                     Expanded(
                       child: AppButton(
-                        text: 'Buy',
+                        text: context.localize.buy,
                         onTap: () {
                           NavigationHelper.navigateTo(
                             context,
@@ -296,7 +297,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                           );
                         },
                         backgroundColor: AppColors.appPrimary,
-                        textColor: Colors.white,
+                        textColor: AppColors.white(context),
                         borderRadius: 8,
                         padding: EdgeInsets.zero,
                       ),
@@ -314,7 +315,7 @@ class AssetHoldingDetailScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     AppText.medium(
-                      'About',
+                      context.localize.about,
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         color: AppColors.primaryText(context),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../dashboard/domain/entities/asset.dart';
 import '../../../../dashboard/presentation/interface/widgets/asset_donut_chart.dart';
 import '../../../../home/presentation/interface/widgets/asset_tab_button.dart';
@@ -42,14 +43,14 @@ class _PortfolioAssetBreakdownState extends State<PortfolioAssetBreakdown> {
               children: [
                 Expanded(
                   child: AssetTabButton(
-                    label: 'Class',
+                    label: context.localize.classLabel,
                     isActive: _selectedTab == 0,
                     onTap: () => setState(() => _selectedTab = 0),
                   ),
                 ),
                 Expanded(
                   child: AssetTabButton(
-                    label: 'Broker',
+                    label: context.localize.broker,
                     isActive: _selectedTab == 1,
                     onTap: () => setState(() => _selectedTab = 1),
                   ),

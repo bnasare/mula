@@ -1118,4 +1118,154 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get selectCategory => 'Selecionar Categoria';
+
+  @override
+  String get assetBreakdown => 'Asset Breakdown';
+
+  @override
+  String get assetHoldings => 'Asset Holdings';
+
+  @override
+  String get portfolioSummary => 'Portfolio Summary';
+
+  @override
+  String get totalInvestmentValue => 'Total Investment Value';
+
+  @override
+  String get totalDeposit => 'Total Deposit';
+
+  @override
+  String get totalWithdrawal => 'Total Withdrawal';
+
+  @override
+  String get realizedIncome => 'Realized Income';
+
+  @override
+  String get unrealizedIncome => 'Unrealized Income';
+
+  @override
+  String get cumulativeReturn => 'Cumulative Return';
+
+  @override
+  String get seePortfolioSummary => 'See portfolio summary';
+
+  @override
+  String get noPortfolioData => 'No portfolio data available';
+
+  @override
+  String get seeAdvancedChart => 'See Advanced Chart';
+
+  @override
+  String get myInvestments => 'My Investments';
+
+  @override
+  String get currentValue => 'Current Value';
+
+  @override
+  String get returnLabel => 'Return';
+
+  @override
+  String get shares => 'Shares';
+
+  @override
+  String get costPrice => 'Cost Price';
+
+  @override
+  String get capitalGains => 'Capital Gains/(Losses)';
+
+  @override
+  String get about => 'About';
+
+  @override
+  String get treasuryBill => 'Treasury Bill';
+
+  @override
+  String get purchaseInterestRate => 'Purchase Interest Rate';
+
+  @override
+  String get accruedInterest => 'Accrued Interest';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get holdings => 'Holdings';
+
+  @override
+  String get allocation => 'Allocation';
+
+  @override
+  String get metrics => 'Metrics';
+
+  @override
+  String get units => 'Units';
+
+  @override
+  String get industry => 'Industry';
+
+  @override
+  String get rank => 'Rank';
+
+  @override
+  String get ghanaCedi => 'Ghana Cedi';
+
+  @override
+  String get backToChart => 'Back to chart';
+
+  @override
+  String get limitMarket => 'Limit Market';
+
+  @override
+  String get marketOrder => 'Market Order';
+
+  @override
+  String get cashBalance => 'Cash Balance';
+
+  @override
+  String get enterSharesPurchaseHint =>
+      'Enter number of shares you want to purchase';
+
+  @override
+  String get enterSharesSellHint => 'Enter number of shares you want to sell';
+
+  @override
+  String get enterAmountPurchaseHint => 'Enter the amount you want to purchase';
+
+  @override
+  String get enterAmountSellHint => 'Enter the amount you want to sell';
+
+  @override
+  String get reviewOrder => 'Review Order';
+
+  @override
+  String get review => 'Review';
+
+  @override
+  String get interestRate => 'Interest Rate';
+
+  @override
+  String get grossConsideration => 'Gross Consideration';
+
+  @override
+  String get informationTechnology => 'Information Technology';
+
+  @override
+  String get companyInc => 'Company Inc';
+
+  @override
+  String get sector => 'Sector';
+
+  @override
+  String get country => 'Country';
+
+  @override
+  String get weight => 'Weight';
+
+  @override
+  String get treasuryBillAbout =>
+      'Treasury Bills (T-Bills) are short-term government securities issued by the Government of Ghana to raise funds for government operations and manage cash flow. They are considered one of the safest investment options in Ghana.';
+
+  @override
+  String get mutualFundAbout =>
+      'A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. The fund is managed by professional fund managers who make investment decisions on behalf of the investors.';
 }

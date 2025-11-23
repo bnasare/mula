@@ -5,6 +5,7 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/interface/widgets/performance_chart.dart';
 import '../../../domain/entities/trade_type.dart';
@@ -34,7 +35,7 @@ class TBillDetailScreen extends StatelessWidget {
     final isPositive = change >= 0;
 
     return Scaffold(
-      appBar: const MulaAppBar(title: 'Treasury Bill'),
+      appBar: MulaAppBar(title: context.localize.treasuryBill),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: SingleChildScrollView(
@@ -93,14 +94,14 @@ class TBillDetailScreen extends StatelessWidget {
                                   size: 12,
                                   color: isPositive
                                       ? AppColors.appPrimary
-                                      : Colors.red,
+                                      : AppColors.activityError,
                                 ),
                                 const SizedBox(width: 2),
                                 AppText.small(
                                   '${change.abs().toStringAsFixed(1)}%',
                                   color: isPositive
                                       ? AppColors.appPrimary
-                                      : Colors.red,
+                                      : AppColors.activityError,
                                 ),
                               ],
                             ),
@@ -116,7 +117,7 @@ class TBillDetailScreen extends StatelessWidget {
                           // TODO: Navigate to advanced chart
                         },
                         child: AppText.smaller(
-                          'See Advanced Chart',
+                          context.localize.seeAdvancedChart,
                           color: AppColors.appPrimary,
                         ),
                       ),
@@ -159,7 +160,7 @@ class TBillDetailScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     AppText.medium(
-                      'My Investments',
+                      context.localize.myInvestments,
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         color: AppColors.primaryText(context),
@@ -175,19 +176,19 @@ class TBillDetailScreen extends StatelessWidget {
                             children: [
                               _buildInvestmentItem(
                                 context,
-                                label: 'Current Value',
+                                label: context.localize.currentValue,
                                 value: currencyFormat.format(30000.00),
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Total Cost',
+                                label: context.localize.totalCost,
                                 value: currencyFormat.format(28000.00),
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Purchase Interest Rate',
+                                label: context.localize.purchaseInterestRate,
                                 value: '23.5%',
                               ),
                             ],
@@ -201,14 +202,14 @@ class TBillDetailScreen extends StatelessWidget {
                             children: [
                               _buildInvestmentItem(
                                 context,
-                                label: 'Quantity',
+                                label: context.localize.quantity,
                                 value: '10,000',
                                 alignment: CrossAxisAlignment.end,
                               ),
                               const SizedBox(height: 16),
                               _buildInvestmentItem(
                                 context,
-                                label: 'Accrued Interest',
+                                label: context.localize.accruedInterest,
                                 value: currencyFormat.format(25.50),
                                 alignment: CrossAxisAlignment.end,
                               ),
@@ -237,7 +238,7 @@ class TBillDetailScreen extends StatelessWidget {
                   children: [
                     Expanded(
                       child: AppButton(
-                        text: 'Sell',
+                        text: context.localize.sell,
                         onTap: () {
                           NavigationHelper.navigateTo(
                             context,
@@ -251,7 +252,7 @@ class TBillDetailScreen extends StatelessWidget {
                             ),
                           );
                         },
-                        backgroundColor: Colors.transparent,
+                        backgroundColor: AppColors.transparent,
                         textColor: AppColors.primaryText(context),
                         borderColor: AppColors.border(context),
                         borderWidth: 1,
@@ -262,7 +263,7 @@ class TBillDetailScreen extends StatelessWidget {
                     const SizedBox(width: 12),
                     Expanded(
                       child: AppButton(
-                        text: 'Buy',
+                        text: context.localize.buy,
                         onTap: () {
                           NavigationHelper.navigateTo(
                             context,
@@ -277,7 +278,7 @@ class TBillDetailScreen extends StatelessWidget {
                           );
                         },
                         backgroundColor: AppColors.appPrimary,
-                        textColor: Colors.white,
+                        textColor: AppColors.white(context),
                         borderRadius: 8,
                         padding: EdgeInsets.zero,
                       ),
@@ -295,7 +296,7 @@ class TBillDetailScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     AppText.medium(
-                      'About',
+                      context.localize.about,
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         color: AppColors.primaryText(context),

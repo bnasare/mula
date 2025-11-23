@@ -5,6 +5,7 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/domain/entities/asset.dart';
 import '../../../../dashboard/presentation/interface/widgets/asset_donut_chart.dart';
@@ -49,7 +50,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
     final isPositive = widget.change >= 0;
 
     return Scaffold(
-      appBar: const MulaAppBar(title: 'Mutual Funds'),
+      appBar: MulaAppBar(title: context.localize.mutualFunds),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: SingleChildScrollView(
@@ -71,28 +72,28 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                     children: [
                       Expanded(
                         child: AssetTabButton(
-                          label: 'Overview',
+                          label: context.localize.overview,
                           isActive: _selectedTab == 0,
                           onTap: () => setState(() => _selectedTab = 0),
                         ),
                       ),
                       Expanded(
                         child: AssetTabButton(
-                          label: 'Holdings',
+                          label: context.localize.holdings,
                           isActive: _selectedTab == 1,
                           onTap: () => setState(() => _selectedTab = 1),
                         ),
                       ),
                       Expanded(
                         child: AssetTabButton(
-                          label: 'Allocation',
+                          label: context.localize.allocation,
                           isActive: _selectedTab == 2,
                           onTap: () => setState(() => _selectedTab = 2),
                         ),
                       ),
                       Expanded(
                         child: AssetTabButton(
-                          label: 'Metrics',
+                          label: context.localize.metrics,
                           isActive: _selectedTab == 3,
                           onTap: () => setState(() => _selectedTab = 3),
                         ),
@@ -151,7 +152,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                                   '${currencyFormat.format(widget.change.abs())} (',
                                   color: isPositive
                                       ? AppColors.appPrimary
-                                      : Colors.red,
+                                      : AppColors.activityError,
                                 ),
                                 Icon(
                                   isPositive
@@ -160,13 +161,13 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                                   size: 12,
                                   color: isPositive
                                       ? AppColors.appPrimary
-                                      : Colors.red,
+                                      : AppColors.activityError,
                                 ),
                                 AppText.small(
                                   '${widget.changePercentage.abs().toStringAsFixed(1)}%)',
                                   color: isPositive
                                       ? AppColors.appPrimary
-                                      : Colors.red,
+                                      : AppColors.activityError,
                                 ),
                               ],
                             ),
@@ -192,7 +193,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                             );
                           },
                           child: AppText.smaller(
-                            'See Advanced Chart',
+                            context.localize.seeAdvancedChart,
                             color: AppColors.appPrimary,
                           ),
                         ),
@@ -266,7 +267,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AppText.medium(
-                'My Investments',
+                context.localize.myInvestments,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: AppColors.primaryText(context),
@@ -282,13 +283,13 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
                       children: [
                         _buildInvestmentItem(
                           context,
-                          label: 'Current Value',
+                          label: context.localize.currentValue,
                           value: currencyFormat.format(30000.00),
                         ),
                         const SizedBox(height: 16),
                         _buildInvestmentItem(
                           context,
-                          label: 'Total Cost',
+                          label: context.localize.totalCost,
                           value: currencyFormat.format(28000.00),
                         ),
                         const SizedBox(height: 16),
@@ -344,7 +345,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
             children: [
               Expanded(
                 child: AppButton(
-                  text: 'Sell',
+                  text: context.localize.sell,
                   onTap: () {
                     NavigationHelper.navigateTo(
                       context,
@@ -369,7 +370,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
               const SizedBox(width: 12),
               Expanded(
                 child: AppButton(
-                  text: 'Buy',
+                  text: context.localize.buy,
                   onTap: () {
                     NavigationHelper.navigateTo(
                       context,
@@ -429,7 +430,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AppText.medium(
-                'About',
+                context.localize.about,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: AppColors.primaryText(context),
@@ -1048,7 +1049,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AppText.medium(
-                'About',
+                context.localize.about,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: AppColors.primaryText(context),

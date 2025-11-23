@@ -73,9 +73,9 @@ class PortfolioTab extends StatelessWidget {
               }
             },
             itemBuilder: (context) => [
-              const PopupMenuItem(
+              PopupMenuItem(
                 value: 'summary',
-                child: Text('See portfolio summary'),
+                child: Text(context.localize.seePortfolioSummary),
               ),
             ],
           ),
@@ -90,7 +90,7 @@ class PortfolioTab extends StatelessWidget {
           if (provider.portfolioSummary == null) {
             return Center(
               child: AppText.small(
-                'No portfolio data available',
+                context.localize.noPortfolioData,
                 color: AppColors.secondaryText(context),
               ),
             );
@@ -135,7 +135,7 @@ class PortfolioTab extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20),
                           child: AppText.medium(
-                            'Asset Breakdown',
+                            context.localize.assetBreakdown,
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               color: AppColors.primaryText(context),
@@ -161,7 +161,7 @@ class PortfolioTab extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           AppText.medium(
-                            'Asset Holdings',
+                            context.localize.assetHoldings,
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               color: AppColors.primaryText(context),
@@ -175,7 +175,7 @@ class PortfolioTab extends StatelessWidget {
                               );
                             },
                             child: AppText.smaller(
-                              'View all',
+                              context.localize.viewAll,
                               color: AppColors.appPrimary,
                             ),
                           ),
@@ -265,7 +265,7 @@ class PortfolioTab extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           AppText.medium(
-                            'Cash Wallet',
+                            context.localize.cashWallet,
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               color: AppColors.primaryText(context),
@@ -297,7 +297,7 @@ class PortfolioTab extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           AppText.medium(
-                            'Transactions',
+                            context.localize.transactions,
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               color: AppColors.primaryText(context),
@@ -311,7 +311,7 @@ class PortfolioTab extends StatelessWidget {
                               );
                             },
                             child: AppText.smaller(
-                              'View all',
+                              context.localize.viewAll,
                               color: AppColors.appPrimary,
                             ),
                           ),
@@ -332,7 +332,7 @@ class PortfolioTab extends StatelessWidget {
                         ),
                         child: Center(
                           child: AppText.small(
-                            'No transactions yet',
+                            context.localize.noTransactionsYet,
                             color: AppColors.secondaryText(context),
                           ),
                         ),

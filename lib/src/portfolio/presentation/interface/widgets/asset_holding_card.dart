@@ -43,7 +43,7 @@ class AssetHoldingCard extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         margin: const EdgeInsets.only(bottom: 12),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: AppColors.white(context),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(color: AppColors.border(context), width: 0.5),
         ),
@@ -117,12 +117,12 @@ class AssetHoldingCard extends StatelessWidget {
                     Icon(
                       isPositive ? Icons.arrow_upward : Icons.arrow_downward,
                       size: 12,
-                      color: isPositive ? AppColors.appPrimary : Colors.red,
+                      color: isPositive ? AppColors.appPrimary : AppColors.activityError,
                     ),
                     const SizedBox(width: 2),
                     AppText.smallest(
                       '${changePercentage.abs().toStringAsFixed(2)}%',
-                      color: isPositive ? AppColors.appPrimary : Colors.red,
+                      color: isPositive ? AppColors.appPrimary : AppColors.activityError,
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 6),

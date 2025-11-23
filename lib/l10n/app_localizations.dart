@@ -2191,6 +2191,300 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Select Category'**
   String get selectCategory;
+
+  /// No description provided for @assetBreakdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Asset Breakdown'**
+  String get assetBreakdown;
+
+  /// No description provided for @assetHoldings.
+  ///
+  /// In en, this message translates to:
+  /// **'Asset Holdings'**
+  String get assetHoldings;
+
+  /// No description provided for @portfolioSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio Summary'**
+  String get portfolioSummary;
+
+  /// No description provided for @totalInvestmentValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Investment Value'**
+  String get totalInvestmentValue;
+
+  /// No description provided for @totalDeposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Deposit'**
+  String get totalDeposit;
+
+  /// No description provided for @totalWithdrawal.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Withdrawal'**
+  String get totalWithdrawal;
+
+  /// No description provided for @realizedIncome.
+  ///
+  /// In en, this message translates to:
+  /// **'Realized Income'**
+  String get realizedIncome;
+
+  /// No description provided for @unrealizedIncome.
+  ///
+  /// In en, this message translates to:
+  /// **'Unrealized Income'**
+  String get unrealizedIncome;
+
+  /// No description provided for @cumulativeReturn.
+  ///
+  /// In en, this message translates to:
+  /// **'Cumulative Return'**
+  String get cumulativeReturn;
+
+  /// No description provided for @seePortfolioSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'See portfolio summary'**
+  String get seePortfolioSummary;
+
+  /// No description provided for @noPortfolioData.
+  ///
+  /// In en, this message translates to:
+  /// **'No portfolio data available'**
+  String get noPortfolioData;
+
+  /// No description provided for @seeAdvancedChart.
+  ///
+  /// In en, this message translates to:
+  /// **'See Advanced Chart'**
+  String get seeAdvancedChart;
+
+  /// No description provided for @myInvestments.
+  ///
+  /// In en, this message translates to:
+  /// **'My Investments'**
+  String get myInvestments;
+
+  /// No description provided for @currentValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Value'**
+  String get currentValue;
+
+  /// No description provided for @returnLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Return'**
+  String get returnLabel;
+
+  /// No description provided for @shares.
+  ///
+  /// In en, this message translates to:
+  /// **'Shares'**
+  String get shares;
+
+  /// No description provided for @costPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Cost Price'**
+  String get costPrice;
+
+  /// No description provided for @capitalGains.
+  ///
+  /// In en, this message translates to:
+  /// **'Capital Gains/(Losses)'**
+  String get capitalGains;
+
+  /// No description provided for @about.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get about;
+
+  /// No description provided for @treasuryBill.
+  ///
+  /// In en, this message translates to:
+  /// **'Treasury Bill'**
+  String get treasuryBill;
+
+  /// No description provided for @purchaseInterestRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase Interest Rate'**
+  String get purchaseInterestRate;
+
+  /// No description provided for @accruedInterest.
+  ///
+  /// In en, this message translates to:
+  /// **'Accrued Interest'**
+  String get accruedInterest;
+
+  /// No description provided for @overview.
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get overview;
+
+  /// No description provided for @holdings.
+  ///
+  /// In en, this message translates to:
+  /// **'Holdings'**
+  String get holdings;
+
+  /// No description provided for @allocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Allocation'**
+  String get allocation;
+
+  /// No description provided for @metrics.
+  ///
+  /// In en, this message translates to:
+  /// **'Metrics'**
+  String get metrics;
+
+  /// No description provided for @units.
+  ///
+  /// In en, this message translates to:
+  /// **'Units'**
+  String get units;
+
+  /// No description provided for @industry.
+  ///
+  /// In en, this message translates to:
+  /// **'Industry'**
+  String get industry;
+
+  /// No description provided for @rank.
+  ///
+  /// In en, this message translates to:
+  /// **'Rank'**
+  String get rank;
+
+  /// No description provided for @ghanaCedi.
+  ///
+  /// In en, this message translates to:
+  /// **'Ghana Cedi'**
+  String get ghanaCedi;
+
+  /// No description provided for @backToChart.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to chart'**
+  String get backToChart;
+
+  /// No description provided for @limitMarket.
+  ///
+  /// In en, this message translates to:
+  /// **'Limit Market'**
+  String get limitMarket;
+
+  /// No description provided for @marketOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Market Order'**
+  String get marketOrder;
+
+  /// No description provided for @cashBalance.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash Balance'**
+  String get cashBalance;
+
+  /// No description provided for @enterSharesPurchaseHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter number of shares you want to purchase'**
+  String get enterSharesPurchaseHint;
+
+  /// No description provided for @enterSharesSellHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter number of shares you want to sell'**
+  String get enterSharesSellHint;
+
+  /// No description provided for @enterAmountPurchaseHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the amount you want to purchase'**
+  String get enterAmountPurchaseHint;
+
+  /// No description provided for @enterAmountSellHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the amount you want to sell'**
+  String get enterAmountSellHint;
+
+  /// No description provided for @reviewOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Review Order'**
+  String get reviewOrder;
+
+  /// No description provided for @review.
+  ///
+  /// In en, this message translates to:
+  /// **'Review'**
+  String get review;
+
+  /// No description provided for @interestRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Interest Rate'**
+  String get interestRate;
+
+  /// No description provided for @grossConsideration.
+  ///
+  /// In en, this message translates to:
+  /// **'Gross Consideration'**
+  String get grossConsideration;
+
+  /// No description provided for @informationTechnology.
+  ///
+  /// In en, this message translates to:
+  /// **'Information Technology'**
+  String get informationTechnology;
+
+  /// No description provided for @companyInc.
+  ///
+  /// In en, this message translates to:
+  /// **'Company Inc'**
+  String get companyInc;
+
+  /// No description provided for @sector.
+  ///
+  /// In en, this message translates to:
+  /// **'Sector'**
+  String get sector;
+
+  /// No description provided for @country.
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get country;
+
+  /// No description provided for @weight.
+  ///
+  /// In en, this message translates to:
+  /// **'Weight'**
+  String get weight;
+
+  /// No description provided for @treasuryBillAbout.
+  ///
+  /// In en, this message translates to:
+  /// **'Treasury Bills (T-Bills) are short-term government securities issued by the Government of Ghana to raise funds for government operations and manage cash flow. They are considered one of the safest investment options in Ghana.'**
+  String get treasuryBillAbout;
+
+  /// No description provided for @mutualFundAbout.
+  ///
+  /// In en, this message translates to:
+  /// **'A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. The fund is managed by professional fund managers who make investment decisions on behalf of the investors.'**
+  String get mutualFundAbout;
 }
 
 class _AppLocalizationsDelegate
