@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
+import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
 import '../../../data/dummy_learn_data.dart';
 import '../../../domain/entities/quiz.dart';
 import '../../../domain/entities/quiz_result.dart';
@@ -72,7 +74,10 @@ class _QuizScreenState extends State<QuizScreen> {
       userName: 'Phil', // TODO: Get actual user name
       onTryAgain: _resetQuiz,
       onExploreResources: () {
-        // TODO: Navigate to learning resources
+        // Navigate back to dashboard and switch to Learn tab
+        Navigator.of(context).popUntil((route) => route.isFirst);
+        final provider = context.read<DashboardProvider>();
+        provider.changeTab(3);
       },
     );
   }

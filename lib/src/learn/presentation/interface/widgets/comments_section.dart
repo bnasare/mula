@@ -112,6 +112,7 @@ class _CommentsSectionState extends State<CommentsSection> {
                   style: TextStyle(
                     color: AppColors.secondaryText(context),
                     decoration: TextDecoration.underline,
+                    decorationColor: AppColors.secondaryText(context),
                   ),
                 ),
               ),
