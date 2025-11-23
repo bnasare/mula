@@ -383,5 +383,25 @@
   "goToHome": "Ir para início",
   "exploreOtherResources": "Explorar outros recursos",
   "pts": "+{points}pts",
-  "@pts": {"placeholders": {"points": {"type": "int"}}}
+  "@pts": {"placeholders": {"points": {"type": "int"}}},
+
+  "searchByAsset": "Pesquisar por ativo",
+  "sortBy": "Ordenar por",
+  "relevance": "Relevância",
+  "clearAll": "Limpar tudo",
+  "popular": "Popular",
+  "stocks": "Ações",
+  "highYieldFunds": "Fundos de Alto Rendimento",
+  "tBills": "Letras do Tesouro",
+  "filter": "Filtro",
+  "dateRange": "Intervalo de Datas",
+  "last30Days": "Últimos 30 dias",
+  "last60Days": "Últimos 60 dias",
+  "thisYear": "Este Ano",
+  "customDate": "Data Personalizada",
+  "stock": "Ação",
+  "selectLevel": "Selecionar nível",
+  "category": "Categoria",
+  "selectCategory": "Selecionar Categoria",
+  "apply": "Aplicar"
 }

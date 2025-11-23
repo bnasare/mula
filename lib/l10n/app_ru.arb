@@ -382,5 +382,25 @@
   "goToHome": "На главную",
   "exploreOtherResources": "Изучить другие ресурсы",
   "pts": "+{points}б",
-  "@pts": {"placeholders": {"points": {"type": "int"}}}
+  "@pts": {"placeholders": {"points": {"type": "int"}}},
+
+  "searchByAsset": "Поиск по активу",
+  "sortBy": "Сортировать по",
+  "relevance": "Актуальности",
+  "clearAll": "Очистить все",
+  "popular": "Популярное",
+  "stocks": "Акции",
+  "highYieldFunds": "Высокодоходные Фонды",
+  "tBills": "Казначейские Векселя",
+  "filter": "Фильтр",
+  "dateRange": "Диапазон Дат",
+  "last30Days": "Последние 30 дней",
+  "last60Days": "Последние 60 дней",
+  "thisYear": "Этот Год",
+  "customDate": "Настраиваемая Дата",
+  "stock": "Акция",
+  "selectLevel": "Выбрать уровень",
+  "category": "Категория",
+  "selectCategory": "Выбрать Категорию",
+  "apply": "Применить"
 }

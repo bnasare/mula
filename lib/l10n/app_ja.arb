@@ -382,5 +382,25 @@
   "goToHome": "ホームに戻る",
   "exploreOtherResources": "他のリソースを探す",
   "pts": "+{points}pts",
-  "@pts": {"placeholders": {"points": {"type": "int"}}}
+  "@pts": {"placeholders": {"points": {"type": "int"}}},
+
+  "searchByAsset": "資産で検索",
+  "sortBy": "並び替え",
+  "relevance": "関連性",
+  "clearAll": "すべてクリア",
+  "popular": "人気",
+  "stocks": "株式",
+  "highYieldFunds": "高利回りファンド",
+  "tBills": "財務省短期証券",
+  "filter": "フィルター",
+  "dateRange": "期間",
+  "last30Days": "過去30日間",
+  "last60Days": "過去60日間",
+  "thisYear": "今年",
+  "customDate": "カスタム日付",
+  "stock": "株式",
+  "selectLevel": "レベルを選択",
+  "category": "カテゴリー",
+  "selectCategory": "カテゴリーを選択",
+  "apply": "適用"
 }

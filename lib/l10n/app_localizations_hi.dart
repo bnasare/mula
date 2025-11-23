@@ -617,7 +617,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get notifications => 'सूचनाएं';
 
   @override
-  String get clearAll => 'सभी साफ़ करें';
+  String get clearAll => 'सभी साफ करें';
 
   @override
   String get noNotifications => 'कोई सूचना नहीं';
@@ -776,7 +776,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get dateRange => 'तिथि सीमा';
 
   @override
-  String get sortBy => 'इसके अनुसार क्रमबद्ध करें';
+  String get sortBy => 'द्वारा क्रमबद्ध करें';
 
   @override
   String get sortByStatus => 'स्थिति के अनुसार क्रमबद्ध करें';
@@ -1075,32 +1075,32 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get searchByAsset => 'Search by asset, fund manager, category';
+  String get searchByAsset => 'संपत्ति द्वारा खोजें';
 
   @override
-  String get relevance => 'Relevance';
+  String get relevance => 'प्रासंगिकता';
 
   @override
-  String get popular => 'Popular';
+  String get popular => 'लोकप्रिय';
 
   @override
-  String get stocks => 'Stocks';
+  String get stocks => 'स्टॉक';
 
   @override
-  String get highYieldFunds => 'High-Yield Funds';
+  String get highYieldFunds => 'उच्च उपज फंड';
 
   @override
-  String get tBills => 'T-Bills';
+  String get tBills => 'ट्रेजरी बिल';
 
   @override
-  String get stock => 'Stock';
+  String get stock => 'स्टॉक';
 
   @override
-  String get selectLevel => 'Select level';
+  String get selectLevel => 'स्तर चुनें';
 
   @override
-  String get category => 'Category';
+  String get category => 'श्रेणी';
 
   @override
-  String get selectCategory => 'Select Category';
+  String get selectCategory => 'श्रेणी चुनें';
 }

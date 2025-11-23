@@ -703,7 +703,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get export => 'Exporteren';
 
   @override
-  String get filter => 'Filteren';
+  String get filter => 'Filter';
 
   @override
   String get apply => 'Toepassen';
@@ -1080,32 +1080,32 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get searchByAsset => 'Search by asset, fund manager, category';
+  String get searchByAsset => 'Zoeken op activum';
 
   @override
-  String get relevance => 'Relevance';
+  String get relevance => 'Relevantie';
 
   @override
-  String get popular => 'Popular';
+  String get popular => 'Populair';
 
   @override
-  String get stocks => 'Stocks';
+  String get stocks => 'Aandelen';
 
   @override
-  String get highYieldFunds => 'High-Yield Funds';
+  String get highYieldFunds => 'Hoogrentende Fondsen';
 
   @override
-  String get tBills => 'T-Bills';
+  String get tBills => 'Schatkistpapier';
 
   @override
-  String get stock => 'Stock';
+  String get stock => 'Aandeel';
 
   @override
-  String get selectLevel => 'Select level';
+  String get selectLevel => 'Selecteer niveau';
 
   @override
-  String get category => 'Category';
+  String get category => 'Categorie';
 
   @override
-  String get selectCategory => 'Select Category';
+  String get selectCategory => 'Selecteer Categorie';
 }

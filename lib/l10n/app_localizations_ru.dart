@@ -802,7 +802,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get thisYear => 'Этот Год';
 
   @override
-  String get customDate => 'Пользовательская Дата';
+  String get customDate => 'Настраиваемая Дата';
 
   @override
   String get all => 'Все';
@@ -1080,32 +1080,32 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get searchByAsset => 'Search by asset, fund manager, category';
+  String get searchByAsset => 'Поиск по активу';
 
   @override
-  String get relevance => 'Relevance';
+  String get relevance => 'Актуальности';
 
   @override
-  String get popular => 'Popular';
+  String get popular => 'Популярное';
 
   @override
-  String get stocks => 'Stocks';
+  String get stocks => 'Акции';
 
   @override
-  String get highYieldFunds => 'High-Yield Funds';
+  String get highYieldFunds => 'Высокодоходные Фонды';
 
   @override
-  String get tBills => 'T-Bills';
+  String get tBills => 'Казначейские Векселя';
 
   @override
-  String get stock => 'Stock';
+  String get stock => 'Акция';
 
   @override
-  String get selectLevel => 'Select level';
+  String get selectLevel => 'Выбрать уровень';
 
   @override
-  String get category => 'Category';
+  String get category => 'Категория';
 
   @override
-  String get selectCategory => 'Select Category';
+  String get selectCategory => 'Выбрать Категорию';
 }

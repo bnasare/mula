@@ -751,10 +751,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get sell => '売却';
 
   @override
-  String get dateRange => '日付範囲';
+  String get dateRange => '期間';
 
   @override
-  String get sortBy => '並べ替え';
+  String get sortBy => '並び替え';
 
   @override
   String get sortByStatus => 'ステータスで並べ替え';
@@ -1046,32 +1046,32 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get searchByAsset => 'Search by asset, fund manager, category';
+  String get searchByAsset => '資産で検索';
 
   @override
-  String get relevance => 'Relevance';
+  String get relevance => '関連性';
 
   @override
-  String get popular => 'Popular';
+  String get popular => '人気';
 
   @override
-  String get stocks => 'Stocks';
+  String get stocks => '株式';
 
   @override
-  String get highYieldFunds => 'High-Yield Funds';
+  String get highYieldFunds => '高利回りファンド';
 
   @override
-  String get tBills => 'T-Bills';
+  String get tBills => '財務省短期証券';
 
   @override
-  String get stock => 'Stock';
+  String get stock => '株式';
 
   @override
-  String get selectLevel => 'Select level';
+  String get selectLevel => 'レベルを選択';
 
   @override
-  String get category => 'Category';
+  String get category => 'カテゴリー';
 
   @override
-  String get selectCategory => 'Select Category';
+  String get selectCategory => 'カテゴリーを選択';
 }

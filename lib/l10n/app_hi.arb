@@ -382,5 +382,25 @@
   "goToHome": "होम पर जाएं",
   "exploreOtherResources": "अन्य संसाधन खोजें",
   "pts": "+{points}pts",
-  "@pts": {"placeholders": {"points": {"type": "int"}}}
+  "@pts": {"placeholders": {"points": {"type": "int"}}},
+
+  "searchByAsset": "संपत्ति द्वारा खोजें",
+  "sortBy": "द्वारा क्रमबद्ध करें",
+  "relevance": "प्रासंगिकता",
+  "clearAll": "सभी साफ करें",
+  "popular": "लोकप्रिय",
+  "stocks": "स्टॉक",
+  "highYieldFunds": "उच्च उपज फंड",
+  "tBills": "ट्रेजरी बिल",
+  "filter": "फ़िल्टर",
+  "dateRange": "तिथि सीमा",
+  "last30Days": "पिछले 30 दिन",
+  "last60Days": "पिछले 60 दिन",
+  "thisYear": "इस वर्ष",
+  "customDate": "कस्टम तिथि",
+  "stock": "स्टॉक",
+  "selectLevel": "स्तर चुनें",
+  "category": "श्रेणी",
+  "selectCategory": "श्रेणी चुनें",
+  "apply": "लागू करें"
 }

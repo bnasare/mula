@@ -623,7 +623,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notifications => 'Notificaciones';
 
   @override
-  String get clearAll => 'Limpiar Todo';
+  String get clearAll => 'Borrar todo';
 
   @override
   String get noNotifications => 'Sin Notificaciones';
@@ -1081,32 +1081,32 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get searchByAsset => 'Search by asset, fund manager, category';
+  String get searchByAsset => 'Buscar por activo';
 
   @override
-  String get relevance => 'Relevance';
+  String get relevance => 'Relevancia';
 
   @override
   String get popular => 'Popular';
 
   @override
-  String get stocks => 'Stocks';
+  String get stocks => 'Acciones';
 
   @override
-  String get highYieldFunds => 'High-Yield Funds';
+  String get highYieldFunds => 'Fondos de Alto Rendimiento';
 
   @override
-  String get tBills => 'T-Bills';
+  String get tBills => 'Letras del Tesoro';
 
   @override
-  String get stock => 'Stock';
+  String get stock => 'Acción';
 
   @override
-  String get selectLevel => 'Select level';
+  String get selectLevel => 'Seleccionar nivel';
 
   @override
-  String get category => 'Category';
+  String get category => 'Categoría';
 
   @override
-  String get selectCategory => 'Select Category';
+  String get selectCategory => 'Seleccionar Categoría';
 }

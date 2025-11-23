@@ -382,5 +382,25 @@
   "goToHome": "Ga naar home",
   "exploreOtherResources": "Verken andere bronnen",
   "pts": "+{points}pt",
-  "@pts": {"placeholders": {"points": {"type": "int"}}}
+  "@pts": {"placeholders": {"points": {"type": "int"}}},
+
+  "searchByAsset": "Zoeken op activum",
+  "sortBy": "Sorteren op",
+  "relevance": "Relevantie",
+  "clearAll": "Alles wissen",
+  "popular": "Populair",
+  "stocks": "Aandelen",
+  "highYieldFunds": "Hoogrentende Fondsen",
+  "tBills": "Schatkistpapier",
+  "filter": "Filter",
+  "dateRange": "Datumbereik",
+  "last30Days": "Laatste 30 dagen",
+  "last60Days": "Laatste 60 dagen",
+  "thisYear": "Dit Jaar",
+  "customDate": "Aangepaste Datum",
+  "stock": "Aandeel",
+  "selectLevel": "Selecteer niveau",
+  "category": "Categorie",
+  "selectCategory": "Selecteer Categorie",
+  "apply": "Toepassen"
 }

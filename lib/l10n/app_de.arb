@@ -383,5 +383,25 @@
   "goToHome": "Zur Startseite",
   "exploreOtherResources": "Andere Ressourcen erkunden",
   "pts": "+{points}Pkt",
-  "@pts": {"placeholders": {"points": {"type": "int"}}}
+  "@pts": {"placeholders": {"points": {"type": "int"}}},
+
+  "searchByAsset": "Nach Asset suchen",
+  "sortBy": "Sortieren nach",
+  "relevance": "Relevanz",
+  "clearAll": "Alles löschen",
+  "popular": "Beliebt",
+  "stocks": "Aktien",
+  "highYieldFunds": "Hochzinsfonds",
+  "tBills": "Schatzwechsel",
+  "filter": "Filter",
+  "dateRange": "Datumsbereich",
+  "last30Days": "Letzte 30 Tage",
+  "last60Days": "Letzte 60 Tage",
+  "thisYear": "Dieses Jahr",
+  "customDate": "Benutzerdefiniertes Datum",
+  "stock": "Aktie",
+  "selectLevel": "Stufe auswählen",
+  "category": "Kategorie",
+  "selectCategory": "Kategorie auswählen",
+  "apply": "Anwenden"
 }

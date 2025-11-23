@@ -587,7 +587,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get notifications => '通知';
 
   @override
-  String get clearAll => '全部清除';
+  String get clearAll => '清除全部';
 
   @override
   String get noNotifications => '无通知';
@@ -1038,32 +1038,32 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get searchByAsset => 'Search by asset, fund manager, category';
+  String get searchByAsset => '按资产搜索';
 
   @override
-  String get relevance => 'Relevance';
+  String get relevance => '相关性';
 
   @override
-  String get popular => 'Popular';
+  String get popular => '热门';
 
   @override
-  String get stocks => 'Stocks';
+  String get stocks => '股票';
 
   @override
-  String get highYieldFunds => 'High-Yield Funds';
+  String get highYieldFunds => '高收益基金';
 
   @override
-  String get tBills => 'T-Bills';
+  String get tBills => '国库券';
 
   @override
-  String get stock => 'Stock';
+  String get stock => '股票';
 
   @override
-  String get selectLevel => 'Select level';
+  String get selectLevel => '选择级别';
 
   @override
-  String get category => 'Category';
+  String get category => '类别';
 
   @override
-  String get selectCategory => 'Select Category';
+  String get selectCategory => '选择类别';
 }
