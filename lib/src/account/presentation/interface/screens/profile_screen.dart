@@ -99,7 +99,7 @@ class _ProfileScreenState extends State<ProfileScreen> with ProfileImageMixin {
         margin: EdgeInsets.only(
           bottom: MediaQuery.of(context).viewInsets.bottom,
         ),
-        color: CupertinoColors.systemBackground.resolveFrom(context),
+        color: AppColors.surface(context),
         child: SafeArea(
           top: false,
           child: Column(

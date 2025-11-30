@@ -112,7 +112,7 @@ class _AddPinScreenState extends State<AddPinScreen> {
                     ? AppColors.appPrimary
                     : AppColors.lightGrey(context),
                 textColor: _pin.length == _pinLength
-                    ? Colors.white
+                    ? AppColors.white(context)
                     : AppColors.secondaryText(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,

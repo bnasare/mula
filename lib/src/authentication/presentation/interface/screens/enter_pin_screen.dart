@@ -108,7 +108,7 @@ class _EnterPinScreenState extends State<EnterPinScreen> with OnboardingMixin {
                     ? AppColors.appPrimary
                     : AppColors.lightGrey(context),
                 textColor: _pin.length == 4
-                    ? Colors.white
+                    ? AppColors.white(context)
                     : AppColors.secondaryText(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,

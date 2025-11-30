@@ -86,7 +86,7 @@ class _IdVerificationTypeScreenState extends State<IdVerificationTypeScreen> {
                     ? AppColors.appPrimary
                     : AppColors.lightGrey(context),
                 textColor: _selectedIdType != null
-                    ? Colors.white
+                    ? AppColors.white(context)
                     : AppColors.secondaryText(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,

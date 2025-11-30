@@ -95,7 +95,7 @@ class _CsdAccountNumberScreenState extends State<CsdAccountNumberScreen> {
                       ? AppColors.appPrimary
                       : AppColors.lightGrey(context),
                   textColor: _accountNumberController.text.isNotEmpty
-                      ? Colors.white
+                      ? AppColors.white(context)
                       : AppColors.secondaryText(context),
                   borderRadius: 12,
                   padding: EdgeInsets.zero,

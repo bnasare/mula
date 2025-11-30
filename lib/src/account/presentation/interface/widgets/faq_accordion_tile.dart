@@ -27,7 +27,7 @@ class _FaqAccordionTileState extends State<FaqAccordionTile> {
       padding: const EdgeInsets.only(bottom: 8),
       child: Theme(
         data: Theme.of(context).copyWith(
-          dividerColor: Colors.transparent,
+          dividerColor: AppColors.transparent,
           expansionTileTheme: ExpansionTileThemeData(
             backgroundColor: context.cardColor,
             collapsedBackgroundColor: context.cardColor,

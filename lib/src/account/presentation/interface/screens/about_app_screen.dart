@@ -66,10 +66,10 @@ class _AboutAppScreenState extends State<AboutAppScreen> {
                         color: AppColors.appPrimary,
                         borderRadius: BorderRadius.circular(16),
                       ),
-                      child: const Center(
+                      child: Center(
                         child: Icon(
                           Icons.star_rounded,
-                          color: Colors.white,
+                          color: AppColors.white(context),
                           size: 48,
                         ),
                       ),

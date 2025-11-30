@@ -63,7 +63,7 @@ class AccountDetailsBottomSheet extends StatelessWidget {
           AppButton(
             text: context.localize.unlinkAccount,
             backgroundColor: AppColors.error,
-            textColor: Colors.white,
+            textColor: AppColors.white(context),
             borderRadius: 8,
             padding: EdgeInsets.zero,
             onTap: () {

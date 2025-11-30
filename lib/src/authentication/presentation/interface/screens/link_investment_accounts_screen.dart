@@ -161,7 +161,7 @@ class _LinkInvestmentAccountsScreenState
                     ? AppColors.appPrimary
                     : AppColors.lightGrey(context),
                 textColor: _selectedAccountType != null
-                    ? Colors.white
+                    ? AppColors.white(context)
                     : AppColors.secondaryText(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,

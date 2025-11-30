@@ -150,7 +150,7 @@ class _LinkedBrokersScreenState extends State<LinkedBrokersScreen> {
                             ? AppColors.appPrimary
                             : AppColors.lightGrey(context),
                         textColor: _connectedBrokerIds.isNotEmpty
-                            ? Colors.white
+                            ? AppColors.white(context)
                             : AppColors.secondaryText(context),
                         borderRadius: 12,
                         padding: EdgeInsets.zero,

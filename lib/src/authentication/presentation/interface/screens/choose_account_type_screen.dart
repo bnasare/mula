@@ -92,7 +92,7 @@ class _ChooseAccountTypeScreenState extends State<ChooseAccountTypeScreen> {
                 ? AppColors.appPrimary
                 : AppColors.lightGrey(context),
             textColor: _selectedAccountType != null
-                ? Colors.white
+                ? AppColors.white(context)
                 : AppColors.secondaryText(context),
             borderRadius: 12,
             padding: const EdgeInsets.all(0),

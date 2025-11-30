@@ -179,7 +179,7 @@ class _AddAccountDetailsScreenState extends State<AddAccountDetailsScreen> {
                   ? AppColors.appPrimary
                   : AppColors.lightGrey(context),
               textColor: _isFormValid
-                  ? Colors.white
+                  ? AppColors.white(context)
                   : AppColors.secondaryText(context),
               borderRadius: 12,
               padding: const EdgeInsets.all(0),

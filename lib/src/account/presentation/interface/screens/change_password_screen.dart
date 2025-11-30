@@ -6,6 +6,7 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/presentation/widgets/snackbar.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
@@ -56,11 +57,9 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
     if (_formKey.currentState?.validate() ?? false) {
       // Mock password update - in production, this would call an API
       Navigator.pop(context);
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Password updated successfully'),
-          backgroundColor: Colors.green,
-        ),
+      SnackBarHelper.showSuccessSnackBar(
+        context,
+        'Password updated successfully',
       );
     }
   }

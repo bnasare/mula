@@ -67,7 +67,7 @@ class LinkedAccountsScreen extends StatelessWidget {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      backgroundColor: Colors.transparent,
+      backgroundColor: AppColors.transparent,
       builder: (context) => AccountDetailsBottomSheet(
         accountType: accountType,
         account: account,

@@ -62,7 +62,7 @@ class ImagePopup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.black(context),
       body: GestureDetector(
         onVerticalDragEnd: (details) {
           if (details.primaryVelocity! > 100) {
@@ -97,7 +97,7 @@ class ImagePopup extends StatelessWidget {
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.2),
+                          color: AppColors.black(context).withValues(alpha: 0.2),
                           spreadRadius: 1,
                           blurRadius: 5,
                           offset: const Offset(0, 2),
@@ -132,7 +132,7 @@ class ImagePopup extends StatelessWidget {
           return Center(
             child: Icon(
               Icons.error_outline,
-              color: Colors.red,
+              color: AppColors.error,
               size: context.responsiveValue(mobile: 48.0),
             ),
           );
@@ -155,7 +155,7 @@ class ImagePopup extends StatelessWidget {
         errorWidget: (context, url, error) => Center(
           child: Icon(
             Icons.error_outline,
-            color: Colors.red,
+            color: AppColors.error,
             size: context.responsiveValue(mobile: 48.0),
           ),
         ),
@@ -169,7 +169,7 @@ class ImagePopup extends StatelessWidget {
           return Center(
             child: Icon(
               Icons.error_outline,
-              color: Colors.red,
+              color: AppColors.error,
               size: context.responsiveValue(mobile: 48.0),
             ),
           );

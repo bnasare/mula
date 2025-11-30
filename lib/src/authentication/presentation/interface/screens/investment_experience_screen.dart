@@ -86,7 +86,7 @@ class _InvestmentExperienceScreenState
                     ? AppColors.appPrimary
                     : AppColors.lightGrey(context),
                 textColor: _selectedLevel != null
-                    ? Colors.white
+                    ? AppColors.white(context)
                     : AppColors.secondaryText(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,

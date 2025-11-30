@@ -311,7 +311,7 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
                       ? AppColors.appPrimary
                       : AppColors.lightGrey(context),
                   textColor: _otpCode.length == 6
-                      ? Colors.white
+                      ? AppColors.white(context)
                       : AppColors.secondaryText(context),
                   borderRadius: 12,
                   padding: EdgeInsets.zero,

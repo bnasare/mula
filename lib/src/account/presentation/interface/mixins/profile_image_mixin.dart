@@ -1,9 +1,11 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/image_popup.dart';
 import '../../../../../shared/presentation/widgets/snackbar.dart';
 import '../../../../../shared/utils/image_cropper.dart';
@@ -20,7 +22,7 @@ mixin ProfileImageMixin<T extends StatefulWidget> on State<T> {
   void handleProfileImageTap() async {
     final action = await showModalBottomSheet<ProfileImageAction>(
       context: context,
-      backgroundColor: Colors.transparent,
+      backgroundColor: AppColors.transparent,
       builder: (context) => const ProfileImageBottomSheet(),
     );
 
@@ -44,7 +46,7 @@ mixin ProfileImageMixin<T extends StatefulWidget> on State<T> {
     // Show dialog to choose camera or gallery
     final source = await showModalBottomSheet<ImageSource>(
       context: context,
-      backgroundColor: Colors.transparent,
+      backgroundColor: AppColors.transparent,
       builder: (context) => Container(
         decoration: BoxDecoration(
           color: Theme.of(context).colorScheme.surface,
@@ -59,18 +61,18 @@ mixin ProfileImageMixin<T extends StatefulWidget> on State<T> {
               width: 40,
               height: 4,
               decoration: BoxDecoration(
-                color: Colors.grey.withOpacity(0.3),
+                color: AppColors.grey(context).withOpacity(0.3),
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
             const SizedBox(height: 20),
             ListTile(
-              leading: const Icon(Icons.camera_alt),
+              leading: const Icon(IconlyLight.camera),
               title: const Text('Take Photo'),
               onTap: () => Navigator.pop(context, ImageSource.camera),
             ),
             ListTile(
-              leading: const Icon(Icons.photo_library),
+              leading: const Icon(IconlyLight.image),
               title: const Text('Choose from Gallery'),
               onTap: () => Navigator.pop(context, ImageSource.gallery),
             ),

@@ -127,7 +127,7 @@ class _TabBar extends StatelessWidget {
                   bottom: BorderSide(
                     color: isSelected
                         ? AppColors.appPrimary
-                        : Colors.transparent,
+                        : AppColors.transparent,
                     width: 2,
                   ),
                 ),

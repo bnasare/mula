@@ -170,7 +170,7 @@ class QuizResultsDialog extends StatelessWidget {
                 Expanded(
                   child: AppButton(
                     text: context.localize.goToHome,
-                    backgroundColor: Colors.transparent,
+                    backgroundColor: AppColors.transparent,
                     textColor: AppColors.primaryText(context),
                     borderColor: AppColors.grey(context).withValues(alpha: 0.2),
                     borderRadius: 8,
