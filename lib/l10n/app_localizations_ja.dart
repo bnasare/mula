@@ -1582,4 +1582,55 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get noResultsFound => '結果が見つかりません';
+
+  @override
+  String get auctionMarketClosed => 'オークション市場は閉鎖中';
+
+  @override
+  String get notifyWhenOpened => '開場時に通知';
+
+  @override
+  String get yes => 'はい';
+
+  @override
+  String get no => 'いいえ';
+
+  @override
+  String get bidType => '入札タイプ';
+
+  @override
+  String get competitive => '競争入札';
+
+  @override
+  String get nonCompetitive => '非競争入札';
+
+  @override
+  String get selectType => 'タイプを選択';
+
+  @override
+  String get previousRate => '前回金利';
+
+  @override
+  String get enterRate => '金利を入力';
+
+  @override
+  String get enterYourRate => 'ご希望の金利を入力';
+
+  @override
+  String get estimatedProceeds => '推定収益';
+
+  @override
+  String get purchaseAmount => '購入金額';
+
+  @override
+  String get whatAmountBidFor => 'いくらで入札しますか？';
+
+  @override
+  String get selectBroker => 'ブローカーを選択';
+
+  @override
+  String get netProceeds => '純収益';
+
+  @override
+  String get maturityValue => '満期価額';
 }

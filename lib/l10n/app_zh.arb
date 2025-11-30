@@ -602,5 +602,22 @@
   "treasuryBills": "国库券",
   "bid": "出价",
   "searchLessons": "搜索课程",
-  "noResultsFound": "未找到结果"
+  "noResultsFound": "未找到结果",
+  "auctionMarketClosed": "拍卖市场已关闭",
+  "notifyWhenOpened": "开放时通知我",
+  "yes": "是",
+  "no": "否",
+  "bidType": "出价类型",
+  "competitive": "竞争性",
+  "nonCompetitive": "非竞争性",
+  "selectType": "选择类型",
+  "previousRate": "之前利率",
+  "enterRate": "输入利率",
+  "enterYourRate": "输入您的利率",
+  "estimatedProceeds": "预计收益",
+  "purchaseAmount": "购买金额",
+  "whatAmountBidFor": "您想出价多少？",
+  "selectBroker": "选择经纪人",
+  "netProceeds": "净收益",
+  "maturityValue": "到期价值"
 }

@@ -602,5 +602,22 @@
   "treasuryBills": "Schatzwechsel",
   "bid": "Gebot",
   "searchLessons": "Lektionen suchen",
-  "noResultsFound": "Keine Ergebnisse gefunden"
+  "noResultsFound": "Keine Ergebnisse gefunden",
+  "auctionMarketClosed": "Auktionsmarkt geschlossen",
+  "notifyWhenOpened": "Benachrichtigen, wenn geöffnet",
+  "yes": "Ja",
+  "no": "Nein",
+  "bidType": "Gebotsart",
+  "competitive": "Wettbewerbsfähig",
+  "nonCompetitive": "Nicht wettbewerbsfähig",
+  "selectType": "Typ auswählen",
+  "previousRate": "Vorheriger Zinssatz",
+  "enterRate": "Zinssatz eingeben",
+  "enterYourRate": "Geben Sie Ihren Zinssatz ein",
+  "estimatedProceeds": "Geschätzter Erlös",
+  "purchaseAmount": "Kaufbetrag",
+  "whatAmountBidFor": "Für welchen Betrag möchten Sie bieten?",
+  "selectBroker": "Broker auswählen",
+  "netProceeds": "Nettoerlös",
+  "maturityValue": "Fälligkeitswert"
 }

@@ -602,5 +602,22 @@
   "treasuryBills": "Letras do Tesouro",
   "bid": "Lance",
   "searchLessons": "Pesquisar lições",
-  "noResultsFound": "Nenhum resultado encontrado"
+  "noResultsFound": "Nenhum resultado encontrado",
+  "auctionMarketClosed": "Mercado de leilão fechado",
+  "notifyWhenOpened": "Notificar quando abrir",
+  "yes": "Sim",
+  "no": "Não",
+  "bidType": "Tipo de lance",
+  "competitive": "Competitivo",
+  "nonCompetitive": "Não competitivo",
+  "selectType": "Selecionar tipo",
+  "previousRate": "Taxa anterior",
+  "enterRate": "Inserir taxa",
+  "enterYourRate": "Insira sua taxa",
+  "estimatedProceeds": "Receita estimada",
+  "purchaseAmount": "Valor de compra",
+  "whatAmountBidFor": "Por qual valor deseja fazer o lance?",
+  "selectBroker": "Selecionar corretor",
+  "netProceeds": "Receita líquida",
+  "maturityValue": "Valor no vencimento"
 }

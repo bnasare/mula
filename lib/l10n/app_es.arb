@@ -602,5 +602,22 @@
   "treasuryBills": "Letras del Tesoro",
   "bid": "Oferta",
   "searchLessons": "Buscar lecciones",
-  "noResultsFound": "No se encontraron resultados"
+  "noResultsFound": "No se encontraron resultados",
+  "auctionMarketClosed": "Mercado de subastas cerrado",
+  "notifyWhenOpened": "Notificar cuando abra",
+  "yes": "Sí",
+  "no": "No",
+  "bidType": "Tipo de oferta",
+  "competitive": "Competitiva",
+  "nonCompetitive": "No competitiva",
+  "selectType": "Seleccionar tipo",
+  "previousRate": "Tasa anterior",
+  "enterRate": "Ingresar tasa",
+  "enterYourRate": "Ingrese su tasa",
+  "estimatedProceeds": "Ingresos estimados",
+  "purchaseAmount": "Monto de compra",
+  "whatAmountBidFor": "¿Por qué monto desea ofertar?",
+  "selectBroker": "Seleccionar corredor",
+  "netProceeds": "Ingresos netos",
+  "maturityValue": "Valor al vencimiento"
 }

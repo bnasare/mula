@@ -1621,4 +1621,56 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get noResultsFound => 'No results found';
+
+  @override
+  String get auctionMarketClosed => 'Auction Market Closed';
+
+  @override
+  String get notifyWhenOpened =>
+      'Would you like to be notified when the market is opened?';
+
+  @override
+  String get yes => 'Yes';
+
+  @override
+  String get no => 'No';
+
+  @override
+  String get bidType => 'Bid Type';
+
+  @override
+  String get competitive => 'Competitive';
+
+  @override
+  String get nonCompetitive => 'Non Competitive';
+
+  @override
+  String get selectType => 'Select Type';
+
+  @override
+  String get previousRate => 'Previous Rate';
+
+  @override
+  String get enterRate => 'Enter Rate';
+
+  @override
+  String get enterYourRate => 'Enter your rate';
+
+  @override
+  String get estimatedProceeds => 'Estimated Proceeds';
+
+  @override
+  String get purchaseAmount => 'Purchase Amount';
+
+  @override
+  String get whatAmountBidFor => 'What amount do you want to bid for?';
+
+  @override
+  String get selectBroker => 'Select Broker';
+
+  @override
+  String get netProceeds => 'Net Proceeds';
+
+  @override
+  String get maturityValue => 'Maturity Value';
 }

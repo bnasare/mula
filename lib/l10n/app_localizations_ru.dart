@@ -1629,4 +1629,55 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get noResultsFound => 'Результаты не найдены';
+
+  @override
+  String get auctionMarketClosed => 'Аукционный рынок закрыт';
+
+  @override
+  String get notifyWhenOpened => 'Уведомить при открытии';
+
+  @override
+  String get yes => 'Да';
+
+  @override
+  String get no => 'Нет';
+
+  @override
+  String get bidType => 'Тип заявки';
+
+  @override
+  String get competitive => 'Конкурентная';
+
+  @override
+  String get nonCompetitive => 'Неконкурентная';
+
+  @override
+  String get selectType => 'Выберите тип';
+
+  @override
+  String get previousRate => 'Предыдущая ставка';
+
+  @override
+  String get enterRate => 'Введите ставку';
+
+  @override
+  String get enterYourRate => 'Введите вашу ставку';
+
+  @override
+  String get estimatedProceeds => 'Ожидаемый доход';
+
+  @override
+  String get purchaseAmount => 'Сумма покупки';
+
+  @override
+  String get whatAmountBidFor => 'На какую сумму вы хотите сделать заявку?';
+
+  @override
+  String get selectBroker => 'Выберите брокера';
+
+  @override
+  String get netProceeds => 'Чистый доход';
+
+  @override
+  String get maturityValue => 'Стоимость при погашении';
 }

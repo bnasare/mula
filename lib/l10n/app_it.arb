@@ -602,5 +602,22 @@
   "treasuryBills": "Buoni del Tesoro",
   "bid": "Offerta",
   "searchLessons": "Cerca lezioni",
-  "noResultsFound": "Nessun risultato trovato"
+  "noResultsFound": "Nessun risultato trovato",
+  "auctionMarketClosed": "Mercato d'asta chiuso",
+  "notifyWhenOpened": "Notifica all'apertura",
+  "yes": "Sì",
+  "no": "No",
+  "bidType": "Tipo di offerta",
+  "competitive": "Competitiva",
+  "nonCompetitive": "Non competitiva",
+  "selectType": "Seleziona tipo",
+  "previousRate": "Tasso precedente",
+  "enterRate": "Inserisci tasso",
+  "enterYourRate": "Inserisci il tuo tasso",
+  "estimatedProceeds": "Proventi stimati",
+  "purchaseAmount": "Importo di acquisto",
+  "whatAmountBidFor": "Per quale importo vuoi fare un'offerta?",
+  "selectBroker": "Seleziona broker",
+  "netProceeds": "Proventi netti",
+  "maturityValue": "Valore a scadenza"
 }

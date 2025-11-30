@@ -1632,4 +1632,55 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get noResultsFound => 'No se encontraron resultados';
+
+  @override
+  String get auctionMarketClosed => 'Mercado de subastas cerrado';
+
+  @override
+  String get notifyWhenOpened => 'Notificar cuando abra';
+
+  @override
+  String get yes => 'Sí';
+
+  @override
+  String get no => 'No';
+
+  @override
+  String get bidType => 'Tipo de oferta';
+
+  @override
+  String get competitive => 'Competitiva';
+
+  @override
+  String get nonCompetitive => 'No competitiva';
+
+  @override
+  String get selectType => 'Seleccionar tipo';
+
+  @override
+  String get previousRate => 'Tasa anterior';
+
+  @override
+  String get enterRate => 'Ingresar tasa';
+
+  @override
+  String get enterYourRate => 'Ingrese su tasa';
+
+  @override
+  String get estimatedProceeds => 'Ingresos estimados';
+
+  @override
+  String get purchaseAmount => 'Monto de compra';
+
+  @override
+  String get whatAmountBidFor => '¿Por qué monto desea ofertar?';
+
+  @override
+  String get selectBroker => 'Seleccionar corredor';
+
+  @override
+  String get netProceeds => 'Ingresos netos';
+
+  @override
+  String get maturityValue => 'Valor al vencimiento';
 }

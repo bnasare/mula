@@ -1629,4 +1629,55 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get noResultsFound => 'कोई परिणाम नहीं मिला';
+
+  @override
+  String get auctionMarketClosed => 'नीलामी बाजार बंद है';
+
+  @override
+  String get notifyWhenOpened => 'खुलने पर सूचित करें';
+
+  @override
+  String get yes => 'हाँ';
+
+  @override
+  String get no => 'नहीं';
+
+  @override
+  String get bidType => 'बोली प्रकार';
+
+  @override
+  String get competitive => 'प्रतिस्पर्धी';
+
+  @override
+  String get nonCompetitive => 'गैर-प्रतिस्पर्धी';
+
+  @override
+  String get selectType => 'प्रकार चुनें';
+
+  @override
+  String get previousRate => 'पिछली दर';
+
+  @override
+  String get enterRate => 'दर दर्ज करें';
+
+  @override
+  String get enterYourRate => 'अपनी दर दर्ज करें';
+
+  @override
+  String get estimatedProceeds => 'अनुमानित आय';
+
+  @override
+  String get purchaseAmount => 'खरीद राशि';
+
+  @override
+  String get whatAmountBidFor => 'आप कितनी राशि के लिए बोली लगाना चाहते हैं?';
+
+  @override
+  String get selectBroker => 'ब्रोकर चुनें';
+
+  @override
+  String get netProceeds => 'शुद्ध आय';
+
+  @override
+  String get maturityValue => 'परिपक्वता मूल्य';
 }

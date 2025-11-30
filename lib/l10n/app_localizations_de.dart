@@ -1635,4 +1635,55 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get noResultsFound => 'Keine Ergebnisse gefunden';
+
+  @override
+  String get auctionMarketClosed => 'Auktionsmarkt geschlossen';
+
+  @override
+  String get notifyWhenOpened => 'Benachrichtigen, wenn geöffnet';
+
+  @override
+  String get yes => 'Ja';
+
+  @override
+  String get no => 'Nein';
+
+  @override
+  String get bidType => 'Gebotsart';
+
+  @override
+  String get competitive => 'Wettbewerbsfähig';
+
+  @override
+  String get nonCompetitive => 'Nicht wettbewerbsfähig';
+
+  @override
+  String get selectType => 'Typ auswählen';
+
+  @override
+  String get previousRate => 'Vorheriger Zinssatz';
+
+  @override
+  String get enterRate => 'Zinssatz eingeben';
+
+  @override
+  String get enterYourRate => 'Geben Sie Ihren Zinssatz ein';
+
+  @override
+  String get estimatedProceeds => 'Geschätzter Erlös';
+
+  @override
+  String get purchaseAmount => 'Kaufbetrag';
+
+  @override
+  String get whatAmountBidFor => 'Für welchen Betrag möchten Sie bieten?';
+
+  @override
+  String get selectBroker => 'Broker auswählen';
+
+  @override
+  String get netProceeds => 'Nettoerlös';
+
+  @override
+  String get maturityValue => 'Fälligkeitswert';
 }

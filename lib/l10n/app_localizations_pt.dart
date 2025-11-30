@@ -1630,4 +1630,55 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get noResultsFound => 'Nenhum resultado encontrado';
+
+  @override
+  String get auctionMarketClosed => 'Mercado de leilão fechado';
+
+  @override
+  String get notifyWhenOpened => 'Notificar quando abrir';
+
+  @override
+  String get yes => 'Sim';
+
+  @override
+  String get no => 'Não';
+
+  @override
+  String get bidType => 'Tipo de lance';
+
+  @override
+  String get competitive => 'Competitivo';
+
+  @override
+  String get nonCompetitive => 'Não competitivo';
+
+  @override
+  String get selectType => 'Selecionar tipo';
+
+  @override
+  String get previousRate => 'Taxa anterior';
+
+  @override
+  String get enterRate => 'Inserir taxa';
+
+  @override
+  String get enterYourRate => 'Insira sua taxa';
+
+  @override
+  String get estimatedProceeds => 'Receita estimada';
+
+  @override
+  String get purchaseAmount => 'Valor de compra';
+
+  @override
+  String get whatAmountBidFor => 'Por qual valor deseja fazer o lance?';
+
+  @override
+  String get selectBroker => 'Selecionar corretor';
+
+  @override
+  String get netProceeds => 'Receita líquida';
+
+  @override
+  String get maturityValue => 'Valor no vencimento';
 }

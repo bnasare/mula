@@ -133,26 +133,36 @@ class DummyExploreData {
         name: '91-Day Bill',
         typeLabel: 'Treasury Bills',
         logoAbbreviation: 'MTN',
+        interestRate: 15.53,
+        maturityDate: '18-JAN-25',
       ),
       AuctionMarketItem(
         name: '182-Day Bill',
         typeLabel: 'Treasury Bills',
         logoAbbreviation: 'MTN',
+        interestRate: 16.25,
+        maturityDate: '18-APR-25',
       ),
       AuctionMarketItem(
         name: '364-Day Bill',
         typeLabel: 'Treasury Bill',
         logoAbbreviation: 'MTN',
+        interestRate: 17.80,
+        maturityDate: '18-OCT-25',
       ),
       AuctionMarketItem(
         name: 'Government of Ghana',
         typeLabel: 'Bonds',
         logoAbbreviation: 'MTN',
+        interestRate: 19.50,
+        maturityDate: '18-OCT-28',
       ),
       AuctionMarketItem(
         name: 'Corporates',
         typeLabel: 'Bonds',
         logoAbbreviation: 'MTN',
+        interestRate: 21.00,
+        maturityDate: '18-JAN-27',
       ),
     ];
   }

@@ -602,5 +602,22 @@
   "treasuryBills": "Казначейские векселя",
   "bid": "Заявка",
   "searchLessons": "Поиск уроков",
-  "noResultsFound": "Результаты не найдены"
+  "noResultsFound": "Результаты не найдены",
+  "auctionMarketClosed": "Аукционный рынок закрыт",
+  "notifyWhenOpened": "Уведомить при открытии",
+  "yes": "Да",
+  "no": "Нет",
+  "bidType": "Тип заявки",
+  "competitive": "Конкурентная",
+  "nonCompetitive": "Неконкурентная",
+  "selectType": "Выберите тип",
+  "previousRate": "Предыдущая ставка",
+  "enterRate": "Введите ставку",
+  "enterYourRate": "Введите вашу ставку",
+  "estimatedProceeds": "Ожидаемый доход",
+  "purchaseAmount": "Сумма покупки",
+  "whatAmountBidFor": "На какую сумму вы хотите сделать заявку?",
+  "selectBroker": "Выберите брокера",
+  "netProceeds": "Чистый доход",
+  "maturityValue": "Стоимость при погашении"
 }

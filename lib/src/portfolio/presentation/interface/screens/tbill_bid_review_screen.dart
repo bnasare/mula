@@ -9,29 +9,32 @@ import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
-import '../../../domain/entities/trade_type.dart';
 
-class TBillReviewOrderScreen extends StatelessWidget {
-  final TradeType tradeType;
-  final String tbillCode;
+class TBillBidReviewScreen extends StatelessWidget {
+  final String tbillName;
   final String tbillDescription;
+  final double purchaseAmount;
   final double interestRate;
-  final double grossConsideration;
+  final String bidType;
   final double totalCharges;
-  final double netConsideration;
-  final double estimatedMaturityValue;
+  final double netProceeds;
+  final double maturityValue;
+  final String maturityDate;
+  final String broker;
   final double availableCashBalance;
 
-  const TBillReviewOrderScreen({
+  const TBillBidReviewScreen({
     super.key,
-    required this.tradeType,
-    required this.tbillCode,
+    required this.tbillName,
     required this.tbillDescription,
+    required this.purchaseAmount,
     required this.interestRate,
-    required this.grossConsideration,
+    required this.bidType,
     required this.totalCharges,
-    required this.netConsideration,
-    required this.estimatedMaturityValue,
+    required this.netProceeds,
+    required this.maturityValue,
+    required this.maturityDate,
+    required this.broker,
     required this.availableCashBalance,
   });
 
@@ -52,7 +55,6 @@ class TBillReviewOrderScreen extends StatelessWidget {
         },
         secondaryButtonText: context.localize.tradeOtherSecurities,
         onSecondaryButtonTap: () {
-          // Pop back to dashboard
           Navigator.of(context).popUntil((route) => route.isFirst);
         },
       ),
@@ -93,7 +95,7 @@ class TBillReviewOrderScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         AppText.medium(
-                          tbillCode,
+                          tbillName,
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                             color: AppColors.primaryText(context),
@@ -113,9 +115,11 @@ class TBillReviewOrderScreen extends StatelessWidget {
                   ListView.separated(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
-                    itemCount: 6,
-                    separatorBuilder: (context, index) =>
-                        Divider(color: AppColors.border(context), height: 24),
+                    itemCount: 9,
+                    separatorBuilder: (context, index) => Divider(
+                      color: AppColors.border(context),
+                      height: 24,
+                    ),
                     itemBuilder: (context, index) {
                       return _buildDetailRowByIndex(context, index);
                     },
@@ -147,37 +151,55 @@ class TBillReviewOrderScreen extends StatelessWidget {
       case 0:
         return _buildDetailRow(
           context,
-          context.localize.interestRate,
-          '${interestRate.toStringAsFixed(2)}%',
+          context.localize.purchaseAmount,
+          'GHS ${purchaseAmount.toStringAsFixed(2)}',
         );
       case 1:
         return _buildDetailRow(
           context,
-          context.localize.grossConsideration,
-          'GHS ${grossConsideration.toStringAsFixed(2)}',
+          context.localize.interestRate,
+          '${interestRate.toStringAsFixed(2)}%',
         );
       case 2:
+        return _buildDetailRow(
+          context,
+          context.localize.bidType,
+          bidType,
+        );
+      case 3:
         return _buildDetailRow(
           context,
           context.localize.totalCharges,
           'GHS ${totalCharges.toStringAsFixed(2)}',
         );
-      case 3:
-        return _buildDetailRow(
-          context,
-          context.localize.netConsideration,
-          'GHS ${netConsideration.toStringAsFixed(2)}',
-        );
       case 4:
         return _buildDetailRow(
           context,
-          context.localize.estimatedMaturityValue,
-          'GHS ${estimatedMaturityValue.toStringAsFixed(2)}',
+          context.localize.netProceeds,
+          'GHS ${netProceeds.toStringAsFixed(2)}',
         );
       case 5:
         return _buildDetailRow(
           context,
-          context.localize.availableCashBalanceTitle,
+          context.localize.maturityValue,
+          'GHS ${maturityValue.toStringAsFixed(0)}',
+        );
+      case 6:
+        return _buildDetailRow(
+          context,
+          context.localize.maturityDate,
+          maturityDate,
+        );
+      case 7:
+        return _buildDetailRow(
+          context,
+          context.localize.broker,
+          broker,
+        );
+      case 8:
+        return _buildDetailRow(
+          context,
+          context.localize.availableCashBalance,
           'GHS ${availableCashBalance.toStringAsFixed(2)}',
         );
       default:

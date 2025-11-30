@@ -3,11 +3,15 @@ class AuctionMarketItem {
   final String name;
   final String typeLabel;
   final String logoAbbreviation;
+  final double interestRate;
+  final String maturityDate;
 
   const AuctionMarketItem({
     required this.name,
     required this.typeLabel,
     required this.logoAbbreviation,
+    required this.interestRate,
+    required this.maturityDate,
   });
 }
 

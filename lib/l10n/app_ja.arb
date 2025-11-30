@@ -602,5 +602,22 @@
   "treasuryBills": "国庫短期証券",
   "bid": "入札",
   "searchLessons": "レッスンを検索",
-  "noResultsFound": "結果が見つかりません"
+  "noResultsFound": "結果が見つかりません",
+  "auctionMarketClosed": "オークション市場は閉鎖中",
+  "notifyWhenOpened": "開場時に通知",
+  "yes": "はい",
+  "no": "いいえ",
+  "bidType": "入札タイプ",
+  "competitive": "競争入札",
+  "nonCompetitive": "非競争入札",
+  "selectType": "タイプを選択",
+  "previousRate": "前回金利",
+  "enterRate": "金利を入力",
+  "enterYourRate": "ご希望の金利を入力",
+  "estimatedProceeds": "推定収益",
+  "purchaseAmount": "購入金額",
+  "whatAmountBidFor": "いくらで入札しますか？",
+  "selectBroker": "ブローカーを選択",
+  "netProceeds": "純収益",
+  "maturityValue": "満期価額"
 }

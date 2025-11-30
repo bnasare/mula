@@ -1574,4 +1574,55 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get noResultsFound => '未找到结果';
+
+  @override
+  String get auctionMarketClosed => '拍卖市场已关闭';
+
+  @override
+  String get notifyWhenOpened => '开放时通知我';
+
+  @override
+  String get yes => '是';
+
+  @override
+  String get no => '否';
+
+  @override
+  String get bidType => '出价类型';
+
+  @override
+  String get competitive => '竞争性';
+
+  @override
+  String get nonCompetitive => '非竞争性';
+
+  @override
+  String get selectType => '选择类型';
+
+  @override
+  String get previousRate => '之前利率';
+
+  @override
+  String get enterRate => '输入利率';
+
+  @override
+  String get enterYourRate => '输入您的利率';
+
+  @override
+  String get estimatedProceeds => '预计收益';
+
+  @override
+  String get purchaseAmount => '购买金额';
+
+  @override
+  String get whatAmountBidFor => '您想出价多少？';
+
+  @override
+  String get selectBroker => '选择经纪人';
+
+  @override
+  String get netProceeds => '净收益';
+
+  @override
+  String get maturityValue => '到期价值';
 }

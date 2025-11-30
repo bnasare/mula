@@ -602,5 +602,22 @@
   "treasuryBills": "Bons du Trésor",
   "bid": "Offre",
   "searchLessons": "Rechercher des leçons",
-  "noResultsFound": "Aucun résultat trouvé"
+  "noResultsFound": "Aucun résultat trouvé",
+  "auctionMarketClosed": "Marché aux enchères fermé",
+  "notifyWhenOpened": "Notifier à l'ouverture",
+  "yes": "Oui",
+  "no": "Non",
+  "bidType": "Type d'offre",
+  "competitive": "Compétitive",
+  "nonCompetitive": "Non compétitive",
+  "selectType": "Sélectionner le type",
+  "previousRate": "Taux précédent",
+  "enterRate": "Entrer le taux",
+  "enterYourRate": "Entrez votre taux",
+  "estimatedProceeds": "Produit estimé",
+  "purchaseAmount": "Montant d'achat",
+  "whatAmountBidFor": "Pour quel montant souhaitez-vous enchérir?",
+  "selectBroker": "Sélectionner un courtier",
+  "netProceeds": "Produit net",
+  "maturityValue": "Valeur à l'échéance"
 }

@@ -602,5 +602,22 @@
   "treasuryBills": "ट्रेजरी बिल",
   "bid": "बोली",
   "searchLessons": "पाठ खोजें",
-  "noResultsFound": "कोई परिणाम नहीं मिला"
+  "noResultsFound": "कोई परिणाम नहीं मिला",
+  "auctionMarketClosed": "नीलामी बाजार बंद है",
+  "notifyWhenOpened": "खुलने पर सूचित करें",
+  "yes": "हाँ",
+  "no": "नहीं",
+  "bidType": "बोली प्रकार",
+  "competitive": "प्रतिस्पर्धी",
+  "nonCompetitive": "गैर-प्रतिस्पर्धी",
+  "selectType": "प्रकार चुनें",
+  "previousRate": "पिछली दर",
+  "enterRate": "दर दर्ज करें",
+  "enterYourRate": "अपनी दर दर्ज करें",
+  "estimatedProceeds": "अनुमानित आय",
+  "purchaseAmount": "खरीद राशि",
+  "whatAmountBidFor": "आप कितनी राशि के लिए बोली लगाना चाहते हैं?",
+  "selectBroker": "ब्रोकर चुनें",
+  "netProceeds": "शुद्ध आय",
+  "maturityValue": "परिपक्वता मूल्य"
 }

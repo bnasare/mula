@@ -13,6 +13,7 @@ import 'shared/presentation/widgets/restart_widget.dart';
 import 'shared/utils/connectivity.dart';
 import 'shared/utils/modal_visiblity.dart';
 import 'src/dashboard/presentation/interface/screens/dashboard_screen.dart';
+import 'src/dashboard/presentation/provider/dashboard_provider.dart';
 import 'src/onboarding/presentation/bloc/onboarding_mixin.dart';
 
 void main() async {
@@ -30,6 +31,7 @@ void main() async {
           ChangeNotifierProvider(create: (_) => ThemeProvider()),
           ChangeNotifierProvider(create: (_) => ConnectivityProvider()),
           ChangeNotifierProvider(create: (_) => ModalVisibleProvider()),
+          ChangeNotifierProvider(create: (_) => DashboardProvider()),
         ],
         child: const MyApp(),
       ),

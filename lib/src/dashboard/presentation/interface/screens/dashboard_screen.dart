@@ -15,18 +15,6 @@ class DashboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (_) => DashboardProvider(),
-      child: const _DashboardView(),
-    );
-  }
-}
-
-class _DashboardView extends StatelessWidget {
-  const _DashboardView();
-
-  @override
-  Widget build(BuildContext context) {
     final provider = context.watch<DashboardProvider>();
 
     return Scaffold(

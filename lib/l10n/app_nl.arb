@@ -602,5 +602,22 @@
   "treasuryBills": "Schatkistpapier",
   "bid": "Bod",
   "searchLessons": "Lessen zoeken",
-  "noResultsFound": "Geen resultaten gevonden"
+  "noResultsFound": "Geen resultaten gevonden",
+  "auctionMarketClosed": "Veilingmarkt gesloten",
+  "notifyWhenOpened": "Melden wanneer geopend",
+  "yes": "Ja",
+  "no": "Nee",
+  "bidType": "Type bod",
+  "competitive": "Competitief",
+  "nonCompetitive": "Niet-competitief",
+  "selectType": "Selecteer type",
+  "previousRate": "Vorige rente",
+  "enterRate": "Rente invoeren",
+  "enterYourRate": "Voer uw rente in",
+  "estimatedProceeds": "Geschatte opbrengst",
+  "purchaseAmount": "Aankoopbedrag",
+  "whatAmountBidFor": "Voor welk bedrag wilt u bieden?",
+  "selectBroker": "Selecteer makelaar",
+  "netProceeds": "Netto opbrengst",
+  "maturityValue": "Waarde op vervaldag"
 }

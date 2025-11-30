@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
@@ -7,6 +8,7 @@ import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
+import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
 import '../../../domain/entities/trade_type.dart';
 
 class StockReviewOrderScreen extends StatelessWidget {
@@ -38,6 +40,9 @@ class StockReviewOrderScreen extends StatelessWidget {
   });
 
   void _handleConfirm(BuildContext context) {
+    // Get provider reference before navigating to new route
+    final dashboardProvider = context.read<DashboardProvider>();
+
     NavigationHelper.navigateTo(
       context,
       ConfettiSuccessScreen(
@@ -45,7 +50,8 @@ class StockReviewOrderScreen extends StatelessWidget {
         description: context.localize.orderSubmittedBroker,
         primaryButtonText: context.localize.trackInPortfolio,
         onPrimaryButtonTap: () {
-          // Navigate back to dashboard
+          // Switch to Portfolio tab and navigate back to dashboard
+          dashboardProvider.changeTab(2);
           Navigator.of(context).popUntil((route) => route.isFirst);
         },
         secondaryButtonText: context.localize.tradeOtherStocks,

@@ -656,5 +656,23 @@
   "treasuryBills": "Treasury Bills",
   "bid": "Bid",
   "searchLessons": "Search lessons",
-  "noResultsFound": "No results found"
+  "noResultsFound": "No results found",
+
+  "auctionMarketClosed": "Auction Market Closed",
+  "notifyWhenOpened": "Would you like to be notified when the market is opened?",
+  "yes": "Yes",
+  "no": "No",
+  "bidType": "Bid Type",
+  "competitive": "Competitive",
+  "nonCompetitive": "Non Competitive",
+  "selectType": "Select Type",
+  "previousRate": "Previous Rate",
+  "enterRate": "Enter Rate",
+  "enterYourRate": "Enter your rate",
+  "estimatedProceeds": "Estimated Proceeds",
+  "purchaseAmount": "Purchase Amount",
+  "whatAmountBidFor": "What amount do you want to bid for?",
+  "selectBroker": "Select Broker",
+  "netProceeds": "Net Proceeds",
+  "maturityValue": "Maturity Value"
 }

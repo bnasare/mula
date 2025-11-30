@@ -1,14 +1,37 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/presentation/widgets/auction_market_status_dialog.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/localization_extension.dart';
+import '../../../../../shared/utils/market_status.dart';
+import '../../../../../shared/utils/navigation.dart';
+import '../../../../portfolio/presentation/interface/screens/tbill_bid_screen.dart';
 import '../../../domain/entities/tbill_bond_data.dart';
 
 class AuctionMarketListItem extends StatelessWidget {
   final AuctionMarketItem item;
 
   const AuctionMarketListItem({super.key, required this.item});
+
+  void _handleBidTap(BuildContext context) {
+    if (MarketStatus.isAuctionMarketOpen()) {
+      // Navigate to bid screen
+      NavigationHelper.navigateTo(
+        context,
+        TBillBidScreen(
+          tbillName: item.name,
+          tbillDescription: item.typeLabel,
+          interestRate: item.interestRate,
+          maturityDate: item.maturityDate,
+          availableCashBalance: 20.00, // TODO: Get from wallet
+        ),
+      );
+    } else {
+      // Show auction market closed dialog
+      AuctionMarketStatusDialog.show(context);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +65,7 @@ class AuctionMarketListItem extends StatelessWidget {
 
           // Bid button
           GestureDetector(
-            onTap: () {
-              // No action on tap
-            },
+            onTap: () => _handleBidTap(context),
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
               decoration: BoxDecoration(

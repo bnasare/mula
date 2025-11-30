@@ -1,32 +1,14 @@
 import 'package:flutter/material.dart';
+
+import '../../utils/market_status.dart';
 import 'constants/app_text.dart';
 
 class MarketStatusIndicator extends StatelessWidget {
   const MarketStatusIndicator({super.key});
 
-  bool get _isMarketOpen {
-    final now = DateTime.now();
-
-    // Check if it's a weekday (Monday = 1, Friday = 5)
-    if (now.weekday > 5) {
-      return false; // Weekend
-    }
-
-    // Ghana Stock Exchange trading hours: 10:00 AM - 3:00 PM
-    final hour = now.hour;
-
-    // Market opens at 10:00
-    if (hour < 10) return false;
-
-    // Market closes at 15:00 (3:00 PM)
-    if (hour >= 15) return false;
-
-    return true;
-  }
-
   @override
   Widget build(BuildContext context) {
-    if (_isMarketOpen) {
+    if (MarketStatus.isStockMarketOpen()) {
       return const SizedBox.shrink();
     }
 

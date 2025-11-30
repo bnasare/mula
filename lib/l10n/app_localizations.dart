@@ -3187,6 +3187,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No results found'**
   String get noResultsFound;
+
+  /// No description provided for @auctionMarketClosed.
+  ///
+  /// In en, this message translates to:
+  /// **'Auction Market Closed'**
+  String get auctionMarketClosed;
+
+  /// No description provided for @notifyWhenOpened.
+  ///
+  /// In en, this message translates to:
+  /// **'Would you like to be notified when the market is opened?'**
+  String get notifyWhenOpened;
+
+  /// No description provided for @yes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes'**
+  String get yes;
+
+  /// No description provided for @no.
+  ///
+  /// In en, this message translates to:
+  /// **'No'**
+  String get no;
+
+  /// No description provided for @bidType.
+  ///
+  /// In en, this message translates to:
+  /// **'Bid Type'**
+  String get bidType;
+
+  /// No description provided for @competitive.
+  ///
+  /// In en, this message translates to:
+  /// **'Competitive'**
+  String get competitive;
+
+  /// No description provided for @nonCompetitive.
+  ///
+  /// In en, this message translates to:
+  /// **'Non Competitive'**
+  String get nonCompetitive;
+
+  /// No description provided for @selectType.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Type'**
+  String get selectType;
+
+  /// No description provided for @previousRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous Rate'**
+  String get previousRate;
+
+  /// No description provided for @enterRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Rate'**
+  String get enterRate;
+
+  /// No description provided for @enterYourRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your rate'**
+  String get enterYourRate;
+
+  /// No description provided for @estimatedProceeds.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated Proceeds'**
+  String get estimatedProceeds;
+
+  /// No description provided for @purchaseAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase Amount'**
+  String get purchaseAmount;
+
+  /// No description provided for @whatAmountBidFor.
+  ///
+  /// In en, this message translates to:
+  /// **'What amount do you want to bid for?'**
+  String get whatAmountBidFor;
+
+  /// No description provided for @selectBroker.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Broker'**
+  String get selectBroker;
+
+  /// No description provided for @netProceeds.
+  ///
+  /// In en, this message translates to:
+  /// **'Net Proceeds'**
+  String get netProceeds;
+
+  /// No description provided for @maturityValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Maturity Value'**
+  String get maturityValue;
 }
 
 class _AppLocalizationsDelegate

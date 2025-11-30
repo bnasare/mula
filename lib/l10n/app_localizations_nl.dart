@@ -1630,4 +1630,55 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get noResultsFound => 'Geen resultaten gevonden';
+
+  @override
+  String get auctionMarketClosed => 'Veilingmarkt gesloten';
+
+  @override
+  String get notifyWhenOpened => 'Melden wanneer geopend';
+
+  @override
+  String get yes => 'Ja';
+
+  @override
+  String get no => 'Nee';
+
+  @override
+  String get bidType => 'Type bod';
+
+  @override
+  String get competitive => 'Competitief';
+
+  @override
+  String get nonCompetitive => 'Niet-competitief';
+
+  @override
+  String get selectType => 'Selecteer type';
+
+  @override
+  String get previousRate => 'Vorige rente';
+
+  @override
+  String get enterRate => 'Rente invoeren';
+
+  @override
+  String get enterYourRate => 'Voer uw rente in';
+
+  @override
+  String get estimatedProceeds => 'Geschatte opbrengst';
+
+  @override
+  String get purchaseAmount => 'Aankoopbedrag';
+
+  @override
+  String get whatAmountBidFor => 'Voor welk bedrag wilt u bieden?';
+
+  @override
+  String get selectBroker => 'Selecteer makelaar';
+
+  @override
+  String get netProceeds => 'Netto opbrengst';
+
+  @override
+  String get maturityValue => 'Waarde op vervaldag';
 }
