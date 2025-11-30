@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+
 import '../../data/dummy_dashboard_data.dart';
 import '../../domain/entities/activity.dart';
 import '../../domain/entities/portfolio_summary.dart';

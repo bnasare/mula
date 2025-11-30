@@ -80,6 +80,16 @@ class SecondaryMarketListItem extends StatelessWidget {
         shape: BoxShape.circle,
         border: Border.all(color: AppColors.border(context), width: 1),
       ),
+      child: Center(
+        child: AppText.smaller(
+          item.logoAbbreviation,
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            color: AppColors.primaryText(context),
+            fontSize: 10,
+          ),
+        ),
+      ),
     );
   }
 
