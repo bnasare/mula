@@ -38,7 +38,10 @@ class _ExploreTabState extends State<ExploreTab> {
               color: AppColors.primaryText(context),
             ),
             onPressed: () {
-              NavigationHelper.navigateTo(context, const AssetSearchScreen());
+              NavigationHelper.navigateTo(
+                context,
+                const AssetSearchScreen(searchMode: SearchMode.assets),
+              );
             },
           ),
         ],

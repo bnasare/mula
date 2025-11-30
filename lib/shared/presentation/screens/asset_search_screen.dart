@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
+import '../../../src/explore/data/dummy_explore_data.dart';
 import '../../../src/learn/data/dummy_learn_data.dart';
 import '../../../src/learn/presentation/interface/screens/lesson_detail_screen.dart';
 import '../../../src/learn/presentation/interface/widgets/learn_filter_bottom_sheet.dart';
@@ -15,8 +16,15 @@ import '../widgets/constants/app_text.dart';
 import '../widgets/mula_app_bar.dart';
 import '../widgets/mula_search_bar.dart';
 
+enum SearchMode { assets, lessons }
+
 class AssetSearchScreen extends StatefulWidget {
-  const AssetSearchScreen({super.key});
+  final SearchMode searchMode;
+
+  const AssetSearchScreen({
+    super.key,
+    this.searchMode = SearchMode.assets,
+  });
 
   @override
   State<AssetSearchScreen> createState() => _AssetSearchScreenState();
@@ -26,6 +34,9 @@ class _AssetSearchScreenState extends State<AssetSearchScreen> {
   final TextEditingController _searchController = TextEditingController();
   List<SearchItem> _searchHistory = [];
   List<SearchItem> _popularSearches = [];
+  List<SearchItem> _allSearchableItems = [];
+  List<SearchItem> _searchResults = [];
+  bool _isSearching = false;
   String _sortBy = 'Relevance';
   String? _selectedDateRange;
   String? _selectedStock;
@@ -34,8 +45,43 @@ class _AssetSearchScreenState extends State<AssetSearchScreen> {
   @override
   void initState() {
     super.initState();
-    _searchHistory = List.from(DummyLearnData.getSearchHistory());
-    _popularSearches = List.from(DummyLearnData.getPopularSearches());
+    _loadDataForMode();
+  }
+
+  void _loadDataForMode() {
+    if (widget.searchMode == SearchMode.lessons) {
+      _searchHistory = List.from(DummyLearnData.getLessonSearchHistory());
+      _popularSearches = List.from(DummyLearnData.getPopularLessonSearches());
+      _allSearchableItems = DummyLearnData.getAllSearchableLessons();
+    } else {
+      _searchHistory = List.from(DummyExploreData.getAssetSearchHistory());
+      _popularSearches = List.from(DummyExploreData.getPopularAssetSearches());
+      _allSearchableItems = DummyExploreData.getAllSearchableAssets();
+    }
+  }
+
+  void _performSearch(String query) {
+    if (query.isEmpty) {
+      setState(() {
+        _isSearching = false;
+        _searchResults = [];
+      });
+      return;
+    }
+
+    final lowerQuery = query.toLowerCase();
+    final results = _allSearchableItems.where((item) {
+      final titleMatch = item.title.toLowerCase().contains(lowerQuery);
+      final nameMatch = item.name?.toLowerCase().contains(lowerQuery) ?? false;
+      final tickerMatch =
+          item.ticker?.toLowerCase().contains(lowerQuery) ?? false;
+      return titleMatch || nameMatch || tickerMatch;
+    }).toList();
+
+    setState(() {
+      _isSearching = true;
+      _searchResults = results;
+    });
   }
 
   @override
@@ -141,11 +187,11 @@ class _AssetSearchScreenState extends State<AssetSearchScreen> {
             Padding(
               padding: const EdgeInsets.all(16),
               child: MulaSearchBar(
-                hintText: context.localize.searchByAsset,
+                hintText: widget.searchMode == SearchMode.lessons
+                    ? context.localize.searchLessons
+                    : context.localize.searchByAsset,
                 controller: _searchController,
-                onChanged: (value) {
-                  // TODO: Implement search
-                },
+                onChanged: _performSearch,
                 trailing: GestureDetector(
                   onTap: _openFilter,
                   child: Icon(
@@ -216,34 +262,55 @@ class _AssetSearchScreenState extends State<AssetSearchScreen> {
               child: ListView(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 children: [
-                  // Search History
-                  if (_searchHistory.isNotEmpty) ...[
-                    ..._searchHistory.map(
+                  if (_isSearching) ...[
+                    // Show search results
+                    if (_searchResults.isEmpty)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 32),
+                        child: Center(
+                          child: AppText.small(
+                            context.localize.noResultsFound,
+                            color: AppColors.secondaryText(context),
+                          ),
+                        ),
+                      )
+                    else
+                      ..._searchResults.map(
+                        (item) => _SearchResultTile(
+                          item: item,
+                          onTap: () => _navigateToDetail(item),
+                        ),
+                      ),
+                  ] else ...[
+                    // Search History
+                    if (_searchHistory.isNotEmpty) ...[
+                      ..._searchHistory.map(
+                        (item) => _SearchItemTile(
+                          title: item.title,
+                          onTap: () => _navigateToDetail(item),
+                          onRemove: () => _removeHistoryItem(item.id),
+                        ),
+                      ),
+                      const SizedBox(height: 24),
+                    ],
+
+                    // Popular Section
+                    AppText.small(
+                      context.localize.popular,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
+                    ),
+                    const SizedBox(height: 12),
+                    ..._popularSearches.map(
                       (item) => _SearchItemTile(
                         title: item.title,
                         onTap: () => _navigateToDetail(item),
-                        onRemove: () => _removeHistoryItem(item.id),
+                        onRemove: () {
+                          // Popular items can't be removed
+                        },
+                        showRemoveButton: false,
                       ),
                     ),
-                    const SizedBox(height: 24),
                   ],
-
-                  // Popular Section
-                  AppText.small(
-                    context.localize.popular,
-                    style: const TextStyle(fontWeight: FontWeight.w600),
-                  ),
-                  const SizedBox(height: 12),
-                  ..._popularSearches.map(
-                    (item) => _SearchItemTile(
-                      title: item.title,
-                      onTap: () => _navigateToDetail(item),
-                      onRemove: () {
-                        // Popular items can't be removed
-                      },
-                      showRemoveButton: false,
-                    ),
-                  ),
                 ],
               ),
             ),
@@ -291,6 +358,90 @@ class _SearchItemTile extends StatelessWidget {
                   color: AppColors.secondaryText(context),
                 ),
               ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SearchResultTile extends StatelessWidget {
+  final SearchItem item;
+  final VoidCallback onTap;
+
+  const _SearchResultTile({
+    required this.item,
+    required this.onTap,
+  });
+
+  String _getCategoryLabel() {
+    switch (item.assetCategory) {
+      case SearchAssetCategory.stock:
+        return 'Stock';
+      case SearchAssetCategory.mutualFund:
+        return 'Mutual Fund';
+      case SearchAssetCategory.tBill:
+        return 'T-Bill';
+      case SearchAssetCategory.lesson:
+        return 'Lesson';
+      case SearchAssetCategory.generic:
+        return '';
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        child: Row(
+          children: [
+            Container(
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                color: AppColors.lightGrey(context),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Center(
+                child: AppText.smallest(
+                  item.ticker?.substring(0, 2) ?? item.title.substring(0, 2),
+                  style: const TextStyle(fontWeight: FontWeight.w600),
+                ),
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AppText.smaller(
+                    item.title,
+                    style: const TextStyle(fontWeight: FontWeight.w500),
+                  ),
+                  if (item.name != null)
+                    AppText.smallest(
+                      item.name!,
+                      color: AppColors.secondaryText(context),
+                    ),
+                ],
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: AppColors.lightGrey(context),
+                borderRadius: BorderRadius.circular(4),
+              ),
+              child: AppText.smallest(
+                _getCategoryLabel(),
+                style: TextStyle(
+                  color: AppColors.secondaryText(context),
+                  fontSize: 10,
+                ),
+              ),
+            ),
           ],
         ),
       ),

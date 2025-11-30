@@ -600,5 +600,7 @@
   "auctionMarket": "Аукционный рынок",
   "secondaryMarket": "Вторичный рынок",
   "treasuryBills": "Казначейские векселя",
-  "bid": "Заявка"
+  "bid": "Заявка",
+  "searchLessons": "Поиск уроков",
+  "noResultsFound": "Результаты не найдены"
 }

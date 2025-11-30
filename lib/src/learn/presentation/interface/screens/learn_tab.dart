@@ -42,7 +42,10 @@ class _LearnTabState extends State<LearnTab> {
               color: AppColors.primaryText(context),
             ),
             onPressed: () {
-              NavigationHelper.navigateTo(context, const AssetSearchScreen());
+              NavigationHelper.navigateTo(
+                context,
+                const AssetSearchScreen(searchMode: SearchMode.lessons),
+              );
             },
           ),
         ],

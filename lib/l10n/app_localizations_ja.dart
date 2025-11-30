@@ -1576,4 +1576,10 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get bid => '入札';
+
+  @override
+  String get searchLessons => 'レッスンを検索';
+
+  @override
+  String get noResultsFound => '結果が見つかりません';
 }

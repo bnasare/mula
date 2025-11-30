@@ -600,5 +600,7 @@
   "auctionMarket": "Mercato d'Asta",
   "secondaryMarket": "Mercato Secondario",
   "treasuryBills": "Buoni del Tesoro",
-  "bid": "Offerta"
+  "bid": "Offerta",
+  "searchLessons": "Cerca lezioni",
+  "noResultsFound": "Nessun risultato trovato"
 }

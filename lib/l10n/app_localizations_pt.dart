@@ -1624,4 +1624,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get bid => 'Lance';
+
+  @override
+  String get searchLessons => 'Pesquisar lições';
+
+  @override
+  String get noResultsFound => 'Nenhum resultado encontrado';
 }

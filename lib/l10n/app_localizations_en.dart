@@ -1615,4 +1615,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get bid => 'Bid';
+
+  @override
+  String get searchLessons => 'Search lessons';
+
+  @override
+  String get noResultsFound => 'No results found';
 }

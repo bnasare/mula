@@ -600,5 +600,7 @@
   "auctionMarket": "Marché aux Enchères",
   "secondaryMarket": "Marché Secondaire",
   "treasuryBills": "Bons du Trésor",
-  "bid": "Offre"
+  "bid": "Offre",
+  "searchLessons": "Rechercher des leçons",
+  "noResultsFound": "Aucun résultat trouvé"
 }

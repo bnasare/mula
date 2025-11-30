@@ -59,18 +59,24 @@ class _CashWalletSectionState extends State<CashWalletSection> {
                           color: AppColors.offWhite(context),
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: const Icon(IconlyLight.wallet, size: 20),
+                        child: Icon(
+                          IconlyLight.wallet,
+                          size: 20,
+                          color: AppColors.defaultText(context),
+                        ),
                       ),
                       const SizedBox(width: 12),
                       AppText.small(
                         context.localize.cashBalance,
-                        color: AppColors.secondaryText(context),
+                        color: AppColors.defaultText(context),
                       ),
                     ],
                   ),
                   const SizedBox(height: 8),
                   // Balance value
                   AppText.large(
+                    maxLines: 1,
+                    clipped: true,
                     _isBalanceVisible
                         ? currencyFormat.format(widget.balance)
                         : '••••••',
@@ -129,6 +135,8 @@ class _CashWalletSectionState extends State<CashWalletSection> {
 
                     // User name
                     AppText.medium(
+                      maxLines: 1,
+                      clipped: true,
                       widget.userName,
                       style: TextStyle(
                         color: AppColors.white(context),

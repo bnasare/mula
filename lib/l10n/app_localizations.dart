@@ -3175,6 +3175,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Bid'**
   String get bid;
+
+  /// No description provided for @searchLessons.
+  ///
+  /// In en, this message translates to:
+  /// **'Search lessons'**
+  String get searchLessons;
+
+  /// No description provided for @noResultsFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No results found'**
+  String get noResultsFound;
 }
 
 class _AppLocalizationsDelegate

@@ -1629,4 +1629,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get bid => 'Gebot';
+
+  @override
+  String get searchLessons => 'Lektionen suchen';
+
+  @override
+  String get noResultsFound => 'Keine Ergebnisse gefunden';
 }

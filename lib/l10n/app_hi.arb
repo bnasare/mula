@@ -600,5 +600,7 @@
   "auctionMarket": "नीलामी बाजार",
   "secondaryMarket": "द्वितीयक बाजार",
   "treasuryBills": "ट्रेजरी बिल",
-  "bid": "बोली"
+  "bid": "बोली",
+  "searchLessons": "पाठ खोजें",
+  "noResultsFound": "कोई परिणाम नहीं मिला"
 }

@@ -1624,4 +1624,10 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get bid => 'Bod';
+
+  @override
+  String get searchLessons => 'Lessen zoeken';
+
+  @override
+  String get noResultsFound => 'Geen resultaten gevonden';
 }

@@ -1,3 +1,4 @@
+import '../../../shared/domain/entities/search_item.dart';
 import '../domain/entities/asset_data.dart';
 import '../domain/entities/tbill_bond_data.dart';
 
@@ -216,5 +217,135 @@ class DummyExploreData {
         change: 4.7,
       ),
     ];
+  }
+
+  /// Get asset search history
+  static List<SearchItem> getAssetSearchHistory() {
+    return const [
+      SearchItem(
+        id: 'ah1',
+        title: 'MTNGH',
+        type: SearchItemType.history,
+        assetCategory: SearchAssetCategory.stock,
+        ticker: 'MTNGH',
+        name: 'Scancom PLC',
+        price: 4.02,
+        change: 0.10,
+        changePercentage: 2.3,
+      ),
+      SearchItem(
+        id: 'ah2',
+        title: 'CCMF',
+        type: SearchItemType.history,
+        assetCategory: SearchAssetCategory.mutualFund,
+        ticker: 'CCMF',
+        name: 'Christian Community Mutual Fund',
+        price: 1.3550,
+        change: 0.17,
+        changePercentage: 4.7,
+      ),
+      SearchItem(
+        id: 'ah3',
+        title: 'TB 27-OCT-25',
+        type: SearchItemType.history,
+        assetCategory: SearchAssetCategory.tBill,
+        ticker: 'TB 27-OCT-25',
+        name: 'Treasury Bill',
+        price: 10.83,
+        change: 2.3,
+        changePercentage: 2.3,
+      ),
+    ];
+  }
+
+  /// Get popular asset searches
+  static List<SearchItem> getPopularAssetSearches() {
+    return const [
+      SearchItem(
+        id: 'ap1',
+        title: 'EGH',
+        type: SearchItemType.popular,
+        assetCategory: SearchAssetCategory.stock,
+        ticker: 'EGH',
+        name: 'Ecobank Ghana PLC',
+        price: 9.35,
+        change: 0.33,
+        changePercentage: 3.7,
+      ),
+      SearchItem(
+        id: 'ap2',
+        title: 'MFUND',
+        type: SearchItemType.popular,
+        assetCategory: SearchAssetCategory.mutualFund,
+        ticker: 'MFUND',
+        name: 'Databank Mfund',
+        price: 2.7844,
+        change: 0.12,
+        changePercentage: 4.7,
+      ),
+      SearchItem(
+        id: 'ap3',
+        title: 'TB 30-NOV-25',
+        type: SearchItemType.popular,
+        assetCategory: SearchAssetCategory.tBill,
+        ticker: 'TB 30-NOV-25',
+        name: 'Treasury Bill',
+        price: 11.52,
+        change: 1.8,
+        changePercentage: 1.8,
+      ),
+    ];
+  }
+
+  /// Get all searchable assets (stocks, mutual funds, T-bills) as SearchItem list
+  static List<SearchItem> getAllSearchableAssets() {
+    final List<SearchItem> items = [];
+
+    // Add stocks
+    for (final stock in getGhanaStocks()) {
+      items.add(SearchItem(
+        id: 'stock_${stock.ticker}',
+        title: stock.ticker,
+        type: SearchItemType.popular,
+        assetCategory: SearchAssetCategory.stock,
+        ticker: stock.ticker,
+        name: stock.companyName,
+        price: stock.currentPrice,
+        change: stock.change,
+        changePercentage: stock.changePercentage,
+      ));
+    }
+
+    // Add mutual funds
+    for (final fund in getMutualFunds()) {
+      items.add(SearchItem(
+        id: 'fund_${fund.ticker}',
+        title: fund.ticker,
+        type: SearchItemType.popular,
+        assetCategory: SearchAssetCategory.mutualFund,
+        ticker: fund.ticker,
+        name: fund.companyName,
+        price: fund.currentPrice,
+        change: fund.change,
+        changePercentage: fund.changePercentage,
+      ));
+    }
+
+    // Add secondary market T-bills/bonds
+    for (final item in getSecondaryMarketItems()) {
+      items.add(SearchItem(
+        id: 'tbill_${item.code}',
+        title: item.code,
+        type: SearchItemType.popular,
+        assetCategory: SearchAssetCategory.tBill,
+        ticker: item.code,
+        name: item.typeLabel,
+        price: item.rate,
+        change: item.change,
+        changePercentage: item.change,
+      ));
+    }
+
+    return items;
   }
 }

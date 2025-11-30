@@ -1631,4 +1631,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get bid => 'Offerta';
+
+  @override
+  String get searchLessons => 'Cerca lezioni';
+
+  @override
+  String get noResultsFound => 'Nessun risultato trovato';
 }

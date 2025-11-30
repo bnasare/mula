@@ -600,5 +600,7 @@
   "auctionMarket": "拍卖市场",
   "secondaryMarket": "二级市场",
   "treasuryBills": "国库券",
-  "bid": "出价"
+  "bid": "出价",
+  "searchLessons": "搜索课程",
+  "noResultsFound": "未找到结果"
 }

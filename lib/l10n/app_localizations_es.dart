@@ -1626,4 +1626,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get bid => 'Oferta';
+
+  @override
+  String get searchLessons => 'Buscar lecciones';
+
+  @override
+  String get noResultsFound => 'No se encontraron resultados';
 }

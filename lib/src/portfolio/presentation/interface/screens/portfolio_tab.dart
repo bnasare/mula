@@ -17,9 +17,9 @@ import '../widgets/asset_holding_card.dart';
 import '../widgets/cash_wallet_section.dart';
 import '../widgets/portfolio_asset_breakdown.dart';
 import 'all_asset_holdings_screen.dart';
-import 'stock_detail_screen.dart';
 import 'mutual_funds_detail_screen.dart';
 import 'portfolio_summary_screen.dart';
+import 'stock_detail_screen.dart';
 import 'tbill_detail_screen.dart';
 
 /// Portfolio tab - displays complete portfolio overview

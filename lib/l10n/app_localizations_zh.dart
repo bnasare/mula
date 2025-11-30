@@ -1568,4 +1568,10 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get bid => '出价';
+
+  @override
+  String get searchLessons => '搜索课程';
+
+  @override
+  String get noResultsFound => '未找到结果';
 }

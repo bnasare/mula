@@ -600,5 +600,7 @@
   "auctionMarket": "Veilingmarkt",
   "secondaryMarket": "Secundaire Markt",
   "treasuryBills": "Schatkistpapier",
-  "bid": "Bod"
+  "bid": "Bod",
+  "searchLessons": "Lessen zoeken",
+  "noResultsFound": "Geen resultaten gevonden"
 }

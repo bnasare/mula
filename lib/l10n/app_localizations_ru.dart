@@ -1623,4 +1623,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get bid => 'Заявка';
+
+  @override
+  String get searchLessons => 'Поиск уроков';
+
+  @override
+  String get noResultsFound => 'Результаты не найдены';
 }

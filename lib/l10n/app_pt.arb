@@ -600,5 +600,7 @@
   "auctionMarket": "Mercado de Leilão",
   "secondaryMarket": "Mercado Secundário",
   "treasuryBills": "Letras do Tesouro",
-  "bid": "Lance"
+  "bid": "Lance",
+  "searchLessons": "Pesquisar lições",
+  "noResultsFound": "Nenhum resultado encontrado"
 }

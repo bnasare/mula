@@ -600,5 +600,7 @@
   "auctionMarket": "オークション市場",
   "secondaryMarket": "流通市場",
   "treasuryBills": "国庫短期証券",
-  "bid": "入札"
+  "bid": "入札",
+  "searchLessons": "レッスンを検索",
+  "noResultsFound": "結果が見つかりません"
 }

@@ -600,5 +600,7 @@
   "auctionMarket": "Mercado de Subastas",
   "secondaryMarket": "Mercado Secundario",
   "treasuryBills": "Letras del Tesoro",
-  "bid": "Oferta"
+  "bid": "Oferta",
+  "searchLessons": "Buscar lecciones",
+  "noResultsFound": "No se encontraron resultados"
 }

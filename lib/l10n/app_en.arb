@@ -654,5 +654,7 @@
   "auctionMarket": "Auction Market",
   "secondaryMarket": "Secondary Market",
   "treasuryBills": "Treasury Bills",
-  "bid": "Bid"
+  "bid": "Bid",
+  "searchLessons": "Search lessons",
+  "noResultsFound": "No results found"
 }

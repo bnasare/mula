@@ -1623,4 +1623,10 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get bid => 'बोली';
+
+  @override
+  String get searchLessons => 'पाठ खोजें';
+
+  @override
+  String get noResultsFound => 'कोई परिणाम नहीं मिला';
 }

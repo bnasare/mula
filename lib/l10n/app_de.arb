@@ -600,5 +600,7 @@
   "auctionMarket": "Auktionsmarkt",
   "secondaryMarket": "Sekundärmarkt",
   "treasuryBills": "Schatzwechsel",
-  "bid": "Gebot"
+  "bid": "Gebot",
+  "searchLessons": "Lektionen suchen",
+  "noResultsFound": "Keine Ergebnisse gefunden"
 }
