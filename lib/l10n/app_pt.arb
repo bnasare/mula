@@ -714,6 +714,7 @@
   "email": "E-mail",
   "phone": "Telefone",
   "logOut": "Sair",
+  "areYouSureYouWantToLogOut": "Tem certeza de que deseja sair da sua conta?",
   "search": "Pesquisar",
   "needHelpTitle": "Precisa de ajuda? Estamos aqui para você.",
   "needHelpSubtitle": "Encontre respostas para perguntas frequentes ou entre em contato com nossa equipe",
@@ -785,5 +786,28 @@
     "placeholders": {
       "percent": {"type": "int"}
     }
-  }
+  },
+
+  "referralProgram": "Programa de Indicação",
+  "inviteFriendsEarnRewards": "Convide Amigos. Ganhe Recompensas.",
+  "referralLink": "Link de indicação",
+  "referralPoints": "Pontos de Indicação",
+  "points": "Pontos",
+  "invites": "Convites",
+  "pastReferrals": "Indicações Anteriores",
+  "copiedToClipboard": "Copiado para a área de transferência",
+  "goodThingsShared": "Coisas boas são melhores quando compartilhadas. Convide seus amigos para o MULA",
+  "inviteYourFriends": "Convide seus amigos",
+  "shareReferralCodeOrLink": "Compartilhe seu código ou link de indicação com amigos",
+  "earnRewardsTogether": "Ganhem recompensas juntos",
+  "whenFriendSignsUp": "Quando seu amigo se cadastrar e fizer seu primeiro investimento, vocês dois ganham recompensas instantaneamente para aumentar seus portfólios",
+  "shareYourLink": "Compartilhe seu link",
+  "congratulations": "Parabéns!",
+  "youEarnedPoints": "Você acabou de ganhar {points} pontos",
+  "@youEarnedPoints": {
+    "placeholders": {
+      "points": {"type": "int"}
+    }
+  },
+  "friendJoinedMessage": "Um dos seus amigos entrou com seu código de indicação. Faça mais convites para ganhar mais."
 }

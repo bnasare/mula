@@ -1908,6 +1908,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get logOut => 'Abmelden';
 
   @override
+  String get areYouSureYouWantToLogOut =>
+      'Sind Sie sicher, dass Sie sich von Ihrem Konto abmelden möchten?';
+
+  @override
   String get search => 'Suchen';
 
   @override
@@ -2131,4 +2135,62 @@ class AppLocalizationsDe extends AppLocalizations {
   String percentCompleted(int percent) {
     return '$percent% Abgeschlossen';
   }
+
+  @override
+  String get referralProgram => 'Empfehlungsprogramm';
+
+  @override
+  String get inviteFriendsEarnRewards =>
+      'Freunde einladen. Belohnungen verdienen.';
+
+  @override
+  String get referralLink => 'Empfehlungslink';
+
+  @override
+  String get referralPoints => 'Empfehlungspunkte';
+
+  @override
+  String get points => 'Punkte';
+
+  @override
+  String get invites => 'Einladungen';
+
+  @override
+  String get pastReferrals => 'Vergangene Empfehlungen';
+
+  @override
+  String get copiedToClipboard => 'In Zwischenablage kopiert';
+
+  @override
+  String get goodThingsShared =>
+      'Gute Dinge sind besser, wenn man sie teilt. Laden Sie Ihre Freunde zu MULA ein';
+
+  @override
+  String get inviteYourFriends => 'Laden Sie Ihre Freunde ein';
+
+  @override
+  String get shareReferralCodeOrLink =>
+      'Teilen Sie Ihren Empfehlungscode oder Link mit Freunden';
+
+  @override
+  String get earnRewardsTogether => 'Gemeinsam Belohnungen verdienen';
+
+  @override
+  String get whenFriendSignsUp =>
+      'Wenn sich Ihr Freund anmeldet und seine erste Investition tätigt, erhalten Sie beide sofort Belohnungen für Ihre Portfolios';
+
+  @override
+  String get shareYourLink => 'Teilen Sie Ihren Link';
+
+  @override
+  String get congratulations => 'Herzlichen Glückwunsch!';
+
+  @override
+  String youEarnedPoints(int points) {
+    return 'Sie haben gerade $points Punkte verdient';
+  }
+
+  @override
+  String get friendJoinedMessage =>
+      'Einer Ihrer Freunde ist mit Ihrem Empfehlungscode beigetreten. Laden Sie mehr ein, um mehr zu verdienen.';
 }

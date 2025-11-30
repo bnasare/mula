@@ -47,7 +47,6 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
   Widget build(BuildContext context) {
     if (lessonDetail == null) {
       return Scaffold(
-        backgroundColor: AppColors.offWhite(context),
         appBar: MulaAppBar(
           title: '',
           onBackPressed: () => Navigator.of(context).pop(),

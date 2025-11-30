@@ -3680,6 +3680,12 @@ abstract class AppLocalizations {
   /// **'Log Out'**
   String get logOut;
 
+  /// No description provided for @areYouSureYouWantToLogOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to log out of your account?'**
+  String get areYouSureYouWantToLogOut;
+
   /// No description provided for @search.
   ///
   /// In en, this message translates to:
@@ -4105,6 +4111,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{percent}% Completed'**
   String percentCompleted(int percent);
+
+  /// No description provided for @referralProgram.
+  ///
+  /// In en, this message translates to:
+  /// **'Referral Program'**
+  String get referralProgram;
+
+  /// No description provided for @inviteFriendsEarnRewards.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite Friends. Earn Rewards.'**
+  String get inviteFriendsEarnRewards;
+
+  /// No description provided for @referralLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Referral link'**
+  String get referralLink;
+
+  /// No description provided for @referralPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Referral Points'**
+  String get referralPoints;
+
+  /// No description provided for @points.
+  ///
+  /// In en, this message translates to:
+  /// **'Points'**
+  String get points;
+
+  /// No description provided for @invites.
+  ///
+  /// In en, this message translates to:
+  /// **'Invites'**
+  String get invites;
+
+  /// No description provided for @pastReferrals.
+  ///
+  /// In en, this message translates to:
+  /// **'Past Referrals'**
+  String get pastReferrals;
+
+  /// No description provided for @copiedToClipboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied to clipboard'**
+  String get copiedToClipboard;
+
+  /// No description provided for @goodThingsShared.
+  ///
+  /// In en, this message translates to:
+  /// **'Good things are better when shared. Invite your friends to MULA'**
+  String get goodThingsShared;
+
+  /// No description provided for @inviteYourFriends.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite your friends'**
+  String get inviteYourFriends;
+
+  /// No description provided for @shareReferralCodeOrLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your referral code or link with friends'**
+  String get shareReferralCodeOrLink;
+
+  /// No description provided for @earnRewardsTogether.
+  ///
+  /// In en, this message translates to:
+  /// **'Earn rewards together'**
+  String get earnRewardsTogether;
+
+  /// No description provided for @whenFriendSignsUp.
+  ///
+  /// In en, this message translates to:
+  /// **'When your friend signs up and makes their first investment, you both instantly earn rewards to grow your portfolios'**
+  String get whenFriendSignsUp;
+
+  /// No description provided for @shareYourLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your link'**
+  String get shareYourLink;
+
+  /// No description provided for @congratulations.
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations!'**
+  String get congratulations;
+
+  /// No description provided for @youEarnedPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'You have just earned {points} points'**
+  String youEarnedPoints(int points);
+
+  /// No description provided for @friendJoinedMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'One of your friends has joined by your referral code. Do more invitations to earn more.'**
+  String get friendJoinedMessage;
 }
 
 class _AppLocalizationsDelegate

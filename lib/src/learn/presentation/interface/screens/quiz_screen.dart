@@ -92,7 +92,6 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget build(BuildContext context) {
     if (quiz == null) {
       return Scaffold(
-        backgroundColor: AppColors.offWhite(context),
         appBar: MulaAppBar(
           title: context.localize.takeAQuiz,
           onBackPressed: () => Navigator.of(context).pop(),
@@ -102,7 +101,6 @@ class _QuizScreenState extends State<QuizScreen> {
     }
 
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
       appBar: MulaAppBar(
         title: quiz!.title,
         onBackPressed: () => Navigator.of(context).pop(),

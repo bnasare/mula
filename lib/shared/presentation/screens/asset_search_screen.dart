@@ -172,7 +172,6 @@ class _AssetSearchScreenState extends State<AssetSearchScreen> {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
-        backgroundColor: AppColors.offWhite(context),
         appBar: MulaAppBar(
           title: '',
           showBackButton: true,

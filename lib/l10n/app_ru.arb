@@ -714,6 +714,7 @@
   "email": "Электронная почта",
   "phone": "Телефон",
   "logOut": "Выйти",
+  "areYouSureYouWantToLogOut": "Вы уверены, что хотите выйти из своей учетной записи?",
   "search": "Поиск",
   "needHelpTitle": "Нужна помощь? Мы здесь для вас.",
   "needHelpSubtitle": "Найдите ответы на частые вопросы или свяжитесь с нашей командой",
@@ -785,5 +786,28 @@
     "placeholders": {
       "percent": {"type": "int"}
     }
-  }
+  },
+
+  "referralProgram": "Реферальная Программа",
+  "inviteFriendsEarnRewards": "Приглашайте Друзей. Получайте Награды.",
+  "referralLink": "Реферальная ссылка",
+  "referralPoints": "Реферальные Баллы",
+  "points": "Баллы",
+  "invites": "Приглашения",
+  "pastReferrals": "Прошлые Рефералы",
+  "copiedToClipboard": "Скопировано в буфер обмена",
+  "goodThingsShared": "Хорошие вещи лучше, когда ими делишься. Пригласите друзей в MULA",
+  "inviteYourFriends": "Пригласите друзей",
+  "shareReferralCodeOrLink": "Поделитесь своим реферальным кодом или ссылкой с друзьями",
+  "earnRewardsTogether": "Зарабатывайте награды вместе",
+  "whenFriendSignsUp": "Когда ваш друг зарегистрируется и сделает первую инвестицию, вы оба мгновенно получите награды для роста ваших портфелей",
+  "shareYourLink": "Поделитесь ссылкой",
+  "congratulations": "Поздравляем!",
+  "youEarnedPoints": "Вы только что заработали {points} баллов",
+  "@youEarnedPoints": {
+    "placeholders": {
+      "points": {"type": "int"}
+    }
+  },
+  "friendJoinedMessage": "Один из ваших друзей присоединился по вашему реферальному коду. Приглашайте больше, чтобы заработать больше."
 }

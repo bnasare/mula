@@ -27,6 +27,7 @@ class LearnFilterBottomSheet extends StatefulWidget {
     return showModalBottomSheet<Map<String, String?>>(
       context: context,
       isScrollControlled: true,
+      backgroundColor: AppColors.card(context),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
@@ -95,6 +96,19 @@ class _LearnFilterBottomSheetState extends State<LearnFilterBottomSheet> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Handle bar
+            Center(
+              child: Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: AppColors.hintText(context).withOpacity(0.3),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+
             // Header
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

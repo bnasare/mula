@@ -31,7 +31,7 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.white(context),
+        color: AppColors.card(context),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
       ),
       child: SingleChildScrollView(
@@ -280,18 +280,18 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
     switch (widget.activity.status) {
       case ActivityStatus.completed:
         label = context.localize.completed;
-        backgroundColor = AppColors.activitySuccessLight;
+        backgroundColor = AppColors.activitySuccessLightAdaptive(context);
         textColor = AppColors.activitySuccess;
         break;
       case ActivityStatus.pending:
         label = context.localize.pending;
-        backgroundColor = AppColors.activityPendingLight;
+        backgroundColor = AppColors.activityPendingLightAdaptive(context);
         textColor = AppColors.activityPending;
         break;
       case ActivityStatus.failed:
         label = context.localize.failed;
-        backgroundColor = AppColors.activityErrorLight;
-        textColor = AppColors.activityError;
+        backgroundColor = AppColors.activityErrorLightAdaptive(context);
+        textColor = AppColors.activityErrorTextAdaptive(context);
         break;
     }
 

@@ -1899,6 +1899,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get logOut => 'Uitloggen';
 
   @override
+  String get areYouSureYouWantToLogOut =>
+      'Weet u zeker dat u wilt uitloggen van uw account?';
+
+  @override
   String get search => 'Zoeken';
 
   @override
@@ -2122,4 +2126,62 @@ class AppLocalizationsNl extends AppLocalizations {
   String percentCompleted(int percent) {
     return '$percent% Voltooid';
   }
+
+  @override
+  String get referralProgram => 'Verwijzingsprogramma';
+
+  @override
+  String get inviteFriendsEarnRewards =>
+      'Nodig Vrienden Uit. Verdien Beloningen.';
+
+  @override
+  String get referralLink => 'Verwijzingslink';
+
+  @override
+  String get referralPoints => 'Verwijzingspunten';
+
+  @override
+  String get points => 'Punten';
+
+  @override
+  String get invites => 'Uitnodigingen';
+
+  @override
+  String get pastReferrals => 'Eerdere Verwijzingen';
+
+  @override
+  String get copiedToClipboard => 'Gekopieerd naar klembord';
+
+  @override
+  String get goodThingsShared =>
+      'Goede dingen zijn beter als je ze deelt. Nodig je vrienden uit voor MULA';
+
+  @override
+  String get inviteYourFriends => 'Nodig je vrienden uit';
+
+  @override
+  String get shareReferralCodeOrLink =>
+      'Deel je verwijzingscode of link met vrienden';
+
+  @override
+  String get earnRewardsTogether => 'Verdien samen beloningen';
+
+  @override
+  String get whenFriendSignsUp =>
+      'Wanneer je vriend zich aanmeldt en zijn eerste investering doet, krijgen jullie beiden direct beloningen om je portfolio\'s te laten groeien';
+
+  @override
+  String get shareYourLink => 'Deel je link';
+
+  @override
+  String get congratulations => 'Gefeliciteerd!';
+
+  @override
+  String youEarnedPoints(int points) {
+    return 'Je hebt zojuist $points punten verdiend';
+  }
+
+  @override
+  String get friendJoinedMessage =>
+      'Een van je vrienden is lid geworden met je verwijzingscode. Doe meer uitnodigingen om meer te verdienen.';
 }

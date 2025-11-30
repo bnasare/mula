@@ -18,7 +18,6 @@ class PortfolioSummaryScreen extends StatelessWidget {
     );
 
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
       appBar: MulaAppBar(title: context.localize.portfolioSummary),
       body: ListView.separated(
         padding: const EdgeInsets.all(20),

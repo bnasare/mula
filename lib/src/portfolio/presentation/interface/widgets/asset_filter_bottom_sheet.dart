@@ -45,7 +45,7 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.white(context),
+        color: AppColors.card(context),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
       ),
       padding: const EdgeInsets.all(24),
@@ -53,6 +53,19 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Handle bar
+          Center(
+            child: Container(
+              width: 40,
+              height: 4,
+              decoration: BoxDecoration(
+                color: AppColors.hintText(context).withOpacity(0.3),
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+          ),
+          const SizedBox(height: 20),
+
           // Header with title and close button
           _buildHeader(context),
           const SizedBox(height: 24),
@@ -177,14 +190,14 @@ class _AssetFilterBottomSheetState extends State<AssetFilterBottomSheet> {
             _buildStatusChip(
               context.localize.positive,
               AppColors.activitySuccess,
-              AppColors.activitySuccessLight,
+              AppColors.activitySuccessLightAdaptive(context),
               _selectedPerformance,
               (value) => setState(() => _selectedPerformance = value),
             ),
             _buildStatusChip(
               context.localize.negative,
-              AppColors.activityError,
-              AppColors.activityErrorLight,
+              AppColors.activityErrorTextAdaptive(context),
+              AppColors.activityErrorLightAdaptive(context),
               _selectedPerformance,
               (value) => setState(() => _selectedPerformance = value),
             ),

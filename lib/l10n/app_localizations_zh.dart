@@ -1829,6 +1829,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get logOut => '退出登录';
 
   @override
+  String get areYouSureYouWantToLogOut => '您确定要退出您的账户吗？';
+
+  @override
   String get search => '搜索';
 
   @override
@@ -2045,4 +2048,57 @@ class AppLocalizationsZh extends AppLocalizations {
   String percentCompleted(int percent) {
     return '$percent% 已完成';
   }
+
+  @override
+  String get referralProgram => '推荐计划';
+
+  @override
+  String get inviteFriendsEarnRewards => '邀请朋友。赚取奖励。';
+
+  @override
+  String get referralLink => '推荐链接';
+
+  @override
+  String get referralPoints => '推荐积分';
+
+  @override
+  String get points => '积分';
+
+  @override
+  String get invites => '邀请';
+
+  @override
+  String get pastReferrals => '过去的推荐';
+
+  @override
+  String get copiedToClipboard => '已复制到剪贴板';
+
+  @override
+  String get goodThingsShared => '好东西分享更好。邀请您的朋友加入MULA';
+
+  @override
+  String get inviteYourFriends => '邀请您的朋友';
+
+  @override
+  String get shareReferralCodeOrLink => '与朋友分享您的推荐码或链接';
+
+  @override
+  String get earnRewardsTogether => '一起赚取奖励';
+
+  @override
+  String get whenFriendSignsUp => '当您的朋友注册并完成首次投资时，你们都会立即获得奖励来增长投资组合';
+
+  @override
+  String get shareYourLink => '分享您的链接';
+
+  @override
+  String get congratulations => '恭喜！';
+
+  @override
+  String youEarnedPoints(int points) {
+    return '您刚刚赚取了$points积分';
+  }
+
+  @override
+  String get friendJoinedMessage => '您的一位朋友通过您的推荐码加入了。多邀请多赚取。';
 }

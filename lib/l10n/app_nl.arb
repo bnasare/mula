@@ -714,6 +714,7 @@
   "email": "E-mail",
   "phone": "Telefoon",
   "logOut": "Uitloggen",
+  "areYouSureYouWantToLogOut": "Weet u zeker dat u wilt uitloggen van uw account?",
   "search": "Zoeken",
   "needHelpTitle": "Hulp nodig? Wij staan voor u klaar.",
   "needHelpSubtitle": "Vind antwoorden op veelgestelde vragen of neem contact op met ons team",
@@ -786,5 +787,28 @@
     "placeholders": {
       "percent": {"type": "int"}
     }
-  }
+  },
+
+  "referralProgram": "Verwijzingsprogramma",
+  "inviteFriendsEarnRewards": "Nodig Vrienden Uit. Verdien Beloningen.",
+  "referralLink": "Verwijzingslink",
+  "referralPoints": "Verwijzingspunten",
+  "points": "Punten",
+  "invites": "Uitnodigingen",
+  "pastReferrals": "Eerdere Verwijzingen",
+  "copiedToClipboard": "Gekopieerd naar klembord",
+  "goodThingsShared": "Goede dingen zijn beter als je ze deelt. Nodig je vrienden uit voor MULA",
+  "inviteYourFriends": "Nodig je vrienden uit",
+  "shareReferralCodeOrLink": "Deel je verwijzingscode of link met vrienden",
+  "earnRewardsTogether": "Verdien samen beloningen",
+  "whenFriendSignsUp": "Wanneer je vriend zich aanmeldt en zijn eerste investering doet, krijgen jullie beiden direct beloningen om je portfolio's te laten groeien",
+  "shareYourLink": "Deel je link",
+  "congratulations": "Gefeliciteerd!",
+  "youEarnedPoints": "Je hebt zojuist {points} punten verdiend",
+  "@youEarnedPoints": {
+    "placeholders": {
+      "points": {"type": "int"}
+    }
+  },
+  "friendJoinedMessage": "Een van je vrienden is lid geworden met je verwijzingscode. Doe meer uitnodigingen om meer te verdienen."
 }

@@ -85,7 +85,7 @@ class ConfirmationDialog extends StatelessWidget {
 
     return Dialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      backgroundColor: AppColors.white(context),
+      backgroundColor: AppColors.card(context),
       child: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: context.responsiveValue(mobile: 20.0),

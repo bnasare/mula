@@ -1840,6 +1840,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get logOut => 'ログアウト';
 
   @override
+  String get areYouSureYouWantToLogOut => '本当にアカウントからログアウトしますか？';
+
+  @override
   String get search => '検索';
 
   @override
@@ -2056,4 +2059,58 @@ class AppLocalizationsJa extends AppLocalizations {
   String percentCompleted(int percent) {
     return '$percent% 完了';
   }
+
+  @override
+  String get referralProgram => '紹介プログラム';
+
+  @override
+  String get inviteFriendsEarnRewards => '友達を招待して報酬を獲得。';
+
+  @override
+  String get referralLink => '紹介リンク';
+
+  @override
+  String get referralPoints => '紹介ポイント';
+
+  @override
+  String get points => 'ポイント';
+
+  @override
+  String get invites => '招待';
+
+  @override
+  String get pastReferrals => '過去の紹介';
+
+  @override
+  String get copiedToClipboard => 'クリップボードにコピーしました';
+
+  @override
+  String get goodThingsShared => '良いものは共有するともっと良くなります。友達をMULAに招待しましょう';
+
+  @override
+  String get inviteYourFriends => '友達を招待';
+
+  @override
+  String get shareReferralCodeOrLink => '紹介コードまたはリンクを友達と共有';
+
+  @override
+  String get earnRewardsTogether => '一緒に報酬を獲得';
+
+  @override
+  String get whenFriendSignsUp =>
+      '友達が登録して最初の投資をすると、両者が即座にポートフォリオを成長させる報酬を獲得します';
+
+  @override
+  String get shareYourLink => 'リンクを共有';
+
+  @override
+  String get congratulations => 'おめでとうございます！';
+
+  @override
+  String youEarnedPoints(int points) {
+    return '$pointsポイントを獲得しました';
+  }
+
+  @override
+  String get friendJoinedMessage => 'あなたの紹介コードで友達が参加しました。もっと招待してもっと稼ぎましょう。';
 }

@@ -189,19 +189,19 @@ class _ActivityIcon extends StatelessWidget {
     switch (type) {
       case ActivityType.buy:
         iconData = Icons.arrow_upward_rounded;
-        backgroundColor = AppColors.activitySuccessLight;
+        backgroundColor = AppColors.activitySuccessLightAdaptive(context);
         break;
       case ActivityType.sell:
         iconData = Icons.arrow_downward_rounded;
-        backgroundColor = AppColors.activityErrorLight;
+        backgroundColor = AppColors.activityErrorLightAdaptive(context);
         break;
       case ActivityType.deposit:
         iconData = Icons.arrow_upward_rounded;
-        backgroundColor = AppColors.activityDepositLight;
+        backgroundColor = AppColors.activityDepositLightAdaptive(context);
         break;
       case ActivityType.withdrawal:
         iconData = Icons.arrow_downward_rounded;
-        backgroundColor = AppColors.activityErrorLight;
+        backgroundColor = AppColors.activityErrorLightAdaptive(context);
         break;
     }
 
@@ -245,18 +245,18 @@ class _StatusBadge extends StatelessWidget {
     switch (status) {
       case ActivityStatus.completed:
         label = 'Completed';
-        backgroundColor = AppColors.activitySuccessLight;
+        backgroundColor = AppColors.activitySuccessLightAdaptive(context);
         textColor = AppColors.activitySuccess;
         break;
       case ActivityStatus.pending:
         label = 'Pending';
-        backgroundColor = AppColors.activityPendingLight;
+        backgroundColor = AppColors.activityPendingLightAdaptive(context);
         textColor = AppColors.activityPending;
         break;
       case ActivityStatus.failed:
         label = 'Failed';
-        backgroundColor = AppColors.activityErrorLight;
-        textColor = AppColors.activityError;
+        backgroundColor = AppColors.activityErrorLightAdaptive(context);
+        textColor = AppColors.activityErrorTextAdaptive(context);
         break;
     }
 

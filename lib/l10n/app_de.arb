@@ -717,6 +717,7 @@
   "email": "E-Mail",
   "phone": "Telefon",
   "logOut": "Abmelden",
+  "areYouSureYouWantToLogOut": "Sind Sie sicher, dass Sie sich von Ihrem Konto abmelden möchten?",
   "search": "Suchen",
   "needHelpTitle": "Brauchen Sie Hilfe? Wir sind für Sie da.",
   "needHelpSubtitle": "Finden Sie Antworten auf häufige Fragen oder kontaktieren Sie unser Team",
@@ -789,5 +790,28 @@
     "placeholders": {
       "percent": {"type": "int"}
     }
-  }
+  },
+
+  "referralProgram": "Empfehlungsprogramm",
+  "inviteFriendsEarnRewards": "Freunde einladen. Belohnungen verdienen.",
+  "referralLink": "Empfehlungslink",
+  "referralPoints": "Empfehlungspunkte",
+  "points": "Punkte",
+  "invites": "Einladungen",
+  "pastReferrals": "Vergangene Empfehlungen",
+  "copiedToClipboard": "In Zwischenablage kopiert",
+  "goodThingsShared": "Gute Dinge sind besser, wenn man sie teilt. Laden Sie Ihre Freunde zu MULA ein",
+  "inviteYourFriends": "Laden Sie Ihre Freunde ein",
+  "shareReferralCodeOrLink": "Teilen Sie Ihren Empfehlungscode oder Link mit Freunden",
+  "earnRewardsTogether": "Gemeinsam Belohnungen verdienen",
+  "whenFriendSignsUp": "Wenn sich Ihr Freund anmeldet und seine erste Investition tätigt, erhalten Sie beide sofort Belohnungen für Ihre Portfolios",
+  "shareYourLink": "Teilen Sie Ihren Link",
+  "congratulations": "Herzlichen Glückwunsch!",
+  "youEarnedPoints": "Sie haben gerade {points} Punkte verdient",
+  "@youEarnedPoints": {
+    "placeholders": {
+      "points": {"type": "int"}
+    }
+  },
+  "friendJoinedMessage": "Einer Ihrer Freunde ist mit Ihrem Empfehlungscode beigetreten. Laden Sie mehr ein, um mehr zu verdienen."
 }

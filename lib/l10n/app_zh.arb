@@ -714,6 +714,7 @@
   "email": "电子邮件",
   "phone": "电话",
   "logOut": "退出登录",
+  "areYouSureYouWantToLogOut": "您确定要退出您的账户吗？",
   "search": "搜索",
   "needHelpTitle": "需要帮助？我们随时为您服务。",
   "needHelpSubtitle": "查找常见问题的答案或联系我们的团队",
@@ -785,5 +786,28 @@
     "placeholders": {
       "percent": {"type": "int"}
     }
-  }
+  },
+
+  "referralProgram": "推荐计划",
+  "inviteFriendsEarnRewards": "邀请朋友。赚取奖励。",
+  "referralLink": "推荐链接",
+  "referralPoints": "推荐积分",
+  "points": "积分",
+  "invites": "邀请",
+  "pastReferrals": "过去的推荐",
+  "copiedToClipboard": "已复制到剪贴板",
+  "goodThingsShared": "好东西分享更好。邀请您的朋友加入MULA",
+  "inviteYourFriends": "邀请您的朋友",
+  "shareReferralCodeOrLink": "与朋友分享您的推荐码或链接",
+  "earnRewardsTogether": "一起赚取奖励",
+  "whenFriendSignsUp": "当您的朋友注册并完成首次投资时，你们都会立即获得奖励来增长投资组合",
+  "shareYourLink": "分享您的链接",
+  "congratulations": "恭喜！",
+  "youEarnedPoints": "您刚刚赚取了{points}积分",
+  "@youEarnedPoints": {
+    "placeholders": {
+      "points": {"type": "int"}
+    }
+  },
+  "friendJoinedMessage": "您的一位朋友通过您的推荐码加入了。多邀请多赚取。"
 }

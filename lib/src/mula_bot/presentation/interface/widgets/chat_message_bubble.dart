@@ -39,7 +39,7 @@ class ChatMessageBubble extends StatelessWidget {
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: message.isUser
-                        ? AppColors.activitySuccessLight
+                        ? AppColors.activitySuccessLightAdaptive(context)
                         : AppColors.card(context),
                     borderRadius: BorderRadius.only(
                       topLeft: const Radius.circular(12),

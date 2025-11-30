@@ -714,6 +714,7 @@
   "email": "ईमेल",
   "phone": "फ़ोन",
   "logOut": "लॉग आउट",
+  "areYouSureYouWantToLogOut": "क्या आप वाकई अपने खाते से लॉग आउट करना चाहते हैं?",
   "search": "खोजें",
   "needHelpTitle": "मदद चाहिए? हम आपके लिए यहां हैं।",
   "needHelpSubtitle": "सामान्य प्रश्नों के उत्तर खोजें या हमारी टीम से संपर्क करें",
@@ -786,5 +787,28 @@
     "placeholders": {
       "percent": {"type": "int"}
     }
-  }
+  },
+
+  "referralProgram": "रेफरल प्रोग्राम",
+  "inviteFriendsEarnRewards": "दोस्तों को आमंत्रित करें। पुरस्कार कमाएं।",
+  "referralLink": "रेफरल लिंक",
+  "referralPoints": "रेफरल पॉइंट्स",
+  "points": "पॉइंट्स",
+  "invites": "आमंत्रण",
+  "pastReferrals": "पिछले रेफरल",
+  "copiedToClipboard": "क्लिपबोर्ड पर कॉपी किया गया",
+  "goodThingsShared": "अच्छी चीजें साझा करने पर बेहतर होती हैं। अपने दोस्तों को MULA में आमंत्रित करें",
+  "inviteYourFriends": "अपने दोस्तों को आमंत्रित करें",
+  "shareReferralCodeOrLink": "अपना रेफरल कोड या लिंक दोस्तों के साथ साझा करें",
+  "earnRewardsTogether": "साथ में पुरस्कार कमाएं",
+  "whenFriendSignsUp": "जब आपका दोस्त साइन अप करता है और अपना पहला निवेश करता है, तो आप दोनों को तुरंत अपने पोर्टफोलियो बढ़ाने के लिए पुरस्कार मिलते हैं",
+  "shareYourLink": "अपना लिंक साझा करें",
+  "congratulations": "बधाई हो!",
+  "youEarnedPoints": "आपने अभी {points} पॉइंट्स कमाए",
+  "@youEarnedPoints": {
+    "placeholders": {
+      "points": {"type": "int"}
+    }
+  },
+  "friendJoinedMessage": "आपके एक दोस्त ने आपके रेफरल कोड से जुड़ गया। अधिक कमाने के लिए अधिक आमंत्रण करें।"
 }

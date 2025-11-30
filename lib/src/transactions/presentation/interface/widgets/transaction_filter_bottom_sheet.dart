@@ -47,7 +47,7 @@ class _TransactionFilterBottomSheetState
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.white(context),
+        color: AppColors.card(context),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
       ),
       padding: const EdgeInsets.all(24),
@@ -55,6 +55,19 @@ class _TransactionFilterBottomSheetState
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Handle bar
+          Center(
+            child: Container(
+              width: 40,
+              height: 4,
+              decoration: BoxDecoration(
+                color: AppColors.hintText(context).withOpacity(0.3),
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+          ),
+          const SizedBox(height: 20),
+
           // Header
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -183,7 +196,7 @@ class _TransactionFilterBottomSheetState
               _buildStatusChip(
                 context.localize.completed,
                 AppColors.activitySuccess,
-                AppColors.activitySuccessLight,
+                AppColors.activitySuccessLightAdaptive(context),
                 _selectedStatus,
                 (value) {
                   setState(() => _selectedStatus = value);
@@ -192,7 +205,7 @@ class _TransactionFilterBottomSheetState
               _buildStatusChip(
                 context.localize.pending,
                 AppColors.activityPending,
-                AppColors.activityPendingLight,
+                AppColors.activityPendingLightAdaptive(context),
                 _selectedStatus,
                 (value) {
                   setState(() => _selectedStatus = value);
@@ -200,8 +213,8 @@ class _TransactionFilterBottomSheetState
               ),
               _buildStatusChip(
                 context.localize.cancelled,
-                AppColors.activityError,
-                AppColors.activityErrorLight,
+                AppColors.activityErrorTextAdaptive(context),
+                AppColors.activityErrorLightAdaptive(context),
                 _selectedStatus,
                 (value) {
                   setState(() => _selectedStatus = value);

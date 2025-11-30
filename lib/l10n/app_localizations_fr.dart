@@ -1919,6 +1919,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get logOut => 'Se Déconnecter';
 
   @override
+  String get areYouSureYouWantToLogOut =>
+      'Êtes-vous sûr de vouloir vous déconnecter de votre compte?';
+
+  @override
   String get search => 'Rechercher';
 
   @override
@@ -2142,4 +2146,62 @@ class AppLocalizationsFr extends AppLocalizations {
   String percentCompleted(int percent) {
     return '$percent% Terminé';
   }
+
+  @override
+  String get referralProgram => 'Programme de Parrainage';
+
+  @override
+  String get inviteFriendsEarnRewards =>
+      'Invitez des Amis. Gagnez des Récompenses.';
+
+  @override
+  String get referralLink => 'Lien de parrainage';
+
+  @override
+  String get referralPoints => 'Points de Parrainage';
+
+  @override
+  String get points => 'Points';
+
+  @override
+  String get invites => 'Invitations';
+
+  @override
+  String get pastReferrals => 'Parrainages Précédents';
+
+  @override
+  String get copiedToClipboard => 'Copié dans le presse-papiers';
+
+  @override
+  String get goodThingsShared =>
+      'Les bonnes choses sont meilleures quand on les partage. Invitez vos amis sur MULA';
+
+  @override
+  String get inviteYourFriends => 'Invitez vos amis';
+
+  @override
+  String get shareReferralCodeOrLink =>
+      'Partagez votre code ou lien de parrainage avec vos amis';
+
+  @override
+  String get earnRewardsTogether => 'Gagnez des récompenses ensemble';
+
+  @override
+  String get whenFriendSignsUp =>
+      'Quand votre ami s\'inscrit et fait son premier investissement, vous gagnez tous les deux des récompenses instantanément';
+
+  @override
+  String get shareYourLink => 'Partagez votre lien';
+
+  @override
+  String get congratulations => 'Félicitations !';
+
+  @override
+  String youEarnedPoints(int points) {
+    return 'Vous venez de gagner $points points';
+  }
+
+  @override
+  String get friendJoinedMessage =>
+      'Un de vos amis a rejoint avec votre code de parrainage. Faites plus d\'invitations pour gagner plus.';
 }

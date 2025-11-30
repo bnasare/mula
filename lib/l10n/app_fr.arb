@@ -716,6 +716,7 @@
   "email": "E-mail",
   "phone": "Téléphone",
   "logOut": "Se Déconnecter",
+  "areYouSureYouWantToLogOut": "Êtes-vous sûr de vouloir vous déconnecter de votre compte?",
   "search": "Rechercher",
   "needHelpTitle": "Besoin d'aide ? Nous sommes là pour vous.",
   "needHelpSubtitle": "Trouvez des réponses aux questions fréquentes ou contactez notre équipe",
@@ -788,5 +789,28 @@
     "placeholders": {
       "percent": {"type": "int"}
     }
-  }
+  },
+
+  "referralProgram": "Programme de Parrainage",
+  "inviteFriendsEarnRewards": "Invitez des Amis. Gagnez des Récompenses.",
+  "referralLink": "Lien de parrainage",
+  "referralPoints": "Points de Parrainage",
+  "points": "Points",
+  "invites": "Invitations",
+  "pastReferrals": "Parrainages Précédents",
+  "copiedToClipboard": "Copié dans le presse-papiers",
+  "goodThingsShared": "Les bonnes choses sont meilleures quand on les partage. Invitez vos amis sur MULA",
+  "inviteYourFriends": "Invitez vos amis",
+  "shareReferralCodeOrLink": "Partagez votre code ou lien de parrainage avec vos amis",
+  "earnRewardsTogether": "Gagnez des récompenses ensemble",
+  "whenFriendSignsUp": "Quand votre ami s'inscrit et fait son premier investissement, vous gagnez tous les deux des récompenses instantanément",
+  "shareYourLink": "Partagez votre lien",
+  "congratulations": "Félicitations !",
+  "youEarnedPoints": "Vous venez de gagner {points} points",
+  "@youEarnedPoints": {
+    "placeholders": {
+      "points": {"type": "int"}
+    }
+  },
+  "friendJoinedMessage": "Un de vos amis a rejoint avec votre code de parrainage. Faites plus d'invitations pour gagner plus."
 }

@@ -2,13 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
-import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 
-enum ProfileImageAction {
-  changePhoto,
-  viewFullscreen,
-  deletePhoto,
-}
+enum ProfileImageAction { changePhoto, viewFullscreen, deletePhoto }
 
 class ProfileImageBottomSheet extends StatelessWidget {
   const ProfileImageBottomSheet({super.key});
@@ -91,11 +86,7 @@ class _BottomSheetOption extends StatelessWidget {
                 color: iconColor.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Icon(
-                icon,
-                color: iconColor,
-                size: 20,
-              ),
+              child: Icon(icon, color: iconColor, size: 20),
             ),
             const SizedBox(width: 16),
             Text(

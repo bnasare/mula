@@ -49,7 +49,7 @@ mixin ProfileImageMixin<T extends StatefulWidget> on State<T> {
       backgroundColor: AppColors.transparent,
       builder: (context) => Container(
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
+          color: AppColors.card(context),
           borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
         ),
         padding: const EdgeInsets.symmetric(vertical: 20),

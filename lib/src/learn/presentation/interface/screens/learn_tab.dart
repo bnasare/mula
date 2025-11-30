@@ -54,39 +54,45 @@ class _LearnTabState extends State<LearnTab> {
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: CustomScrollView(
           slivers: [
-            // Filter tabs
-            SliverToBoxAdapter(
-              child: Column(
-                children: [
-                  AppSpacer.vLarge(),
-                  CategoryFilterTabs(
-                    selectedCategory: _selectedCategory,
-                    onCategorySelected: (category) {
-                      setState(() {
-                        _selectedCategory = category;
-                      });
-                    },
-                    categories: [
-                      CategoryItem(
-                        key: 'all',
-                        label: context.localize.allTracks,
+            // Filter tabs - Pinned to top
+            SliverPersistentHeader(
+              pinned: true,
+              delegate: _StickyHeaderDelegate(
+                child: Container(
+                  color: AppColors.offWhite(context),
+                  child: Column(
+                    children: [
+                      AppSpacer.vLarge(),
+                      CategoryFilterTabs(
+                        selectedCategory: _selectedCategory,
+                        onCategorySelected: (category) {
+                          setState(() {
+                            _selectedCategory = category;
+                          });
+                        },
+                        categories: [
+                          CategoryItem(
+                            key: 'all',
+                            label: context.localize.allTracks,
+                          ),
+                          CategoryItem(
+                            key: 'ghanaStocks',
+                            label: context.localize.ghanaStocks,
+                          ),
+                          CategoryItem(
+                            key: 'tBillsBonds',
+                            label: context.localize.tBillsBonds,
+                          ),
+                          CategoryItem(
+                            key: 'mutualFunds',
+                            label: context.localize.mutualFunds,
+                          ),
+                        ],
                       ),
-                      CategoryItem(
-                        key: 'ghanaStocks',
-                        label: context.localize.ghanaStocks,
-                      ),
-                      CategoryItem(
-                        key: 'tBillsBonds',
-                        label: context.localize.tBillsBonds,
-                      ),
-                      CategoryItem(
-                        key: 'mutualFunds',
-                        label: context.localize.mutualFunds,
-                      ),
+                      AppSpacer.vLarge(),
                     ],
                   ),
-                  AppSpacer.vLarge(),
-                ],
+                ),
               ),
             ),
 
@@ -95,6 +101,7 @@ class _LearnTabState extends State<LearnTab> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  AppSpacer.vShort(),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: AppText.medium(
@@ -158,5 +165,28 @@ class _LearnTabState extends State<LearnTab> {
         ),
       ),
     );
+  }
+}
+
+/// Delegate for sticky header that keeps filters pinned to top
+class _StickyHeaderDelegate extends SliverPersistentHeaderDelegate {
+  final Widget child;
+
+  _StickyHeaderDelegate({required this.child});
+
+  @override
+  double get minExtent => 80.0; // AppSpacer.vLarge (20) + filter height (40) + AppSpacer.vLarge (20)
+
+  @override
+  double get maxExtent => 80.0;
+
+  @override
+  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+    return child;
+  }
+
+  @override
+  bool shouldRebuild(_StickyHeaderDelegate oldDelegate) {
+    return true;
   }
 }

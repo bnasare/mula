@@ -714,6 +714,7 @@
   "email": "Email",
   "phone": "Telefono",
   "logOut": "Esci",
+  "areYouSureYouWantToLogOut": "Sei sicuro di voler uscire dal tuo account?",
   "search": "Cerca",
   "needHelpTitle": "Hai bisogno di aiuto? Siamo qui per te.",
   "needHelpSubtitle": "Trova risposte alle domande frequenti o contatta il nostro team",
@@ -786,5 +787,28 @@
     "placeholders": {
       "percent": {"type": "int"}
     }
-  }
+  },
+
+  "referralProgram": "Programma Referral",
+  "inviteFriendsEarnRewards": "Invita Amici. Guadagna Premi.",
+  "referralLink": "Link referral",
+  "referralPoints": "Punti Referral",
+  "points": "Punti",
+  "invites": "Inviti",
+  "pastReferrals": "Referral Passati",
+  "copiedToClipboard": "Copiato negli appunti",
+  "goodThingsShared": "Le cose belle sono migliori quando condivise. Invita i tuoi amici su MULA",
+  "inviteYourFriends": "Invita i tuoi amici",
+  "shareReferralCodeOrLink": "Condividi il tuo codice o link referral con gli amici",
+  "earnRewardsTogether": "Guadagnate premi insieme",
+  "whenFriendSignsUp": "Quando il tuo amico si registra e fa il suo primo investimento, entrambi guadagnate premi istantaneamente per far crescere i vostri portafogli",
+  "shareYourLink": "Condividi il tuo link",
+  "congratulations": "Congratulazioni!",
+  "youEarnedPoints": "Hai appena guadagnato {points} punti",
+  "@youEarnedPoints": {
+    "placeholders": {
+      "points": {"type": "int"}
+    }
+  },
+  "friendJoinedMessage": "Uno dei tuoi amici si è unito con il tuo codice referral. Fai più inviti per guadagnare di più."
 }

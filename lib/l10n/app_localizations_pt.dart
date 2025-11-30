@@ -1902,6 +1902,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get logOut => 'Sair';
 
   @override
+  String get areYouSureYouWantToLogOut =>
+      'Tem certeza de que deseja sair da sua conta?';
+
+  @override
   String get search => 'Pesquisar';
 
   @override
@@ -2125,4 +2129,61 @@ class AppLocalizationsPt extends AppLocalizations {
   String percentCompleted(int percent) {
     return '$percent% Concluído';
   }
+
+  @override
+  String get referralProgram => 'Programa de Indicação';
+
+  @override
+  String get inviteFriendsEarnRewards => 'Convide Amigos. Ganhe Recompensas.';
+
+  @override
+  String get referralLink => 'Link de indicação';
+
+  @override
+  String get referralPoints => 'Pontos de Indicação';
+
+  @override
+  String get points => 'Pontos';
+
+  @override
+  String get invites => 'Convites';
+
+  @override
+  String get pastReferrals => 'Indicações Anteriores';
+
+  @override
+  String get copiedToClipboard => 'Copiado para a área de transferência';
+
+  @override
+  String get goodThingsShared =>
+      'Coisas boas são melhores quando compartilhadas. Convide seus amigos para o MULA';
+
+  @override
+  String get inviteYourFriends => 'Convide seus amigos';
+
+  @override
+  String get shareReferralCodeOrLink =>
+      'Compartilhe seu código ou link de indicação com amigos';
+
+  @override
+  String get earnRewardsTogether => 'Ganhem recompensas juntos';
+
+  @override
+  String get whenFriendSignsUp =>
+      'Quando seu amigo se cadastrar e fizer seu primeiro investimento, vocês dois ganham recompensas instantaneamente para aumentar seus portfólios';
+
+  @override
+  String get shareYourLink => 'Compartilhe seu link';
+
+  @override
+  String get congratulations => 'Parabéns!';
+
+  @override
+  String youEarnedPoints(int points) {
+    return 'Você acabou de ganhar $points pontos';
+  }
+
+  @override
+  String get friendJoinedMessage =>
+      'Um dos seus amigos entrou com seu código de indicação. Faça mais convites para ganhar mais.';
 }

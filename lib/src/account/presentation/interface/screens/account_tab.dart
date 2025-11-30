@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../../../../core/api/locale_provider.dart';
 import '../../../../../core/api/theme_mode_provider.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/presentation/widgets/confirmation_dialog.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_search_bar.dart';
@@ -27,6 +28,7 @@ import 'learning_progress_screen.dart';
 import 'notification_preferences_screen.dart';
 import 'privacy_policy_screen.dart';
 import 'profile_screen.dart';
+import 'referral_screen.dart';
 import 'security_settings_screen.dart';
 
 class AccountTab extends StatefulWidget {
@@ -108,6 +110,23 @@ class _AccountTabState extends State<AccountTab> with ProfileImageMixin {
     }
   }
 
+  void _showLogoutConfirmation(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => ConfirmationDialog(
+        title: context.localize.logOut,
+        description: context.localize.areYouSureYouWantToLogOut,
+        primaryButtonLabel: context.localize.logOut,
+        secondaryButtonLabel: context.localize.cancel,
+        onPrimaryAction: () {
+          Navigator.pop(context);
+          // TODO: Implement actual logout logic
+        },
+        onSecondaryAction: () => Navigator.pop(context),
+      ),
+    );
+  }
+
   @override
   void dispose() {
     _searchController.dispose();
@@ -143,52 +162,78 @@ class _AccountTabState extends State<AccountTab> with ProfileImageMixin {
     final items = <Widget>[];
 
     if (_matchesSearch(context.localize.personalInformation)) {
-      items.add(SettingsListTile(
-        icon: Iconsax.user,
-        title: context.localize.personalInformation,
-        iconColor: AppColors.appPrimary,
-        onTap: () => NavigationHelper.navigateTo(context, const ProfileScreen()),
-      ));
+      items.add(
+        SettingsListTile(
+          icon: Iconsax.user,
+          title: context.localize.personalInformation,
+          iconColor: AppColors.appPrimary,
+          onTap: () =>
+              NavigationHelper.navigateTo(context, const ProfileScreen()),
+        ),
+      );
     }
     if (_matchesSearch(context.localize.identificationCard)) {
-      items.add(SettingsListTile(
-        icon: IconlyLight.document,
-        title: context.localize.identificationCard,
-        iconColor: AppColors.appPrimary,
-        onTap: () => NavigationHelper.navigateTo(context, const IdentificationScreen()),
-      ));
+      items.add(
+        SettingsListTile(
+          icon: IconlyLight.document,
+          title: context.localize.identificationCard,
+          iconColor: AppColors.appPrimary,
+          onTap: () => NavigationHelper.navigateTo(
+            context,
+            const IdentificationScreen(),
+          ),
+        ),
+      );
     }
     if (_matchesSearch(context.localize.linkedAccounts)) {
-      items.add(SettingsListTile(
-        icon: Iconsax.link,
-        title: context.localize.linkedAccounts,
-        iconColor: AppColors.warning,
-        onTap: () => NavigationHelper.navigateTo(context, const LinkedAccountsScreen()),
-      ));
+      items.add(
+        SettingsListTile(
+          icon: Iconsax.link,
+          title: context.localize.linkedAccounts,
+          iconColor: AppColors.warning,
+          onTap: () => NavigationHelper.navigateTo(
+            context,
+            const LinkedAccountsScreen(),
+          ),
+        ),
+      );
     }
     if (_matchesSearch(context.localize.notificationPreferences)) {
-      items.add(SettingsListTile(
-        icon: IconlyLight.notification,
-        title: context.localize.notificationPreferences,
-        iconColor: AppColors.warning,
-        onTap: () => NavigationHelper.navigateTo(context, const NotificationPreferencesScreen()),
-      ));
+      items.add(
+        SettingsListTile(
+          icon: IconlyLight.notification,
+          title: context.localize.notificationPreferences,
+          iconColor: AppColors.warning,
+          onTap: () => NavigationHelper.navigateTo(
+            context,
+            const NotificationPreferencesScreen(),
+          ),
+        ),
+      );
     }
     if (_matchesSearch(context.localize.learningProgress)) {
-      items.add(SettingsListTile(
-        icon: Iconsax.book_1,
-        title: context.localize.learningProgress,
-        iconColor: AppColors.appPrimary,
-        onTap: () => NavigationHelper.navigateTo(context, const LearningProgressScreen()),
-      ));
+      items.add(
+        SettingsListTile(
+          icon: Iconsax.book_1,
+          title: context.localize.learningProgress,
+          iconColor: AppColors.appPrimary,
+          onTap: () => NavigationHelper.navigateTo(
+            context,
+            const LearningProgressScreen(),
+          ),
+        ),
+      );
     }
     if (_matchesSearch(context.localize.referral)) {
-      items.add(SettingsListTile(
-        icon: Iconsax.people,
-        title: context.localize.referral,
-        iconColor: AppColors.info,
-        onTap: () {},
-      ));
+      items.add(
+        SettingsListTile(
+          icon: Iconsax.people,
+          title: context.localize.referral,
+          iconColor: AppColors.info,
+          onTap: () =>
+              NavigationHelper.navigateTo(context, const ReferralScreen()),
+        ),
+      );
     }
 
     if (items.isEmpty) return [];
@@ -202,12 +247,17 @@ class _AccountTabState extends State<AccountTab> with ProfileImageMixin {
     final items = <Widget>[];
 
     if (_matchesSearch(context.localize.securitySettings)) {
-      items.add(SettingsListTile(
-        icon: Iconsax.lock,
-        title: context.localize.securitySettings,
-        iconColor: AppColors.error,
-        onTap: () => NavigationHelper.navigateTo(context, const SecuritySettingsScreen()),
-      ));
+      items.add(
+        SettingsListTile(
+          icon: Iconsax.lock,
+          title: context.localize.securitySettings,
+          iconColor: AppColors.error,
+          onTap: () => NavigationHelper.navigateTo(
+            context,
+            const SecuritySettingsScreen(),
+          ),
+        ),
+      );
     }
 
     if (items.isEmpty) return [];
@@ -226,90 +276,107 @@ class _AccountTabState extends State<AccountTab> with ProfileImageMixin {
     final items = <Widget>[];
 
     if (_matchesSearch(context.localize.privacyPolicy)) {
-      items.add(SettingsListTile(
-        icon: Iconsax.shield_tick,
-        title: context.localize.privacyPolicy,
-        iconColor: AppColors.info,
-        onTap: () => NavigationHelper.navigateTo(context, const PrivacyPolicyScreen()),
-      ));
+      items.add(
+        SettingsListTile(
+          icon: Iconsax.shield_tick,
+          title: context.localize.privacyPolicy,
+          iconColor: AppColors.info,
+          onTap: () =>
+              NavigationHelper.navigateTo(context, const PrivacyPolicyScreen()),
+        ),
+      );
     }
     if (_matchesSearch(context.localize.help)) {
-      items.add(SettingsListTile(
-        icon: Iconsax.message_question,
-        title: context.localize.help,
-        iconColor: AppColors.error,
-        onTap: () => NavigationHelper.navigateTo(context, const HelpCenterScreen()),
-      ));
+      items.add(
+        SettingsListTile(
+          icon: Iconsax.message_question,
+          title: context.localize.help,
+          iconColor: AppColors.error,
+          onTap: () =>
+              NavigationHelper.navigateTo(context, const HelpCenterScreen()),
+        ),
+      );
     }
     if (_matchesSearch(context.localize.aboutApp)) {
-      items.add(SettingsListTile(
-        icon: Iconsax.info_circle,
-        title: context.localize.aboutApp,
-        iconColor: context.secondaryTextColor,
-        onTap: () => NavigationHelper.navigateTo(context, const AboutAppScreen()),
-      ));
+      items.add(
+        SettingsListTile(
+          icon: Iconsax.info_circle,
+          title: context.localize.aboutApp,
+          iconColor: context.secondaryTextColor,
+          onTap: () =>
+              NavigationHelper.navigateTo(context, const AboutAppScreen()),
+        ),
+      );
     }
     if (_matchesSearch(context.localize.currency)) {
-      items.add(SettingsDropdownTile<String>(
-        icon: Iconsax.dollar_circle,
-        title: context.localize.currency,
-        iconColor: AppColors.appPrimary,
-        value: _selectedCurrency,
-        items: _currencies,
-        onChanged: (value) {
-          if (value != null) setState(() => _selectedCurrency = value);
-        },
-      ));
+      items.add(
+        SettingsDropdownTile<String>(
+          icon: Iconsax.dollar_circle,
+          title: context.localize.currency,
+          iconColor: AppColors.appPrimary,
+          value: _selectedCurrency,
+          items: _currencies,
+          onChanged: (value) {
+            if (value != null) setState(() => _selectedCurrency = value);
+          },
+        ),
+      );
     }
     if (_matchesSearch(context.localize.defaultHomePage)) {
-      items.add(SettingsDropdownTile<HomePage>(
-        icon: IconlyLight.home,
-        title: context.localize.defaultHomePage,
-        iconColor: AppColors.appPrimary,
-        value: _selectedHomePage,
-        items: HomePage.values,
-        displayBuilder: (page) => _getHomePageLabel(context, page),
-        onChanged: (value) async {
-          if (value != null) {
-            await dashboardProvider.saveAsDefaultHomePage(value.index);
-            setState(() => _selectedHomePage = value);
-          }
-        },
-      ));
+      items.add(
+        SettingsDropdownTile<HomePage>(
+          icon: IconlyLight.home,
+          title: context.localize.defaultHomePage,
+          iconColor: AppColors.appPrimary,
+          value: _selectedHomePage,
+          items: HomePage.values,
+          displayBuilder: (page) => _getHomePageLabel(context, page),
+          onChanged: (value) async {
+            if (value != null) {
+              await dashboardProvider.saveAsDefaultHomePage(value.index);
+              setState(() => _selectedHomePage = value);
+            }
+          },
+        ),
+      );
     }
     if (_matchesSearch(context.localize.language)) {
-      items.add(SettingsDropdownTile<String>(
-        icon: Iconsax.translate,
-        title: context.localize.language,
-        iconColor: AppColors.error,
-        value: localeProvider.getCurrentLanguageName(),
-        items: LocaleProvider.getSupportedLanguageNames(),
-        onChanged: (value) async {
-          if (value != null) {
-            await localeProvider.setLocale(value);
-            if (context.mounted) RestartWidget.restartApp(context);
-          }
-        },
-      ));
+      items.add(
+        SettingsDropdownTile<String>(
+          icon: Iconsax.translate,
+          title: context.localize.language,
+          iconColor: AppColors.error,
+          value: localeProvider.getCurrentLanguageName(),
+          items: LocaleProvider.getSupportedLanguageNames(),
+          onChanged: (value) async {
+            if (value != null) {
+              await localeProvider.setLocale(value);
+              if (context.mounted) RestartWidget.restartApp(context);
+            }
+          },
+        ),
+      );
     }
     if (_matchesSearch(context.localize.systemSettings)) {
-      items.add(SettingsDropdownTile<ThemeMode>(
-        icon: themeProvider.themeMode == ThemeMode.dark ? Iconsax.moon : Iconsax.sun_1,
-        title: context.localize.systemSettings,
-        iconColor: AppColors.warning,
-        value: themeProvider.themeMode,
-        items: ThemeMode.values,
-        displayBuilder: (mode) => _getThemeModeLabel(context, mode),
-        onChanged: (value) {
-          if (value != null) themeProvider.setTheme(_themeToAppTheme(value));
-        },
-      ));
+      items.add(
+        SettingsDropdownTile<ThemeMode>(
+          icon: themeProvider.themeMode == ThemeMode.dark
+              ? Iconsax.moon
+              : Iconsax.sun_1,
+          title: context.localize.systemSettings,
+          iconColor: AppColors.warning,
+          value: themeProvider.themeMode,
+          items: ThemeMode.values,
+          displayBuilder: (mode) => _getThemeModeLabel(context, mode),
+          onChanged: (value) {
+            if (value != null) themeProvider.setTheme(_themeToAppTheme(value));
+          },
+        ),
+      );
     }
 
     if (items.isEmpty) return [];
-    return [
-      SettingsSection(title: context.localize.settings, children: items),
-    ];
+    return [SettingsSection(title: context.localize.settings, children: items)];
   }
 
   @override
@@ -323,61 +390,67 @@ class _AccountTabState extends State<AccountTab> with ProfileImageMixin {
       child: Scaffold(
         body: SafeArea(
           child: ScrollConfiguration(
-          behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: 16),
-                Center(
-                  child: AppText.medium(
-                    context.localize.userSettings,
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      color: context.primaryTextColor,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                ProfileHeader(
-                  userName: dashboardProvider.userProfile?['name'] ?? 'User',
-                  profileImageFile: localProfileImage,
-                  profileImageUrl: dashboardProvider.userProfile?['profileImage'],
-                  onLogout: () {
-                    // TODO: Implement logout
-                  },
-                  onProfileImageTap: handleProfileImageTap,
-                ),
-                const SizedBox(height: 8),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: MulaSearchBar(
-                    hintText: context.localize.search,
-                    controller: _searchController,
-                    onChanged: (value) {
-                      setState(() => _searchQuery = value);
-                    },
-                  ),
-                ),
-                const SizedBox(height: 24),
-                ..._buildProfileSection(context),
-                ..._buildSecuritySection(context),
-                ..._buildSettingsSection(context, themeProvider, localeProvider, dashboardProvider),
-                if (_searchQuery.isNotEmpty && !_hasAnyMatches(context))
-                  Padding(
-                    padding: const EdgeInsets.all(32),
-                    child: Center(
-                      child: AppText.medium(
-                        context.localize.noResultsFound,
-                        color: context.secondaryTextColor,
+            behavior: ScrollConfiguration.of(
+              context,
+            ).copyWith(scrollbars: false),
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(height: 16),
+                  Center(
+                    child: AppText.medium(
+                      context.localize.userSettings,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        color: context.primaryTextColor,
                       ),
                     ),
                   ),
-                AppSpacer.vLarger(),
-              ],
+                  const SizedBox(height: 16),
+                  ProfileHeader(
+                    userName: dashboardProvider.userProfile?['name'] ?? 'User',
+                    profileImageFile: localProfileImage,
+                    profileImageUrl:
+                        dashboardProvider.userProfile?['profileImage'],
+                    onLogout: () => _showLogoutConfirmation(context),
+                    onProfileImageTap: handleProfileImageTap,
+                  ),
+                  const SizedBox(height: 8),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: MulaSearchBar(
+                      hintText: context.localize.search,
+                      controller: _searchController,
+                      onChanged: (value) {
+                        setState(() => _searchQuery = value);
+                      },
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                  ..._buildProfileSection(context),
+                  ..._buildSecuritySection(context),
+                  ..._buildSettingsSection(
+                    context,
+                    themeProvider,
+                    localeProvider,
+                    dashboardProvider,
+                  ),
+                  if (_searchQuery.isNotEmpty && !_hasAnyMatches(context))
+                    Padding(
+                      padding: const EdgeInsets.all(32),
+                      child: Center(
+                        child: AppText.medium(
+                          context.localize.noResultsFound,
+                          color: context.secondaryTextColor,
+                        ),
+                      ),
+                    ),
+                  AppSpacer.vLarger(),
+                ],
+              ),
             ),
           ),
-        ),
         ),
       ),
     );

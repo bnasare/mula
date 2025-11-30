@@ -714,6 +714,7 @@
   "email": "メール",
   "phone": "電話",
   "logOut": "ログアウト",
+  "areYouSureYouWantToLogOut": "本当にアカウントからログアウトしますか？",
   "search": "検索",
   "needHelpTitle": "お困りですか？私たちがサポートします。",
   "needHelpSubtitle": "よくある質問への回答を見つけるか、チームにお問い合わせください",
@@ -786,5 +787,28 @@
     "placeholders": {
       "percent": {"type": "int"}
     }
-  }
+  },
+
+  "referralProgram": "紹介プログラム",
+  "inviteFriendsEarnRewards": "友達を招待して報酬を獲得。",
+  "referralLink": "紹介リンク",
+  "referralPoints": "紹介ポイント",
+  "points": "ポイント",
+  "invites": "招待",
+  "pastReferrals": "過去の紹介",
+  "copiedToClipboard": "クリップボードにコピーしました",
+  "goodThingsShared": "良いものは共有するともっと良くなります。友達をMULAに招待しましょう",
+  "inviteYourFriends": "友達を招待",
+  "shareReferralCodeOrLink": "紹介コードまたはリンクを友達と共有",
+  "earnRewardsTogether": "一緒に報酬を獲得",
+  "whenFriendSignsUp": "友達が登録して最初の投資をすると、両者が即座にポートフォリオを成長させる報酬を獲得します",
+  "shareYourLink": "リンクを共有",
+  "congratulations": "おめでとうございます！",
+  "youEarnedPoints": "{points}ポイントを獲得しました",
+  "@youEarnedPoints": {
+    "placeholders": {
+      "points": {"type": "int"}
+    }
+  },
+  "friendJoinedMessage": "あなたの紹介コードで友達が参加しました。もっと招待してもっと稼ぎましょう。"
 }

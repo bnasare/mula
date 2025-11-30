@@ -171,6 +171,45 @@ class AppColors {
     0xFFFFF3E0,
   ); // Light orange background
 
+  // Theme-aware activity status light colors for better dark mode visibility
+  static Color activitySuccessLightAdaptive(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return isDark
+        ? const Color(0xFF1B5E20) // Darker green for dark mode
+        : activitySuccessLight; // Light green for light mode
+  }
+
+  static Color activityPendingLightAdaptive(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return isDark
+        ? const Color(0xFF663C00) // Darker amber for dark mode
+        : activityPendingLight; // Light amber for light mode
+  }
+
+  static Color activityErrorLightAdaptive(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return isDark
+        ? const Color(
+            0xFFD32F2F,
+          ) // Medium red for dark mode (lighter and more visible)
+        : activityErrorLight; // Light red for light mode
+  }
+
+  static Color activityDepositLightAdaptive(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return isDark
+        ? const Color(0xFFE65100) // Darker orange for dark mode
+        : activityDepositLight; // Light orange for light mode
+  }
+
+  // Theme-aware text colors for activity status (for better contrast in dark mode)
+  static Color activityErrorTextAdaptive(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return isDark
+        ? const Color(0xFF8B0000) // Deep dark red for dark mode text
+        : activityError; // Regular red for light mode
+  }
+
   // Blues
   static const Color blue = Color(0xFF0D47A1);
   static const Color link = Color(0xFF4994EC);
