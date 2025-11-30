@@ -1950,4 +1950,42 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get phone => 'Телефон';
+
+  @override
+  String get aboutAppTagline => 'Ваши инвестиции, упрощённые';
+
+  @override
+  String get aboutAppDescription =>
+      'MULA — это современная инвестиционная платформа, созданная для того, чтобы помочь жителям Ганы легко управлять, приумножать и отслеживать свои деньги в одном месте. Будь то казначейские векселя, паевые фонды или ваш счёт CSD, MULA объединяет всё, чтобы вы могли инвестировать с уверенностью';
+
+  @override
+  String get aboutAppOurMission => 'Наша Миссия';
+
+  @override
+  String get aboutAppMissionDescription =>
+      'Сделать инвестирование простым, прозрачным и доступным для всех';
+
+  @override
+  String get aboutAppOurValues => 'Наши Ценности';
+
+  @override
+  String get aboutAppValueTrust => 'Доверие:';
+
+  @override
+  String get aboutAppValueTrustDescription =>
+      'Ваши деньги и данные всегда в безопасности у нас';
+
+  @override
+  String get aboutAppValueClarity => 'Ясность:';
+
+  @override
+  String get aboutAppValueClarityDescription =>
+      'Мы объясняем финансы простым, повседневным языком';
+
+  @override
+  String get aboutAppValueGrowth => 'Рост:';
+
+  @override
+  String get aboutAppValueGrowthDescription =>
+      'Мы помогаем вам принимать обоснованные решения для долгосрочного благосостояния';
 }

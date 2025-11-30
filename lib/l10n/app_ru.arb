@@ -721,5 +721,16 @@
   "sendUsEmailAt": "Напишите нам на",
   "talkToUs": "Свяжитесь с нами",
   "reportIssueDescription": "Опишите вашу проблему, и мы поможем как можно скорее",
-  "issueSubmittedSuccessfully": "Ваше обращение успешно отправлено"
+  "issueSubmittedSuccessfully": "Ваше обращение успешно отправлено",
+  "aboutAppTagline": "Ваши инвестиции, упрощённые",
+  "aboutAppDescription": "MULA — это современная инвестиционная платформа, созданная для того, чтобы помочь жителям Ганы легко управлять, приумножать и отслеживать свои деньги в одном месте. Будь то казначейские векселя, паевые фонды или ваш счёт CSD, MULA объединяет всё, чтобы вы могли инвестировать с уверенностью",
+  "aboutAppOurMission": "Наша Миссия",
+  "aboutAppMissionDescription": "Сделать инвестирование простым, прозрачным и доступным для всех",
+  "aboutAppOurValues": "Наши Ценности",
+  "aboutAppValueTrust": "Доверие:",
+  "aboutAppValueTrustDescription": "Ваши деньги и данные всегда в безопасности у нас",
+  "aboutAppValueClarity": "Ясность:",
+  "aboutAppValueClarityDescription": "Мы объясняем финансы простым, повседневным языком",
+  "aboutAppValueGrowth": "Рост:",
+  "aboutAppValueGrowthDescription": "Мы помогаем вам принимать обоснованные решения для долгосрочного благосостояния"
 }

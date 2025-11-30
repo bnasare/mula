@@ -721,5 +721,16 @@
   "sendUsEmailAt": "Inviaci un'email a",
   "talkToUs": "Parla con noi",
   "reportIssueDescription": "Descrivi il tuo problema e ti aiuteremo il prima possibile",
-  "issueSubmittedSuccessfully": "Il tuo problema è stato inviato con successo"
+  "issueSubmittedSuccessfully": "Il tuo problema è stato inviato con successo",
+  "aboutAppTagline": "I tuoi investimenti, semplificati",
+  "aboutAppDescription": "MULA è una piattaforma di investimento moderna progettata per aiutare i ghanesi a gestire, far crescere e monitorare facilmente i propri soldi in un unico posto. Che si tratti di Buoni del Tesoro, fondi comuni o del tuo conto CSD, MULA riunisce tutto per investire con fiducia",
+  "aboutAppOurMission": "La Nostra Missione",
+  "aboutAppMissionDescription": "Rendere gli investimenti semplici, trasparenti e accessibili a tutti",
+  "aboutAppOurValues": "I Nostri Valori",
+  "aboutAppValueTrust": "Fiducia:",
+  "aboutAppValueTrustDescription": "I tuoi soldi e i tuoi dati sono sempre al sicuro con noi",
+  "aboutAppValueClarity": "Chiarezza:",
+  "aboutAppValueClarityDescription": "Spieghiamo la finanza in un linguaggio semplice e quotidiano",
+  "aboutAppValueGrowth": "Crescita:",
+  "aboutAppValueGrowthDescription": "Ti aiutiamo a fare scelte informate per una ricchezza a lungo termine"
 }

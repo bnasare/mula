@@ -721,5 +721,16 @@
   "sendUsEmailAt": "Stuur ons een e-mail naar",
   "talkToUs": "Praat met ons",
   "reportIssueDescription": "Beschrijf uw probleem en wij helpen u zo snel mogelijk",
-  "issueSubmittedSuccessfully": "Uw probleem is succesvol ingediend"
+  "issueSubmittedSuccessfully": "Uw probleem is succesvol ingediend",
+  "aboutAppTagline": "Uw investeringen, vereenvoudigd",
+  "aboutAppDescription": "MULA is een modern investeringsplatform dat Ghanezen helpt om hun geld eenvoudig te beheren, te laten groeien en te volgen op één plek. Of het nu gaat om schatkistpapier, beleggingsfondsen of uw CSD-rekening, MULA brengt alles samen zodat u met vertrouwen kunt investeren",
+  "aboutAppOurMission": "Onze Missie",
+  "aboutAppMissionDescription": "Investeren eenvoudig, transparant en toegankelijk maken voor iedereen",
+  "aboutAppOurValues": "Onze Waarden",
+  "aboutAppValueTrust": "Vertrouwen:",
+  "aboutAppValueTrustDescription": "Uw geld en gegevens zijn altijd veilig bij ons",
+  "aboutAppValueClarity": "Duidelijkheid:",
+  "aboutAppValueClarityDescription": "We leggen financiën uit in eenvoudige, alledaagse taal",
+  "aboutAppValueGrowth": "Groei:",
+  "aboutAppValueGrowthDescription": "We helpen u weloverwogen keuzes te maken voor vermogen op lange termijn"
 }

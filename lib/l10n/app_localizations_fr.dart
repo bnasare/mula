@@ -1971,4 +1971,42 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get phone => 'Téléphone';
+
+  @override
+  String get aboutAppTagline => 'Vos investissements, simplifiés';
+
+  @override
+  String get aboutAppDescription =>
+      'MULA est une plateforme d\'investissement moderne conçue pour aider les Ghanéens à gérer, faire fructifier et suivre leur argent facilement en un seul endroit. Qu\'il s\'agisse de bons du Trésor, de fonds communs de placement ou de votre compte CSD, MULA rassemble tout pour que vous puissiez investir en toute confiance';
+
+  @override
+  String get aboutAppOurMission => 'Notre Mission';
+
+  @override
+  String get aboutAppMissionDescription =>
+      'Rendre l\'investissement simple, transparent et accessible à tous';
+
+  @override
+  String get aboutAppOurValues => 'Nos Valeurs';
+
+  @override
+  String get aboutAppValueTrust => 'Confiance :';
+
+  @override
+  String get aboutAppValueTrustDescription =>
+      'Votre argent et vos données sont toujours en sécurité chez nous';
+
+  @override
+  String get aboutAppValueClarity => 'Clarté :';
+
+  @override
+  String get aboutAppValueClarityDescription =>
+      'Nous expliquons la finance dans un langage simple et quotidien';
+
+  @override
+  String get aboutAppValueGrowth => 'Croissance :';
+
+  @override
+  String get aboutAppValueGrowthDescription =>
+      'Nous vous aidons à faire des choix éclairés pour une richesse à long terme';
 }

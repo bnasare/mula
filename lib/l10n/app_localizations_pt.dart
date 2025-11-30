@@ -1954,4 +1954,42 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get phone => 'Telefone';
+
+  @override
+  String get aboutAppTagline => 'Seus investimentos, simplificados';
+
+  @override
+  String get aboutAppDescription =>
+      'MULA é uma plataforma de investimento moderna criada para ajudar os ganeses a gerenciar, aumentar e rastrear seu dinheiro facilmente em um só lugar. Seja Letras do Tesouro, fundos mútuos ou sua conta CSD, MULA reúne tudo para que você possa investir com confiança';
+
+  @override
+  String get aboutAppOurMission => 'Nossa Missão';
+
+  @override
+  String get aboutAppMissionDescription =>
+      'Tornar o investimento simples, transparente e acessível a todos';
+
+  @override
+  String get aboutAppOurValues => 'Nossos Valores';
+
+  @override
+  String get aboutAppValueTrust => 'Confiança:';
+
+  @override
+  String get aboutAppValueTrustDescription =>
+      'Seu dinheiro e dados estão sempre seguros conosco';
+
+  @override
+  String get aboutAppValueClarity => 'Clareza:';
+
+  @override
+  String get aboutAppValueClarityDescription =>
+      'Explicamos finanças em linguagem simples e cotidiana';
+
+  @override
+  String get aboutAppValueGrowth => 'Crescimento:';
+
+  @override
+  String get aboutAppValueGrowthDescription =>
+      'Ajudamos você a fazer escolhas informadas para riqueza a longo prazo';
 }

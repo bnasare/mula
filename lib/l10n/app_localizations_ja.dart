@@ -1892,4 +1892,38 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get phone => '電話';
+
+  @override
+  String get aboutAppTagline => 'あなたの投資をシンプルに';
+
+  @override
+  String get aboutAppDescription =>
+      'MULAは、ガーナの人々がお金を一か所で簡単に管理、増やし、追跡できるように構築された現代的な投資プラットフォームです。国庫短期証券、投資信託、CSDアカウントなど、MULAはすべてをまとめて自信を持って投資できるようにします';
+
+  @override
+  String get aboutAppOurMission => '私たちの使命';
+
+  @override
+  String get aboutAppMissionDescription => '投資をシンプルで透明性があり、誰もがアクセスできるものにすること';
+
+  @override
+  String get aboutAppOurValues => '私たちの価値観';
+
+  @override
+  String get aboutAppValueTrust => '信頼：';
+
+  @override
+  String get aboutAppValueTrustDescription => 'お客様のお金とデータは常に安全です';
+
+  @override
+  String get aboutAppValueClarity => '明確さ：';
+
+  @override
+  String get aboutAppValueClarityDescription => '金融をシンプルで日常的な言葉で説明します';
+
+  @override
+  String get aboutAppValueGrowth => '成長：';
+
+  @override
+  String get aboutAppValueGrowthDescription => '長期的な資産形成のための情報に基づいた選択をお手伝いします';
 }

@@ -724,5 +724,16 @@
   "sendUsEmailAt": "Envíanos un correo electrónico a",
   "talkToUs": "Habla con nosotros",
   "reportIssueDescription": "Describe tu problema y te ayudaremos lo antes posible",
-  "issueSubmittedSuccessfully": "Tu problema ha sido enviado exitosamente"
+  "issueSubmittedSuccessfully": "Tu problema ha sido enviado exitosamente",
+  "aboutAppTagline": "Tus inversiones, simplificadas",
+  "aboutAppDescription": "MULA es una plataforma de inversión moderna diseñada para ayudar a los ghaneses a gestionar, hacer crecer y rastrear su dinero fácilmente en un solo lugar. Ya sean Letras del Tesoro, fondos mutuos o tu cuenta CSD, MULA lo reúne todo para que puedas invertir con confianza",
+  "aboutAppOurMission": "Nuestra Misión",
+  "aboutAppMissionDescription": "Hacer que invertir sea simple, transparente y accesible para todos",
+  "aboutAppOurValues": "Nuestros Valores",
+  "aboutAppValueTrust": "Confianza:",
+  "aboutAppValueTrustDescription": "Tu dinero y datos siempre están seguros con nosotros",
+  "aboutAppValueClarity": "Claridad:",
+  "aboutAppValueClarityDescription": "Explicamos las finanzas en un lenguaje simple y cotidiano",
+  "aboutAppValueGrowth": "Crecimiento:",
+  "aboutAppValueGrowthDescription": "Te ayudamos a tomar decisiones informadas para la riqueza a largo plazo"
 }

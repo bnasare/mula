@@ -3787,6 +3787,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Phone'**
   String get phone;
+
+  /// No description provided for @aboutAppTagline.
+  ///
+  /// In en, this message translates to:
+  /// **'Your investments, simplified'**
+  String get aboutAppTagline;
+
+  /// No description provided for @aboutAppDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'MULA is a modern investment platform built to help Ghanaians easily manage, grow, and track their money in one place. Whether it\'s Treasury Bills, mutual funds, or your CSD account, MULA brings everything together so you can invest with confidence'**
+  String get aboutAppDescription;
+
+  /// No description provided for @aboutAppOurMission.
+  ///
+  /// In en, this message translates to:
+  /// **'Our Mission'**
+  String get aboutAppOurMission;
+
+  /// No description provided for @aboutAppMissionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'To make investing simple, transparent, and accessible to everyone'**
+  String get aboutAppMissionDescription;
+
+  /// No description provided for @aboutAppOurValues.
+  ///
+  /// In en, this message translates to:
+  /// **'Our Values'**
+  String get aboutAppOurValues;
+
+  /// No description provided for @aboutAppValueTrust.
+  ///
+  /// In en, this message translates to:
+  /// **'Trust:'**
+  String get aboutAppValueTrust;
+
+  /// No description provided for @aboutAppValueTrustDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your money and data are always safe with us'**
+  String get aboutAppValueTrustDescription;
+
+  /// No description provided for @aboutAppValueClarity.
+  ///
+  /// In en, this message translates to:
+  /// **'Clarity:'**
+  String get aboutAppValueClarity;
+
+  /// No description provided for @aboutAppValueClarityDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We explain finance in simple, everyday language'**
+  String get aboutAppValueClarityDescription;
+
+  /// No description provided for @aboutAppValueGrowth.
+  ///
+  /// In en, this message translates to:
+  /// **'Growth:'**
+  String get aboutAppValueGrowth;
+
+  /// No description provided for @aboutAppValueGrowthDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We help you make informed choices for long-term wealth'**
+  String get aboutAppValueGrowthDescription;
 }
 
 class _AppLocalizationsDelegate

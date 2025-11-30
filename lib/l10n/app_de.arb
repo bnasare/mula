@@ -724,5 +724,16 @@
   "sendUsEmailAt": "Senden Sie uns eine E-Mail an",
   "talkToUs": "Sprechen Sie mit uns",
   "reportIssueDescription": "Beschreiben Sie uns Ihr Problem und wir helfen Ihnen so schnell wie möglich",
-  "issueSubmittedSuccessfully": "Ihr Anliegen wurde erfolgreich übermittelt"
+  "issueSubmittedSuccessfully": "Ihr Anliegen wurde erfolgreich übermittelt",
+  "aboutAppTagline": "Ihre Investitionen, vereinfacht",
+  "aboutAppDescription": "MULA ist eine moderne Investitionsplattform, die Ghanaern hilft, ihr Geld einfach zu verwalten, zu vermehren und an einem Ort zu verfolgen. Ob Schatzwechsel, Investmentfonds oder Ihr CSD-Konto – MULA bringt alles zusammen, damit Sie mit Vertrauen investieren können",
+  "aboutAppOurMission": "Unsere Mission",
+  "aboutAppMissionDescription": "Investieren einfach, transparent und für jeden zugänglich zu machen",
+  "aboutAppOurValues": "Unsere Werte",
+  "aboutAppValueTrust": "Vertrauen:",
+  "aboutAppValueTrustDescription": "Ihr Geld und Ihre Daten sind bei uns immer sicher",
+  "aboutAppValueClarity": "Klarheit:",
+  "aboutAppValueClarityDescription": "Wir erklären Finanzen in einfacher, alltäglicher Sprache",
+  "aboutAppValueGrowth": "Wachstum:",
+  "aboutAppValueGrowthDescription": "Wir helfen Ihnen, fundierte Entscheidungen für langfristigen Wohlstand zu treffen"
 }

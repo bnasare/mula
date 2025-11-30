@@ -18,6 +18,8 @@ import '../widgets/profile_search_bar.dart';
 import '../widgets/settings_dropdown_tile.dart';
 import '../widgets/settings_list_tile.dart';
 import '../widgets/settings_section.dart';
+import '../../../../linked_accounts/presentation/interface/screens/linked_accounts_screen.dart';
+import 'about_app_screen.dart';
 import 'help_center_screen.dart';
 import 'notification_preferences_screen.dart';
 import 'privacy_policy_screen.dart';
@@ -152,7 +154,12 @@ class _AccountTabState extends State<AccountTab> {
                       icon: Iconsax.link,
                       title: context.localize.linkedAccounts,
                       iconColor: AppColors.warning,
-                      onTap: () {},
+                      onTap: () {
+                        NavigationHelper.navigateTo(
+                          context,
+                          const LinkedAccountsScreen(),
+                        );
+                      },
                     ),
                     SettingsListTile(
                       icon: IconlyLight.notification,
@@ -209,7 +216,12 @@ class _AccountTabState extends State<AccountTab> {
                       icon: Iconsax.info_circle,
                       title: context.localize.aboutApp,
                       iconColor: context.secondaryTextColor,
-                      onTap: () {},
+                      onTap: () {
+                        NavigationHelper.navigateTo(
+                          context,
+                          const AboutAppScreen(),
+                        );
+                      },
                     ),
                     SettingsDropdownTile<String>(
                       icon: Iconsax.dollar_circle,

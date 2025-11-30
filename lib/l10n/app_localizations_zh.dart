@@ -1881,4 +1881,38 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get phone => '电话';
+
+  @override
+  String get aboutAppTagline => '您的投资，简单化';
+
+  @override
+  String get aboutAppDescription =>
+      'MULA是一个现代投资平台，旨在帮助加纳人在一个地方轻松管理、增长和跟踪他们的资金。无论是国库券、共同基金还是您的CSD账户，MULA将一切整合在一起，让您自信地投资';
+
+  @override
+  String get aboutAppOurMission => '我们的使命';
+
+  @override
+  String get aboutAppMissionDescription => '让投资变得简单、透明，人人可及';
+
+  @override
+  String get aboutAppOurValues => '我们的价值观';
+
+  @override
+  String get aboutAppValueTrust => '信任：';
+
+  @override
+  String get aboutAppValueTrustDescription => '您的资金和数据始终安全';
+
+  @override
+  String get aboutAppValueClarity => '清晰：';
+
+  @override
+  String get aboutAppValueClarityDescription => '我们用简单、日常的语言解释金融';
+
+  @override
+  String get aboutAppValueGrowth => '成长：';
+
+  @override
+  String get aboutAppValueGrowthDescription => '我们帮助您做出明智的长期财富决策';
 }

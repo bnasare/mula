@@ -42,7 +42,10 @@ class _NotificationPreferencesScreenState
     } catch (e) {
       if (mounted) {
         setState(() => _isLoading = false);
-        SnackBarHelper.showErrorSnackBar(context, '${context.localize.errorLoadingPreferences}: $e');
+        SnackBarHelper.showErrorSnackBar(
+          context,
+          '${context.localize.errorLoadingPreferences}: $e',
+        );
       }
     }
   }
@@ -58,7 +61,10 @@ class _NotificationPreferencesScreenState
       await PreferencesService.saveNotificationPreference(key, value);
     } catch (e) {
       if (mounted) {
-        SnackBarHelper.showErrorSnackBar(context, '${context.localize.errorSavingPreference}: $e');
+        SnackBarHelper.showErrorSnackBar(
+          context,
+          '${context.localize.errorSavingPreference}: $e',
+        );
       }
     }
   }
@@ -74,16 +80,14 @@ class _NotificationPreferencesScreenState
           ? const Center(child: CircularProgressIndicator())
           : SafeArea(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.all(20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Description
                     AppText.smaller(
+                      padding: const EdgeInsets.all(16.0).copyWith(bottom: 0),
                       context.localize.chooseNotifications,
-                      style: TextStyle(
-                        color: context.secondaryTextColor,
-                      ),
+                      style: TextStyle(color: context.secondaryTextColor),
                     ),
                     AppSpacer.vLarge(),
 

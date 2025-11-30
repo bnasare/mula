@@ -721,5 +721,16 @@
   "sendUsEmailAt": "Envie-nos um e-mail para",
   "talkToUs": "Fale conosco",
   "reportIssueDescription": "Descreva seu problema e ajudaremos o mais rápido possível",
-  "issueSubmittedSuccessfully": "Seu problema foi enviado com sucesso"
+  "issueSubmittedSuccessfully": "Seu problema foi enviado com sucesso",
+  "aboutAppTagline": "Seus investimentos, simplificados",
+  "aboutAppDescription": "MULA é uma plataforma de investimento moderna criada para ajudar os ganeses a gerenciar, aumentar e rastrear seu dinheiro facilmente em um só lugar. Seja Letras do Tesouro, fundos mútuos ou sua conta CSD, MULA reúne tudo para que você possa investir com confiança",
+  "aboutAppOurMission": "Nossa Missão",
+  "aboutAppMissionDescription": "Tornar o investimento simples, transparente e acessível a todos",
+  "aboutAppOurValues": "Nossos Valores",
+  "aboutAppValueTrust": "Confiança:",
+  "aboutAppValueTrustDescription": "Seu dinheiro e dados estão sempre seguros conosco",
+  "aboutAppValueClarity": "Clareza:",
+  "aboutAppValueClarityDescription": "Explicamos finanças em linguagem simples e cotidiana",
+  "aboutAppValueGrowth": "Crescimento:",
+  "aboutAppValueGrowthDescription": "Ajudamos você a fazer escolhas informadas para riqueza a longo prazo"
 }

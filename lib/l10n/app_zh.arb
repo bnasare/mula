@@ -721,5 +721,16 @@
   "sendUsEmailAt": "发送电子邮件至",
   "talkToUs": "联系我们",
   "reportIssueDescription": "描述您的问题，我们将尽快提供帮助",
-  "issueSubmittedSuccessfully": "您的问题已成功提交"
+  "issueSubmittedSuccessfully": "您的问题已成功提交",
+  "aboutAppTagline": "您的投资，简单化",
+  "aboutAppDescription": "MULA是一个现代投资平台，旨在帮助加纳人在一个地方轻松管理、增长和跟踪他们的资金。无论是国库券、共同基金还是您的CSD账户，MULA将一切整合在一起，让您自信地投资",
+  "aboutAppOurMission": "我们的使命",
+  "aboutAppMissionDescription": "让投资变得简单、透明，人人可及",
+  "aboutAppOurValues": "我们的价值观",
+  "aboutAppValueTrust": "信任：",
+  "aboutAppValueTrustDescription": "您的资金和数据始终安全",
+  "aboutAppValueClarity": "清晰：",
+  "aboutAppValueClarityDescription": "我们用简单、日常的语言解释金融",
+  "aboutAppValueGrowth": "成长：",
+  "aboutAppValueGrowthDescription": "我们帮助您做出明智的长期财富决策"
 }

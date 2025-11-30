@@ -1949,4 +1949,42 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get phone => 'फ़ोन';
+
+  @override
+  String get aboutAppTagline => 'आपके निवेश, सरलीकृत';
+
+  @override
+  String get aboutAppDescription =>
+      'MULA एक आधुनिक निवेश प्लेटफॉर्म है जो घानाई लोगों को एक ही स्थान पर अपने पैसे को आसानी से प्रबंधित करने, बढ़ाने और ट्रैक करने में मदद करता है। चाहे वह ट्रेजरी बिल हो, म्यूचुअल फंड हो, या आपका CSD खाता, MULA सब कुछ एक साथ लाता है ताकि आप विश्वास के साथ निवेश कर सकें';
+
+  @override
+  String get aboutAppOurMission => 'हमारा मिशन';
+
+  @override
+  String get aboutAppMissionDescription =>
+      'निवेश को सभी के लिए सरल, पारदर्शी और सुलभ बनाना';
+
+  @override
+  String get aboutAppOurValues => 'हमारे मूल्य';
+
+  @override
+  String get aboutAppValueTrust => 'विश्वास:';
+
+  @override
+  String get aboutAppValueTrustDescription =>
+      'आपका पैसा और डेटा हमारे साथ हमेशा सुरक्षित है';
+
+  @override
+  String get aboutAppValueClarity => 'स्पष्टता:';
+
+  @override
+  String get aboutAppValueClarityDescription =>
+      'हम वित्त को सरल, रोजमर्रा की भाषा में समझाते हैं';
+
+  @override
+  String get aboutAppValueGrowth => 'विकास:';
+
+  @override
+  String get aboutAppValueGrowthDescription =>
+      'हम आपको दीर्घकालिक धन के लिए सूचित निर्णय लेने में मदद करते हैं';
 }
