@@ -30,9 +30,9 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      decoration: BoxDecoration(
+        color: AppColors.white(context),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
       ),
       child: SingleChildScrollView(
         child: Padding(
@@ -172,8 +172,8 @@ class _TransactionReceiptModalState extends State<TransactionReceiptModal> {
                         ),
                         child: AppText(
                           context.localize.done,
-                          style: const TextStyle(
-                            color: Colors.white,
+                          style: TextStyle(
+                            color: AppColors.white(context),
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),

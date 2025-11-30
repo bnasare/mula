@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../shared/utils/extension.dart';
+import '../../../shared/utils/localization_extension.dart';
 import '../theme/app_colors.dart';
 
 class WarningModal extends StatelessWidget {
@@ -52,7 +53,7 @@ class WarningModal extends StatelessWidget {
                 color: theme.colorScheme.error.withOpacity(0.2),
               ),
               child: Text(
-                'Warning',
+                context.localize.warning,
                 style: TextStyle(
                   color: theme.colorScheme.error,
                   fontSize: context.responsiveFontSize(mobile: 10),

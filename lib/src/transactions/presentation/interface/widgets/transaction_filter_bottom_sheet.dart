@@ -47,7 +47,7 @@ class _TransactionFilterBottomSheetState
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.white(context),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
       ),
       padding: const EdgeInsets.all(24),
@@ -73,7 +73,7 @@ class _TransactionFilterBottomSheetState
                     GestureDetector(
                       onTap: _clearAllFilters,
                       child: AppText.small(
-                        'Clear All',
+                        context.localize.clearAll,
                         color: AppColors.appPrimary,
                       ),
                     ),
@@ -229,7 +229,7 @@ class _TransactionFilterBottomSheetState
           AppButton(
             text: context.localize.apply,
             backgroundColor: AppColors.appPrimary,
-            textColor: Colors.white,
+            textColor: AppColors.white(context),
             borderRadius: 8,
             padding: EdgeInsets.zero,
             onTap: () {
@@ -255,7 +255,7 @@ class _TransactionFilterBottomSheetState
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         decoration: BoxDecoration(
           color: isSelected
-              ? AppColors.appPrimary.withOpacity(0.1)
+              ? AppColors.appPrimary.withValues(alpha: 0.1)
               : AppColors.offWhite(context),
           borderRadius: BorderRadius.circular(8),
           border: Border.all(

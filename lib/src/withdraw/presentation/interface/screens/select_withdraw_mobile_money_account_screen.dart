@@ -49,7 +49,7 @@ class SelectWithdrawMobileMoneyAccountScreen extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 12.0),
                   child: AccountListTile(
-                    icon: _getNetworkIcon(account['network']!),
+                    icon: _getNetworkIcon(account['network']!, context),
                     title: account['network']!,
                     subtitle: account['number']!,
                     onTap: () {
@@ -118,14 +118,14 @@ class SelectWithdrawMobileMoneyAccountScreen extends StatelessWidget {
   }
 
   /// Returns the appropriate icon for the network
-  Widget _getNetworkIcon(String network) {
+  Widget _getNetworkIcon(String network, BuildContext context) {
     // Using first letter as icon
     return Text(
       network.substring(0, 1),
-      style: const TextStyle(
+      style: TextStyle(
         fontSize: 18,
         fontWeight: FontWeight.w600,
-        color: Colors.black87,
+        color: AppColors.black(context),
       ),
     );
   }

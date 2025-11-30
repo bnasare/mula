@@ -222,7 +222,7 @@ class _AssetSearchScreenState extends State<AssetSearchScreen> {
                       fontSize: 14,
                       color: AppColors.primaryText(context),
                     ),
-                    items: [context.localize.relevance, 'Date', 'Name'].map((
+                    items: [context.localize.relevance, context.localize.date, context.localize.name].map((
                       String value,
                     ) {
                       return DropdownMenuItem<String>(
@@ -368,16 +368,16 @@ class _SearchResultTile extends StatelessWidget {
 
   const _SearchResultTile({required this.item, required this.onTap});
 
-  String _getCategoryLabel() {
+  String _getCategoryLabel(BuildContext context) {
     switch (item.assetCategory) {
       case SearchAssetCategory.stock:
-        return 'Stock';
+        return context.localize.stock;
       case SearchAssetCategory.mutualFund:
-        return 'Mutual Fund';
+        return context.localize.mutualFund;
       case SearchAssetCategory.tBill:
-        return 'T-Bill';
+        return context.localize.tBill;
       case SearchAssetCategory.lesson:
-        return 'Lesson';
+        return context.localize.lesson;
       case SearchAssetCategory.generic:
         return '';
     }
@@ -429,7 +429,7 @@ class _SearchResultTile extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4),
               ),
               child: AppText.smallest(
-                _getCategoryLabel(),
+                _getCategoryLabel(context),
                 style: TextStyle(
                   color: AppColors.secondaryText(context),
                   fontSize: 10,

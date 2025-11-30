@@ -68,10 +68,10 @@ class AsyncLoader {
   /// Creates an overlay entry with the loading indicator
   static OverlayEntry _createOverlayEntry(Widget widget) {
     return OverlayEntry(
-      builder: (_) => Material(
+      builder: (context) => Material(
         color: AppColors.transparent,
         child: ColoredBox(
-          color: Colors.black54,
+          color: AppColors.secondaryText(context),
           child: Center(child: widget),
         ),
       ),

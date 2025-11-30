@@ -330,7 +330,7 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
         if (widget.labelText != null) ...[
           Text(
             widget.labelText!,
-            style: const TextStyle(color: Colors.black54),
+            style: TextStyle(color: AppColors.secondaryText(context)),
           ),
           const SizedBox(height: 8),
         ],
@@ -406,8 +406,8 @@ class _QuantityTextFieldState extends State<QuantityTextField> {
                               style: TextStyle(
                                 fontSize: 13,
                                 color: unitEntry.key == _selectedUnit
-                                    ? Colors.black87
-                                    : Colors.black87,
+                                    ? AppColors.black(context)
+                                    : AppColors.black(context),
                               ),
                             ),
                           ),

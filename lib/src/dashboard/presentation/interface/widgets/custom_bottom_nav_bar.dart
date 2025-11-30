@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:provider/provider.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/extension.dart';
@@ -19,13 +21,9 @@ class CustomBottomNavBar extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: AppColors.card(context),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.primaryText(context).withOpacity(0.05),
-            blurRadius: 10,
-            offset: const Offset(0, -2),
-          ),
-        ],
+        border: Border(
+          top: BorderSide(color: AppColors.lightGrey(context), width: 1),
+        ),
       ),
       child: SafeArea(
         child: Container(
@@ -58,8 +56,8 @@ class CustomBottomNavBar extends StatelessWidget {
                 onTap: () => provider.changeTab(2),
               ),
               _NavBarItem(
-                iconLight: IconlyLight.document,
-                iconBold: IconlyBold.document,
+                iconLight: Iconsax.book,
+                iconBold: Iconsax.book_1,
                 label: context.localize.learn,
                 isActive: currentIndex == 3,
                 onTap: () => provider.changeTab(3),
@@ -111,7 +109,10 @@ class _NavBarItem extends StatelessWidget {
           children: [
             Icon(isActive ? iconBold : iconLight, color: color, size: 20),
             const SizedBox(height: 4),
-            AppText.smallest(label, color: color),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: AppText.smallest(label, color: color),
+            ),
           ],
         ),
       ),

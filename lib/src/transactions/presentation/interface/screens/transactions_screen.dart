@@ -35,7 +35,6 @@ class TransactionsScreen extends StatelessWidget {
               showModalBottomSheet(
                 context: context,
                 isScrollControlled: true,
-                backgroundColor: AppColors.transparent,
                 builder: (context) => const TransactionFilterBottomSheet(),
               );
             },
@@ -51,7 +50,6 @@ class TransactionsScreen extends StatelessWidget {
               if (value == 'export') {
                 showModalBottomSheet(
                   context: context,
-                  backgroundColor: AppColors.transparent,
                   builder: (context) => const ExportBottomSheet(),
                 );
               } else if (value == 'report') {
@@ -116,7 +114,6 @@ class TransactionsScreen extends StatelessWidget {
                       showModalBottomSheet(
                         context: context,
                         isScrollControlled: true,
-                        backgroundColor: AppColors.transparent,
                         builder: (context) =>
                             TransactionReceiptModal(activity: activity),
                       );

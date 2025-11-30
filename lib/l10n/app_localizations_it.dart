@@ -666,6 +666,12 @@ class AppLocalizationsIt extends AppLocalizations {
   String get totalPortfolioValue => 'Valore Totale del Portafoglio';
 
   @override
+  String get welcomeBack => 'Bentornato';
+
+  @override
+  String get dailyChange => 'Variazione Giornaliera';
+
+  @override
   String get learningCorner => 'Angolo dell\'Apprendimento';
 
   @override
@@ -688,6 +694,24 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get recentActivities => 'Attività Recenti';
+
+  @override
+  String get marketClosed => 'Mercato chiuso';
+
+  @override
+  String get relevance => 'Rilevanza';
+
+  @override
+  String get name => 'Nome';
+
+  @override
+  String get stock => 'Azione';
+
+  @override
+  String get tBill => 'Buono del Tesoro';
+
+  @override
+  String get lesson => 'Lezione';
 
   @override
   String get viewAll => 'Vedi tutto';
@@ -721,6 +745,12 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get apply => 'Applica';
+
+  @override
+  String get cancel => 'Annulla';
+
+  @override
+  String get warning => 'Avviso';
 
   @override
   String get balance => 'Saldo';
@@ -953,9 +983,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get viewDetails => 'Visualizza Dettagli';
 
   @override
-  String get cancel => 'Annulla';
-
-  @override
   String get areYouSureYouWantToUnlink =>
       'Sei sicuro di voler scollegare questo account?';
 
@@ -1109,9 +1136,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get searchByAsset => 'Cerca per asset';
 
   @override
-  String get relevance => 'Rilevanza';
-
-  @override
   String get popular => 'Popolare';
 
   @override
@@ -1122,9 +1146,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tBills => 'Buoni del Tesoro';
-
-  @override
-  String get stock => 'Azione';
 
   @override
   String get selectLevel => 'Seleziona livello';
@@ -1688,4 +1709,256 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get maturityValue => 'Valore a scadenza';
+
+  @override
+  String get writeYourReply => 'Scrivi la tua risposta';
+
+  @override
+  String get shareYourThoughts => 'Condividi i tuoi pensieri';
+
+  @override
+  String get postComment => 'Pubblica commento';
+
+  @override
+  String get lessonNotFound => 'Lezione non trovata';
+
+  @override
+  String get couldNotOpenEmailClient => 'Impossibile aprire il client di posta';
+
+  @override
+  String get errorOpeningEmail => 'Errore nell\'apertura dell\'email';
+
+  @override
+  String get couldNotOpenPhoneDialer =>
+      'Impossibile aprire il compositore telefonico';
+
+  @override
+  String get errorOpeningPhone => 'Errore nell\'apertura del telefono';
+
+  @override
+  String get errorLoadingPreferences =>
+      'Errore nel caricamento delle preferenze';
+
+  @override
+  String get errorSavingPreference => 'Errore nel salvataggio della preferenza';
+
+  @override
+  String operationTimedOut(int seconds) {
+    return 'Operazione scaduta in $seconds secondi';
+  }
+
+  @override
+  String requestTimedOut(int seconds) {
+    return 'Richiesta scaduta in $seconds secondi';
+  }
+
+  @override
+  String get helpCenter => 'Centro Assistenza';
+
+  @override
+  String get frequentlyAskedQuestions => 'Domande Frequenti';
+
+  @override
+  String get contactUs => 'Contattaci';
+
+  @override
+  String get chooseNotifications => 'Scegli quali notifiche vuoi ricevere';
+
+  @override
+  String get accountActivity => 'Attività del Conto';
+
+  @override
+  String get marketUpdates => 'Aggiornamenti di Mercato';
+
+  @override
+  String get educational => 'Educativo';
+
+  @override
+  String get depositsWithdrawalsNotif => 'Depositi e Prelievi';
+
+  @override
+  String get depositsWithdrawalsNotifDesc =>
+      'Ricevi notifiche quando i fondi vengono depositati o prelevati';
+
+  @override
+  String get tradeConfirmationsNotif => 'Conferme di Transazione';
+
+  @override
+  String get tradeConfirmationsNotifDesc =>
+      'Ricevi conferme per gli ordini di acquisto/vendita';
+
+  @override
+  String get securityAlertsNotif => 'Avvisi di Sicurezza del Conto';
+
+  @override
+  String get securityAlertsNotifDesc =>
+      'Aggiornamenti e avvisi di sicurezza importanti';
+
+  @override
+  String get priceAlertsNotif => 'Avvisi di Prezzo';
+
+  @override
+  String get priceAlertsNotifDesc =>
+      'Notifica quando gli asset raggiungono i prezzi target';
+
+  @override
+  String get marketNewsNotif => 'Notizie di Mercato';
+
+  @override
+  String get marketNewsNotifDesc =>
+      'Resta aggiornato sulle tendenze e notizie di mercato';
+
+  @override
+  String get portfolioPerformanceNotif => 'Performance del Portafoglio';
+
+  @override
+  String get portfolioPerformanceNotifDesc =>
+      'Riepiloghi settimanali della performance del portafoglio';
+
+  @override
+  String get learningRemindersNotif => 'Promemoria di Apprendimento';
+
+  @override
+  String get learningRemindersNotifDesc =>
+      'Promemoria per continuare il tuo percorso di apprendimento';
+
+  @override
+  String get newContentNotif => 'Nuovo Contenuto Disponibile';
+
+  @override
+  String get newContentNotifDesc =>
+      'Ricevi notifiche sui nuovi materiali di apprendimento';
+
+  @override
+  String get faqQuestion1 => 'Come collego i miei conti di investimento?';
+
+  @override
+  String get faqAnswer1 =>
+      'Per collegare i tuoi conti, vai su Profilo > Conti Collegati, seleziona il tipo di conto (CSD o CIS) e segui le istruzioni sullo schermo per connettere il tuo broker o gestore di fondi.';
+
+  @override
+  String get faqQuestion2 => 'Come deposito fondi?';
+
+  @override
+  String get faqAnswer2 =>
+      'Tocca il pulsante \'Deposita\' nella schermata principale, seleziona il metodo di pagamento (Mobile Money o Conto Bancario), inserisci l\'importo e conferma la transazione.';
+
+  @override
+  String get faqQuestion3 => 'Come prelevo denaro?';
+
+  @override
+  String get faqAnswer3 =>
+      'Vai su Portafoglio, tocca \'Preleva\', seleziona il conto di destinazione, inserisci l\'importo e conferma con il tuo PIN.';
+
+  @override
+  String get faqQuestion4 => 'Come resetto il mio PIN?';
+
+  @override
+  String get faqAnswer4 =>
+      'Vai su Profilo > Impostazioni di Sicurezza > Resetta PIN. Dovrai verificare la tua identità prima di creare un nuovo PIN.';
+
+  @override
+  String get faqQuestion5 => 'Quali sono le commissioni di transazione?';
+
+  @override
+  String get faqAnswer5 =>
+      'Le commissioni di transazione variano in base al tipo di asset e al broker. Puoi visualizzare il dettaglio delle commissioni durante la revisione dell\'ordine prima di confermare qualsiasi transazione.';
+
+  @override
+  String get faqQuestion6 => 'Come contatto l\'assistenza clienti?';
+
+  @override
+  String get faqAnswer6 =>
+      'Puoi contattarci via email a support@mula.app o chiamarci al +233 550 667 9012 durante l\'orario lavorativo (9:00 - 17:00, Lun-Ven).';
+
+  @override
+  String get faqQuestion7 => 'I miei dati sono al sicuro?';
+
+  @override
+  String get faqAnswer7 =>
+      'Sì, utilizziamo crittografia e misure di sicurezza di livello bancario per proteggere i tuoi dati. Non condividiamo mai le tue informazioni personali senza il tuo consenso. Leggi la nostra Informativa sulla Privacy per maggiori dettagli.';
+
+  @override
+  String get needHelpTitle => 'Hai bisogno di aiuto? Siamo qui per te.';
+
+  @override
+  String get needHelpSubtitle =>
+      'Trova risposte alle domande frequenti o contatta il nostro team';
+
+  @override
+  String get callOrSendEmail => 'Chiama o inviaci un\'email';
+
+  @override
+  String get sendUsEmailAt => 'Inviaci un\'email a';
+
+  @override
+  String get talkToUs => 'Parla con noi';
+
+  @override
+  String get reportIssueDescription =>
+      'Descrivi il tuo problema e ti aiuteremo il prima possibile';
+
+  @override
+  String get issueSubmittedSuccessfully =>
+      'Il tuo problema è stato inviato con successo';
+
+  @override
+  String get userSettings => 'Impostazioni Utente';
+
+  @override
+  String get logOut => 'Esci';
+
+  @override
+  String get search => 'Cerca';
+
+  @override
+  String get profile => 'Profilo';
+
+  @override
+  String get personalInformation => 'Informazioni Personali';
+
+  @override
+  String get identificationCard => 'Documento d\'Identità';
+
+  @override
+  String get notificationPreferences => 'Preferenze di Notifica';
+
+  @override
+  String get learningProgress => 'Progresso di Apprendimento';
+
+  @override
+  String get referral => 'Referral';
+
+  @override
+  String get settings => 'Impostazioni';
+
+  @override
+  String get help => 'Aiuto';
+
+  @override
+  String get aboutApp => 'Informazioni sull\'App';
+
+  @override
+  String get defaultHomePage => 'Pagina Iniziale Predefinita';
+
+  @override
+  String get language => 'Lingua';
+
+  @override
+  String get systemSettings => 'Impostazioni di Sistema';
+
+  @override
+  String get lightMode => 'Modalità Chiara';
+
+  @override
+  String get darkMode => 'Modalità Scura';
+
+  @override
+  String get system => 'Sistema';
+
+  @override
+  String get email => 'Email';
+
+  @override
+  String get phone => 'Telefono';
 }

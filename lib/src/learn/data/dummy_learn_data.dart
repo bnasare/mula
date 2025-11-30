@@ -51,6 +51,7 @@ class DummyLearnData {
         subtitle: 'Pooling money, spreading risk, growing wealth',
         type: 'Article',
         durationMinutes: 3,
+        imageUrl: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=600&fit=crop',
         category: 'mutualFunds',
       ),
       const Lesson(
@@ -59,6 +60,7 @@ class DummyLearnData {
         subtitle: 'Own a piece of your favorite companies',
         type: 'Article',
         durationMinutes: 4,
+        imageUrl: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop',
         category: 'ghanaStocks',
       ),
       const Lesson(
@@ -67,6 +69,7 @@ class DummyLearnData {
         subtitle: 'Low risk, guaranteed returns, government backed',
         type: 'Article',
         durationMinutes: 3,
+        imageUrl: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop',
         category: 'tBillsBonds',
       ),
       const Lesson(
@@ -75,6 +78,7 @@ class DummyLearnData {
         subtitle: 'Know the difference and when to invest',
         type: 'Article',
         durationMinutes: 5,
+        imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
         category: 'all',
       ),
       const Lesson(
@@ -83,6 +87,7 @@ class DummyLearnData {
         subtitle: 'A step-by-step guide for beginners',
         type: 'Article',
         durationMinutes: 6,
+        imageUrl: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop',
         category: 'all',
       ),
       const Lesson(
@@ -91,6 +96,7 @@ class DummyLearnData {
         subtitle: 'Learn about trading stocks on the GSE',
         type: 'Article',
         durationMinutes: 5,
+        imageUrl: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&h=600&fit=crop',
         category: 'ghanaStocks',
       ),
       const Lesson(
@@ -99,6 +105,7 @@ class DummyLearnData {
         subtitle: 'Higher returns, moderate risk, fixed income',
         type: 'Article',
         durationMinutes: 6,
+        imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop',
         category: 'tBillsBonds',
       ),
       const Lesson(
@@ -107,6 +114,7 @@ class DummyLearnData {
         subtitle: 'Spread your investments across different asset classes',
         type: 'Article',
         durationMinutes: 4,
+        imageUrl: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&h=600&fit=crop',
         category: 'all',
       ),
     ];
@@ -132,6 +140,7 @@ class DummyLearnData {
       date: '25th July 2025',
       durationMinutes: lessonData['duration'] as int,
       views: '20',
+      heroImageUrl: lessonData['heroImageUrl'] as String?,
       hasVideo: true,
       content: lessonData['content'] as String,
       category: lessonData['category'] as String,
@@ -147,6 +156,7 @@ class DummyLearnData {
           'title': 'What is a Mutual Fund?',
           'duration': 3,
           'category': 'mutualFunds',
+          'heroImageUrl': 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&h=800&fit=crop',
           'content': _getMutualFundContent(),
         };
       case '2':
@@ -154,6 +164,7 @@ class DummyLearnData {
           'title': 'Understanding Stocks',
           'duration': 4,
           'category': 'ghanaStocks',
+          'heroImageUrl': 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=800&fit=crop',
           'content': _getStocksContent(),
         };
       case '3':
@@ -161,6 +172,7 @@ class DummyLearnData {
           'title': 'T-Bills Explained',
           'duration': 3,
           'category': 'tBillsBonds',
+          'heroImageUrl': 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=800&fit=crop',
           'content': _getTBillsContent(),
         };
       case '4':
@@ -168,6 +180,7 @@ class DummyLearnData {
           'title': 'Bonds vs Stocks',
           'duration': 5,
           'category': 'all',
+          'heroImageUrl': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop',
           'content': _getBondsArticleContent(),
         };
       case '5':
@@ -175,6 +188,7 @@ class DummyLearnData {
           'title': 'Building Your First Portfolio',
           'duration': 6,
           'category': 'all',
+          'heroImageUrl': 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=800&fit=crop',
           'content': _getPortfolioContent(),
         };
       case '6':
@@ -182,6 +196,7 @@ class DummyLearnData {
           'title': 'Ghana Stock Exchange Basics',
           'duration': 5,
           'category': 'ghanaStocks',
+          'heroImageUrl': 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=1200&h=800&fit=crop',
           'content': _getGSEContent(),
         };
       case '7':
@@ -189,6 +204,7 @@ class DummyLearnData {
           'title': 'Corporate Bonds Explained',
           'duration': 6,
           'category': 'tBillsBonds',
+          'heroImageUrl': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=800&fit=crop',
           'content': _getCorporateBondsContent(),
         };
       case '8':
@@ -196,6 +212,7 @@ class DummyLearnData {
           'title': 'Diversification Strategies',
           'duration': 4,
           'category': 'all',
+          'heroImageUrl': 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=800&fit=crop',
           'content': _getDiversificationContent(),
         };
       default:

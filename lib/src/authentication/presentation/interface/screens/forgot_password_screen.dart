@@ -125,7 +125,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 AppButton(
                   text: context.localize.sendVerificationCode,
                   backgroundColor: AppColors.appPrimary,
-                  textColor: Colors.white,
+                  textColor: AppColors.white(context),
                   borderRadius: 12,
                   padding: EdgeInsets.zero,
                   onTap: _sendVerificationCode,

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:mula/shared/presentation/theme/app_colors.dart';
 import 'package:mula/shared/utils/extension.dart';
 
 class SocialLoginButton extends StatelessWidget {
   final String text;
   final String iconAsset;
   final VoidCallback onPressed;
-  final Color textColor;
-  final Color backgroundColor;
-  final Color borderColor;
+  final Color? textColor;
+  final Color? backgroundColor;
+  final Color? borderColor;
   final double height;
   final double iconSize;
   final double borderRadius;
@@ -17,9 +18,9 @@ class SocialLoginButton extends StatelessWidget {
     required this.text,
     required this.iconAsset,
     required this.onPressed,
-    this.textColor = Colors.black87,
-    this.backgroundColor = Colors.white,
-    this.borderColor = Colors.black12,
+    this.textColor,
+    this.backgroundColor,
+    this.borderColor,
     this.height = 12.0,
     this.iconSize = 18.0,
     this.borderRadius = 8.0,
@@ -37,7 +38,7 @@ class SocialLoginButton extends StatelessWidget {
       label: Text(
         text,
         style: TextStyle(
-          color: textColor,
+          color: textColor ?? AppColors.black(context),
           fontSize: context.responsiveFontSize(mobile: 14),
         ),
       ),
@@ -45,8 +46,8 @@ class SocialLoginButton extends StatelessWidget {
         padding: EdgeInsets.symmetric(
           vertical: context.responsiveValue(mobile: height),
         ),
-        backgroundColor: backgroundColor,
-        side: BorderSide(color: borderColor),
+        backgroundColor: backgroundColor ?? AppColors.white(context),
+        side: BorderSide(color: borderColor ?? AppColors.grey(context).withValues(alpha: 0.12)),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(borderRadius),
         ),

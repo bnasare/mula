@@ -169,7 +169,7 @@ class _FundManagerDetailsScreenState extends State<FundManagerDetailsScreen> {
           child: AppButton(
             text: context.localize.continueButton,
             backgroundColor: AppColors.appPrimary,
-            textColor: Colors.white,
+            textColor: AppColors.white(context),
             borderRadius: 12,
             padding: const EdgeInsets.all(0),
             onTap: _onContinue,

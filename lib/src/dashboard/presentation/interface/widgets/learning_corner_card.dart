@@ -52,7 +52,10 @@ class LearningCornerCard extends StatelessWidget {
           const SizedBox(height: 2),
 
           // Description
-          AppText.smaller(description, color: Colors.white.withOpacity(0.95)),
+          AppText.smaller(
+            description,
+            color: AppColors.white(context).withOpacity(0.95),
+          ),
           const SizedBox(height: 24),
 
           // Learn more button and share/save icons
@@ -68,7 +71,7 @@ class LearningCornerCard extends StatelessWidget {
                     vertical: 8,
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: AppColors.white(context),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: AppText.smallest(
@@ -118,10 +121,10 @@ class _IconButton extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.2),
+          color: AppColors.white(context).withOpacity(0.2),
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Icon(icon, size: 18, color: Colors.white),
+        child: Icon(icon, size: 18, color: AppColors.white(context)),
       ),
     );
   }

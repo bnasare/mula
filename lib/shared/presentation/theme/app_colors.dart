@@ -231,10 +231,32 @@ class AppColors {
     Color(0xFF4CAF50),
     Color(0xFF2E7D32),
   ];
+  static const List<Color> articleHeaderGreenGradient = [
+    Color(0xFF00C853),
+    Color(0xFF00E676),
+  ];
   static const List<Color> walletGradient = [
     Color(0xFF9C27B0),
     Color(0xFF7B1FA2),
     Color(0xFF6A1B9A),
+  ];
+
+  // ==================== CONFETTI COLORS ====================
+
+  static const Color confettiRed = Color(0xFFFF6B6B);
+  static const Color confettiTeal = Color(0xFF4ECDC4);
+  static const Color confettiYellow = Color(0xFFFFE66D);
+  static const Color confettiMint = Color(0xFF95E1D3);
+  static const Color confettiLightMint = Color(0xFFA8E6CF);
+  static const Color confettiGolden = Color(0xFFFFD93D);
+
+  static const List<Color> confettiColors = [
+    confettiRed,
+    confettiTeal,
+    confettiYellow,
+    confettiMint,
+    confettiLightMint,
+    confettiGolden,
   ];
 
   // ==================== CHART COLORS ====================

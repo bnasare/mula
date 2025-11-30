@@ -1346,6 +1346,18 @@ abstract class AppLocalizations {
   /// **'Total Portfolio Value'**
   String get totalPortfolioValue;
 
+  /// No description provided for @welcomeBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome Back'**
+  String get welcomeBack;
+
+  /// No description provided for @dailyChange.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Change'**
+  String get dailyChange;
+
   /// No description provided for @learningCorner.
   ///
   /// In en, this message translates to:
@@ -1393,6 +1405,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Recent Activities'**
   String get recentActivities;
+
+  /// No description provided for @marketClosed.
+  ///
+  /// In en, this message translates to:
+  /// **'Market Closed'**
+  String get marketClosed;
+
+  /// No description provided for @relevance.
+  ///
+  /// In en, this message translates to:
+  /// **'Relevance'**
+  String get relevance;
+
+  /// No description provided for @name.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get name;
+
+  /// No description provided for @stock.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock'**
+  String get stock;
+
+  /// No description provided for @tBill.
+  ///
+  /// In en, this message translates to:
+  /// **'T-Bill'**
+  String get tBill;
+
+  /// No description provided for @lesson.
+  ///
+  /// In en, this message translates to:
+  /// **'Lesson'**
+  String get lesson;
 
   /// No description provided for @viewAll.
   ///
@@ -1459,6 +1507,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Apply'**
   String get apply;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @warning.
+  ///
+  /// In en, this message translates to:
+  /// **'Warning'**
+  String get warning;
 
   /// No description provided for @balance.
   ///
@@ -1904,12 +1964,6 @@ abstract class AppLocalizations {
   /// **'View Details'**
   String get viewDetails;
 
-  /// No description provided for @cancel.
-  ///
-  /// In en, this message translates to:
-  /// **'Cancel'**
-  String get cancel;
-
   /// No description provided for @areYouSureYouWantToUnlink.
   ///
   /// In en, this message translates to:
@@ -2162,12 +2216,6 @@ abstract class AppLocalizations {
   /// **'Search by asset, fund manager, category'**
   String get searchByAsset;
 
-  /// No description provided for @relevance.
-  ///
-  /// In en, this message translates to:
-  /// **'Relevance'**
-  String get relevance;
-
   /// No description provided for @popular.
   ///
   /// In en, this message translates to:
@@ -2191,12 +2239,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'T-Bills'**
   String get tBills;
-
-  /// No description provided for @stock.
-  ///
-  /// In en, this message translates to:
-  /// **'Stock'**
-  String get stock;
 
   /// No description provided for @selectLevel.
   ///
@@ -3289,6 +3331,462 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Maturity Value'**
   String get maturityValue;
+
+  /// No description provided for @writeYourReply.
+  ///
+  /// In en, this message translates to:
+  /// **'Write your reply...'**
+  String get writeYourReply;
+
+  /// No description provided for @shareYourThoughts.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your thoughts...'**
+  String get shareYourThoughts;
+
+  /// No description provided for @postComment.
+  ///
+  /// In en, this message translates to:
+  /// **'Post Comment'**
+  String get postComment;
+
+  /// No description provided for @lessonNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'Lesson not found'**
+  String get lessonNotFound;
+
+  /// No description provided for @couldNotOpenEmailClient.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open email client'**
+  String get couldNotOpenEmailClient;
+
+  /// No description provided for @errorOpeningEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Error opening email'**
+  String get errorOpeningEmail;
+
+  /// No description provided for @couldNotOpenPhoneDialer.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open phone dialer'**
+  String get couldNotOpenPhoneDialer;
+
+  /// No description provided for @errorOpeningPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Error opening phone'**
+  String get errorOpeningPhone;
+
+  /// No description provided for @errorLoadingPreferences.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading preferences'**
+  String get errorLoadingPreferences;
+
+  /// No description provided for @errorSavingPreference.
+  ///
+  /// In en, this message translates to:
+  /// **'Error saving preference'**
+  String get errorSavingPreference;
+
+  /// No description provided for @operationTimedOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Operation timed out after {seconds} seconds'**
+  String operationTimedOut(int seconds);
+
+  /// No description provided for @requestTimedOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Request timed out after {seconds} seconds'**
+  String requestTimedOut(int seconds);
+
+  /// No description provided for @helpCenter.
+  ///
+  /// In en, this message translates to:
+  /// **'Help Center'**
+  String get helpCenter;
+
+  /// No description provided for @frequentlyAskedQuestions.
+  ///
+  /// In en, this message translates to:
+  /// **'Frequently Asked Questions'**
+  String get frequentlyAskedQuestions;
+
+  /// No description provided for @contactUs.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact Us'**
+  String get contactUs;
+
+  /// No description provided for @chooseNotifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose which notifications you want to receive'**
+  String get chooseNotifications;
+
+  /// No description provided for @accountActivity.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Activity'**
+  String get accountActivity;
+
+  /// No description provided for @marketUpdates.
+  ///
+  /// In en, this message translates to:
+  /// **'Market Updates'**
+  String get marketUpdates;
+
+  /// No description provided for @educational.
+  ///
+  /// In en, this message translates to:
+  /// **'Educational'**
+  String get educational;
+
+  /// No description provided for @depositsWithdrawalsNotif.
+  ///
+  /// In en, this message translates to:
+  /// **'Deposits and Withdrawals'**
+  String get depositsWithdrawalsNotif;
+
+  /// No description provided for @depositsWithdrawalsNotifDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get notified when funds are deposited or withdrawn'**
+  String get depositsWithdrawalsNotifDesc;
+
+  /// No description provided for @tradeConfirmationsNotif.
+  ///
+  /// In en, this message translates to:
+  /// **'Trade Confirmations'**
+  String get tradeConfirmationsNotif;
+
+  /// No description provided for @tradeConfirmationsNotifDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Receive confirmations for buy/sell orders'**
+  String get tradeConfirmationsNotifDesc;
+
+  /// No description provided for @securityAlertsNotif.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Security Alerts'**
+  String get securityAlertsNotif;
+
+  /// No description provided for @securityAlertsNotifDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Important security updates and alerts'**
+  String get securityAlertsNotifDesc;
+
+  /// No description provided for @priceAlertsNotif.
+  ///
+  /// In en, this message translates to:
+  /// **'Price Alerts'**
+  String get priceAlertsNotif;
+
+  /// No description provided for @priceAlertsNotifDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Notify when assets reach target prices'**
+  String get priceAlertsNotifDesc;
+
+  /// No description provided for @marketNewsNotif.
+  ///
+  /// In en, this message translates to:
+  /// **'Market News'**
+  String get marketNewsNotif;
+
+  /// No description provided for @marketNewsNotifDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay updated on market trends and news'**
+  String get marketNewsNotifDesc;
+
+  /// No description provided for @portfolioPerformanceNotif.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio Performance'**
+  String get portfolioPerformanceNotif;
+
+  /// No description provided for @portfolioPerformanceNotifDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly portfolio performance summaries'**
+  String get portfolioPerformanceNotifDesc;
+
+  /// No description provided for @learningRemindersNotif.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning Reminders'**
+  String get learningRemindersNotif;
+
+  /// No description provided for @learningRemindersNotifDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders to continue your learning journey'**
+  String get learningRemindersNotifDesc;
+
+  /// No description provided for @newContentNotif.
+  ///
+  /// In en, this message translates to:
+  /// **'New Content Available'**
+  String get newContentNotif;
+
+  /// No description provided for @newContentNotifDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get notified about new learning materials'**
+  String get newContentNotifDesc;
+
+  /// No description provided for @faqQuestion1.
+  ///
+  /// In en, this message translates to:
+  /// **'How do I link my investment accounts?'**
+  String get faqQuestion1;
+
+  /// No description provided for @faqAnswer1.
+  ///
+  /// In en, this message translates to:
+  /// **'To link your accounts, go to Profile > Linked Accounts, select the account type (CSD or CIS), and follow the on-screen instructions to connect your broker or fund manager.'**
+  String get faqAnswer1;
+
+  /// No description provided for @faqQuestion2.
+  ///
+  /// In en, this message translates to:
+  /// **'How do I deposit funds?'**
+  String get faqQuestion2;
+
+  /// No description provided for @faqAnswer2.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the \'Deposit\' button on the home screen, select your payment method (Mobile Money or Bank Account), enter the amount, and confirm the transaction.'**
+  String get faqAnswer2;
+
+  /// No description provided for @faqQuestion3.
+  ///
+  /// In en, this message translates to:
+  /// **'How do I withdraw money?'**
+  String get faqQuestion3;
+
+  /// No description provided for @faqAnswer3.
+  ///
+  /// In en, this message translates to:
+  /// **'Navigate to Cash Wallet, tap \'Withdraw\', select your destination account, enter the amount, and confirm with your PIN.'**
+  String get faqAnswer3;
+
+  /// No description provided for @faqQuestion4.
+  ///
+  /// In en, this message translates to:
+  /// **'How do I reset my PIN?'**
+  String get faqQuestion4;
+
+  /// No description provided for @faqAnswer4.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to Profile > Security Settings > Reset PIN. You\'ll need to verify your identity before creating a new PIN.'**
+  String get faqAnswer4;
+
+  /// No description provided for @faqQuestion5.
+  ///
+  /// In en, this message translates to:
+  /// **'What are the transaction fees?'**
+  String get faqQuestion5;
+
+  /// No description provided for @faqAnswer5.
+  ///
+  /// In en, this message translates to:
+  /// **'Transaction fees vary by asset type and broker. You can view the fee breakdown during the order review process before confirming any transaction.'**
+  String get faqAnswer5;
+
+  /// No description provided for @faqQuestion6.
+  ///
+  /// In en, this message translates to:
+  /// **'How do I contact customer support?'**
+  String get faqQuestion6;
+
+  /// No description provided for @faqAnswer6.
+  ///
+  /// In en, this message translates to:
+  /// **'You can reach us via email at support@mula.app or call us at +233 550 667 9012 during business hours (9 AM - 5 PM, Mon-Fri).'**
+  String get faqAnswer6;
+
+  /// No description provided for @faqQuestion7.
+  ///
+  /// In en, this message translates to:
+  /// **'Is my data secure?'**
+  String get faqQuestion7;
+
+  /// No description provided for @faqAnswer7.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, we use bank-level encryption and security measures to protect your data. We never share your personal information without your consent. Read our Privacy Policy for more details.'**
+  String get faqAnswer7;
+
+  /// No description provided for @needHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Need help? We\'re here for you.'**
+  String get needHelpTitle;
+
+  /// No description provided for @needHelpSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find answers to common questions or reach out to our team'**
+  String get needHelpSubtitle;
+
+  /// No description provided for @callOrSendEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Call or send us an email'**
+  String get callOrSendEmail;
+
+  /// No description provided for @sendUsEmailAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Send us an email at'**
+  String get sendUsEmailAt;
+
+  /// No description provided for @talkToUs.
+  ///
+  /// In en, this message translates to:
+  /// **'Talk to us'**
+  String get talkToUs;
+
+  /// No description provided for @reportIssueDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe your issue to us and we will help as soon as possible'**
+  String get reportIssueDescription;
+
+  /// No description provided for @issueSubmittedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Your issue has been submitted successfully'**
+  String get issueSubmittedSuccessfully;
+
+  /// No description provided for @userSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'User Settings'**
+  String get userSettings;
+
+  /// No description provided for @logOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Log Out'**
+  String get logOut;
+
+  /// No description provided for @search.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get search;
+
+  /// No description provided for @profile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get profile;
+
+  /// No description provided for @personalInformation.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal Information'**
+  String get personalInformation;
+
+  /// No description provided for @identificationCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Identification Card'**
+  String get identificationCard;
+
+  /// No description provided for @notificationPreferences.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Preferences'**
+  String get notificationPreferences;
+
+  /// No description provided for @learningProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning Progress'**
+  String get learningProgress;
+
+  /// No description provided for @referral.
+  ///
+  /// In en, this message translates to:
+  /// **'Referral'**
+  String get referral;
+
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @help.
+  ///
+  /// In en, this message translates to:
+  /// **'Help'**
+  String get help;
+
+  /// No description provided for @aboutApp.
+  ///
+  /// In en, this message translates to:
+  /// **'About App'**
+  String get aboutApp;
+
+  /// No description provided for @defaultHomePage.
+  ///
+  /// In en, this message translates to:
+  /// **'Default Home Page'**
+  String get defaultHomePage;
+
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// No description provided for @systemSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'System Settings'**
+  String get systemSettings;
+
+  /// No description provided for @lightMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Light Mode'**
+  String get lightMode;
+
+  /// No description provided for @darkMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark Mode'**
+  String get darkMode;
+
+  /// No description provided for @system.
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get system;
+
+  /// No description provided for @email.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get email;
+
+  /// No description provided for @phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone'**
+  String get phone;
 }
 
 class _AppLocalizationsDelegate

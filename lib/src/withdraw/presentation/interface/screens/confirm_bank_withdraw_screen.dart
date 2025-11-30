@@ -108,7 +108,7 @@ class ConfirmBankWithdrawScreen extends StatelessWidget {
               child: AppButton(
                 text: context.localize.next,
                 backgroundColor: AppColors.appPrimary,
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,
                 onTap: () {

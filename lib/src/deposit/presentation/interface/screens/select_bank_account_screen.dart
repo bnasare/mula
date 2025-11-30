@@ -48,7 +48,7 @@ class SelectBankAccountScreen extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 12.0),
                   child: AccountListTile(
-                    icon: _getBankIcon(account['bank']!),
+                    icon: _getBankIcon(account['bank']!, context),
                     title: account['bank']!,
                     subtitle: account['accountNumber']!,
                     onTap: () {
@@ -117,14 +117,14 @@ class SelectBankAccountScreen extends StatelessWidget {
   }
 
   /// Returns the appropriate icon for the bank
-  Widget _getBankIcon(String bank) {
+  Widget _getBankIcon(String bank, BuildContext context) {
     // Using first letter as icon
     return Text(
       bank.substring(0, 1),
-      style: const TextStyle(
+      style: TextStyle(
         fontSize: 18,
         fontWeight: FontWeight.w600,
-        color: Colors.black87,
+        color: AppColors.black(context),
       ),
     );
   }

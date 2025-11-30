@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/utils/extension.dart';
+import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
 import '../../../../notifications/presentation/interface/screens/notifications_screen.dart';
@@ -65,7 +66,7 @@ class HomeAppBar extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             AppText.small(
-                              'Welcome back 👋',
+                              '${context.localize.welcomeBack} 👋',
                               color: AppColors.secondaryText(context),
                             ),
                             const SizedBox(height: 2),

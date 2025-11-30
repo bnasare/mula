@@ -43,12 +43,8 @@ class _PinInputWidgetState extends State<PinInputWidget> {
         }
       });
 
-      // Check if PIN is complete
-      if (_pin.length == widget.pinLength) {
-        Future.delayed(const Duration(milliseconds: 500), () {
-          widget.onPinComplete(_pin);
-        });
-      }
+      // Notify parent of PIN change
+      widget.onPinComplete(_pin);
     }
   }
 
@@ -58,6 +54,8 @@ class _PinInputWidgetState extends State<PinInputWidget> {
         _pin = _pin.substring(0, _pin.length - 1);
         _lastEnteredIndex = null;
       });
+      // Notify parent of PIN change
+      widget.onPinComplete(_pin);
     }
   }
 
@@ -68,7 +66,7 @@ class _PinInputWidgetState extends State<PinInputWidget> {
       children: [
         // PIN Dots Display
         _buildPinDisplay(context),
-        const AppSpacer.vertical(40),
+        const AppSpacer.vertical(60),
         // Number Pad
         _buildNumberPad(context),
       ],
@@ -92,7 +90,7 @@ class _PinInputWidgetState extends State<PinInputWidget> {
                   ? Text(
                       _pin[index],
                       style: TextStyle(
-                        fontSize: context.responsiveFontSize(mobile: 22),
+                        fontSize: context.responsiveFontSize(mobile: 20),
                         fontWeight: FontWeight.w400,
                         color: AppColors.black(context),
                       ),

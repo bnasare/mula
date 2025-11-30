@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:mula/shared/presentation/theme/app_colors.dart';
 import 'package:mula/shared/utils/extension.dart';
 
 class OrDivider extends StatelessWidget {
   final String text;
   final TextStyle? textStyle;
   final EdgeInsetsGeometry padding;
-  final Color dividerColor;
+  final Color? dividerColor;
   final double dividerThickness;
   final double dividerHeight;
 
@@ -14,7 +15,7 @@ class OrDivider extends StatelessWidget {
     this.text = 'OR',
     this.textStyle,
     this.padding = const EdgeInsets.symmetric(horizontal: 16),
-    this.dividerColor = Colors.grey,
+    this.dividerColor,
     this.dividerThickness = 1.0,
     this.dividerHeight = 1.0,
   });
@@ -22,16 +23,18 @@ class OrDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final defaultTextStyle = TextStyle(
-      color: Colors.black54,
+      color: AppColors.secondaryText(context),
       fontSize: context.responsiveFontSize(mobile: 14),
       fontWeight: FontWeight.normal,
     );
+
+    final effectiveDividerColor = dividerColor ?? AppColors.grey(context);
 
     return Row(
       children: [
         Expanded(
           child: Divider(
-            color: dividerColor,
+            color: effectiveDividerColor,
             thickness: dividerThickness,
             height: dividerHeight,
           ),
@@ -42,7 +45,7 @@ class OrDivider extends StatelessWidget {
         ),
         Expanded(
           child: Divider(
-            color: dividerColor,
+            color: effectiveDividerColor,
             thickness: dividerThickness,
             height: dividerHeight,
           ),

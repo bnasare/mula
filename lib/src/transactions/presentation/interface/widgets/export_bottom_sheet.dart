@@ -20,9 +20,9 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      decoration: BoxDecoration(
+        color: AppColors.white(context),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
       ),
       padding: const EdgeInsets.all(24),
       child: Column(
@@ -66,8 +66,8 @@ class _ExportBottomSheetState extends State<ExportBottomSheet> {
             text: context.localize.apply,
             backgroundColor: _selectedFormat != null
                 ? AppColors.appPrimary
-                : AppColors.appPrimary.withOpacity(0.5),
-            textColor: Colors.white,
+                : AppColors.appPrimary.withValues(alpha: 0.5),
+            textColor: AppColors.white(context),
             borderRadius: 8,
             padding: EdgeInsets.zero,
             onTap: _selectedFormat != null

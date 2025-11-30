@@ -107,8 +107,8 @@ class _CommentInputBottomSheetState extends State<CommentInputBottomSheet> {
               textCapitalization: TextCapitalization.sentences,
               decoration: InputDecoration(
                 hintText: isReply
-                    ? 'Write your reply...'
-                    : 'Share your thoughts...',
+                    ? context.localize.writeYourReply
+                    : context.localize.shareYourThoughts,
                 hintStyle: TextStyle(
                   color: AppColors.secondaryText(context),
                   fontSize: 14,
@@ -165,7 +165,7 @@ class _CommentInputBottomSheetState extends State<CommentInputBottomSheet> {
                     const Icon(IconlyLight.send, size: 18),
                     const SizedBox(width: 8),
                     AppText.smaller(
-                      isReply ? context.localize.reply : 'Post Comment',
+                      isReply ? context.localize.reply : context.localize.postComment,
                       style: TextStyle(
                         color: _hasText
                             ? AppColors.white(context)

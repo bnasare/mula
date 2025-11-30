@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
@@ -120,7 +121,7 @@ class PortfolioTab extends StatelessWidget {
                     ),
                   ),
 
-                  const SliverToBoxAdapter(child: SizedBox(height: 24)),
+                  const SliverToBoxAdapter(child: SizedBox(height: 32)),
 
                   // Performance Chart
                   const SliverToBoxAdapter(child: PerformanceChart()),
@@ -359,7 +360,7 @@ class PortfolioTab extends StatelessWidget {
                       ),
                     ),
 
-                  const SliverToBoxAdapter(child: SizedBox(height: 100)),
+                  const SliverToBoxAdapter(child: AppSpacer.vLarger()),
                 ],
               ),
             ),

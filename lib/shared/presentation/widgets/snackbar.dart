@@ -44,13 +44,6 @@ class SnackBarHelper {
           ),
           decoration: BoxDecoration(
             color: Theme.of(context).colorScheme.surface,
-            boxShadow: [
-              BoxShadow(
-                color: AppColors.darkGrey(context).withOpacity(0.5),
-                offset: const Offset(0, 1),
-                blurRadius: 10,
-              ),
-            ],
             borderRadius: BorderRadius.circular(10),
           ),
           child: Row(

@@ -76,7 +76,7 @@ class _AssetDonutChartState extends State<AssetDonutChart> {
         titleStyle: TextStyle(
           fontSize: fontSize,
           fontWeight: FontWeight.bold,
-          color: Colors.white,
+          color: AppColors.white(context),
         ),
       );
     }).toList();

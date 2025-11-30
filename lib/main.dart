@@ -6,6 +6,7 @@ import 'package:mula/shared/presentation/theme/app_colors.dart';
 import 'package:provider/provider.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
+import 'core/api/locale_provider.dart';
 import 'core/api/theme_mode_provider.dart';
 import 'injection_container.dart' as di;
 import 'l10n/app_localizations.dart';
@@ -15,6 +16,7 @@ import 'shared/utils/modal_visiblity.dart';
 import 'src/dashboard/presentation/interface/screens/dashboard_screen.dart';
 import 'src/dashboard/presentation/provider/dashboard_provider.dart';
 import 'src/onboarding/presentation/bloc/onboarding_mixin.dart';
+import 'src/onboarding/presentation/interface/screens/onboarding_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,6 +31,7 @@ void main() async {
       MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (_) => ThemeProvider()),
+          ChangeNotifierProvider(create: (_) => LocaleProvider()),
           ChangeNotifierProvider(create: (_) => ConnectivityProvider()),
           ChangeNotifierProvider(create: (_) => ModalVisibleProvider()),
           ChangeNotifierProvider(create: (_) => DashboardProvider()),
@@ -58,6 +61,7 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
   @override
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProvider>(context);
+    final localeProvider = Provider.of<LocaleProvider>(context);
     final isDark = themeProvider.themeMode == ThemeMode.dark;
 
     // Set system UI overlay style
@@ -94,7 +98,8 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
             GlobalWidgetsLocalizations.delegate,
           ],
           supportedLocales: AppLocalizations.supportedLocales,
-          key: ValueKey(themeProvider.themeMode),
+          locale: localeProvider.locale,
+          key: ValueKey('${themeProvider.themeMode}_${localeProvider.locale}'),
           debugShowCheckedModeBanner: false,
           themeMode: themeProvider.themeMode,
           theme: ShadThemeData(
@@ -129,7 +134,7 @@ class _MyAppState extends State<MyApp> with OnboardingMixin {
                 return const DashboardScreen();
               } else {
                 // Show onboarding
-                return DashboardScreen();
+                return const OnboardingScreen();
               }
             },
           ),

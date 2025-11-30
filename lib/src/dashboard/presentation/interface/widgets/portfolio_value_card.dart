@@ -75,8 +75,8 @@ class _PortfolioValueCardState extends State<PortfolioValueCard> {
             children: [
               AppText.small(
                 _isBalanceVisible
-                    ? 'Daily Change: ${currencyFormat.format(widget.portfolioSummary.dailyChange.abs())}'
-                    : 'Daily Change: ••••••',
+                    ? '${context.localize.dailyChange}: ${currencyFormat.format(widget.portfolioSummary.dailyChange.abs())}'
+                    : '${context.localize.dailyChange}: ••••••',
                 color: AppColors.secondaryText(context),
               ),
               const SizedBox(width: 8),
@@ -89,7 +89,7 @@ class _PortfolioValueCardState extends State<PortfolioValueCard> {
                   decoration: BoxDecoration(
                     color: isPositive
                         ? AppColors.appPrimary.withOpacity(0.1)
-                        : Colors.red.withOpacity(0.1),
+                        : AppColors.red.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Row(
@@ -98,12 +98,12 @@ class _PortfolioValueCardState extends State<PortfolioValueCard> {
                       Icon(
                         isPositive ? Icons.arrow_upward : Icons.arrow_downward,
                         size: 12,
-                        color: isPositive ? AppColors.appPrimary : Colors.red,
+                        color: isPositive ? AppColors.appPrimary : AppColors.red,
                       ),
                       const SizedBox(width: 4),
                       AppText.smallest(
                         '${widget.portfolioSummary.dailyChangePercentage.abs().toStringAsFixed(2)}%',
-                        color: isPositive ? AppColors.appPrimary : Colors.red,
+                        color: isPositive ? AppColors.appPrimary : AppColors.red,
                       ),
                     ],
                   ),

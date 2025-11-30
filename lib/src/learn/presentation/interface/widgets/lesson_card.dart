@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
@@ -31,16 +32,44 @@ class LessonCard extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Image placeholder
-              Container(
-                width: 110,
-                decoration: BoxDecoration(
-                  color: AppColors.lightGrey(context),
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(12),
-                    bottomLeft: Radius.circular(12),
-                  ),
+              // Image
+              ClipRRect(
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(12),
+                  bottomLeft: Radius.circular(12),
                 ),
+                child: lesson.imageUrl != null
+                    ? CachedNetworkImage(
+                        imageUrl: lesson.imageUrl!,
+                        width: 110,
+                        fit: BoxFit.cover,
+                        placeholder: (context, url) => Container(
+                          width: 110,
+                          color: AppColors.lightGrey(context),
+                          child: Center(
+                            child: SizedBox(
+                              width: 24,
+                              height: 24,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2,
+                                color: AppColors.appPrimary,
+                              ),
+                            ),
+                          ),
+                        ),
+                        errorWidget: (context, url, error) => Container(
+                          width: 110,
+                          color: AppColors.lightGrey(context),
+                          child: Icon(
+                            Icons.image_not_supported_outlined,
+                            color: AppColors.secondaryText(context),
+                          ),
+                        ),
+                      )
+                    : Container(
+                        width: 110,
+                        color: AppColors.lightGrey(context),
+                      ),
               ),
               const SizedBox(width: 16),
               // Content

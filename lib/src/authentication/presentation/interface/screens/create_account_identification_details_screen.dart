@@ -198,7 +198,7 @@ class _CreateAccountIdentificationDetailsScreenState
             child: AppButton(
               text: context.localize.submit,
               backgroundColor: AppColors.appPrimary,
-              textColor: Colors.white,
+              textColor: AppColors.white(context),
               borderRadius: 12,
               padding: const EdgeInsets.all(0),
               onTap: _onSubmit,
@@ -220,7 +220,7 @@ class _CreateAccountIdentificationDetailsScreenState
         Text(
           label,
           style: TextStyle(
-            color: Colors.black54,
+            color: AppColors.secondaryText(context),
             fontSize: context.responsiveFontSize(mobile: 14),
           ),
         ),

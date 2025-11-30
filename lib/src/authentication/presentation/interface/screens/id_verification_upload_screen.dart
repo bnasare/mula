@@ -62,7 +62,7 @@ class _IdVerificationUploadScreenState
                 children: [
                   CupertinoButton(
                     onPressed: () => NavigationHelper.navigateBack(context),
-                    child: const Text('Done'),
+                    child: Text(context.localize.done),
                   ),
                 ],
               ),
@@ -224,7 +224,7 @@ class _IdVerificationUploadScreenState
               AppButton(
                 text: context.localize.next,
                 backgroundColor: AppColors.appPrimary,
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,
                 onTap: _onNext,
@@ -248,7 +248,7 @@ class _IdVerificationUploadScreenState
         Text(
           label,
           style: TextStyle(
-            color: Colors.black54,
+            color: AppColors.secondaryText(context),
             fontSize: context.responsiveFontSize(mobile: 14),
           ),
         ),

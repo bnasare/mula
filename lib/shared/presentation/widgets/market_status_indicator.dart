@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_colors.dart';
+import '../../utils/localization_extension.dart';
 import '../../utils/market_status.dart';
 import 'constants/app_text.dart';
 
@@ -14,7 +16,7 @@ class MarketStatusIndicator extends StatelessWidget {
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(color: Colors.red.withValues(alpha: 0.1)),
+      decoration: BoxDecoration(color: AppColors.red.withValues(alpha: 0.1)),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -22,15 +24,15 @@ class MarketStatusIndicator extends StatelessWidget {
             width: 6,
             height: 6,
             decoration: const BoxDecoration(
-              color: Colors.red,
+              color: AppColors.red,
               shape: BoxShape.circle,
             ),
           ),
           const SizedBox(width: 6),
           AppText.smallest(
-            'Market Closed',
+            context.localize.marketClosed,
             style: const TextStyle(
-              color: Colors.red,
+              color: AppColors.red,
               fontWeight: FontWeight.w500,
             ),
           ),

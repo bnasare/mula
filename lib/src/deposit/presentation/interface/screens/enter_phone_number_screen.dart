@@ -144,7 +144,7 @@ class _EnterPhoneNumberScreenState extends State<EnterPhoneNumberScreen> {
                 backgroundColor: _isFormValid
                     ? AppColors.appPrimary
                     : AppColors.grey(context),
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,
                 onTap: _isFormValid

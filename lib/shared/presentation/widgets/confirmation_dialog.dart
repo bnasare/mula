@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../shared/utils/extension.dart';
+import '../../../shared/utils/localization_extension.dart';
 import '../theme/app_colors.dart';
 
 /// A reusable confirmation dialog that matches modern design patterns
@@ -36,7 +37,7 @@ class ConfirmationDialog extends StatelessWidget {
     required this.title,
     required this.description,
     required this.primaryButtonLabel,
-    this.secondaryButtonLabel = 'Cancel',
+    this.secondaryButtonLabel,
     this.onPrimaryAction,
     this.onSecondaryAction,
     this.primaryButtonColor,
@@ -54,7 +55,7 @@ class ConfirmationDialog extends StatelessWidget {
   final String primaryButtonLabel;
 
   /// Label for the secondary/cancel button
-  final String secondaryButtonLabel;
+  final String? secondaryButtonLabel;
 
   /// Callback for primary action
   final VoidCallback? onPrimaryAction;
@@ -160,7 +161,7 @@ class ConfirmationDialog extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  secondaryButtonLabel,
+                  secondaryButtonLabel ?? context.localize.cancel,
                   style: TextStyle(
                     fontSize: context.responsiveFontSize(mobile: 16),
                     fontWeight: FontWeight.w500,

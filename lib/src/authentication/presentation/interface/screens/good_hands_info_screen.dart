@@ -9,10 +9,12 @@ import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
+import '../../../../../src/dashboard/presentation/interface/screens/dashboard_screen.dart';
+import '../../../../../src/onboarding/presentation/bloc/onboarding_mixin.dart';
 import 'link_investment_accounts_screen.dart';
 import 'select_fund_manager_screen.dart';
 
-class GoodHandsInfoScreen extends StatelessWidget {
+class GoodHandsInfoScreen extends StatefulWidget {
   final bool isCisFlow;
   final bool useNormalAppBar;
 
@@ -33,9 +35,14 @@ class GoodHandsInfoScreen extends StatelessWidget {
       useNormalAppBar = true;
 
   @override
+  State<GoodHandsInfoScreen> createState() => _GoodHandsInfoScreenState();
+}
+
+class _GoodHandsInfoScreenState extends State<GoodHandsInfoScreen> with OnboardingMixin {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: useNormalAppBar || isCisFlow
+      appBar: widget.useNormalAppBar || widget.isCisFlow
           ? MulaAppBarHelpers.simple(
               onBackPressed: () => Navigator.pop(context),
               title: '',
@@ -111,7 +118,7 @@ class GoodHandsInfoScreen extends StatelessWidget {
               ),
               const Spacer(),
               // Buttons - different for CIS flow
-              if (isCisFlow)
+              if (widget.isCisFlow)
                 Row(
                   children: [
                     Expanded(
@@ -137,11 +144,14 @@ class GoodHandsInfoScreen extends StatelessWidget {
                       child: AppButton(
                         text: context.localize.done,
                         backgroundColor: AppColors.appPrimary,
-                        textColor: Colors.white,
+                        textColor: AppColors.white(context),
                         borderRadius: 12,
                         padding: EdgeInsets.zero,
                         onTap: () {
-                          // Do nothing as requested
+                          NavigationHelper.navigateToAndRemoveUntil(
+                            context,
+                            const DashboardScreen(),
+                          );
                         },
                       ),
                     ),
@@ -151,12 +161,12 @@ class GoodHandsInfoScreen extends StatelessWidget {
                 AppButton(
                   text: context.localize.continueButton,
                   backgroundColor: AppColors.appPrimary,
-                  textColor: Colors.white,
+                  textColor: AppColors.white(context),
                   borderRadius: 12,
                   padding: EdgeInsets.zero,
                   onTap: () {
                     // Only navigate if not from CSD flow
-                    if (!useNormalAppBar) {
+                    if (!widget.useNormalAppBar) {
                       NavigationHelper.navigateTo(
                         context,
                         const LinkInvestmentAccountsScreen(),

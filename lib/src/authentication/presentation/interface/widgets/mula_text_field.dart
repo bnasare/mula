@@ -120,7 +120,7 @@ class MulaTextField extends StatelessWidget {
                   labelText!,
                   style: TextStyle(
                     fontSize: context.responsiveFontSize(mobile: 14),
-                    color: Colors.black54,
+                    color: AppColors.secondaryText(context),
                   ),
                 ),
                 const Spacer(),
@@ -131,7 +131,7 @@ class MulaTextField extends StatelessWidget {
                       "${value.text.length}/${maxLength ?? 40}",
                       style: TextStyle(
                         fontSize: context.responsiveFontSize(mobile: 14),
-                        color: Colors.black54,
+                        color: AppColors.secondaryText(context),
                       ),
                     );
                   },
@@ -142,7 +142,7 @@ class MulaTextField extends StatelessWidget {
             Text(
               labelText!,
               style: TextStyle(
-                color: Colors.black54,
+                color: AppColors.secondaryText(context),
                 fontSize: context.responsiveFontSize(mobile: 14),
               ),
             ),
@@ -167,7 +167,7 @@ class MulaTextField extends StatelessWidget {
                 style:
                     style ??
                     TextStyle(
-                      color: Colors.black87,
+                      color: AppColors.black(context),
                       fontSize: context.responsiveFontSize(mobile: 14),
                     ),
                 readOnly: readOnly,

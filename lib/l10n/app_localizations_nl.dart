@@ -664,6 +664,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get totalPortfolioValue => 'Totale Portfoliowaarde';
 
   @override
+  String get welcomeBack => 'Welkom terug';
+
+  @override
+  String get dailyChange => 'Dagelijkse Verandering';
+
+  @override
   String get learningCorner => 'Leerhoek';
 
   @override
@@ -686,6 +692,24 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get recentActivities => 'Recente Activiteiten';
+
+  @override
+  String get marketClosed => 'Markt gesloten';
+
+  @override
+  String get relevance => 'Relevantie';
+
+  @override
+  String get name => 'Naam';
+
+  @override
+  String get stock => 'Aandeel';
+
+  @override
+  String get tBill => 'Schatkistpapier';
+
+  @override
+  String get lesson => 'Les';
 
   @override
   String get viewAll => 'Alles bekijken';
@@ -719,6 +743,12 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get apply => 'Toepassen';
+
+  @override
+  String get cancel => 'Annuleren';
+
+  @override
+  String get warning => 'Waarschuwing';
 
   @override
   String get balance => 'Saldo';
@@ -947,9 +977,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get viewDetails => 'Details Bekijken';
 
   @override
-  String get cancel => 'Annuleren';
-
-  @override
   String get areYouSureYouWantToUnlink =>
       'Weet je zeker dat je dit account wilt ontkoppelen?';
 
@@ -1103,9 +1130,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get searchByAsset => 'Zoeken op activum';
 
   @override
-  String get relevance => 'Relevantie';
-
-  @override
   String get popular => 'Populair';
 
   @override
@@ -1116,9 +1140,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get tBills => 'Schatkistpapier';
-
-  @override
-  String get stock => 'Aandeel';
 
   @override
   String get selectLevel => 'Selecteer niveau';
@@ -1681,4 +1702,253 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get maturityValue => 'Waarde op vervaldag';
+
+  @override
+  String get writeYourReply => 'Schrijf je antwoord';
+
+  @override
+  String get shareYourThoughts => 'Deel je gedachten';
+
+  @override
+  String get postComment => 'Plaats opmerking';
+
+  @override
+  String get lessonNotFound => 'Les niet gevonden';
+
+  @override
+  String get couldNotOpenEmailClient => 'Kon e-mailclient niet openen';
+
+  @override
+  String get errorOpeningEmail => 'Fout bij openen van e-mail';
+
+  @override
+  String get couldNotOpenPhoneDialer => 'Kon telefoonkiezer niet openen';
+
+  @override
+  String get errorOpeningPhone => 'Fout bij openen van telefoon';
+
+  @override
+  String get errorLoadingPreferences => 'Fout bij laden van voorkeuren';
+
+  @override
+  String get errorSavingPreference => 'Fout bij opslaan van voorkeur';
+
+  @override
+  String operationTimedOut(int seconds) {
+    return 'Bewerking is verlopen na $seconds seconden';
+  }
+
+  @override
+  String requestTimedOut(int seconds) {
+    return 'Verzoek is verlopen na $seconds seconden';
+  }
+
+  @override
+  String get helpCenter => 'Helpcentrum';
+
+  @override
+  String get frequentlyAskedQuestions => 'Veelgestelde Vragen';
+
+  @override
+  String get contactUs => 'Neem Contact Op';
+
+  @override
+  String get chooseNotifications => 'Kies welke meldingen u wilt ontvangen';
+
+  @override
+  String get accountActivity => 'Accountactiviteit';
+
+  @override
+  String get marketUpdates => 'Marktupdates';
+
+  @override
+  String get educational => 'Educatief';
+
+  @override
+  String get depositsWithdrawalsNotif => 'Stortingen en Opnames';
+
+  @override
+  String get depositsWithdrawalsNotifDesc =>
+      'Ontvang meldingen wanneer geld wordt gestort of opgenomen';
+
+  @override
+  String get tradeConfirmationsNotif => 'Handelsbevestigingen';
+
+  @override
+  String get tradeConfirmationsNotifDesc =>
+      'Ontvang bevestigingen voor koop-/verkooporders';
+
+  @override
+  String get securityAlertsNotif => 'Accountbeveiligingswaarschuwingen';
+
+  @override
+  String get securityAlertsNotifDesc =>
+      'Belangrijke beveiligingsupdates en waarschuwingen';
+
+  @override
+  String get priceAlertsNotif => 'Prijswaarschuwingen';
+
+  @override
+  String get priceAlertsNotifDesc =>
+      'Melding wanneer activa doelprijzen bereiken';
+
+  @override
+  String get marketNewsNotif => 'Marktnieuws';
+
+  @override
+  String get marketNewsNotifDesc =>
+      'Blijf op de hoogte van markttrends en nieuws';
+
+  @override
+  String get portfolioPerformanceNotif => 'Portfolioprestaties';
+
+  @override
+  String get portfolioPerformanceNotifDesc =>
+      'Wekelijkse samenvattingen van portfolioprestaties';
+
+  @override
+  String get learningRemindersNotif => 'Leerherinneringen';
+
+  @override
+  String get learningRemindersNotifDesc =>
+      'Herinneringen om uw leertraject voort te zetten';
+
+  @override
+  String get newContentNotif => 'Nieuwe Inhoud Beschikbaar';
+
+  @override
+  String get newContentNotifDesc =>
+      'Ontvang meldingen over nieuw leermateriaal';
+
+  @override
+  String get faqQuestion1 => 'Hoe koppel ik mijn beleggingsrekeningen?';
+
+  @override
+  String get faqAnswer1 =>
+      'Om uw rekeningen te koppelen, ga naar Profiel > Gekoppelde Rekeningen, selecteer het rekeningtype (CSD of CIS) en volg de instructies op het scherm om uw makelaar of fondsbeheerder te verbinden.';
+
+  @override
+  String get faqQuestion2 => 'Hoe stort ik geld?';
+
+  @override
+  String get faqAnswer2 =>
+      'Tik op de knop \'Storten\' op het startscherm, selecteer uw betaalmethode (Mobile Money of Bankrekening), voer het bedrag in en bevestig de transactie.';
+
+  @override
+  String get faqQuestion3 => 'Hoe neem ik geld op?';
+
+  @override
+  String get faqAnswer3 =>
+      'Ga naar Portemonnee, tik op \'Opnemen\', selecteer uw doelrekening, voer het bedrag in en bevestig met uw PIN.';
+
+  @override
+  String get faqQuestion4 => 'Hoe reset ik mijn PIN?';
+
+  @override
+  String get faqAnswer4 =>
+      'Ga naar Profiel > Beveiligingsinstellingen > PIN Resetten. U moet uw identiteit verifiëren voordat u een nieuwe PIN kunt maken.';
+
+  @override
+  String get faqQuestion5 => 'Wat zijn de transactiekosten?';
+
+  @override
+  String get faqAnswer5 =>
+      'Transactiekosten variëren per activatype en makelaar. U kunt de kostenspecificatie bekijken tijdens het orderbeoordelingsproces voordat u een transactie bevestigt.';
+
+  @override
+  String get faqQuestion6 => 'Hoe neem ik contact op met de klantenservice?';
+
+  @override
+  String get faqAnswer6 =>
+      'U kunt ons bereiken via e-mail op support@mula.app of bel ons op +233 550 667 9012 tijdens kantooruren (9:00 - 17:00, ma-vr).';
+
+  @override
+  String get faqQuestion7 => 'Zijn mijn gegevens veilig?';
+
+  @override
+  String get faqAnswer7 =>
+      'Ja, we gebruiken encryptie en beveiligingsmaatregelen op bankniveau om uw gegevens te beschermen. We delen uw persoonlijke informatie nooit zonder uw toestemming. Lees ons Privacybeleid voor meer details.';
+
+  @override
+  String get needHelpTitle => 'Hulp nodig? Wij staan voor u klaar.';
+
+  @override
+  String get needHelpSubtitle =>
+      'Vind antwoorden op veelgestelde vragen of neem contact op met ons team';
+
+  @override
+  String get callOrSendEmail => 'Bel of stuur een e-mail';
+
+  @override
+  String get sendUsEmailAt => 'Stuur ons een e-mail naar';
+
+  @override
+  String get talkToUs => 'Praat met ons';
+
+  @override
+  String get reportIssueDescription =>
+      'Beschrijf uw probleem en wij helpen u zo snel mogelijk';
+
+  @override
+  String get issueSubmittedSuccessfully => 'Uw probleem is succesvol ingediend';
+
+  @override
+  String get userSettings => 'Gebruikersinstellingen';
+
+  @override
+  String get logOut => 'Uitloggen';
+
+  @override
+  String get search => 'Zoeken';
+
+  @override
+  String get profile => 'Profiel';
+
+  @override
+  String get personalInformation => 'Persoonlijke Informatie';
+
+  @override
+  String get identificationCard => 'Identiteitskaart';
+
+  @override
+  String get notificationPreferences => 'Notificatievoorkeuren';
+
+  @override
+  String get learningProgress => 'Leervoortgang';
+
+  @override
+  String get referral => 'Verwijzing';
+
+  @override
+  String get settings => 'Instellingen';
+
+  @override
+  String get help => 'Help';
+
+  @override
+  String get aboutApp => 'Over de App';
+
+  @override
+  String get defaultHomePage => 'Standaard Startpagina';
+
+  @override
+  String get language => 'Taal';
+
+  @override
+  String get systemSettings => 'Systeeminstellingen';
+
+  @override
+  String get lightMode => 'Lichte Modus';
+
+  @override
+  String get darkMode => 'Donkere Modus';
+
+  @override
+  String get system => 'Systeem';
+
+  @override
+  String get email => 'E-mail';
+
+  @override
+  String get phone => 'Telefoon';
 }

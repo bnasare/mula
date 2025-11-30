@@ -26,7 +26,7 @@ class MulaBackButton extends StatelessWidget {
           context.responsivePadding(mobile: const EdgeInsets.all(8)).top,
         ),
         decoration: BoxDecoration(
-          color: backgroundColor ?? AppColors.newGrey(context),
+          color: backgroundColor ?? AppColors.white(context),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Icon(

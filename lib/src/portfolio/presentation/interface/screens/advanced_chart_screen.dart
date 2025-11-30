@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../domain/entities/price_bar.dart';

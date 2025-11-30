@@ -37,7 +37,7 @@ class PortfolioSection extends StatelessWidget {
             height: 20,
             width: 150,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: AppColors.white(context),
               borderRadius: BorderRadius.circular(4),
             ),
           ),
@@ -46,7 +46,7 @@ class PortfolioSection extends StatelessWidget {
             height: 40,
             width: 200,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: AppColors.white(context),
               borderRadius: BorderRadius.circular(4),
             ),
           ),

@@ -10,6 +10,9 @@ import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/presentation/widgets/pin_input_widget.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
+import '../../../../../shared/utils/navigation.dart';
+import '../../../../../src/dashboard/presentation/interface/screens/dashboard_screen.dart';
+import '../../../../../src/onboarding/presentation/bloc/onboarding_mixin.dart';
 
 class EnterPinScreen extends StatefulWidget {
   const EnterPinScreen({super.key});
@@ -18,7 +21,7 @@ class EnterPinScreen extends StatefulWidget {
   State<EnterPinScreen> createState() => _EnterPinScreenState();
 }
 
-class _EnterPinScreenState extends State<EnterPinScreen> {
+class _EnterPinScreenState extends State<EnterPinScreen> with OnboardingMixin {
   String _pin = '';
 
   void _onPinComplete(String pin) {
@@ -30,13 +33,19 @@ class _EnterPinScreenState extends State<EnterPinScreen> {
   void _onContinue() {
     if (_pin.length == 4) {
       // TODO: Verify PIN with backend
-      Navigator.pop(context);
+      NavigationHelper.navigateToAndRemoveUntil(
+        context,
+        const DashboardScreen(),
+      );
     }
   }
 
   void _onFaceIdTap() {
     // TODO: Implement Face ID authentication
-    Navigator.pop(context);
+    NavigationHelper.navigateToAndRemoveUntil(
+      context,
+      const DashboardScreen(),
+    );
   }
 
   @override

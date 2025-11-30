@@ -52,12 +52,11 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
           title: '',
           onBackPressed: () => Navigator.of(context).pop(),
         ),
-        body: Center(child: AppText.small('Lesson not found')),
+        body: Center(child: AppText.small(context.localize.lessonNotFound)),
       );
     }
 
     return Scaffold(
-      backgroundColor: AppColors.offWhite(context),
       appBar: MulaAppBar(
         title: lessonDetail!.title,
         onBackPressed: () => Navigator.of(context).pop(),
@@ -65,7 +64,7 @@ class _LessonDetailScreenState extends State<LessonDetailScreen> {
           IconButton(
             icon: Icon(
               Icons.share_outlined,
-              color: AppColors.defaultText(context),
+              color: AppColors.secondaryText(context),
             ),
             onPressed: () {
               // TODO: Implement share functionality

@@ -78,7 +78,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                 children: [
                   CupertinoButton(
                     onPressed: () => NavigationHelper.navigateBack(context),
-                    child: const Text('Done'),
+                    child: Text(context.localize.done),
                   ),
                 ],
               ),
@@ -210,7 +210,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
             child: AppButton(
               text: context.localize.continueButton,
               backgroundColor: AppColors.appPrimary,
-              textColor: Colors.white,
+              textColor: AppColors.white(context),
               borderRadius: 12,
               padding: EdgeInsets.all(0),
               onTap: _onContinue,

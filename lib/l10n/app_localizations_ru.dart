@@ -664,6 +664,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get totalPortfolioValue => 'Общая стоимость портфеля';
 
   @override
+  String get welcomeBack => 'С возвращением';
+
+  @override
+  String get dailyChange => 'Дневное изменение';
+
+  @override
   String get learningCorner => 'Уголок обучения';
 
   @override
@@ -686,6 +692,24 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get recentActivities => 'Недавние действия';
+
+  @override
+  String get marketClosed => 'Рынок закрыт';
+
+  @override
+  String get relevance => 'Актуальности';
+
+  @override
+  String get name => 'Имя';
+
+  @override
+  String get stock => 'Акция';
+
+  @override
+  String get tBill => 'Казначейский вексель';
+
+  @override
+  String get lesson => 'Урок';
 
   @override
   String get viewAll => 'Посмотреть все';
@@ -719,6 +743,12 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get apply => 'Применить';
+
+  @override
+  String get cancel => 'Отмена';
+
+  @override
+  String get warning => 'Предупреждение';
 
   @override
   String get balance => 'Баланс';
@@ -947,9 +977,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get viewDetails => 'Посмотреть Детали';
 
   @override
-  String get cancel => 'Отмена';
-
-  @override
   String get areYouSureYouWantToUnlink =>
       'Вы уверены, что хотите отвязать этот счет?';
 
@@ -1103,9 +1130,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get searchByAsset => 'Поиск по активу';
 
   @override
-  String get relevance => 'Актуальности';
-
-  @override
   String get popular => 'Популярное';
 
   @override
@@ -1116,9 +1140,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tBills => 'Казначейские Векселя';
-
-  @override
-  String get stock => 'Акция';
 
   @override
   String get selectLevel => 'Выбрать уровень';
@@ -1680,4 +1701,253 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get maturityValue => 'Стоимость при погашении';
+
+  @override
+  String get writeYourReply => 'Напишите свой ответ';
+
+  @override
+  String get shareYourThoughts => 'Поделитесь своими мыслями';
+
+  @override
+  String get postComment => 'Опубликовать комментарий';
+
+  @override
+  String get lessonNotFound => 'Урок не найден';
+
+  @override
+  String get couldNotOpenEmailClient => 'Не удалось открыть почтовый клиент';
+
+  @override
+  String get errorOpeningEmail => 'Ошибка при открытии почты';
+
+  @override
+  String get couldNotOpenPhoneDialer => 'Не удалось открыть номеронабиратель';
+
+  @override
+  String get errorOpeningPhone => 'Ошибка при открытии телефона';
+
+  @override
+  String get errorLoadingPreferences => 'Ошибка загрузки настроек';
+
+  @override
+  String get errorSavingPreference => 'Ошибка сохранения настройки';
+
+  @override
+  String operationTimedOut(int seconds) {
+    return 'Операция завершилась по тайм-ауту через $seconds секунд';
+  }
+
+  @override
+  String requestTimedOut(int seconds) {
+    return 'Запрос завершился по тайм-ауту через $seconds секунд';
+  }
+
+  @override
+  String get helpCenter => 'Центр Помощи';
+
+  @override
+  String get frequentlyAskedQuestions => 'Часто Задаваемые Вопросы';
+
+  @override
+  String get contactUs => 'Связаться с нами';
+
+  @override
+  String get chooseNotifications =>
+      'Выберите, какие уведомления вы хотите получать';
+
+  @override
+  String get accountActivity => 'Активность Аккаунта';
+
+  @override
+  String get marketUpdates => 'Обновления Рынка';
+
+  @override
+  String get educational => 'Образовательный';
+
+  @override
+  String get depositsWithdrawalsNotif => 'Депозиты и Выводы';
+
+  @override
+  String get depositsWithdrawalsNotifDesc =>
+      'Получайте уведомления о внесении или выводе средств';
+
+  @override
+  String get tradeConfirmationsNotif => 'Подтверждения Сделок';
+
+  @override
+  String get tradeConfirmationsNotifDesc =>
+      'Получайте подтверждения ордеров на покупку/продажу';
+
+  @override
+  String get securityAlertsNotif => 'Оповещения о Безопасности Аккаунта';
+
+  @override
+  String get securityAlertsNotifDesc =>
+      'Важные обновления и оповещения безопасности';
+
+  @override
+  String get priceAlertsNotif => 'Ценовые Оповещения';
+
+  @override
+  String get priceAlertsNotifDesc =>
+      'Уведомлять, когда активы достигнут целевых цен';
+
+  @override
+  String get marketNewsNotif => 'Новости Рынка';
+
+  @override
+  String get marketNewsNotifDesc =>
+      'Будьте в курсе рыночных тенденций и новостей';
+
+  @override
+  String get portfolioPerformanceNotif => 'Показатели Портфеля';
+
+  @override
+  String get portfolioPerformanceNotifDesc =>
+      'Еженедельные сводки показателей портфеля';
+
+  @override
+  String get learningRemindersNotif => 'Напоминания об Обучении';
+
+  @override
+  String get learningRemindersNotifDesc => 'Напоминания о продолжении обучения';
+
+  @override
+  String get newContentNotif => 'Доступен Новый Контент';
+
+  @override
+  String get newContentNotifDesc =>
+      'Получайте уведомления о новых учебных материалах';
+
+  @override
+  String get faqQuestion1 => 'Как привязать мои инвестиционные счета?';
+
+  @override
+  String get faqAnswer1 =>
+      'Чтобы привязать счета, перейдите в Профиль > Привязанные Счета, выберите тип счета (CSD или CIS) и следуйте инструкциям на экране для подключения брокера или управляющего фондами.';
+
+  @override
+  String get faqQuestion2 => 'Как внести средства?';
+
+  @override
+  String get faqAnswer2 =>
+      'Нажмите кнопку \'Внести\' на главном экране, выберите способ оплаты (Mobile Money или Банковский счет), введите сумму и подтвердите транзакцию.';
+
+  @override
+  String get faqQuestion3 => 'Как вывести деньги?';
+
+  @override
+  String get faqAnswer3 =>
+      'Перейдите в Кошелек, нажмите \'Вывести\', выберите счет назначения, введите сумму и подтвердите PIN-кодом.';
+
+  @override
+  String get faqQuestion4 => 'Как сбросить PIN-код?';
+
+  @override
+  String get faqAnswer4 =>
+      'Перейдите в Профиль > Настройки Безопасности > Сбросить PIN. Вам нужно будет подтвердить свою личность перед созданием нового PIN-кода.';
+
+  @override
+  String get faqQuestion5 => 'Какие комиссии за транзакции?';
+
+  @override
+  String get faqAnswer5 =>
+      'Комиссии за транзакции зависят от типа актива и брокера. Вы можете увидеть разбивку комиссий при просмотре ордера перед подтверждением любой транзакции.';
+
+  @override
+  String get faqQuestion6 => 'Как связаться со службой поддержки?';
+
+  @override
+  String get faqAnswer6 =>
+      'Вы можете связаться с нами по электронной почте support@mula.app или позвонить по номеру +233 550 667 9012 в рабочие часы (9:00 - 17:00, Пн-Пт).';
+
+  @override
+  String get faqQuestion7 => 'Мои данные в безопасности?';
+
+  @override
+  String get faqAnswer7 =>
+      'Да, мы используем шифрование и меры безопасности банковского уровня для защиты ваших данных. Мы никогда не передаем вашу личную информацию без вашего согласия. Прочитайте нашу Политику Конфиденциальности для получения подробностей.';
+
+  @override
+  String get needHelpTitle => 'Нужна помощь? Мы здесь для вас.';
+
+  @override
+  String get needHelpSubtitle =>
+      'Найдите ответы на частые вопросы или свяжитесь с нашей командой';
+
+  @override
+  String get callOrSendEmail => 'Позвоните или отправьте электронное письмо';
+
+  @override
+  String get sendUsEmailAt => 'Напишите нам на';
+
+  @override
+  String get talkToUs => 'Свяжитесь с нами';
+
+  @override
+  String get reportIssueDescription =>
+      'Опишите вашу проблему, и мы поможем как можно скорее';
+
+  @override
+  String get issueSubmittedSuccessfully => 'Ваше обращение успешно отправлено';
+
+  @override
+  String get userSettings => 'Настройки пользователя';
+
+  @override
+  String get logOut => 'Выйти';
+
+  @override
+  String get search => 'Поиск';
+
+  @override
+  String get profile => 'Профиль';
+
+  @override
+  String get personalInformation => 'Личная информация';
+
+  @override
+  String get identificationCard => 'Удостоверение личности';
+
+  @override
+  String get notificationPreferences => 'Настройки уведомлений';
+
+  @override
+  String get learningProgress => 'Прогресс обучения';
+
+  @override
+  String get referral => 'Реферал';
+
+  @override
+  String get settings => 'Настройки';
+
+  @override
+  String get help => 'Помощь';
+
+  @override
+  String get aboutApp => 'О приложении';
+
+  @override
+  String get defaultHomePage => 'Главная страница по умолчанию';
+
+  @override
+  String get language => 'Язык';
+
+  @override
+  String get systemSettings => 'Системные настройки';
+
+  @override
+  String get lightMode => 'Светлый режим';
+
+  @override
+  String get darkMode => 'Темный режим';
+
+  @override
+  String get system => 'Система';
+
+  @override
+  String get email => 'Электронная почта';
+
+  @override
+  String get phone => 'Телефон';
 }

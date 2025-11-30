@@ -120,7 +120,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 AppButton(
                   text: context.localize.signIn,
                   backgroundColor: AppColors.appPrimary,
-                  textColor: Colors.white,
+                  textColor: AppColors.white(context),
                   borderRadius: 12,
                   padding: EdgeInsets.zero,
                   onTap: () {

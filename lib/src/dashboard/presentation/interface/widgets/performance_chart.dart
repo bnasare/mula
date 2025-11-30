@@ -111,9 +111,9 @@ class _PerformanceChartState extends State<PerformanceChart> {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          AppColors.activitySuccess.withOpacity(0.3),
-                          AppColors.activitySuccess.withOpacity(0.1),
-                          AppColors.activitySuccess.withOpacity(0.0),
+                          AppColors.activitySuccess.withValues(alpha: 0.3),
+                          AppColors.activitySuccess.withValues(alpha: 0.1),
+                          AppColors.activitySuccess.withValues(alpha: 0.0),
                         ],
                       ),
                     ),
@@ -151,7 +151,7 @@ class _PerformanceChartState extends State<PerformanceChart> {
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(
-                  color: isSelected ? Colors.white : AppColors.transparent,
+                  color: isSelected ? AppColors.white(context) : AppColors.transparent,
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Center(

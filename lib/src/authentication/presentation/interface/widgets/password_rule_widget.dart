@@ -25,13 +25,13 @@ class PasswordRuleWidget extends StatelessWidget {
           height: context.responsiveValue(mobile: 12),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: isActive ? Colors.green : AppColors.transparent,
-            border: isActive ? null : Border.all(color: Colors.grey),
+            color: isActive ? AppColors.success : AppColors.transparent,
+            border: isActive ? null : Border.all(color: AppColors.grey(context)),
           ),
           child: isActive
               ? Icon(
                   CupertinoIcons.check_mark,
-                  color: Colors.white,
+                  color: AppColors.white(context),
                   size: context.responsiveValue(mobile: 10),
                 )
               : null,
@@ -41,7 +41,7 @@ class PasswordRuleWidget extends StatelessWidget {
           child: AppText.smallest(
             rule,
             style: TextStyle(
-              color: isActive ? Colors.black87 : Colors.black54,
+              color: isActive ? AppColors.black(context) : AppColors.secondaryText(context),
               overflow: TextOverflow.ellipsis,
               fontSize: context.responsiveFontSize(mobile: 12),
             ),

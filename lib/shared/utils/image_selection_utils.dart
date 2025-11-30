@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../presentation/theme/app_colors.dart';
 import '../presentation/widgets/snackbar.dart';
 import 'extension.dart';
 import 'image_cropper.dart';
@@ -41,12 +42,12 @@ class ImageSelectionUtils {
                 leading: Icon(
                   IconlyBold.camera,
                   size: context.responsiveValue(mobile: 20.0),
-                  color: Colors.black54,
+                  color: AppColors.secondaryText(context),
                 ),
                 title: Text(
                   cameraText ?? context.localize.takePhoto,
                   style: TextStyle(
-                    color: Colors.black87,
+                    color: AppColors.black(context),
                     fontSize: context.responsiveFontSize(mobile: 14),
                   ),
                 ),
@@ -63,12 +64,12 @@ class ImageSelectionUtils {
                 leading: Icon(
                   IconlyBold.image,
                   size: context.responsiveValue(mobile: 20.0),
-                  color: Colors.black54,
+                  color: AppColors.secondaryText(context),
                 ),
                 title: Text(
                   galleryText ?? context.localize.uploadFromGallery,
                   style: TextStyle(
-                    color: Colors.black87,
+                    color: AppColors.black(context),
                     fontSize: context.responsiveFontSize(mobile: 14),
                   ),
                 ),
@@ -117,7 +118,7 @@ class ImageSelectionUtils {
                 leading: Icon(
                   IconlyBold.camera,
                   size: context.responsiveValue(mobile: 20.0),
-                  color: Colors.black54,
+                  color: AppColors.secondaryText(context),
                 ),
                 title: Text(
                   changeText ??
@@ -125,7 +126,7 @@ class ImageSelectionUtils {
                           ? context.localize.changeProfileImage
                           : context.localize.changeCoverImage),
                   style: TextStyle(
-                    color: Colors.black87,
+                    color: AppColors.black(context),
                     fontSize: context.responsiveFontSize(mobile: 14),
                   ),
                 ),
@@ -142,12 +143,12 @@ class ImageSelectionUtils {
                 leading: Icon(
                   IconlyBold.delete,
                   size: context.responsiveValue(mobile: 20.0),
-                  color: Colors.black54,
+                  color: AppColors.secondaryText(context),
                 ),
                 title: Text(
                   removeText ?? context.localize.removeImage,
                   style: TextStyle(
-                    color: Colors.black87,
+                    color: AppColors.black(context),
                     fontSize: context.responsiveFontSize(mobile: 14),
                   ),
                 ),

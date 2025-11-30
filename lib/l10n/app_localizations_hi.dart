@@ -659,6 +659,12 @@ class AppLocalizationsHi extends AppLocalizations {
   String get totalPortfolioValue => 'कुल पोर्टफोलियो मूल्य';
 
   @override
+  String get welcomeBack => 'वापसी पर स्वागत है';
+
+  @override
+  String get dailyChange => 'दैनिक परिवर्तन';
+
+  @override
   String get learningCorner => 'लर्निंग कॉर्नर';
 
   @override
@@ -681,6 +687,24 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get recentActivities => 'हाल की गतिविधियां';
+
+  @override
+  String get marketClosed => 'बाजार बंद है';
+
+  @override
+  String get relevance => 'प्रासंगिकता';
+
+  @override
+  String get name => 'नाम';
+
+  @override
+  String get stock => 'स्टॉक';
+
+  @override
+  String get tBill => 'ट्रेजरी बिल';
+
+  @override
+  String get lesson => 'पाठ';
 
   @override
   String get viewAll => 'सभी देखें';
@@ -714,6 +738,12 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get apply => 'लागू करें';
+
+  @override
+  String get cancel => 'रद्द करें';
+
+  @override
+  String get warning => 'चेतावनी';
 
   @override
   String get balance => 'शेष राशि';
@@ -942,9 +972,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get viewDetails => 'विवरण देखें';
 
   @override
-  String get cancel => 'रद्द करें';
-
-  @override
   String get areYouSureYouWantToUnlink =>
       'क्या आप वाकई इस खाते को अनलिंक करना चाहते हैं?';
 
@@ -1099,9 +1126,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get searchByAsset => 'संपत्ति द्वारा खोजें';
 
   @override
-  String get relevance => 'प्रासंगिकता';
-
-  @override
   String get popular => 'लोकप्रिय';
 
   @override
@@ -1112,9 +1136,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get tBills => 'ट्रेजरी बिल';
-
-  @override
-  String get stock => 'स्टॉक';
 
   @override
   String get selectLevel => 'स्तर चुनें';
@@ -1680,4 +1701,252 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get maturityValue => 'परिपक्वता मूल्य';
+
+  @override
+  String get writeYourReply => 'अपना उत्तर लिखें';
+
+  @override
+  String get shareYourThoughts => 'अपने विचार साझा करें';
+
+  @override
+  String get postComment => 'टिप्पणी पोस्ट करें';
+
+  @override
+  String get lessonNotFound => 'पाठ नहीं मिला';
+
+  @override
+  String get couldNotOpenEmailClient => 'ईमेल क्लाइंट नहीं खोल सके';
+
+  @override
+  String get errorOpeningEmail => 'ईमेल खोलने में त्रुटि';
+
+  @override
+  String get couldNotOpenPhoneDialer => 'फ़ोन डायलर नहीं खोल सके';
+
+  @override
+  String get errorOpeningPhone => 'फ़ोन खोलने में त्रुटि';
+
+  @override
+  String get errorLoadingPreferences => 'प्राथमिकताएं लोड करने में त्रुटि';
+
+  @override
+  String get errorSavingPreference => 'प्राथमिकता सहेजने में त्रुटि';
+
+  @override
+  String operationTimedOut(int seconds) {
+    return 'ऑपरेशन $seconds सेकंड में समय सीमा समाप्त हो गई';
+  }
+
+  @override
+  String requestTimedOut(int seconds) {
+    return 'अनुरोध $seconds सेकंड में समय सीमा समाप्त हो गया';
+  }
+
+  @override
+  String get helpCenter => 'सहायता केंद्र';
+
+  @override
+  String get frequentlyAskedQuestions => 'अक्सर पूछे जाने वाले प्रश्न';
+
+  @override
+  String get contactUs => 'संपर्क करें';
+
+  @override
+  String get chooseNotifications =>
+      'चुनें कि आप कौन सी सूचनाएं प्राप्त करना चाहते हैं';
+
+  @override
+  String get accountActivity => 'खाता गतिविधि';
+
+  @override
+  String get marketUpdates => 'बाजार अपडेट';
+
+  @override
+  String get educational => 'शैक्षिक';
+
+  @override
+  String get depositsWithdrawalsNotif => 'जमा और निकासी';
+
+  @override
+  String get depositsWithdrawalsNotifDesc =>
+      'जब धन जमा या निकाला जाता है तो सूचित हों';
+
+  @override
+  String get tradeConfirmationsNotif => 'व्यापार पुष्टिकरण';
+
+  @override
+  String get tradeConfirmationsNotifDesc =>
+      'खरीद/बिक्री आदेशों की पुष्टि प्राप्त करें';
+
+  @override
+  String get securityAlertsNotif => 'खाता सुरक्षा अलर्ट';
+
+  @override
+  String get securityAlertsNotifDesc => 'महत्वपूर्ण सुरक्षा अपडेट और अलर्ट';
+
+  @override
+  String get priceAlertsNotif => 'मूल्य अलर्ट';
+
+  @override
+  String get priceAlertsNotifDesc =>
+      'जब संपत्ति लक्ष्य मूल्य तक पहुंचे तो सूचित करें';
+
+  @override
+  String get marketNewsNotif => 'बाजार समाचार';
+
+  @override
+  String get marketNewsNotifDesc => 'बाजार के रुझान और समाचारों से अपडेट रहें';
+
+  @override
+  String get portfolioPerformanceNotif => 'पोर्टफोलियो प्रदर्शन';
+
+  @override
+  String get portfolioPerformanceNotifDesc =>
+      'साप्ताहिक पोर्टफोलियो प्रदर्शन सारांश';
+
+  @override
+  String get learningRemindersNotif => 'सीखने के रिमाइंडर';
+
+  @override
+  String get learningRemindersNotifDesc =>
+      'अपनी सीखने की यात्रा जारी रखने के लिए रिमाइंडर';
+
+  @override
+  String get newContentNotif => 'नई सामग्री उपलब्ध';
+
+  @override
+  String get newContentNotifDesc => 'नई सीखने की सामग्री के बारे में सूचित हों';
+
+  @override
+  String get faqQuestion1 => 'मैं अपने निवेश खातों को कैसे लिंक करूं?';
+
+  @override
+  String get faqAnswer1 =>
+      'अपने खातों को लिंक करने के लिए, प्रोफ़ाइल > लिंक्ड खाते पर जाएं, खाता प्रकार (CSD या CIS) चुनें, और अपने ब्रोकर या फंड मैनेजर से कनेक्ट करने के लिए स्क्रीन पर दिए गए निर्देशों का पालन करें।';
+
+  @override
+  String get faqQuestion2 => 'मैं धन कैसे जमा करूं?';
+
+  @override
+  String get faqAnswer2 =>
+      'होम स्क्रीन पर \'जमा करें\' बटन पर टैप करें, अपनी भुगतान विधि (मोबाइल मनी या बैंक खाता) चुनें, राशि दर्ज करें और लेनदेन की पुष्टि करें।';
+
+  @override
+  String get faqQuestion3 => 'मैं पैसे कैसे निकालूं?';
+
+  @override
+  String get faqAnswer3 =>
+      'कैश वॉलेट पर जाएं, \'निकालें\' पर टैप करें, अपना गंतव्य खाता चुनें, राशि दर्ज करें और अपने PIN से पुष्टि करें।';
+
+  @override
+  String get faqQuestion4 => 'मैं अपना PIN कैसे रीसेट करूं?';
+
+  @override
+  String get faqAnswer4 =>
+      'प्रोफ़ाइल > सुरक्षा सेटिंग्स > PIN रीसेट करें पर जाएं। नया PIN बनाने से पहले आपको अपनी पहचान सत्यापित करनी होगी।';
+
+  @override
+  String get faqQuestion5 => 'लेनदेन शुल्क क्या हैं?';
+
+  @override
+  String get faqAnswer5 =>
+      'लेनदेन शुल्क संपत्ति के प्रकार और ब्रोकर के अनुसार भिन्न होते हैं। किसी भी लेनदेन की पुष्टि करने से पहले आप ऑर्डर समीक्षा प्रक्रिया के दौरान शुल्क विवरण देख सकते हैं।';
+
+  @override
+  String get faqQuestion6 => 'मैं ग्राहक सहायता से कैसे संपर्क करूं?';
+
+  @override
+  String get faqAnswer6 =>
+      'आप support@mula.app पर ईमेल के माध्यम से या व्यावसायिक घंटों (सुबह 9 बजे - शाम 5 बजे, सोम-शुक्र) के दौरान +233 550 667 9012 पर कॉल करके हमसे संपर्क कर सकते हैं।';
+
+  @override
+  String get faqQuestion7 => 'क्या मेरा डेटा सुरक्षित है?';
+
+  @override
+  String get faqAnswer7 =>
+      'हां, हम आपके डेटा की सुरक्षा के लिए बैंक-स्तरीय एन्क्रिप्शन और सुरक्षा उपायों का उपयोग करते हैं। हम आपकी सहमति के बिना कभी भी आपकी व्यक्तिगत जानकारी साझा नहीं करते। अधिक जानकारी के लिए हमारी गोपनीयता नीति पढ़ें।';
+
+  @override
+  String get needHelpTitle => 'मदद चाहिए? हम आपके लिए यहां हैं।';
+
+  @override
+  String get needHelpSubtitle =>
+      'सामान्य प्रश्नों के उत्तर खोजें या हमारी टीम से संपर्क करें';
+
+  @override
+  String get callOrSendEmail => 'कॉल करें या ईमेल भेजें';
+
+  @override
+  String get sendUsEmailAt => 'हमें ईमेल भेजें';
+
+  @override
+  String get talkToUs => 'हमसे बात करें';
+
+  @override
+  String get reportIssueDescription =>
+      'अपनी समस्या का वर्णन करें और हम जल्द से जल्द मदद करेंगे';
+
+  @override
+  String get issueSubmittedSuccessfully =>
+      'आपकी समस्या सफलतापूर्वक सबमिट हो गई है';
+
+  @override
+  String get userSettings => 'उपयोगकर्ता सेटिंग्स';
+
+  @override
+  String get logOut => 'लॉग आउट';
+
+  @override
+  String get search => 'खोजें';
+
+  @override
+  String get profile => 'प्रोफ़ाइल';
+
+  @override
+  String get personalInformation => 'व्यक्तिगत जानकारी';
+
+  @override
+  String get identificationCard => 'पहचान पत्र';
+
+  @override
+  String get notificationPreferences => 'सूचना प्राथमिकताएं';
+
+  @override
+  String get learningProgress => 'सीखने की प्रगति';
+
+  @override
+  String get referral => 'रेफ़रल';
+
+  @override
+  String get settings => 'सेटिंग्स';
+
+  @override
+  String get help => 'मदद';
+
+  @override
+  String get aboutApp => 'ऐप के बारे में';
+
+  @override
+  String get defaultHomePage => 'डिफ़ॉल्ट होम पेज';
+
+  @override
+  String get language => 'भाषा';
+
+  @override
+  String get systemSettings => 'सिस्टम सेटिंग्स';
+
+  @override
+  String get lightMode => 'लाइट मोड';
+
+  @override
+  String get darkMode => 'डार्क मोड';
+
+  @override
+  String get system => 'सिस्टम';
+
+  @override
+  String get email => 'ईमेल';
+
+  @override
+  String get phone => 'फ़ोन';
 }

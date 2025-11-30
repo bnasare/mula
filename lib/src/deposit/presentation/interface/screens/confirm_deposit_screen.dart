@@ -103,7 +103,7 @@ class ConfirmDepositScreen extends StatelessWidget {
               child: AppButton(
                 text: context.localize.confirmDeposit,
                 backgroundColor: AppColors.appPrimary,
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 12,
                 padding: EdgeInsets.zero,
                 onTap: () => _showConfirmationDialog(context),
@@ -177,7 +177,7 @@ class ConfirmDepositScreen extends StatelessWidget {
                 AppButton(
                   text: context.localize.okay,
                   backgroundColor: AppColors.appPrimary,
-                  textColor: Colors.white,
+                  textColor: AppColors.white(context),
                   borderRadius: 12,
                   padding: EdgeInsets.zero,
                   onTap: () {

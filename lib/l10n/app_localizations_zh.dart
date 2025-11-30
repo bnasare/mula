@@ -629,6 +629,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get totalPortfolioValue => '投资组合总价值';
 
   @override
+  String get welcomeBack => '欢迎回来';
+
+  @override
+  String get dailyChange => '每日变化';
+
+  @override
   String get learningCorner => '学习角';
 
   @override
@@ -651,6 +657,24 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get recentActivities => '最近活动';
+
+  @override
+  String get marketClosed => '市场已关闭';
+
+  @override
+  String get relevance => '相关性';
+
+  @override
+  String get name => '名称';
+
+  @override
+  String get stock => '股票';
+
+  @override
+  String get tBill => '国库券';
+
+  @override
+  String get lesson => '课程';
 
   @override
   String get viewAll => '查看全部';
@@ -684,6 +708,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get apply => '应用';
+
+  @override
+  String get cancel => '取消';
+
+  @override
+  String get warning => '警告';
 
   @override
   String get balance => '余额';
@@ -910,9 +940,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get viewDetails => '查看详情';
 
   @override
-  String get cancel => '取消';
-
-  @override
   String get areYouSureYouWantToUnlink => '您确定要取消关联此账户吗？';
 
   @override
@@ -1061,9 +1088,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get searchByAsset => '按资产搜索';
 
   @override
-  String get relevance => '相关性';
-
-  @override
   String get popular => '热门';
 
   @override
@@ -1074,9 +1098,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tBills => '国库券';
-
-  @override
-  String get stock => '股票';
 
   @override
   String get selectLevel => '选择级别';
@@ -1625,4 +1646,239 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get maturityValue => '到期价值';
+
+  @override
+  String get writeYourReply => '写下您的回复';
+
+  @override
+  String get shareYourThoughts => '分享您的想法';
+
+  @override
+  String get postComment => '发表评论';
+
+  @override
+  String get lessonNotFound => '未找到课程';
+
+  @override
+  String get couldNotOpenEmailClient => '无法打开电子邮件客户端';
+
+  @override
+  String get errorOpeningEmail => '打开电子邮件时出错';
+
+  @override
+  String get couldNotOpenPhoneDialer => '无法打开电话拨号器';
+
+  @override
+  String get errorOpeningPhone => '打开电话时出错';
+
+  @override
+  String get errorLoadingPreferences => '加载偏好设置时出错';
+
+  @override
+  String get errorSavingPreference => '保存偏好设置时出错';
+
+  @override
+  String operationTimedOut(int seconds) {
+    return '操作在$seconds秒后超时';
+  }
+
+  @override
+  String requestTimedOut(int seconds) {
+    return '请求在$seconds秒后超时';
+  }
+
+  @override
+  String get helpCenter => '帮助中心';
+
+  @override
+  String get frequentlyAskedQuestions => '常见问题';
+
+  @override
+  String get contactUs => '联系我们';
+
+  @override
+  String get chooseNotifications => '选择您想要接收的通知';
+
+  @override
+  String get accountActivity => '账户活动';
+
+  @override
+  String get marketUpdates => '市场动态';
+
+  @override
+  String get educational => '教育';
+
+  @override
+  String get depositsWithdrawalsNotif => '存款和取款';
+
+  @override
+  String get depositsWithdrawalsNotifDesc => '当资金存入或取出时获得通知';
+
+  @override
+  String get tradeConfirmationsNotif => '交易确认';
+
+  @override
+  String get tradeConfirmationsNotifDesc => '接收买卖订单确认';
+
+  @override
+  String get securityAlertsNotif => '账户安全提醒';
+
+  @override
+  String get securityAlertsNotifDesc => '重要的安全更新和提醒';
+
+  @override
+  String get priceAlertsNotif => '价格提醒';
+
+  @override
+  String get priceAlertsNotifDesc => '当资产达到目标价格时通知';
+
+  @override
+  String get marketNewsNotif => '市场新闻';
+
+  @override
+  String get marketNewsNotifDesc => '了解市场趋势和新闻';
+
+  @override
+  String get portfolioPerformanceNotif => '投资组合表现';
+
+  @override
+  String get portfolioPerformanceNotifDesc => '每周投资组合表现摘要';
+
+  @override
+  String get learningRemindersNotif => '学习提醒';
+
+  @override
+  String get learningRemindersNotifDesc => '继续学习之旅的提醒';
+
+  @override
+  String get newContentNotif => '新内容可用';
+
+  @override
+  String get newContentNotifDesc => '获取新学习材料的通知';
+
+  @override
+  String get faqQuestion1 => '如何关联我的投资账户？';
+
+  @override
+  String get faqAnswer1 =>
+      '要关联账户，请转到个人资料 > 已关联账户，选择账户类型（CSD或CIS），然后按照屏幕上的说明连接您的经纪人或基金经理。';
+
+  @override
+  String get faqQuestion2 => '如何存款？';
+
+  @override
+  String get faqAnswer2 => '点击主屏幕上的\'存款\'按钮，选择付款方式（移动支付或银行账户），输入金额并确认交易。';
+
+  @override
+  String get faqQuestion3 => '如何取款？';
+
+  @override
+  String get faqAnswer3 => '进入钱包，点击\'取款\'，选择目标账户，输入金额并用PIN码确认。';
+
+  @override
+  String get faqQuestion4 => '如何重置PIN码？';
+
+  @override
+  String get faqAnswer4 => '转到个人资料 > 安全设置 > 重置PIN。创建新PIN之前需要验证您的身份。';
+
+  @override
+  String get faqQuestion5 => '交易费用是多少？';
+
+  @override
+  String get faqAnswer5 => '交易费用因资产类型和经纪人而异。您可以在确认任何交易之前，在订单审核过程中查看费用明细。';
+
+  @override
+  String get faqQuestion6 => '如何联系客户支持？';
+
+  @override
+  String get faqAnswer6 =>
+      '您可以通过电子邮件support@mula.app联系我们，或在工作时间（周一至周五上午9点至下午5点）拨打+233 550 667 9012。';
+
+  @override
+  String get faqQuestion7 => '我的数据安全吗？';
+
+  @override
+  String get faqAnswer7 =>
+      '是的，我们使用银行级加密和安全措施来保护您的数据。未经您的同意，我们绝不会分享您的个人信息。请阅读我们的隐私政策了解更多详情。';
+
+  @override
+  String get needHelpTitle => '需要帮助？我们随时为您服务。';
+
+  @override
+  String get needHelpSubtitle => '查找常见问题的答案或联系我们的团队';
+
+  @override
+  String get callOrSendEmail => '致电或发送电子邮件';
+
+  @override
+  String get sendUsEmailAt => '发送电子邮件至';
+
+  @override
+  String get talkToUs => '联系我们';
+
+  @override
+  String get reportIssueDescription => '描述您的问题，我们将尽快提供帮助';
+
+  @override
+  String get issueSubmittedSuccessfully => '您的问题已成功提交';
+
+  @override
+  String get userSettings => '用户设置';
+
+  @override
+  String get logOut => '退出登录';
+
+  @override
+  String get search => '搜索';
+
+  @override
+  String get profile => '个人资料';
+
+  @override
+  String get personalInformation => '个人信息';
+
+  @override
+  String get identificationCard => '身份证';
+
+  @override
+  String get notificationPreferences => '通知偏好';
+
+  @override
+  String get learningProgress => '学习进度';
+
+  @override
+  String get referral => '推荐';
+
+  @override
+  String get settings => '设置';
+
+  @override
+  String get help => '帮助';
+
+  @override
+  String get aboutApp => '关于应用';
+
+  @override
+  String get defaultHomePage => '默认首页';
+
+  @override
+  String get language => '语言';
+
+  @override
+  String get systemSettings => '系统设置';
+
+  @override
+  String get lightMode => '浅色模式';
+
+  @override
+  String get darkMode => '深色模式';
+
+  @override
+  String get system => '系统';
+
+  @override
+  String get email => '电子邮件';
+
+  @override
+  String get phone => '电话';
 }

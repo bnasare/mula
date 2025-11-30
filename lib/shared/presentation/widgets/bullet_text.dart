@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../../../shared/utils/extension.dart';
+import '../theme/app_colors.dart';
+import '../../utils/extension.dart';
 
 class BulletText extends StatelessWidget {
   final double size;
-  final Color color;
+  final Color? color;
 
-  const BulletText({super.key, this.size = 14.0, this.color = Colors.black});
+  const BulletText({super.key, this.size = 14.0, this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class BulletText extends StatelessWidget {
       '•',
       style: TextStyle(
         fontSize: context.responsiveFontSize(mobile: size),
-        color: color,
+        color: color ?? AppColors.black(context),
       ),
     );
   }

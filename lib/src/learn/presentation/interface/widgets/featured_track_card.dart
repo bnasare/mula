@@ -23,7 +23,7 @@ class FeaturedTrackCard extends StatelessWidget {
           gradient:
               track.gradient ??
               const LinearGradient(
-                colors: [Color(0xFFFF9F43), Color(0xFFFF8A00)],
+                colors: AppColors.orangeGradient,
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),

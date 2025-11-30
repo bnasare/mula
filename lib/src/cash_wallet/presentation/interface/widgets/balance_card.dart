@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
+import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 
 /// Balance card with gradient background for cash wallet
@@ -26,7 +27,7 @@ class _BalanceCardState extends State<BalanceCard> {
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF9C27B0), Color(0xFF7B1FA2), Color(0xFF6A1B9A)],
+          colors: AppColors.walletGradient,
         ),
         borderRadius: BorderRadius.circular(16),
       ),
@@ -38,8 +39,8 @@ class _BalanceCardState extends State<BalanceCard> {
             children: [
               AppText.small(
                 'Balance',
-                style: const TextStyle(
-                  color: Colors.white70,
+                style: TextStyle(
+                  color: AppColors.white(context).withValues(alpha: 0.7),
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
                 ),
@@ -52,7 +53,7 @@ class _BalanceCardState extends State<BalanceCard> {
                 },
                 child: Icon(
                   _isBalanceVisible ? IconlyLight.show : IconlyLight.hide,
-                  color: Colors.white,
+                  color: AppColors.white(context),
                   size: 20,
                 ),
               ),
@@ -63,8 +64,8 @@ class _BalanceCardState extends State<BalanceCard> {
             _isBalanceVisible
                 ? 'GHS ${widget.balance.toStringAsFixed(0).replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]},')}'
                 : '••••••',
-            style: const TextStyle(
-              color: Colors.white,
+            style: TextStyle(
+              color: AppColors.white(context),
               fontSize: 32,
               fontWeight: FontWeight.bold,
             ),
@@ -72,8 +73,8 @@ class _BalanceCardState extends State<BalanceCard> {
           const SizedBox(height: 24),
           AppText.small(
             widget.label,
-            style: const TextStyle(
-              color: Colors.white70,
+            style: TextStyle(
+              color: AppColors.white(context).withValues(alpha: 0.7),
               fontSize: 14,
               fontWeight: FontWeight.w500,
             ),

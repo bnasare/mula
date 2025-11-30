@@ -10,8 +10,21 @@ import '../../provider/dashboard_provider.dart';
 import '../widgets/custom_bottom_nav_bar.dart';
 
 /// Main dashboard screen with bottom navigation
-class DashboardScreen extends StatelessWidget {
+class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
+
+  @override
+  State<DashboardScreen> createState() => _DashboardScreenState();
+}
+
+class _DashboardScreenState extends State<DashboardScreen> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<DashboardProvider>().loadDefaultTab();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

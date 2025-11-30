@@ -68,7 +68,7 @@ class _ReportIssueScreenState extends State<ReportIssueScreen> {
               AppButton(
                 text: context.localize.done,
                 backgroundColor: AppColors.appPrimary,
-                textColor: Colors.white,
+                textColor: AppColors.white(context),
                 borderRadius: 8,
                 padding: EdgeInsets.zero,
                 onTap: () {

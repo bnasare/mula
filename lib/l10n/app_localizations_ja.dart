@@ -637,6 +637,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get totalPortfolioValue => 'ポートフォリオ総額';
 
   @override
+  String get welcomeBack => 'おかえりなさい';
+
+  @override
+  String get dailyChange => '日次変動';
+
+  @override
   String get learningCorner => '学習コーナー';
 
   @override
@@ -659,6 +665,24 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get recentActivities => '最近のアクティビティ';
+
+  @override
+  String get marketClosed => '市場は休場中';
+
+  @override
+  String get relevance => '関連性';
+
+  @override
+  String get name => '名前';
+
+  @override
+  String get stock => '株式';
+
+  @override
+  String get tBill => '国庫短期証券';
+
+  @override
+  String get lesson => 'レッスン';
 
   @override
   String get viewAll => 'すべて表示';
@@ -692,6 +716,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get apply => '適用';
+
+  @override
+  String get cancel => 'キャンセル';
+
+  @override
+  String get warning => '警告';
 
   @override
   String get balance => '残高';
@@ -918,9 +948,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get viewDetails => '詳細を表示';
 
   @override
-  String get cancel => 'キャンセル';
-
-  @override
   String get areYouSureYouWantToUnlink => 'このアカウントのリンクを解除してもよろしいですか？';
 
   @override
@@ -1069,9 +1096,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get searchByAsset => '資産で検索';
 
   @override
-  String get relevance => '関連性';
-
-  @override
   String get popular => '人気';
 
   @override
@@ -1082,9 +1106,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tBills => '財務省短期証券';
-
-  @override
-  String get stock => '株式';
 
   @override
   String get selectLevel => 'レベルを選択';
@@ -1633,4 +1654,242 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get maturityValue => '満期価額';
+
+  @override
+  String get writeYourReply => '返信を書く';
+
+  @override
+  String get shareYourThoughts => 'あなたの考えを共有する';
+
+  @override
+  String get postComment => 'コメントを投稿';
+
+  @override
+  String get lessonNotFound => 'レッスンが見つかりません';
+
+  @override
+  String get couldNotOpenEmailClient => 'メールクライアントを開けませんでした';
+
+  @override
+  String get errorOpeningEmail => 'メールを開く際のエラー';
+
+  @override
+  String get couldNotOpenPhoneDialer => '電話ダイヤラーを開けませんでした';
+
+  @override
+  String get errorOpeningPhone => '電話を開く際のエラー';
+
+  @override
+  String get errorLoadingPreferences => '設定の読み込みエラー';
+
+  @override
+  String get errorSavingPreference => '設定の保存エラー';
+
+  @override
+  String operationTimedOut(int seconds) {
+    return '操作が$seconds秒でタイムアウトしました';
+  }
+
+  @override
+  String requestTimedOut(int seconds) {
+    return 'リクエストが$seconds秒でタイムアウトしました';
+  }
+
+  @override
+  String get helpCenter => 'ヘルプセンター';
+
+  @override
+  String get frequentlyAskedQuestions => 'よくある質問';
+
+  @override
+  String get contactUs => 'お問い合わせ';
+
+  @override
+  String get chooseNotifications => '受け取りたい通知を選択してください';
+
+  @override
+  String get accountActivity => 'アカウント活動';
+
+  @override
+  String get marketUpdates => '市場の更新情報';
+
+  @override
+  String get educational => '教育';
+
+  @override
+  String get depositsWithdrawalsNotif => '入出金';
+
+  @override
+  String get depositsWithdrawalsNotifDesc => '資金の入出金時に通知を受け取る';
+
+  @override
+  String get tradeConfirmationsNotif => '取引確認';
+
+  @override
+  String get tradeConfirmationsNotifDesc => '売買注文の確認を受け取る';
+
+  @override
+  String get securityAlertsNotif => 'アカウントセキュリティ警告';
+
+  @override
+  String get securityAlertsNotifDesc => '重要なセキュリティ更新と警告';
+
+  @override
+  String get priceAlertsNotif => '価格アラート';
+
+  @override
+  String get priceAlertsNotifDesc => '資産が目標価格に達したときに通知';
+
+  @override
+  String get marketNewsNotif => '市場ニュース';
+
+  @override
+  String get marketNewsNotifDesc => '市場動向とニュースを把握する';
+
+  @override
+  String get portfolioPerformanceNotif => 'ポートフォリオパフォーマンス';
+
+  @override
+  String get portfolioPerformanceNotifDesc => '週次ポートフォリオパフォーマンス概要';
+
+  @override
+  String get learningRemindersNotif => '学習リマインダー';
+
+  @override
+  String get learningRemindersNotifDesc => '学習の旅を続けるためのリマインダー';
+
+  @override
+  String get newContentNotif => '新しいコンテンツが利用可能';
+
+  @override
+  String get newContentNotifDesc => '新しい学習教材の通知を受け取る';
+
+  @override
+  String get faqQuestion1 => '投資口座をリンクするにはどうすればよいですか？';
+
+  @override
+  String get faqAnswer1 =>
+      '口座をリンクするには、プロフィール > リンク済み口座に移動し、口座タイプ（CSDまたはCIS）を選択し、画面の指示に従ってブローカーまたはファンドマネージャーに接続します。';
+
+  @override
+  String get faqQuestion2 => '入金するにはどうすればよいですか？';
+
+  @override
+  String get faqAnswer2 =>
+      'ホーム画面の「入金」ボタンをタップし、支払い方法（モバイルマネーまたは銀行口座）を選択し、金額を入力して取引を確認します。';
+
+  @override
+  String get faqQuestion3 => '出金するにはどうすればよいですか？';
+
+  @override
+  String get faqAnswer3 => 'ウォレットに移動し、「出金」をタップし、送金先口座を選択し、金額を入力してPINで確認します。';
+
+  @override
+  String get faqQuestion4 => 'PINをリセットするにはどうすればよいですか？';
+
+  @override
+  String get faqAnswer4 =>
+      'プロフィール > セキュリティ設定 > PINのリセットに移動します。新しいPINを作成する前に本人確認が必要です。';
+
+  @override
+  String get faqQuestion5 => '取引手数料はいくらですか？';
+
+  @override
+  String get faqAnswer5 =>
+      '取引手数料は資産タイプとブローカーによって異なります。取引を確認する前に、注文確認プロセス中に手数料の内訳を確認できます。';
+
+  @override
+  String get faqQuestion6 => 'カスタマーサポートに連絡するにはどうすればよいですか？';
+
+  @override
+  String get faqAnswer6 =>
+      'support@mula.appへのメール、または営業時間中（月〜金、9:00〜17:00）に+233 550 667 9012までお電話でお問い合わせください。';
+
+  @override
+  String get faqQuestion7 => '私のデータは安全ですか？';
+
+  @override
+  String get faqAnswer7 =>
+      'はい、銀行レベルの暗号化とセキュリティ対策を使用してデータを保護しています。お客様の同意なしに個人情報を共有することはありません。詳細については、プライバシーポリシーをお読みください。';
+
+  @override
+  String get needHelpTitle => 'お困りですか？私たちがサポートします。';
+
+  @override
+  String get needHelpSubtitle => 'よくある質問への回答を見つけるか、チームにお問い合わせください';
+
+  @override
+  String get callOrSendEmail => '電話またはメールでお問い合わせ';
+
+  @override
+  String get sendUsEmailAt => 'メールでお問い合わせ';
+
+  @override
+  String get talkToUs => 'お問い合わせ';
+
+  @override
+  String get reportIssueDescription => '問題をお知らせください。できるだけ早くサポートいたします';
+
+  @override
+  String get issueSubmittedSuccessfully => '問題が正常に送信されました';
+
+  @override
+  String get userSettings => 'ユーザー設定';
+
+  @override
+  String get logOut => 'ログアウト';
+
+  @override
+  String get search => '検索';
+
+  @override
+  String get profile => 'プロフィール';
+
+  @override
+  String get personalInformation => '個人情報';
+
+  @override
+  String get identificationCard => '身分証明書';
+
+  @override
+  String get notificationPreferences => '通知設定';
+
+  @override
+  String get learningProgress => '学習の進捗';
+
+  @override
+  String get referral => '紹介';
+
+  @override
+  String get settings => '設定';
+
+  @override
+  String get help => 'ヘルプ';
+
+  @override
+  String get aboutApp => 'アプリについて';
+
+  @override
+  String get defaultHomePage => 'デフォルトのホームページ';
+
+  @override
+  String get language => '言語';
+
+  @override
+  String get systemSettings => 'システム設定';
+
+  @override
+  String get lightMode => 'ライトモード';
+
+  @override
+  String get darkMode => 'ダークモード';
+
+  @override
+  String get system => 'システム';
+
+  @override
+  String get email => 'メール';
+
+  @override
+  String get phone => '電話';
 }

@@ -107,7 +107,7 @@ class _ConfettiSuccessScreenState extends State<ConfettiSuccessScreen> {
                   AppButton(
                     text: widget.primaryButtonText,
                     backgroundColor: AppColors.appPrimary,
-                    textColor: Colors.white,
+                    textColor: AppColors.white(context),
                     borderRadius: 12,
                     padding: EdgeInsets.zero,
                     onTap: widget.onPrimaryButtonTap,
@@ -140,14 +140,7 @@ class _ConfettiSuccessScreenState extends State<ConfettiSuccessScreen> {
                 numberOfParticles: 20,
                 gravity: 0.3,
                 shouldLoop: false,
-                colors: const [
-                  Color(0xFFFF6B6B),
-                  Color(0xFF4ECDC4),
-                  Color(0xFFFFE66D),
-                  Color(0xFF95E1D3),
-                  Color(0xFFA8E6CF),
-                  Color(0xFFFFD93D),
-                ],
+                colors: AppColors.confettiColors,
               ),
             ),
           ],
@@ -179,13 +172,13 @@ class _ConfettiSuccessScreenState extends State<ConfettiSuccessScreen> {
 
   List<Widget> _generateConfettiDots() {
     final colors = [
-      const Color(0xFFFF6B6B),
-      const Color(0xFF4ECDC4),
-      const Color(0xFFFFE66D),
-      const Color(0xFF95E1D3),
-      const Color(0xFFA8E6CF),
-      const Color(0xFFFFD93D),
-      const Color(0xFFB39DDB),
+      AppColors.confettiRed,
+      AppColors.confettiTeal,
+      AppColors.confettiYellow,
+      AppColors.confettiMint,
+      AppColors.confettiLightMint,
+      AppColors.confettiGolden,
+      AppColors.purpleLight,
     ];
 
     final positions = [
@@ -231,7 +224,7 @@ class _ConfettiSuccessScreenState extends State<ConfettiSuccessScreen> {
         top: 15,
         child: CustomPaint(
           size: const Size(30, 40),
-          painter: StreamerPainter(const Color(0xFFFFE66D)),
+          painter: StreamerPainter(AppColors.confettiYellow),
         ),
       ),
       Positioned(
@@ -239,7 +232,7 @@ class _ConfettiSuccessScreenState extends State<ConfettiSuccessScreen> {
         top: 15,
         child: CustomPaint(
           size: const Size(30, 40),
-          painter: StreamerPainter(const Color(0xFF4ECDC4)),
+          painter: StreamerPainter(AppColors.confettiTeal),
         ),
       ),
     ];

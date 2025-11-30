@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 
+import '../../../../shared/services/preferences_service.dart';
 import '../../data/dummy_dashboard_data.dart';
 import '../../domain/entities/activity.dart';
 import '../../domain/entities/portfolio_summary.dart';
@@ -7,6 +8,7 @@ import '../../domain/entities/portfolio_summary.dart';
 /// Provider for managing dashboard state
 class DashboardProvider extends ChangeNotifier {
   int _currentTabIndex = 0;
+  bool _hasLoadedDefaultTab = false;
   PortfolioSummary? _portfolioSummary;
   List<Activity> _recentActivities = [];
   Map<String, dynamic>? _userProfile;
@@ -17,6 +19,7 @@ class DashboardProvider extends ChangeNotifier {
 
   // Getters
   int get currentTabIndex => _currentTabIndex;
+  bool get hasLoadedDefaultTab => _hasLoadedDefaultTab;
   PortfolioSummary? get portfolioSummary => _portfolioSummary;
   List<Activity> get recentActivities => _recentActivities;
   Map<String, dynamic>? get userProfile => _userProfile;
@@ -27,12 +30,31 @@ class DashboardProvider extends ChangeNotifier {
   bool get isLoading =>
       _isLoadingPortfolio || _isLoadingActivities || _isLoadingProfile;
 
+  /// Load the default tab from preferences
+  Future<void> loadDefaultTab() async {
+    if (_hasLoadedDefaultTab) return;
+
+    final defaultTab = await PreferencesService.getDefaultHomePage();
+    if (defaultTab != null && defaultTab >= 0 && defaultTab <= 4) {
+      _currentTabIndex = defaultTab;
+      _hasLoadedDefaultTab = true;
+      notifyListeners();
+    } else {
+      _hasLoadedDefaultTab = true;
+    }
+  }
+
   /// Change the current tab
   void changeTab(int index) {
     if (_currentTabIndex != index) {
       _currentTabIndex = index;
       notifyListeners();
     }
+  }
+
+  /// Save the current tab as the default homepage
+  Future<void> saveAsDefaultHomePage(int index) async {
+    await PreferencesService.saveDefaultHomePage(index);
   }
 
   /// Load portfolio summary

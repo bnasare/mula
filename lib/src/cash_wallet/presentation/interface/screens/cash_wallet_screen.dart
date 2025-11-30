@@ -216,7 +216,6 @@ class _CashWalletScreenState extends State<CashWalletScreen> {
             showModalBottomSheet(
               context: context,
               isScrollControlled: true,
-              backgroundColor: AppColors.transparent,
               builder: (context) => TransactionReceiptModal(activity: activity),
             );
           },
