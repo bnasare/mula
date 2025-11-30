@@ -14,8 +14,12 @@ import '../../../../../shared/presentation/widgets/restart_widget.dart';
 import '../../../../../shared/services/preferences_service.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
+import '../../../../../shared/presentation/widgets/snackbar.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
 import '../../../../linked_accounts/presentation/interface/screens/linked_accounts_screen.dart';
+import '../../../../onboarding/presentation/bloc/onboarding_mixin.dart';
+import '../../../../onboarding/presentation/interface/screens/onboarding_screen.dart';
+import '../../../../mula_bot/presentation/provider/mula_bot_provider.dart';
 import '../mixins/profile_image_mixin.dart';
 import '../widgets/profile_header.dart';
 import '../widgets/settings_dropdown_tile.dart';
@@ -40,7 +44,8 @@ class AccountTab extends StatefulWidget {
 
 enum HomePage { home, explore, portfolio, learn, account }
 
-class _AccountTabState extends State<AccountTab> with ProfileImageMixin {
+class _AccountTabState extends State<AccountTab>
+    with ProfileImageMixin, OnboardingMixin {
   String _selectedCurrency = 'GHS';
   HomePage _selectedHomePage = HomePage.home;
   String _searchQuery = '';
@@ -118,9 +123,48 @@ class _AccountTabState extends State<AccountTab> with ProfileImageMixin {
         description: context.localize.areYouSureYouWantToLogOut,
         primaryButtonLabel: context.localize.logOut,
         secondaryButtonLabel: context.localize.cancel,
-        onPrimaryAction: () {
-          Navigator.pop(context);
-          // TODO: Implement actual logout logic
+        onPrimaryAction: () async {
+          Navigator.pop(context); // Close confirmation dialog
+
+          try {
+            // 1. Clear DashboardProvider state
+            final dashboardProvider = context.read<DashboardProvider>();
+            dashboardProvider.clearDashboardData();
+
+            // 2. Clear MulaBotProvider messages
+            final mulaBotProvider = context.read<MulaBotProvider>();
+            mulaBotProvider.clearMessages();
+
+            // 3. Clear user-specific preferences (preserve theme/language)
+            await PreferencesService.clearDefaultHomePage();
+            await PreferencesService.setMulaBotWelcomeShown(); // Reset welcome
+
+            // 4. Reset onboarding flag to false
+            await resetOnboardingState();
+
+            // 5. Clear local profile image
+            if (mounted) {
+              setState(() {
+                localProfileImage = null;
+              });
+            }
+
+            // 6. Navigate to OnboardingScreen and clear navigation stack
+            if (mounted) {
+              NavigationHelper.navigateToAndRemoveUntil(
+                context,
+                const OnboardingScreen(),
+              );
+            }
+          } catch (e) {
+            // Handle error - show snackbar if context still mounted
+            if (mounted) {
+              SnackBarHelper.showErrorSnackBar(
+                context,
+                'Logout failed: ${e.toString()}',
+              );
+            }
+          }
         },
         onSecondaryAction: () => Navigator.pop(context),
       ),

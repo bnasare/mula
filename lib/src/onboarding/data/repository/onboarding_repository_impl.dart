@@ -22,4 +22,14 @@ class OnboardingRepositoryImpl implements OnboardingRepository {
       return Left(Failure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, Unit>> resetOnboarding() async {
+    try {
+      await localDatabase.resetOnboarding();
+      return const Right(unit);
+    } catch (e) {
+      return Left(Failure(e.toString()));
+    }
+  }
 }

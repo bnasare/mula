@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 abstract class OnboardingLocalDatabase {
   Future<bool> isOnboardingComplete();
   Future<void> completeOnboarding();
+  Future<void> resetOnboarding();
 }
 
 class OnboardingLocalDatabaseImpl implements OnboardingLocalDatabase {
@@ -17,5 +18,11 @@ class OnboardingLocalDatabaseImpl implements OnboardingLocalDatabase {
   Future<void> completeOnboarding() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(onboardingCompleteKey, true);
+  }
+
+  @override
+  Future<void> resetOnboarding() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(onboardingCompleteKey, false);
   }
 }

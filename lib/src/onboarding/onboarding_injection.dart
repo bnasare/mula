@@ -5,14 +5,18 @@ import 'data/repository/onboarding_repository_impl.dart';
 import 'domain/repository/onboarding_repository.dart';
 import 'domain/usecase/complete_onboarding.dart';
 import 'domain/usecase/is_onboarding_complete.dart';
+import 'domain/usecase/reset_onboarding.dart';
 import 'presentation/bloc/onboarding_bloc.dart';
 
 void initOnboarding() {
   final sl = GetIt.instance;
 
   sl.registerFactory(
-    () =>
-        OnboardingBloc(completeOnboarding: sl(), checkOnboardingComplete: sl()),
+    () => OnboardingBloc(
+      completeOnboarding: sl(),
+      checkOnboardingComplete: sl(),
+      resetOnboarding: sl(),
+    ),
   );
   sl.registerLazySingleton<OnboardingLocalDatabase>(
     () => OnboardingLocalDatabaseImpl(),
@@ -24,4 +28,5 @@ void initOnboarding() {
 
   sl.registerLazySingleton(() => CompleteOnboarding(sl()));
   sl.registerLazySingleton(() => CheckOnboardingComplete(sl()));
+  sl.registerLazySingleton(() => ResetOnboarding(sl()));
 }

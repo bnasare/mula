@@ -4,4 +4,5 @@ import '../../../../shared/error/failure.dart';
 abstract class OnboardingRepository {
   Future<Either<Failure, bool>> isOnboardingComplete();
   Future<Either<Failure, Unit>> completeOnboarding();
+  Future<Either<Failure, Unit>> resetOnboarding();
 }

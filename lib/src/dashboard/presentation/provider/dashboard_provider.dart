@@ -136,4 +136,18 @@ class DashboardProvider extends ChangeNotifier {
     _error = null;
     notifyListeners();
   }
+
+  /// Clear all dashboard data (used during logout)
+  void clearDashboardData() {
+    _currentTabIndex = 0;
+    _hasLoadedDefaultTab = false;
+    _portfolioSummary = null;
+    _recentActivities = [];
+    _userProfile = null;
+    _isLoadingPortfolio = false;
+    _isLoadingActivities = false;
+    _isLoadingProfile = false;
+    _error = null;
+    notifyListeners();
+  }
 }

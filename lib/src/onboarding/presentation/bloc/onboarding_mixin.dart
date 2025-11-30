@@ -15,4 +15,10 @@ mixin OnboardingMixin {
 
     return result.fold((l) => false, (r) => r);
   }
+
+  Future<void> resetOnboardingState() async {
+    final result = await bloc.resetOnboardingState();
+
+    result.fold((l) => l, (r) => r);
+  }
 }
