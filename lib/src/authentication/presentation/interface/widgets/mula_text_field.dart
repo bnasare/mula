@@ -99,7 +99,7 @@ class MulaTextField extends StatelessWidget {
     this.fillColor,
     this.maxLines = 1,
     this.minLines,
-    this.inputHeight = 40.0,
+    this.inputHeight = 45.0,
     this.showTitleWithCounter = false,
     this.maxLength,
     this.inputFormatters,
@@ -152,7 +152,7 @@ class MulaTextField extends StatelessWidget {
           children: [
             ConstrainedBox(
               constraints: BoxConstraints(
-                minHeight: context.responsiveValue(mobile: inputHeight),
+                maxHeight: context.responsiveValue(mobile: inputHeight),
               ),
               child: TextFormField(
                 autofocus: false,

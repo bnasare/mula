@@ -1989,4 +1989,137 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get aboutAppValueGrowthDescription =>
       'We helpen u weloverwogen keuzes te maken voor vermogen op lange termijn';
+
+  @override
+  String get securitySettings => 'Beveiligingsinstellingen';
+
+  @override
+  String get changePassword => 'Wachtwoord Wijzigen';
+
+  @override
+  String get currentPassword => 'Huidig Wachtwoord';
+
+  @override
+  String get enterCurrentPassword => 'Voer uw huidige wachtwoord in';
+
+  @override
+  String get reEnterNewPassword => 'Voer uw nieuwe wachtwoord opnieuw in';
+
+  @override
+  String get currentPin => 'Huidige PIN';
+
+  @override
+  String get enterCurrentPin => 'Voer uw huidige PIN in';
+
+  @override
+  String get enterYourCurrentPin => 'Voer uw huidige PIN in';
+
+  @override
+  String get changePin => 'PIN Wijzigen';
+
+  @override
+  String get updatePassword => 'Wachtwoord Bijwerken';
+
+  @override
+  String get biometricSettings => 'Biometrische Instellingen';
+
+  @override
+  String get faceId => 'Face ID';
+
+  @override
+  String get touchId => 'Touch ID';
+
+  @override
+  String get useFaceId => 'Gebruik Face ID om te authenticeren';
+
+  @override
+  String get useTouchId => 'Gebruik Touch ID om te authenticeren';
+
+  @override
+  String get activitySessions => 'Activiteitssessies';
+
+  @override
+  String get currentSessions => 'Huidige Sessies';
+
+  @override
+  String get pastSessions => 'Eerdere Sessies';
+
+  @override
+  String get active => 'Actief';
+
+  @override
+  String get ended => 'Beëindigd';
+
+  @override
+  String get createNewPin => 'Nieuwe PIN Aanmaken';
+
+  @override
+  String get verifyIdentity => 'Verifieer uw identiteit om door te gaan';
+
+  @override
+  String get createYourNewPin => 'Maak uw nieuwe PIN aan';
+
+  @override
+  String get choosePinDescription =>
+      'Kies een 4-cijferige PIN die gemakkelijk te onthouden is';
+
+  @override
+  String get pinChangedSuccessfully => 'PIN Succesvol Gewijzigd!';
+
+  @override
+  String get pinChangeSuccessDescription =>
+      'Uw nieuwe PIN is succesvol ingesteld';
+
+  @override
+  String get passwordRequirements =>
+      'Wachtwoord moet minimaal 8 tekens bevatten met hoofdletters, kleine letters en cijfers';
+
+  @override
+  String get passwordsDoNotMatch => 'Wachtwoorden komen niet overeen';
+
+  @override
+  String get invalidCurrentPassword => 'Huidig wachtwoord is onjuist';
+
+  @override
+  String get invalidPin => 'Ongeldige PIN. Probeer het opnieuw';
+
+  @override
+  String get edit => 'Bewerken';
+
+  @override
+  String get save => 'Opslaan';
+
+  @override
+  String get basicInformation => 'Basisinformatie';
+
+  @override
+  String get otherInformation => 'Overige Informatie';
+
+  @override
+  String get firstName => 'Voornaam';
+
+  @override
+  String get lastName => 'Achternaam';
+
+  @override
+  String get selectGender => 'Selecteer geslacht';
+
+  @override
+  String get identification => 'Identificatie';
+
+  @override
+  String get inProgress => 'Bezig';
+
+  @override
+  String get saved => 'Opgeslagen';
+
+  @override
+  String tracksProgress(int current, int total) {
+    return '$current/$total Tracks';
+  }
+
+  @override
+  String percentCompleted(int percent) {
+    return '$percent% Voltooid';
+  }
 }

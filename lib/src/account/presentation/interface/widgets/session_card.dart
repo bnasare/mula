@@ -3,7 +3,6 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
-import '../../../../../shared/utils/extension.dart';
 
 class SessionCard extends StatelessWidget {
   final String deviceName;
@@ -101,7 +100,6 @@ class SessionCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 6),
 
                 // Location
                 Row(
@@ -121,17 +119,16 @@ class SessionCard extends StatelessWidget {
                 const SizedBox(height: 2),
 
                 // IP Address
-                AppText.smallest(
-                  ipAddress,
-                  color: context.secondaryTextColor,
-                ),
+                AppText.smallest(ipAddress, color: context.secondaryTextColor),
                 const SizedBox(height: 2),
 
                 // Timestamp
                 AppText.smallest(
                   timestamp,
-                  color: context.secondaryTextColor,
-                  style: const TextStyle(fontStyle: FontStyle.italic),
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: context.secondaryTextColor,
+                  ),
                 ),
               ],
             ),

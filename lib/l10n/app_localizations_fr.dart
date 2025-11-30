@@ -2009,4 +2009,137 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get aboutAppValueGrowthDescription =>
       'Nous vous aidons à faire des choix éclairés pour une richesse à long terme';
+
+  @override
+  String get securitySettings => 'Paramètres de Sécurité';
+
+  @override
+  String get changePassword => 'Changer le Mot de Passe';
+
+  @override
+  String get currentPassword => 'Mot de Passe Actuel';
+
+  @override
+  String get enterCurrentPassword => 'Entrez votre mot de passe actuel';
+
+  @override
+  String get reEnterNewPassword => 'Ressaisissez votre nouveau mot de passe';
+
+  @override
+  String get currentPin => 'PIN Actuel';
+
+  @override
+  String get enterCurrentPin => 'Entrez votre PIN actuel';
+
+  @override
+  String get enterYourCurrentPin => 'Entrez votre PIN actuel';
+
+  @override
+  String get changePin => 'Changer le PIN';
+
+  @override
+  String get updatePassword => 'Mettre à Jour le Mot de Passe';
+
+  @override
+  String get biometricSettings => 'Paramètres Biométriques';
+
+  @override
+  String get faceId => 'Face ID';
+
+  @override
+  String get touchId => 'Touch ID';
+
+  @override
+  String get useFaceId => 'Utiliser Face ID pour s\'authentifier';
+
+  @override
+  String get useTouchId => 'Utiliser Touch ID pour s\'authentifier';
+
+  @override
+  String get activitySessions => 'Sessions d\'Activité';
+
+  @override
+  String get currentSessions => 'Sessions Actuelles';
+
+  @override
+  String get pastSessions => 'Sessions Passées';
+
+  @override
+  String get active => 'Actif';
+
+  @override
+  String get ended => 'Terminé';
+
+  @override
+  String get createNewPin => 'Créer un Nouveau PIN';
+
+  @override
+  String get verifyIdentity => 'Vérifiez votre identité pour continuer';
+
+  @override
+  String get createYourNewPin => 'Créez votre nouveau PIN';
+
+  @override
+  String get choosePinDescription =>
+      'Choisissez un PIN à 4 chiffres facile à retenir';
+
+  @override
+  String get pinChangedSuccessfully => 'PIN Changé avec Succès !';
+
+  @override
+  String get pinChangeSuccessDescription =>
+      'Votre nouveau PIN a été défini avec succès';
+
+  @override
+  String get passwordRequirements =>
+      'Le mot de passe doit contenir au moins 8 caractères avec majuscules, minuscules et chiffres';
+
+  @override
+  String get passwordsDoNotMatch => 'Les mots de passe ne correspondent pas';
+
+  @override
+  String get invalidCurrentPassword => 'Le mot de passe actuel est incorrect';
+
+  @override
+  String get invalidPin => 'PIN invalide. Veuillez réessayer';
+
+  @override
+  String get edit => 'Modifier';
+
+  @override
+  String get save => 'Enregistrer';
+
+  @override
+  String get basicInformation => 'Informations de Base';
+
+  @override
+  String get otherInformation => 'Autres Informations';
+
+  @override
+  String get firstName => 'Prénom';
+
+  @override
+  String get lastName => 'Nom';
+
+  @override
+  String get selectGender => 'Sélectionner le genre';
+
+  @override
+  String get identification => 'Identification';
+
+  @override
+  String get inProgress => 'En Cours';
+
+  @override
+  String get saved => 'Enregistré';
+
+  @override
+  String tracksProgress(int current, int total) {
+    return '$current/$total Pistes';
+  }
+
+  @override
+  String percentCompleted(int percent) {
+    return '$percent% Terminé';
+  }
 }

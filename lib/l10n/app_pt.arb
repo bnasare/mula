@@ -732,5 +732,58 @@
   "aboutAppValueClarity": "Clareza:",
   "aboutAppValueClarityDescription": "Explicamos finanças em linguagem simples e cotidiana",
   "aboutAppValueGrowth": "Crescimento:",
-  "aboutAppValueGrowthDescription": "Ajudamos você a fazer escolhas informadas para riqueza a longo prazo"
+  "aboutAppValueGrowthDescription": "Ajudamos você a fazer escolhas informadas para riqueza a longo prazo",
+  "securitySettings": "Configurações de Segurança",
+  "changePassword": "Alterar Senha",
+  "currentPassword": "Senha Atual",
+  "enterCurrentPassword": "Digite sua senha atual",
+  "reEnterNewPassword": "Digite novamente sua nova senha",
+  "currentPin": "PIN Atual",
+  "enterCurrentPin": "Digite seu PIN atual",
+  "enterYourCurrentPin": "Digite seu PIN atual",
+  "changePin": "Alterar PIN",
+  "updatePassword": "Atualizar Senha",
+  "biometricSettings": "Configurações Biométricas",
+  "faceId": "Face ID",
+  "touchId": "Touch ID",
+  "useFaceId": "Usar Face ID para autenticar",
+  "useTouchId": "Usar Touch ID para autenticar",
+  "activitySessions": "Sessões de Atividade",
+  "currentSessions": "Sessões Atuais",
+  "pastSessions": "Sessões Anteriores",
+  "active": "Ativo",
+  "ended": "Encerrado",
+  "createNewPin": "Criar Novo PIN",
+  "verifyIdentity": "Verifique sua identidade para continuar",
+  "createYourNewPin": "Crie seu novo PIN",
+  "choosePinDescription": "Escolha um PIN de 4 dígitos fácil de lembrar",
+  "pinChangedSuccessfully": "PIN Alterado com Sucesso!",
+  "pinChangeSuccessDescription": "Seu novo PIN foi definido com sucesso",
+  "passwordRequirements": "A senha deve ter pelo menos 8 caracteres com maiúsculas, minúsculas e números",
+  "passwordsDoNotMatch": "As senhas não coincidem",
+  "invalidCurrentPassword": "A senha atual está incorreta",
+  "invalidPin": "PIN inválido. Por favor, tente novamente",
+  "edit": "Editar",
+  "save": "Salvar",
+  "basicInformation": "Informações Básicas",
+  "otherInformation": "Outras Informações",
+  "firstName": "Nome",
+  "lastName": "Sobrenome",
+  "selectGender": "Selecionar gênero",
+  "identification": "Identificação",
+  "inProgress": "Em Andamento",
+  "saved": "Salvo",
+  "tracksProgress": "{current}/{total} Faixas",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% Concluído",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  }
 }

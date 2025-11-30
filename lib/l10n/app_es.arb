@@ -735,5 +735,59 @@
   "aboutAppValueClarity": "Claridad:",
   "aboutAppValueClarityDescription": "Explicamos las finanzas en un lenguaje simple y cotidiano",
   "aboutAppValueGrowth": "Crecimiento:",
-  "aboutAppValueGrowthDescription": "Te ayudamos a tomar decisiones informadas para la riqueza a largo plazo"
+  "aboutAppValueGrowthDescription": "Te ayudamos a tomar decisiones informadas para la riqueza a largo plazo",
+
+  "edit": "Editar",
+  "save": "Guardar",
+  "basicInformation": "Información Básica",
+  "otherInformation": "Otra Información",
+  "firstName": "Nombre",
+  "lastName": "Apellido",
+  "selectGender": "Seleccionar género",
+  "identification": "Identificación",
+  "securitySettings": "Configuración de Seguridad",
+  "changePassword": "Cambiar Contraseña",
+  "currentPassword": "Contraseña Actual",
+  "enterCurrentPassword": "Ingresa tu contraseña actual",
+  "reEnterNewPassword": "Vuelve a ingresar tu nueva contraseña",
+  "currentPin": "PIN Actual",
+  "enterCurrentPin": "Ingresa tu PIN actual",
+  "enterYourCurrentPin": "Ingresa tu PIN actual",
+  "changePin": "Cambiar PIN",
+  "updatePassword": "Actualizar Contraseña",
+  "biometricSettings": "Configuración Biométrica",
+  "faceId": "Face ID",
+  "touchId": "Touch ID",
+  "useFaceId": "Usar Face ID para autenticarse",
+  "useTouchId": "Usar Touch ID para autenticarse",
+  "activitySessions": "Sesiones de Actividad",
+  "currentSessions": "Sesiones Actuales",
+  "pastSessions": "Sesiones Anteriores",
+  "active": "Activo",
+  "ended": "Finalizado",
+  "createNewPin": "Crear Nuevo PIN",
+  "verifyIdentity": "Verifica tu identidad para continuar",
+  "createYourNewPin": "Crea tu nuevo PIN",
+  "choosePinDescription": "Elige un PIN de 4 dígitos que sea fácil de recordar",
+  "pinChangedSuccessfully": "¡PIN Cambiado Exitosamente!",
+  "pinChangeSuccessDescription": "Tu nuevo PIN ha sido establecido exitosamente",
+  "passwordRequirements": "La contraseña debe tener al menos 8 caracteres con mayúsculas, minúsculas y números",
+  "passwordsDoNotMatch": "Las contraseñas no coinciden",
+  "invalidCurrentPassword": "La contraseña actual es incorrecta",
+  "invalidPin": "PIN inválido. Por favor intenta de nuevo",
+  "inProgress": "En Progreso",
+  "saved": "Guardado",
+  "tracksProgress": "{current}/{total} Pistas",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% Completado",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  }
 }

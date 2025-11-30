@@ -9,6 +9,7 @@ import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../authentication/presentation/interface/screens/link_investment_accounts_screen.dart';
+import '../widgets/account_details_bottom_sheet.dart';
 import '../widgets/account_section.dart';
 import '../widgets/linked_account_item.dart';
 
@@ -57,9 +58,22 @@ class LinkedAccountsScreen extends StatelessWidget {
     },
   ];
 
-  void _onAccountTap(BuildContext context, Map<String, String> account) {
-    // Show unlink confirmation dialog directly
-    _showUnlinkConfirmation(context, account);
+  void _onAccountTap(
+    BuildContext context,
+    Map<String, String> account,
+    String accountType,
+  ) {
+    // Show account details bottom sheet first
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => AccountDetailsBottomSheet(
+        accountType: accountType,
+        account: account,
+        onRemoveAccount: () => _showUnlinkConfirmation(context, account),
+      ),
+    );
   }
 
   void _showUnlinkConfirmation(
@@ -138,7 +152,7 @@ class LinkedAccountsScreen extends StatelessWidget {
                     return LinkedAccountItem(
                       name: account['name']!,
                       accountType: 'CIS',
-                      onTap: () => _onAccountTap(context, account),
+                      onTap: () => _onAccountTap(context, account, 'CIS'),
                     );
                   }).toList(),
                 ),
@@ -153,7 +167,7 @@ class LinkedAccountsScreen extends StatelessWidget {
                     return LinkedAccountItem(
                       name: account['name']!,
                       accountType: 'CSD',
-                      onTap: () => _onAccountTap(context, account),
+                      onTap: () => _onAccountTap(context, account, 'CSD'),
                     );
                   }).toList(),
                 ),
@@ -169,7 +183,7 @@ class LinkedAccountsScreen extends StatelessWidget {
                       name: account['network']!,
                       subtitle: account['number']!,
                       accountType: 'MobileMoney',
-                      onTap: () => _onAccountTap(context, account),
+                      onTap: () => _onAccountTap(context, account, 'MobileMoney'),
                     );
                   }).toList(),
                 ),
@@ -185,7 +199,7 @@ class LinkedAccountsScreen extends StatelessWidget {
                       name: account['bank']!,
                       subtitle: account['accountNumber']!,
                       accountType: 'Bank',
-                      onTap: () => _onAccountTap(context, account),
+                      onTap: () => _onAccountTap(context, account, 'Bank'),
                     );
                   }).toList(),
                 ),

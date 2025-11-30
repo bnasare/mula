@@ -732,5 +732,59 @@
   "aboutAppValueClarity": "Duidelijkheid:",
   "aboutAppValueClarityDescription": "We leggen financiën uit in eenvoudige, alledaagse taal",
   "aboutAppValueGrowth": "Groei:",
-  "aboutAppValueGrowthDescription": "We helpen u weloverwogen keuzes te maken voor vermogen op lange termijn"
+  "aboutAppValueGrowthDescription": "We helpen u weloverwogen keuzes te maken voor vermogen op lange termijn",
+
+  "edit": "Bewerken",
+  "save": "Opslaan",
+  "basicInformation": "Basisinformatie",
+  "otherInformation": "Overige Informatie",
+  "firstName": "Voornaam",
+  "lastName": "Achternaam",
+  "selectGender": "Selecteer geslacht",
+  "identification": "Identificatie",
+  "securitySettings": "Beveiligingsinstellingen",
+  "changePassword": "Wachtwoord Wijzigen",
+  "currentPassword": "Huidig Wachtwoord",
+  "enterCurrentPassword": "Voer uw huidige wachtwoord in",
+  "reEnterNewPassword": "Voer uw nieuwe wachtwoord opnieuw in",
+  "currentPin": "Huidige PIN",
+  "enterCurrentPin": "Voer uw huidige PIN in",
+  "enterYourCurrentPin": "Voer uw huidige PIN in",
+  "changePin": "PIN Wijzigen",
+  "updatePassword": "Wachtwoord Bijwerken",
+  "biometricSettings": "Biometrische Instellingen",
+  "faceId": "Face ID",
+  "touchId": "Touch ID",
+  "useFaceId": "Gebruik Face ID om te authenticeren",
+  "useTouchId": "Gebruik Touch ID om te authenticeren",
+  "activitySessions": "Activiteitssessies",
+  "currentSessions": "Huidige Sessies",
+  "pastSessions": "Eerdere Sessies",
+  "active": "Actief",
+  "ended": "Beëindigd",
+  "createNewPin": "Nieuwe PIN Aanmaken",
+  "verifyIdentity": "Verifieer uw identiteit om door te gaan",
+  "createYourNewPin": "Maak uw nieuwe PIN aan",
+  "choosePinDescription": "Kies een 4-cijferige PIN die gemakkelijk te onthouden is",
+  "pinChangedSuccessfully": "PIN Succesvol Gewijzigd!",
+  "pinChangeSuccessDescription": "Uw nieuwe PIN is succesvol ingesteld",
+  "passwordRequirements": "Wachtwoord moet minimaal 8 tekens bevatten met hoofdletters, kleine letters en cijfers",
+  "passwordsDoNotMatch": "Wachtwoorden komen niet overeen",
+  "invalidCurrentPassword": "Huidig wachtwoord is onjuist",
+  "invalidPin": "Ongeldige PIN. Probeer het opnieuw",
+  "inProgress": "Bezig",
+  "saved": "Opgeslagen",
+  "tracksProgress": "{current}/{total} Tracks",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% Voltooid",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  }
 }

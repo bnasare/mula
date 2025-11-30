@@ -120,8 +120,16 @@ class DummyDashboardData {
 
     return {
       'name': 'Nana Asare',
-      'email': 'phil.kyei@example.com',
-      'profileImage': null, // No image for now
+      'firstName': 'Nana',
+      'lastName': 'Asare',
+      'email': 'benedictasare2@gmail.com',
+      'phone': '+233 55 066 7901',
+      'dateOfBirth': '15/08/1995',
+      'gender': 'Male',
+      'residentialAddress': 'East Legon, Accra',
+      'gpsAddress': 'GA-123-4567',
+      'occupation': 'Software Engineer',
+      'profileImage': 'https://ui-avatars.com/api/?name=Nana+Asare&size=200&background=0D8ABC&color=fff',
     };
   }
 }

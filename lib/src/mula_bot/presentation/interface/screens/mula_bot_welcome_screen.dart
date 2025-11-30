@@ -5,6 +5,7 @@ import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/app_button.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
+import '../../../../../shared/services/preferences_service.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import 'mula_bot_chat_screen.dart';
@@ -57,11 +58,14 @@ class MulaBotWelcomeScreen extends StatelessWidget {
                 borderRadius: 12,
                 height: 50,
                 padding: EdgeInsets.zero,
-                onTap: () {
-                  NavigationHelper.navigateTo(
-                    context,
-                    const MulaBotChatScreen(),
-                  );
+                onTap: () async {
+                  await PreferencesService.setMulaBotWelcomeShown();
+                  if (context.mounted) {
+                    NavigationHelper.navigateToReplacement(
+                      context,
+                      const MulaBotChatScreen(),
+                    );
+                  }
                 },
               ),
             ],

@@ -3853,6 +3853,258 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'We help you make informed choices for long-term wealth'**
   String get aboutAppValueGrowthDescription;
+
+  /// No description provided for @securitySettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Security Settings'**
+  String get securitySettings;
+
+  /// No description provided for @changePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Change Password'**
+  String get changePassword;
+
+  /// No description provided for @currentPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Password'**
+  String get currentPassword;
+
+  /// No description provided for @enterCurrentPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your current password'**
+  String get enterCurrentPassword;
+
+  /// No description provided for @reEnterNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Re-enter your new password'**
+  String get reEnterNewPassword;
+
+  /// No description provided for @currentPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Current PIN'**
+  String get currentPin;
+
+  /// No description provided for @enterCurrentPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your current PIN'**
+  String get enterCurrentPin;
+
+  /// No description provided for @enterYourCurrentPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your current PIN'**
+  String get enterYourCurrentPin;
+
+  /// No description provided for @changePin.
+  ///
+  /// In en, this message translates to:
+  /// **'Change PIN'**
+  String get changePin;
+
+  /// No description provided for @updatePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Update Password'**
+  String get updatePassword;
+
+  /// No description provided for @biometricSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Biometric Settings'**
+  String get biometricSettings;
+
+  /// No description provided for @faceId.
+  ///
+  /// In en, this message translates to:
+  /// **'Face ID'**
+  String get faceId;
+
+  /// No description provided for @touchId.
+  ///
+  /// In en, this message translates to:
+  /// **'Touch ID'**
+  String get touchId;
+
+  /// No description provided for @useFaceId.
+  ///
+  /// In en, this message translates to:
+  /// **'Use Face ID to authenticate'**
+  String get useFaceId;
+
+  /// No description provided for @useTouchId.
+  ///
+  /// In en, this message translates to:
+  /// **'Use Touch ID to authenticate'**
+  String get useTouchId;
+
+  /// No description provided for @activitySessions.
+  ///
+  /// In en, this message translates to:
+  /// **'Activity Sessions'**
+  String get activitySessions;
+
+  /// No description provided for @currentSessions.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Sessions'**
+  String get currentSessions;
+
+  /// No description provided for @pastSessions.
+  ///
+  /// In en, this message translates to:
+  /// **'Past Sessions'**
+  String get pastSessions;
+
+  /// No description provided for @active.
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get active;
+
+  /// No description provided for @ended.
+  ///
+  /// In en, this message translates to:
+  /// **'Ended'**
+  String get ended;
+
+  /// No description provided for @createNewPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Create New PIN'**
+  String get createNewPin;
+
+  /// No description provided for @verifyIdentity.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your identity to continue'**
+  String get verifyIdentity;
+
+  /// No description provided for @createYourNewPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Create your new PIN'**
+  String get createYourNewPin;
+
+  /// No description provided for @choosePinDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a 4-digit PIN that\'s easy to remember'**
+  String get choosePinDescription;
+
+  /// No description provided for @pinChangedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'PIN Changed Successfully!'**
+  String get pinChangedSuccessfully;
+
+  /// No description provided for @pinChangeSuccessDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your new PIN has been set successfully'**
+  String get pinChangeSuccessDescription;
+
+  /// No description provided for @passwordRequirements.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must be at least 8 characters with uppercase, lowercase, and numbers'**
+  String get passwordRequirements;
+
+  /// No description provided for @passwordsDoNotMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Passwords do not match'**
+  String get passwordsDoNotMatch;
+
+  /// No description provided for @invalidCurrentPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Current password is incorrect'**
+  String get invalidCurrentPassword;
+
+  /// No description provided for @invalidPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid PIN. Please try again'**
+  String get invalidPin;
+
+  /// No description provided for @edit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get edit;
+
+  /// No description provided for @save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
+
+  /// No description provided for @basicInformation.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic Information'**
+  String get basicInformation;
+
+  /// No description provided for @otherInformation.
+  ///
+  /// In en, this message translates to:
+  /// **'Other Information'**
+  String get otherInformation;
+
+  /// No description provided for @firstName.
+  ///
+  /// In en, this message translates to:
+  /// **'First Name'**
+  String get firstName;
+
+  /// No description provided for @lastName.
+  ///
+  /// In en, this message translates to:
+  /// **'Last Name'**
+  String get lastName;
+
+  /// No description provided for @selectGender.
+  ///
+  /// In en, this message translates to:
+  /// **'Select gender'**
+  String get selectGender;
+
+  /// No description provided for @identification.
+  ///
+  /// In en, this message translates to:
+  /// **'Identification'**
+  String get identification;
+
+  /// No description provided for @inProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'In-Progress'**
+  String get inProgress;
+
+  /// No description provided for @saved.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved'**
+  String get saved;
+
+  /// No description provided for @tracksProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'{current}/{total} Tracks'**
+  String tracksProgress(int current, int total);
+
+  /// No description provided for @percentCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% Completed'**
+  String percentCompleted(int percent);
 }
 
 class _AppLocalizationsDelegate

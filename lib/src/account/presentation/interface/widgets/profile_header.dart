@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -11,13 +13,17 @@ class ProfileHeader extends StatelessWidget {
     required this.userName,
     this.userInitial,
     this.profileImageUrl,
+    this.profileImageFile,
     this.onLogout,
+    this.onProfileImageTap,
   });
 
   final String userName;
   final String? userInitial;
   final String? profileImageUrl;
+  final File? profileImageFile;
   final VoidCallback? onLogout;
+  final VoidCallback? onProfileImageTap;
 
   @override
   Widget build(BuildContext context) {
@@ -25,18 +31,49 @@ class ProfileHeader extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       child: Row(
         children: [
-          CircleAvatar(
-            radius: 28,
-            backgroundColor: AppColors.appPrimary,
-            backgroundImage: profileImageUrl != null
-                ? NetworkImage(profileImageUrl!)
-                : null,
-            child: profileImageUrl == null
-                ? AppText.large(
-                    userInitial ?? userName[0].toUpperCase(),
-                    color: AppColors.white(context),
-                  )
-                : null,
+          Stack(
+            children: [
+              CircleAvatar(
+                radius: 28,
+                backgroundColor: AppColors.appPrimary,
+                backgroundImage: profileImageFile != null
+                    ? FileImage(profileImageFile!)
+                    : (profileImageUrl != null
+                          ? NetworkImage(profileImageUrl!)
+                          : null),
+                child: profileImageFile == null && profileImageUrl == null
+                    ? AppText.large(
+                        userInitial ?? userName[0].toUpperCase(),
+                        color: AppColors.white(context),
+                      )
+                    : null,
+              ),
+              if (onProfileImageTap != null)
+                Positioned(
+                  bottom: 0,
+                  right: 0,
+                  child: GestureDetector(
+                    onTap: onProfileImageTap,
+                    child: Container(
+                      width: 20,
+                      height: 20,
+                      decoration: BoxDecoration(
+                        color: AppColors.appPrimary,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: AppColors.card(context),
+                          width: 2,
+                        ),
+                      ),
+                      child: Icon(
+                        Iconsax.more,
+                        size: 12,
+                        color: AppColors.white(context),
+                      ),
+                    ),
+                  ),
+                ),
+            ],
           ),
           const SizedBox(width: 14),
           Expanded(
@@ -50,11 +87,7 @@ class ProfileHeader extends StatelessWidget {
           ),
           TextButton.icon(
             onPressed: onLogout,
-            icon: const Icon(
-              Iconsax.logout,
-              size: 18,
-              color: AppColors.error,
-            ),
+            icon: const Icon(Iconsax.logout, size: 18, color: AppColors.error),
             label: AppText.smaller(
               context.localize.logOut,
               color: AppColors.error,

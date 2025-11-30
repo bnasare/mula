@@ -1979,4 +1979,137 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get aboutAppValueGrowthDescription =>
       'We help you make informed choices for long-term wealth';
+
+  @override
+  String get securitySettings => 'Security Settings';
+
+  @override
+  String get changePassword => 'Change Password';
+
+  @override
+  String get currentPassword => 'Current Password';
+
+  @override
+  String get enterCurrentPassword => 'Enter your current password';
+
+  @override
+  String get reEnterNewPassword => 'Re-enter your new password';
+
+  @override
+  String get currentPin => 'Current PIN';
+
+  @override
+  String get enterCurrentPin => 'Enter your current PIN';
+
+  @override
+  String get enterYourCurrentPin => 'Enter your current PIN';
+
+  @override
+  String get changePin => 'Change PIN';
+
+  @override
+  String get updatePassword => 'Update Password';
+
+  @override
+  String get biometricSettings => 'Biometric Settings';
+
+  @override
+  String get faceId => 'Face ID';
+
+  @override
+  String get touchId => 'Touch ID';
+
+  @override
+  String get useFaceId => 'Use Face ID to authenticate';
+
+  @override
+  String get useTouchId => 'Use Touch ID to authenticate';
+
+  @override
+  String get activitySessions => 'Activity Sessions';
+
+  @override
+  String get currentSessions => 'Current Sessions';
+
+  @override
+  String get pastSessions => 'Past Sessions';
+
+  @override
+  String get active => 'Active';
+
+  @override
+  String get ended => 'Ended';
+
+  @override
+  String get createNewPin => 'Create New PIN';
+
+  @override
+  String get verifyIdentity => 'Verify your identity to continue';
+
+  @override
+  String get createYourNewPin => 'Create your new PIN';
+
+  @override
+  String get choosePinDescription =>
+      'Choose a 4-digit PIN that\'s easy to remember';
+
+  @override
+  String get pinChangedSuccessfully => 'PIN Changed Successfully!';
+
+  @override
+  String get pinChangeSuccessDescription =>
+      'Your new PIN has been set successfully';
+
+  @override
+  String get passwordRequirements =>
+      'Password must be at least 8 characters with uppercase, lowercase, and numbers';
+
+  @override
+  String get passwordsDoNotMatch => 'Passwords do not match';
+
+  @override
+  String get invalidCurrentPassword => 'Current password is incorrect';
+
+  @override
+  String get invalidPin => 'Invalid PIN. Please try again';
+
+  @override
+  String get edit => 'Edit';
+
+  @override
+  String get save => 'Save';
+
+  @override
+  String get basicInformation => 'Basic Information';
+
+  @override
+  String get otherInformation => 'Other Information';
+
+  @override
+  String get firstName => 'First Name';
+
+  @override
+  String get lastName => 'Last Name';
+
+  @override
+  String get selectGender => 'Select gender';
+
+  @override
+  String get identification => 'Identification';
+
+  @override
+  String get inProgress => 'In-Progress';
+
+  @override
+  String get saved => 'Saved';
+
+  @override
+  String tracksProgress(int current, int total) {
+    return '$current/$total Tracks';
+  }
+
+  @override
+  String percentCompleted(int percent) {
+    return '$percent% Completed';
+  }
 }

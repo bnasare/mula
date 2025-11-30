@@ -734,5 +734,59 @@
   "aboutAppValueClarity": "Clarté :",
   "aboutAppValueClarityDescription": "Nous expliquons la finance dans un langage simple et quotidien",
   "aboutAppValueGrowth": "Croissance :",
-  "aboutAppValueGrowthDescription": "Nous vous aidons à faire des choix éclairés pour une richesse à long terme"
+  "aboutAppValueGrowthDescription": "Nous vous aidons à faire des choix éclairés pour une richesse à long terme",
+
+  "edit": "Modifier",
+  "save": "Enregistrer",
+  "basicInformation": "Informations de Base",
+  "otherInformation": "Autres Informations",
+  "firstName": "Prénom",
+  "lastName": "Nom",
+  "selectGender": "Sélectionner le genre",
+  "identification": "Identification",
+  "securitySettings": "Paramètres de Sécurité",
+  "changePassword": "Changer le Mot de Passe",
+  "currentPassword": "Mot de Passe Actuel",
+  "enterCurrentPassword": "Entrez votre mot de passe actuel",
+  "reEnterNewPassword": "Ressaisissez votre nouveau mot de passe",
+  "currentPin": "PIN Actuel",
+  "enterCurrentPin": "Entrez votre PIN actuel",
+  "enterYourCurrentPin": "Entrez votre PIN actuel",
+  "changePin": "Changer le PIN",
+  "updatePassword": "Mettre à Jour le Mot de Passe",
+  "biometricSettings": "Paramètres Biométriques",
+  "faceId": "Face ID",
+  "touchId": "Touch ID",
+  "useFaceId": "Utiliser Face ID pour s'authentifier",
+  "useTouchId": "Utiliser Touch ID pour s'authentifier",
+  "activitySessions": "Sessions d'Activité",
+  "currentSessions": "Sessions Actuelles",
+  "pastSessions": "Sessions Passées",
+  "active": "Actif",
+  "ended": "Terminé",
+  "createNewPin": "Créer un Nouveau PIN",
+  "verifyIdentity": "Vérifiez votre identité pour continuer",
+  "createYourNewPin": "Créez votre nouveau PIN",
+  "choosePinDescription": "Choisissez un PIN à 4 chiffres facile à retenir",
+  "pinChangedSuccessfully": "PIN Changé avec Succès !",
+  "pinChangeSuccessDescription": "Votre nouveau PIN a été défini avec succès",
+  "passwordRequirements": "Le mot de passe doit contenir au moins 8 caractères avec majuscules, minuscules et chiffres",
+  "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+  "invalidCurrentPassword": "Le mot de passe actuel est incorrect",
+  "invalidPin": "PIN invalide. Veuillez réessayer",
+  "inProgress": "En Cours",
+  "saved": "Enregistré",
+  "tracksProgress": "{current}/{total} Pistes",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% Terminé",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  }
 }

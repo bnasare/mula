@@ -826,5 +826,36 @@
   "passwordRequirements": "Password must be at least 8 characters with uppercase, lowercase, and numbers",
   "passwordsDoNotMatch": "Passwords do not match",
   "invalidCurrentPassword": "Current password is incorrect",
-  "invalidPin": "Invalid PIN. Please try again"
+  "invalidPin": "Invalid PIN. Please try again",
+
+  "edit": "Edit",
+  "save": "Save",
+  "basicInformation": "Basic Information",
+  "otherInformation": "Other Information",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "selectGender": "Select gender",
+  "identification": "Identification",
+
+  "inProgress": "In-Progress",
+  "saved": "Saved",
+  "tracksProgress": "{current}/{total} Tracks",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "percentCompleted": "{percent}% Completed",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  }
 }

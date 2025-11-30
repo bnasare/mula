@@ -1926,4 +1926,134 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get aboutAppValueGrowthDescription => '長期的な資産形成のための情報に基づいた選択をお手伝いします';
+
+  @override
+  String get securitySettings => 'セキュリティ設定';
+
+  @override
+  String get changePassword => 'パスワードを変更';
+
+  @override
+  String get currentPassword => '現在のパスワード';
+
+  @override
+  String get enterCurrentPassword => '現在のパスワードを入力してください';
+
+  @override
+  String get reEnterNewPassword => '新しいパスワードを再入力してください';
+
+  @override
+  String get currentPin => '現在のPIN';
+
+  @override
+  String get enterCurrentPin => '現在のPINを入力してください';
+
+  @override
+  String get enterYourCurrentPin => '現在のPINを入力してください';
+
+  @override
+  String get changePin => 'PINを変更';
+
+  @override
+  String get updatePassword => 'パスワードを更新';
+
+  @override
+  String get biometricSettings => '生体認証設定';
+
+  @override
+  String get faceId => 'Face ID';
+
+  @override
+  String get touchId => 'Touch ID';
+
+  @override
+  String get useFaceId => 'Face IDで認証';
+
+  @override
+  String get useTouchId => 'Touch IDで認証';
+
+  @override
+  String get activitySessions => 'アクティビティセッション';
+
+  @override
+  String get currentSessions => '現在のセッション';
+
+  @override
+  String get pastSessions => '過去のセッション';
+
+  @override
+  String get active => 'アクティブ';
+
+  @override
+  String get ended => '終了';
+
+  @override
+  String get createNewPin => '新しいPINを作成';
+
+  @override
+  String get verifyIdentity => '続行するには本人確認を行ってください';
+
+  @override
+  String get createYourNewPin => '新しいPINを作成してください';
+
+  @override
+  String get choosePinDescription => '覚えやすい4桁のPINを選択してください';
+
+  @override
+  String get pinChangedSuccessfully => 'PINが正常に変更されました！';
+
+  @override
+  String get pinChangeSuccessDescription => '新しいPINが正常に設定されました';
+
+  @override
+  String get passwordRequirements => 'パスワードは大文字、小文字、数字を含む8文字以上である必要があります';
+
+  @override
+  String get passwordsDoNotMatch => 'パスワードが一致しません';
+
+  @override
+  String get invalidCurrentPassword => '現在のパスワードが正しくありません';
+
+  @override
+  String get invalidPin => '無効なPINです。もう一度お試しください';
+
+  @override
+  String get edit => '編集';
+
+  @override
+  String get save => '保存';
+
+  @override
+  String get basicInformation => '基本情報';
+
+  @override
+  String get otherInformation => 'その他の情報';
+
+  @override
+  String get firstName => '名';
+
+  @override
+  String get lastName => '姓';
+
+  @override
+  String get selectGender => '性別を選択';
+
+  @override
+  String get identification => '本人確認';
+
+  @override
+  String get inProgress => '進行中';
+
+  @override
+  String get saved => '保存済み';
+
+  @override
+  String tracksProgress(int current, int total) {
+    return '$current/$total トラック';
+  }
+
+  @override
+  String percentCompleted(int percent) {
+    return '$percent% 完了';
+  }
 }

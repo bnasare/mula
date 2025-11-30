@@ -735,5 +735,59 @@
   "aboutAppValueClarity": "Klarheit:",
   "aboutAppValueClarityDescription": "Wir erklären Finanzen in einfacher, alltäglicher Sprache",
   "aboutAppValueGrowth": "Wachstum:",
-  "aboutAppValueGrowthDescription": "Wir helfen Ihnen, fundierte Entscheidungen für langfristigen Wohlstand zu treffen"
+  "aboutAppValueGrowthDescription": "Wir helfen Ihnen, fundierte Entscheidungen für langfristigen Wohlstand zu treffen",
+
+  "edit": "Bearbeiten",
+  "save": "Speichern",
+  "basicInformation": "Grundinformationen",
+  "otherInformation": "Weitere Informationen",
+  "firstName": "Vorname",
+  "lastName": "Nachname",
+  "selectGender": "Geschlecht auswählen",
+  "identification": "Identifikation",
+  "securitySettings": "Sicherheitseinstellungen",
+  "changePassword": "Passwort ändern",
+  "currentPassword": "Aktuelles Passwort",
+  "enterCurrentPassword": "Geben Sie Ihr aktuelles Passwort ein",
+  "reEnterNewPassword": "Neues Passwort erneut eingeben",
+  "currentPin": "Aktuelle PIN",
+  "enterCurrentPin": "Geben Sie Ihre aktuelle PIN ein",
+  "enterYourCurrentPin": "Geben Sie Ihre aktuelle PIN ein",
+  "changePin": "PIN ändern",
+  "updatePassword": "Passwort aktualisieren",
+  "biometricSettings": "Biometrische Einstellungen",
+  "faceId": "Face ID",
+  "touchId": "Touch ID",
+  "useFaceId": "Face ID zur Authentifizierung verwenden",
+  "useTouchId": "Touch ID zur Authentifizierung verwenden",
+  "activitySessions": "Aktivitätssitzungen",
+  "currentSessions": "Aktuelle Sitzungen",
+  "pastSessions": "Vergangene Sitzungen",
+  "active": "Aktiv",
+  "ended": "Beendet",
+  "createNewPin": "Neue PIN erstellen",
+  "verifyIdentity": "Bestätigen Sie Ihre Identität, um fortzufahren",
+  "createYourNewPin": "Erstellen Sie Ihre neue PIN",
+  "choosePinDescription": "Wählen Sie eine 4-stellige PIN, die leicht zu merken ist",
+  "pinChangedSuccessfully": "PIN erfolgreich geändert!",
+  "pinChangeSuccessDescription": "Ihre neue PIN wurde erfolgreich festgelegt",
+  "passwordRequirements": "Das Passwort muss mindestens 8 Zeichen mit Groß-, Kleinbuchstaben und Zahlen enthalten",
+  "passwordsDoNotMatch": "Passwörter stimmen nicht überein",
+  "invalidCurrentPassword": "Aktuelles Passwort ist falsch",
+  "invalidPin": "Ungültige PIN. Bitte versuchen Sie es erneut",
+  "inProgress": "In Bearbeitung",
+  "saved": "Gespeichert",
+  "tracksProgress": "{current}/{total} Tracks",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% Abgeschlossen",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  }
 }

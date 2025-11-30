@@ -91,6 +91,10 @@ class _EnterPinScreenState extends State<EnterPinScreen> with OnboardingMixin {
                         SvgAssets.faceid,
                         width: context.responsiveValue(mobile: 32),
                         height: context.responsiveValue(mobile: 32),
+                        colorFilter: ColorFilter.mode(
+                          AppColors.black(context),
+                          BlendMode.srcIn,
+                        ),
                       ),
                     ),
                   ),

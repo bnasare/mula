@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../../shared/data/image_assets.dart';
+import '../../../../../shared/services/preferences_service.dart';
 import '../../../../../shared/utils/extension.dart';
 import '../../../../../shared/utils/navigation.dart';
 import '../../../../dashboard/presentation/provider/dashboard_provider.dart';
+import '../../../../mula_bot/presentation/interface/screens/mula_bot_chat_screen.dart';
 import '../../../../mula_bot/presentation/interface/screens/mula_bot_welcome_screen.dart';
 import '../widgets/action_buttons_section.dart';
 import '../widgets/asset_overview_section.dart';
@@ -92,8 +94,19 @@ class _HomeTabState extends State<HomeTab> {
         ),
       ),
       floatingActionButton: GestureDetector(
-        onTap: () {
-          NavigationHelper.navigateTo(context, const MulaBotWelcomeScreen());
+        onTap: () async {
+          final hasSeenWelcome =
+              await PreferencesService.isMulaBotWelcomeShown();
+          if (context.mounted) {
+            if (hasSeenWelcome) {
+              NavigationHelper.navigateTo(context, const MulaBotChatScreen());
+            } else {
+              NavigationHelper.navigateTo(
+                context,
+                const MulaBotWelcomeScreen(),
+              );
+            }
+          }
         },
         child: Image.asset(ImageAssets.ai, width: 64, height: 64),
       ),

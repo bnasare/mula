@@ -732,5 +732,58 @@
   "aboutAppValueClarity": "Ясность:",
   "aboutAppValueClarityDescription": "Мы объясняем финансы простым, повседневным языком",
   "aboutAppValueGrowth": "Рост:",
-  "aboutAppValueGrowthDescription": "Мы помогаем вам принимать обоснованные решения для долгосрочного благосостояния"
+  "aboutAppValueGrowthDescription": "Мы помогаем вам принимать обоснованные решения для долгосрочного благосостояния",
+  "securitySettings": "Настройки Безопасности",
+  "changePassword": "Изменить Пароль",
+  "currentPassword": "Текущий Пароль",
+  "enterCurrentPassword": "Введите текущий пароль",
+  "reEnterNewPassword": "Повторите новый пароль",
+  "currentPin": "Текущий PIN",
+  "enterCurrentPin": "Введите текущий PIN",
+  "enterYourCurrentPin": "Введите текущий PIN",
+  "changePin": "Изменить PIN",
+  "updatePassword": "Обновить Пароль",
+  "biometricSettings": "Биометрические Настройки",
+  "faceId": "Face ID",
+  "touchId": "Touch ID",
+  "useFaceId": "Использовать Face ID для аутентификации",
+  "useTouchId": "Использовать Touch ID для аутентификации",
+  "activitySessions": "Сессии Активности",
+  "currentSessions": "Текущие Сессии",
+  "pastSessions": "Прошлые Сессии",
+  "active": "Активно",
+  "ended": "Завершено",
+  "createNewPin": "Создать Новый PIN",
+  "verifyIdentity": "Подтвердите свою личность для продолжения",
+  "createYourNewPin": "Создайте новый PIN",
+  "choosePinDescription": "Выберите 4-значный PIN, который легко запомнить",
+  "pinChangedSuccessfully": "PIN Успешно Изменён!",
+  "pinChangeSuccessDescription": "Ваш новый PIN успешно установлен",
+  "passwordRequirements": "Пароль должен содержать не менее 8 символов с заглавными, строчными буквами и цифрами",
+  "passwordsDoNotMatch": "Пароли не совпадают",
+  "invalidCurrentPassword": "Текущий пароль неверен",
+  "invalidPin": "Неверный PIN. Пожалуйста, попробуйте снова",
+  "edit": "Редактировать",
+  "save": "Сохранить",
+  "basicInformation": "Основная Информация",
+  "otherInformation": "Другая Информация",
+  "firstName": "Имя",
+  "lastName": "Фамилия",
+  "selectGender": "Выберите пол",
+  "identification": "Идентификация",
+  "inProgress": "В процессе",
+  "saved": "Сохранено",
+  "tracksProgress": "{current}/{total} Треков",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% Завершено",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  }
 }

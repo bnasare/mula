@@ -732,5 +732,59 @@
   "aboutAppValueClarity": "स्पष्टता:",
   "aboutAppValueClarityDescription": "हम वित्त को सरल, रोजमर्रा की भाषा में समझाते हैं",
   "aboutAppValueGrowth": "विकास:",
-  "aboutAppValueGrowthDescription": "हम आपको दीर्घकालिक धन के लिए सूचित निर्णय लेने में मदद करते हैं"
+  "aboutAppValueGrowthDescription": "हम आपको दीर्घकालिक धन के लिए सूचित निर्णय लेने में मदद करते हैं",
+
+  "edit": "संपादित करें",
+  "save": "सहेजें",
+  "basicInformation": "मूल जानकारी",
+  "otherInformation": "अन्य जानकारी",
+  "firstName": "पहला नाम",
+  "lastName": "अंतिम नाम",
+  "selectGender": "लिंग चुनें",
+  "identification": "पहचान",
+  "securitySettings": "सुरक्षा सेटिंग्स",
+  "changePassword": "पासवर्ड बदलें",
+  "currentPassword": "वर्तमान पासवर्ड",
+  "enterCurrentPassword": "अपना वर्तमान पासवर्ड दर्ज करें",
+  "reEnterNewPassword": "नया पासवर्ड पुनः दर्ज करें",
+  "currentPin": "वर्तमान PIN",
+  "enterCurrentPin": "अपना वर्तमान PIN दर्ज करें",
+  "enterYourCurrentPin": "अपना वर्तमान PIN दर्ज करें",
+  "changePin": "PIN बदलें",
+  "updatePassword": "पासवर्ड अपडेट करें",
+  "biometricSettings": "बायोमेट्रिक सेटिंग्स",
+  "faceId": "Face ID",
+  "touchId": "Touch ID",
+  "useFaceId": "प्रमाणित करने के लिए Face ID का उपयोग करें",
+  "useTouchId": "प्रमाणित करने के लिए Touch ID का उपयोग करें",
+  "activitySessions": "गतिविधि सत्र",
+  "currentSessions": "वर्तमान सत्र",
+  "pastSessions": "पिछले सत्र",
+  "active": "सक्रिय",
+  "ended": "समाप्त",
+  "createNewPin": "नया PIN बनाएं",
+  "verifyIdentity": "जारी रखने के लिए अपनी पहचान सत्यापित करें",
+  "createYourNewPin": "अपना नया PIN बनाएं",
+  "choosePinDescription": "एक 4 अंकों का PIN चुनें जो याद रखने में आसान हो",
+  "pinChangedSuccessfully": "PIN सफलतापूर्वक बदला गया!",
+  "pinChangeSuccessDescription": "आपका नया PIN सफलतापूर्वक सेट हो गया है",
+  "passwordRequirements": "पासवर्ड में कम से कम 8 अक्षर होने चाहिए जिसमें बड़े, छोटे अक्षर और संख्याएं हों",
+  "passwordsDoNotMatch": "पासवर्ड मेल नहीं खाते",
+  "invalidCurrentPassword": "वर्तमान पासवर्ड गलत है",
+  "invalidPin": "अमान्य PIN। कृपया पुनः प्रयास करें",
+  "inProgress": "प्रगति में",
+  "saved": "सहेजा गया",
+  "tracksProgress": "{current}/{total} ट्रैक",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% पूर्ण",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  }
 }

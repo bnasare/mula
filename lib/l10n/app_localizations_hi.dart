@@ -1987,4 +1987,137 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get aboutAppValueGrowthDescription =>
       'हम आपको दीर्घकालिक धन के लिए सूचित निर्णय लेने में मदद करते हैं';
+
+  @override
+  String get securitySettings => 'सुरक्षा सेटिंग्स';
+
+  @override
+  String get changePassword => 'पासवर्ड बदलें';
+
+  @override
+  String get currentPassword => 'वर्तमान पासवर्ड';
+
+  @override
+  String get enterCurrentPassword => 'अपना वर्तमान पासवर्ड दर्ज करें';
+
+  @override
+  String get reEnterNewPassword => 'नया पासवर्ड पुनः दर्ज करें';
+
+  @override
+  String get currentPin => 'वर्तमान PIN';
+
+  @override
+  String get enterCurrentPin => 'अपना वर्तमान PIN दर्ज करें';
+
+  @override
+  String get enterYourCurrentPin => 'अपना वर्तमान PIN दर्ज करें';
+
+  @override
+  String get changePin => 'PIN बदलें';
+
+  @override
+  String get updatePassword => 'पासवर्ड अपडेट करें';
+
+  @override
+  String get biometricSettings => 'बायोमेट्रिक सेटिंग्स';
+
+  @override
+  String get faceId => 'Face ID';
+
+  @override
+  String get touchId => 'Touch ID';
+
+  @override
+  String get useFaceId => 'प्रमाणित करने के लिए Face ID का उपयोग करें';
+
+  @override
+  String get useTouchId => 'प्रमाणित करने के लिए Touch ID का उपयोग करें';
+
+  @override
+  String get activitySessions => 'गतिविधि सत्र';
+
+  @override
+  String get currentSessions => 'वर्तमान सत्र';
+
+  @override
+  String get pastSessions => 'पिछले सत्र';
+
+  @override
+  String get active => 'सक्रिय';
+
+  @override
+  String get ended => 'समाप्त';
+
+  @override
+  String get createNewPin => 'नया PIN बनाएं';
+
+  @override
+  String get verifyIdentity => 'जारी रखने के लिए अपनी पहचान सत्यापित करें';
+
+  @override
+  String get createYourNewPin => 'अपना नया PIN बनाएं';
+
+  @override
+  String get choosePinDescription =>
+      'एक 4 अंकों का PIN चुनें जो याद रखने में आसान हो';
+
+  @override
+  String get pinChangedSuccessfully => 'PIN सफलतापूर्वक बदला गया!';
+
+  @override
+  String get pinChangeSuccessDescription =>
+      'आपका नया PIN सफलतापूर्वक सेट हो गया है';
+
+  @override
+  String get passwordRequirements =>
+      'पासवर्ड में कम से कम 8 अक्षर होने चाहिए जिसमें बड़े, छोटे अक्षर और संख्याएं हों';
+
+  @override
+  String get passwordsDoNotMatch => 'पासवर्ड मेल नहीं खाते';
+
+  @override
+  String get invalidCurrentPassword => 'वर्तमान पासवर्ड गलत है';
+
+  @override
+  String get invalidPin => 'अमान्य PIN। कृपया पुनः प्रयास करें';
+
+  @override
+  String get edit => 'संपादित करें';
+
+  @override
+  String get save => 'सहेजें';
+
+  @override
+  String get basicInformation => 'मूल जानकारी';
+
+  @override
+  String get otherInformation => 'अन्य जानकारी';
+
+  @override
+  String get firstName => 'पहला नाम';
+
+  @override
+  String get lastName => 'अंतिम नाम';
+
+  @override
+  String get selectGender => 'लिंग चुनें';
+
+  @override
+  String get identification => 'पहचान';
+
+  @override
+  String get inProgress => 'प्रगति में';
+
+  @override
+  String get saved => 'सहेजा गया';
+
+  @override
+  String tracksProgress(int current, int total) {
+    return '$current/$total ट्रैक';
+  }
+
+  @override
+  String percentCompleted(int percent) {
+    return '$percent% पूर्ण';
+  }
 }

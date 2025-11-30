@@ -61,4 +61,19 @@ class PreferencesService {
     }
     return preferences;
   }
+
+  // Mula Bot welcome screen preference
+  static const String _mulaBotWelcomeShownKey = 'mula_bot_welcome_shown';
+
+  /// Mark Mula Bot welcome screen as shown
+  static Future<void> setMulaBotWelcomeShown() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_mulaBotWelcomeShownKey, true);
+  }
+
+  /// Check if Mula Bot welcome screen has been shown
+  static Future<bool> isMulaBotWelcomeShown() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getBool(_mulaBotWelcomeShownKey) ?? false;
+  }
 }

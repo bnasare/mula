@@ -44,6 +44,10 @@ class EnableFaceIdScreen extends StatelessWidget {
                 SvgAssets.faceid,
                 width: context.responsiveValue(mobile: 120),
                 height: context.responsiveValue(mobile: 120),
+                colorFilter: ColorFilter.mode(
+                  AppColors.black(context),
+                  BlendMode.srcIn,
+                ),
               ),
               const Spacer(),
               // Enable Button

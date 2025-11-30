@@ -1992,4 +1992,137 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get aboutAppValueGrowthDescription =>
       'Te ayudamos a tomar decisiones informadas para la riqueza a largo plazo';
+
+  @override
+  String get securitySettings => 'Configuración de Seguridad';
+
+  @override
+  String get changePassword => 'Cambiar Contraseña';
+
+  @override
+  String get currentPassword => 'Contraseña Actual';
+
+  @override
+  String get enterCurrentPassword => 'Ingresa tu contraseña actual';
+
+  @override
+  String get reEnterNewPassword => 'Vuelve a ingresar tu nueva contraseña';
+
+  @override
+  String get currentPin => 'PIN Actual';
+
+  @override
+  String get enterCurrentPin => 'Ingresa tu PIN actual';
+
+  @override
+  String get enterYourCurrentPin => 'Ingresa tu PIN actual';
+
+  @override
+  String get changePin => 'Cambiar PIN';
+
+  @override
+  String get updatePassword => 'Actualizar Contraseña';
+
+  @override
+  String get biometricSettings => 'Configuración Biométrica';
+
+  @override
+  String get faceId => 'Face ID';
+
+  @override
+  String get touchId => 'Touch ID';
+
+  @override
+  String get useFaceId => 'Usar Face ID para autenticarse';
+
+  @override
+  String get useTouchId => 'Usar Touch ID para autenticarse';
+
+  @override
+  String get activitySessions => 'Sesiones de Actividad';
+
+  @override
+  String get currentSessions => 'Sesiones Actuales';
+
+  @override
+  String get pastSessions => 'Sesiones Anteriores';
+
+  @override
+  String get active => 'Activo';
+
+  @override
+  String get ended => 'Finalizado';
+
+  @override
+  String get createNewPin => 'Crear Nuevo PIN';
+
+  @override
+  String get verifyIdentity => 'Verifica tu identidad para continuar';
+
+  @override
+  String get createYourNewPin => 'Crea tu nuevo PIN';
+
+  @override
+  String get choosePinDescription =>
+      'Elige un PIN de 4 dígitos que sea fácil de recordar';
+
+  @override
+  String get pinChangedSuccessfully => '¡PIN Cambiado Exitosamente!';
+
+  @override
+  String get pinChangeSuccessDescription =>
+      'Tu nuevo PIN ha sido establecido exitosamente';
+
+  @override
+  String get passwordRequirements =>
+      'La contraseña debe tener al menos 8 caracteres con mayúsculas, minúsculas y números';
+
+  @override
+  String get passwordsDoNotMatch => 'Las contraseñas no coinciden';
+
+  @override
+  String get invalidCurrentPassword => 'La contraseña actual es incorrecta';
+
+  @override
+  String get invalidPin => 'PIN inválido. Por favor intenta de nuevo';
+
+  @override
+  String get edit => 'Editar';
+
+  @override
+  String get save => 'Guardar';
+
+  @override
+  String get basicInformation => 'Información Básica';
+
+  @override
+  String get otherInformation => 'Otra Información';
+
+  @override
+  String get firstName => 'Nombre';
+
+  @override
+  String get lastName => 'Apellido';
+
+  @override
+  String get selectGender => 'Seleccionar género';
+
+  @override
+  String get identification => 'Identificación';
+
+  @override
+  String get inProgress => 'En Progreso';
+
+  @override
+  String get saved => 'Guardado';
+
+  @override
+  String tracksProgress(int current, int total) {
+    return '$current/$total Pistas';
+  }
+
+  @override
+  String percentCompleted(int percent) {
+    return '$percent% Completado';
+  }
 }

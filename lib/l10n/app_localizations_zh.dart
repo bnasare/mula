@@ -1915,4 +1915,134 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get aboutAppValueGrowthDescription => '我们帮助您做出明智的长期财富决策';
+
+  @override
+  String get securitySettings => '安全设置';
+
+  @override
+  String get changePassword => '更改密码';
+
+  @override
+  String get currentPassword => '当前密码';
+
+  @override
+  String get enterCurrentPassword => '输入您的当前密码';
+
+  @override
+  String get reEnterNewPassword => '重新输入您的新密码';
+
+  @override
+  String get currentPin => '当前PIN';
+
+  @override
+  String get enterCurrentPin => '输入您的当前PIN';
+
+  @override
+  String get enterYourCurrentPin => '输入您的当前PIN';
+
+  @override
+  String get changePin => '更改PIN';
+
+  @override
+  String get updatePassword => '更新密码';
+
+  @override
+  String get biometricSettings => '生物识别设置';
+
+  @override
+  String get faceId => '面容ID';
+
+  @override
+  String get touchId => '触控ID';
+
+  @override
+  String get useFaceId => '使用面容ID进行身份验证';
+
+  @override
+  String get useTouchId => '使用触控ID进行身份验证';
+
+  @override
+  String get activitySessions => '活动会话';
+
+  @override
+  String get currentSessions => '当前会话';
+
+  @override
+  String get pastSessions => '历史会话';
+
+  @override
+  String get active => '活跃';
+
+  @override
+  String get ended => '已结束';
+
+  @override
+  String get createNewPin => '创建新PIN';
+
+  @override
+  String get verifyIdentity => '请验证您的身份以继续';
+
+  @override
+  String get createYourNewPin => '创建您的新PIN';
+
+  @override
+  String get choosePinDescription => '选择一个容易记住的4位数PIN';
+
+  @override
+  String get pinChangedSuccessfully => 'PIN更改成功！';
+
+  @override
+  String get pinChangeSuccessDescription => '您的新PIN已成功设置';
+
+  @override
+  String get passwordRequirements => '密码必须至少包含8个字符，包括大写、小写字母和数字';
+
+  @override
+  String get passwordsDoNotMatch => '密码不匹配';
+
+  @override
+  String get invalidCurrentPassword => '当前密码不正确';
+
+  @override
+  String get invalidPin => '无效的PIN。请重试';
+
+  @override
+  String get edit => '编辑';
+
+  @override
+  String get save => '保存';
+
+  @override
+  String get basicInformation => '基本信息';
+
+  @override
+  String get otherInformation => '其他信息';
+
+  @override
+  String get firstName => '名';
+
+  @override
+  String get lastName => '姓';
+
+  @override
+  String get selectGender => '选择性别';
+
+  @override
+  String get identification => '身份证明';
+
+  @override
+  String get inProgress => '进行中';
+
+  @override
+  String get saved => '已保存';
+
+  @override
+  String tracksProgress(int current, int total) {
+    return '$current/$total 课程';
+  }
+
+  @override
+  String percentCompleted(int percent) {
+    return '$percent% 已完成';
+  }
 }

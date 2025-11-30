@@ -732,5 +732,58 @@
   "aboutAppValueClarity": "清晰：",
   "aboutAppValueClarityDescription": "我们用简单、日常的语言解释金融",
   "aboutAppValueGrowth": "成长：",
-  "aboutAppValueGrowthDescription": "我们帮助您做出明智的长期财富决策"
+  "aboutAppValueGrowthDescription": "我们帮助您做出明智的长期财富决策",
+  "securitySettings": "安全设置",
+  "changePassword": "更改密码",
+  "currentPassword": "当前密码",
+  "enterCurrentPassword": "输入您的当前密码",
+  "reEnterNewPassword": "重新输入您的新密码",
+  "currentPin": "当前PIN",
+  "enterCurrentPin": "输入您的当前PIN",
+  "enterYourCurrentPin": "输入您的当前PIN",
+  "changePin": "更改PIN",
+  "updatePassword": "更新密码",
+  "biometricSettings": "生物识别设置",
+  "faceId": "面容ID",
+  "touchId": "触控ID",
+  "useFaceId": "使用面容ID进行身份验证",
+  "useTouchId": "使用触控ID进行身份验证",
+  "activitySessions": "活动会话",
+  "currentSessions": "当前会话",
+  "pastSessions": "历史会话",
+  "active": "活跃",
+  "ended": "已结束",
+  "createNewPin": "创建新PIN",
+  "verifyIdentity": "请验证您的身份以继续",
+  "createYourNewPin": "创建您的新PIN",
+  "choosePinDescription": "选择一个容易记住的4位数PIN",
+  "pinChangedSuccessfully": "PIN更改成功！",
+  "pinChangeSuccessDescription": "您的新PIN已成功设置",
+  "passwordRequirements": "密码必须至少包含8个字符，包括大写、小写字母和数字",
+  "passwordsDoNotMatch": "密码不匹配",
+  "invalidCurrentPassword": "当前密码不正确",
+  "invalidPin": "无效的PIN。请重试",
+  "edit": "编辑",
+  "save": "保存",
+  "basicInformation": "基本信息",
+  "otherInformation": "其他信息",
+  "firstName": "名",
+  "lastName": "姓",
+  "selectGender": "选择性别",
+  "identification": "身份证明",
+  "inProgress": "进行中",
+  "saved": "已保存",
+  "tracksProgress": "{current}/{total} 课程",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% 已完成",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  }
 }

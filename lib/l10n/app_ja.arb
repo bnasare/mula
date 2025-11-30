@@ -732,5 +732,59 @@
   "aboutAppValueClarity": "明確さ：",
   "aboutAppValueClarityDescription": "金融をシンプルで日常的な言葉で説明します",
   "aboutAppValueGrowth": "成長：",
-  "aboutAppValueGrowthDescription": "長期的な資産形成のための情報に基づいた選択をお手伝いします"
+  "aboutAppValueGrowthDescription": "長期的な資産形成のための情報に基づいた選択をお手伝いします",
+
+  "edit": "編集",
+  "save": "保存",
+  "basicInformation": "基本情報",
+  "otherInformation": "その他の情報",
+  "firstName": "名",
+  "lastName": "姓",
+  "selectGender": "性別を選択",
+  "identification": "本人確認",
+  "securitySettings": "セキュリティ設定",
+  "changePassword": "パスワードを変更",
+  "currentPassword": "現在のパスワード",
+  "enterCurrentPassword": "現在のパスワードを入力してください",
+  "reEnterNewPassword": "新しいパスワードを再入力してください",
+  "currentPin": "現在のPIN",
+  "enterCurrentPin": "現在のPINを入力してください",
+  "enterYourCurrentPin": "現在のPINを入力してください",
+  "changePin": "PINを変更",
+  "updatePassword": "パスワードを更新",
+  "biometricSettings": "生体認証設定",
+  "faceId": "Face ID",
+  "touchId": "Touch ID",
+  "useFaceId": "Face IDで認証",
+  "useTouchId": "Touch IDで認証",
+  "activitySessions": "アクティビティセッション",
+  "currentSessions": "現在のセッション",
+  "pastSessions": "過去のセッション",
+  "active": "アクティブ",
+  "ended": "終了",
+  "createNewPin": "新しいPINを作成",
+  "verifyIdentity": "続行するには本人確認を行ってください",
+  "createYourNewPin": "新しいPINを作成してください",
+  "choosePinDescription": "覚えやすい4桁のPINを選択してください",
+  "pinChangedSuccessfully": "PINが正常に変更されました！",
+  "pinChangeSuccessDescription": "新しいPINが正常に設定されました",
+  "passwordRequirements": "パスワードは大文字、小文字、数字を含む8文字以上である必要があります",
+  "passwordsDoNotMatch": "パスワードが一致しません",
+  "invalidCurrentPassword": "現在のパスワードが正しくありません",
+  "invalidPin": "無効なPINです。もう一度お試しください",
+  "inProgress": "進行中",
+  "saved": "保存済み",
+  "tracksProgress": "{current}/{total} トラック",
+  "@tracksProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% 完了",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  }
 }

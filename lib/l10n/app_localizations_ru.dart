@@ -1988,4 +1988,136 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get aboutAppValueGrowthDescription =>
       'Мы помогаем вам принимать обоснованные решения для долгосрочного благосостояния';
+
+  @override
+  String get securitySettings => 'Настройки Безопасности';
+
+  @override
+  String get changePassword => 'Изменить Пароль';
+
+  @override
+  String get currentPassword => 'Текущий Пароль';
+
+  @override
+  String get enterCurrentPassword => 'Введите текущий пароль';
+
+  @override
+  String get reEnterNewPassword => 'Повторите новый пароль';
+
+  @override
+  String get currentPin => 'Текущий PIN';
+
+  @override
+  String get enterCurrentPin => 'Введите текущий PIN';
+
+  @override
+  String get enterYourCurrentPin => 'Введите текущий PIN';
+
+  @override
+  String get changePin => 'Изменить PIN';
+
+  @override
+  String get updatePassword => 'Обновить Пароль';
+
+  @override
+  String get biometricSettings => 'Биометрические Настройки';
+
+  @override
+  String get faceId => 'Face ID';
+
+  @override
+  String get touchId => 'Touch ID';
+
+  @override
+  String get useFaceId => 'Использовать Face ID для аутентификации';
+
+  @override
+  String get useTouchId => 'Использовать Touch ID для аутентификации';
+
+  @override
+  String get activitySessions => 'Сессии Активности';
+
+  @override
+  String get currentSessions => 'Текущие Сессии';
+
+  @override
+  String get pastSessions => 'Прошлые Сессии';
+
+  @override
+  String get active => 'Активно';
+
+  @override
+  String get ended => 'Завершено';
+
+  @override
+  String get createNewPin => 'Создать Новый PIN';
+
+  @override
+  String get verifyIdentity => 'Подтвердите свою личность для продолжения';
+
+  @override
+  String get createYourNewPin => 'Создайте новый PIN';
+
+  @override
+  String get choosePinDescription =>
+      'Выберите 4-значный PIN, который легко запомнить';
+
+  @override
+  String get pinChangedSuccessfully => 'PIN Успешно Изменён!';
+
+  @override
+  String get pinChangeSuccessDescription => 'Ваш новый PIN успешно установлен';
+
+  @override
+  String get passwordRequirements =>
+      'Пароль должен содержать не менее 8 символов с заглавными, строчными буквами и цифрами';
+
+  @override
+  String get passwordsDoNotMatch => 'Пароли не совпадают';
+
+  @override
+  String get invalidCurrentPassword => 'Текущий пароль неверен';
+
+  @override
+  String get invalidPin => 'Неверный PIN. Пожалуйста, попробуйте снова';
+
+  @override
+  String get edit => 'Редактировать';
+
+  @override
+  String get save => 'Сохранить';
+
+  @override
+  String get basicInformation => 'Основная Информация';
+
+  @override
+  String get otherInformation => 'Другая Информация';
+
+  @override
+  String get firstName => 'Имя';
+
+  @override
+  String get lastName => 'Фамилия';
+
+  @override
+  String get selectGender => 'Выберите пол';
+
+  @override
+  String get identification => 'Идентификация';
+
+  @override
+  String get inProgress => 'В процессе';
+
+  @override
+  String get saved => 'Сохранено';
+
+  @override
+  String tracksProgress(int current, int total) {
+    return '$current/$total Треков';
+  }
+
+  @override
+  String percentCompleted(int percent) {
+    return '$percent% Завершено';
+  }
 }
