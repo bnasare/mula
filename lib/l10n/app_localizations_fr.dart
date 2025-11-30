@@ -643,6 +643,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get explore => 'Explorer';
 
   @override
+  String get exploreInvestments => 'Explorer les Investissements';
+
+  @override
+  String get featured => 'En Vedette';
+
+  @override
+  String get equity => 'Actions';
+
+  @override
   String get portfolio => 'Portefeuille';
 
   @override

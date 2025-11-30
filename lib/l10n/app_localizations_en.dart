@@ -637,6 +637,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get explore => 'Explore';
 
   @override
+  String get exploreInvestments => 'Explore Investments';
+
+  @override
+  String get featured => 'Featured';
+
+  @override
+  String get equity => 'Equity';
+
+  @override
   String get portfolio => 'Portfolio';
 
   @override

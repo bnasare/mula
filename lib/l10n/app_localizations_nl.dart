@@ -640,6 +640,15 @@ class AppLocalizationsNl extends AppLocalizations {
   String get explore => 'Verkennen';
 
   @override
+  String get exploreInvestments => 'Investeringen Verkennen';
+
+  @override
+  String get featured => 'Uitgelicht';
+
+  @override
+  String get equity => 'Aandelen';
+
+  @override
   String get portfolio => 'Portfolio';
 
   @override

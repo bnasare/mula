@@ -635,6 +635,15 @@ class AppLocalizationsHi extends AppLocalizations {
   String get explore => 'एक्सप्लोर करें';
 
   @override
+  String get exploreInvestments => 'निवेश एक्सप्लोर करें';
+
+  @override
+  String get featured => 'विशेष';
+
+  @override
+  String get equity => 'इक्विटी';
+
+  @override
   String get portfolio => 'पोर्टफोलियो';
 
   @override

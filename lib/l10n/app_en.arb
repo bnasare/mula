@@ -219,6 +219,9 @@
 
   "home": "Home",
   "explore": "Explore",
+  "exploreInvestments": "Explore Investments",
+  "featured": "Featured",
+  "equity": "Equity",
   "portfolio": "Portfolio",
   "learn": "Learn",
   "account": "Account",

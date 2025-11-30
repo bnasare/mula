@@ -641,6 +641,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get explore => 'Erkunden';
 
   @override
+  String get exploreInvestments => 'Investitionen erkunden';
+
+  @override
+  String get featured => 'Empfohlen';
+
+  @override
+  String get equity => 'Eigenkapital';
+
+  @override
   String get portfolio => 'Portfolio';
 
   @override

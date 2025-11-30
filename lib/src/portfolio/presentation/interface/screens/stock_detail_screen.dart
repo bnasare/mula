@@ -19,6 +19,7 @@ class StockDetailScreen extends StatelessWidget {
   final double currentPrice;
   final double change;
   final double changePercentage;
+  final bool showAppBarTitle;
 
   const StockDetailScreen({
     super.key,
@@ -27,6 +28,7 @@ class StockDetailScreen extends StatelessWidget {
     required this.currentPrice,
     required this.change,
     required this.changePercentage,
+    this.showAppBarTitle = true,
   });
 
   @override
@@ -38,7 +40,7 @@ class StockDetailScreen extends StatelessWidget {
     final isPositive = change >= 0;
 
     return Scaffold(
-      appBar: MulaAppBar(title: context.localize.stocks),
+      appBar: MulaAppBar(title: showAppBarTitle ? context.localize.stocks : ''),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: SingleChildScrollView(

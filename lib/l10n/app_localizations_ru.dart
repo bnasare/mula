@@ -640,6 +640,15 @@ class AppLocalizationsRu extends AppLocalizations {
   String get explore => 'Исследовать';
 
   @override
+  String get exploreInvestments => 'Исследовать Инвестиции';
+
+  @override
+  String get featured => 'Рекомендуемое';
+
+  @override
+  String get equity => 'Акции';
+
+  @override
   String get portfolio => 'Портфель';
 
   @override

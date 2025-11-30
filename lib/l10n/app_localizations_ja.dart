@@ -613,6 +613,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get explore => '探索';
 
   @override
+  String get exploreInvestments => '投資を探す';
+
+  @override
+  String get featured => '注目';
+
+  @override
+  String get equity => '株式';
+
+  @override
   String get portfolio => 'ポートフォリオ';
 
   @override

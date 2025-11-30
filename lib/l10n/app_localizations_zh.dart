@@ -605,6 +605,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get explore => '探索';
 
   @override
+  String get exploreInvestments => '探索投资';
+
+  @override
+  String get featured => '精选';
+
+  @override
+  String get equity => '股票';
+
+  @override
   String get portfolio => '投资组合';
 
   @override

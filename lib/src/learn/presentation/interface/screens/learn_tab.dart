@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
+import '../../../../../shared/presentation/widgets/category_filter_tabs.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
+import '../../../../../shared/presentation/screens/asset_search_screen.dart';
 import '../../../data/dummy_learn_data.dart';
 import '../widgets/featured_track_card.dart';
 import '../widgets/lesson_card.dart';
-import '../widgets/track_filter_tabs.dart';
-import 'learn_search_screen.dart';
 import 'lesson_detail_screen.dart';
 
 /// Learn tab - Educational content for investment learning
@@ -42,7 +42,7 @@ class _LearnTabState extends State<LearnTab> {
               color: AppColors.primaryText(context),
             ),
             onPressed: () {
-              NavigationHelper.navigateTo(context, const LearnSearchScreen());
+              NavigationHelper.navigateTo(context, const AssetSearchScreen());
             },
           ),
         ],
@@ -56,13 +56,31 @@ class _LearnTabState extends State<LearnTab> {
               child: Column(
                 children: [
                   AppSpacer.vLarge(),
-                  TrackFilterTabs(
+                  CategoryFilterTabs(
                     selectedCategory: _selectedCategory,
                     onCategorySelected: (category) {
                       setState(() {
                         _selectedCategory = category;
                       });
                     },
+                    categories: [
+                      CategoryItem(
+                        key: 'all',
+                        label: context.localize.allTracks,
+                      ),
+                      CategoryItem(
+                        key: 'ghanaStocks',
+                        label: context.localize.ghanaStocks,
+                      ),
+                      CategoryItem(
+                        key: 'tBillsBonds',
+                        label: context.localize.tBillsBonds,
+                      ),
+                      CategoryItem(
+                        key: 'mutualFunds',
+                        label: context.localize.mutualFunds,
+                      ),
+                    ],
                   ),
                   AppSpacer.vLarge(),
                 ],

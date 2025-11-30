@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
-import '../../../../../shared/presentation/theme/app_colors.dart';
-import '../../../../../shared/presentation/widgets/constants/app_text.dart';
-import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
-import '../../../../../shared/presentation/widgets/mula_search_bar.dart';
-import '../../../../../shared/utils/localization_extension.dart';
-import '../../../data/dummy_learn_data.dart';
-import '../../../domain/entities/search_item.dart';
-import '../widgets/learn_filter_bottom_sheet.dart';
+import '../../../src/learn/data/dummy_learn_data.dart';
+import '../../../src/learn/domain/entities/search_item.dart';
+import '../../../src/learn/presentation/interface/widgets/learn_filter_bottom_sheet.dart';
+import '../theme/app_colors.dart';
+import '../widgets/constants/app_text.dart';
+import '../widgets/mula_app_bar.dart';
+import '../widgets/mula_search_bar.dart';
+import '../../utils/localization_extension.dart';
 
-class LearnSearchScreen extends StatefulWidget {
-  const LearnSearchScreen({super.key});
+class AssetSearchScreen extends StatefulWidget {
+  const AssetSearchScreen({super.key});
 
   @override
-  State<LearnSearchScreen> createState() => _LearnSearchScreenState();
+  State<AssetSearchScreen> createState() => _AssetSearchScreenState();
 }
 
-class _LearnSearchScreenState extends State<LearnSearchScreen> {
+class _AssetSearchScreenState extends State<AssetSearchScreen> {
   final TextEditingController _searchController = TextEditingController();
   List<SearchItem> _searchHistory = [];
   List<SearchItem> _popularSearches = [];

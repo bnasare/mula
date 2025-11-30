@@ -1298,6 +1298,24 @@ abstract class AppLocalizations {
   /// **'Explore'**
   String get explore;
 
+  /// No description provided for @exploreInvestments.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore Investments'**
+  String get exploreInvestments;
+
+  /// No description provided for @featured.
+  ///
+  /// In en, this message translates to:
+  /// **'Featured'**
+  String get featured;
+
+  /// No description provided for @equity.
+  ///
+  /// In en, this message translates to:
+  /// **'Equity'**
+  String get equity;
+
   /// No description provided for @portfolio.
   ///
   /// In en, this message translates to:

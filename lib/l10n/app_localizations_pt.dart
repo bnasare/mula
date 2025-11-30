@@ -639,6 +639,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get explore => 'Explorar';
 
   @override
+  String get exploreInvestments => 'Explorar Investimentos';
+
+  @override
+  String get featured => 'Destaque';
+
+  @override
+  String get equity => 'Ações';
+
+  @override
   String get portfolio => 'Portfólio';
 
   @override
