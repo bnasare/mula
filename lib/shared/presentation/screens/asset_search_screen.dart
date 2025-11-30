@@ -21,10 +21,7 @@ enum SearchMode { assets, lessons }
 class AssetSearchScreen extends StatefulWidget {
   final SearchMode searchMode;
 
-  const AssetSearchScreen({
-    super.key,
-    this.searchMode = SearchMode.assets,
-  });
+  const AssetSearchScreen({super.key, this.searchMode = SearchMode.assets});
 
   @override
   State<AssetSearchScreen> createState() => _AssetSearchScreenState();
@@ -369,10 +366,7 @@ class _SearchResultTile extends StatelessWidget {
   final SearchItem item;
   final VoidCallback onTap;
 
-  const _SearchResultTile({
-    required this.item,
-    required this.onTap,
-  });
+  const _SearchResultTile({required this.item, required this.onTap});
 
   String _getCategoryLabel() {
     switch (item.assetCategory) {

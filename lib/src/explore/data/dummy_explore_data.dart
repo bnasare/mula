@@ -313,47 +313,53 @@ class DummyExploreData {
 
     // Add stocks
     for (final stock in getGhanaStocks()) {
-      items.add(SearchItem(
-        id: 'stock_${stock.ticker}',
-        title: stock.ticker,
-        type: SearchItemType.popular,
-        assetCategory: SearchAssetCategory.stock,
-        ticker: stock.ticker,
-        name: stock.companyName,
-        price: stock.currentPrice,
-        change: stock.change,
-        changePercentage: stock.changePercentage,
-      ));
+      items.add(
+        SearchItem(
+          id: 'stock_${stock.ticker}',
+          title: stock.ticker,
+          type: SearchItemType.popular,
+          assetCategory: SearchAssetCategory.stock,
+          ticker: stock.ticker,
+          name: stock.companyName,
+          price: stock.currentPrice,
+          change: stock.change,
+          changePercentage: stock.changePercentage,
+        ),
+      );
     }
 
     // Add mutual funds
     for (final fund in getMutualFunds()) {
-      items.add(SearchItem(
-        id: 'fund_${fund.ticker}',
-        title: fund.ticker,
-        type: SearchItemType.popular,
-        assetCategory: SearchAssetCategory.mutualFund,
-        ticker: fund.ticker,
-        name: fund.companyName,
-        price: fund.currentPrice,
-        change: fund.change,
-        changePercentage: fund.changePercentage,
-      ));
+      items.add(
+        SearchItem(
+          id: 'fund_${fund.ticker}',
+          title: fund.ticker,
+          type: SearchItemType.popular,
+          assetCategory: SearchAssetCategory.mutualFund,
+          ticker: fund.ticker,
+          name: fund.companyName,
+          price: fund.currentPrice,
+          change: fund.change,
+          changePercentage: fund.changePercentage,
+        ),
+      );
     }
 
     // Add secondary market T-bills/bonds
     for (final item in getSecondaryMarketItems()) {
-      items.add(SearchItem(
-        id: 'tbill_${item.code}',
-        title: item.code,
-        type: SearchItemType.popular,
-        assetCategory: SearchAssetCategory.tBill,
-        ticker: item.code,
-        name: item.typeLabel,
-        price: item.rate,
-        change: item.change,
-        changePercentage: item.change,
-      ));
+      items.add(
+        SearchItem(
+          id: 'tbill_${item.code}',
+          title: item.code,
+          type: SearchItemType.popular,
+          assetCategory: SearchAssetCategory.tBill,
+          ticker: item.code,
+          name: item.typeLabel,
+          price: item.rate,
+          change: item.change,
+          changePercentage: item.change,
+        ),
+      );
     }
 
     return items;

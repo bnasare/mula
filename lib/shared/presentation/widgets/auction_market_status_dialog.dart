@@ -8,11 +8,7 @@ class AuctionMarketStatusDialog extends StatelessWidget {
   final VoidCallback? onYes;
   final VoidCallback? onNo;
 
-  const AuctionMarketStatusDialog({
-    super.key,
-    this.onYes,
-    this.onNo,
-  });
+  const AuctionMarketStatusDialog({super.key, this.onYes, this.onNo});
 
   static Future<bool?> show(BuildContext context) {
     return showDialog<bool>(
@@ -29,9 +25,7 @@ class AuctionMarketStatusDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return Dialog(
       backgroundColor: AppColors.background(context),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(

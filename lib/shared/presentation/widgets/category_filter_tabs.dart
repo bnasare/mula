@@ -8,10 +8,7 @@ class CategoryItem {
   final String key;
   final String label;
 
-  const CategoryItem({
-    required this.key,
-    required this.label,
-  });
+  const CategoryItem({required this.key, required this.label});
 }
 
 /// Reusable category filter tabs widget
@@ -65,7 +62,9 @@ class CategoryFilterTabs extends StatelessWidget {
                     color: isSelected
                         ? AppColors.white(context)
                         : AppColors.primaryText(context),
-                    fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+                    fontWeight: isSelected
+                        ? FontWeight.w600
+                        : FontWeight.normal,
                   ),
                 ),
               ),

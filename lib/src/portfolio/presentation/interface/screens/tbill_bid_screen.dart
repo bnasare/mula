@@ -73,7 +73,8 @@ class _TBillBidScreenState extends State<TBillBidScreen> {
     return true;
   }
 
-  bool get _hasInsufficientFunds => _amount > 0 && _amount > widget.availableCashBalance;
+  bool get _hasInsufficientFunds =>
+      _amount > 0 && _amount > widget.availableCashBalance;
 
   double get _estimatedProceeds => _amount;
 
@@ -260,20 +261,14 @@ class _TBillBidScreenState extends State<TBillBidScreen> {
                             'GHS ${_estimatedProceeds.toStringAsFixed(2)}',
                           ),
                           const SizedBox(height: 16),
-                          Divider(
-                            color: AppColors.border(context),
-                            height: 1,
-                          ),
+                          Divider(color: AppColors.border(context), height: 1),
                           const SizedBox(height: 16),
                           _buildDetailRow(
                             context.localize.totalCharges,
                             'GHS ${_totalCharges.toStringAsFixed(2)}',
                           ),
                           const SizedBox(height: 16),
-                          Divider(
-                            color: AppColors.border(context),
-                            height: 1,
-                          ),
+                          Divider(color: AppColors.border(context), height: 1),
                           const SizedBox(height: 16),
                           _buildDetailRow(
                             context.localize.netProceeds,

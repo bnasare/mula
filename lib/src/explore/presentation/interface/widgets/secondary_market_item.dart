@@ -19,54 +19,54 @@ class SecondaryMarketListItem extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      decoration: BoxDecoration(
-        border: Border(
-          bottom: BorderSide(color: AppColors.border(context), width: 0.5),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        decoration: BoxDecoration(
+          border: Border(
+            bottom: BorderSide(color: AppColors.border(context), width: 0.5),
+          ),
         ),
-      ),
-      child: Row(
-        children: [
-          // Logo placeholder
-          _buildLogoPlaceholder(context),
-          const SizedBox(width: 12),
+        child: Row(
+          children: [
+            // Logo placeholder
+            _buildLogoPlaceholder(context),
+            const SizedBox(width: 12),
 
-          // Code and type
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            // Code and type
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AppText.medium(
+                    item.code,
+                    style: TextStyle(color: AppColors.primaryText(context)),
+                  ),
+                  const SizedBox(height: 2),
+                  AppText.smallest(
+                    item.typeLabel,
+                    color: AppColors.defaultText(context),
+                  ),
+                ],
+              ),
+            ),
+
+            // Mini chart
+            _buildMiniChart(context),
+            const SizedBox(width: 24),
+
+            // Rate and change
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 AppText.medium(
-                  item.code,
+                  '${item.rate.toStringAsFixed(2)}%',
                   style: TextStyle(color: AppColors.primaryText(context)),
                 ),
-                const SizedBox(height: 2),
-                AppText.smallest(
-                  item.typeLabel,
-                  color: AppColors.defaultText(context),
-                ),
+                const SizedBox(height: 4),
+                _buildChangeText(context),
               ],
             ),
-          ),
-
-          // Mini chart
-          _buildMiniChart(context),
-          const SizedBox(width: 24),
-
-          // Rate and change
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              AppText.medium(
-                '${item.rate.toStringAsFixed(2)}%',
-                style: TextStyle(color: AppColors.primaryText(context)),
-              ),
-              const SizedBox(height: 4),
-              _buildChangeText(context),
-            ],
-          ),
-        ],
-      ),
+          ],
+        ),
       ),
     );
   }

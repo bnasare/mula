@@ -37,7 +37,9 @@ class TBillDetailScreen extends StatelessWidget {
     final isPositive = change >= 0;
 
     return Scaffold(
-      appBar: MulaAppBar(title: showAppBarTitle ? context.localize.treasuryBill : ''),
+      appBar: MulaAppBar(
+        title: showAppBarTitle ? context.localize.treasuryBill : '',
+      ),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: SingleChildScrollView(

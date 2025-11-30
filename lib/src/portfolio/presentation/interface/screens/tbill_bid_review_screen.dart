@@ -116,10 +116,8 @@ class TBillBidReviewScreen extends StatelessWidget {
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
                     itemCount: 9,
-                    separatorBuilder: (context, index) => Divider(
-                      color: AppColors.border(context),
-                      height: 24,
-                    ),
+                    separatorBuilder: (context, index) =>
+                        Divider(color: AppColors.border(context), height: 24),
                     itemBuilder: (context, index) {
                       return _buildDetailRowByIndex(context, index);
                     },
@@ -161,11 +159,7 @@ class TBillBidReviewScreen extends StatelessWidget {
           '${interestRate.toStringAsFixed(2)}%',
         );
       case 2:
-        return _buildDetailRow(
-          context,
-          context.localize.bidType,
-          bidType,
-        );
+        return _buildDetailRow(context, context.localize.bidType, bidType);
       case 3:
         return _buildDetailRow(
           context,
@@ -191,11 +185,7 @@ class TBillBidReviewScreen extends StatelessWidget {
           maturityDate,
         );
       case 7:
-        return _buildDetailRow(
-          context,
-          context.localize.broker,
-          broker,
-        );
+        return _buildDetailRow(context, context.localize.broker, broker);
       case 8:
         return _buildDetailRow(
           context,

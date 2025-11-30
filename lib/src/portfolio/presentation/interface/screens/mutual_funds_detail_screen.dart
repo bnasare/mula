@@ -52,7 +52,9 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
     final isPositive = widget.change >= 0;
 
     return Scaffold(
-      appBar: MulaAppBar(title: widget.showAppBarTitle ? context.localize.mutualFunds : ''),
+      appBar: MulaAppBar(
+        title: widget.showAppBarTitle ? context.localize.mutualFunds : '',
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
