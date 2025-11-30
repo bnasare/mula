@@ -55,6 +55,19 @@ class _LearnFilterBottomSheetState extends State<LearnFilterBottomSheet> {
     _selectedCategory = widget.selectedCategory;
   }
 
+  bool get _hasActiveFilters =>
+      _selectedDateRange != null ||
+      _selectedStock != null ||
+      _selectedCategory != null;
+
+  void _clearAllFilters() {
+    setState(() {
+      _selectedDateRange = null;
+      _selectedStock = null;
+      _selectedCategory = null;
+    });
+  }
+
   void _applyFilters() {
     Navigator.pop(context, {
       'dateRange': _selectedDateRange,
@@ -94,13 +107,26 @@ class _LearnFilterBottomSheetState extends State<LearnFilterBottomSheet> {
                     fontSize: 22,
                   ),
                 ),
-                GestureDetector(
-                  onTap: () => Navigator.pop(context),
-                  child: Icon(
-                    Icons.cancel,
-                    size: 22,
-                    color: AppColors.secondaryText(context),
-                  ),
+                Row(
+                  children: [
+                    if (_hasActiveFilters)
+                      GestureDetector(
+                        onTap: _clearAllFilters,
+                        child: AppText.small(
+                          context.localize.clearAll,
+                          color: AppColors.appPrimary,
+                        ),
+                      ),
+                    const SizedBox(width: 12),
+                    GestureDetector(
+                      onTap: () => Navigator.pop(context),
+                      child: Icon(
+                        Icons.cancel,
+                        size: 22,
+                        color: AppColors.secondaryText(context),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

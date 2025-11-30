@@ -1,59 +1,219 @@
-import '../domain/entities/stock_data.dart';
+import '../domain/entities/asset_data.dart';
+import '../domain/entities/tbill_bond_data.dart';
 
 /// Dummy data for the Explore tab
 class DummyExploreData {
   DummyExploreData._();
 
   /// Get list of Ghana stocks for display
-  static List<StockData> getGhanaStocks() {
+  static List<AssetData> getGhanaStocks() {
     return const [
-      StockData(
+      AssetData(
         ticker: 'MTNGH',
         companyName: 'Scancom PLC',
         logoAbbreviation: 'MTN',
         currentPrice: 4.02,
         change: 0.10,
         changePercentage: 2.3,
+        assetTypeLabel: 'Equity',
       ),
-      StockData(
+      AssetData(
         ticker: 'EGH',
         companyName: 'Ecobank Ghana PLC',
         logoAbbreviation: 'Ecobank',
         currentPrice: 9.35,
         change: 0.33,
         changePercentage: 3.7,
+        assetTypeLabel: 'Equity',
       ),
-      StockData(
+      AssetData(
         ticker: 'GCB',
         companyName: 'GCB Bank PLC',
         logoAbbreviation: 'EEBF',
         currentPrice: 13.50,
         change: 0.19,
         changePercentage: 1.4,
+        assetTypeLabel: 'Equity',
       ),
-      StockData(
+      AssetData(
         ticker: 'BOPP',
         companyName: 'Benso Oil Palm Plantation PLC',
         logoAbbreviation: 'CCMF',
         currentPrice: 37.78,
         change: 3.43,
         changePercentage: 10.0,
+        assetTypeLabel: 'Equity',
       ),
-      StockData(
+      AssetData(
         ticker: 'UNIL',
         companyName: 'Unilever Ghana PLC',
         logoAbbreviation: 'FBT',
         currentPrice: 20.00,
         change: 0.00,
         changePercentage: 0.0,
+        assetTypeLabel: 'Equity',
       ),
-      StockData(
+      AssetData(
         ticker: 'CAL',
         companyName: 'Calbank PLC',
         logoAbbreviation: 'ICLF',
         currentPrice: 0.57,
         change: -0.10,
         changePercentage: -14.9,
+        assetTypeLabel: 'Equity',
+      ),
+    ];
+  }
+
+  /// Get list of Mutual Funds for display
+  static List<AssetData> getMutualFunds() {
+    return const [
+      AssetData(
+        ticker: 'ICLF',
+        companyName: 'IC Liquidity Fund',
+        logoAbbreviation: 'ICLF',
+        currentPrice: 2.0231,
+        change: -0.02,
+        changePercentage: -1.2,
+        assetTypeLabel: 'Mutual Fund',
+      ),
+      AssetData(
+        ticker: 'MFUND',
+        companyName: 'Databank Mfund',
+        logoAbbreviation: 'MTN',
+        currentPrice: 2.7844,
+        change: 0.12,
+        changePercentage: 4.7,
+        assetTypeLabel: 'Mutual Fund',
+      ),
+      AssetData(
+        ticker: 'BFUND',
+        companyName: 'Databank Balanced Fund',
+        logoAbbreviation: 'Ecobank',
+        currentPrice: 1.5053,
+        change: 0.03,
+        changePercentage: 4.7,
+        assetTypeLabel: 'Mutual Fund',
+      ),
+      AssetData(
+        ticker: 'EEBF',
+        companyName: 'Enhanced Equity Beta Fund',
+        logoAbbreviation: 'EEBF',
+        currentPrice: 3.0909,
+        change: 0.04,
+        changePercentage: 4.7,
+        assetTypeLabel: 'Mutual Fund',
+      ),
+      AssetData(
+        ticker: 'CCMF',
+        companyName: 'Christian Community Mutual Fund',
+        logoAbbreviation: 'CCMF',
+        currentPrice: 1.3550,
+        change: 0.17,
+        changePercentage: 4.7,
+        assetTypeLabel: 'Mutual Fund',
+      ),
+      AssetData(
+        ticker: 'FBT',
+        companyName: 'Fidelity Balanced Trust',
+        logoAbbreviation: 'FBT',
+        currentPrice: 0.2001,
+        change: 0.00,
+        changePercentage: 0.0,
+        assetTypeLabel: 'Mutual Fund',
+      ),
+    ];
+  }
+
+  /// Get list of Auction Market items (T-Bills and Bonds)
+  static List<AuctionMarketItem> getAuctionMarketItems() {
+    return const [
+      AuctionMarketItem(
+        name: '91-Day Bill',
+        typeLabel: 'Treasury Bills',
+        logoAbbreviation: 'MTN',
+      ),
+      AuctionMarketItem(
+        name: '182-Day Bill',
+        typeLabel: 'Treasury Bills',
+        logoAbbreviation: 'MTN',
+      ),
+      AuctionMarketItem(
+        name: '364-Day Bill',
+        typeLabel: 'Treasury Bill',
+        logoAbbreviation: 'MTN',
+      ),
+      AuctionMarketItem(
+        name: 'Government of Ghana',
+        typeLabel: 'Bonds',
+        logoAbbreviation: 'MTN',
+      ),
+      AuctionMarketItem(
+        name: 'Corporates',
+        typeLabel: 'Bonds',
+        logoAbbreviation: 'MTN',
+      ),
+    ];
+  }
+
+  /// Get list of Secondary Market items (T-Bills and Bonds)
+  static List<SecondaryMarketItem> getSecondaryMarketItems() {
+    return const [
+      SecondaryMarketItem(
+        code: 'TB 27-OCT-25',
+        typeLabel: 'Treasury Bill',
+        logoAbbreviation: '',
+        rate: 10.83,
+        change: 2.3,
+      ),
+      SecondaryMarketItem(
+        code: 'TB 30-NOV-25',
+        typeLabel: 'Treasury Bill',
+        logoAbbreviation: '',
+        rate: 11.52,
+        change: 1.8,
+      ),
+      SecondaryMarketItem(
+        code: 'TB 15-DEC-25',
+        typeLabel: 'Treasury Bill',
+        logoAbbreviation: '',
+        rate: 12.94,
+        change: 0.9,
+      ),
+      SecondaryMarketItem(
+        code: 'GOG 18-OCT-28',
+        typeLabel: '3-Year Bond',
+        logoAbbreviation: '',
+        rate: 7.65,
+        change: 0.4,
+      ),
+      SecondaryMarketItem(
+        code: 'GOG 21-SEP-29',
+        typeLabel: '5-Year Bond',
+        logoAbbreviation: '',
+        rate: 8.81,
+        change: 0.0,
+      ),
+      SecondaryMarketItem(
+        code: 'GOG 27-OCT-32',
+        typeLabel: '10-Year Bond',
+        logoAbbreviation: '',
+        rate: 9.27,
+        change: 0.1,
+      ),
+      SecondaryMarketItem(
+        code: 'CB 27-MAR-26',
+        typeLabel: 'Dalex Bond',
+        logoAbbreviation: '',
+        rate: 6.65,
+        change: 0.0,
+      ),
+      SecondaryMarketItem(
+        code: 'CB 27-JAN-27',
+        typeLabel: 'Letshego Bond',
+        logoAbbreviation: '',
+        rate: 8.43,
+        change: 4.7,
       ),
     ];
   }

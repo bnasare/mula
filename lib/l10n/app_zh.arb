@@ -195,6 +195,7 @@
   "exploreInvestments": "探索投资",
   "featured": "精选",
   "equity": "股票",
+  "mutualFund": "共同基金",
   "portfolio": "投资组合",
   "learn": "学习",
   "account": "账户",
@@ -595,5 +596,9 @@
   "averageLoss": "平均损失",
   "maximumDrawdown": "最大回撤",
   "sortinoRatio": "索提诺比率",
-  "loads": "费用"
+  "loads": "费用",
+  "auctionMarket": "拍卖市场",
+  "secondaryMarket": "二级市场",
+  "treasuryBills": "国库券",
+  "bid": "出价"
 }

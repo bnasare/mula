@@ -195,6 +195,7 @@
   "exploreInvestments": "Explorer les Investissements",
   "featured": "En Vedette",
   "equity": "Actions",
+  "mutualFund": "Fonds Commun de Placement",
   "portfolio": "Portefeuille",
   "learn": "Apprendre",
   "account": "Compte",
@@ -595,5 +596,9 @@
   "averageLoss": "Perte moyenne",
   "maximumDrawdown": "Drawdown maximum",
   "sortinoRatio": "Ratio de Sortino",
-  "loads": "Frais d'entrée"
+  "loads": "Frais d'entrée",
+  "auctionMarket": "Marché aux Enchères",
+  "secondaryMarket": "Marché Secondaire",
+  "treasuryBills": "Bons du Trésor",
+  "bid": "Offre"
 }

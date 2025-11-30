@@ -222,6 +222,7 @@
   "exploreInvestments": "Explore Investments",
   "featured": "Featured",
   "equity": "Equity",
+  "mutualFund": "Mutual Fund",
   "portfolio": "Portfolio",
   "learn": "Learn",
   "account": "Account",
@@ -649,5 +650,9 @@
   "averageLoss": "Average Loss",
   "maximumDrawdown": "Maximum Drawdown",
   "sortinoRatio": "Sortino Ratio",
-  "loads": "Loads"
+  "loads": "Loads",
+  "auctionMarket": "Auction Market",
+  "secondaryMarket": "Secondary Market",
+  "treasuryBills": "Treasury Bills",
+  "bid": "Bid"
 }

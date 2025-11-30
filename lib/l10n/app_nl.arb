@@ -195,6 +195,7 @@
   "exploreInvestments": "Investeringen Verkennen",
   "featured": "Uitgelicht",
   "equity": "Aandelen",
+  "mutualFund": "Beleggingsfonds",
   "portfolio": "Portfolio",
   "learn": "Leren",
   "account": "Account",
@@ -595,5 +596,9 @@
   "averageLoss": "Gemiddeld verlies",
   "maximumDrawdown": "Maximale drawdown",
   "sortinoRatio": "Sortino-ratio",
-  "loads": "Kosten"
+  "loads": "Kosten",
+  "auctionMarket": "Veilingmarkt",
+  "secondaryMarket": "Secundaire Markt",
+  "treasuryBills": "Schatkistpapier",
+  "bid": "Bod"
 }

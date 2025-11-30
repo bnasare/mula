@@ -649,6 +649,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get equity => 'Акции';
 
   @override
+  String get mutualFund => 'Паевой фонд';
+
+  @override
   String get portfolio => 'Портфель';
 
   @override
@@ -1608,4 +1611,16 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get loads => 'Нагрузки';
+
+  @override
+  String get auctionMarket => 'Аукционный рынок';
+
+  @override
+  String get secondaryMarket => 'Вторичный рынок';
+
+  @override
+  String get treasuryBills => 'Казначейские векселя';
+
+  @override
+  String get bid => 'Заявка';
 }

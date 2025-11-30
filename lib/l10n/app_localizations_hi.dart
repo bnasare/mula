@@ -644,6 +644,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get equity => 'इक्विटी';
 
   @override
+  String get mutualFund => 'म्यूचुअल फंड';
+
+  @override
   String get portfolio => 'पोर्टफोलियो';
 
   @override
@@ -1608,4 +1611,16 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get loads => 'लोड शुल्क';
+
+  @override
+  String get auctionMarket => 'नीलामी बाजार';
+
+  @override
+  String get secondaryMarket => 'द्वितीयक बाजार';
+
+  @override
+  String get treasuryBills => 'ट्रेजरी बिल';
+
+  @override
+  String get bid => 'बोली';
 }

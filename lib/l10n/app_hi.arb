@@ -195,6 +195,7 @@
   "exploreInvestments": "निवेश एक्सप्लोर करें",
   "featured": "विशेष",
   "equity": "इक्विटी",
+  "mutualFund": "म्यूचुअल फंड",
   "portfolio": "पोर्टफोलियो",
   "learn": "सीखें",
   "account": "खाता",
@@ -595,5 +596,9 @@
   "averageLoss": "औसत नुकसान",
   "maximumDrawdown": "अधिकतम ड्रॉडाउन",
   "sortinoRatio": "सोर्टिनो अनुपात",
-  "loads": "लोड शुल्क"
+  "loads": "लोड शुल्क",
+  "auctionMarket": "नीलामी बाजार",
+  "secondaryMarket": "द्वितीयक बाजार",
+  "treasuryBills": "ट्रेजरी बिल",
+  "bid": "बोली"
 }

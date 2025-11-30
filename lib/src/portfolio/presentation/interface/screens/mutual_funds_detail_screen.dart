@@ -22,6 +22,7 @@ class MutualFundsDetailScreen extends StatefulWidget {
   final double currentPrice;
   final double change;
   final double changePercentage;
+  final bool showAppBarTitle;
 
   const MutualFundsDetailScreen({
     super.key,
@@ -30,6 +31,7 @@ class MutualFundsDetailScreen extends StatefulWidget {
     required this.currentPrice,
     required this.change,
     required this.changePercentage,
+    this.showAppBarTitle = true,
   });
 
   @override
@@ -50,7 +52,7 @@ class _MutualFundsDetailScreenState extends State<MutualFundsDetailScreen> {
     final isPositive = widget.change >= 0;
 
     return Scaffold(
-      appBar: MulaAppBar(title: context.localize.mutualFunds),
+      appBar: MulaAppBar(title: widget.showAppBarTitle ? context.localize.mutualFunds : ''),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

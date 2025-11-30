@@ -648,6 +648,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get equity => 'Ações';
 
   @override
+  String get mutualFund => 'Fundo Mútuo';
+
+  @override
   String get portfolio => 'Portfólio';
 
   @override
@@ -1609,4 +1612,16 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get loads => 'Taxas de entrada';
+
+  @override
+  String get auctionMarket => 'Mercado de Leilão';
+
+  @override
+  String get secondaryMarket => 'Mercado Secundário';
+
+  @override
+  String get treasuryBills => 'Letras do Tesouro';
+
+  @override
+  String get bid => 'Lance';
 }

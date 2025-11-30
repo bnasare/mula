@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
+import '../../../../../shared/presentation/screens/asset_search_screen.dart';
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/category_filter_tabs.dart';
 import '../../../../../shared/presentation/widgets/constants/app_spacer.dart';
 import '../../../../../shared/presentation/widgets/mula_app_bar.dart';
 import '../../../../../shared/utils/localization_extension.dart';
 import '../../../../../shared/utils/navigation.dart';
-import '../../../../../shared/presentation/screens/asset_search_screen.dart';
 import '../widgets/coming_soon_content.dart';
 import '../widgets/ghana_stocks_content.dart';
+import '../widgets/mutual_funds_content.dart';
+import '../widgets/tbills_bonds_content.dart';
 
 /// Explore tab - Browse and discover investment opportunities
 class ExploreTab extends StatefulWidget {
@@ -70,24 +72,22 @@ class _ExploreTabState extends State<ExploreTab> {
           ),
           AppSpacer.vLarge(),
           // Content based on selected tab
-          Expanded(child: _buildContent()),
+          Expanded(
+            child: ScrollConfiguration(
+              behavior: ScrollConfiguration.of(
+                context,
+              ).copyWith(scrollbars: false),
+              child: switch (_selectedCategory) {
+                'ghanaStocks' => const GhanaStocksContent(),
+                'tBillsBonds' => const TBillsBondsContent(),
+                'mutualFunds' => const MutualFundsContent(),
+                'featured' => const ComingSoonContent(),
+                _ => const SizedBox.shrink(),
+              },
+            ),
+          ),
         ],
       ),
     );
-  }
-
-  Widget _buildContent() {
-    switch (_selectedCategory) {
-      case 'ghanaStocks':
-        return const GhanaStocksContent();
-      case 'tBillsBonds':
-        return const SizedBox.shrink();
-      case 'mutualFunds':
-        return const SizedBox.shrink();
-      case 'featured':
-        return const ComingSoonContent();
-      default:
-        return const SizedBox.shrink();
-    }
   }
 }

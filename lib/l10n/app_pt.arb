@@ -195,6 +195,7 @@
   "exploreInvestments": "Explorar Investimentos",
   "featured": "Destaque",
   "equity": "Ações",
+  "mutualFund": "Fundo Mútuo",
   "portfolio": "Portfólio",
   "learn": "Aprender",
   "account": "Conta",
@@ -595,5 +596,9 @@
   "averageLoss": "Perda média",
   "maximumDrawdown": "Drawdown máximo",
   "sortinoRatio": "Índice de Sortino",
-  "loads": "Taxas de entrada"
+  "loads": "Taxas de entrada",
+  "auctionMarket": "Mercado de Leilão",
+  "secondaryMarket": "Mercado Secundário",
+  "treasuryBills": "Letras do Tesouro",
+  "bid": "Lance"
 }

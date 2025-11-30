@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
 import '../../../src/learn/data/dummy_learn_data.dart';
-import '../../../src/learn/domain/entities/search_item.dart';
+import '../../../src/learn/presentation/interface/screens/lesson_detail_screen.dart';
 import '../../../src/learn/presentation/interface/widgets/learn_filter_bottom_sheet.dart';
+import '../../../src/portfolio/presentation/interface/screens/mutual_funds_detail_screen.dart';
+import '../../../src/portfolio/presentation/interface/screens/stock_detail_screen.dart';
+import '../../../src/portfolio/presentation/interface/screens/tbill_detail_screen.dart';
+import '../../domain/entities/search_item.dart';
+import '../../utils/localization_extension.dart';
+import '../../utils/navigation.dart';
 import '../theme/app_colors.dart';
 import '../widgets/constants/app_text.dart';
 import '../widgets/mula_app_bar.dart';
 import '../widgets/mula_search_bar.dart';
-import '../../utils/localization_extension.dart';
 
 class AssetSearchScreen extends StatefulWidget {
   const AssetSearchScreen({super.key});
@@ -68,6 +73,54 @@ class _AssetSearchScreenState extends State<AssetSearchScreen> {
         _selectedStock = result['stock'];
         _selectedCategory = result['category'];
       });
+    }
+  }
+
+  void _navigateToDetail(SearchItem item) {
+    switch (item.assetCategory) {
+      case SearchAssetCategory.stock:
+        NavigationHelper.navigateTo(
+          context,
+          StockDetailScreen(
+            ticker: item.ticker ?? item.title,
+            companyName: item.name ?? '',
+            currentPrice: item.price ?? 0.0,
+            change: item.change ?? 0.0,
+            changePercentage: item.changePercentage ?? 0.0,
+            showAppBarTitle: false,
+          ),
+        );
+      case SearchAssetCategory.mutualFund:
+        NavigationHelper.navigateTo(
+          context,
+          MutualFundsDetailScreen(
+            ticker: item.ticker ?? item.title,
+            fundName: item.name ?? '',
+            currentPrice: item.price ?? 0.0,
+            change: item.change ?? 0.0,
+            changePercentage: item.changePercentage ?? 0.0,
+            showAppBarTitle: false,
+          ),
+        );
+      case SearchAssetCategory.tBill:
+        NavigationHelper.navigateTo(
+          context,
+          TBillDetailScreen(
+            tbillCode: item.ticker ?? item.title,
+            description: item.name ?? '',
+            currentRate: item.price ?? 0.0,
+            change: item.change ?? 0.0,
+            showAppBarTitle: false,
+          ),
+        );
+      case SearchAssetCategory.lesson:
+        NavigationHelper.navigateTo(
+          context,
+          LessonDetailScreen(lessonId: item.id),
+        );
+      case SearchAssetCategory.generic:
+        // Do nothing for generic items
+        break;
     }
   }
 
@@ -168,9 +221,7 @@ class _AssetSearchScreenState extends State<AssetSearchScreen> {
                     ..._searchHistory.map(
                       (item) => _SearchItemTile(
                         title: item.title,
-                        onTap: () {
-                          // TODO: Navigate to search result
-                        },
+                        onTap: () => _navigateToDetail(item),
                         onRemove: () => _removeHistoryItem(item.id),
                       ),
                     ),
@@ -186,9 +237,7 @@ class _AssetSearchScreenState extends State<AssetSearchScreen> {
                   ..._popularSearches.map(
                     (item) => _SearchItemTile(
                       title: item.title,
-                      onTap: () {
-                        // TODO: Navigate to search result
-                      },
+                      onTap: () => _navigateToDetail(item),
                       onRemove: () {
                         // Popular items can't be removed
                       },

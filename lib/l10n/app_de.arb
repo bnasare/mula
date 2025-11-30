@@ -195,6 +195,7 @@
   "exploreInvestments": "Investitionen erkunden",
   "featured": "Empfohlen",
   "equity": "Eigenkapital",
+  "mutualFund": "Investmentfonds",
   "portfolio": "Portfolio",
   "learn": "Lernen",
   "account": "Konto",
@@ -595,5 +596,9 @@
   "averageLoss": "Durchschnittlicher Verlust",
   "maximumDrawdown": "Maximaler Drawdown",
   "sortinoRatio": "Sortino-Verhältnis",
-  "loads": "Ausgabeaufschläge"
+  "loads": "Ausgabeaufschläge",
+  "auctionMarket": "Auktionsmarkt",
+  "secondaryMarket": "Sekundärmarkt",
+  "treasuryBills": "Schatzwechsel",
+  "bid": "Gebot"
 }

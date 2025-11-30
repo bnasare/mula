@@ -195,6 +195,7 @@
   "exploreInvestments": "Esplora Investimenti",
   "featured": "In Evidenza",
   "equity": "Azioni",
+  "mutualFund": "Fondo Comune",
   "portfolio": "Portafoglio",
   "learn": "Impara",
   "account": "Account",
@@ -595,5 +596,9 @@
   "averageLoss": "Perdita media",
   "maximumDrawdown": "Drawdown massimo",
   "sortinoRatio": "Rapporto di Sortino",
-  "loads": "Commissioni di sottoscrizione"
+  "loads": "Commissioni di sottoscrizione",
+  "auctionMarket": "Mercato d'Asta",
+  "secondaryMarket": "Mercato Secondario",
+  "treasuryBills": "Buoni del Tesoro",
+  "bid": "Offerta"
 }

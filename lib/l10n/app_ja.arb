@@ -195,6 +195,7 @@
   "exploreInvestments": "投資を探す",
   "featured": "注目",
   "equity": "株式",
+  "mutualFund": "投資信託",
   "portfolio": "ポートフォリオ",
   "learn": "学ぶ",
   "account": "アカウント",
@@ -595,5 +596,9 @@
   "averageLoss": "平均損失",
   "maximumDrawdown": "最大ドローダウン",
   "sortinoRatio": "ソルティノレシオ",
-  "loads": "ロード"
+  "loads": "ロード",
+  "auctionMarket": "オークション市場",
+  "secondaryMarket": "流通市場",
+  "treasuryBills": "国庫短期証券",
+  "bid": "入札"
 }

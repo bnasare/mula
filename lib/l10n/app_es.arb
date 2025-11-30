@@ -195,6 +195,7 @@
   "exploreInvestments": "Explorar Inversiones",
   "featured": "Destacados",
   "equity": "Capital",
+  "mutualFund": "Fondo Mutuo",
   "portfolio": "Portafolio",
   "learn": "Aprender",
   "account": "Cuenta",
@@ -595,5 +596,9 @@
   "averageLoss": "Pérdida promedio",
   "maximumDrawdown": "Drawdown máximo",
   "sortinoRatio": "Ratio de Sortino",
-  "loads": "Cargas"
+  "loads": "Cargas",
+  "auctionMarket": "Mercado de Subastas",
+  "secondaryMarket": "Mercado Secundario",
+  "treasuryBills": "Letras del Tesoro",
+  "bid": "Oferta"
 }

@@ -1316,6 +1316,12 @@ abstract class AppLocalizations {
   /// **'Equity'**
   String get equity;
 
+  /// No description provided for @mutualFund.
+  ///
+  /// In en, this message translates to:
+  /// **'Mutual Fund'**
+  String get mutualFund;
+
   /// No description provided for @portfolio.
   ///
   /// In en, this message translates to:
@@ -3145,6 +3151,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Loads'**
   String get loads;
+
+  /// No description provided for @auctionMarket.
+  ///
+  /// In en, this message translates to:
+  /// **'Auction Market'**
+  String get auctionMarket;
+
+  /// No description provided for @secondaryMarket.
+  ///
+  /// In en, this message translates to:
+  /// **'Secondary Market'**
+  String get secondaryMarket;
+
+  /// No description provided for @treasuryBills.
+  ///
+  /// In en, this message translates to:
+  /// **'Treasury Bills'**
+  String get treasuryBills;
+
+  /// No description provided for @bid.
+  ///
+  /// In en, this message translates to:
+  /// **'Bid'**
+  String get bid;
 }
 
 class _AppLocalizationsDelegate

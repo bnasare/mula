@@ -622,6 +622,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get equity => '株式';
 
   @override
+  String get mutualFund => '投資信託';
+
+  @override
   String get portfolio => 'ポートフォリオ';
 
   @override
@@ -1561,4 +1564,16 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get loads => 'ロード';
+
+  @override
+  String get auctionMarket => 'オークション市場';
+
+  @override
+  String get secondaryMarket => '流通市場';
+
+  @override
+  String get treasuryBills => '国庫短期証券';
+
+  @override
+  String get bid => '入札';
 }

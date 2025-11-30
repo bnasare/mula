@@ -3,15 +3,14 @@ import 'package:intl/intl.dart';
 
 import '../../../../../shared/presentation/theme/app_colors.dart';
 import '../../../../../shared/presentation/widgets/constants/app_text.dart';
-import '../../../../../shared/utils/localization_extension.dart';
-import '../../../domain/entities/stock_data.dart';
+import '../../../domain/entities/asset_data.dart';
 
-/// Widget to display a single stock item in the explore list
-class StockListItem extends StatelessWidget {
-  final StockData stock;
+/// Widget to display a single asset item in the explore list
+class AssetListItem extends StatelessWidget {
+  final AssetData asset;
   final VoidCallback onTap;
 
-  const StockListItem({super.key, required this.stock, required this.onTap});
+  const AssetListItem({super.key, required this.asset, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -35,23 +34,23 @@ class StockListItem extends StatelessWidget {
             _buildLogoPlaceholder(context),
             const SizedBox(width: 12),
 
-            // Stock info
+            // Asset info
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   AppText.medium(
-                    stock.ticker,
+                    asset.ticker,
                     style: TextStyle(color: AppColors.primaryText(context)),
                   ),
                   AppText.smallest(
-                    stock.companyName,
+                    asset.companyName,
                     size: 10,
                     color: AppColors.secondaryText(context),
                   ),
                   const SizedBox(height: 2),
                   AppText.smallest(
-                    context.localize.equity,
+                    asset.assetTypeLabel,
                     color: AppColors.appPrimary,
                   ),
                 ],
@@ -63,7 +62,7 @@ class StockListItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 AppText.medium(
-                  currencyFormat.format(stock.currentPrice),
+                  currencyFormat.format(asset.currentPrice),
                   style: TextStyle(color: AppColors.primaryText(context)),
                 ),
                 const SizedBox(height: 4),
@@ -87,7 +86,7 @@ class StockListItem extends StatelessWidget {
       ),
       child: Center(
         child: AppText.smaller(
-          stock.logoAbbreviation,
+          asset.logoAbbreviation,
           style: TextStyle(
             fontWeight: FontWeight.w600,
             color: AppColors.primaryText(context),
@@ -99,21 +98,21 @@ class StockListItem extends StatelessWidget {
   }
 
   Widget _buildChangeText(BuildContext context) {
-    if (stock.isNeutral) {
+    if (asset.isNeutral) {
       return AppText.smaller(
         '0.00 ( ---- )',
         color: AppColors.secondaryText(context),
       );
     }
 
-    final changeColor = stock.isPositive
+    final changeColor = asset.isPositive
         ? AppColors.appPrimary
         : AppColors.activityError;
-    final sign = stock.isPositive ? '+' : '';
-    final arrow = stock.isPositive ? '\u25B2' : '\u25BC';
+    final sign = asset.isPositive ? '+' : '';
+    final arrow = asset.isPositive ? '\u25B2' : '\u25BC';
 
     return AppText.smaller(
-      '$sign${stock.change.toStringAsFixed(2)} ( $arrow${stock.changePercentage.abs().toStringAsFixed(1)}% )',
+      '$sign${asset.change.toStringAsFixed(2)} ( $arrow${asset.changePercentage.abs().toStringAsFixed(1)}% )',
       color: changeColor,
     );
   }

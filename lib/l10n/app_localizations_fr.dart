@@ -652,6 +652,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get equity => 'Actions';
 
   @override
+  String get mutualFund => 'Fonds Commun de Placement';
+
+  @override
   String get portfolio => 'Portefeuille';
 
   @override
@@ -1623,4 +1626,16 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get loads => 'Frais d\'entrée';
+
+  @override
+  String get auctionMarket => 'Marché aux Enchères';
+
+  @override
+  String get secondaryMarket => 'Marché Secondaire';
+
+  @override
+  String get treasuryBills => 'Bons du Trésor';
+
+  @override
+  String get bid => 'Offre';
 }

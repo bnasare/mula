@@ -7,7 +7,7 @@ import '../domain/entities/comment.dart';
 import '../domain/entities/quiz.dart';
 import '../domain/entities/quiz_question.dart';
 import '../domain/entities/quiz_option.dart';
-import '../domain/entities/search_item.dart';
+import '../../../shared/domain/entities/search_item.dart';
 
 class DummyLearnData {
   static List<LearningTrack> getFeaturedTracks() {
@@ -366,21 +366,62 @@ Imagine you have a friend who wants to start a business.
 
   static List<SearchItem> getSearchHistory() {
     return const [
-      SearchItem(id: 'h1', title: 'MTNGH', type: SearchItemType.history),
-      SearchItem(id: 'h2', title: 'CCMF', type: SearchItemType.history),
-      SearchItem(id: 'h3', title: 'CB 18-APR-28', type: SearchItemType.history),
+      SearchItem(
+        id: 'h1',
+        title: 'MTNGH',
+        type: SearchItemType.history,
+        assetCategory: SearchAssetCategory.stock,
+        ticker: 'MTNGH',
+        name: 'Scancom PLC',
+        price: 4.02,
+        change: 0.10,
+        changePercentage: 2.3,
+      ),
+      SearchItem(
+        id: 'h2',
+        title: 'CCMF',
+        type: SearchItemType.history,
+        assetCategory: SearchAssetCategory.mutualFund,
+        ticker: 'CCMF',
+        name: 'Christian Community Mutual Fund',
+        price: 1.3550,
+        change: 0.17,
+        changePercentage: 4.7,
+      ),
+      SearchItem(
+        id: 'h3',
+        title: 'TB 27-OCT-25',
+        type: SearchItemType.history,
+        assetCategory: SearchAssetCategory.tBill,
+        ticker: 'TB 27-OCT-25',
+        name: 'Treasury Bill',
+        price: 10.83,
+        change: 2.3,
+        changePercentage: 2.3,
+      ),
     ];
   }
 
   static List<SearchItem> getPopularSearches() {
     return const [
-      SearchItem(id: 'p1', title: 'Stocks', type: SearchItemType.popular),
+      SearchItem(
+        id: 'p1',
+        title: 'Stocks',
+        type: SearchItemType.popular,
+        assetCategory: SearchAssetCategory.generic,
+      ),
       SearchItem(
         id: 'p2',
         title: 'High-Yield Funds',
         type: SearchItemType.popular,
+        assetCategory: SearchAssetCategory.generic,
       ),
-      SearchItem(id: 'p3', title: 'T-Bills', type: SearchItemType.popular),
+      SearchItem(
+        id: 'p3',
+        title: 'T-Bills',
+        type: SearchItemType.popular,
+        assetCategory: SearchAssetCategory.generic,
+      ),
     ];
   }
 

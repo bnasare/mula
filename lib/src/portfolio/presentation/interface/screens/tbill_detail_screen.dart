@@ -17,6 +17,7 @@ class TBillDetailScreen extends StatelessWidget {
   final String description;
   final double currentRate;
   final double change;
+  final bool showAppBarTitle;
 
   const TBillDetailScreen({
     super.key,
@@ -24,6 +25,7 @@ class TBillDetailScreen extends StatelessWidget {
     required this.description,
     required this.currentRate,
     required this.change,
+    this.showAppBarTitle = true,
   });
 
   @override
@@ -35,7 +37,7 @@ class TBillDetailScreen extends StatelessWidget {
     final isPositive = change >= 0;
 
     return Scaffold(
-      appBar: MulaAppBar(title: context.localize.treasuryBill),
+      appBar: MulaAppBar(title: showAppBarTitle ? context.localize.treasuryBill : ''),
       body: ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
         child: SingleChildScrollView(

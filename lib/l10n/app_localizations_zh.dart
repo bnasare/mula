@@ -614,6 +614,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get equity => '股票';
 
   @override
+  String get mutualFund => '共同基金';
+
+  @override
   String get portfolio => '投资组合';
 
   @override
@@ -1553,4 +1556,16 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get loads => '费用';
+
+  @override
+  String get auctionMarket => '拍卖市场';
+
+  @override
+  String get secondaryMarket => '二级市场';
+
+  @override
+  String get treasuryBills => '国库券';
+
+  @override
+  String get bid => '出价';
 }

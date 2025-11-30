@@ -195,6 +195,7 @@
   "exploreInvestments": "Исследовать Инвестиции",
   "featured": "Рекомендуемое",
   "equity": "Акции",
+  "mutualFund": "Паевой фонд",
   "portfolio": "Портфель",
   "learn": "Учиться",
   "account": "Аккаунт",
@@ -595,5 +596,9 @@
   "averageLoss": "Средний убыток",
   "maximumDrawdown": "Максимальная просадка",
   "sortinoRatio": "Коэффициент Сортино",
-  "loads": "Нагрузки"
+  "loads": "Нагрузки",
+  "auctionMarket": "Аукционный рынок",
+  "secondaryMarket": "Вторичный рынок",
+  "treasuryBills": "Казначейские векселя",
+  "bid": "Заявка"
 }
